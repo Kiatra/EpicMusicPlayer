@@ -13,11 +13,6 @@
 # Libraries
 embeds.xml
 
-localisation\enUS.lua
-localisation\deDE.lua
-localisation\zhCN.lua
-localisation\zhTW.lua
-
 EpicMusicDancer.lua
 
 

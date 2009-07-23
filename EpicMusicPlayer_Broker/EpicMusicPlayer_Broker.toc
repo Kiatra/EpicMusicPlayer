@@ -8,10 +8,5 @@
 ## Dependencies: EpicMusicPlayer
 ## SavedVariables: EpicMusicPlayerBrokerDB
 
-localization\enUS.lua
-localization\deDE.lua
-localisation\zhCN.lua
-localisation\zhTW.lua
-
 LibDataBroker-1.1.lua
 empbroker.lua

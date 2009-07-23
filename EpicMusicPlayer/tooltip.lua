@@ -1,5 +1,5 @@
 local LibStub = LibStub
-local QTC = LibStub('LibQTipClick-1.0')
+--local QTC = LibStub('LibQTipClick-1.0')
 local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer")
 local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 

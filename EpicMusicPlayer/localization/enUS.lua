@@ -4,9 +4,67 @@ local L = AceLocale:NewLocale("EpicMusicPlayer", "enUS", true)
 if not L then return end
 
 
-L["GUI Layout"] = true
 
----- added v1.6.2
+L["Frame strata"] = true
+L["MusicDancer"] = true 
+L["Show Dancer"] = true
+L["Toggle show model."] = true
+L["Random Model"] = true
+L["Show a random model when playing a new song."] = true
+L["Set Model"] = true
+L["Select a model"] = true
+L["Model Size"] = true
+L["Adjust the size of the model frame"] = true
+L["Lock"] = true
+L["Unlock to allow moving the model. Moving will relese the model from the gui. Use reset to reattatch."] = true
+L["Show Background"] = true
+L["Enable Mouse"] = true
+L["Click me or scroll me. I won\'t bite. 8==8"] = true
+L["Show Pedestal"] = true
+L["Show Tooltip"] = true
+L["Reset Position"] = true
+L["This will set the model to the default size and attatch it to the gui."] = true
+L["Toggle with Gui"] = true
+L["Showing/hiding the Gui will show/hide the dancer."] = true
+L['Show Artist'] = true
+L['Toggle show Artist'] = true
+L["Left click"] = true
+L["Middle click"] = true
+L["Right click"] = true
+L["Alt click"] = true
+L["Shift click"] = true
+L["Ctrl click"] = true 
+
+L["List"] = true
+L['Show List/Song Numbers'] = true
+L['Show playlist and song number'] = true
+					
+L['Show Title'] = true
+L['Toggle show title'] = true
+
+L["Show time"] = true
+L["Toggle show time"] = true
+
+L["Max song text length"] = true
+L["The maximum text length of the song displayed in the Panel."] = true
+
+L["Music volume: "] = true
+L["Effects volume: "] = true
+L["Stopped"] = true
+
+L["Artist"] = true
+L["Song"] = true
+L["Album"] = true
+L["Length"] = true
+L["Playlist"] = true
+
+L["Use scroll wheel - adjust music volume"] = true
+L["Ctrl + use scroll wheel - adjust effects volume"] = true
+L["Alt + use scroll wheel - fine adjust volume"] = true
+
+L["Ctrl click - Write artist and title to default chat. (guild,party etc.)"] = true 
+
+L["GUI Layout"] = true
 L["Help - FAQ"] = true
 L["Frequently Asked Questions"] = true
 L["FAQ-Text"] = [[
@@ -74,7 +132,6 @@ L["Music off"] = true
 L["Game Music"] = true
 L["Scroll Gui Text"] = true
 
----- added v1.5
 L["Colours"] = true
 L["Artist color"] = true
 L["Title color"] = true
@@ -85,7 +142,6 @@ L["Use artist colour"] = true
 L["Use artist colour as button colour"] = true
 L["Frame strata"] = true
 
----- added v1.4
 L["Copy song to"] = true
 L["Copied song"] = true
 L["Console Controls"] = true
@@ -108,9 +164,7 @@ L["Alt+Click"] = true
 L["Shift+Click"] = true
 L["Control+Click"] = true
 L["Alt+Control+Click"] = true
-------
 
--- controls
 L["Controls"] = true
 L["Next"] = true
 L["Plays the next song."] = true
@@ -123,7 +177,6 @@ L["Stop playing."] = true
 L["Playlist"] = true
 L["Show the Music."] = true
 
---options
 L["Spam Link"] = true
 L["Add a youtube link to chat spam."] = true
 
@@ -187,7 +240,6 @@ L["Favorites List"] = true
 L["Gui Size"] = true
 L["Adjust the size of the gui"] = true
 
---info messages
 L["Playlist not found."] = true
 L["Read the install file in the addon directory"] = true
 L["Gui not found"] = true
@@ -200,24 +252,22 @@ L[" to List: "] = true
 L["Not playing."] = true
 
 L["Song is already in that list."] = true
--- removed song xxx from list xxx
 L["Removed song"] = true
 L["from list"] = true
--- Playlist xxx  already exists.
+
 L["already exists."] = true
 L["Added playlist"] = true
--- Playlist xxx  removed.
+
 L["removed."] = true
--- Playlist xxx  not found
+
 L["not found."] = true
 
--- changed in 1.4
 L["Please set a bad songs list."] = true
 L["Please set a favorites list."] = true
 
 L["After current, song will be moved to list"] = true
 
---playlist
+
 L["Search..."] = true
 L["No Match"] = true
 L[" - Title"] = true
@@ -225,7 +275,7 @@ L["Artist"] = true
 L["Playlists"] = true
 L["Close"] = true
 L["Clear"] = true
---gui
+
 L["Gui"] = true
 L["List: "] = true
 L["Length: "] = true

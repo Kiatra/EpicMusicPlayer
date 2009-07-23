@@ -201,7 +201,7 @@ local modelmap = {guard=6,orc=5,bloodelf=2,undead=4,troll=3,tauren=1,murloccostu
 local modelmax = table.getn(model)
 
 EpicMusicDancer = LibStub("AceAddon-3.0"):NewAddon("EpicMusicDancer", "AceEvent-3.0", "AceTimer-3.0")
-local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicDancer")
+local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 
 local options={
 			name=L["MusicDancer"],
