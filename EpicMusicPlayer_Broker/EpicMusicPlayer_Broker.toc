@@ -1,0 +1,17 @@
+## Interface: 30100
+## Title: EpicMusicPlayer [|cffeda55fBroker|r]
+## Version: 0.3
+## Notes: EpicMusicPlayer LDB Plugin.
+## Author: yess
+## X-Category: Audio
+## X-eMail: yess@fantasymail.de
+## Dependencies: EpicMusicPlayer
+## SavedVariables: EpicMusicPlayerBrokerDB
+
+localization\enUS.lua
+localization\deDE.lua
+localisation\zhCN.lua
+localisation\zhTW.lua
+
+LibDataBroker-1.1.lua
+empbroker.lua

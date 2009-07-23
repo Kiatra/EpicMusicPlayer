@@ -1,0 +1,29 @@
+## Interface: 30100
+
+## Title: EpicMusicPlayer [|cffeda55fDancer|r]
+## Notes: A little model that will dance/play to your music.
+## Author: yess
+## SavedVariables: EpicMusicDancerDB
+## Dependencies: EpicMusicPlayer
+
+## Version: 0.9
+## X-Email: yessica@fantasymail.de
+## X-Category: Audio
+
+# Libraries
+embeds.xml
+
+localisation\enUS.lua
+localisation\deDE.lua
+localisation\zhCN.lua
+localisation\zhTW.lua
+
+EpicMusicDancer.lua
+
+
+
+
+
+
+
+
