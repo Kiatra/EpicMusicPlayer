@@ -1,0 +1,42 @@
+## Interface: 30200
+
+## Title: EpicMusicPlayer
+## Notes: Mp3Player
+## Author: yess
+## SavedVariables: EpicMusicPlayer_PlayList, EpicMusicPlayerDB
+## OptionalDeps: Ace3
+## X-Embeds: Ace3
+
+## Version: 2.0
+## X-Email: yessica@fantasymail.de
+## X-Category: Audio
+
+# Libraries
+embeds.xml
+libs\LibQTip-1.0\LibQTip-1.0.lua
+libs\LibQTipClick-1.0\LibQTipClick-1.0.lua
+
+localization\enUS.lua
+localization\deDE.lua
+localisation\zhCN.lua
+localisation\zhTW.lua
+localisation\ruRU.lua
+
+core.lua
+scrolllist.lua
+playlistframe.lua
+options.lua
+tooltip.lua
+dropdown.lua
+send.lua
+listmanagement.lua
+
+empbroker.lua
+gui\gui.lua
+gui\skins.lua
+
+
+
+
+
+
