@@ -1,5 +1,4 @@
-## Interface: 30200
-
+## Interface: 30100
 ## Title: EpicMusicPlayer
 ## Notes: Mp3Player
 ## Author: yess
@@ -7,15 +6,12 @@
 ## OptionalDeps: Ace3
 ## X-Embeds: Ace3
 
-## Version: 2.0
+## Version: 2.0.1
 ## X-Email: yessica@fantasymail.de
 ## X-Category: Audio
 
 # Libraries
 embeds.xml
-libs\LibQTip-1.0\LibQTip-1.0.lua
-libs\LibQTipClick-1.0\LibQTipClick-1.0.lua
-
 localization\enUS.lua
 localization\deDE.lua
 localisation\zhCN.lua

@@ -28,6 +28,9 @@ externals:
 	EpicMusicPlayer/libs/AceEvent-3.0:
 		url: svn://svn.wowace.com/wow/ace3/mainline/trunk/AceEvent-3.0
 		tag: latest
+	EpicMusicPlayer/libs/AceComm-3.0:
+		url: svn://svn.wowace.com/wow/ace3/mainline/trunk/AceComm-3.0
+		tag: latest
 	EpicMusicPlayer/libs/AceLocale-3.0:
 		url: svn://svn.wowace.com/wow/ace3/mainline/trunk/AceLocale-3.0
 		tag: latest
@@ -40,3 +43,10 @@ externals:
 	EpicMusicPlayer/libs/AceGUI-3.0-SharedMediaWidgets:
 		url: svn://svn.wowace.com/wow/ace-gui-3-0-shared-media-widgets/mainline/trunk/AceGUI-3.0-SharedMediaWidgets
 		tag: latest
+		
+move-folders:
+    EpicMusicPlayer/EpicMusicPlayer: EpicMusicPlayer
+    EpicMusicPlayer/EpicMusicPlayer_Broker: EpicMusicPlayer_Broker
+    EpicMusicPlayer/EpicMusicPlayer_Dancer: EpicMusicPlayer_Dancer
+    EpicMusicPlayer/EpicMusicPlayer_GameMusic: EpicMusicPlayer_GameMusic
+	
