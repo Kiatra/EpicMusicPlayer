@@ -67,6 +67,19 @@ L["Ctrl click - Write artist and title to default chat. (guild,party etc.)"] = t
 L["GUI Layout"] = true
 L["Help - FAQ"] = true
 L["Frequently Asked Questions"] = true
+
+L["Best list not found."] = true
+L["Bad list not found."] = true
+L["Current will be moved on playing next song."] = true
+L["Moved song X from list Y to list Z."] = function(x,y,z) return 'Moved song '..x..' from list '..y..' to list '..z.."."; end
+L["Playing song from history."] = true
+
+L["Font"] = true
+L["Font & Colours"] = true
+L["Music off"] = true
+L["Game Music"] = true
+L["Scroll Gui Text"] = true
+
 L["FAQ-Text"] = [[
 
 |cffffd200Why does the music sometimes stop in fight?|r
