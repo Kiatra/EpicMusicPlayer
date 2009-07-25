@@ -247,7 +247,7 @@ end
 function EpicMusicPlayer:GetRandomSong(listIndex)
 	--todo random over multipe playlist
 	songIndex = math.random(2, #playlists[listIndex])
-	return EpicMusicPlayer:GetSong(list, songIndex)
+	return EpicMusicPlayer:GetSong(listIndex, songIndex)
 end
 
 -- return the index of the list with the given name or nil if not found
