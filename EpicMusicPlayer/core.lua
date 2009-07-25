@@ -54,6 +54,7 @@ function EpicMusicPlayer:OnInitialize()
 			--first song = 2 (song 1 is playlist name)
 			song = 2,
 			list = 1,
+			skin = "default2",
 			looplist = false,
 			loopsong = false,
 			disablewowmusic = false,
