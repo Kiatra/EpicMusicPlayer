@@ -330,7 +330,7 @@ end
 
 function EpicMusicPlayer:TogglePlayListGui()
 	if not frame then 
-		db = EpicMusicPlayer.db.profile 
+		db = EpicMusicPlayer.db.profile
 		CreatePlaylistGui(db.playlistWidth,db.playlistHeight)
 	else
 		if frame:IsShown() then

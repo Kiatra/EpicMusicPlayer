@@ -9,21 +9,25 @@ playedhistory = {}
 playedhistory[1]= {ListName = "Playedhistory"}
 local historymax = 25
 local historypointer = 1
+local db
 
 -- check playlist - is there a playlist, with content ?
 function EpicMusicPlayer:CheckPlayList()
+	db = EpicMusicPlayer.db.profile
 	playlists = {}
+	local ok = true
 	-- put the list that will be saved and lists that will not be saved in one list
-	for i, list in ipairs(EpicMusicPlayer_PlayList) do
-		playlists[i] = list
-	end
-  
-	local ok = true;	
-	if (not playlists) then
+	if EpicMusicPlayer_PlayList then
+		for i, list in ipairs(EpicMusicPlayer_PlayList) do
+			playlists[i] = list
+		end
 		ok = false;
-	elseif (table.getn(playlists) < 1) then
+	end
+	
+	if (table.getn(playlists) < 1) then
 		ok = false;
 	end	
+	
 	if (ok == false) then
 		self:Print(L["Playlist not found."])
 		-- no playlist found, create dummy playlist

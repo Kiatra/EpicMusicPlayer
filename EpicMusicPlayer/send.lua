@@ -6,7 +6,7 @@ function EpicMusicPlayer:ReciveMessage(prefix, message, distribution, sender)
 	local a, b, title, artist, album, length, path = strfind(message, "(.+):(.+):(.+):(.+):(.+)");
 	
 	DEFAULT_CHAT_FRAME:AddMessage("|TInterface\\AddOns\\EpicMusicPlayer\\icon.tga:18|t |c"
-		..self:ToHex(db.artistcolour).."\124Hepicmusicplayer:"..message.."\124h["..title.."]\124h\124r|r")
+		..self:ToHex(EpicMusicPlayer.db.profile.artistcolour).."\124Hepicmusicplayer:"..message.."\124h["..title.."]\124h\124r|r")
 end
 
 function EpicMusicPlayer:SendSearch(message, player)

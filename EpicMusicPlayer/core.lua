@@ -654,7 +654,7 @@ function EpicMusicPlayer:GetFont()
 end
 
 function EpicMusicPlayer:ToHex(r,g,b)
-	if type(r) == "table" then
+	if r and type(r) == "table" then
 		r,g,b = r.r, r.g, r.b
 	end
 	return ("%02x%02x%02x%02x"):format(1*255,r*255, g*255, b*255)	
