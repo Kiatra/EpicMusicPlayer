@@ -4,7 +4,7 @@ local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 -- ace options table
 -------------------------------------------------------------------------------
 --local db
-local version = GetAddOnMetadata("ChocolateBar","X-Curse-Packaged-Version") or ""
+local version = GetAddOnMetadata("EpicMusicPlayer","Version") or ""
 local empoptions = { 
     name = "EMP "..version,
     handler = EpicMusicPlayer,

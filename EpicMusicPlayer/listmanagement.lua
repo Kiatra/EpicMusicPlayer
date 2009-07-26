@@ -21,6 +21,7 @@ function EpicMusicPlayer:CheckPlayList()
 		for i, list in ipairs(EpicMusicPlayer_PlayList) do
 			playlists[i] = list
 		end
+	else
 		ok = false;
 	end
 	
