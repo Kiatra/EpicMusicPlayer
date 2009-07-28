@@ -4,6 +4,8 @@ local L = AceLocale:NewLocale("EpicMusicPlayer", "enUS", true)
 if not L then return end
 
 
+L["Playlist Scale"] = true
+L["Adjust the scale of the playlist"] = true
 
 L["Frame strata"] = true
 L["MusicDancer"] = true 
@@ -313,18 +315,17 @@ L["Stopped"] = true
 
 
 L["Right click and drag to move this button"] = true
-		  
--- key binding variables
-BINDING_HEADER_EPICMUSICPLAYER = "EpicMusicPlayer";
-BINDING_NAME_PLAYSTOP = "Play/Stop";
-BINDING_NAME_NEXT = "Play Next Song";
-BINDING_NAME_LAST = "Play Last Song";
-BINDING_NAME_TOGGLELIST = "Show/Hide Playlist";
-BINDING_NAME_MUTE = "Toggle Mute";
-BINDING_NAME_REMOVESONG = "Remove Song";
-BINDING_NAME_GUI = "Show Controls and Options";
-BINDING_NAME_BADLIST = "Move song to bad songs list.";
-BINDING_NAME_BESTLIST = "Move song to best songs list.";
+
+L["Play/Stop"] = true
+L["Play Next Song"] = true
+L["Play Last Song"] = true
+L["Show/Hide Playlist"] = true
+L["Toggle Mute"] = true
+L["Remove Song"] = true
+L["Show Controls and Options"] = true
+L["Move song to bad songs list."] = true
+L["Move song to best songs list."] = true
+
 
 
 

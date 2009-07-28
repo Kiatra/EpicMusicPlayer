@@ -200,15 +200,6 @@ local function CreateFooter(parent)
 	return footer
 end
 
-local function GetUIParentAnchor(frame)
-	local w, h, x, y = UIParent:GetWidth(), UIParent:GetHeight(), frame:GetCenter()
-	local hhalf, vhalf = (x > w/2) and "RIGHT" or "LEFT", (y > h/2) and "TOP" or "BOTTOM"
-	local dx = hhalf == "RIGHT" and math.floor(frame:GetRight() + 0.5) - w or math.floor(frame:GetLeft() + 0.5)
-	local dy = vhalf == "TOP" and math.floor(frame:GetTop() + 0.5) - h or math.floor(frame:GetBottom() + 0.5)
-
-	return vhalf..hhalf, dx, dy
-end
-
 local function CreatePlaylistGui(width, height)
 	aceevent:RegisterMessage("EMPUpdatePlay",UpdatePlayStop)
 	aceevent:RegisterMessage("EMPUpdateStop",UpdatePlayStop)
@@ -228,10 +219,11 @@ local function CreatePlaylistGui(width, height)
 		insets = { left = 4, right = 4, top = 4, bottom = 4 }});
 	frame:SetBackdropColor(0,0,0,1)
 	frame:SetBackdropBorderColor(0.5,0.5,0.5,0.5)
-	
-	frame:SetPoint(db.playlistPoint,UIParent,db.playlistOffx,db.playlistOffy )
+	frame:SetScale(db.playlistScale)
+	frame:SetPoint(db.playlistPoint,UIParent,db.playlistOffx,db.playlistOffy)
 	--frame:SetPoint("Center")
 	frame:EnableMouse(1)
+	
 	
 	frame:SetMovable(true)
 	frame:SetResizable(true)
@@ -247,8 +239,8 @@ local function CreatePlaylistGui(width, height)
 	)
 	frame:SetScript("OnDragStop", 
 	    function(self)
-			EpicMusicPlayer:Debug(GetUIParentAnchor(self))
-			db.playlistPoint,db.playlistOffx,db.playlistOffy = GetUIParentAnchor(self)
+			local relative, relativePoint
+			db.playlistPoint ,relative ,relativePoint,db.playlistOffx ,db.playlistOffy = self:GetPoint()
 			self:StopMovingOrSizing()
 			self.isMoving = false
 		end
@@ -341,3 +333,8 @@ function EpicMusicPlayer:TogglePlayListGui()
 	end
 end
 
+function EpicMusicPlayer:SetPlaylistScale(val)
+	if frame then
+		frame:SetScale(val)
+	end
+end

@@ -438,6 +438,22 @@ local empoptions = {
 					  EpicMusicPlayer.db.profile.loopsong = not EpicMusicPlayer.db.profile.loopsong
 					end,
 				},
+				scale = {
+		            type = 'range',
+					order = 4,
+					name = L["Playlist Scale"],
+		            desc = L["Adjust the scale of the playlist"],
+		            step = 0.1,
+					min = 0.1,
+					max = 2,
+					get = function() 
+						return EpicMusicPlayer.db.profile.playlistScale
+					end,
+		            set =  function(info,val) 
+						EpicMusicPlayer.db.profile.playlistScale = val
+						EpicMusicPlayer:SetPlaylistScale(val)
+					end,
+				},
 				addlist = {
 					type = 'input',
 					order = 5,

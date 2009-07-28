@@ -54,9 +54,9 @@ function EpicMusicPlayer:ShowTooltip(anchor)
 		GameTooltip:SetText(L["Stopped"], 1,1,1)
 		local controlset = db.controlset
 		local controlslist = EpicMusicPlayer.controlslist
-		GameTooltip:AddLine(L["Left Click"].." - "..controlslist[controlset.left])	
-		GameTooltip:AddLine(L["Middle Click"].." - "..controlslist[controlset.middle])
-		GameTooltip:AddLine(L["Right Click"].." - "..controlslist[controlset.right])
+		if controlslist[controlset.left] then GameTooltip:AddLine(L["Left Click"].." - "..controlslist[controlset.left]) end	
+		if controlslist[controlset.middle] then GameTooltip:AddLine(L["Middle Click"].." - "..controlslist[controlset.middle]) end
+		if controlslist[controlset.right] then GameTooltip:AddLine(L["Right Click"].." - "..controlslist[controlset.right]) end
 		GameTooltip:Show()
 	end
 	
