@@ -387,10 +387,25 @@ local empoptions = {
 		            get = "IsLink",
 		            set = "ToggleLink"
 				},
+				test = {
+		            type = 'execute',
+		            --width = "half",
+					order = 10,
+					name = L["Test"],
+		            desc = L["Plays a test song."],
+		            func = function(info, value)
+						EpicMusicPlayer:Stop()
+						SetCVar("Sound_EnableMusic", 1)
+						PlayMusic("Sound\\Music\\ZoneMusic\\DMF_L70ETC01.mp3") 
+						EpicMusicPlayer:Print("Playing Test Song, do you hear the song: \"Power Of The Horde\"?")
+						EpicMusicPlayer:Print("Music folder is set to: <wowfolder>\\"..EpicMusicPlayer.musicdir)
+		            end,
+				},
+				--@debug@
 				debug = {
 		            type = 'toggle',
 					--width = "half",
-					order = 9,
+					order = 11,
 		            name = "Debug",
 		            desc = "Debug",
 		            get = function(info, value)
@@ -400,6 +415,7 @@ local empoptions = {
 						EpicMusicPlayer.db.char.debug = value
 		            end,
 				},
+				--@end-debug@
 			}
 		},
 		list={

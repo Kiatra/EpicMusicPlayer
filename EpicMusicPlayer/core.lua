@@ -31,6 +31,15 @@ EpicMusicPlayer.controlslist = {
 EpicMusicPlayer.version = GetAddOnMetadata("EpicMusicPlayer","Version")
 EpicMusicPlayer.tocversion = select(4, GetBuildInfo());
 
+local function CheckFolder(folder)
+	if not folder or folder == "" then return false end
+	local frame = CreateFrame("Button", "EMPCheckFolder")
+	frame.text = frame:CreateFontString(nil, nil, "GameFontHighlight")
+	local vaild = frame.text:SetFont(folder.."verifyfolder.ttf",16) --will onl be set when path is vald 
+	EpicMusicPlayer:Debug("valid =",vaild)
+	return true
+end
+
 ------------------------------------------------------------------------------
 -- ace load functions 
 -------------------------------------------------------------------------------
@@ -71,14 +80,15 @@ function EpicMusicPlayer:OnInitialize()
 			badlist = nil,
 			guiscale = 1,
 			controlset = {
-				left="OnNextClick",
-				right="OpenMenu",
-				middle="TogglePlay",
-				button4="TogglePlayListGui",
+				LeftButton="OnNextClick",
+				RightButton="OpenMenu",
+				MiddleButton="TogglePlay",
+				Button4="TogglePlayListGui",
+				Button5="TogglePlayListGui",
 				leftaltcontrol = "RemoveCurrendSong",
 				leftalt = "TogglePlay",
 				leftcontrol = "SpamDefault",
-				leftshift =  "PlayLast",
+				leftshift = "PlayLast",
 			},
 			artistcolour = {r=0.6,g=0.2,b=0.8,a=0.8},
 			titlecolour = {r=1,g=1,b=1,a=1},
@@ -105,6 +115,7 @@ function EpicMusicPlayer:OnInitialize()
     self:RegisterChatCommand("epicmusicplayer", "ChatCommand")
 	
 	musicdir = self:CheckPlayList()
+	--CheckFolder(musicdir)
 	self:UpdateListnames()
 	
 	if media then
@@ -170,9 +181,9 @@ function EpicMusicPlayer:OnEnteringWorld(event)
 		
 		eventtimer = EpicMusicPlayer:ScheduleTimer(function() 
 			if(EpicMusicPlayer.Playing)then
-				EpicMusicPlayer:Play()
+				EpicMusicPlayer:Play(currentsong)
 			end
-		end, 2, arg)
+		end, 5, arg)
 	end
 end
 
@@ -209,7 +220,7 @@ function EpicMusicPlayer:Play(song)
 	
 	--EpicMusicPlayer:Debug("playing list=", db.list, "song=",db.song,"song.Song", song.Song)
 	self:CancelTimer(timer,true)
-	SetCVar("Sound_EnableMusic", 1);	
+	SetCVar("Sound_EnableMusic", 1)
 	
 	self.sec = 0
 	self.Playing = true;
@@ -565,8 +576,11 @@ function EpicMusicPlayer:ShowConfig()
 end
 
 function EpicMusicPlayer:OnDisplayClick(parent)
+	--local controlset = db.controlset
+	
+	--[[
 	if(arg1 == "MiddleButton")then
-			self[db.controlset.middle](self, parent)
+	
 	elseif(arg1 == "RightButton")then
 		self[db.controlset.right](self, parent)
 	elseif(arg1 == "Button4")then
@@ -574,6 +588,7 @@ function EpicMusicPlayer:OnDisplayClick(parent)
 	elseif(arg1 == "Button5")then
 		self[db.controlset.button5](self, parent)
 	else
+	--]]
 		if(IsAltKeyDown())then
 			if(IsControlKeyDown())then
 				self[db.controlset.leftaltcontrol](self, parent)
@@ -585,9 +600,12 @@ function EpicMusicPlayer:OnDisplayClick(parent)
 		elseif(IsControlKeyDown()) then
 			self[db.controlset.leftcontrol](self, parent)
 		else --no key pressed
-			self[db.controlset.left](self, parent)
+			
+			local func = db.controlset[arg1]
+			EpicMusicPlayer:Debug(arg1, func)
+			self[func](self, parent)
 		end
-	end
+	--end
 end
 
 function EpicMusicPlayer:DisplyScrollHandler()

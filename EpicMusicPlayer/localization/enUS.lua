@@ -4,6 +4,9 @@ local L = AceLocale:NewLocale("EpicMusicPlayer", "enUS", true)
 if not L then return end
 
 
+L["Test"] = true
+L["Plays a test song."] = true
+
 L["Playlist Scale"] = true
 L["Adjust the scale of the playlist"] = true
 

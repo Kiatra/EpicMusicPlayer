@@ -53,14 +53,16 @@ function EpicMusicPlayer:CheckPlayList()
 		}
 	end
 	
-	if(playlists[1][1].MusicDir)then
-		musicdir = playlists[1][1].MusicDir
+	local list = EpicMusicPlayer_PlayList[1]
+	if list and list[1] and list[1].MusicDir then
+		musicdir = list[1].MusicDir
 	else
 		musicdir = "MyMusic\\"
 		self:Print("Musicdir not set. Setting to: <wowdir>\\MyMusic\\")
 	end
 	EpicMusicPlayer.playlists = playlists
 	EpicMusicPlayer:UpdateListnames()
+	EpicMusicPlayer.musicdir = musicdir
 	return musicdir;
 end
 
