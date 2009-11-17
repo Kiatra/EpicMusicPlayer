@@ -16,11 +16,13 @@ function EpicMusicPlayer:CheckPlayList()
 	db = EpicMusicPlayer.db.profile
 	playlists = {}
 	local ok = true
+	local firstlist
 	-- put the list that will be saved and lists that will not be saved in one list
 	if EpicMusicPlayer_PlayList then
 		for i, list in ipairs(EpicMusicPlayer_PlayList) do
 			playlists[i] = list
 		end
+		firstlist = EpicMusicPlayer_PlayList[1]
 	else
 		ok = false;
 	end
@@ -53,13 +55,13 @@ function EpicMusicPlayer:CheckPlayList()
 		}
 	end
 	
-	local list = EpicMusicPlayer_PlayList[1]
-	if list and list[1] and list[1].MusicDir then
-		musicdir = list[1].MusicDir
+	if firstlist and firstlist[1] and firstlist[1].MusicDir then
+		musicdir = firstlist[1].MusicDir
 	else
 		musicdir = "MyMusic\\"
 		self:Print("Musicdir not set. Setting to: <wowdir>\\MyMusic\\")
 	end
+	
 	EpicMusicPlayer.playlists = playlists
 	EpicMusicPlayer:UpdateListnames()
 	EpicMusicPlayer.musicdir = musicdir

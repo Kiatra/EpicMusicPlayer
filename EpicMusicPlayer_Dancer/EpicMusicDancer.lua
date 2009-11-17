@@ -191,14 +191,10 @@ local model = {
 	},
 }
 
-
-	
 local modelid = 1
 local animdata = model[modelid].animdata
-
 local modelmap = {guard=6,orc=5,bloodelf=2,undead=4,troll=3,tauren=1,murloccostume=7}
-
-local modelmax = table.getn(model)
+local modelmax = #model
 
 EpicMusicDancer = LibStub("AceAddon-3.0"):NewAddon("EpicMusicDancer", "AceEvent-3.0", "AceTimer-3.0")
 local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
@@ -454,7 +450,7 @@ function EpicMusicDancer:OnInitialize()
 			end
 		end
 	)
-	
+	EpicMusicDancer:SetScale(self.db.char.scale)
 end
 
 function EpicMusicDancer:EMPGuiLoaded(event)
@@ -765,6 +761,15 @@ function EpicMusicDancer:CreateDancerFrame(parent)
 	
 	self.frame:SetHitRectInsets(10, 10, 25, 0); 
 	
+	self.frame:SetScript("OnMouseUp", 
+		function()
+			EpicMusicPlayer:OnDisplayClick(this)
+			if(tooltip) then
+				EpicMusicPlayerGui:ShowTooltip(tooltip)
+			end
+		end
+	)
+	
 	if(self.db.char.mouse)then
 		self.frame:EnableMouse(true)
 		self.frame:EnableMouseWheel(true)
@@ -802,30 +807,27 @@ function EpicMusicDancer:CreateDancerFrame(parent)
 		self.pedestal:Hide()
 	end
 
-	
-	EpicMusicDancer.Model = CreateFrame("PlayerModel",nil,EMPDancerFrame)
-	EpicMusicDancer.Model:SetWidth(100) 
-	EpicMusicDancer.Model:SetHeight(100)
-	EpicMusicDancer.Model:ClearAllPoints() 
+	local model = CreateFrame("PlayerModel",nil,EMPDancerFrame)
+	model:SetWidth(100) 
+	model:SetHeight(100)
+	model:ClearAllPoints() 
 	--EpicMusicDancer.Model:SetPoint("CENTER")
-	EpicMusicDancer.Model:SetAllPoints(EpicMusicDancer.frame);	
-	EpicMusicDancer.Model:Show()
-	--EpicMusicDancer.Model:EnableMouseWheel(true)
+	model:SetAllPoints(EpicMusicDancer.frame);	
+	model:Show()
+	model:SetCamera(1);
+	EpicMusicDancer.Model = model
 	
-	EpicMusicDancer.Model:SetCamera(1);
-	
-	EpicMusicDancer.Model2 = CreateFrame("PlayerModel",nil,EMPDancerFrame)
-	EpicMusicDancer.Model2:SetWidth(100) 
-	EpicMusicDancer.Model2:SetHeight(100) 
-	EpicMusicDancer.Model2:ClearAllPoints() 
-	EpicMusicDancer.Model2:SetAllPoints(EpicMusicDancer.frame);
+	local model2 = CreateFrame("PlayerModel",nil,EMPDancerFrame)
+	model2:SetWidth(100) 
+	model2:SetHeight(100) 
+	model2:ClearAllPoints() 
+	model2:SetAllPoints(EpicMusicDancer.frame);
 	--EpicMusicDancer.Model2:SetPoint("CENTER")
-	
-	--EpicMusicDancer.frame:EnableMouse(true)
-	--EpicMusicDancer.frame:EnableMouseWheel(true)
+	EpicMusicDancer.Model2 = model2
 	
 	EpicMusicDancer.frame:SetScript("OnMouseWheel", 
 		function()
+				--[[
 				if EpicMusicPlayer.db.char.debug then
 					if arg1 < 1 then
 						seqence = seqence +1
@@ -834,13 +836,12 @@ function EpicMusicDancer:CreateDancerFrame(parent)
 					end
 					DEFAULT_CHAT_FRAME:AddMessage(seqence)
 				else
+				--]]
 					EpicMusicPlayer:DisplyScrollHandler()
-				end
+				--end
 		end
     )
-	--EpicMusicDancer.frame:SetMovable(true) 
-	--EpicMusicDancer.frame:RegisterForDrag("LeftButton");
-	
+
 	self.frame:SetScript("OnDragStart", 
 	    function()
 			this:StartMoving()
@@ -872,12 +873,8 @@ function EpicMusicDancer:CreateDancerFrame(parent)
 		end
 	)
 	
-	------------------------------------------------------------
-	-- this is the timer function
-	-- called every frame oO
-	------------------------------------------------------------
-	EpicMusicDancer.Model:SetScript("OnUpdate", OnUpdate)
-	EpicMusicDancer.Model2:SetScript("OnUpdate", OnUpdate)
+	model:SetScript("OnUpdate", OnUpdate)
+	model2:SetScript("OnUpdate", OnUpdate)
 
 end
 

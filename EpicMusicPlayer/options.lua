@@ -161,10 +161,10 @@ local empoptions = {
 							name = L["Left Click"],
 							desc = L["Left Click"],
 							get = function() 
-								return EpicMusicPlayer.db.profile.controlset.left
+								return EpicMusicPlayer.db.profile.controlset.LeftButton
 							end,
 							set = function(info, value)
-								EpicMusicPlayer.db.profile.controlset.left = value
+								EpicMusicPlayer.db.profile.controlset.LeftButton = value
 							end,
 						},
 						right = {
@@ -174,10 +174,10 @@ local empoptions = {
 							name = L["Right Click"],
 							desc = L["Right Click"],
 							get = function() 
-								return EpicMusicPlayer.db.profile.controlset.right
+								return EpicMusicPlayer.db.profile.controlset.RightButton
 							end,
 							set = function(info, value)
-								EpicMusicPlayer.db.profile.controlset.right = value
+								EpicMusicPlayer.db.profile.controlset.RightButton = value
 							end,
 						},
 						middle = {
@@ -187,10 +187,10 @@ local empoptions = {
 							name = L["Middle Click"],
 							desc = L["Middle Click"],
 							get = function() 
-								return EpicMusicPlayer.db.profile.controlset.middle
+								return EpicMusicPlayer.db.profile.controlset.MiddleButton
 							end,
 							set = function(info, value)
-								EpicMusicPlayer.db.profile.controlset.middle = value
+								EpicMusicPlayer.db.profile.controlset.MiddleButton = value
 							end,
 						},
 						button4 = {
@@ -200,10 +200,10 @@ local empoptions = {
 							name = L["Button4"],
 							desc = L["Button4"],
 							get = function() 
-								return EpicMusicPlayer.db.profile.controlset.button4
+								return EpicMusicPlayer.db.profile.controlset.Button4
 							end,
 							set = function(info, value)
-								EpicMusicPlayer.db.profile.controlset.button4 = value
+								EpicMusicPlayer.db.profile.controlset.Button4 = value
 							end,
 						},
 						button5 = {
@@ -213,10 +213,10 @@ local empoptions = {
 							name = L["Button5"],
 							desc = L["Button5"],
 							get = function() 
-								return EpicMusicPlayer.db.profile.controlset.button5
+								return EpicMusicPlayer.db.profile.controlset.Button5
 							end,
 							set = function(info, value)
-								EpicMusicPlayer.db.profile.controlset.button5 = value
+								EpicMusicPlayer.db.profile.controlset.Button5 = value
 							end,
 						},
 						leftalt = {
