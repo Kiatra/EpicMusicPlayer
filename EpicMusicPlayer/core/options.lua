@@ -147,6 +147,26 @@ local empoptions = {
 								EpicMusicPlayer:UpdateMessageFrame()
 							end,
 						},
+						playlistfont = {
+							type = 'select',
+							dialogControl = 'LSM30_Font', --Select your widget here
+							values = EpicMusicPlayer.GetFonts,
+							order = 1,
+							name = L["Playlist font"],
+							desc = L["Change the playlist font. Requires relog to take effect."],
+							get = function() 
+								return EpicMusicPlayer.db.profile.playlistfont
+							end,
+							set = function(info, value)
+								EpicMusicPlayer:Debug(EpicMusicPlayer.media:Fetch("font",value))
+								EpicMusicPlayer.db.profile.playlistfont = value
+								--update gui
+								--if(EpicMusicPlayerGui)then
+								--	EpicMusicPlayerGui:UpdateFrame(EpicMusicPlayer)
+								--end
+								--EpicMusicPlayer:UpdateMessageFrame()
+							end,
+						},
 					},
 				},
 				controls={
@@ -514,7 +534,7 @@ local empoptions = {
 					order = 1,
 					type = "description",
 					name = L["FAQ-Text"],
-					--image = "Interface\\AddOns\\EpicMusicPlayer\\icon.tga",
+					--image = "Interface\\AddOns\\EpicMusicPlayer\\media\\icon.tga",
 				},
 				--[[
 				FAQ1 = {

@@ -155,11 +155,14 @@ local function CreateHeader(parent)
 	x:SetPoint("TOPRIGHT",header,7,6)
 	
 	title = header:CreateFontString()
-	title:SetFont(GameFontNormal:GetFont())
+	--db.playlistfont^GameFontNormal:GetFont()
+	EpicMusicPlayer:Debug("db.playlistfont",db.playlistfont,GameFontNormal:GetFont())
+	title:SetFont(EpicMusicPlayer:GetFont(db.playlistfont), 12)
 	title:SetPoint("TOPLEFT", listbutton,"TOPRIGHT", 5,1)
 	title:SetPoint("BOTTOMRIGHT", header, -25,0)
 	title:SetShadowColor(0, 0, 0,0.8)
 	title:SetShadowOffset(1, -1) 
+	parent.title = title
 	local song = EpicMusicPlayer:GetCurrentSong()
 	if song then 
 		UpdatePlayStop(event, song.Artist, EpicMusicPlayer:GetCurrentSongName(),0)
@@ -184,7 +187,7 @@ local function CreateFooter(parent)
 		--parent:Hide() 
 		self:ClearFocus()
 	end)
-	editbox:SetFont(EpicMusicPlayer:GetFont(),12)
+	editbox:SetFont(parent.font, 12)
 	editbox:SetText(L["Search..."])
 	
 	--OnTextChanged OnEnterPressed
@@ -212,7 +215,7 @@ local function CreatePlaylistGui(width, height)
 	
 	frame:SetWidth(width)
 	frame:SetHeight(height)
-	
+	frame.font = EpicMusicPlayer:GetFont(db.playlistfont)
 	frame:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background", 
 		edgeFile = "Interface/Tooltips/UI-Tooltip-Border", 
 		tile = true, tileSize = 16, edgeSize = 16, 
@@ -293,13 +296,13 @@ local function CreatePlaylistGui(width, height)
 				end
 			end,
 		OnSongClick,nil, 
-		OnSongLeave)
+		OnSongLeave, frame.font)
 	songlist:SetPoint("TOPLEFT", frame ,110, -25)
 	songlist:SetPoint("BOTTOMRIGHT", frame ,-5, 27)
 	
 	listslist = EpicMusicPlayer:CreateListWidget("EpicMusicPlayer_Playlists",frame,#EpicMusicPlayer.playlists,nil,
 		function(row, colum) return EpicMusicPlayer:GetListName(row) end,
-		OnListClick)
+		OnListClick, nil, nil, frame.font)
 		
 	listslist:SetPoint("TOPLEFT", frame ,5, -25)
 	listslist:SetPoint("BOTTOMRIGHT", songlist, "BOTTOMLEFT" ,3, 0)

@@ -3281,6 +3281,657 @@ local GameMusic = {
 		["Length"] = 102,
 		["Artist"] = "IcecrownGlacier (Derek Duke)",
 	}, -- [469]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Bronze Jam",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_BronzeJam.mp3",
+      ["Length"] = 116,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [2]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Crimson Hall 1",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_CrimsonHall1.mp3",
+      ["Length"] = 121,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [3]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Crimson Hall 2",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_CrimsonHall2.mp3",
+      ["Length"] = 73,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [4]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Crimson Hall 3",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_CrimsonHall3.mp3",
+      ["Length"] = 61,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [5]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Crimson Hall 4",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_CrimsonHall4.mp3",
+      ["Length"] = 130,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [6]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Forge of Souls 1",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_ForgeofSouls1.mp3",
+      ["Length"] = 103,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [7]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Forge of Souls 2",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_ForgeofSouls2.mp3",
+      ["Length"] = 87,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [8]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Forge of Souls 3",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_ForgeofSouls3.mp3",
+      ["Length"] = 97,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [9]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Forge of Souls 4",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_ForgeofSouls4.mp3",
+      ["Length"] = 99,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [10]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Frostmourne 1",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_Frostmourne1.mp3",
+      ["Length"] = 103,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [11]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Frostmourne 2",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_Frostmourne2.mp3",
+      ["Length"] = 103,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [12]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Frostmourne 3",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_Frostmourne3.mp3",
+      ["Length"] = 103,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [13]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Gunships",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_Gunships.mp3",
+      ["Length"] = 73,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [14]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "GunStrings",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_GunStrings.mp3",
+      ["Length"] = 61,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [15]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Halls of Chase",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_HallsofChase.mp3",
+      ["Length"] = 106,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [16]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Halls of Reflection",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_HallsofReflection.mp3",
+      ["Length"] = 157,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [17]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Ice Fortress",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_IceFortress.mp3",
+      ["Length"] = 133,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [18]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Ice Fortress 1",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_IceFortress1.mp3",
+      ["Length"] = 153,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [19]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Ice Fortress 2",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_IceFortress2.mp3",
+      ["Length"] = 105,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [20]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Ice Fortress 3",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_IceFortress3.mp3",
+      ["Length"] = 80,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [21]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Ice Fortress 4",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_IceFortress4.mp3",
+      ["Length"] = 106,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [22]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Lady or the Lich",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_LadyortheLich.mp3",
+      ["Length"] = 75,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [23]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Let Him Pass",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_LetHimPass.mp3",
+      ["Length"] = 92,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [24]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Light's Hammer 1",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_LightsHammer1.mp3",
+      ["Length"] = 108,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [25]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Light's Hammer 2",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_LightsHammer2.mp3",
+      ["Length"] = 40,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [26]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Light's Hammer 3",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_LightsHammer3.mp3",
+      ["Length"] = 83,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [27]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Light's Hammer 4",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_LightsHammer4.mp3",
+      ["Length"] = 102,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [28]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Light's Hammer 5",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_LightsHammer5.mp3",
+      ["Length"] = 58,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [29]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Light's Hammer 6",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_LightsHammer6.mp3",
+      ["Length"] = 108,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [30]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Reflected Halls 1",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_ReflectedHalls1.mp3",
+      ["Length"] = 60,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [31]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Reflected Halls 2",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_ReflectedHalls2.mp3",
+      ["Length"] = 75,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [32]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Reflected Halls 3",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_ReflectedHalls3.mp3",
+      ["Length"] = 67,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [33]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Reflected Halls 4",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_ReflectedHalls4.mp3",
+      ["Length"] = 129,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [34]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Reflected Halls 5",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_ReflectedHalls5.mp3",
+      ["Length"] = 59,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [35]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_RunK_01",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_RunK_01.mp3",
+      ["Length"] = 27,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [36]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_RunK_02",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_RunK_02.mp3",
+      ["Length"] = 27,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [37]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_RunK_03",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_RunK_03.mp3",
+      ["Length"] = 27,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [38]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_RunL_01",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_RunL_01.mp3",
+      ["Length"] = 23,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [39]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_RunL_02",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_RunL_02.mp3",
+      ["Length"] = 42,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [40]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Sindragosa",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_Sindragosa.mp3",
+      ["Length"] = 68,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [41]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "SindraStrings",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_SindraStrings.mp3",
+      ["Length"] = 66,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [42]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_StingH_01",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_StingH_01.mp3",
+      ["Length"] = 27,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [43]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_StingH_02",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_StingH_02.mp3",
+      ["Length"] = 16,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [44]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_StingH_03",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_StingH_03.mp3",
+      ["Length"] = 25,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [45]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_StingH_04",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_StingH_04.mp3",
+      ["Length"] = 26,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [46]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_StingH_05",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_StingH_05.mp3",
+      ["Length"] = 27,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [47]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_StingH_06",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_StingH_06.mp3",
+      ["Length"] = 27,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [48]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Summit 1",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_Summit1.mp3",
+      ["Length"] = 103,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [49]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Summit 2",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_Summit2.mp3",
+      ["Length"] = 103,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [50]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Summit 3",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_Summit3.mp3",
+      ["Length"] = 103,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [51]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Summit 4",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_Summit4.mp3",
+      ["Length"] = 103,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [52]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Summit 5",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_Summit5.mp3",
+      ["Length"] = 103,
+      ["Artist"] =  "IcecrownRaid (Russell Brower)",
+    }, -- [53]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkA_01",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkA_01.mp3",
+      ["Length"] = 98,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [54]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkA_02",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkA_02.mp3",
+      ["Length"] = 97,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [55]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkA_03",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkA_03.mp3",
+      ["Length"] = 91,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [56]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkA_04",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkA_04.mp3",
+      ["Length"] = 98,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [57]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkA_05",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkA_05.mp3",
+      ["Length"] = 100,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [58]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkA_06",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkA_06.mp3",
+      ["Length"] = 52,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [59]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkB_01",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkB_01.mp3",
+      ["Length"] = 52,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [60]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkD_01",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkD_01.mp3",
+      ["Length"] = 43,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [61]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkD_02",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkD_02.mp3",
+      ["Length"] = 42,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [62]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkD_03",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkD_03.mp3",
+      ["Length"] = 42,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [63]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkD_04",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkD_04.mp3",
+      ["Length"] = 43,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [64]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkD_05",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkD_05.mp3",
+      ["Length"] = 43,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [65]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkD_06",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkD_06.mp3",
+      ["Length"] = 43,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [66]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkE_01",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkE_01.mp3",
+      ["Length"] = 29,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [67]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkE_02",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkE_02.mp3",
+      ["Length"] = 29,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [68]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkE_03",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkE_03.mp3",
+      ["Length"] = 28,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [69]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkE_04",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkE_04.mp3",
+      ["Length"] = 29,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [70]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkE_05",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkE_05.mp3",
+      ["Length"] = 28,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [71]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkF_01",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkF_01.mp3",
+      ["Length"] = 49,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [72]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkF_02",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkF_02.mp3",
+      ["Length"] = 47,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [73]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkF_03",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkF_03.mp3",
+      ["Length"] = 43,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [74]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkF_04",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkF_04.mp3",
+      ["Length"] = 48,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [75]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkF_05",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkF_05.mp3",
+      ["Length"] = 43,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [76]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkF_06",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkF_06.mp3",
+      ["Length"] = 43,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [77]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkF_07",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkF_07.mp3",
+      ["Length"] = 43,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [78]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkF_08",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkF_08.mp3",
+      ["Length"] = 42,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [79]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkG_01",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkG_01.mp3",
+      ["Length"] = 24,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [80]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkG_02",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkG_02.mp3",
+      ["Length"] = 24,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [81]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkG_03",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkG_03.mp3",
+      ["Length"] = 24,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [82]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkG_04",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkG_04.mp3",
+      ["Length"] = 23,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [83]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkG_05",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkG_05.mp3",
+      ["Length"] = 25,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [84]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkG_06",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkG_06.mp3",
+      ["Length"] = 24,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [85]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkJ_01",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkJ_01.mp3",
+      ["Length"] = 82,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [86]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkJ_02",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkJ_02.mp3",
+      ["Length"] = 82,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [87]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkJ_03",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkJ_03.mp3",
+      ["Length"] = 81,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [88]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkJ_04",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkJ_04.mp3",
+      ["Length"] = 82,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [89]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkJ_05",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkJ_05.mp3",
+      ["Length"] = 82,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [90]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkJ_06",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkJ_06.mp3",
+      ["Length"] = 82,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [91]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkM_01",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkM_01.mp3",
+      ["Length"] = 156,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [92]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkZ_01",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkZ_01.mp3",
+      ["Length"] = 46,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [93]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IR_WalkZ_02",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\IcecrownRaid\\IR_WalkZ_02.mp3",
+      ["Length"] = 46,
+      ["Artist"] =  "IcecrownRaid",
+    }, -- [94]
 	{
 		["Album"] = "ingame",
 		["Song"] = "NR_Dwarf_GeneralWalkADark_Uni01",

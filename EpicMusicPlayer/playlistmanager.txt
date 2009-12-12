@@ -3,4 +3,4 @@ The playlistmanager is not included in this alpha version of EMP.
 Get the playlistmanager from the latest release or beta version at
 http://wow.curseforge.com/addons/epic-music-player/files/
 
-And extract the Plalistmanager folder somewhere but not into the addon folder.
+Extract the Plalistmanager folder somewhere but not into the addon folder.

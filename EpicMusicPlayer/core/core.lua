@@ -100,6 +100,7 @@ function EpicMusicPlayer:OnInitialize()
 			fontindex = 2,
 			guifontsize = 12,
 			fontsize = 46,
+			playlistfont = media:GetDefault("font"),
 			gui = {
 				scroll = true
 			},
@@ -119,8 +120,8 @@ function EpicMusicPlayer:OnInitialize()
 	self:UpdateListnames()
 	
 	if media then
-		media:Register("font", "Adventure", "Interface\\AddOns\\EpicMusicPlayer\\fonts\\Adventure.ttf")
-		media:Register("font", "BlackChancery", "Interface\\AddOns\\EpicMusicPlayer\\fonts\\BlackChancery.ttf")
+		media:Register("font", "Adventure", "Interface\\AddOns\\EpicMusicPlayer\\media\\Adventure.ttf")
+		media:Register("font", "BlackChancery", "Interface\\AddOns\\EpicMusicPlayer\\media\\BlackChancery.ttf")
 		self.media = media
 	end
 	if not db.font then 
@@ -234,7 +235,7 @@ function EpicMusicPlayer:Play(song)
 	end
 	
 	if(db.spam) then
-		DEFAULT_CHAT_FRAME:AddMessage("|TInterface\\AddOns\\EpicMusicPlayer\\icon.tga:18|t |c"
+		DEFAULT_CHAT_FRAME:AddMessage("|TInterface\\AddOns\\EpicMusicPlayer\\media\\icon.tga:18|t |c"
 		..self:ToHex(db.artistcolour)..song.Artist.."|r - |c"..self:ToHex(db.titlecolour)..song.Song)
 	end
 	
@@ -662,10 +663,10 @@ function EpicMusicPlayer:DisplyScrollHandler()
 		end   
 end
 
-function EpicMusicPlayer:GetFont()
+function EpicMusicPlayer:GetFont(fontname)
 	local font
 	if media then
-		font = media:Fetch("font",db.font)
+		font = media:Fetch("font",fontname or db.font)
 	else
 		font = GameFontNormal:GetFont()
 	end

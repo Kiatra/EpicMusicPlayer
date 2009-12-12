@@ -58,7 +58,7 @@ local function UpdateColumSpaces(self, button)
 	text:SetPoint("BOTTOMRIGHT",button,0,0)
 end
 
-local function CreateButton(parent, height, colums ,OnClick, OnEnter, OnLeave)
+local function CreateButton(parent, height, colums ,OnClick, OnEnter, OnLeave, font)
 	local button = CreateFrame("Button",nil,parent)
 	button:SetHeight(height)
 	local numcolums = #colums
@@ -66,6 +66,7 @@ local function CreateButton(parent, height, colums ,OnClick, OnEnter, OnLeave)
 	local relative = nil
 	for i = 1, numcolums do
 		local text = button:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall")
+		text:SetFont(font, 12)
 		button["colum"..i] = text
 		
 		if numcolums == 1 then -- only one colum
@@ -105,7 +106,7 @@ local function resize(self)
 	for i = 1, numButtons do
 		local button = buttons[i]
 		if not button then
-			button = CreateButton(self,self.buttonHeight,self.colums,self.buttonOnClick,self.buttonOnEnter,self.buttonOnLeave)
+			button = CreateButton(self,self.buttonHeight,self.colums,self.buttonOnClick,self.buttonOnEnter,self.buttonOnLeave, self.font)
 			buttons[i] = button
 			button:ClearAllPoints()
 			if relative then
@@ -150,7 +151,7 @@ local function SetMax(self, size)
 	ScrollUpdate(self.scrollbar, self.scrollbar:GetValue())
 end
 
-function EpicMusicPlayer:CreateListWidget(name, parent, size, colums,GetData, OnClick, OnEnter, OnLeave)
+function EpicMusicPlayer:CreateListWidget(name, parent, size, colums,GetData, OnClick, OnEnter, OnLeave, font)
 
 	local frame = CreateFrame("Frame",name,parent)
 	frame.update = update
@@ -168,6 +169,7 @@ function EpicMusicPlayer:CreateListWidget(name, parent, size, colums,GetData, On
 	frame.UpdateColumSpaces = UpdateColumSpaces
 	frame.selectedIndex = 0
 	frame.SetSelected = SetSelected
+	frame.font = font
 	
 	frame:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background", 
 		edgeFile = "Interface/Tooltips/UI-Tooltip-Border", 
