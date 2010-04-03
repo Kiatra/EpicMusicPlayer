@@ -98,13 +98,13 @@ local playing = false;
 local empdb = EpicMusicPlayer.db.profile
 
 local function GetTimeSTring(seconds)
-    local min = seconds / 60
-		local sec = mod(seconds, 60)
-		if( sec < 10) then
-		    -- add zero 
-        return string.format("%d:0%d", min, sec)
-    end
-		return string.format("%d:%d", min, sec)
+	local min = seconds / 60
+	local sec = mod(seconds, 60)
+	if( sec < 10) then
+        return string.format("%i:0%i", min, sec)
+    else
+		return string.format("%i:%i", min, sec)
+	end
 end
 
 function EpicMusicPlayerBroker:SetMaxTextLength(length)

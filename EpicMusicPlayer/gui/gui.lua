@@ -609,7 +609,7 @@ function EpicMusicPlayerGui:CreateGuiFrame()
 	self.frames.player = self.frames.player or CreateFrame("Frame","EMPGUI",UIParent)
 	self.frames.player:SetWidth(self.cuurskin.guiframe.width)
 	self.frames.player:SetHeight(self.cuurskin.guiframe.height)
-	
+	--/run EMPGUI:ClearAllPoints();EMPGUI:SetPoint("CENTER")
 
 	--frame background
 	--self.frames.player:SetFrameLevel(2)
