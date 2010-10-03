@@ -7952,6 +7952,366 @@ local GameMusic = {
 	}, -- [1043]
 }
 
+local bestof = {
+     {
+      ["ListName"] = "Best of WoW",
+      ["PlaylistVersion"] = "1.0",
+      ["MusicDir"] = "MyMusic\\",
+    }, -- [1]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "battle01",
+      ["Name"] = "Sound\\Music\\Musical Moments\\battle\\battle01.mp3",
+      ["Length"] = 48,
+      ["Artist"] =  "battle",
+    }, -- [2]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Joust",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\ArgentTournament\\AT_JoustEvent.mp3",
+      ["Length"] = 123,
+      ["Artist"] =  "ArgentTournament (David Arkenstone)",
+    }, -- [3]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Fire Festival",
+      ["Name"] = "Sound\\Music\\WorldEvents\\AllianceFirepole.mp3",
+      ["Length"] = 68,
+      ["Artist"] =  "WorldEvents (David Arkenstone)",
+    }, -- [4]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "EnchantedForest01",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\EnchantedForest\\EnchantedForest01.mp3",
+      ["Length"] = 50,
+      ["Artist"] =  "EnchantedForest (Jason Hayes)",
+    }, -- [5]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Assault 2",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\Ebon Hold\\EH_AssaultUni02.mp3",
+      ["Length"] = 70,
+      ["Artist"] =  "Ebon Hold (Russell Brower)",
+    }, -- [6]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Ebon Hold 1",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\Ebon Hold\\EH_GeneralWalkUni01.mp3",
+      ["Length"] = 82,
+      ["Artist"] =  "Ebon Hold (Russell Brower)",
+    }, -- [7]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Sunwell Flyby",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\Sunwell\\SW_SunwellFlybyUni01.mp3",
+      ["Length"] = 57,
+      ["Artist"] =  "Sunwell (Russell Brower)",
+    }, -- [8]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "GH1 Harpa",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\GrizzlyHills\\GH_Intro1Uni01.mp3",
+      ["Length"] = 284,
+      ["Artist"] =  "GrizzlyHills (Russell Brower)",
+    }, -- [9]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "GH2 Hero v3",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\GrizzlyHills\\GH_Intro2Uni01.mp3",
+      ["Length"] = 149,
+      ["Artist"] =  "GrizzlyHills (Russell Brower)",
+    }, -- [10]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "GH2 Day 1",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\GrizzlyHills\\GH_WalkDay06.mp3",
+      ["Length"] = 155,
+      ["Artist"] =  "GrizzlyHills (Russell Brower)",
+    }, -- [11]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "GH2 Day 2",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\GrizzlyHills\\GH_WalkDay07.mp3",
+      ["Length"] = 155,
+      ["Artist"] =  "GrizzlyHills (Russell Brower)",
+    }, -- [12]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "wow_main_theme",
+      ["Name"] = "Sound\\Music\\GlueScreenMusic\\wow_main_theme.mp3",
+      ["Length"] = 161,
+      ["Artist"] =  "GlueScreenMusic",
+    }, -- [13]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "The Burning Legion - WoW BC Main Title",
+      ["Name"] = "Sound\\Music\\GlueScreenMusic\\BC_main_theme.mp3",
+      ["Length"] = 226,
+      ["Artist"] =  "GlueScreenMusic (Russell Brower)",
+    }, -- [14]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Wrath of the Lich King - Main Title",
+      ["Name"] = "Sound\\Music\\GlueScreenMusic\\WotLK_main_title.mp3",
+      ["Length"] = 544,
+      ["Artist"] =  "GlueScreenMusic (Russell Brower)",
+    }, -- [15]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Lament of the Highborne",
+      ["Name"] = "Sound\\Music\\GlueScreenMusic\\BCCredits_Lament_of_the_Highborne.mp3",
+      ["Length"] = 171,
+      ["Artist"] =  "GlueScreenMusic (Russell Brower & Derek Duke)",
+    }, -- [16]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Power Of The Horde",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\DMF_L70ETC01.mp3",
+      ["Length"] = 282,
+      ["Artist"] =  "ZoneMusic (Tenth Level Tauren Chieftain)",
+    }, -- [17]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Dalaran 1",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\Dalaran\\DC_GeneralWalkUni01.mp3",
+      ["Length"] = 67,
+      ["Artist"] =  "Dalaran (Russell Brower)",
+    }, -- [18]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Dalaran 1",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\Dalaran\\DC_GeneralWalkUni01.mp3",
+      ["Length"] = 67,
+      ["Artist"] =  "Dalaran (Russell Brower)",
+    }, -- [19]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Dalaran Intro",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\Dalaran\\DC_IntroUni01.mp3",
+      ["Length"] = 68,
+      ["Artist"] =  "Dalaran (Russell Brower)",
+    }, -- [20]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "UnderCityCrowd",
+      ["Name"] = "Sound\\Ambience\\WMOAmbience\\UnderCityCrowd.wav",
+      ["Length"] = 41,
+      ["Artist"] =  "WMOAmbience",
+    }, -- [21]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "UnderCityThorneRoom",
+      ["Name"] = "Sound\\Ambience\\WMOAmbience\\UnderCityThorneRoom.wav",
+      ["Length"] = 118,
+      ["Artist"] =  "WMOAmbience",
+    }, -- [22]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "CT_BrazensFlightIntroUni",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\CavernsOfTime\\CT_BrazensFlightIntroUni.mp3",
+      ["Length"] = 93,
+      ["Artist"] =  "CavernsOfTime (Russell Brower)",
+    }, -- [23]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "pvp_d",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\PVP\\pvp3.mp3",
+      ["Length"] = 40,
+      ["Artist"] =  "PVP (Derek Duke)",
+    }, -- [24]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "SP_GeneralWalkB_Day02",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\StormPeaks\\SP_GeneralWalkB_Day02.mp3",
+      ["Length"] = 82,
+      ["Artist"] =  "StormPeaks",
+    }, -- [25]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "SP_GeneralWalkB_Night02",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\StormPeaks\\SP_GeneralWalkB_Night02.mp3",
+      ["Length"] = 82,
+      ["Artist"] =  "StormPeaks",
+    }, -- [26]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "SP_GeneralWalkB_Uni02",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\StormPeaks\\SP_GeneralWalkB_Uni02.mp3",
+      ["Length"] = 82,
+      ["Artist"] =  "StormPeaks",
+    }, -- [27]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Gates_9",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\BlackTemple\\BT_IllidariWalkHero09.mp3",
+      ["Length"] = 74,
+      ["Artist"] =  "BlackTemple (Russell Brower)",
+    }, -- [28]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Well_1",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\BlackTemple\\BT_ReliquaryWalkHero01.mp3",
+      ["Length"] = 112,
+      ["Artist"] =  "BlackTemple (Russell Brower)",
+    }, -- [29]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "BC_Two_1",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\BlackTemple\\BT_SummitWalkUni03.mp3",
+      ["Length"] = 41,
+      ["Artist"] =  "BlackTemple (Russell Brower)",
+    }, -- [30]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "CT_DurnholdeKeepExtWalk3Uni",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\CavernsOfTime\\CT_DurnholdeKeepExtWalk3Uni.mp3",
+      ["Length"] = 70,
+      ["Artist"] =  "CavernsOfTime (Russell Brower)",
+    }, -- [31]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "CT_EscapeDurnIntroUni",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\CavernsOfTime\\CT_EscapeDurnIntroUni.mp3",
+      ["Length"] = 112,
+      ["Artist"] =  "CavernsOfTime (Russell Brower)",
+    }, -- [32]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "CT_HillsbradExtWalk2Uni",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\CavernsOfTime\\CT_HillsbradExtWalk2Uni.mp3",
+      ["Length"] = 56,
+      ["Artist"] =  "CavernsOfTime (Jason Hayes)",
+    }, -- [33]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "CT_HyjalExtWalk7Uni",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\CavernsOfTime\\CT_HyjalExtWalk7Uni.mp3",
+      ["Length"] = 66,
+      ["Artist"] =  "CavernsOfTime (Jason Hayes)",
+    }, -- [34]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "CT_HyjalExtWalk8Uni",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\CavernsOfTime\\CT_HyjalExtWalk8Uni.mp3",
+      ["Length"] = 70,
+      ["Artist"] =  "CavernsOfTime (Jason Hayes)",
+    }, -- [35]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "CT_ThrallEscapeIntroUni",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\CavernsOfTime\\CT_ThrallEscapeIntroUni.mp3",
+      ["Length"] = 45,
+      ["Artist"] =  "CavernsOfTime (Russell Brower)",
+    }, -- [36]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Silvermoon 2",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\Sunwell\\SW_MagistersAsylumWalkUni01.mp3",
+      ["Length"] = 97,
+      ["Artist"] =  "Sunwell (Russell Brower)",
+    }, -- [37]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "Shorel'Aran Vocal",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\Sunwell\\SW_ShorelAranWalkUni01.mp3",
+      ["Length"] = 87,
+      ["Artist"] =  "Sunwell (Russell Brower)",
+    }, -- [38]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "CT_StratholmePastAlleyIntro",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\StratholmePast\\CT_StratholmePastAlleyIntro.mp3",
+      ["Length"] = 99,
+      ["Artist"] =  "StratholmePast",
+    }, -- [39]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "NR_Dwarf_GeneralWalkB_Uni02",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\Northrend\\IronDwarf\\NR_Dwarf_GeneralWalkB_Uni02.mp3",
+      ["Length"] = 164,
+      ["Artist"] =  "IronDwarf",
+    }, -- [40]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "spooky01-moment",
+      ["Name"] = "Sound\\Music\\Musical Moments\\spooky\\spooky01-moment.mp3",
+      ["Length"] = 25,
+      ["Artist"] =  "spooky (Jason Hayes)",
+    }, -- [41]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "battle01",
+      ["Name"] = "Sound\\Music\\Musical Moments\\battle\\battle01.mp3",
+      ["Length"] = 48,
+      ["Artist"] =  "battle",
+    }, -- [42]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "stormwind_intro-moment",
+      ["Name"] = "Sound\\Music\\CityMusic\\Stormwind\\stormwind_intro-moment.mp3",
+      ["Length"] = 66,
+      ["Artist"] =  "Stormwind (Jason Hayes)",
+    }, -- [43]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "stormwind02-moment",
+      ["Name"] = "Sound\\Music\\CityMusic\\Stormwind\\stormwind01-moment.mp3",
+      ["Length"] = 54,
+      ["Artist"] =  "Stormwind (Jason Hayes)",
+    }, -- [44]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "stormwind01-moment",
+      ["Name"] = "Sound\\Music\\CityMusic\\Stormwind\\stormwind02-moment.mp3",
+      ["Length"] = 35,
+      ["Artist"] =  "Stormwind (Jason Hayes)",
+    }, -- [45]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "stormwind07-live",
+      ["Name"] = "Sound\\Music\\CityMusic\\Stormwind\\stormwind07-zone.mp3",
+      ["Length"] = 87,
+      ["Artist"] =  "Stormwind (Jason Hayes)",
+    }, -- [46]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "IronforgeWalking02",
+      ["Name"] = "Sound\\Music\\CityMusic\\Ironforge\\IronForge Walking 02.mp3",
+      ["Length"] = 50,
+      ["Artist"] =  "Ironforge (Brian Farr)",
+    }, -- [47]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "NR_Dwarf_GeneralWalkB_Day02",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\Northrend\\IronDwarf\\NR_Dwarf_GeneralWalkB_Day02.mp3",
+      ["Length"] = 97,
+      ["Artist"] =  "IronDwarf",
+    }, -- [48]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "NR_Dwarf_GeneralWalkB_Night02",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\Northrend\\IronDwarf\\NR_Dwarf_GeneralWalkB_Night02.mp3",
+      ["Length"] = 95,
+      ["Artist"] =  "IronDwarf",
+    }, -- [49]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "SP_GeneralWalkD_Day04",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\StormPeaks\\SP_GeneralWalkD_Day04.mp3",
+      ["Length"] = 55,
+      ["Artist"] =  "StormPeaks",
+    }, -- [50]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "NR_Dwarf_GeneralWalkDDark_Uni05",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\Northrend\\IronDwarf\\NR_Dwarf_GeneralWalkDDark_Uni05.mp3",
+      ["Length"] = 69,
+      ["Artist"] =  "IronDwarf",
+    }, -- [51]
+}
+
+
+
 
 local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer")
 
@@ -7960,3 +8320,4 @@ if not EpicMusicPlayer then
 end
 
 EpicMusicPlayer:AddPlayList("GameMusic", GameMusic, false)
+EpicMusicPlayer:AddPlayList("Best of Wow", bestof, false)

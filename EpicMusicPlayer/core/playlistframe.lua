@@ -18,7 +18,7 @@ local function ToggleLists()
 		frame:SetMinResize(150,50)
 	else
 		listslist:Show()
-		songlist:SetPoint("TOPLEFT", frame ,110, -25)
+		songlist:SetPoint("TOPLEFT", frame ,120, -25)
 		songlist:SetPoint("BOTTOMRIGHT", frame ,-5, 27)
 		frame:SetMinResize(300,200)
 	end
@@ -297,7 +297,7 @@ local function CreatePlaylistGui(width, height)
 			end,
 		OnSongClick,nil, 
 		OnSongLeave, frame.font)
-	songlist:SetPoint("TOPLEFT", frame ,110, -25)
+	songlist:SetPoint("TOPLEFT", frame ,120, -25)
 	songlist:SetPoint("BOTTOMRIGHT", frame ,-5, 27)
 	
 	listslist = EpicMusicPlayer:CreateListWidget("EpicMusicPlayer_Playlists",frame,#EpicMusicPlayer.playlists,nil,

@@ -142,12 +142,12 @@ local dataobj = ldb:NewDataObject("EpicMusicPlayer", {
 	
 	--OnEnter = EpicMusicPlayerBrokerObj.OnEnter,
 	OnClick = function(self, btn)
-		EpicMusicPlayer:OnDisplayClick(this)
+		EpicMusicPlayer:OnDisplayClick(self, btn)
 	end,
 })
 
-local function OnScroll()
-	EpicMusicPlayer:DisplyScrollHandler()			
+local function OnScroll(self, vector)
+	EpicMusicPlayer:DisplyScrollHandler(vector)			
 end
 
 function dataobj:OnEnter()

@@ -210,6 +210,14 @@ local options={
 						EpicMusicPlaye.frames.player:SetFrameStrata(value)
 					end,
 				},
+				resetgui = {
+		            type = 'execute',
+					order = 10,
+					name = L["Reset Gui Position"],
+		            desc = L["Reset the gui window position"],
+		            func = function() EMPGUI:ClearAllPoints();EMPGUI:SetPoint("CENTER")  end,
+		        }
+				
 				--[[
 				layout = {
 					type = 'select',
@@ -233,7 +241,7 @@ local options={
 			}
 	}
 	
-local function ScrollText()
+local function ScrollText(self, arg1)
 	TimeSinceLastUpdate = TimeSinceLastUpdate + arg1
 	if(TimeSinceLastUpdate>0.03)then
 		TimeSinceLastUpdate = 0
@@ -387,7 +395,8 @@ end
 
 function EpicMusicPlayerGui:SetNextModel()
 	if(EpicMusicDancer)then
-		EpicMusicDancer:SetNextModel()
+		for i=1,63  do PlaySoundFile("Sound\\interface\\levelup2.wav") end
+		--EpicMusicDancer:SetNextModel()
     end
 end
 
@@ -571,14 +580,16 @@ local function newControl(settings, frame)
 	frame:SetPoint(align,offx,offy)
 	frame:Show()
 	
-	if settings.onleftclick or settings.onrightclick then
+	if settings.onleftclick then
 		frame:EnableMouse(true); 
 		frame:SetScript("OnMouseUp", 
-				function()
-					if(arg1 == "LeftButton")then
+				function(self, button)
+					if(button == "LeftButton")then
 						settings.onleftclick()
 					else
-						settings.onrightclick()
+						if settings.onrightclick then
+							settings.onrightclick()
+						end
 					end
 				end
 		)
@@ -627,21 +638,21 @@ function EpicMusicPlayerGui:CreateGuiFrame()
     
 	self.frames.player:SetFrameStrata(EpicMusicPlayer.db.profile.guistrata)
 	self.frames.player:SetScript("OnDragStart", 
-	    function()
-			this:StartMoving()
-			this.isMoving = true
+	    function(self)
+			self:StartMoving()
+			self.isMoving = true
 		end
 	)
 	self.frames.player:SetScript("OnDragStop", 
-	    function()
-			this:StopMovingOrSizing()
-			this.isMoving = false
+	    function(self)
+			self:StopMovingOrSizing()
+			self.isMoving = false
 		end
 	)
 	self.frames.player:EnableMouseWheel(1) 
 	self.frames.player:SetScript("OnMouseWheel", 
-		function()
-			EpicMusicPlayer:DisplyScrollHandler()
+		function(self,vector)
+			EpicMusicPlayer:DisplyScrollHandler(vector)
 		end
     )
 	
@@ -728,15 +739,15 @@ function EpicMusicPlayerGui:CreateGuiFrame()
 		
 		scrollframe:EnableMouseWheel(1) 
 		scrollframe:SetScript("OnMouseWheel", 
-			function()
-				EpicMusicPlayer:DisplyScrollHandler()			
+			function(self,vector)
+				EpicMusicPlayer:DisplyScrollHandler(vector)
 			end
 	    )
 		scrollframe:EnableMouse(1) 
 		scrollframe:SetScript("OnMouseUp", 
-	    function()
-				EpicMusicPlayer:OnDisplayClick(this)
-		end
+			function(self,vector)
+				EpicMusicPlayer:DisplyScrollHandler(vector)
+			end
 	    )
 		
 		scrollframe:EnableMouse(true)
@@ -797,11 +808,11 @@ function EpicMusicPlayerGui:CreateMinimapButton()
 	minibutton:RegisterForClicks("AnyUp")
 	
 	minibutton:SetScript("OnClick", 
-	    function()
+	    function(self)
 			--if(arg1 == "RightButton")then
 			--	EpicMusicPlayer:OnDisplayRightClick(this)
 			--else
-				EpicMusicPlayer:OnDisplayClick(this)
+				EpicMusicPlayer:OnDisplayClick(self)
 			--end
 		end
 	)
@@ -812,15 +823,15 @@ function EpicMusicPlayerGui:CreateMinimapButton()
 	minibutton:RegisterForDrag("RightButton");
 	
 	minibutton:SetScript("OnDragStart", 
-	    function()
-			this:StartMoving()
-			this.isMoving = true
+	    function(self)
+			self:StartMoving()
+			self.isMoving = true
 		end
 	)
 	minibutton:SetScript("OnDragStop", 
-	    function()
-			this:StopMovingOrSizing()
-			this.isMoving = false
+	    function(self)
+			self:StopMovingOrSizing()
+			self.isMoving = false
 		end
 	)
 	

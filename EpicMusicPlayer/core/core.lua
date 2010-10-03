@@ -133,6 +133,7 @@ end
 function EpicMusicPlayer:OnEnable(first)
 	self:RegisterEvent("PLAYER_ENTERING_WORLD", EpicMusicPlayer.OnEnteringWorld, "PLAYER_ENTERING_WORLD")
 	self:RegisterEvent("CHAT_MSG_WHISPER_INFORM", EpicMusicPlayer.OnWhisperInform)
+
 	self:RegisterEvent("PLAYER_ALIVE", EpicMusicPlayer.OnPplayerAlive)
 	
 	if(self.Playing == false)then
@@ -145,7 +146,7 @@ function EpicMusicPlayer:OnEnable(first)
 			else
 				SetCVar("Sound_EnableMusic", 1);	
 			end
-			EpicMusicPlayer:Stop()
+			--EpicMusicPlayer:Stop()
         end
     end
 	
@@ -576,7 +577,7 @@ function EpicMusicPlayer:ShowConfig()
 	LibStub("AceConfigDialog-3.0"):Open("EpicMusicPlayer")
 end
 
-function EpicMusicPlayer:OnDisplayClick(parent)
+function EpicMusicPlayer:OnDisplayClick(parent, button)
 	--local controlset = db.controlset
 	
 	--[[
@@ -601,15 +602,15 @@ function EpicMusicPlayer:OnDisplayClick(parent)
 		elseif(IsControlKeyDown()) then
 			self[db.controlset.leftcontrol](self, parent)
 		else --no key pressed
-			
-			local func = db.controlset[arg1]
-			EpicMusicPlayer:Debug(arg1, func)
+			local func = db.controlset[button]
+			EpicMusicPlayer:Debug(button, func)
 			self[func](self, parent)
 		end
 	--end
 end
 
-function EpicMusicPlayer:DisplyScrollHandler()
+function EpicMusicPlayer:DisplyScrollHandler(arg1)
+		--EpicMusicPlayer:Debug("OnMouseWheel", self, vector)
 		local vol
 		if(IsControlKeyDown()) then --adjust sound volume
 			vol = GetCVar("Sound_SFXVolume")

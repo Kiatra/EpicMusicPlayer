@@ -657,15 +657,19 @@ function EpicMusicPlayer:IsMute()
     return self.mute
 end
 
+local lastvol = 0
 function EpicMusicPlayer:ToggleMute()
 	self = EpicMusicPlayer
-	if(self.mute) then
-        EpicMusicPlayer:SetVolume(volume,"music")
-    else
-        volume = self.db.profile.volume
+	if(self.db.profile.volume == 0) then --unmute
+		if(lastvol == 0) then
+			EpicMusicPlayer:SetVolume(1,"music")
+		else
+			EpicMusicPlayer:SetVolume(lastvol,"music")
+		end
+    else --mute
+		lastvol = self.db.profile.volume
 		EpicMusicPlayer:SetVolume(0,"music")
-    end
-	self.mute = not self.mute
+	end
 end
 
 function EpicMusicPlayer:IsSpam()

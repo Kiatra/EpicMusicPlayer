@@ -367,7 +367,7 @@ function EpicMusicDancer:Test()
 		--EpicMusicDancer.testframe:Hide()
 end
 
-local function OnUpdate(self)
+local function OnUpdate(self, arg1)
 	TimeSinceLastUpdate = TimeSinceLastUpdate + arg1
 
 	if seqence then 

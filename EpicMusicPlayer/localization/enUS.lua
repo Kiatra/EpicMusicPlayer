@@ -4,6 +4,9 @@ local L = AceLocale:NewLocale("EpicMusicPlayer", "enUS", true)
 if not L then return end
 
 
+L["Reset Gui Position"] = true
+L["Reset the gui window position"] = true
+
 L["Playlist font"] = true
 L["Change the playlist font. Requires relog to take effect."] = true
 
