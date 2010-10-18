@@ -4,18 +4,22 @@ local L = AceLocale:NewLocale("EpicMusicPlayer", "enUS", true)
 if not L then return end
 
 
+L["Select a question from the left."] = true
+
+L["EpicMusicPlayer Update Info"] = true
+L["Since patch 4.0.1 playing custom music will no longer stop the game music."] = true
+L["To avoid hearing both, the game music and your custom music simultaneously, the game music has to be completely disabled as long as you use the addon."] = true
+L["Start the playlist Manager or read the FAQ for more info about this."] = true
+			
+
 L["Reset Gui Position"] = true
 L["Reset the gui window position"] = true
-
 L["Playlist font"] = true
 L["Change the playlist font. Requires relog to take effect."] = true
-
 L["Test"] = true
 L["Plays a test song."] = true
-
 L["Playlist Scale"] = true
 L["Adjust the scale of the playlist"] = true
-
 L["Frame strata"] = true
 L["MusicDancer"] = true 
 L["Show Dancer"] = true
@@ -91,33 +95,25 @@ L["Music off"] = true
 L["Game Music"] = true
 L["Scroll Gui Text"] = true
 
-L["FAQ-Text"] = [[
+L["How do I add music to the player?"] = true
+L["FAQ-Text1"] = [[
+1. Exit Wow if running!
+  Double click the "create_playlist.bat" in the Playlistmanger folder.
+  (or try "EMP_Playlist_Manager.jar")
 
-|cffffd200Why does the music sometimes stop in fight?|r
-The music sometimes stops or the wow music starts playing. This is a wow bug. Try to set your sound channels to maximum. Options > Sound & Voice > Sound Channels > High (Maximum) Also try to enable/disable hardware sound. But when lots of sounds are played (raid instance fights) the problem still may occur.
-music plays from beginning
+2. Click File > Add Music Folder, select a folder with your music and click open.
+  OR
+  Just drag and drop some mp3 music files/folders into the Playlist-Manager.
 
-|cffffd200Why is the song playing from the beginning after a loading screen?|r
-This is a wow bug since patch 2.4.3. 
-I only could fix this so far that the song starts from start instead playing the game music. 
-I have reported this in the eu forums but unless someone with an us account finally reports this in the us ui-forum blizzard developers will never know of this.
+3. Close EMP-Playlist-Manager (be sure to click "Yes" Save Playlist.)
+  Start WoW and enjoy your music while farming:)
+]]
 
-|cffffd200Why is there no pause button?|r
-Not possible with wow. As is playing a song at a specific position. An addon can only tell wow to play and stop a song that's it.
+L["How do I get the game music back?"] = true
+L["Delete the Sound folder (NOT the mpq file) at ..\World of Warcraft\Data\Sound"] = true
 
-|cffffd200How do I add music to the player?|r
-   1. Exit Wow if running!
-      Double click the "create_playlist.bat" in the Playlistmanger folder.
-      (or try "EMP_Playlist_Manager.jar")
-
-   2. Click File > Add Music Folder, select a folder with your music and click open.
-      OR
-      Just drag and drop some mp3 music files/folders into the Playlist-Manager.
-
-   3. Close EMP-Playlist-Manager (be sure to click "Yes" Save Playlist.)
-      Start WoW and enjoy your music while farming:)
-
-|cffffd200Do I have to copy all of my music files to the wow folder?|r
+L["Do I have to copy all of my music files to the wow folder?"] = true
+L["FAQ-Text2"] = [[ 
 No. The Playlist Manager can create links (inside the wow folder) that point to your original music folder. That way wow thinks the files are in the wow folder.
 
 You can enable this by:
@@ -130,19 +126,18 @@ Download junction.exe from microsoft: http://technet.microsoft.com/en-us/sysinte
 You should also install "ntfslink" (http://elsdoerfer.name/=ntfslink ) To make the use of the links (junctions) save with windos xp. See http://en.wikipedia.org/wiki/NTFS_junction_point#Windows_XP_Professional for more information.
 
 And now go to "Tools > Options" and change copy to create links. 
-
-|cffffd200Where the hell is the playlist?|r
-"..\World of Warcraft\WTF\Account\ACCOUNTNAME\SavedVariables\EpicMusicPlayer.lua"
-
-|cffffd200Playlist manager not starting|r
-You need the at least Java 6 installed, sry. http:\\java.com
-You have installed Java and the playlist manager is still not starting?
-Try to double click the EMP_Playlist_Manager.jar as well as "create_playlist.bat"
-
-
-You miss a feature, don't like something about the player or have a problem to set it up? Please let me know. I look forward to your feedback.
-
 ]]
+
+L["Why is the song playing from the beginning after a loading screen?"] = true
+L["This is a wow bug since patch 2.4.3. I only could fix this so far that the song starts from start instead playing the game music. I have reported this in the eu forums but unless someone with an us account finally reports this in the us ui-forum blizzard developers will never fix this."] = true
+
+
+L["Where the hell is the playlist?"] = true
+L["..\World of Warcraft\WTF\Account\ACCOUNTNAME\SavedVariables\EpicMusicPlayer.lua"] = true
+
+L["Why is there no pause button?"] = true
+L["Not possible with wow. As is playing a song at a specific position. An addon can only tell wow to play and stop a song that's it."] = true
+
 
 L["Best list not found."] = true
 L["Bad list not found."] = true

@@ -59,6 +59,7 @@ function EpicMusicPlayer:OnInitialize()
 			random = false,
 			auto = false,
 			volume = 1,
+			showpopup = true,
 			spam = trume,
 			--first song = 2 (song 1 is playlist name)
 			song = 2,
@@ -134,7 +135,8 @@ function EpicMusicPlayer:OnEnable(first)
 	self:RegisterEvent("PLAYER_ENTERING_WORLD", EpicMusicPlayer.OnEnteringWorld, "PLAYER_ENTERING_WORLD")
 	self:RegisterEvent("CHAT_MSG_WHISPER_INFORM", EpicMusicPlayer.OnWhisperInform)
 
-	self:RegisterEvent("PLAYER_ALIVE", EpicMusicPlayer.OnPplayerAlive)
+	self:RegisterEvent("PLAYER_ALIVE", EpicMusicPlayer.OnPlayerAlive)
+	self:RegisterEvent("PLAYER_LEVEL_UP", EpicMusicPlayer.OnPlayerLevelUp)
 	
 	if(self.Playing == false)then
         if(db.auto) then
@@ -157,6 +159,18 @@ function EpicMusicPlayer:OnEnable(first)
 		if(not self.db.char.showgui)then
 			EpicMusicPlayerGui:Toggle()
 		end
+	end
+	
+	if db.showpopup then
+		StaticPopupDialogs["EPICMUSICPLAYER_UPDATEINFO"] = {
+			text = L["EpicMusicPlayer Update Info"].."\n\n "..L["Since patch 4.0.1 playing custom music will no longer stop the game music."].."\n "..L["To avoid hearing both, the game music and your custom music simultaneously, the game music has to be compleatly disabled as long as you use the addon."].."\n\n "..L["Start the playlist Manager or read the FAQ for more info about this."].."\n ",
+			button2 = "OK",
+			timeout = 0,
+			whileDead = true,
+			hideOnEscape = true,
+		}
+		StaticPopup_Show("EPICMUSICPLAYER_UPDATEINFO")
+		db.showpopup = false;
 	end
 	
 end
@@ -190,7 +204,7 @@ function EpicMusicPlayer:OnEnteringWorld(event)
 end
 
 -- patch 3.0.8  workaround
-function EpicMusicPlayer:OnPplayerAlive(event)
+function EpicMusicPlayer:OnPlayerAlive(event)
 	EpicMusicPlayer:Debug(event)
     if( UnitIsDeadOrGhost("Player") and EpicMusicPlayer.Playing)then
 		SetCVar("Sound_EnableMusic", 0);
@@ -204,6 +218,28 @@ function EpicMusicPlayer:OnPplayerAlive(event)
 		end, 2, arg)
 	end
 end
+
+function EpicMusicPlayer:OnPlayerLevelUp(level)
+	if level == 85 then
+		EpicMusicPlayer:Debug(level)
+		EpicMusicPlayer:SetVolume(1,"music")
+		if(EpicMusicPlayerGui)then
+			if(not EpicMusicPlayer.db.char.showgui)then
+				EpicMusicPlayer.db.char.showgui = true
+				EpicMusicPlayerGui:Toggle()
+			end
+		end
+		song = {
+			["Album"] = "ingame", 
+			["Song"] = "Gratulations to level 85!!!",
+			["Name"] = "Sound\\Music\\ZoneMusic\\ArgentTournament\\AT_JoustEvent.mp3",
+			["Length"] = 123, 
+			["Artist"] = "",
+		}
+		EpicMusicPlayer:Play(song)
+	end
+end
+
 
 ------------------------------------------------------------
 -- play/stop functions
@@ -263,12 +299,12 @@ function EpicMusicPlayer:Stop()
 	self:CancelTimer(timer,true)
 	
 	local wowmusic
-	if(db.disablewowmusic) then 
-		SetCVar("Sound_EnableMusic", 0);
+	--if(db.disablewowmusic) then 
+	--	SetCVar("Sound_EnableMusic", 0);
 		wowmusic = L["Music off"]		
-	else
-		wowmusic = L["Game Music"]
-	end
+	--else
+	--	wowmusic = L["Game Music"]
+	--end
 	StopMusic()
 	self.Playing = false;
 	self:SendMessage("EMPUpdateStop", "", wowmusic, 0)
@@ -574,7 +610,8 @@ function EpicMusicPlayer:MoveCurrentSong(newListIndex)
 end
 
 function EpicMusicPlayer:ShowConfig()
-	LibStub("AceConfigDialog-3.0"):Open("EpicMusicPlayer")
+	--LibStub("AceConfigDialog-3.0"):Open("EpicMusicPlayer")
+	EpicMusicPlayer:ChatCommand()
 end
 
 function EpicMusicPlayer:OnDisplayClick(parent, button)

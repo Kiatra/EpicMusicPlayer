@@ -745,8 +745,8 @@ function EpicMusicPlayerGui:CreateGuiFrame()
 	    )
 		scrollframe:EnableMouse(1) 
 		scrollframe:SetScript("OnMouseUp", 
-			function(self,vector)
-				EpicMusicPlayer:DisplyScrollHandler(vector)
+			function(self,btn)
+				EpicMusicPlayer:OnDisplayClick(self, btn)
 			end
 	    )
 		
@@ -808,12 +808,8 @@ function EpicMusicPlayerGui:CreateMinimapButton()
 	minibutton:RegisterForClicks("AnyUp")
 	
 	minibutton:SetScript("OnClick", 
-	    function(self)
-			--if(arg1 == "RightButton")then
-			--	EpicMusicPlayer:OnDisplayRightClick(this)
-			--else
-				EpicMusicPlayer:OnDisplayClick(self)
-			--end
+	    function(self, btn)
+			EpicMusicPlayer:OnDisplayClick(self, btn)
 		end
 	)
 	
@@ -849,8 +845,8 @@ function EpicMusicPlayerGui:CreateMinimapButton()
 	
 	minibutton:EnableMouseWheel(true) 
 	minibutton:SetScript("OnMouseWheel", 
-		function()
-			EpicMusicPlayer:DisplyScrollHandler()
+		function(self, vector)
+			EpicMusicPlayer:DisplyScrollHandler(vector)
 		end
     )
 end

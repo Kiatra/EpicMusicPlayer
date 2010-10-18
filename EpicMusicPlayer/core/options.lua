@@ -518,7 +518,7 @@ local empoptions = {
 				},
 			},
 		},
-		Help = {
+		help = {
 			type = "group",
 			order = -1,
 			name = L["Help - FAQ"],
@@ -533,10 +533,9 @@ local empoptions = {
 				text = {
 					order = 1,
 					type = "description",
-					name = L["FAQ-Text"],
+					name = L["Select a question from the left."] --L["FAQ-Text"],
 					--image = "Interface\\AddOns\\EpicMusicPlayer\\media\\icon.tga",
 				},
-				--[[
 				FAQ1 = {
 					type = "group",
 					order = 1,
@@ -544,34 +543,101 @@ local empoptions = {
 					args = {
 						header = {
 							type = "header",
-							name = L["Frequently Asked Questions"],
+							name = L["How do I add music to the player?"],
 							order = 0,
 						},
 						text = {
 							order = 1,
 							type = "description",
-							name = L["GENERAL_FAQ"],
+							name = L["FAQ-Text1"],
 						},
 					},
 				},
 				FAQ2 = {
 					type = "group",
 					order = 2,
-					name = L["Do I have to copy all of my music files to the wow folder?"],
+					name = L["How do I get the game music back?"],
 					args = {
 						header = {
 							type = "header",
-							name = L["Frequently Asked Questions"],
+							name = L["How do I get the game music back?"],
 							order = 0,
 						},
 						text = {
 							order = 1,
 							type = "description",
-							name = L["GENERAL_FAQ2"],
+							name = L["Delete the Sound folder (NOT the mpq file) at ..\World of Warcraft\\Data\\Sound"],
 						},
 					},
 				},
-				--]]
+				FAQ5 = {
+					type = "group",
+					order = 5,
+					name = L["Do I have to copy all of my music files to the wow folder?"],
+					args = {
+						header = {
+							type = "header",
+							name = L["Do I have to copy all of my music files to the wow folder?"],
+							order = 0,
+						},
+						text = {
+							order = 1,
+							type = "description",
+							name = L["FAQ-Text2"],
+						},
+					},
+				},
+				FAQ7 = {
+					type = "group",
+					order = 7,
+					name = L["Why is the song playing from the beginning after a loading screen?"],
+					args = {
+						header = {
+							type = "header",
+							name = L["Why is the song playing from the beginning after a loading screen?"],
+							order = 0,
+						},
+						text = {
+							order = 1,
+							type = "description",
+							name = L["This is a wow bug since patch 2.4.3. I only could fix this so far that the song starts from start instead playing the game music. I have reported this in the eu forums but unless someone with an us account finally reports this in the us ui-forum blizzard developers will never fix this."],
+						},
+					},
+				},
+				FAQ8 = {
+					type = "group",
+					order = 8,
+					name = L["Where the hell is the playlist?"],
+					args = {
+						header = {
+							type = "header",
+							name = L["Where the hell is the playlist?"],
+							order = 0,
+						},
+						text = {
+							order = 1,
+							type = "description",
+							name = L["..\\World of Warcraft\\WTF\\Account\\ACCOUNTNAME\\SavedVariables\\EpicMusicPlayer.lua"],
+						},
+					},
+				},
+				FAQ9 = {
+					type = "group",
+					order = 9,
+					name = L["Why is there no pause button?"],
+					args = {
+						header = {
+							type = "header",
+							name = L["Why is there no pause button?"],
+							order = 0,
+						},
+						text = {
+							order = 1,
+							type = "description",
+							name = L["Not possible with wow. As is playing a song at a specific position. An addon can only tell wow to play and stop a song that's it."],
+						},
+					},
+				},
 			},
 		},
 	}
@@ -746,7 +812,9 @@ end
 
 function EpicMusicPlayer:ChatCommand(input)
     if not input or input:trim() == "" then
-        LibStub("AceConfigDialog-3.0"):Open("EpicMusicPlayer")
+		local AceCfgDlg = LibStub("AceConfigDialog-3.0")
+		AceCfgDlg:SelectGroup("EpicMusicPlayer", "help")
+        AceCfgDlg:Open("EpicMusicPlayer")
     else
         LibStub("AceConfigCmd-3.0").HandleCommand(EpicMusicPlayer, "emp", "EpicMusicPlayer", input)
     end
