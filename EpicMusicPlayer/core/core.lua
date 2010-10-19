@@ -3,6 +3,7 @@ EpicMusicPlayer = LibStub("AceAddon-3.0"):NewAddon("EpicMusicPlayer", "AceConsol
 
 local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 local media = LibStub:GetLibrary("LibSharedMedia-3.0", true) or nil
+local AceCfgDlg = LibStub("AceConfigDialog-3.0")
 --local AceComm = LibStub("AceComm-3.0")
 
 local musicdir = "" -- path to the music :)
@@ -52,8 +53,8 @@ function EpicMusicPlayer:OnInitialize()
     self.db = LibStub("AceDB-3.0"):New("EpicMusicPlayerDB", defaults, "Default")
 
     local optionsFrame = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("EpicMusicPlayer", "EpicMusicPlayer")
-	LibStub("AceConfigDialog-3.0"):SetDefaultSize("EpicMusicPlayer", 500, 400)
-
+	AceCfgDlg:SetDefaultSize("EpicMusicPlayer", 700, 500)
+	
 	self.db:RegisterDefaults({
 		profile = {
 			random = false,

@@ -566,7 +566,7 @@ local empoptions = {
 						text = {
 							order = 1,
 							type = "description",
-							name = L["Delete the Sound folder (NOT the mpq file) at ..\World of Warcraft\\Data\\Sound"],
+							name = L["Delete the Sound folder (NOT the mpq file) at ..\\World of Warcraft\\Data\\Sound"],
 						},
 					},
 				},

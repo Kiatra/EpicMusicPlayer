@@ -98,8 +98,7 @@ L["Scroll Gui Text"] = true
 L["How do I add music to the player?"] = true
 L["FAQ-Text1"] = [[
 1. Exit Wow if running!
-  Double click the "create_playlist.bat" in the Playlistmanger folder.
-  (or try "EMP_Playlist_Manager.jar")
+  Double click the "PlaylistManager.exe" in the Playlistmanger folder of the Addon.
 
 2. Click File > Add Music Folder, select a folder with your music and click open.
   OR
@@ -110,7 +109,7 @@ L["FAQ-Text1"] = [[
 ]]
 
 L["How do I get the game music back?"] = true
-L["Delete the Sound folder (NOT the mpq file) at ..\World of Warcraft\Data\Sound"] = true
+L["Delete the Sound folder (NOT the mpq file) at ..\\World of Warcraft\\Data\\Sound"] = true
 
 L["Do I have to copy all of my music files to the wow folder?"] = true
 L["FAQ-Text2"] = [[ 
@@ -133,7 +132,7 @@ L["This is a wow bug since patch 2.4.3. I only could fix this so far that the so
 
 
 L["Where the hell is the playlist?"] = true
-L["..\World of Warcraft\WTF\Account\ACCOUNTNAME\SavedVariables\EpicMusicPlayer.lua"] = true
+L["..\\World of Warcraft\\WTF\\Account\\ACCOUNTNAME\\SavedVariables\\EpicMusicPlayer.lua"] = true
 
 L["Why is there no pause button?"] = true
 L["Not possible with wow. As is playing a song at a specific position. An addon can only tell wow to play and stop a song that's it."] = true
