@@ -25,7 +25,7 @@ local historyInUse = false --true wwhen a sond from histroy is played
 EpicMusicPlayer.controlslist = {
 	TogglePlay = L["Play/Stop"], OnNextClick = L["Play Next Song"], OpenMenu = L["Drop Down Menu"],
 	ShowConfig = L["Config"], ToggleMute = L["Mute / unmute music sound."], TogglePlayListGui = L["Playlist"],
-	PlayLast = L["Play Last Song"], TogglePlayerGui = L["Toggle show gui"], ToggleRandom = L["Toggle shuffle"],
+	PlayLast = L["Play Last Song"], TogglePlayerGui = L["Toggle show GUI"], ToggleRandom = L["Toggle shuffle"],
 	RemoveCurrendSong = L["Remove Song"], SpamDefault = L["Spam to default channel"],
 	ToBadList = L["Move to bad songs list"], ToBestList = L["Move song to favorite list"],
 }
@@ -60,7 +60,7 @@ function EpicMusicPlayer:OnInitialize()
 			random = false,
 			auto = false,
 			volume = 1,
-			showpopup = true,
+			oldversion = "",
 			spam = trume,
 			--first song = 2 (song 1 is playlist name)
 			song = 2,
@@ -162,16 +162,16 @@ function EpicMusicPlayer:OnEnable(first)
 		end
 	end
 	
-	if db.showpopup then
+	if db.oldversion < EpicMusicPlayer.version then
 		StaticPopupDialogs["EPICMUSICPLAYER_UPDATEINFO"] = {
-			text = L["EpicMusicPlayer Update Info"].."\n\n "..L["Since patch 4.0.1 playing custom music will no longer stop the game music."].."\n "..L["To avoid hearing both, the game music and your custom music simultaneously, the game music has to be compleatly disabled as long as you use the addon."].."\n\n "..L["Start the playlist Manager or read the FAQ for more info about this."].."\n ",
+			text = L["EpicMusicPlayer Update Info"].."\n\n "..L["Since patch 4.0.1 playing custom music will no longer stop the game music."].."\n "..L["To avoid hearing both, the game music and your custom music simultaneously, start the PlaylistManager save the playlist and resart WoW."].."\n\n"..L["Read the FAQ for more info about this."].."\n ",
 			button2 = "OK",
 			timeout = 0,
 			whileDead = true,
 			hideOnEscape = true,
 		}
 		StaticPopup_Show("EPICMUSICPLAYER_UPDATEINFO")
-		db.showpopup = false;
+		db.oldversion = EpicMusicPlayer.version;
 	end
 	
 end

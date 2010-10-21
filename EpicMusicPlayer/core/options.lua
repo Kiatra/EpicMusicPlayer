@@ -667,7 +667,7 @@ function EpicMusicPlayer:TogglePlayerGui()
     if(EpicMusicPlayerGui)then
 		EpicMusicPlayerGui:Toggle()
 	else
-		EpicMusicPlayer:Print(L["Gui not found"])
+		EpicMusicPlayer:Print(L["GUI not found"])
 	end
 	EpicMusicPlayer.db.char.showgui = not EpicMusicPlayer.db.char.showgui
 	
@@ -686,7 +686,7 @@ function EpicMusicPlayer:ToggleMinimap()
     if(EpicMusicPlayerGui)then
 		EpicMusicPlayerGui:ToggleMinimap()
 	else
-		EpicMusicPlayer:Print(L["Gui not found"])
+		EpicMusicPlayer:Print(L["GUI not found"])
 	end
 	EpicMusicPlayer.db.profile.minimapbutton = not EpicMusicPlayer.db.profile.minimapbutton
 end

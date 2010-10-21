@@ -48,15 +48,15 @@ local function GetSkinsList()
 end
 
 local options={
-			name=L["Gui"],
+			name=L["GUI"],
 			order = 4,
 			type="group",
 			args={
 				showgui = {
 			           type = "toggle",
 			           order = 1,
-					   name = L["Show Gui"],
-			           desc = L["Toggle show gui"],
+					   name = L["Show GUI"],
+			           desc = L["Toggle show GUI"],
 			           get = function(name)
 							return EpicMusicPlayer:IsPlayerGui()
 					   end,
@@ -79,8 +79,8 @@ local options={
 				 scale = {
 		            type = 'range',
 					order = 3,
-					name = L["Gui Size"],
-		            desc = L["Adjust the size of the gui"],
+					name = L["GUI Size"],
+		            desc = L["Adjust the size of the GUI"],
 		            step = 0.1,
 					min = 0.1,
 					max = 2,
@@ -95,8 +95,8 @@ local options={
 				scrolltext = {
 			           type = "toggle",
 			           order = 4,
-					   name = L["Scroll Gui Text"],
-			           desc = L["Scroll Gui Text"],
+					   name = L["Scroll GUI Text"],
+			           desc = L["Scroll GUI Text"],
 			           get = function(name)
 							return EpicMusicPlayer:IsScrollGuiText()
 					   end,
@@ -107,8 +107,8 @@ local options={
 				useartiscolour = {
 			           type = "toggle",
 			           order = 5,
-					   name = L["Use artist colour"],
-			           desc = L["Use artist colour as button colour"],
+					   name = L["Use artist color"],
+			           desc = L["Use artist color as button color"],
 			           get = function(name)
 							return EpicMusicPlayer.db.profile.useartistcolour
 					   end,
@@ -213,8 +213,8 @@ local options={
 				resetgui = {
 		            type = 'execute',
 					order = 10,
-					name = L["Reset Gui Position"],
-		            desc = L["Reset the gui window position"],
+					name = L["Reset GUI Position"],
+		            desc = L["Reset the GUI window position"],
 		            func = function() EMPGUI:ClearAllPoints();EMPGUI:SetPoint("CENTER")  end,
 		        }
 				

@@ -8,12 +8,11 @@ L["Select a question from the left."] = true
 
 L["EpicMusicPlayer Update Info"] = true
 L["Since patch 4.0.1 playing custom music will no longer stop the game music."] = true
-L["To avoid hearing both, the game music and your custom music simultaneously, the game music has to be completely disabled as long as you use the addon."] = true
-L["Start the playlist Manager or read the FAQ for more info about this."] = true
-			
-
-L["Reset Gui Position"] = true
-L["Reset the gui window position"] = true
+L["To avoid hearing both, the game music and your custom music simultaneously, start the PlaylistManager save the playlist and resart WoW."] = true
+L["Read the FAQ for more info about this."] = true
+		
+L["Reset GUI Position"] = true
+L["Reset the GUI window position"] = true
 L["Playlist font"] = true
 L["Change the playlist font. Requires relog to take effect."] = true
 L["Test"] = true
@@ -31,16 +30,16 @@ L["Select a model"] = true
 L["Model Size"] = true
 L["Adjust the size of the model frame"] = true
 L["Lock"] = true
-L["Unlock to allow moving the model. Moving will relese the model from the gui. Use reset to reattatch."] = true
+L["Unlock to allow moving the model. Moving will release the model from the GUI. Use reset to reattach."] = true
 L["Show Background"] = true
 L["Enable Mouse"] = true
 L["Click me or scroll me. I won\'t bite. 8==8"] = true
 L["Show Pedestal"] = true
 L["Show Tooltip"] = true
 L["Reset Position"] = true
-L["This will set the model to the default size and attatch it to the gui."] = true
-L["Toggle with Gui"] = true
-L["Showing/hiding the Gui will show/hide the dancer."] = true
+L["This will set the model to the default size and attach it to the GUI."] = true
+L["Toggle with GUI"] = true
+L["Showing/hiding the GUI will show/hide the dancer."] = true
 L['Show Artist'] = true
 L['Toggle show Artist'] = true
 L["Left click"] = true
@@ -77,7 +76,7 @@ L["Use scroll wheel - adjust music volume"] = true
 L["Ctrl + use scroll wheel - adjust effects volume"] = true
 L["Alt + use scroll wheel - fine adjust volume"] = true
 
-L["Ctrl click - Write artist and title to default chat. (guild,party etc.)"] = true 
+L["Ctrl click - Write artist and title to default chat. (Guild,party etc.)"] = true 
 
 L["GUI Layout"] = true
 L["Help - FAQ"] = true
@@ -90,10 +89,10 @@ L["Moved song X from list Y to list Z."] = function(x,y,z) return 'Moved song '.
 L["Playing song from history."] = true
 
 L["Font"] = true
-L["Font & Colours"] = true
+L["Font & Colors"] = true
 L["Music off"] = true
 L["Game Music"] = true
-L["Scroll Gui Text"] = true
+L["Scroll GUI Text"] = true
 
 L["How do I add music to the player?"] = true
 L["FAQ-Text1"] = [[
@@ -148,7 +147,7 @@ L["Font"] = true
 L["Font & Colours"] = true
 L["Music off"] = true
 L["Game Music"] = true
-L["Scroll Gui Text"] = true
+L["Scroll GUI Text"] = true
 
 L["Colours"] = true
 L["Artist color"] = true
@@ -156,8 +155,8 @@ L["Title color"] = true
 L["Background color"] = true
 L["Border color"] = true
 L["Button color"] = true
-L["Use artist colour"] = true
-L["Use artist colour as button colour"] = true
+L["Use artist color"] = true
+L["Use artist color as button color"] = true
 L["Frame strata"] = true
 
 L["Copy song to"] = true
@@ -219,8 +218,8 @@ L["Show message in your chat when playing a new song."] = true
 L["Disable WoW Music"] = true
 L["Disable WoW Music when not Playing."] = true
 					
-L["Show Gui"] = true
-L["Toggle show gui"] = true
+L["Show GUI"] = true
+L["Toggle show GUI"] = true
 
 L["Minimap Button"] = true
 L["Toggle show minimap button"] = true
@@ -255,12 +254,12 @@ L["Set a key in the key bindings menu to move a song to the selected list by tha
 L["Favorites List"] = true
 
 
-L["Gui Size"] = true
-L["Adjust the size of the gui"] = true
+L["GUI Size"] = true
+L["Adjust the size of the GUI"] = true
 
 L["Playlist not found."] = true
 L["Read the install file in the addon directory"] = true
-L["Gui not found"] = true
+L["GUI not found"] = true
 L["Playlist error oO Playlist maybe empty."] = true
 L["No Target"] = true
 L["Last playlist can not be removed."] = true
@@ -294,7 +293,7 @@ L["Playlists"] = true
 L["Close"] = true
 L["Clear"] = true
 
-L["Gui"] = true
+L["GUI"] = true
 L["List: "] = true
 L["Length: "] = true
 L["Album: "] = true
@@ -328,7 +327,3 @@ L["Remove Song"] = true
 L["Show Controls and Options"] = true
 L["Move song to bad songs list."] = true
 L["Move song to best songs list."] = true
-
-
-
-
