@@ -6,7 +6,7 @@
 ## SavedVariables: EpicMusicDancerDB
 ## Dependencies: EpicMusicPlayer
 
-## Version: 0.9
+## Version: @file-revision@
 ## X-Email: yessica@fantasymail.de
 ## X-Category: Audio
 

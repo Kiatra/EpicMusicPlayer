@@ -79,7 +79,7 @@ function EpicMusicPlayer:OpenMenu(frame)
 			func = function() self:PlayLast() end,
 		},
 		{
-			text = L["Show Gui"],
+			text = L["Show GUI"],
 			checked = self:IsPlayerGui(),
 			func = function() self:TogglePlayerGui() end,
 		},	

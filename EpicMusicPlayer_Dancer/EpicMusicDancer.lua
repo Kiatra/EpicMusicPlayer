@@ -221,8 +221,8 @@ local options={
 		            type = 'toggle',
 		            --width = "half",
 					order = 2,
-					name = L["Toggle with Gui"],
-		            desc = L["Showing/hiding the Gui will show/hide the dancer."],
+					name = L["Toggle with GUI"],
+		            desc = L["Showing/hiding the GUI will show/hide the dancer."],
 		            get = function() 
 						return EpicMusicDancer:IsGuiToggle()
 					end,
@@ -276,7 +276,7 @@ local options={
 		            type = 'toggle',
 					order = 2,
 					name = L["Lock"] ,
-		            desc = L["Unlock to allow moving the model. Moving will relese the model from the gui. Use reset to reattatch."],
+		            desc = L["Unlock to allow moving the model. Moving will release the model from the GUI. Use reset to reattach."],
 					get = function() 
 						return lock
 					end,
@@ -350,8 +350,8 @@ local options={
 				reset = {
 		            type = 'execute',
 					order = -1,
-					name = L["Reset Position"] ,
-		            desc = L["This will set the model to the default size and attatch it to the gui."],
+					name = L["Reset Position"],
+		            desc = L["This will set the model to the default size and attach it to the GUI."],
 					func = function() 
 						return EpicMusicDancer:ResetPos()
 					end,
@@ -762,8 +762,8 @@ function EpicMusicDancer:CreateDancerFrame(parent)
 	self.frame:SetHitRectInsets(10, 10, 25, 0); 
 	
 	self.frame:SetScript("OnMouseUp", 
-		function()
-			EpicMusicPlayer:OnDisplayClick(this)
+		function(self, btn)
+			EpicMusicPlayer:OnDisplayClick(self,btn)
 			if(tooltip) then
 				EpicMusicPlayerGui:ShowTooltip(tooltip)
 			end
@@ -826,7 +826,7 @@ function EpicMusicDancer:CreateDancerFrame(parent)
 	EpicMusicDancer.Model2 = model2
 	
 	EpicMusicDancer.frame:SetScript("OnMouseWheel", 
-		function()
+		function(self, value)
 				--[[
 				if EpicMusicPlayer.db.char.debug then
 					if arg1 < 1 then
@@ -837,29 +837,29 @@ function EpicMusicDancer:CreateDancerFrame(parent)
 					DEFAULT_CHAT_FRAME:AddMessage(seqence)
 				else
 				--]]
-					EpicMusicPlayer:DisplyScrollHandler()
+					EpicMusicPlayer:DisplyScrollHandler(value)
 				--end
 		end
     )
 
 	self.frame:SetScript("OnDragStart", 
-	    function()
-			this:StartMoving()
-			this.isMoving = true
+	    function(self)
+			self:StartMoving()
+			self.isMoving = true
 		end
 	)
 	self.frame:SetScript("OnDragStop", 
-	    function()
-			this:StopMovingOrSizing()
-			this.isMoving = false
+	    function(self)
+			self:StopMovingOrSizing()
+			self.isMoving = false
 		end
 	)
 	
 	self.frame:SetScript("OnEnter", 
-	    function()
-			if(self.db.char.tooltip)then
-				tooltip = this
-				EpicMusicPlayer:ShowTooltip(this)
+	    function(self)
+			if(EpicMusicPlayer.db.char.tooltip)then
+				tooltip = self
+				EpicMusicPlayer:ShowTooltip(self)
 			end
 		end
 	)
