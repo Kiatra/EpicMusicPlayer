@@ -50,12 +50,7 @@ function EpicMusicPlayer:OnInitialize()
 	self.sec = 0
 	self.UpdateInterval = 1
 		
-    self.db = LibStub("AceDB-3.0"):New("EpicMusicPlayerDB", defaults, "Default")
-
-    local optionsFrame = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("EpicMusicPlayer", "EpicMusicPlayer")
-	AceCfgDlg:SetDefaultSize("EpicMusicPlayer", 700, 500)
-	
-	self.db:RegisterDefaults({
+    local defaults = {
 		profile = {
 			random = false,
 			auto = false,
@@ -111,7 +106,13 @@ function EpicMusicPlayer:OnInitialize()
 			showgui = true,
 			debug = false,
 		}
-	})
+	}
+	
+	self.db = LibStub("AceDB-3.0"):New("EpicMusicPlayerDB", defaults, "Default")
+
+    local optionsFrame = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("EpicMusicPlayer", "EpicMusicPlayer")
+	AceCfgDlg:SetDefaultSize("EpicMusicPlayer", 700, 500)
+	
 	db = self.db.profile
 	
 	self:RegisterChatCommand("emp", "ChatCommand")
@@ -616,44 +617,30 @@ function EpicMusicPlayer:ShowConfig()
 end
 
 function EpicMusicPlayer:OnDisplayClick(parent, button)
-	--local controlset = db.controlset
-	
-	--[[
-	if(arg1 == "MiddleButton")then
-	
-	elseif(arg1 == "RightButton")then
-		self[db.controlset.right](self, parent)
-	elseif(arg1 == "Button4")then
-		self[db.controlset.button4](self, parent)
-	elseif(arg1 == "Button5")then
-		self[db.controlset.button5](self, parent)
-	else
-	--]]
-		if(IsAltKeyDown())then
-			if(IsControlKeyDown())then
-				self[db.controlset.leftaltcontrol](self, parent)
-			else
-				self[db.controlset.leftalt](self, parent)
-			end
-		elseif(IsShiftKeyDown()) then
-			self[db.controlset.leftshift](self, parent)
-		elseif(IsControlKeyDown()) then
-			self[db.controlset.leftcontrol](self, parent)
-		else --no key pressed
-			local func = db.controlset[button]
-			EpicMusicPlayer:Debug(button, func)
-			self[func](self, parent)
+	if(IsAltKeyDown())then
+		if(IsControlKeyDown())then
+			self[db.controlset.leftaltcontrol](self, parent)
+		else
+			self[db.controlset.leftalt](self, parent)
 		end
-	--end
+	elseif(IsShiftKeyDown()) then
+		self[db.controlset.leftshift](self, parent)
+	elseif(IsControlKeyDown()) then
+		self[db.controlset.leftcontrol](self, parent)
+	else --no key pressed
+		local func = db.controlset[button]
+		EpicMusicPlayer:Debug(button, func)
+		self[func](self, parent)
+	end
 end
 
-function EpicMusicPlayer:DisplyScrollHandler(arg1)
+function EpicMusicPlayer:DisplyScrollHandler(vector)
 		--EpicMusicPlayer:Debug("OnMouseWheel", self, vector)
 		local vol
 		if(IsControlKeyDown()) then --adjust sound volume
 			vol = GetCVar("Sound_SFXVolume")
 
-			if(arg1 == 1) then --volume up 
+			if(vector == 1) then --volume up 
 			  if(IsAltKeyDown()) then -- fine tune
 				vol = vol +.01
 			  else
@@ -678,7 +665,7 @@ function EpicMusicPlayer:DisplyScrollHandler(arg1)
 		else --adjust music volume
 			vol = GetCVar("Sound_MusicVolume")
 		
-			if(arg1 == 1) then --volume up 
+			if(vector == 1) then --volume up 
 			  if(IsAltKeyDown()) then -- fine tune
 				vol = vol +.01
 			  else

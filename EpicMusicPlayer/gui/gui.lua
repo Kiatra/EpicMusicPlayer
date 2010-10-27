@@ -241,8 +241,8 @@ local options={
 			}
 	}
 	
-local function ScrollText(self, arg1)
-	TimeSinceLastUpdate = TimeSinceLastUpdate + arg1
+local function ScrollText(self, elapsed)
+	TimeSinceLastUpdate = TimeSinceLastUpdate + elapsed
 	if(TimeSinceLastUpdate>0.03)then
 		TimeSinceLastUpdate = 0
 		--postpone scrolling
@@ -286,8 +286,8 @@ local function SetScrollText(text)
 	end
 end
 
-local function exchangeText()
-	TimeSinceLastUpdate = TimeSinceLastUpdate + arg1
+local function exchangeText(self, elapsed)
+	TimeSinceLastUpdate = TimeSinceLastUpdate + elapsed
 	if(TimeSinceLastUpdate>3)then
 		TimeSinceLastUpdate = 0
 		if(not volumechanged)then

@@ -268,8 +268,8 @@ local options={
 					get = function() 
 						return EpicMusicDancer:GetScale()
 					end,
-		            set =  function(arg1,arg2) 
-						return EpicMusicDancer:SetScale(arg2)
+		            set =  function(self,value) 
+						return EpicMusicDancer:SetScale(vale)
 					end,
 				},
 				lock = {
@@ -280,7 +280,7 @@ local options={
 					get = function() 
 						return lock
 					end,
-		            set =  function(arg1,arg2) 
+		            set =  function(self,value) 
 						return EpicMusicDancer:Togglelock()
 					end,
 				},
@@ -367,15 +367,14 @@ function EpicMusicDancer:Test()
 		--EpicMusicDancer.testframe:Hide()
 end
 
-local function OnUpdate(self, arg1)
-	TimeSinceLastUpdate = TimeSinceLastUpdate + arg1
+local function OnUpdate(self, elapsed)
+	TimeSinceLastUpdate = TimeSinceLastUpdate + elapsed
 
 	if seqence then 
-		seqtime = seqtime + (arg1 * 1000)
+		seqtime = seqtime + (elapsed * 1000)
 		if(dancing)then
 			EpicMusicDancer:GetModelFrame():SetSequenceTime(seqence, seqtime)
 		end
-		--this.model:SetSequenceTime(this.animNum,this.frameTime);
 		if(EpicMusicPlayer.Playing)then
 		if seqtime > endframe then
 			--if nextseqence then    
@@ -415,10 +414,7 @@ UIParent.Show = My_UIParent_Show
 --]]
 
 function EpicMusicDancer:OnInitialize()
-	
-	
-	self.db = LibStub("AceDB-3.0"):New("EpicMusicDancerDB", defaults, "Default")
-	self.db:RegisterDefaults({
+	local defaults = {
 		profile = {
 			random = true,
 			defaultmodel = "bloodelf",
@@ -433,7 +429,10 @@ function EpicMusicDancer:OnInitialize()
 			guitoggle = true;
 			strata = "MEDIUM"
 		}
-	})
+	}
+	
+	self.db = LibStub("AceDB-3.0"):New("EpicMusicDancerDB", defaults, "Default")
+	
 	
 	self:CreateDancerFrame(UIParent)
 	self:RegisterMessage("EMPUpdateStop")
@@ -827,18 +826,7 @@ function EpicMusicDancer:CreateDancerFrame(parent)
 	
 	EpicMusicDancer.frame:SetScript("OnMouseWheel", 
 		function(self, value)
-				--[[
-				if EpicMusicPlayer.db.char.debug then
-					if arg1 < 1 then
-						seqence = seqence +1
-					else
-						seqence = seqence -1
-					end
-					DEFAULT_CHAT_FRAME:AddMessage(seqence)
-				else
-				--]]
-					EpicMusicPlayer:DisplyScrollHandler(value)
-				--end
+			EpicMusicPlayer:DisplyScrollHandler(value)
 		end
     )
 

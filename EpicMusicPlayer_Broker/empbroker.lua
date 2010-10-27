@@ -79,8 +79,8 @@ local options={
 					get = function(name)
 						return EpicMusicPlayerBroker.db.profile.MaxTextLength
 					end,
-					set = function(arg1,arg2)
-						EpicMusicPlayerBroker:SetMaxTextLength(arg2)
+					set = function(self,value)
+						EpicMusicPlayerBroker:SetMaxTextLength(value)
 					end,
 				},	
 			}
@@ -162,9 +162,7 @@ function dataobj:OnLeave()
 end
 
 function EpicMusicPlayerBroker:OnInitialize()
-	self.db = LibStub("AceDB-3.0"):New("EpicMusicPlayerBrokerDB", defaults, "Default")
-	
-	self.db:RegisterDefaults({
+	local defaults = {
 		profile = {
 			MaxTextLength = 20,
 			enabled = true,
@@ -174,7 +172,9 @@ function EpicMusicPlayerBroker:OnInitialize()
 			shownumber = false,
 			showartist = false,
 		},
-	})
+	}
+	self.db = LibStub("AceDB-3.0"):New("EpicMusicPlayerBrokerDB", defaults, "Default")
+	
 	EpicMusicPlayer:AddOptions("broker",options)
 	songtitle = EpicMusicPlayer:GetCurrentSongName()
 	shorttitle = self:SetTextLenght(songtitle)
