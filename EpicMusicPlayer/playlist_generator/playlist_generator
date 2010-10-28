@@ -2,14 +2,40 @@
 '*                  EpicMusicPlayer Playlist Generator 2 
 '*                       Copyright by Jan Parizek 
 '*
+'* If you want to modify or include this with your addon, please ask first.
+'*
 '* Set folder with the music eg: "C:\Program Files\World of Warcraft\MyMusic"
 '* The folder MUST be within the World of Warcraft folder.
 musicfolder = "..\..\..\..\mymusic"
+'* This is where the addon will look for the music. It's relative to the WoW folder.
+realtiveMusicFolder = "MyMusic\\" 
 '********************************************************************************
 
 'check Windows Version
-If getWindowsVersion() <> "6.1" Then
-	WScript.Echo "This playlist generator 2 works only with Windows 7, please use the playlist manager." 
+Dim indexTitle
+Dim indexArtist 
+Dim indexAlbum
+Dim indexTime
+If getWindowsVersion() = "6.1" then
+	'Windows 7
+	indexTitle = 21
+	indexArtist = 20
+	indexAlbum = 14
+	indexTime = 27
+elseif getWindowsVersion() = "6.0" then
+	'Windows Vista
+	indexTitle = 21
+	indexArtist = 20
+	indexAlbum = 14
+	indexTime = 27
+elseif getWindowsVersion() = "5.1" then
+	'Windows XP
+	indexTitle = 10
+	indexArtist = 16
+	indexAlbum = 17
+	indexTime = 21
+else	
+	WScript.Echo "This playlist generator does not work with your windows version ("& getWindowsVersion() &"), please use the other playlist manager." 
 	Wscript.Quit
 End If
 
@@ -36,7 +62,7 @@ BinaryStream.Open
 BinaryStream.WriteText "local playlist = {" & Vbcrlf & "	{" & Vbcrlf
 BinaryStream.WriteText "		[""ListName""] = ""Custom""," & Vbcrlf
 BinaryStream.WriteText "		[""PlaylistVersion""] = ""3.0""," & Vbcrlf
-BinaryStream.WriteText "		[""MusicDir""] = ""MyMusic\\""," & Vbcrlf & "	}," & Vbcrlf
+BinaryStream.WriteText "		[""MusicDir""] = """ & realtiveMusicFolder & """," & Vbcrlf & "	}," & Vbcrlf
 'write music files
 WScript.Echo "Click OK to start generating the playlist. This may take some time. Wait until the ""done"" message appers." 
 GetFiles musicfolder
@@ -44,7 +70,8 @@ GetFiles musicfolder
 BinaryStream.WriteText "}" & Vbcrlf
 BinaryStream.WriteText "local EpicMusicPlayer = LibStub(""AceAddon-3.0""):GetAddon(""EpicMusicPlayer"")" & Vbcrlf
 BinaryStream.WriteText "if not EpicMusicPlayer then return end" & Vbcrlf
-BinaryStream.WriteText "EpicMusicPlayer:AddPlayList(""playlist"", playlist, false)" & Vbcrlf
+BinaryStream.WriteText "--EpicMusicPlayer:AddPlayList(""playlist"", playlist, false)" & Vbcrlf
+BinaryStream.WriteText "EpicMusicPlayer.playlist2 = playlist" & Vbcrlf
 BinaryStream.SaveToFile "playlist2.lua", adSaveCreateOverWrite
 
 WScript.Echo "Done! " & Vbcrlf & count & " music files written to Playlist." 
@@ -66,9 +93,9 @@ function getSongInfo(file,folder)
 	dim album, title, time, artist, ext, path
 	ext = Ucase(Right(file.Path, 3))
 	if ext = "MP3" then
-		title = Replace(folder.GetDetailsOf(file, 21) , """", "")
-		artist = Replace(folder.GetDetailsOf(file, 20) , """", "")
-		album = Replace(folder.GetDetailsOf(file, 14) , """", "")
+		title = Replace(folder.GetDetailsOf(file, indexTitle) , """", "")
+		artist = Replace(folder.GetDetailsOf(file, indexArtist) , """", "")
+		album = Replace(folder.GetDetailsOf(file, indexAlbum) , """", "")
 		time = getTime(file,folder)
 		'remove musicdir from path
 		path = Right(file.Path,len(file.Path)-len(musicfolder)-1)
@@ -85,7 +112,7 @@ end function
 function getTime(file,objFolder)
 	dim time
 	'get time from file hh:mm:ss
-	time=objFolder.GetDetailsOf(file, 27)
+	time=objFolder.GetDetailsOf(file, indexTime)
 	time=Split(time,":")
 	
 	if (UBound(time) - LBound(time) + 1)  > 2 then
