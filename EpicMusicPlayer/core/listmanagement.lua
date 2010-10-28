@@ -290,9 +290,11 @@ function EpicMusicPlayer:RemovePlayList(name)
 	table.remove(playlists, listIndex)
 	
 	-- remove from saved list if present
-	for i, list in ipairs(EpicMusicPlayer_PlayList) do
-		if(string.lower(list[1].ListName)==string.lower(name))then
-			table.remove(EpicMusicPlayer_PlayList, i)
+	if EpicMusicPlayer_PlayList then 
+		for i, list in ipairs(EpicMusicPlayer_PlayList) do
+			if(string.lower(list[1].ListName)==string.lower(name))then
+				table.remove(EpicMusicPlayer_PlayList, i)
+			end
 		end
 	end
 	

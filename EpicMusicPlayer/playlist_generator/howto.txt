@@ -1,0 +1,18 @@
+		Playlist Generator Alpha
+
+This is still alpha, use the playlist manager if you have problems.
+
+1.) Create a folder MyMusic in the World of Warcraft folder 
+    e.g "C:\Program Files\World of Warcraft\MyMusic"
+
+2.) Copy your mp3 files into the MyMusic folder
+
+3.) Rename the file playlist_generator in this folder to playlist_generator.vbs and
+    double click it.
+
+4.) Copy the "Sound" folder at \Interface\AddOns\EpicMusicPlayer\media\Sound to ...\World of Warcraft\Data\Sound
+    This is to disable the game music. If you want the game music again delete the folder ..\World of Warcraft\Data\Sound\Music
+
+Note:
+You can't mix playlist created with the playlist manager and the generator.
+Playlist's created by this generator cant be changed in-game and you have to recreate the list after an update.

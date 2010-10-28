@@ -29,9 +29,9 @@ libs\AceGUI-3.0-SharedMediaWidgets\widget.xml
 
 localization\enUS.lua
 localization\deDE.lua
-localisation\zhCN.lua
-localisation\zhTW.lua
-localisation\ruRU.lua
+localization\zhCN.lua
+localization\zhTW.lua
+localization\ruRU.lua
 
 core\core.lua
 core\scrolllist.lua
@@ -44,6 +44,7 @@ core\listmanagement.lua
 
 gui\gui.lua
 gui\skins.lua
+playlist_generator\playlist2.lua
 
 
 

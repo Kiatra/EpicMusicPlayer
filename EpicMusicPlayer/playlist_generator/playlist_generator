@@ -1,0 +1,124 @@
+'********************************************************************************
+'*                  EpicMusicPlayer Playlist Generator 2 
+'*                       Copyright by Jan Parizek 
+'*
+'* Set folder with the music eg: "C:\Program Files\World of Warcraft\MyMusic"
+'* The folder MUST be within the World of Warcraft folder.
+musicfolder = "..\..\..\..\mymusic"
+'********************************************************************************
+
+'check Windows Version
+If getWindowsVersion() <> "6.1" Then
+	WScript.Echo "This playlist generator 2 works only with Windows 7, please use the playlist manager." 
+	Wscript.Quit
+End If
+
+Dim count
+count = 0
+Set objShell = CreateObject("Shell.Application")
+set objFSO = createobject("Scripting.FileSystemObject")
+
+If  Not objFSO.FolderExists(musicfolder) Then
+	WScript.Echo "Music Folder not found: " & musicfolder 
+	Wscript.Quit
+End If
+musicfolder = objFSO.GetFolder(musicfolder).Path
+
+Const adTypeText = 2
+Const adSaveCreateOverWrite = 2
+Dim BinaryStream
+Set BinaryStream = CreateObject("ADODB.Stream")
+BinaryStream.Type = adTypeText
+BinaryStream.CharSet = "utf-8"
+BinaryStream.Open
+
+'write playlist head
+BinaryStream.WriteText "local playlist = {" & Vbcrlf & "	{" & Vbcrlf
+BinaryStream.WriteText "		[""ListName""] = ""Custom""," & Vbcrlf
+BinaryStream.WriteText "		[""PlaylistVersion""] = ""3.0""," & Vbcrlf
+BinaryStream.WriteText "		[""MusicDir""] = ""MyMusic\\""," & Vbcrlf & "	}," & Vbcrlf
+'write music files
+WScript.Echo "Click OK to start generating the playlist. This may take some time. Wait until the ""done"" message appers." 
+GetFiles musicfolder
+'write end of playlist
+BinaryStream.WriteText "}" & Vbcrlf
+BinaryStream.WriteText "local EpicMusicPlayer = LibStub(""AceAddon-3.0""):GetAddon(""EpicMusicPlayer"")" & Vbcrlf
+BinaryStream.WriteText "if not EpicMusicPlayer then return end" & Vbcrlf
+BinaryStream.WriteText "EpicMusicPlayer:AddPlayList(""playlist"", playlist, false)" & Vbcrlf
+BinaryStream.SaveToFile "playlist2.lua", adSaveCreateOverWrite
+
+WScript.Echo "Done! " & Vbcrlf & count & " music files written to Playlist." 
+
+'enum all files from given directory
+sub GetFiles(byval strDirectory)
+	set objFolder = objFSO.GetFolder(strDirectory)
+	set folder = objShell.NameSpace(strDirectory)
+	for each file in folder.items
+		'wscript.echo file
+		x = getSongInfo(file,folder)
+	next	
+	for each objFolder in objFolder.SubFolders
+		GetFiles objFolder.Path
+	next
+end sub
+
+function getSongInfo(file,folder)
+	dim album, title, time, artist, ext, path
+	ext = Ucase(Right(file.Path, 3))
+	if ext = "MP3" then
+		title = Replace(folder.GetDetailsOf(file, 21) , """", "")
+		artist = Replace(folder.GetDetailsOf(file, 20) , """", "")
+		album = Replace(folder.GetDetailsOf(file, 14) , """", "")
+		time = getTime(file,folder)
+		'remove musicdir from path
+		path = Right(file.Path,len(file.Path)-len(musicfolder)-1)
+		path = Replace(path, "\", "\\")
+		'wscript.echo title & " - " & file
+		if title = "" and len(file) > 4 then title = Left(file,len(file)-4) end if
+		if time > 0 then
+			x = writeSong(outfile, path, album, time,title, artist)
+			count = count + 1
+		end if
+	end if
+end function
+
+function getTime(file,objFolder)
+	dim time
+	'get time from file hh:mm:ss
+	time=objFolder.GetDetailsOf(file, 27)
+	time=Split(time,":")
+	
+	if (UBound(time) - LBound(time) + 1)  > 2 then
+		' convert hours, minutes and seconds strings to numbers and sumerize them
+		getTime = (CInt(time(0))*60+CInt(time(1)))*60+CInt(time(2)) 
+	else
+		getTime = 0
+	end if
+end function
+
+function writeSong(outfile,path,album,time,title,artist)
+	BinaryStream.WriteText "	{" & Vbcrlf
+	BinaryStream.WriteText "		[""Album""] = """ & album & ""","& Vbcrlf
+	BinaryStream.WriteText "		[""Song""] = """ & title & ""","& Vbcrlf
+	BinaryStream.WriteText "		[""Name""] = """ & path & ""","& Vbcrlf
+	BinaryStream.WriteText "		[""Length""] = " & time &","& Vbcrlf
+	BinaryStream.WriteText "		[""Artist""] = """ & artist & ""","& Vbcrlf
+	BinaryStream.WriteText "	},"& Vbcrlf
+end function
+
+function getWindowsVersion()
+	'Option Explicit
+	Dim objWMI, objItem, colItems
+	Dim strComputer, VerOS, VerBig, Ver9x, Version9x, OS, OSystem
+	
+	On Error Resume Next
+	strComputer = "."
+	Set objWMI = GetObject("winmgmts:\\" & strComputer & "\root\cimv2")
+	Set colItems = objWMI.ExecQuery("Select * from Win32_OperatingSystem",,48)
+	
+	For Each objItem in colItems
+	VerBig = Left(objItem.Version,3)
+	Next
+	
+	getWindowsVersion = VerBig
+end function

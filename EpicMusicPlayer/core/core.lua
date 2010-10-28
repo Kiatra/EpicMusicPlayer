@@ -175,6 +175,10 @@ function EpicMusicPlayer:OnEnable(first)
 		db.oldversion = EpicMusicPlayer.version;
 	end
 	
+	if EpicMusicPlayer.playlist2 then
+		EpicMusicPlayer:AddPlayList("Playlist", EpicMusicPlayer.playlist2, false)
+		EpicMusicPlayer:RemovePlayList("Common")
+	end
 end
 
 function EpicMusicPlayer:OnDisable()
