@@ -269,7 +269,7 @@ local options={
 						return EpicMusicDancer:GetScale()
 					end,
 		            set =  function(self,value) 
-						return EpicMusicDancer:SetScale(vale)
+						return EpicMusicDancer:SetScale(value)
 					end,
 				},
 				lock = {
@@ -608,7 +608,8 @@ function EpicMusicDancer:ResetPos()
 	if(EMPGUI)then
 		EpicMusicDancer.frame:SetParent(EMPGUI)
 		EpicMusicDancer.frame:ClearAllPoints() 
-		EpicMusicDancer.frame:SetPoint("BOTTOMRIGHT", "EMPGUI", "TOPRIGHT", -5, -18);
+		EpicMusicDancer.frame:SetPoint("BOTTOM", "EMPGUI", "TOP", -25, -22);
+		EpicMusicDancer.frame:SetPoint("CENTER", "EMPGUI", "CENTER", -25, -22);
 		EMPGUI:Show()
 		EpicMusicPlayer.db.profile.showgui = true;
 	else
@@ -736,9 +737,8 @@ function EpicMusicDancer:CreateDancerFrame(parent)
 	self.frame:SetHeight(100)
 	
 	self.frame:SetParent(parent)
-	--EpicMusicPlayer:Debug(EMPGUI:GetWidth(),-EMPGUI:GetWidth()/3)
-	self.frame:SetPoint("BOTTOMRIGHT", "EMPGUI", "TOPRIGHT", -5, -18);
-	--self.frame:SetPoint("BOTTOMRIGHT", "EMPGUI", "TOPRIGHT", 22, -15);
+	EpicMusicDancer.frame:SetPoint("BOTTOM", "EMPGUI", "TOP", -25, -22);
+	EpicMusicDancer.frame:SetPoint("CENTER", "EMPGUI", "CENTER", -25, -22);
 	sticky = true;
 		
     self.frame:SetFrameStrata(self.db.char.strata)

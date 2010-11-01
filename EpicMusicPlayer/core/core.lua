@@ -150,7 +150,7 @@ function EpicMusicPlayer:OnEnable(first)
 			else
 				SetCVar("Sound_EnableMusic", 1);	
 			end
-			--EpicMusicPlayer:Stop()
+			EpicMusicPlayer:Stop()
         end
     end
 	
@@ -165,7 +165,7 @@ function EpicMusicPlayer:OnEnable(first)
 	
 	if db.oldversion < EpicMusicPlayer.version then
 		StaticPopupDialogs["EPICMUSICPLAYER_UPDATEINFO"] = {
-			text = L["EpicMusicPlayer Update Info"].."\n\n "..L["Since patch 4.0.1 playing custom music will no longer stop the game music."].."\n "..L["To avoid hearing both, the game music and your custom music simultaneously, start the PlaylistManager save the playlist and resart WoW."].."\n\n"..L["Read the FAQ for more info about this."].."\n ",
+			text = L["EpicMusicPlayer Update Info"].."\n\n ".." Burned by the Flame of Deathwing the GUI of EpicMusicPlayer has gained a new look... \n\n You can select the old skin at the GUI options.",
 			button2 = "OK",
 			timeout = 0,
 			whileDead = true,
@@ -173,6 +173,9 @@ function EpicMusicPlayer:OnEnable(first)
 		}
 		StaticPopup_Show("EPICMUSICPLAYER_UPDATEINFO")
 		db.oldversion = EpicMusicPlayer.version;
+		EpicMusicPlayer.db.profile.skin = "cataclysm"
+		EpicMusicPlayerGui:CreateGuiFrame()
+		EpicMusicPlayerGui:ChangeSettingsToSkin()
 	end
 	
 	if EpicMusicPlayer.playlist2 then
@@ -195,7 +198,7 @@ end
 
 -- patch 2.4.3  workaround
 function EpicMusicPlayer:OnEnteringWorld(event)
-	EpicMusicPlayer:Debug(event)
+	--EpicMusicPlayer:Debug(event)
     if(EpicMusicPlayer.Playing)then
 		SetCVar("Sound_EnableMusic", 0);
 		
@@ -211,7 +214,7 @@ end
 
 -- patch 3.0.8  workaround
 function EpicMusicPlayer:OnPlayerAlive(event)
-	EpicMusicPlayer:Debug(event)
+	--EpicMusicPlayer:Debug(event)
     if( UnitIsDeadOrGhost("Player") and EpicMusicPlayer.Playing)then
 		SetCVar("Sound_EnableMusic", 0);
 		
@@ -227,7 +230,7 @@ end
 
 function EpicMusicPlayer:OnPlayerLevelUp(level)
 	if level == 85 then
-		EpicMusicPlayer:Debug(level)
+		--EpicMusicPlayer:Debug(level)
 		EpicMusicPlayer:SetVolume(1,"music")
 		if(EpicMusicPlayerGui)then
 			if(not EpicMusicPlayer.db.char.showgui)then
@@ -322,12 +325,12 @@ function EpicMusicPlayer:PlayNext()
 	local song
 	-- check random play
     if db.loopsong then
-		EpicMusicPlayer:Debug("loopsong")
+		--EpicMusicPlayer:Debug("loopsong")
 		song = currentsong
 	elseif(db.random) then
         song = self:GetRandomSong(db.list)
     else        
-        EpicMusicPlayer:Debug("EpicMusicPlayer:PlayNext() loopList=", loopList)
+        --EpicMusicPlayer:Debug("EpicMusicPlayer:PlayNext() loopList=", loopList)
 		song, db.list,db.song = EpicMusicPlayer:GetNextSong(db.list,db.song,db.looplist)
     end  
     EpicMusicPlayer:AddSongToHistory(song)
@@ -580,6 +583,14 @@ function EpicMusicPlayer:GetCurrentSongName()
 		else
 			return L["Game Music"]
 		end
+	end
+end
+
+function EpicMusicPlayer:GetCurrentArtstName()
+	if(playing and currentsong)then
+		return currentsong.Artist
+	else
+		return ""
 	end
 end
 

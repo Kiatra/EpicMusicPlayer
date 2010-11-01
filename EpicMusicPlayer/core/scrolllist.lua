@@ -138,7 +138,7 @@ local function SetSelected(self, index)
 end
 
 local function SetMax(self, size)
-	EpicMusicPlayer:Debug("Setmax")
+	--EpicMusicPlayer:Debug("Setmax")
 	self.size = size
 	local scrollbar = self.scrollbar
 	if size-self.numButtons > 1 then

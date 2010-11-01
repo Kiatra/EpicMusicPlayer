@@ -138,7 +138,7 @@ local empoptions = {
 								return EpicMusicPlayer.db.profile.font
 							end,
 							set = function(info, value)
-								EpicMusicPlayer:Debug(EpicMusicPlayer.media:Fetch("font",value))
+								--EpicMusicPlayer:Debug(EpicMusicPlayer.media:Fetch("font",value))
 								EpicMusicPlayer.db.profile.font = value
 								--update gui
 								if(EpicMusicPlayerGui)then
@@ -158,7 +158,7 @@ local empoptions = {
 								return EpicMusicPlayer.db.profile.playlistfont
 							end,
 							set = function(info, value)
-								EpicMusicPlayer:Debug(EpicMusicPlayer.media:Fetch("font",value))
+								--EpicMusicPlayer:Debug(EpicMusicPlayer.media:Fetch("font",value))
 								EpicMusicPlayer.db.profile.playlistfont = value
 								--update gui
 								--if(EpicMusicPlayerGui)then
@@ -310,6 +310,7 @@ local empoptions = {
 		            get = "IsMute",
 		            set = "ToggleMute"
 		        },
+				--[[
 				wowmusic = {
 		            type = 'toggle',
 					--width = "half",
@@ -319,6 +320,7 @@ local empoptions = {
 		            get = "IsDisWoWMusic",
 		            set = "ToggleDisWoWMusic"
 				},
+				--]]
 				auto = {
 		            type = 'toggle',
 					--width = "half",
@@ -567,6 +569,23 @@ local empoptions = {
 							order = 1,
 							type = "description",
 							name = L["Delete the Sound folder (NOT the mpq file) at ..\\World of Warcraft\\Data\\Sound"],
+						},
+					},
+				},
+				FAQ3 = {
+					type = "group",
+					order = 2,
+					name = L["Why do I hear the game music mixed together with my music?"],
+					args = {
+						header = {
+							type = "header",
+							name = L["Why do I hear the game music mixed together with my music?"],
+							order = 0,
+						},
+						text = {
+							order = 1,
+							type = "description",
+							name = L["Since patch 4.0.1 the addon can't disable the game music anymore. You need to copy the \"Sound\" folder at \\Interface\\AddOns\\EpicMusicPlayer\\media\\ to ...\\World of Warcraft\\Data\\ This will completely disable the game music until you delete that folder."],
 						},
 					},
 				},

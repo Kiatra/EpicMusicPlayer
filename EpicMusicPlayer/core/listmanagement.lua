@@ -81,21 +81,21 @@ end
 function EpicMusicPlayer:AddSongToHistory(song)
 	if not song then return end
 	historypointer = historypointer + 1
-	EpicMusicPlayer:Debug("AddSongToHistory","#playedhistory=",#playedhistory,"pointer",historypointer)
+	--EpicMusicPlayer:Debug("AddSongToHistory","#playedhistory=",#playedhistory,"pointer",historypointer)
 	if historypointer > 1 and historypointer <= historymax then 
 		playedhistory[historypointer] = song
 	else
 		
 		historypointer = 2
 		playedhistory[2] = getCopy(song)
-		EpicMusicPlayer:Debug("AddSongToHistory reset","pointer",historypointer)
+		--EpicMusicPlayer:Debug("AddSongToHistory reset","pointer",historypointer)
 	end	
 end
 
 function EpicMusicPlayer:GetSongFromHistory()
 	if #playedhistory < 2 then return end -- add first
 	historypointer = historypointer - 1
-	EpicMusicPlayer:Debug("GetSongFromHistory","#playedhistory=",#playedhistory,"pointer",historypointer)
+	--EpicMusicPlayer:Debug("GetSongFromHistory","#playedhistory=",#playedhistory,"pointer",historypointer)
 	if historypointer > 1 and historypointer <= historymax then 
 		return playedhistory[historypointer] 
 	else
@@ -402,7 +402,7 @@ end
 
 function EpicMusicPlayer:GetSong(listIndex, songIndex)
 	if not songIndex or notlistIndex or songIndex < 2 then
-		EpicMusicPlayer:Debug("listIndex or songIndex not vaild.",listIndex, songIndex)
+		--EpicMusicPlayer:Debug("listIndex or songIndex not vaild.",listIndex, songIndex)
 		return nil
 	end
 	local list = playlists[listIndex]
@@ -411,9 +411,9 @@ function EpicMusicPlayer:GetSong(listIndex, songIndex)
 		if song then 
 			return song
 		else
-			EpicMusicPlayer:Debug("song", songIndex,"not found in list", listIndex)
+			--EpicMusicPlayer:Debug("song", songIndex,"not found in list", listIndex)
 		end
 	else
-		EpicMusicPlayer:Debug("list", listIndex ,"not found.")
+		--EpicMusicPlayer:Debug("list", listIndex ,"not found.")
 	end
 end

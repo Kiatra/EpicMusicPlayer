@@ -3,6 +3,10 @@ local AceLocale = LibStub:GetLibrary("AceLocale-3.0")
 local L = AceLocale:NewLocale("EpicMusicPlayer", "enUS", true)
 if not L then return end
 
+L["Layout & Skin"] = true
+L["Why do I hear the game music mixed together with my music?"] = true
+L["Since patch 4.0.1 the addon can't disable the game music anymore. You need to copy the \"Sound\" folder at \\Interface\\AddOns\\EpicMusicPlayer\\media\\ to ...\\World of Warcraft\\Data\\ This will completely disable the game music until you delete that folder."] = true
+
 
 L["Select a question from the left."] = true
 

@@ -2,7 +2,7 @@ local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer")
 
 function EpicMusicPlayer:ReciveMessage(prefix, message, distribution, sender)
 	--EpicMusicPlayer:Debug("ReciveMessage", prefix, message, distribution, sender)
-	EpicMusicPlayer:Debug("Message:", message)
+	--EpicMusicPlayer:Debug("Message:", message)
 	local a, b, title, artist, album, length, path = strfind(message, "(.+):(.+):(.+):(.+):(.+)");
 	
 	DEFAULT_CHAT_FRAME:AddMessage("|TInterface\\AddOns\\EpicMusicPlayer\\media\\icon.tga:18|t |c"
