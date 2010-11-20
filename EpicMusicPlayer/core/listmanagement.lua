@@ -5,7 +5,7 @@ local playlists
 
 local listnames = {}
 local searchlist = {} --serach result
-playedhistory = {}
+local playedhistory = {}
 playedhistory[1]= {ListName = "Playedhistory"}
 local historymax = 25
 local historypointer = 1
@@ -32,10 +32,8 @@ function EpicMusicPlayer:CheckPlayList()
 	end	
 	
 	if (ok == false) then
-		self:Print(L["Playlist not found."])
+		--self:Print(L["Playlist not found."])
 		-- no playlist found, create dummy playlist
-		db.list = 1
-	    db.song = 2
 		
 		playlists = {
 	        { -- list 1
@@ -59,7 +57,7 @@ function EpicMusicPlayer:CheckPlayList()
 		musicdir = firstlist[1].MusicDir
 	else
 		musicdir = "MyMusic\\"
-		self:Print("Musicdir not set. Setting to: <wowdir>\\MyMusic\\")
+		--self:Print("Musicdir not set. Setting to: <wowdir>\\MyMusic\\")
 	end
 	
 	EpicMusicPlayer.playlists = playlists

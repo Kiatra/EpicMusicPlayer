@@ -32,6 +32,7 @@ localization\deDE.lua
 localization\zhCN.lua
 localization\zhTW.lua
 localization\ruRU.lua
+localization\frFR.lua
 
 core\core.lua
 core\scrolllist.lua

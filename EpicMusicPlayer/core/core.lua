@@ -66,6 +66,7 @@ function EpicMusicPlayer:OnInitialize()
 			disablewowmusic = false,
 			showmessage = true,
 			minimapbutton = false,
+			showUpdateInfo = true,
 			defaultchannel = "PARTY",
 			playlistPoint = "CENTER",
 			playlistOffx = 0,
@@ -110,7 +111,7 @@ function EpicMusicPlayer:OnInitialize()
 	
 	self.db = LibStub("AceDB-3.0"):New("EpicMusicPlayerDB", defaults, "Default")
 
-    local optionsFrame = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("EpicMusicPlayer", "EpicMusicPlayer")
+    AceCfgDlg:AddToBlizOptions("EpicMusicPlayer", "EpicMusicPlayer")
 	AceCfgDlg:SetDefaultSize("EpicMusicPlayer", 700, 500)
 	
 	db = self.db.profile
@@ -163,9 +164,9 @@ function EpicMusicPlayer:OnEnable(first)
 		end
 	end
 	
-	if db.oldversion < EpicMusicPlayer.version then
+	if db.oldversion < EpicMusicPlayer.version and db.showUpdateInfo then
 		StaticPopupDialogs["EPICMUSICPLAYER_UPDATEINFO"] = {
-			text = L["EpicMusicPlayer Update Info"].."\n\n ".." Burned by the Flame of Deathwing the GUI of EpicMusicPlayer has gained a new look... \n\n You can select the old skin at the GUI options.",
+			text = L["EpicMusicPlayer Update Info"].."\n\n ".." .)The problem with playing addon music and wow music was fixed by Blizzard /cheer. \n.)The game music is back in the playlist. There is also a new Cataclysm playlist but you will not hear this music until patch 4.0.3a \n\n If you have problems hearing the game music read the FAQ.\n",
 			button2 = "OK",
 			timeout = 0,
 			whileDead = true,
@@ -258,6 +259,7 @@ function EpicMusicPlayer:Play(song)
 	--EpicMusicPlayer:GetNextSong(db.list,db.song)
 
 	if not song then -- no song given try to play last song again
+		EpicMusicPlayer:Debug("no song given try to play last song again db.list,db.song",db.list,db.song )
 		song = self:GetSong(db.list,db.song)
 		if not song then -- song not found get next
 			song, db.list,db.song = self:GetNextSong(db.song,db.list,db.looplist)
@@ -308,12 +310,12 @@ function EpicMusicPlayer:Stop()
 	self:CancelTimer(timer,true)
 	
 	local wowmusic
-	--if(db.disablewowmusic) then 
-	--	SetCVar("Sound_EnableMusic", 0);
+	if(db.disablewowmusic) then 
+		SetCVar("Sound_EnableMusic", 0);
 		wowmusic = L["Music off"]		
-	--else
-	--	wowmusic = L["Game Music"]
-	--end
+	else
+		wowmusic = L["Game Music"]
+	end
 	StopMusic()
 	self.Playing = false;
 	self:SendMessage("EMPUpdateStop", "", wowmusic, 0)

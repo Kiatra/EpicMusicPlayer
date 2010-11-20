@@ -310,7 +310,6 @@ local empoptions = {
 		            get = "IsMute",
 		            set = "ToggleMute"
 		        },
-				--[[
 				wowmusic = {
 		            type = 'toggle',
 					--width = "half",
@@ -320,7 +319,6 @@ local empoptions = {
 		            get = "IsDisWoWMusic",
 		            set = "ToggleDisWoWMusic"
 				},
-				--]]
 				auto = {
 		            type = 'toggle',
 					--width = "half",
@@ -338,6 +336,19 @@ local empoptions = {
 		            desc = L["Show song and artist on new song"],
 		            get = "IsShowMessage",
 		            set = "ToggleShowMessage",
+		        },
+				updateinfo = {
+		            type = 'toggle',
+					--width = "half",
+					order = 4,
+					name = L["Show Update Info"],
+		            desc = L["Show Update Info"],
+		            get = function()
+							return db.showUpdateInfo
+						end,
+		            set = function(info, value)
+							db.showUpdateInfo = value
+						end,
 		        },
 		        spam = {
 		            type = 'toggle',
@@ -832,7 +843,9 @@ end
 function EpicMusicPlayer:ChatCommand(input)
     if not input or input:trim() == "" then
 		local AceCfgDlg = LibStub("AceConfigDialog-3.0")
+		AceCfgDlg:SelectGroup("EpicMusicPlayer", "general")
 		AceCfgDlg:SelectGroup("EpicMusicPlayer", "help")
+		
         AceCfgDlg:Open("EpicMusicPlayer")
     else
         LibStub("AceConfigCmd-3.0").HandleCommand(EpicMusicPlayer, "emp", "EpicMusicPlayer", input)

@@ -38,13 +38,8 @@ local function GetSkinsList()
 --								DIALOG="Dialog",HIGH="High",MEDIUM="Medium",LOW="Low",BACKGROUND="Background"},
 	list = {}
 	for k, v in pairs(EpicMusicPlayerGui.skins) do
-		--table.insert(list,{v})
-		list[k] = k
+		list[k] = v.name
 	end
-	
-	--for i, list in ipairs(EpicMusicPlayer_PlayList) do
-	--	EpicMusicPlayer.listnames[list[1].ListName] = list[1].ListName
-	--end
 	return list
 end
 
@@ -666,9 +661,29 @@ local function newControl(settings, frame)
 	return frame
 end
 
+local skin = {}
 function EpicMusicPlayerGui:CreateGuiFrame()
 		
 	self.cuurskin = self.skins[EpicMusicPlayer.db.profile.skin] or self.skins["cataclysm"]
+	
+	if self.cuurskin.inherit then
+		local childskin = self.cuurskin
+		self.cuurskin = self.skins[self.cuurskin.inherit] --set the current skin to the parent skin
+		
+		-- overwrite the parent with the child values
+		for key, value in pairs(childskin) do
+			--EpicMusicPlayer.Debug(type(value))
+			if type(value) == "table" then
+				for k, v in pairs(value) do
+					EpicMusicPlayer.Debug(self.cuurskin[key][k],"=", v,"key=",key,"k=",k)
+					self.cuurskin[key][k] = v
+				end
+			else
+				self.cuurskin[key] = value
+			end
+		end
+	end
+	
 	path = self.cuurskin.texturepath
 	
 	self.frames = self.frames or {}

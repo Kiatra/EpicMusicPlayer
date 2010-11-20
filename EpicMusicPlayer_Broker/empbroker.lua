@@ -195,12 +195,6 @@ end
 function EpicMusicPlayerBroker:EMPUpdateTime(event)
 	sec = sec +1
 	self:UpdateText()
-	
-	if mod(sec,2) == 0 then
-		dataobj.icon = nil
-	else
-		dataobj.icon = "Interface\\AddOns\\EpicMusicPlayer\\media\\icon"
-	end
 end
 
 function EpicMusicPlayerBroker:EMPUpdateVolume(event, voltype, vol)

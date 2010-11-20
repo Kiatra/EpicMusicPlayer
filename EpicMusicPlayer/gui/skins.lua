@@ -5,6 +5,7 @@ EpicMusicPlayerGui.skins = {
 		-- default values for all controls are: 
 		--		type = "button", align = "TOPLEFT", height = 0, width = 0, offx = 0, offy = 0},
 		-- you only nedd to specify vaules that differ form the default ones.
+		name = "Classic",
 		texturepath = "Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\",
 		guiframe = { height = 50, width = 150},
 		timebar = { align = "CENTER", height = 2, width = 140},
@@ -93,6 +94,7 @@ EpicMusicPlayerGui.skins = {
 	},
 	-- cataclysm layout -------------------------------------------------------------------------------------
 	cataclysm = {
+		name = "Cataclysm",
 		texturepath = "Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\",
 		bgtextrue = {bgFile = "Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\cata-skin.tga", 
 			edgeFile = nil, 
@@ -181,8 +183,43 @@ EpicMusicPlayerGui.skins = {
 			onrightclick = EpicMusicPlayer.ToggleList,
 		},
 	},
+	-- cataclysm layout -------------------------------------------------------------------------------------
+	cataclysm_white = {
+		name = "Cataclysm White",
+		inherit = "cataclysm",
+		titleColor = {r=1, g=1, b=1, a=1},
+		last = {
+			normaltexture = "emp-last.tga",
+			pushedtexture = "emp-last-p.tga",
+		},
+		play = {
+			normaltexture = "emp-play.tga",
+			pushedtexture = "emp-play-p.tga",
+			normaltexture2 = "emp-stop.tga",
+			pushedtexture2 = "emp-stop-p.tga",
+		},
+		next = {
+			normaltexture = "emp-next.tga",
+			pushedtexture = "emp-next-p.tga",
+		},
+		random = {
+			normaltexture = "emp-randomon.tga",
+			pushedtexture = "emp-randomon-p.tga",
+			normaltexture2 = "emp-randomoff.tga",
+			pushedtexture2 = "emp-randomoff-p.tga",
+		},
+		config = {
+			normaltexture = "emp-conf.tga",
+			pushedtexture = "emp-conf-p.tga",
+		},
+		playlist = {
+			normaltexture = "emp-list.tga",
+			pushedtexture = "emp-list-p.tga",
+		},
+	},
 	-- compact layout -------------------------------------------------------------------------------------
 	compact = {
+		name = "Compact",
 		guiframe = { height = 50, width = 57},
 		timebar = { align = "CENTER", height = 2, width = 50},
 		--text = { align = "TOP", height = 20, width = 45, offx = 3, offy = -5},

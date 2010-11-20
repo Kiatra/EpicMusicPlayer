@@ -1,0 +1,20 @@
+## Interface: 40000
+
+## Title: EpicMusicPlayer [|cffeda55fGameMusic|r]
+## Notes: GameMusic module for EpicMusicPlayer.
+## Author: yess
+## Dependencies: EpicMusicPlayer
+
+## Version: @file-revision@
+## X-Email: yessica@fantasymail.de
+## X-Category: Audio
+
+EpicGameMusic.lua
+
+
+
+
+
+
+
+

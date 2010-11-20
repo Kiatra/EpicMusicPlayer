@@ -48,4 +48,5 @@ move-folders:
     EpicMusicPlayer/EpicMusicPlayer: EpicMusicPlayer
     EpicMusicPlayer/EpicMusicPlayer_Broker: EpicMusicPlayer_Broker
     EpicMusicPlayer/EpicMusicPlayer_Dancer: EpicMusicPlayer_Dancer
+	EpicMusicPlayer/EpicMusicPlayer_GameMusic: EpicMusicPlayer_GameMusic
 	
