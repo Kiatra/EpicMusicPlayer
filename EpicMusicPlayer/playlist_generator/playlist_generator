@@ -11,6 +11,9 @@ musicfolder = "..\..\..\..\mymusic"
 realtiveMusicFolder = "MyMusic\\" 
 '********************************************************************************
 
+'force the script to run in from a console 
+CheckStartMode
+
 'check Windows Version
 Dim indexTitle
 Dim indexArtist 
@@ -58,20 +61,35 @@ BinaryStream.Type = adTypeText
 BinaryStream.CharSet = "utf-8"
 BinaryStream.Open
 
-'write playlist head
-BinaryStream.WriteText "local playlist = {" & Vbcrlf & "	{" & Vbcrlf
-BinaryStream.WriteText "		[""ListName""] = ""Custom""," & Vbcrlf
-BinaryStream.WriteText "		[""PlaylistVersion""] = ""3.0""," & Vbcrlf
-BinaryStream.WriteText "		[""MusicDir""] = """ & realtiveMusicFolder & """," & Vbcrlf & "	}," & Vbcrlf
-'write music files
-WScript.Echo "Click OK to start generating the playlist. This may take some time. Wait until the ""done"" message appers." 
-GetFiles musicfolder
-'write end of playlist
-BinaryStream.WriteText "}" & Vbcrlf
+'WScript.Echo "Generating the playlist, this may take some time..." 
 BinaryStream.WriteText "local EpicMusicPlayer = LibStub(""AceAddon-3.0""):GetAddon(""EpicMusicPlayer"")" & Vbcrlf
 BinaryStream.WriteText "if not EpicMusicPlayer then return end" & Vbcrlf
-BinaryStream.WriteText "--EpicMusicPlayer:AddPlayList(""playlist"", playlist, false)" & Vbcrlf
-BinaryStream.WriteText "EpicMusicPlayer.playlist2 = playlist" & Vbcrlf
+
+set objFolder = objFSO.GetFolder(musicfolder)
+set folder = objShell.NameSpace(musicfolder)
+playlistIndex = 0
+'create a playlist for all the files in the music folder
+BinaryStream.WriteText "local playlist" & playlistIndex &  " = {" & Vbcrlf & "	{" & Vbcrlf
+BinaryStream.WriteText "		[""ListName""] = """ & objFSO.GetFolder(musicfolder).Name &"""," & Vbcrlf
+BinaryStream.WriteText "		[""PlaylistVersion""] = ""3.0""," & Vbcrlf
+BinaryStream.WriteText "		[""MusicDir""] = """ & realtiveMusicFolder & """," & Vbcrlf & "	}," & Vbcrlf
+WScript.Echo "Generating playlist: " & objFSO.GetFolder(musicfolder).Name
+for each file in folder.items
+	x = getSongInfo(file,folder)
+next
+BinaryStream.WriteText "}" & Vbcrlf
+BinaryStream.WriteText "EpicMusicPlayer:AddPlayList(""playlist"", playlist" & playlistIndex & ", false)" & Vbcrlf
+playlistIndex = playlistIndex + 1
+
+'create a playlist for each subfolder of the music folder 
+for each objFolder in objFolder.SubFolders
+	if objFolder.Files.Count > 0 or objFolder.Subfolders.count > 0 then 
+		wscript.echo objFolder
+		CreatePlaylist objFolder.Path
+		playlistIndex = playlistIndex + 1
+	end if
+next
+
 BinaryStream.SaveToFile "playlist2.lua", adSaveCreateOverWrite
 
 WScript.Echo "Done! " & Vbcrlf & count & " music files written to Playlist." 
@@ -89,6 +107,23 @@ sub GetFiles(byval strDirectory)
 	next
 end sub
 
+sub CreatePlaylist(byval strDirectory)
+	'strPlayListName = strDirectory
+	'write playlist head
+	BinaryStream.WriteText "local playlist" & playlistIndex &  " = {" & Vbcrlf & "	{" & Vbcrlf
+	BinaryStream.WriteText "		[""ListName""] = """ & objFSO.GetFolder(strDirectory).Name & """," & Vbcrlf
+	BinaryStream.WriteText "		[""PlaylistVersion""] = ""3.0""," & Vbcrlf
+	BinaryStream.WriteText "		[""MusicDir""] = """ & realtiveMusicFolder & """," & Vbcrlf & "	}," & Vbcrlf
+	'write music files
+	WScript.Echo "Generating playlist for files in: " & objFSO.GetFolder(strDirectory).Name
+	GetFiles strDirectory
+	'write end of playlist
+	BinaryStream.WriteText "}" & Vbcrlf
+	
+	BinaryStream.WriteText "EpicMusicPlayer:AddPlayList(""playlist"", playlist" & playlistIndex & ", false)" & Vbcrlf
+	'BinaryStream.WriteText "EpicMusicPlayer.playlist2 = playlist" & Vbcrlf
+end sub
+
 function getSongInfo(file,folder)
 	dim album, title, time, artist, ext, path
 	ext = Ucase(Right(file.Path, 3))
@@ -104,6 +139,7 @@ function getSongInfo(file,folder)
 		if title = "" and len(file) > 4 then title = Left(file,len(file)-4) end if
 		if time > 0 then
 			x = writeSong(outfile, path, album, time,title, artist)
+			WScript.Echo count & " Writing: " & path 
 			count = count + 1
 		end if
 	end if
@@ -149,3 +185,19 @@ function getWindowsVersion()
 	
 	getWindowsVersion = VerBig
 end function
+
+
+Sub CheckStartMode
+     ' Returns the running executable as upper case from the last \ symbol
+     strStartExe = UCase( Mid( wscript.fullname, instrRev(wscript.fullname, "\") + 1 ) )
+
+     If Not strStartExe = "CSCRIPT.EXE" Then
+          ' This wasn't launched with cscript.exe, so relaunch using cscript.exe explicitly!
+          ' wscript.scriptfullname is the full path to the actual script
+
+          set           oSh = CreateObject("wscript.shell")
+          oSh.Run "cmd /k cscript.exe """ & wscript.scriptfullname & """"
+          wscript.quit
+
+     End If
+End Sub

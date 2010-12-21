@@ -1,7 +1,7 @@
 local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer")
 local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 
-local playlists
+local playlists = {}
 
 local listnames = {}
 local searchlist = {} --serach result
@@ -11,30 +11,27 @@ local historymax = 25
 local historypointer = 1
 local db
 
+function EpicMusicPlayer:AddSavedPlayList()
+	local musicdir
+	if EpicMusicPlayer_PlayList then
+		for i, list in ipairs(EpicMusicPlayer_PlayList) do
+			playlists[#playlists +1] = list
+			if list[1].MusicDir then
+				musicdir = list[1].MusicDir
+			end
+		end
+	end
+	EpicMusicPlayer.musicdir = musicdir
+end
+
 -- check playlist - is there a playlist, with content ?
 function EpicMusicPlayer:CheckPlayList()
 	db = EpicMusicPlayer.db.profile
-	playlists = {}
-	local ok = true
-	local firstlist
+	
 	-- put the list that will be saved and lists that will not be saved in one list
-	if EpicMusicPlayer_PlayList then
-		for i, list in ipairs(EpicMusicPlayer_PlayList) do
-			playlists[i] = list
-		end
-		firstlist = EpicMusicPlayer_PlayList[1]
-	else
-		ok = false;
-	end
-	
 	if (table.getn(playlists) < 1) then
-		ok = false;
-	end	
-	
-	if (ok == false) then
-		--self:Print(L["Playlist not found."])
-		-- no playlist found, create dummy playlist
-		
+		self:Print(L["Playlist not found."])
+		--no playlist found, create dummy playlist
 		playlists = {
 	        { -- list 1
 	            {
@@ -51,11 +48,9 @@ function EpicMusicPlayer:CheckPlayList()
 	            }, -- [3]
 	        },
 		}
-	end
+	end	
 	
-	if firstlist and firstlist[1] and firstlist[1].MusicDir then
-		musicdir = firstlist[1].MusicDir
-	else
+	if not musicdir then 
 		musicdir = "MyMusic\\"
 		--self:Print("Musicdir not set. Setting to: <wowdir>\\MyMusic\\")
 	end

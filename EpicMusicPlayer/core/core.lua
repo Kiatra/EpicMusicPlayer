@@ -119,7 +119,7 @@ function EpicMusicPlayer:OnInitialize()
 	self:RegisterChatCommand("emp", "ChatCommand")
     self:RegisterChatCommand("epicmusicplayer", "ChatCommand")
 	
-	musicdir = self:CheckPlayList()
+	
 	--CheckFolder(musicdir)
 	self:UpdateListnames()
 	
@@ -178,11 +178,12 @@ function EpicMusicPlayer:OnEnable(first)
 		EpicMusicPlayerGui:CreateGuiFrame()
 		EpicMusicPlayerGui:ChangeSettingsToSkin()
 	end
-	
+	musicdir = self:CheckPlayList()
 	if EpicMusicPlayer.playlist2 then
 		EpicMusicPlayer:AddPlayList("Playlist", EpicMusicPlayer.playlist2, false)
 		EpicMusicPlayer:RemovePlayList("Common")
 	end
+	
 end
 
 function EpicMusicPlayer:OnDisable()
@@ -203,8 +204,8 @@ function EpicMusicPlayer:OnEnteringWorld(event)
     if(EpicMusicPlayer.Playing)then
 		SetCVar("Sound_EnableMusic", 0);
 		
-		EpicMusicPlayer:CancelTimer(eventtimer,true)
 		
+		EpicMusicPlayer:CancelTimer(eventtimer,true)
 		eventtimer = EpicMusicPlayer:ScheduleTimer(function() 
 			if(EpicMusicPlayer.Playing)then
 				EpicMusicPlayer:Play(currentsong)
@@ -259,7 +260,6 @@ function EpicMusicPlayer:Play(song)
 	--EpicMusicPlayer:GetNextSong(db.list,db.song)
 
 	if not song then -- no song given try to play last song again
-		EpicMusicPlayer:Debug("no song given try to play last song again db.list,db.song",db.list,db.song )
 		song = self:GetSong(db.list,db.song)
 		if not song then -- song not found get next
 			song, db.list,db.song = self:GetNextSong(db.song,db.list,db.looplist)
@@ -268,7 +268,9 @@ function EpicMusicPlayer:Play(song)
 	end
 	
 	--EpicMusicPlayer:Debug("playing list=", db.list, "song=",db.song,"song.Song", song.Song)
+	
 	self:CancelTimer(timer,true)
+	
 	SetCVar("Sound_EnableMusic", 1)
 	
 	self.sec = 0
