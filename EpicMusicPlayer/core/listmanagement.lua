@@ -240,7 +240,7 @@ function EpicMusicPlayer:AddPlayList(name, newlist, save)
 		end
 	end
 	
-	self:Print(L["Added playlist"].." \""..name.."\".")
+	--self:Print(L["Added playlist"].." \""..name.."\".")
 	self:UpdateListnames()
 	EpicMusicPlayer:PlayListGuiUpdate(true)
 	return true

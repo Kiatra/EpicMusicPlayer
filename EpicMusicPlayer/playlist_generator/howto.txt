@@ -12,4 +12,4 @@ This is still alpha, use the playlist manager if you have problems.
 
 Note:
 You can't mix playlist created with the playlist manager and the generator.
-Playlist's created by this generator cant be changed in-game and you have to recreate the list after an update.
+Playlist's created by this generator cant be changed in-game and you have to recreate the list after every EMP update.
