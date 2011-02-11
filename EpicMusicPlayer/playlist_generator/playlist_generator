@@ -2,12 +2,12 @@
 '*                  EpicMusicPlayer Playlist Generator 2 
 '*                       Copyright by Jan Parizek 
 '*
-'* If you want to modify or include this with your addon, please ask first.
+'* if you want to modify or include this with your addon, please ask first.
 '*
 '* Set folder with the music eg: "C:\Program Files\World of Warcraft\MyMusic"
 '* The folder MUST be within the World of Warcraft folder.
 musicfolder = "..\..\..\..\mymusic"
-'* This is where the addon will look for the music. It's relative to the WoW folder.
+'* This is where the addon (not this script) will look for the music. It's relative to the WoW folder.
 realtiveMusicFolder = "MyMusic\\" 
 '********************************************************************************
 
@@ -15,11 +15,8 @@ realtiveMusicFolder = "MyMusic\\"
 CheckStartMode
 
 'check Windows Version
-Dim indexTitle
-Dim indexArtist 
-Dim indexAlbum
-Dim indexTime
-If getWindowsVersion() = "6.1" then
+dim indexTitle, indexArtist, indexAlbum, indexTime
+if getWindowsVersion() = "6.1" then
 	'Windows 7
 	indexTitle = 21
 	indexArtist = 20
@@ -40,23 +37,27 @@ elseif getWindowsVersion() = "5.1" then
 else	
 	WScript.Echo "This playlist generator does not work with your windows version ("& getWindowsVersion() &"), please use the other playlist manager." 
 	Wscript.Quit
-End If
+end if
 
-Dim count
+dim count
 count = 0
-Set objShell = CreateObject("Shell.Application")
+set objShell = CreateObject("Shell.Application")
 set objFSO = createobject("Scripting.FileSystemObject")
 
-If  Not objFSO.FolderExists(musicfolder) Then
-	WScript.Echo "Music Folder not found: " & musicfolder 
+if not objFSO.FolderExists(musicfolder) then
+	if musicfolder = "..\..\..\..\mymusic" then
+		WScript.Echo "Music Folder not found: " & objFSO.GetFolder("..\..\..\..\").Path & "\MyMusic"
+	else
+		WScript.Echo "Music Folder not found: " & musicfolder
+	end if
 	Wscript.Quit
-End If
+end if
 musicfolder = objFSO.GetFolder(musicfolder).Path
 
-Const adTypeText = 2
-Const adSaveCreateOverWrite = 2
-Dim BinaryStream
-Set BinaryStream = CreateObject("ADODB.Stream")
+const adTypeText = 2
+const adSaveCreateOverWrite = 2
+dim BinaryStream
+set BinaryStream = CreateObject("ADODB.Stream")
 BinaryStream.Type = adTypeText
 BinaryStream.CharSet = "utf-8"
 BinaryStream.Open
@@ -171,33 +172,40 @@ end function
 
 function getWindowsVersion()
 	'Option Explicit
-	Dim objWMI, objItem, colItems
-	Dim strComputer, VerOS, VerBig, Ver9x, Version9x, OS, OSystem
+	dim objWMI, objItem, colItems
+	dim strComputer, VerOS, VerBig, Ver9x, Version9x, OS, OSystem
 	
-	On Error Resume Next
+	on error resume next
 	strComputer = "."
-	Set objWMI = GetObject("winmgmts:\\" & strComputer & "\root\cimv2")
-	Set colItems = objWMI.ExecQuery("Select * from Win32_OperatingSystem",,48)
+	set objWMI = GetObject("winmgmts:\\" & strComputer & "\root\cimv2")
+	set colItems = objWMI.ExecQuery("Select * from Win32_OperatingSystem",,48)
 	
-	For Each objItem in colItems
-	VerBig = Left(objItem.Version,3)
-	Next
+	for each objItem in colItems
+		VerBig = Left(objItem.Version,3)
+	next
 	
 	getWindowsVersion = VerBig
+	set objWMI = nothing
+	set colItems = nothing
 end function
 
 
-Sub CheckStartMode
-     ' Returns the running executable as upper case from the last \ symbol
-     strStartExe = UCase( Mid( wscript.fullname, instrRev(wscript.fullname, "\") + 1 ) )
+sub CheckStartMode
+	' Returns the running executable as upper case from the last \ symbol
+	strStartExe = UCase( mid( wscript.fullname, instrRev(wscript.fullname, "\") + 1 ) )
 
-     If Not strStartExe = "CSCRIPT.EXE" Then
-          ' This wasn't launched with cscript.exe, so relaunch using cscript.exe explicitly!
-          ' wscript.scriptfullname is the full path to the actual script
+	if not strStartExe = "CSCRIPT.EXE" then
+	' This wasn't launched with cscript.exe, so relaunch using cscript.exe explicitly!
+	' wscript.scriptfullname is the full path to the actual script
 
-          set           oSh = CreateObject("wscript.shell")
-          oSh.Run "cmd /k cscript.exe """ & wscript.scriptfullname & """"
-          wscript.quit
+	set oSh = CreateObject("wscript.shell")
+		oSh.Run "cmd /k cscript.exe """ & wscript.scriptfullname & """"
+		wscript.quit
+	end if
+end sub
 
-     End If
-End Sub
+set BinaryStream = nothing
+set objFolder = nothing
+set folder = nothing
+set objShell = nothing
+set objFSO = nothing

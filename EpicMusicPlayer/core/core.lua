@@ -164,6 +164,7 @@ function EpicMusicPlayer:OnEnable(first)
 		end
 	end
 	
+	--[[
 	if db.oldversion < EpicMusicPlayer.version and db.showUpdateInfo then
 		StaticPopupDialogs["EPICMUSICPLAYER_UPDATEINFO"] = {
 			text = L["EpicMusicPlayer Update Info"].."\n\n ".." .)The problem with playing addon music and wow music was fixed by Blizzard /cheer. \n.)The game music is back in the playlist. There is also a new Cataclysm playlist but you will not hear this music until patch 4.0.3a \n\n If you have problems hearing the game music read the FAQ.\n",
@@ -176,8 +177,9 @@ function EpicMusicPlayer:OnEnable(first)
 		db.oldversion = EpicMusicPlayer.version;
 		EpicMusicPlayer.db.profile.skin = "cataclysm"
 		EpicMusicPlayerGui:CreateGuiFrame()
-		EpicMusicPlayerGui:ChangeSettingsToSkin()
+		EpicMusicPlayerGui:ChangeSettingsToSkin()		
 	end
+	--]]
 	musicdir = self:CheckPlayList()
 	if EpicMusicPlayer.playlist2 then
 		EpicMusicPlayer:AddPlayList("Playlist", EpicMusicPlayer.playlist2, false)

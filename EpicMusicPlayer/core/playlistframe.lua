@@ -5,9 +5,11 @@ local aceevent = LibStub("AceEvent-3.0")
 local delay = 0.1
 local counter = 0
 local frame
+local mainframe
 local selectedlist
 local listslist, songlist, playbutton, randombutton,title
 local db
+local seperator
 
 -- show/hide the left list with the playlists
 local function ToggleLists()
@@ -69,6 +71,32 @@ local function UpdateRandomButon(event,val)
 		else
 			randombutton:SetNormalTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\emp-randomoff.tga")
 			randombutton:SetPushedTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\emp-randomoff-p.tga")
+	end
+end
+
+local function round(num, idp)
+	local mult = 10^(idp or 0)
+	return math.floor(num * mult + 0.5) / mult
+end
+
+local counter = 0
+local delay = 0.3
+local function OnDragUpdate(self, elapsed)
+	counter = counter + elapsed
+	if counter >= delay then
+		--EpicMusicPlayer:Debug(x,round(seperator.posx-x, 0))
+		local x, y = GetCursorPosition();
+		EpicMusicPlayer:Debug(songlist:GetWidth(), seperator.x - x)
+		
+		--if songlist:GetWidth() > 110 then
+			---songlist:SetWidth(111)
+			x = seperator.x - x
+			
+			local posx = round(seperator.posx-x, 0)
+			
+			seperator:SetPoint("TOPLEFT", frame ,posx, -25)
+			seperator:SetPoint("BOTTOM", frame ,"BOTTOM",posx, 27)
+		--end
 	end
 end
 
@@ -261,12 +289,10 @@ local function CreatePlaylistGui(width, height)
 	sizer:RegisterForDrag("LeftButton");
     
 	sizer:SetScript("OnDragStart", function(self)
-			self:SetScript("OnUpdate", OnDragUpdate)
 			frame:StartSizing()
 			frame.isSizing = true
 	end)
 	sizer:SetScript("OnDragStop", function(self)
-			self:SetScript("OnUpdate", nil)
 			frame:StopMovingOrSizing()
 			frame.isSizing = false
 			db.playlistWidth = frame:GetWidth()
@@ -279,6 +305,48 @@ local function CreatePlaylistGui(width, height)
 	sizertx:SetPoint("BOTTOMRIGHT", -5, 5)
 	sizertx:SetTexture("Interface\\AddOns\\EpicMusicPlayer\\media\\sizer.tga")
 
+	seperator = CreateFrame("Frame","EmpDragSeperator",frame)
+	seperator:SetWidth(4)
+	seperator.posx = 120
+	seperator:SetPoint("TOPLEFT", frame ,seperator.posx, -25)
+	seperator:SetPoint("BOTTOM", frame ,"BOTTOM",seperator.posx, 27)
+	
+	--seperator:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background"});
+	seperator:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background", 
+		edgeFile = nil, 
+		tile = true, tileSize = 16, edgeSize = 16, 
+		insets = { left = 1, right = 1, top = 4, bottom = 4 }});
+	seperator:SetBackdropColor(1,1,1,0)
+	--seperator:SetBackdropColor(0,1,0,0)
+	--[[
+	seperator:SetScript("OnEnter", function(self)
+		self:SetBackdropColor(1,1,1,1)
+	end)
+	seperator:SetScript("OnLeave", function(self)
+		if not self.moving then 
+			self:SetBackdropColor(1,1,1,0)
+		end
+	end)
+	
+	--seperator:EnableMouse(1)
+	--seperator:SetMovable(true) 
+	seperator:SetScript("OnMouseDown", function(self)
+		EpicMusicPlayer:Debug("OnMouseDown")
+		self:SetScript("OnUpdate", OnDragUpdate)
+		local x, y = GetCursorPosition();
+		self.x = x
+		self.moving = true
+	end)
+	seperator:SetScript("OnMouseUp", function(self)
+		EpicMusicPlayer:Debug("OnMouseUp")
+		self:SetScript("OnUpdate", nil)
+		self.moving = false
+		seperator:SetBackdropColor(1,1,1,0)
+		local x, y = GetCursorPosition();
+		x = seperator.x - x
+		seperator.posx = seperator.posx-x
+	end)
+	--]]
 	local header = CreateHeader(frame)
 	header:SetHeight(16)
 	header:SetPoint("TOPLEFT", frame ,9, -9)
@@ -297,7 +365,9 @@ local function CreatePlaylistGui(width, height)
 			end,
 		OnSongClick,nil, 
 		OnSongLeave, frame.font)
-	songlist:SetPoint("TOPLEFT", frame ,120, -25)
+	--songlist:SetPoint("TOPLEFT", frame ,120, -25)
+	--songlist:SetPoint("BOTTOMRIGHT", frame ,-5, 27)
+	songlist:SetPoint("TOPLEFT", seperator ,0, 0)
 	songlist:SetPoint("BOTTOMRIGHT", frame ,-5, 27)
 	
 	listslist = EpicMusicPlayer:CreateListWidget("EpicMusicPlayer_Playlists",frame,#EpicMusicPlayer.playlists,nil,
@@ -311,6 +381,7 @@ local function CreatePlaylistGui(width, height)
 	local footer = CreateFooter(frame)
 	footer:SetPoint("TOPLEFT", listslist ,"BOTTOMLEFT",4, 0)
 	footer:SetPoint("BOTTOMRIGHT", frame,-9, 9);
+	mainframe = frame
 end
 
 -- data changed
