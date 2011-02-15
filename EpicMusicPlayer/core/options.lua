@@ -344,10 +344,10 @@ local empoptions = {
 					name = L["Show Update Info"],
 		            desc = L["Show Update Info"],
 		            get = function()
-							return db.showUpdateInfo
+							return EpicMusicPlayer.db.profile.showUpdateInfo
 						end,
 		            set = function(info, value)
-							db.showUpdateInfo = value
+							EpicMusicPlayer.db.profile.showUpdateInfo = value
 						end,
 		        },
 		        spam = {

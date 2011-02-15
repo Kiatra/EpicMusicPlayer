@@ -13,6 +13,7 @@ local db
 
 function EpicMusicPlayer:AddSavedPlayList()
 	local musicdir
+	-- put the list that will be saved and lists that will not be saved in one list
 	if EpicMusicPlayer_PlayList then
 		for i, list in ipairs(EpicMusicPlayer_PlayList) do
 			playlists[#playlists +1] = list
@@ -28,7 +29,7 @@ end
 function EpicMusicPlayer:CheckPlayList()
 	db = EpicMusicPlayer.db.profile
 	
-	-- put the list that will be saved and lists that will not be saved in one list
+	EpicMusicPlayer:AddSavedPlayList()
 	if (table.getn(playlists) < 1) then
 		self:Print(L["Playlist not found."])
 		--no playlist found, create dummy playlist

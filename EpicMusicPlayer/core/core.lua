@@ -60,7 +60,7 @@ function EpicMusicPlayer:OnInitialize()
 			--first song = 2 (song 1 is playlist name)
 			song = 2,
 			list = 1,
-			skin = "default2",
+			skin = "cataclysm",
 			looplist = false,
 			loopsong = false,
 			disablewowmusic = false,
@@ -182,6 +182,7 @@ function EpicMusicPlayer:OnEnable(first)
 	--]]
 	musicdir = self:CheckPlayList()
 	if EpicMusicPlayer.playlist2 then
+		EpicMusicPlayer:Debug("EpicMusicPlayer.playlist2=true")
 		EpicMusicPlayer:AddPlayList("Playlist", EpicMusicPlayer.playlist2, false)
 		EpicMusicPlayer:RemovePlayList("Common")
 	end

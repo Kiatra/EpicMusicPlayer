@@ -260,10 +260,11 @@ local options={
 				for k, v in pairs(EpicMusicPlayerGui.frames) do
 					v:Hide()
 				end
+				EpicMusicPlayer.Debug("select",value)
 				EpicMusicPlayer.db.profile.skin = value
 				EpicMusicPlayerGui.frames.player:Hide()
 				EpicMusicPlayerGui:CreateGuiFrame()
-				EpicMusicPlayerGui:ChangeSettingsToSkin()
+				--EpicMusicPlayerGui:ChangeSettingsToSkin()
 			end,
 		},
 	}
@@ -666,6 +667,8 @@ function EpicMusicPlayerGui:CreateGuiFrame()
 		
 	self.cuurskin = self.skins[EpicMusicPlayer.db.profile.skin] or self.skins["cataclysm"]
 	
+	--[[
+	-- needs fix
 	if self.cuurskin.inherit then
 		local childskin = self.cuurskin
 		self.cuurskin = self.skins[self.cuurskin.inherit] --set the current skin to the parent skin
@@ -683,6 +686,7 @@ function EpicMusicPlayerGui:CreateGuiFrame()
 			end
 		end
 	end
+	--]]
 	
 	path = self.cuurskin.texturepath
 	
@@ -885,6 +889,8 @@ function EpicMusicPlayerGui:CreateGuiFrame()
 	if(EpicMusicPlayer.db.char.guiscale)then
 		EMPGUI:SetScale(EpicMusicPlayer.db.char.guiscale)
 	end
+	
+	EpicMusicPlayerGui:ChangeSettingsToSkin()
 end
 
 function EpicMusicPlayerGui:CreateMinimapButton()
