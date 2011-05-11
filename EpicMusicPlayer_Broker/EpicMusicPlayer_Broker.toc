@@ -1,10 +1,10 @@
-## Interface: 40000
+## Interface: 40100
 ## Title: EpicMusicPlayer [|cffeda55fBroker|r]
 ## Version: @file-revision@
 ## Notes: EpicMusicPlayer LDB Plugin.
 ## Author: yess
 ## X-Category: Audio
-## X-eMail: yess@fantasymail.de
+## X-eMail: starfire@fantasymail.de
 ## Dependencies: EpicMusicPlayer
 ## SavedVariables: EpicMusicPlayerBrokerDB
 

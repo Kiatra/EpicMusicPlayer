@@ -225,7 +225,7 @@ local function CreateFooter(parent)
 			EpicMusicPlayer:Search(self:GetText())
 			SelectList(EpicMusicPlayer:GetListIndex("lastsearch"))
 		end
-		end)
+	end)
 	editbox:SetScript("OnEditFocusGained",function(self) self:HighlightText(0, self:GetNumLetters()) end)
 	editbox:SetScript("OnEditFocusLost",function(self) self:SetText(L["Search..."]) end)
 	return footer

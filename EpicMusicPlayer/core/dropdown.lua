@@ -33,22 +33,27 @@ function EpicMusicPlayer:OpenMenu(frame)
 		dropdownchat = {
 			{
 				text = L["Guild"], 
+				notCheckable = true,
 				func = function() self:Spam("GUILD") end, 
 			},
 			{
 				text = L["Party"], 
+				notCheckable = true,
 				func = function() self:Spam("PARTY") end, 
 			},
 			{
 				text = L["Say"], 
+				notCheckable = true,
 				func = function() self:Spam("SAY") end, 
 			},
 			{
 				text = L["Raid"], 
+				notCheckable = true,
 				func = function() self:Spam("RAID") end, 
 			},
 			{
 				text = L["To target"], 
+				notCheckable = true,
 				func = function()
 					EpicMusicPlayer:Spam("TARGET")
 				end, 
@@ -59,6 +64,7 @@ function EpicMusicPlayer:OpenMenu(frame)
 	if(self.whisper)then
 		dropdownchat[6] = {
 				text = L["Whisper to"].." "..self.whisper, 
+				notCheckable = true,
 				func = function()
 					EpicMusicPlayer:Spam("WHISPER")
 				end, 
@@ -68,15 +74,18 @@ function EpicMusicPlayer:OpenMenu(frame)
 	dropdownmenu ={ 
 		{
 			text = L["Playlist"], 
-			func = function() self:TogglePlayListGui() end, 
+			func = function() self:TogglePlayListGui() end,
+			notCheckable = true,
 		},
 		{
 			text = L["Config"],
 			func = function() self:ShowConfig() end,
+			notCheckable = true,
 		},
 		{
 			text = L["Play last"],
 			func = function() self:PlayLast() end,
+			notCheckable = true,
 		},
 		{
 			text = L["Show GUI"],
@@ -114,30 +123,35 @@ function EpicMusicPlayer:OpenMenu(frame)
 	if(self.Playing)then
 		dropdownmenu[#dropdownmenu + 1] = {
 			text = " ",
+			notCheckable = true,
 			disabled = true
 		}
 		
 		dropdownmenu[#dropdownmenu + 1] = {
 			text = L["Move song to"],
 			hasArrow = true,
+			notCheckable = true,
 			menuList = dropdownmove
 		}
 		
 		dropdownmenu[#dropdownmenu + 1] = {
 			text = L["Copy song to"],
 			hasArrow = true,
+			notCheckable = true,
 			menuList = dropdowncopy
 		}
 		
 		for i, list in ipairs(EpicMusicPlayer.playlists) do
 			dropdownmove[#dropdownmove + 1] = {
 				text = list[1].ListName,
+				notCheckable = true,
 				func = function()
 					EpicMusicPlayer:MoveCurrentSong(i)
 				end,
 			}
 			dropdowncopy[#dropdowncopy + 1] = {
 				text = list[1].ListName,
+				notCheckable = true,
 				func = function()
 					EpicMusicPlayer:CopySong(i,EpicMusicPlayer:GetCurrentSong())
 				end,
@@ -147,16 +161,19 @@ function EpicMusicPlayer:OpenMenu(frame)
 		dropdownmenu[#dropdownmenu + 1] = {
 			text = L["Spam to"],
 			hasArrow = true,
+			notCheckable = true,
 			menuList = dropdownchat,
 		}
 		
 		dropdownmenu[#dropdownmenu + 1] = {
 			text = " ",
+			notCheckable = true,
 			disabled = true
 		}
 		
 		dropdownmenu[#dropdownmenu + 1] = {
 			text = L["Remove Song"],
+			notCheckable = true,
 			func = function() EpicMusicPlayer:RemoveCurrendSong() end,
 		}
 	end

@@ -1,4 +1,4 @@
-## Interface: 40000
+## Interface: 40100
 ## Title: EpicMusicPlayer
 ## Notes: Mp3Player
 ## Author: yess
@@ -7,7 +7,7 @@
 ## X-Embeds: Ace3
 
 ## Version: @project-version@
-## X-Email: yessica@fantasymail.de
+## X-Email: starfire@fantasymail.de
 ## X-Category: Audio
 
 #@no-lib-strip@

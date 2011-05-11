@@ -10951,6 +10951,132 @@ local cata = {
     }, -- [335]
     {
       ["Album"] = "ingame",
+      ["Song"] = "LI_Event_Rescue04",
+      ["Name"] = "Sound\\Music\\cataclysm\\MUS_LIRescue_EU04.mp3",
+      ["Length"] = 87,
+      ["Artist"] =  "MyMusic (Derek Duke)",
+    }, -- [2]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "MUS_Vashjir01",
+      ["Name"] = "Sound\\Music\\cataclysm\\MUS_Vashjir_GU01.mp3",
+      ["Length"] = 98,
+      ["Artist"] =  "MyMusic (Derek Duke)",
+    }, -- [3]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "MUS_Vashjir02",
+      ["Name"] = "Sound\\Music\\cataclysm\\MUS_Vashjir_GU02.mp3",
+      ["Length"] = 98,
+      ["Artist"] =  "MyMusic (Derek Duke)",
+    }, -- [4]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "MUS_Vashjir03",
+      ["Name"] = "Sound\\Music\\cataclysm\\MUS_Vashjir_GU03.mp3",
+      ["Length"] = 153,
+      ["Artist"] =  "MyMusic (Derek Duke)",
+    }, -- [5]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "MUS_Vashjir04",
+      ["Name"] = "Sound\\Music\\cataclysm\\MUS_Vashjir_GU04.mp3",
+      ["Length"] = 48,
+      ["Artist"] =  "MyMusic (Derek Duke)",
+    }, -- [6]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "MUS_Vashjir05",
+      ["Name"] = "Sound\\Music\\cataclysm\\MUS_Vashjir_GU05.mp3",
+      ["Length"] = 92,
+      ["Artist"] =  "MyMusic (Derek Duke)",
+    }, -- [7]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "MUS_Vashjir06",
+      ["Name"] = "Sound\\Music\\cataclysm\\MUS_Vashjir_GU06.mp3",
+      ["Length"] = 153,
+      ["Artist"] =  "MyMusic (Derek Duke)",
+    }, -- [8]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "MUS_Vashjir07",
+      ["Name"] = "Sound\\Music\\cataclysm\\MUS_Vashjir_GU07.mp3",
+      ["Length"] = 91,
+      ["Artist"] =  "MyMusic (Derek Duke)",
+    }, -- [9]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "MUS_Vashjir08",
+      ["Name"] = "Sound\\Music\\cataclysm\\MUS_Vashjir_GU08.mp3",
+      ["Length"] = 46,
+      ["Artist"] =  "MyMusic (Derek Duke)",
+    }, -- [10]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "MUS_Vashjir09",
+      ["Name"] = "Sound\\Music\\cataclysm\\MUS_Vashjir_GU09.mp3",
+      ["Length"] = 132,
+      ["Artist"] =  "MyMusic (Derek Duke)",
+    }, -- [11]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "MUS_VashjirNaga01",
+      ["Name"] = "Sound\\Music\\cataclysm\\MUS_VashjirNaga_GU01.mp3",
+      ["Length"] = 87,
+      ["Artist"] =  "MyMusic (David Arkenstone)",
+    }, -- [12]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "MUS_VashjirNaga03",
+      ["Name"] = "MUS_VashjirNaga_GU03.mp3",
+      ["Length"] = 97,
+      ["Artist"] =  "MyMusic (David Arkenstone)",
+    }, -- [13]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "MUS_VashjirNaga04",
+      ["Name"] = "Sound\\Music\\cataclysm\\MUS_VashjirNaga_GU04.mp3",
+      ["Length"] = 97,
+      ["Artist"] =  "MyMusic (David Arkenstone)",
+    }, -- [14]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "MUS_VashjirNaga05",
+      ["Name"] = "Sound\\Music\\cataclysm\\MUS_VashjirNaga_GU05.mp3",
+      ["Length"] = 127,
+      ["Artist"] =  "MyMusic (David Arkenstone)",
+    }, -- [15]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "MUS_VashjirNagaThrone02",
+      ["Name"] = "Sound\\Music\\cataclysm\\MUS_VashjirNagaThrone_GU02.mp3",
+      ["Length"] = 89,
+      ["Artist"] =  "MyMusic (David Arkenstone)",
+    }, -- [16]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "MUS_VashjirNagaThrone06",
+      ["Name"] = "Sound\\Music\\cataclysm\\MUS_VashjirNagaThrone_GU06.mp3",
+      ["Length"] = 92,
+      ["Artist"] =  "MyMusic (David Arkenstone)",
+    }, -- [17]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "LI_Event_Rescue02",
+      ["Name"] = "Sound\\Music\\cataclysm\\MUS_LIRescue_EU02.mp3",
+      ["Length"] = 11,
+      ["Artist"] =  "MyMusic (Derek Duke)",
+    }, -- [18]
+    {
+      ["Album"] = "ingame",
+      ["Song"] = "LI_Event_Rescue03",
+      ["Name"] = "Sound\\Music\\cataclysm\\MUS_LIRescue_EU03.mp3",
+      ["Length"] = 53,
+      ["Artist"] =  "MyMusic (Derek Duke)",
+    }, -- [19]	
+	{
+      ["Album"] = "ingame",
       ["Song"] = "War March",
       ["Name"] = "Sound\\Music\\cataclysm\\MUS_WarMarch_UU01.mp3",
       ["Length"] = 136,

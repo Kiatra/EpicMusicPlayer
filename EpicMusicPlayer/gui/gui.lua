@@ -263,8 +263,8 @@ local options={
 				EpicMusicPlayer.Debug("select",value)
 				EpicMusicPlayer.db.profile.skin = value
 				EpicMusicPlayerGui.frames.player:Hide()
+				EpicMusicPlayerGui:ChangeSettingsToSkin()
 				EpicMusicPlayerGui:CreateGuiFrame()
-				--EpicMusicPlayerGui:ChangeSettingsToSkin()
 			end,
 		},
 	}
@@ -889,8 +889,6 @@ function EpicMusicPlayerGui:CreateGuiFrame()
 	if(EpicMusicPlayer.db.char.guiscale)then
 		EMPGUI:SetScale(EpicMusicPlayer.db.char.guiscale)
 	end
-	
-	EpicMusicPlayerGui:ChangeSettingsToSkin()
 end
 
 function EpicMusicPlayerGui:CreateMinimapButton()
