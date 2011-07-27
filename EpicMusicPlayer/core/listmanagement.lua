@@ -249,6 +249,14 @@ end
 
 function EpicMusicPlayer:GetRandomSong(listIndex)
 	--todo random over multipe playlist
+	--[[
+	local listindex = listIndex
+	db.shuffleList = true
+	if db.shuffleList then
+		-- songs in lists with less songs will be played more often...
+		listindex = math.random(2, #playlists)
+	end
+	--]]
 	songIndex = math.random(2, #playlists[listIndex])
 	return EpicMusicPlayer:GetSong(listIndex, songIndex)
 end

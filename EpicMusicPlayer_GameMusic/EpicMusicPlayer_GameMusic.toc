@@ -1,4 +1,4 @@
-## Interface: 40100
+## Interface: 40200
 
 ## Title: EpicMusicPlayer [|cffeda55fGameMusic|r]
 ## Notes: GameMusic module for EpicMusicPlayer.

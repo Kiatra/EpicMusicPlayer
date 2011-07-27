@@ -1,4 +1,4 @@
-## Interface: 40100
+## Interface: 40200
 ## Title: EpicMusicPlayer
 ## Notes: Mp3Player
 ## Author: yess
@@ -26,13 +26,14 @@ libs\LibSharedMedia-3.0\lib.xml
 libs\AceGUI-3.0-SharedMediaWidgets\widget.xml
 #@end-no-lib-strip@
 
-
 localization\enUS.lua
 localization\deDE.lua
+localization\esMX.lua
+localization\frFR.lua
+localization\koKR.lua
+localization\ruRU.lua
 localization\zhCN.lua
 localization\zhTW.lua
-localization\ruRU.lua
-localization\frFR.lua
 
 core\core.lua
 core\scrolllist.lua
