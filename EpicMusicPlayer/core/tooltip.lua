@@ -44,11 +44,11 @@ function EpicMusicPlayer:ShowTooltip(anchor)
 		local album = song.Album;
 		if(album=="")then
 		else
-			GameTooltip:AddLine("|cffffffee"..L["Album: "]..album)
+			GameTooltip:AddLine("|cffffffee"..L["Album"]..": "..album)
 		end
 		
-		GameTooltip:AddLine("|cffffffee"..L["List: "]..EpicMusicPlayer:GetCurrentListName())
-		GameTooltip:AddLine("|cffffffee"..L["Length: "]..EpicMusicPlayer:GetTimeSTring(songlength))
+		GameTooltip:AddLine("|cffffffee"..L["List"]..": "..EpicMusicPlayer:GetCurrentListName())
+		GameTooltip:AddLine("|cffffffee"..L["Length"]..": "..EpicMusicPlayer:GetTimeSTring(songlength))
 		GameTooltip:Show()
 	else
 		GameTooltip:SetText(L["Stopped"], 1,1,1)

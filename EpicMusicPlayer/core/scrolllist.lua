@@ -39,18 +39,41 @@ local function UpdateColumSpaces(self, button)
 	local parent = self:GetParent()
 	local relative = nil
 	
+	
+	EpicMusicPlayer:Debug("button:GetWidth()",math.floor(button:GetWidth()),math.floor(button:GetWidth() * colums[1]),math.floor(button:GetWidth() * colums[2]),math.floor(button:GetWidth() * colums[3]))
 	relative = nil
 	for i = 1, #colums do
 		--local button = buttons[x]
 		local text = button["colum"..i]
-		text:SetWidth(parent:GetWidth() * colums[i])
+		--text:SetWidth(parent:GetWidth() * colums[i])
+		text:SetWidth(button:GetWidth() * colums[i])
 		text:SetHeight(self.buttonHeight)
-		if relative then
-			text:SetPoint("TOPLEFT",relative,"TOPRIGHT", 0,0)
-		else -- first colum
-			text:SetPoint("TOPLEFT",button,3,0)
+		if button:GetWidth() < 450 then
+			if i == 1 then
+				text:SetPoint("TOPLEFT",button,3,0)
+				text:SetPoint("RIGHT",button,"RIGHT", 0,0)
+			else
+				text:Hide()
+			end
+		else
+			text:Show()
+			if i == #colums then
+				text:SetPoint("TOPRIGHT",button,"TOPRIGHT", 0,0)
+			elseif i == #colums-1 then
+				text:SetPoint("TOPLEFT",relative,"TOPRIGHT", 0,0)
+				--text:SetPoint("LEFT",relative,"RIGHT", 0,0)
+				text:SetPoint("RIGHT",button["colum"..#colums],"LEFT", 0,0)
+			else
+				if relative then
+					text:SetPoint("TOPLEFT",relative,"TOPRIGHT", 0,0)
+				else -- first colum
+					text:ClearAllPoints()
+					text:SetPoint("TOPLEFT",button,3,0)
+				end
+			end
 		end
 		relative = text
+		EpicMusicPlayer:Debug(text:GetWidth())
 	end
 	
 	-- last colum right anchor
@@ -75,7 +98,11 @@ local function CreateButton(parent, height, colums ,OnClick, OnEnter, OnLeave, f
 		end
 		
 		text:SetNonSpaceWrap(true)
-		text:SetJustifyH("LEFT")
+		if i == numcolums and numcolums > 1 then
+			text:SetJustifyH("RIGHT")
+		else
+			text:SetJustifyH("LEFT")
+		end
 		text:SetText("TEST")
 		
 	end
@@ -137,6 +164,10 @@ local function SetSelected(self, index)
 	ScrollUpdate(self.scrollbar, self.scrollbar:GetValue())
 end
 
+local function Update(self)
+	ScrollUpdate(self.scrollbar, self.scrollbar:GetValue())
+end
+
 local function SetMax(self, size)
 	--EpicMusicPlayer:Debug("Setmax")
 	self.size = size
@@ -152,9 +183,8 @@ local function SetMax(self, size)
 end
 
 function EpicMusicPlayer:CreateListWidget(name, parent, size, colums,GetData, OnClick, OnEnter, OnLeave, font)
-
 	local frame = CreateFrame("Frame",name,parent)
-	frame.update = update
+	frame.Update = Update
 	frame.colums = colums or {1}
 	frame.ScrollUpdate = ScrollUpdate
 	frame.buttons = {}

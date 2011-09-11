@@ -817,9 +817,9 @@ function EpicMusicDancer:CreateDancerFrame(parent)
 	EpicMusicDancer.Model = model
 	
 	local model2 = CreateFrame("PlayerModel",nil,EMPDancerFrame)
-	model2:SetWidth(100) 
-	model2:SetHeight(100) 
-	model2:ClearAllPoints() 
+	model2:SetWidth(100)
+	model2:SetHeight(100)
+	model2:ClearAllPoints()
 	model2:SetAllPoints(EpicMusicDancer.frame);
 	--EpicMusicDancer.Model2:SetPoint("CENTER")
 	EpicMusicDancer.Model2 = model2

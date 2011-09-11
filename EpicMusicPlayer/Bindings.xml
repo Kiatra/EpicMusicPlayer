@@ -13,7 +13,7 @@
 	</Binding>
 	<Binding name="REMOVESONG">
 		if(EpicMusicPlayer.Playing)then
-			EpicMusicPlayer:RemoveSong(EpicMusicPlayer.db.profile.list,EpicMusicPlayer.db.profile.song);
+			EpicMusicPlayer:RemoveCurrendSong();
 		else
 			EpicMusicPlayer:Print("Not playing.")
 		end
@@ -23,11 +23,5 @@
 	</Binding>
 	<Binding name="TOGGLELIST">
 		EpicMusicPlayer:TogglePlaylist()
-	</Binding>
-	<Binding name="BADLIST">
-		EpicMusicPlayer:ToBadList()
-	</Binding>
-	<Binding name="BESTLIST">
-		EpicMusicPlayer:ToBestList()
 	</Binding>
 </Bindings>

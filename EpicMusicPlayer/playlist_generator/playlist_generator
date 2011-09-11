@@ -1,6 +1,6 @@
 '********************************************************************************
 '*                  EpicMusicPlayer Playlist Generator 2 
-'*                       Copyright by Jan Parizek 
+'*                       Copyright by yess
 '*
 '* if you want to modify or include this with your addon, please ask first.
 '*
@@ -39,8 +39,8 @@ else
 	Wscript.Quit
 end if
 
-dim count
-count = 0
+dim totalNumberOfSongs, listCount
+totalNumberOfSongs = 0
 set objShell = CreateObject("Shell.Application")
 set objFSO = createobject("Scripting.FileSystemObject")
 
@@ -70,11 +70,9 @@ set objFolder = objFSO.GetFolder(musicfolder)
 set folder = objShell.NameSpace(musicfolder)
 playlistIndex = 0
 'create a playlist for all the files in the music folder
-BinaryStream.WriteText "local playlist" & playlistIndex &  " = {" & Vbcrlf & "	{" & Vbcrlf
-BinaryStream.WriteText "		[""ListName""] = """ & objFSO.GetFolder(musicfolder).Name &"""," & Vbcrlf
-BinaryStream.WriteText "		[""PlaylistVersion""] = ""3.0""," & Vbcrlf
-BinaryStream.WriteText "		[""MusicDir""] = """ & realtiveMusicFolder & """," & Vbcrlf & "	}," & Vbcrlf
+writePlaylistHeader(objFSO.GetFolder(musicfolder).Name)
 WScript.Echo "Generating playlist: " & objFSO.GetFolder(musicfolder).Name
+listCount = 0
 for each file in folder.items
 	x = getSongInfo(file,folder)
 next
@@ -93,7 +91,7 @@ next
 
 BinaryStream.SaveToFile "playlist2.lua", adSaveCreateOverWrite
 
-WScript.Echo "Done! " & Vbcrlf & count & " music files written to Playlist." 
+WScript.Echo "Done! " & Vbcrlf & totalNumberOfSongs & " music files written to Playlist." 
 
 'enum all files from given directory
 sub GetFiles(byval strDirectory)
@@ -111,16 +109,13 @@ end sub
 sub CreatePlaylist(byval strDirectory)
 	'strPlayListName = strDirectory
 	'write playlist head
-	BinaryStream.WriteText "local playlist" & playlistIndex &  " = {" & Vbcrlf & "	{" & Vbcrlf
-	BinaryStream.WriteText "		[""ListName""] = """ & objFSO.GetFolder(strDirectory).Name & """," & Vbcrlf
-	BinaryStream.WriteText "		[""PlaylistVersion""] = ""3.0""," & Vbcrlf
-	BinaryStream.WriteText "		[""MusicDir""] = """ & realtiveMusicFolder & """," & Vbcrlf & "	}," & Vbcrlf
+	writePlaylistHeader(objFSO.GetFolder(strDirectory).Name)
 	'write music files
 	WScript.Echo "Generating playlist for files in: " & objFSO.GetFolder(strDirectory).Name
+	listCount = 0
 	GetFiles strDirectory
 	'write end of playlist
 	BinaryStream.WriteText "}" & Vbcrlf
-	
 	BinaryStream.WriteText "EpicMusicPlayer:AddPlayList(""playlist"", playlist" & playlistIndex & ", false)" & Vbcrlf
 	'BinaryStream.WriteText "EpicMusicPlayer.playlist2 = playlist" & Vbcrlf
 end sub
@@ -139,9 +134,10 @@ function getSongInfo(file,folder)
 		'wscript.echo title & " - " & file
 		if title = "" and len(file) > 4 then title = Left(file,len(file)-4) end if
 		if time > 0 then
+			listCount = listCount + 1
+			totalNumberOfSongs = totalNumberOfSongs + 1
 			x = writeSong(outfile, path, album, time,title, artist)
-			WScript.Echo count & " Writing: " & path 
-			count = count + 1
+			WScript.Echo totalNumberOfSongs & " Writing: " & path 
 		end if
 	end if
 end function
@@ -160,8 +156,20 @@ function getTime(file,objFolder)
 	end if
 end function
 
+sub writePlaylistHeader(listName)
+	BinaryStream.WriteText "local playlist" & playlistIndex &  " = {" & Vbcrlf & "	{" & Vbcrlf
+	BinaryStream.WriteText "		[""ListName""] = """ & listName &"""," & Vbcrlf
+	BinaryStream.WriteText "		[""PlaylistVersion""] = ""3.1""," & Vbcrlf
+	BinaryStream.WriteText "		[""PlaylistType""] = ""generated""," & Vbcrlf
+	BinaryStream.WriteText "		[""MusicDir""] = """ & realtiveMusicFolder & """," & Vbcrlf
+end sub
+
 function writeSong(outfile,path,album,time,title,artist)
-	BinaryStream.WriteText "	{" & Vbcrlf
+	if listCount > 1 then
+		BinaryStream.WriteText "	{" & Vbcrlf
+	else
+		BinaryStream.WriteText "        --first song" & Vbcrlf
+	end if
 	BinaryStream.WriteText "		[""Album""] = """ & album & ""","& Vbcrlf
 	BinaryStream.WriteText "		[""Song""] = """ & title & ""","& Vbcrlf
 	BinaryStream.WriteText "		[""Name""] = """ & path & ""","& Vbcrlf

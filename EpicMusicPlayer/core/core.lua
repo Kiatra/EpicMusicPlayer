@@ -27,7 +27,7 @@ EpicMusicPlayer.controlslist = {
 	ShowConfig = L["Config"], ToggleMute = L["Mute / unmute music sound."], TogglePlayListGui = L["Playlist"],
 	PlayLast = L["Play Last Song"], TogglePlayerGui = L["Toggle show GUI"], ToggleRandom = L["Toggle shuffle"],
 	RemoveCurrendSong = L["Remove Song"], SpamDefault = L["Spam to default channel"],
-	ToBadList = L["Move to bad songs list"], ToBestList = L["Move song to favorite list"],
+	--ToBadList = L["Move to bad songs list"], ToBestList = L["Move song to favorite list"],
 }
 EpicMusicPlayer.version = GetAddOnMetadata("EpicMusicPlayer","Version")
 EpicMusicPlayer.tocversion = select(4, GetBuildInfo());
@@ -244,6 +244,7 @@ function EpicMusicPlayer:OnPlayerLevelUp(level)
 			end
 		end
 		song = {
+			["WoW"] = true,
 			["Album"] = "ingame", 
 			["Song"] = "Gratulations to level 85!!!",
 			["Name"] = "Sound\\Music\\ZoneMusic\\ArgentTournament\\AT_JoustEvent.mp3",
@@ -266,7 +267,7 @@ function EpicMusicPlayer:Play(song)
 		song = self:GetSong(db.list,db.song)
 		if not song then -- song not found get next
 			song, db.list,db.song = self:GetNextSong(db.song,db.list,db.looplist)
-			self:AddSongToHistory(song)
+			--self:AddSongToHistory(song,db.list,db.song)
 		end
 	end
 	
@@ -280,7 +281,7 @@ function EpicMusicPlayer:Play(song)
 	self.Playing = true;
 	songlength = song.Length
 	
-	if(song.Album == "ingame") then
+	if(song.Album == "ingame" or song.WoW) then
 		-- ingame music do not add addon mp3 path
 		PlayMusic(song.Name)
 	else
@@ -327,7 +328,7 @@ function EpicMusicPlayer:Stop()
 end
 
 function EpicMusicPlayer:PlayNext()
-	historyInUse = false
+	--historyInUse = false
 	local self = EpicMusicPlayer;
 	local song
 	-- check random play
@@ -335,27 +336,48 @@ function EpicMusicPlayer:PlayNext()
 		--EpicMusicPlayer:Debug("loopsong")
 		song = currentsong
 	elseif(db.random) then
-        song = self:GetRandomSong(db.list)
-    else        
-        --EpicMusicPlayer:Debug("EpicMusicPlayer:PlayNext() loopList=", loopList)
+        song, listIndex, songIndex = EpicMusicPlayer:GetNextSongFromHistory()
+		if song then
+			db.list = listIndex
+			db.song = songIndex
+			historyInUse = true
+		else
+			song, db.list,db.song = self:GetRandomSong(db.list)
+			EpicMusicPlayer:AddSongToHistory(song,db.list,db.song)
+			historyInUse = false
+		end
+	else        
 		song, db.list,db.song = EpicMusicPlayer:GetNextSong(db.list,db.song,db.looplist)
-    end  
-    EpicMusicPlayer:AddSongToHistory(song)
+    end
 	self:Play(song)	
 end
 
 function EpicMusicPlayer:PlayLast()
-    historyInUse = true
+    local song
 	db.loopsong = false
 	EpicMusicPlayer:CheckSongToMove()
-	EpicMusicPlayer:Play(EpicMusicPlayer:GetSongFromHistory());
+	if not db.random then 
+		song, db.list,db.song = EpicMusicPlayer:GetLastSong(db.list,db.song,db.looplist);
+		EpicMusicPlayer:Play(song)
+	else
+		song, listIndex, songIndex = EpicMusicPlayer:GetLastSongFromHistory()
+		if song then
+			db.list = listIndex
+			db.song = songIndex
+			historyInUse = true
+		else
+			historyInUse = false
+			EpicMusicPlayer:GetSong(db.list, db.song)
+		end
+		EpicMusicPlayer:Play(song);
+	end
 end
 
 function EpicMusicPlayer:PlaySong(list, song)
 	historyInUse = false
 	db.list = list
 	db.song = song
-    EpicMusicPlayer:AddSongToHistory(EpicMusicPlayer:GetSong(list, song))
+    EpicMusicPlayer:AddSongToHistory(EpicMusicPlayer:GetSong(list, song),list, song)
 	EpicMusicPlayer:Play()
 end
 
@@ -721,6 +743,8 @@ function EpicMusicPlayer:GetFont(fontname)
 	return font
 end
 
+--r=0.83, g=0.22, b=0, a=1
+--/dump ("%02x%02x%02x%02x"):format(1*255,0.83*255, 0.22*255, 0*255)
 function EpicMusicPlayer:ToHex(r,g,b)
 	if r and type(r) == "table" then
 		r,g,b = r.r, r.g, r.b
@@ -738,7 +762,7 @@ function EpicMusicPlayer:GetTimeSTring(seconds)
 		return string.format("%d:%d", min, sec)
 end
 
-function EpicMusicPlayer:Debug(...)
+function Debug(...)
 	if(EpicMusicPlayer.db.char.debug)then
 	 	local s = "EMP Debug:"
 		for i=1,select("#", ...) do
@@ -749,6 +773,11 @@ function EpicMusicPlayer:Debug(...)
 	end
 end
 
+function EpicMusicPlayer:Debug(...)
+	Debug(self, ...)
+end
+
+
 -- key binding variables
 BINDING_HEADER_EPICMUSICPLAYER = "EpicMusicPlayer";
 BINDING_NAME_PLAYSTOP = L["Play/Stop"];
@@ -758,5 +787,5 @@ BINDING_NAME_TOGGLELIST = L["Show/Hide Playlist"];
 BINDING_NAME_MUTE = L["Toggle Mute"];
 BINDING_NAME_REMOVESONG = L["Remove Song"];
 BINDING_NAME_GUI = L["Show Controls and Options"];
-BINDING_NAME_BADLIST = L["Move song to bad songs list."];
-BINDING_NAME_BESTLIST = L["Move song to best songs list."];
+--BINDING_NAME_BADLIST = L["Move song to bad songs list."];
+--BINDING_NAME_BESTLIST = L["Move song to best songs list."];

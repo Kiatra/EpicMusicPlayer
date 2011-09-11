@@ -359,6 +359,7 @@ local empoptions = {
 		            get = "IsSpam",
 		            set = "ToggleSpam"
 				},
+				--[[
 				badlist = {
 		            type = 'select',
 					values = function() 
@@ -401,6 +402,7 @@ local empoptions = {
 						end
 		            end,
 				},
+				--]]
 				defaultchat = {
 		            type = 'select',
 					values = {GUILD=L["Guild"],
@@ -463,12 +465,21 @@ local empoptions = {
 		            name = L["Shuffle"],
 		            desc = L["Toggle shuffle"],
 		            get = "IsRandom",
-		            set = "ToggleRandom"
+		            set = function() EpicMusicPlayer:ToggleRandom() end,
+		        },
+				shuffleALL = {
+		            type = 'toggle',
+					--width = "half",
+					order = 2,
+		            name = L["Shuffle Cross Playlist"],
+		            desc = L["Shuffle Cross Playlist"],
+		            get = function() return EpicMusicPlayer.db.profile.shuffleAll end,
+		            set = function() EpicMusicPlayer:ToggleRandom(true) end,
 		        },
 				looplist = {
 		            type = 'toggle',
 					--width = "half",
-					order = 2,
+					order = 3,
 		            name = L["Loop Playlist"],
 		            desc = L["Playing the last song of a list will not switch to the next list."],
 		            get = "IsLoopList",
@@ -477,7 +488,7 @@ local empoptions = {
 				loopsong = {
 		            type = 'toggle',
 					--width = "half",
-					order = 3,
+					order = 4,
 		            name = L["Loop Song"],
 		            desc = L["Play the current song again and again and again...until your head will explode. A click on next song will disable this."],
 		            get = function()
@@ -487,9 +498,22 @@ local empoptions = {
 					  EpicMusicPlayer.db.profile.loopsong = not EpicMusicPlayer.db.profile.loopsong
 					end,
 				},
+				shuffleALL = {
+		            type = 'toggle',
+					--width = "half",
+					order = 2,
+		            name = L["Hide Artist in Playlist"],
+		            desc = L["Hide Artist in Playlist"],
+		            get = function()
+						return EpicMusicPlayer.db.profile.playlistHideArtist
+		            end,
+					set = function() EpicMusicPlayer.db.profile.playlistHideArtist = not EpicMusicPlayer.db.profile.playlistHideArtist
+						EpicMusicPlayer:PlayListGuiUpdate()
+					end,
+		        },
 				scale = {
 		            type = 'range',
-					order = 4,
+					order = 5,
 					name = L["Playlist Scale"],
 		            desc = L["Adjust the scale of the playlist"],
 		            step = 0.1,
@@ -505,7 +529,7 @@ local empoptions = {
 				},
 				addlist = {
 					type = 'input',
-					order = 5,
+					order = 6,
 					name = L["Add Playlist"],
 					desc = L["Add Playlist"],
 					usage = "<name>",
@@ -518,7 +542,7 @@ local empoptions = {
 				},
 				dellist = {
 					type = 'input',
-					order = 6,
+					order = 7,
 					name = L["Remove Playlist"],
 					desc = L["Remove Playlist"],
 					usage = "<name>",
@@ -563,40 +587,6 @@ local empoptions = {
 							order = 1,
 							type = "description",
 							name = L["FAQ-Text1"],
-						},
-					},
-				},
-				FAQ2 = {
-					type = "group",
-					order = 2,
-					name = L["How do I get the game music back?"],
-					args = {
-						header = {
-							type = "header",
-							name = L["How do I get the game music back?"],
-							order = 0,
-						},
-						text = {
-							order = 1,
-							type = "description",
-							name = L["Delete the Sound folder (NOT the mpq file) at ..\\World of Warcraft\\Data\\Sound"],
-						},
-					},
-				},
-				FAQ3 = {
-					type = "group",
-					order = 2,
-					name = L["Why do I hear the game music mixed together with my music?"],
-					args = {
-						header = {
-							type = "header",
-							name = L["Why do I hear the game music mixed together with my music?"],
-							order = 0,
-						},
-						text = {
-							order = 1,
-							type = "description",
-							name = L["Since patch 4.0.1 the addon can't disable the game music anymore. You need to copy the \"Sound\" folder at \\Interface\\AddOns\\EpicMusicPlayer\\media\\ to ...\\World of Warcraft\\Data\\ This will completely disable the game music until you delete that folder."],
 						},
 					},
 				},
@@ -665,6 +655,23 @@ local empoptions = {
 							order = 1,
 							type = "description",
 							name = L["Not possible with wow. As is playing a song at a specific position. An addon can only tell wow to play and stop a song that's it."],
+						},
+					},
+				},
+				FAQ10 = {
+					type = "group",
+					order = 9,
+					name = L["Why are some playlists grey?"],
+					args = {
+						header = {
+							type = "header",
+							name = L["Why are some playlists grey?"],
+							order = 0,
+						},
+						text = {
+							order = 1,
+							type = "description",
+							name = L["Playlists created with the playlist generator or addedy by the game music module are locked for editing."],
 						},
 					},
 				},
@@ -821,8 +828,15 @@ function EpicMusicPlayer:IsRandom()
     return EpicMusicPlayer.db.profile.random
 end
 
-function EpicMusicPlayer:ToggleRandom()
-    EpicMusicPlayer.db.profile.random = not EpicMusicPlayer.db.profile.random
+function EpicMusicPlayer:ToggleRandom(all)
+    if all then
+		EpicMusicPlayer.db.profile.shuffleAll = not EpicMusicPlayer.db.profile.shuffleAll
+		if EpicMusicPlayer.db.profile.shuffleAll then
+			EpicMusicPlayer.db.profile.random = true
+		end
+	else
+		EpicMusicPlayer.db.profile.random = not EpicMusicPlayer.db.profile.random
+	end
 	EpicMusicPlayer:SendMessage("EMPUpdateRandom",EpicMusicPlayer.db.profile.random)
 end
 

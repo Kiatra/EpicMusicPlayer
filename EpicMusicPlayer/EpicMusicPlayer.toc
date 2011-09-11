@@ -43,6 +43,7 @@ core\tooltip.lua
 core\dropdown.lua
 core\send.lua
 core\listmanagement.lua
+#core\musicevent.lua
 
 gui\gui.lua
 gui\skins.lua

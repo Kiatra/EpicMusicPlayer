@@ -3,20 +3,24 @@ local AceLocale = LibStub:GetLibrary("AceLocale-3.0")
 local L = AceLocale:NewLocale("EpicMusicPlayer", "enUS", true)
 if not L then return end
 
+L["Copied song %s to List %s."] = true
+L["Playlist %s already exists."] = true
+L["Why are some playlists grey?"] = true
+L["Playlist %s not found."] = true
+L["Really remove playlist %s?"] = true
+L["Playlist %s removed."] = true
+L["Playlists created with the playlist generator or addedy by the game music module are locked for editing."] = true
+L["You can only remove playlists created ingame or with the playlist manager (not the playlist generator)!"] = true
+
+
+L["Shuffle Cross Playlist"] = true
+L["Hide Artist in Playlist"] = true
 L["Show Update Info"]= true
-
 L["Layout & Skin"] = true
-L["Why do I hear the game music mixed together with my music?"] = true
-L["Since patch 4.0.1 the addon can't disable the game music anymore. You need to copy the \"Sound\" folder at \\Interface\\AddOns\\EpicMusicPlayer\\media\\ to ...\\World of Warcraft\\Data\\ This will completely disable the game music until you delete that folder."] = true
-
-
 L["Select a question from the left."] = true
-
 L["EpicMusicPlayer Update Info"] = true
-L["Since patch 4.0.1 playing custom music will no longer stop the game music."] = true
-L["To avoid hearing both, the game music and your custom music simultaneously, start the PlaylistManager save the playlist and resart WoW."] = true
-L["Read the FAQ for more info about this."] = true
-		
+
+L["Read the FAQ for more info about this."] = true		
 L["Reset GUI Position"] = true
 L["Reset the GUI window position"] = true
 L["Playlist font"] = true
@@ -76,7 +80,6 @@ L["Artist"] = true
 L["Song"] = true
 L["Album"] = true
 L["Length"] = true
-L["Playlist"] = true
 
 L["Use scroll wheel - adjust music volume"] = true
 L["Ctrl + use scroll wheel - adjust effects volume"] = true
@@ -88,8 +91,6 @@ L["GUI Layout"] = true
 L["Help - FAQ"] = true
 L["Frequently Asked Questions"] = true
 
-L["Best list not found."] = true
-L["Bad list not found."] = true
 L["Current will be moved on playing next song."] = true
 L["Moved song X from list Y to list Z."] = function(x,y,z) return 'Moved song '..x..' from list '..y..' to list '..z.."."; end
 L["Playing song from history."] = true
@@ -113,8 +114,6 @@ L["FAQ-Text1"] = [[
   Start WoW and enjoy your music while farming:)
 ]]
 
-L["How do I get the game music back?"] = true
-L["Delete the Sound folder (NOT the mpq file) at ..\\World of Warcraft\\Data\\Sound"] = true
 
 L["Do I have to copy all of my music files to the wow folder?"] = true
 L["FAQ-Text2"] = [[ 
@@ -143,10 +142,9 @@ L["Why is there no pause button?"] = true
 L["Not possible with wow. As is playing a song at a specific position. An addon can only tell wow to play and stop a song that's it."] = true
 
 
-L["Best list not found."] = true
-L["Bad list not found."] = true
 L["Current will be moved on playing next song."] = true
-L["Moved song X from list Y to list Z."] = function(x,y,z) return 'Moved song '..x..' from list '..y..' to list '..z.."."; end
+L["Moved song %s from list %s to list %s."] = true
+
 L["Playing song from history."] = true
 
 L["Font"] = true
@@ -174,8 +172,6 @@ L["Play/Stop"] = true
 
 L["Drop Down Menu"] = true
 L["Spam to default channel"] = true
-L["Move to bad songs list"] = true
-L["Move song to favorite list"] = true
 
 L["Mouse Setup"] = true
 L["Left Click"] = true
@@ -238,9 +234,8 @@ L["Remove the playing song from list"] = true
 					   
 L["Add Playlist"] = true
 L["Add Playlist"] = true
+L["Remove Playlist"] = true
 
-L["Remove Playlist"] = true
-L["Remove Playlist"] = true
 
 L["Default Channel"] = true
 L["Select the default channel to spam on ctrl+click"] = true
@@ -249,16 +244,8 @@ L["Loop Song"] = true
 L["Play the current song again and again and again...until your head will explode. A click on next song will disable this."] = true
 
 L["General"] = true
-
-L["Bad list"] = true
-L["This list will not be played. Unless you select it."] = true
-
-
-L["Set a key in the key bindings menu to move a song to the selected list by that key."] = true
-
-
 L["Favorites List"] = true
-
+L["Move song to favorite list"] = true
 
 L["GUI Size"] = true
 L["Adjust the size of the GUI"] = true
@@ -270,40 +257,18 @@ L["Playlist error oO Playlist maybe empty."] = true
 L["No Target"] = true
 L["Last playlist can not be removed."] = true
 L["[~mymusic~] "] = true
-L["Moved song: "] = true
-L[" to List: "] = true
-L["Not playing."] = true
-
 L["Song is already in that list."] = true
-L["Removed song"] = true
-L["from list"] = true
-
-L["already exists."] = true
-L["Added playlist"] = true
-
-L["removed."] = true
-
-L["not found."] = true
-
-L["Please set a bad songs list."] = true
-L["Please set a favorites list."] = true
-
-L["After current, song will be moved to list"] = true
-
+L["Added playlist %s."] = true
+L["Right click and drag to move this button"] = true
 
 L["Search..."] = true
 L["No Match"] = true
-L[" - Title"] = true
 L["Artist"] = true
 L["Playlists"] = true
 L["Close"] = true
 L["Clear"] = true
 
 L["GUI"] = true
-L["List: "] = true
-L["Length: "] = true
-L["Album: "] = true
-
 L["Guild"] = true
 L["Party"] = true
 L["Say"] = true
@@ -321,9 +286,6 @@ L["Music volume: "] = true
 L["Effects vol.: "] = true
 L["Stopped"] = true
 
-
-L["Right click and drag to move this button"] = true
-
 L["Play/Stop"] = true
 L["Play Next Song"] = true
 L["Play Last Song"] = true
@@ -331,5 +293,3 @@ L["Show/Hide Playlist"] = true
 L["Toggle Mute"] = true
 L["Remove Song"] = true
 L["Show Controls and Options"] = true
-L["Move song to bad songs list."] = true
-L["Move song to best songs list."] = true

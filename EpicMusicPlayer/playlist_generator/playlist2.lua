@@ -1,1 +1,1 @@
-﻿-- this file is used by the playlist generator not the plalist manager.
+﻿-- this file is only used by the playlist generator not the playlist manager.

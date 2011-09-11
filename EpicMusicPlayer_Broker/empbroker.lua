@@ -1,8 +1,6 @@
 
 local ldb = LibStub:GetLibrary("LibDataBroker-1.1",true)
-if not ldb then 
-	return
-end
+if not ldb then return end
 
 EpicMusicPlayerBroker = LibStub("AceAddon-3.0"):NewAddon("EpicMusicPlayerBroker", "AceEvent-3.0","AceTimer-3.0")
 local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")

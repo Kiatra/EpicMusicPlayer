@@ -272,13 +272,13 @@ local options={
 	
 local function ScrollText(self, elapsed)
 	TimeSinceLastUpdate = TimeSinceLastUpdate + elapsed
-	if(TimeSinceLastUpdate>0.03)then
+	if(TimeSinceLastUpdate>0.02)then
 		TimeSinceLastUpdate = 0
 		--postpone scrolling
 		scrolllag = scrolllag +1
 		if(scrolllag > 50)then
 			if(not volumechanged)then	
-				scrolloffsetx = scrolloffsetx +.5
+				scrolloffsetx = scrolloffsetx +0.5
 				--EpicMusicPlayer:Debug(self.frames.player:GetWidth())
 				--self.frames.player:GetWidth()-10
 				if(scrolloffsetx > guitext:GetStringWidth()/2)then
