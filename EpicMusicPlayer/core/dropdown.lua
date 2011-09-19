@@ -25,9 +25,7 @@ function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
 	dropdown.relativeTo = frame
 	
 	--local listName = self:GetListName(listIndex)
-	
-	local locked = EpicMusicPlayer:IsListLocked(listIndex)
-	dropdownmenu ={}
+	dropdownmenu = {}
 	dropdownmove = {}
 	dropdowncopy = {}
 	dropdownmenu[#dropdownmenu + 1] = {
@@ -36,21 +34,7 @@ function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
 		func = function() EpicMusicPlayer:RemoveSong(listIndex,songIndex);dropdown:Hide() end,
 		disabled = locked,
 	}
-	dropdownmenu[#dropdownmenu + 1] = {
-		text = L["Move song to"],
-		hasArrow = true,
-		notCheckable = true,
-		menuList = dropdownmove,
-		disabled = locked,
-	}
 	
-	dropdownmenu[#dropdownmenu + 1] = {
-		text = L["Copy song to"],
-		hasArrow = true,
-		notCheckable = true,
-		menuList = dropdowncopy
-	}
-
 	for i, list in ipairs(EpicMusicPlayer.playlists) do
 		if not EpicMusicPlayer:IsListLocked(i) and i ~=listIndex then 
 			dropdownmove[#dropdownmove + 1] = {
@@ -73,6 +57,25 @@ function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
 			}
 		end
 	end
+	
+	if #dropdownmove > 0 and not EpicMusicPlayer:IsListLocked(listIndex) then
+		dropdownmenu[#dropdownmenu + 1] = {
+			text = L["Move song to"],
+			hasArrow = true,
+			notCheckable = true,
+			menuList = dropdownmove,
+		}
+	end
+	
+	if #dropdowncopy > 0 then
+		dropdownmenu[#dropdownmenu + 1] = {
+			text = L["Copy song to"],
+			hasArrow = true,
+			notCheckable = true,
+			menuList = dropdowncopy
+		}
+	end
+	
 	dropdownmenu[#dropdownmenu + 1] = {
 		text = CANCEL,
 		notCheckable = true,

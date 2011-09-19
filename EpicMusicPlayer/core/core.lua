@@ -71,8 +71,8 @@ function EpicMusicPlayer:OnInitialize()
 			playlistPoint = "CENTER",
 			playlistOffx = 0,
 			playlistOffy = 0,
-			playlistWidth = 600,
-			playlistHeight = 402,
+			playlistWidth = 900,
+			playlistHeight = 602,
 			playlistScale = 1,
 			link = false,
 			badlist = nil,
@@ -88,11 +88,11 @@ function EpicMusicPlayer:OnInitialize()
 				leftcontrol = "SpamDefault",
 				leftshift = "PlayLast",
 			},
-			artistcolour = {r=0.6,g=0.2,b=0.8,a=0.8},
+			artistcolour = {r=0.83, g=0.22, b=0, a=1},
 			titlecolour = {r=1,g=1,b=1,a=1},
-			backcolour = {r=0,g=0,b=0,a=1},
+			backcolour = {r=1,g=1,b=1,a=1},
 			bordercolour = {r=1,g=1,b=1,a=0.28},
-			buttoncolour = {r=0.6,g=0.2,b=0.8,a=0.8},
+			buttoncolour = {r=1,g=1,b=1,a=1},
 			useartistcolour = true,
 			guistrata = "MEDIUM",
 			fontindex = 2,
@@ -119,6 +119,15 @@ function EpicMusicPlayer:OnInitialize()
 	self:RegisterChatCommand("emp", "ChatCommand")
     self:RegisterChatCommand("epicmusicplayer", "ChatCommand")
 	
+	--fix cata skin
+	if db.skin == "cataclysm" and not db.cataskinFixed then
+		db.artistcolour = {r=0.83, g=0.22, b=0, a=1}
+		db.titlecolour = {r=1,g=1,b=1,a=1}
+		db.backcolour = {r=1,g=1,b=1,a=1}
+		db.bordercolour = {r=1,g=1,b=1,a=0.28}
+		db.buttoncolour = {r=1,g=1,b=1,a=1}
+		db.cataskinFixed = true
+	end
 	
 	--CheckFolder(musicdir)
 	self:UpdateListnames()

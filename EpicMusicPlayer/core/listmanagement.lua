@@ -312,6 +312,9 @@ function EpicMusicPlayer:AddPlayList(name, newlist, save)
 	end
 	
 	if save then
+		if not EpicMusicPlayer_PlayList then
+			EpicMusicPlayer_PlayList = {}
+		end
 		table.insert(EpicMusicPlayer_PlayList, newlist)
 	end
 	--lastsearch should be last list
