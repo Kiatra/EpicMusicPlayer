@@ -92,7 +92,6 @@ L["Help - FAQ"] = true
 L["Frequently Asked Questions"] = true
 
 L["Current will be moved on playing next song."] = true
-L["Moved song X from list Y to list Z."] = function(x,y,z) return 'Moved song '..x..' from list '..y..' to list '..z.."."; end
 L["Playing song from history."] = true
 
 L["Font"] = true

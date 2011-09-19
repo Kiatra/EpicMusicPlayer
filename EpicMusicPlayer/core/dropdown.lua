@@ -67,7 +67,7 @@ function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
 				func = function()
 					--local parent = dropdown:GetParent()
 					--if parent then parent:Hide() end
-					EpicMusicPlayer.dropdown:Hide()
+					dropdown:Hide()
 					EpicMusicPlayer:CopySong(i,EpicMusicPlayer:GetSong(listIndex, songIndex))
 				end,
 			}
