@@ -333,8 +333,6 @@ function EpicMusicPlayer:AddPlayList(name, newlist, save)
 end
 
 function EpicMusicPlayer:GetRandomSong(listIndex)
-	db.shuffleAll = true --for testing
-	
 	local listnumber = listIndex
 	local songnumber = songIndex
 	--shuffle over multipe playlist's
