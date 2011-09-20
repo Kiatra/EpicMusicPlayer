@@ -358,7 +358,7 @@ function EpicMusicPlayer:GetRandomSong(listIndex)
 		if songnumber < 1 then songnumber = 1 end 
 		--EpicMusicPlayer:Debug("totalsongs:",totalsongs, "  songnumber:",songnumber)
 	else
-		songIndex = math.random(1, #playlists[listnumber])
+		songnumber = math.random(1, #playlists[listnumber])
 	end
 	
 	return EpicMusicPlayer:GetSong(listnumber, songnumber), listnumber, songnumber
