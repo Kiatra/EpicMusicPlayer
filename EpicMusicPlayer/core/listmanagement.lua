@@ -33,6 +33,7 @@ local function getCopy(song)
 		["Name"] = song.Name,
 		["Length"] = song.Length,
 		["Artist"] =  song.Artist,
+		["WoW"] = song.WoW,
 	}
 end
 
