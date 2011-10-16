@@ -34,6 +34,7 @@ localization\koKR.lua
 localization\ruRU.lua
 localization\zhCN.lua
 localization\zhTW.lua
+localization\ptBR.lua
 
 core\core.lua
 core\scrolllist.lua
