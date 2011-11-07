@@ -1,4 +1,5 @@
 local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer")
+local _G, math = _G, math
 
 local function ScrollUpdate(self, offset)
 	local frame = self:GetParent()
@@ -41,7 +42,6 @@ local function UpdateColumSpaces(self, button)
 	
 	
 	EpicMusicPlayer:Debug("button:GetWidth()",math.floor(button:GetWidth()),math.floor(button:GetWidth() * colums[1]),math.floor(button:GetWidth() * colums[2]),math.floor(button:GetWidth() * colums[3]))
-	relative = nil
 	for i = 1, #colums do
 		--local button = buttons[x]
 		local text = button["colum"..i]
@@ -82,7 +82,7 @@ local function UpdateColumSpaces(self, button)
 end
 
 local function CreateButton(parent, height, colums ,OnClick, OnEnter, OnLeave, font)
-	local button = CreateFrame("Button",nil,parent)
+	local button = _G.CreateFrame("Button",nil,parent)
 	button:SetHeight(height)
 	local numcolums = #colums
 	
@@ -129,7 +129,7 @@ local function resize(self)
  	self.numButtons = math.floor((self:GetHeight()-8) / self.buttonHeight)
 	local numButtons = self.numButtons
 	local buttons = self.buttons
-	relative = nil
+	local relative = nil
 	for i = 1, numButtons do
 		local button = buttons[i]
 		if not button then
@@ -183,7 +183,7 @@ local function SetMax(self, size)
 end
 
 function EpicMusicPlayer:CreateListWidget(name, parent, size, colums,GetData, OnClick, OnEnter, OnLeave, font)
-	local frame = CreateFrame("Frame",name,parent)
+	local frame = _G.CreateFrame("Frame",name,parent)
 	frame.Update = Update
 	frame.colums = colums or {1}
 	frame.ScrollUpdate = ScrollUpdate
@@ -208,11 +208,11 @@ function EpicMusicPlayer:CreateListWidget(name, parent, size, colums,GetData, On
 	frame:SetBackdropColor(0.2,0.2,0.2,0.9)
 	frame:SetBackdropBorderColor(0.5,0.5,0.5,0)
 	
-	local scrollbar = CreateFrame("Slider", nil, frame,"UIPanelScrollBarTemplate")
+	local scrollbar = _G.CreateFrame("Slider", nil, frame,"UIPanelScrollBarTemplate")
 	scrollbar:SetPoint("TOPLEFT",frame,"TOPRIGHT",-20,-20)
 	scrollbar:SetPoint("BOTTOMLEFT",frame,"BOTTOMRIGHT",20,20)
 	
-	scrollbar:SetScript("OnValueChanged", OnScrollValueChanged)
+	scrollbar:SetScript("OnValueChanged", _G.OnScrollValueChanged)
 	scrollbar:SetMinMaxValues(0,100)
 	scrollbar:SetValueStep(1)
 	scrollbar:SetValue(0)
@@ -222,7 +222,7 @@ function EpicMusicPlayer:CreateListWidget(name, parent, size, colums,GetData, On
 	local step = 3
 	frame:EnableMouseWheel(true)
 	frame:SetScript("OnMouseWheel", function(self, val)
-		if IsControlKeyDown() then
+		if _G.IsControlKeyDown() then
 			local f = frame:GetParent()
 			f:SetScale(f:GetScale()+0.1*val)
 		else

@@ -1,5 +1,5 @@
 ﻿--EpicMusicPlayer by yess
-EpicMusicPlayer = LibStub("AceAddon-3.0"):NewAddon("EpicMusicPlayer", "AceConsole-3.0", "AceEvent-3.0", "AceTimer-3.0","AceComm-3.0")
+local EpicMusicPlayer = LibStub("AceAddon-3.0"):NewAddon("EpicMusicPlayer", "AceConsole-3.0", "AceEvent-3.0", "AceTimer-3.0","AceComm-3.0")
 
 local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 local media = LibStub:GetLibrary("LibSharedMedia-3.0", true) or nil
@@ -9,6 +9,7 @@ local AceCfgDlg = LibStub("AceConfigDialog-3.0")
 local musicdir = "" -- path to the music :)
 local volume = 0 -- remember volume on mute
 local messageframe = nil -- song and artst display
+local _G = _G
 
 --  ace timers
 local songtimer = "" -- timer for next song countdown
@@ -771,7 +772,7 @@ function EpicMusicPlayer:GetTimeSTring(seconds)
 		return string.format("%d:%d", min, sec)
 end
 
-function Debug(...)
+local function Debug(...)
 	if(EpicMusicPlayer.db.char.debug)then
 	 	local s = "EMP Debug:"
 		for i=1,select("#", ...) do

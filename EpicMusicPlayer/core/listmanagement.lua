@@ -5,12 +5,13 @@ local playlists = {}
 
 local listnames = {}
 local searchlist = {} --serach result
-playedhistory = {}
+local playedhistory = {}
 playedhistory[1]= {ListName = "Playedhistory"}
 local historymax = 10
 local historypointer = 2
 local db
 local currentPlaylistVersion = "3.1"
+local _G, ipairs, pairs, string, table, type, math = _G, ipairs, pairs, string, table, type, math
 
 --convert playlist from versions before 3.1 to 3.1
 local function ConvertPlaylist(list)
@@ -40,8 +41,8 @@ end
 function EpicMusicPlayer:AddSavedPlayList()
 	local musicdir
 	-- put the list that will be saved and lists that will not be saved in one list
-	if EpicMusicPlayer_PlayList then
-		for i, list in ipairs(EpicMusicPlayer_PlayList) do
+	if _G.EpicMusicPlayer_PlayList then
+		for i, list in ipairs(_G.EpicMusicPlayer_PlayList) do
 			if list[1] and list[1].PlaylistVersion and list[1].PlaylistVersion < currentPlaylistVersion then
 				EpicMusicPlayer:Debug("converting list",list[1].ListName)
 				list = ConvertPlaylist(list)
@@ -81,8 +82,8 @@ function EpicMusicPlayer:CheckPlayList()
 		}
 	end	
 	
-	if not musicdir then 
-		musicdir = "MyMusic\\"
+	if not EpicMusicPlayer.musicdir then 
+		EpicMusicPlayer.musicdir = "MyMusic\\"
 		--self:Print("Musicdir not set. Setting to: <wowdir>\\MyMusic\\")
 	end
 	
@@ -90,8 +91,7 @@ function EpicMusicPlayer:CheckPlayList()
 	if db.song > #playlists[db.list] then db.song = 1 end
 	EpicMusicPlayer.playlists = playlists
 	EpicMusicPlayer:UpdateListnames()
-	EpicMusicPlayer.musicdir = musicdir
-	return musicdir;
+	return EpicMusicPlayer.musicdir;
 end
 
 function EpicMusicPlayer:AddSongToHistory(song, listIndex,songIndex)
@@ -235,7 +235,7 @@ function EpicMusicPlayer:CopySong(newList, song)
 	end
 end
 
-function EpicMusicPlayer:MoveSong(oldListIndex, newListIndex, songIndex)
+function EpicMusicPlayer:MoveSong(oldListIndex, newListIndex, songIndex, silent)
     if(oldListIndex == newListIndex)then
 		self:Print(L["Song is already in that list."])
 		return false
@@ -313,10 +313,10 @@ function EpicMusicPlayer:AddPlayList(name, newlist, save)
 	end
 	
 	if save then
-		if not EpicMusicPlayer_PlayList then
-			EpicMusicPlayer_PlayList = {}
+		if not _G.EpicMusicPlayer_PlayList then
+			_G.EpicMusicPlayer_PlayList = {}
 		end
-		table.insert(EpicMusicPlayer_PlayList, newlist)
+		table.insert(_G.EpicMusicPlayer_PlayList, newlist)
 	end
 	--lastsearch should be last list
 	local lastsearch, listIndex = EpicMusicPlayer:GetListByName("lastsearch")
@@ -335,7 +335,7 @@ end
 
 function EpicMusicPlayer:GetRandomSong(listIndex)
 	local listnumber = listIndex
-	local songnumber = songIndex
+	local songnumber = 0
 	--shuffle over multipe playlist's
 	if db.shuffleAll then
 		--count number of songs in each list
@@ -390,25 +390,23 @@ function EpicMusicPlayer:RemovePlayList(name)
 	end
 	
 	if list[1] and (list[1].PlaylistType == "generated" or list[1].PlaylistType == "gamemusic") then 
-		StaticPopupDialogs["EPICMUSICPLAYER_REMOVEPLAYLIST"] = {
+		_G.StaticPopupDialogs["EPICMUSICPLAYER_REMOVEPLAYLIST"] = {
 			text = L["You can only remove playlists created ingame or with the playlist manager (not the playlist generator)!"],
-			button1 = ACCEPT,
+			button1 = _G.ACCEPT,
 			timeout = 0,
 			whileDead = true,
 			hideOnEscape = true,
 		}
-		StaticPopup_Show("EPICMUSICPLAYER_REMOVEPLAYLIST")
+		_G.StaticPopup_Show("EPICMUSICPLAYER_REMOVEPLAYLIST")
 	else
-		StaticPopupDialogs["EPICMUSICPLAYER_REMOVEPLAYLIST"] = {
+		_G.StaticPopupDialogs["EPICMUSICPLAYER_REMOVEPLAYLIST"] = {
 			text = string.format(L["Really remove playlist %s?"],name),
-			button1 = ACCEPT,
-			button2 = CANCEL,
+			button1 = _G.ACCEPT,
+			button2 = _G.CANCEL,
 			timeout = 0,
 			whileDead = true,
 			hideOnEscape = true,
 			OnAccept = function()
-				Debug("accept")
-
 				if(listIndex == self:GetCurrentListIndex())then
 					self:Stop()
 				end
@@ -416,10 +414,10 @@ function EpicMusicPlayer:RemovePlayList(name)
 				table.remove(playlists, listIndex)
 				
 				-- remove from saved list if present
-				if EpicMusicPlayer_PlayList then 
-					for i, list in ipairs(EpicMusicPlayer_PlayList) do
+				if _G.EpicMusicPlayer_PlayList then 
+					for i, list in ipairs(_G.EpicMusicPlayer_PlayList) do
 						if(string.lower(list[1].ListName)==string.lower(name))then
-							table.remove(EpicMusicPlayer_PlayList, i)
+							table.remove(_G.EpicMusicPlayer_PlayList, i)
 						end
 					end
 				end
@@ -430,7 +428,7 @@ function EpicMusicPlayer:RemovePlayList(name)
 				
 			end,
 		}
-		StaticPopup_Show("EPICMUSICPLAYER_REMOVEPLAYLIST")
+		_G.StaticPopup_Show("EPICMUSICPLAYER_REMOVEPLAYLIST")
 	end
 end
 
@@ -466,8 +464,8 @@ function EpicMusicPlayer:Search(pattern)
         return
     end
     
-    pattern = strtrim(string.lower(pattern))
-	temp = { strsplit(" ", pattern) }
+    pattern = _G.strtrim(string.lower(pattern))
+	temp = { _G.strsplit(" ", pattern) }
 
     searchlist = {
        { 
@@ -499,10 +497,10 @@ function EpicMusicPlayer:Search(pattern)
     local lastsearch = EpicMusicPlayer:GetListIndex("lastsearch")
 	if(lastsearch)then
 		playlists[lastsearch] = searchlist
-		selectedlist = lastsearch --set selected list
+		EpicMusicPlayer.selectedlist = lastsearch --set selected list
 	else
 		table.insert(playlists, searchlist)
-		selectedlist = #playlists --set selected list
+		EpicMusicPlayer.selectedlist = #playlists --set selected list
 	end
 end
 
@@ -542,7 +540,7 @@ function EpicMusicPlayer:IsListLocked(index)
 end
 
 function EpicMusicPlayer:GetSong(listIndex, songIndex)
-	if not songIndex or notlistIndex then
+	if not songIndex or not listIndex then
 		--EpicMusicPlayer:Debug("listIndex or songIndex not vaild.",listIndex, songIndex)
 		return nil
 	end

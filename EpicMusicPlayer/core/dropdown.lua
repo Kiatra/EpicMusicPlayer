@@ -1,9 +1,12 @@
+local _G = _G
+local LibStub, ipairs = _G.LibStub, ipairs
 local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer")
 local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 
 local dropdownmove = {}
 local dropdownchat = nil
 local dropdownmenu = nil
+local dropdowncopy = nil
 local db
 
 function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
@@ -13,7 +16,7 @@ function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
 	--local self = EpicMusicPlayer
 	local dropdown = self.dropdown
 	if not dropdown then
-		dropdown = CreateFrame("Frame", "EMPDropDown", nil, "UIDropDownMenuTemplate")	
+		dropdown = _G.CreateFrame("Frame", "EMPDropDown", nil, "UIDropDownMenuTemplate")	
 		dropdown.xOffset = 0
 		dropdown.yOffset = 0
 		dropdown.point = "TOPLEFT"
@@ -24,7 +27,7 @@ function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
 	dropdown:Show()
 	dropdown.relativeTo = frame
 	
-	--local listName = self:GetListName(listIndex)
+	local locked = EpicMusicPlayer:IsListLocked(db.list)
 	dropdownmenu = {}
 	dropdownmove = {}
 	dropdowncopy = {}
@@ -77,12 +80,12 @@ function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
 	end
 	
 	dropdownmenu[#dropdownmenu + 1] = {
-		text = CANCEL,
+		text = _G.CANCEL,
 		notCheckable = true,
 		func = function() dropdown:Hide() end,
 	
 	}
-	EasyMenu(dropdownmenu, dropdown, "cursor", -25 , 0, "MENU")
+	_G.EasyMenu(dropdownmenu, dropdown, "cursor", -25 , 0, "MENU")
 end
 
 function EpicMusicPlayer:OpenListMenu(frame, listIndex)
@@ -92,7 +95,7 @@ function EpicMusicPlayer:OpenListMenu(frame, listIndex)
 	--local self = EpicMusicPlayer
 	local dropdown = self.dropdown
 	if not dropdown then
-		dropdown = CreateFrame("Frame", "EMPDropDown", nil, "UIDropDownMenuTemplate")
+		dropdown = _G.CreateFrame("Frame", "EMPDropDown", nil, "UIDropDownMenuTemplate")
 		dropdown.xOffset = 0
 		dropdown.yOffset = 0
 		dropdown.point = "TOPLEFT"
@@ -109,10 +112,10 @@ function EpicMusicPlayer:OpenListMenu(frame, listIndex)
 			text = L["Add Playlist"],
 			func = function() 
 				local name 
-				StaticPopupDialogs["EPICMUSICPLAYER_ADDPLAYLIST"] = {
+				_G.StaticPopupDialogs["EPICMUSICPLAYER_ADDPLAYLIST"] = {
 					text = "Enter playlist name:",
-					button1 = ACCEPT,
-					button2 = CANCEL,
+					button1 = _G.ACCEPT,
+					button2 = _G.CANCEL,
 					timeout = 0,
 					whileDead = true,
 					hideOnEscape = true,
@@ -129,7 +132,7 @@ function EpicMusicPlayer:OpenListMenu(frame, listIndex)
 						end
 					end
 				}
-				StaticPopup_Show("EPICMUSICPLAYER_ADDPLAYLIST")
+				_G.StaticPopup_Show("EPICMUSICPLAYER_ADDPLAYLIST")
 				
 			end,
 			notCheckable = true
@@ -144,27 +147,27 @@ function EpicMusicPlayer:OpenListMenu(frame, listIndex)
 		}
 	end
 	dropdownmenu[#dropdownmenu + 1] = {
-		text = CANCEL,
+		text = _G.CANCEL,
 		notCheckable = true,
 		func = function() dropdown:Hide() end,
 	
 	}
 	if frame then
-		EasyMenu(dropdownmenu, dropdown)
+		_G.EasyMenu(dropdownmenu, dropdown)
 	else
-		EasyMenu(dropdownmenu, dropdown, "cursor", -25 , 0, "MENU")
+		_G.EasyMenu(dropdownmenu, dropdown, "cursor", -25 , 0, "MENU")
 	end
 end
 
 
-function EpicMusicPlayer:OpenMenu(frame)
+function EpicMusicPlayer:OpenMenu(frame, listIndex)
 	EpicMusicPlayer:HideTooltip()
 	--GameTooltip:Hide();
 	local db = EpicMusicPlayer.db.profile
 	--local self = EpicMusicPlayer
 	local dropdown = self.dropdown
 	if not dropdown then
-		dropdown = CreateFrame("Frame", "EMPDropDown", nil, "UIDropDownMenuTemplate")
+		dropdown = _G.CreateFrame("Frame", "EMPDropDown", nil, "UIDropDownMenuTemplate")
 		dropdown.xOffset = 0
 		dropdown.yOffset = 0
 		dropdown.point = "TOPLEFT"
@@ -241,11 +244,11 @@ function EpicMusicPlayer:OpenMenu(frame)
 			func = function() self:TogglePlayerGui() end,
 		},	
 	}
-	
+	local EpicMusicDancer = EpicMusicPlayer.EpicMusicDancer
 	if(EpicMusicDancer)then
 		dropdownmenu[#dropdownmenu + 1] = {
 			text = L["Show Dancer"],
-			checked = EMPDancerFrame:IsVisible(),
+			checked = EpicMusicDancer:IsVisible(),
 			func = function() EpicMusicDancer:ToggleShow() end,
 			
 		}
@@ -332,9 +335,9 @@ function EpicMusicPlayer:OpenMenu(frame)
 		}
 	end
 	dropdownmenu[#dropdownmenu + 1] = {
-		text = CANCEL,
+		text = _G.CANCEL,
 		notCheckable = true,
 		func = function() dropdown:Hide() end,
 	}
-	EasyMenu(dropdownmenu, dropdown)
+	_G.EasyMenu(dropdownmenu, dropdown)
 end

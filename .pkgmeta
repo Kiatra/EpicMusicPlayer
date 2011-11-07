@@ -49,4 +49,7 @@ move-folders:
     EpicMusicPlayer/EpicMusicPlayer_Broker: EpicMusicPlayer_Broker
     EpicMusicPlayer/EpicMusicPlayer_Dancer: EpicMusicPlayer_Dancer
 	EpicMusicPlayer/EpicMusicPlayer_GameMusic: EpicMusicPlayer_GameMusic
-	
+
+tools-used: 
+	- libdatabroker-1-1
+	- findglobals

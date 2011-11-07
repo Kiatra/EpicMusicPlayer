@@ -1,3 +1,5 @@
+local _G = _G
+local LibStub = _G.LibStub
 local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer")
 local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 -------------------------------------------------------------------------------
@@ -104,8 +106,8 @@ local empoptions = {
 									c.r, c.g ,c.b ,c.a = r, g, b, a
 								end
 								--update gui
-								if(EpicMusicPlayerGui)then
-									EpicMusicPlayerGui:UpdateFrame(EpicMusicPlayer)
+								if(_G.EpicMusicPlayerGui)then
+									_G.EpicMusicPlayerGui:UpdateFrame(EpicMusicPlayer)
 								end
 							end
 						},
@@ -122,8 +124,8 @@ local empoptions = {
 								local c = EpicMusicPlayer.db.profile.titlecolour
 								c.r, c.g ,c.b ,c.a = r, g, b, a
 								--update gui
-								if(EpicMusicPlayerGui)then
-									EpicMusicPlayerGui:UpdateFrame(EpicMusicPlayer)
+								if(_G.EpicMusicPlayerGui)then
+									_G.EpicMusicPlayerGui:UpdateFrame(EpicMusicPlayer)
 								end
 							end
 						},
@@ -141,8 +143,8 @@ local empoptions = {
 								--EpicMusicPlayer:Debug(EpicMusicPlayer.media:Fetch("font",value))
 								EpicMusicPlayer.db.profile.font = value
 								--update gui
-								if(EpicMusicPlayerGui)then
-									EpicMusicPlayerGui:UpdateFrame(EpicMusicPlayer)
+								if(_G.EpicMusicPlayerGui)then
+									_G.EpicMusicPlayerGui:UpdateFrame(EpicMusicPlayer)
 								end
 								EpicMusicPlayer:UpdateMessageFrame()
 							end,
@@ -161,8 +163,8 @@ local empoptions = {
 								--EpicMusicPlayer:Debug(EpicMusicPlayer.media:Fetch("font",value))
 								EpicMusicPlayer.db.profile.playlistfont = value
 								--update gui
-								--if(EpicMusicPlayerGui)then
-								--	EpicMusicPlayerGui:UpdateFrame(EpicMusicPlayer)
+								--if(_G.EpicMusicPlayerGui)then
+								--	_G.EpicMusicPlayerGui:UpdateFrame(EpicMusicPlayer)
 								--end
 								--EpicMusicPlayer:UpdateMessageFrame()
 							end,
@@ -430,8 +432,8 @@ local empoptions = {
 		            desc = L["Plays a test song."],
 		            func = function(info, value)
 						EpicMusicPlayer:Stop()
-						SetCVar("Sound_EnableMusic", 1)
-						PlayMusic("Sound\\Music\\ZoneMusic\\DMF_L70ETC01.mp3") 
+						_G.SetCVar("Sound_EnableMusic", 1)
+						_G.PlayMusic("Sound\\Music\\ZoneMusic\\DMF_L70ETC01.mp3") 
 						EpicMusicPlayer:Print("Playing Test Song, do you hear the song: \"Power Of The Horde\"?")
 						EpicMusicPlayer:Print("Music folder is set to: <wowfolder>\\"..EpicMusicPlayer.musicdir)
 		            end,
@@ -691,8 +693,8 @@ function EpicMusicPlayer:AddOptions(name,options)
 end
 
 function EpicMusicPlayer:IsPlayerGui()
-    if(EMPGUI)then
-		if(EMPGUI:IsVisible())then
+    if(_G.EMPGUI)then
+		if(_G.EMPGUI:IsVisible())then
 			return true
 		end
 	end
@@ -701,8 +703,8 @@ function EpicMusicPlayer:IsPlayerGui()
 end
 
 function EpicMusicPlayer:TogglePlayerGui()
-    if(EpicMusicPlayerGui)then
-		EpicMusicPlayerGui:Toggle()
+    if(_G.EpicMusicPlayerGui)then
+		_G.EpicMusicPlayerGui:Toggle()
 	else
 		EpicMusicPlayer:Print(L["GUI not found"])
 	end
@@ -711,8 +713,8 @@ function EpicMusicPlayer:TogglePlayerGui()
 end
 
 function EpicMusicPlayer:IsMinimap()
-    if(EpicMusicPlayerMiniButton)then
-		if(EpicMusicPlayerMiniButton:IsVisible())then
+    if(_G.EpicMusicPlayerMiniButton)then
+		if(_G.EpicMusicPlayerMiniButton:IsVisible())then
 			return true
 		end
 	end	
@@ -720,8 +722,8 @@ function EpicMusicPlayer:IsMinimap()
 end
 
 function EpicMusicPlayer:ToggleMinimap()
-    if(EpicMusicPlayerGui)then
-		EpicMusicPlayerGui:ToggleMinimap()
+    if(_G.EpicMusicPlayerGui)then
+		_G.EpicMusicPlayerGui:ToggleMinimap()
 	else
 		EpicMusicPlayer:Print(L["GUI not found"])
 	end
@@ -815,9 +817,9 @@ end
 function EpicMusicPlayer:ToggleDisWoWMusic()
 	if(not self.Playing)then
 		if(self.db.profile.disablewowmusic) then 
-			SetCVar("Sound_EnableMusic", 1);	
+			_G.SetCVar("Sound_EnableMusic", 1);	
 		else
-			SetCVar("Sound_EnableMusic", 0);	
+			_G.SetCVar("Sound_EnableMusic", 0);	
 		end
 	end
 	self.db.profile.disablewowmusic = not self.db.profile.disablewowmusic

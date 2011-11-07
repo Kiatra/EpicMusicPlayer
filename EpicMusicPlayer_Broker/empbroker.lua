@@ -1,10 +1,11 @@
-
-local ldb = LibStub:GetLibrary("LibDataBroker-1.1",true)
+local _G, mod, math, string = _G, mod, math, string
+local ldb = _G.LibStub:GetLibrary("LibDataBroker-1.1",true)
 if not ldb then return end
 
-EpicMusicPlayerBroker = LibStub("AceAddon-3.0"):NewAddon("EpicMusicPlayerBroker", "AceEvent-3.0","AceTimer-3.0")
+local EpicMusicPlayerBroker = LibStub("AceAddon-3.0"):NewAddon("EpicMusicPlayerBroker", "AceEvent-3.0","AceTimer-3.0")
 local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer")
+
 
 local options={
 			name="DataBroker",
@@ -171,7 +172,7 @@ function EpicMusicPlayerBroker:OnInitialize()
 			showartist = false,
 		},
 	}
-	self.db = LibStub("AceDB-3.0"):New("EpicMusicPlayerBrokerDB", defaults, "Default")
+	self.db = _G.LibStub("AceDB-3.0"):New("EpicMusicPlayerBrokerDB", defaults, "Default")
 	
 	EpicMusicPlayer:AddOptions("broker",options)
 	songtitle = EpicMusicPlayer:GetCurrentSongName()
@@ -236,7 +237,7 @@ function EpicMusicPlayerBroker:UpdateText()
 			dataobj.text = L["Music volume: "]..math.floor((empdb.volume*100)).."%"
 			return
 		else
-			dataobj.text = L["Effects volume: "]..math.floor((GetCVar("Sound_SFXVolume")*100)).."%"
+			dataobj.text = L["Effects volume: "]..math.floor((_G.GetCVar("Sound_SFXVolume")*100)).."%"
 			return
 		end
     end
