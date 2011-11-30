@@ -1,4 +1,4 @@
-## Interface: 40200
+## Interface: 40300
 ## Title: EpicMusicPlayer [|cffeda55fBroker|r]
 ## Version: @file-revision@
 ## Notes: EpicMusicPlayer LDB Plugin.
