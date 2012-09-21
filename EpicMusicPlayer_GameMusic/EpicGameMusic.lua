@@ -3,207 +3,111 @@ local BestofWoW = {
   {
     ["ListName"] = "Best of WoW",
     ["PlaylistVersion"] = "3.1",
-    ["PlaylistType"] = "gamemusic",
-	["MusicDir"] = "MyMusic\\",
-    ["Album"] = "",
-    ["Song"] = "Aftermath 1",
-    ["Name"] = "Sound\\Music\\cataclysm\\MUS_Aftermath_UU01.mp3",
-    ["Length"] = 125,
-    ["Artist"] =  "cataclysm (David Arkenstone)",
+    ["PlaylistType"] = "generated",
+    ["MusicDir"] = "MyMusic\\",
+    ["Album"] = "WarCraft III Expansion",
+    ["Song"] = "Power Of The Horde",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\DMF_L70ETC01.mp3",
+    ["Length"] = 282,
+    ["Artist"] =  "Tenth Level Tauren Chieftain",
     ["WoW"] = true,
   }, -- [2]
   {
-    ["Album"] = "",
-    ["Song"] = "Assault 2",
-    ["Name"] = "Sound\\Music\\ZoneMusic\\Ebon Hold\\EH_AssaultUni02.mp3",
-    ["Length"] = 70,
-    ["Artist"] =  "Ebon Hold (Russell Brower)",
+    ["Album"] = "GlueScreenMusic",
+    ["Song"] = "WoW Main Theme",
+    ["Name"] = "Sound\\Music\\GlueScreenMusic\\wow_main_theme.mp3",
+    ["Length"] = 161,
+    ["Artist"] =  "Russell Brower",
     ["WoW"] = true,
   }, -- [3]
   {
-    ["Album"] = "",
-    ["Song"] = "battle01",
-    ["Name"] = "Sound\\Music\\Musical Moments\\battle\\battle01.mp3",
-    ["Length"] = 48,
-    ["Artist"] =  "battle",
+    ["Album"] = "GlueScreenMusic",
+    ["Song"] = "The Burning Legion - Main Title",
+    ["Name"] = "Sound\\Music\\GlueScreenMusic\\BC_main_theme.mp3",
+    ["Length"] = 226,
+    ["Artist"] =  "Russell Brower",
     ["WoW"] = true,
   }, -- [4]
   {
-    ["Album"] = "",
-    ["Song"] = "battle01",
-    ["Name"] = "Sound\\Music\\Musical Moments\\battle\\battle01.mp3",
-    ["Length"] = 48,
-    ["Artist"] =  "battle",
+    ["Album"] = "GlueScreenMusic",
+    ["Song"] = "Wrath of the Lich King - Main Title",
+    ["Name"] = "Sound\\Music\\GlueScreenMusic\\WotLK_main_title.mp3",
+    ["Length"] = 544,
+    ["Artist"] =  "Russell Brower",
     ["WoW"] = true,
   }, -- [5]
   {
-    ["Album"] = "",
-    ["Song"] = "BC_Two_1",
-    ["Name"] = "Sound\\Music\\ZoneMusic\\BlackTemple\\BT_SummitWalkUni03.mp3",
-    ["Length"] = 41,
-    ["Artist"] =  "BlackTemple (Russell Brower)",
+    ["Album"] = "GlueScreenMusic",
+    ["Song"] = "Cataclysm - Main Title (The Shattering)",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_Shattering_UU01.mp3",
+    ["Length"] = 725,
+    ["Artist"] =  "Russell Brower",
     ["WoW"] = true,
   }, -- [6]
   {
-    ["Album"] = "",
-    ["Song"] = "CT_BrazensFlightIntroUni",
-    ["Name"] = "Sound\\Music\\ZoneMusic\\CavernsOfTime\\CT_BrazensFlightIntroUni.mp3",
-    ["Length"] = 93,
-    ["Artist"] =  "CavernsOfTime (Russell Brower)",
+    ["Album"] = "GlueScreenMusic",
+    ["Song"] = "Mists of Pandaria - Main Title (Heart of Pandaria)",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_HeartofPandaria_01.mp3",
+    ["Length"] = 480,
+    ["Artist"] =  "Russell Brower",
     ["WoW"] = true,
   }, -- [7]
   {
-    ["Album"] = "",
-    ["Song"] = "CT_DurnholdeKeepExtWalk3Uni",
-    ["Name"] = "Sound\\Music\\ZoneMusic\\CavernsOfTime\\CT_DurnholdeKeepExtWalk3Uni.mp3",
-    ["Length"] = 70,
-    ["Artist"] =  "CavernsOfTime (Russell Brower)",
+    ["Album"] = "WoWX5",
+    ["Song"] = "Gecko_2_V1",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\WanderingIsle\\MUS_50_WanderingIsleB_Hero_UU01.mp3",
+    ["Length"] = 135,
+    ["Artist"] =  "WanderingIsle (Neal Acree)",
     ["WoW"] = true,
   }, -- [8]
   {
     ["Album"] = "",
-    ["Song"] = "CT_EscapeDurnIntroUni",
-    ["Name"] = "Sound\\Music\\ZoneMusic\\CavernsOfTime\\CT_EscapeDurnIntroUni.mp3",
-    ["Length"] = 112,
-    ["Artist"] =  "CavernsOfTime (Russell Brower)",
+    ["Song"] = "Valley of the Four Winds H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_BalloonRide_Hero_01.mp3",
+    ["Length"] = 169,
+    ["Artist"] =  "Pandaria",
     ["WoW"] = true,
   }, -- [9]
   {
-    ["Album"] = "",
-    ["Song"] = "CT_HillsbradExtWalk2Uni",
-    ["Name"] = "Sound\\Music\\ZoneMusic\\CavernsOfTime\\CT_HillsbradExtWalk2Uni.mp3",
-    ["Length"] = 56,
-    ["Artist"] =  "CavernsOfTime (Jason Hayes)",
+    ["Album"] = "WoW 5",
+    ["Song"] = "Song of Liulang Orch plus Vox 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SongofLiulang_VOX_Hero_01.mp3",
+    ["Length"] = 170,
+    ["Artist"] =  "Pandaria (Russell Brower)",
     ["WoW"] = true,
   }, -- [10]
   {
     ["Album"] = "",
-    ["Song"] = "CT_HyjalExtWalk7Uni",
-    ["Name"] = "Sound\\Music\\ZoneMusic\\CavernsOfTime\\CT_HyjalExtWalk7Uni.mp3",
-    ["Length"] = 66,
-    ["Artist"] =  "CavernsOfTime (Jason Hayes)",
+    ["Song"] = "MUS_50_SerpentRiders_SerpentRace",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SerpentRiders_SerpentRace.mp3",
+    ["Length"] = 238,
+    ["Artist"] =  "Pandaria",
     ["WoW"] = true,
   }, -- [11]
   {
     ["Album"] = "",
-    ["Song"] = "CT_HyjalExtWalk8Uni",
-    ["Name"] = "Sound\\Music\\ZoneMusic\\CavernsOfTime\\CT_HyjalExtWalk8Uni.mp3",
-    ["Length"] = 70,
-    ["Artist"] =  "CavernsOfTime (Jason Hayes)",
+    ["Song"] = "Ginsu Valor 3H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_ShadoPan_A_Hero_03.mp3",
+    ["Length"] = 172,
+    ["Artist"] =  "Pandaria",
     ["WoW"] = true,
   }, -- [12]
   {
     ["Album"] = "",
-    ["Song"] = "CT_StratholmePastAlleyIntro",
-    ["Name"] = "Sound\\Music\\ZoneMusic\\StratholmePast\\CT_StratholmePastAlleyIntro.mp3",
-    ["Length"] = 99,
-    ["Artist"] =  "StratholmePast",
+    ["Song"] = "WoW Cardon 4 Strings",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_ShadoPan_A_Walk_02.mp3",
+    ["Length"] = 66,
+    ["Artist"] =  "Pandaria",
     ["WoW"] = true,
   }, -- [13]
   {
     ["Album"] = "",
-    ["Song"] = "CT_ThrallEscapeIntroUni",
-    ["Name"] = "Sound\\Music\\ZoneMusic\\CavernsOfTime\\CT_ThrallEscapeIntroUni.mp3",
-    ["Length"] = 45,
-    ["Artist"] =  "CavernsOfTime (Russell Brower)",
+    ["Song"] = "Way of the Monk v2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Monk_Windwalker_A_01.mp3",
+    ["Length"] = 157,
+    ["Artist"] =  "Pandaria",
     ["WoW"] = true,
   }, -- [14]
-  {
-    ["Album"] = "",
-    ["Song"] = "Dalaran 1",
-    ["Name"] = "Sound\\Music\\ZoneMusic\\Dalaran\\DC_GeneralWalkUni01.mp3",
-    ["Length"] = 67,
-    ["Artist"] =  "Dalaran (Russell Brower)",
-    ["WoW"] = true,
-  }, -- [15]
-  {
-    ["Album"] = "",
-    ["Song"] = "Dalaran Intro",
-    ["Name"] = "Sound\\Music\\ZoneMusic\\Dalaran\\DC_IntroUni01.mp3",
-    ["Length"] = 68,
-    ["Artist"] =  "Dalaran (Russell Brower)",
-    ["WoW"] = true,
-  }, -- [16]
-  {
-    ["Album"] = "",
-    ["Song"] = "Ebon Hold 1",
-    ["Name"] = "Sound\\Music\\ZoneMusic\\Ebon Hold\\EH_GeneralWalkUni01.mp3",
-    ["Length"] = 82,
-    ["Artist"] =  "Ebon Hold (Russell Brower)",
-    ["WoW"] = true,
-  }, -- [17]
-  {
-    ["Album"] = "",
-    ["Song"] = "EnchantedForest01",
-    ["Name"] = "Sound\\Music\\ZoneMusic\\EnchantedForest\\EnchantedForest01.mp3",
-    ["Length"] = 50,
-    ["Artist"] =  "EnchantedForest (Jason Hayes)",
-    ["WoW"] = true,
-  }, -- [18]
-  {
-    ["Album"] = "",
-    ["Song"] = "Fire Festival",
-    ["Name"] = "Sound\\Music\\WorldEvents\\AllianceFirepole.mp3",
-    ["Length"] = 68,
-    ["Artist"] =  "WorldEvents (David Arkenstone)",
-    ["WoW"] = true,
-  }, -- [19]
-  {
-    ["Album"] = "",
-    ["Song"] = "Gates_9",
-    ["Name"] = "Sound\\Music\\ZoneMusic\\BlackTemple\\BT_IllidariWalkHero09.mp3",
-    ["Length"] = 74,
-    ["Artist"] =  "BlackTemple (Russell Brower)",
-    ["WoW"] = true,
-  }, -- [20]
-  {
-    ["Album"] = "",
-    ["Song"] = "GH1 Harpa",
-    ["Name"] = "Sound\\Music\\ZoneMusic\\GrizzlyHills\\GH_Intro1Uni01.mp3",
-    ["Length"] = 284,
-    ["Artist"] =  "GrizzlyHills (Russell Brower)",
-    ["WoW"] = true,
-  }, -- [21]
-  {
-    ["Album"] = "",
-    ["Song"] = "GH2 Hero v3",
-    ["Name"] = "Sound\\Music\\ZoneMusic\\GrizzlyHills\\GH_Intro2Uni01.mp3",
-    ["Length"] = 149,
-    ["Artist"] =  "GrizzlyHills (Russell Brower)",
-    ["WoW"] = true,
-  }, -- [22]
-  {
-    ["Album"] = "",
-    ["Song"] = "IronforgeWalking02",
-    ["Name"] = "Sound\\Music\\CityMusic\\Ironforge\\IronForge Walking 02.mp3",
-    ["Length"] = 50,
-    ["Artist"] =  "Ironforge (Brian Farr)",
-    ["WoW"] = true,
-  }, -- [23]
-  {
-    ["Album"] = "",
-    ["Song"] = "Joust",
-    ["Name"] = "Sound\\Music\\ZoneMusic\\ArgentTournament\\AT_JoustEvent.mp3",
-    ["Length"] = 123,
-    ["Artist"] =  "ArgentTournament (David Arkenstone)",
-    ["WoW"] = true,
-  }, -- [24]
-  {
-    ["Album"] = "",
-    ["Song"] = "Lament of the Highborne",
-    ["Name"] = "Sound\\Music\\GlueScreenMusic\\BCCredits_Lament_of_the_Highborne.mp3",
-    ["Length"] = 171,
-    ["Artist"] =  "GlueScreenMusic (Russell Brower & Derek Duke)",
-    ["WoW"] = true,
-  }, -- [25]
-  {
-    ["Album"] = "",
-    ["Song"] = "LI_Event_Rescue01",
-    ["Name"] = "Sound\\Music\\cataclysm\\MUS_LIRescue_EU01.mp3",
-    ["Length"] = 37,
-    ["Artist"] =  "cataclysm (Derek Duke)",
-    ["WoW"] = true,
-  }, -- [26]
   {
     ["Album"] = "",
     ["Song"] = "Night Elves 1",
@@ -211,119 +115,7 @@ local BestofWoW = {
     ["Length"] = 160,
     ["Artist"] =  "cataclysm (Neal Acree)",
     ["WoW"] = true,
-  }, -- [27]
-  {
-    ["Album"] = "",
-    ["Song"] = "NR_Dwarf_GeneralWalkB_Day02",
-    ["Name"] = "Sound\\Music\\ZoneMusic\\Northrend\\IronDwarf\\NR_Dwarf_GeneralWalkB_Day02.mp3",
-    ["Length"] = 97,
-    ["Artist"] =  "IronDwarf",
-    ["WoW"] = true,
-  }, -- [28]
-  {
-    ["Album"] = "",
-    ["Song"] = "NR_Dwarf_GeneralWalkDDark_Uni05",
-    ["Name"] = "Sound\\Music\\ZoneMusic\\Northrend\\IronDwarf\\NR_Dwarf_GeneralWalkDDark_Uni05.mp3",
-    ["Length"] = 69,
-    ["Artist"] =  "IronDwarf",
-    ["WoW"] = true,
-  }, -- [29]
-  {
-    ["Album"] = "",
-    ["Song"] = "Power Of The Horde",
-    ["Name"] = "Sound\\Music\\ZoneMusic\\DMF_L70ETC01.mp3",
-    ["Length"] = 282,
-    ["Artist"] =  "ZoneMusic (Tenth Level Tauren Chieftain)",
-    ["WoW"] = true,
-  }, -- [30]
-  {
-    ["Album"] = "",
-    ["Song"] = "pvp_d",
-    ["Name"] = "Sound\\Music\\ZoneMusic\\PVP\\pvp3.mp3",
-    ["Length"] = 40,
-    ["Artist"] =  "PVP (Derek Duke)",
-    ["WoW"] = true,
-  }, -- [31]
-  {
-    ["Album"] = "",
-    ["Song"] = "Shorel'Aran Vocal",
-    ["Name"] = "Sound\\Music\\ZoneMusic\\Sunwell\\SW_ShorelAranWalkUni01.mp3",
-    ["Length"] = 87,
-    ["Artist"] =  "Sunwell (Russell Brower)",
-    ["WoW"] = true,
-  }, -- [32]
-  {
-    ["Album"] = "",
-    ["Song"] = "Silvermoon 2",
-    ["Name"] = "Sound\\Music\\ZoneMusic\\Sunwell\\SW_MagistersAsylumWalkUni01.mp3",
-    ["Length"] = 97,
-    ["Artist"] =  "Sunwell (Russell Brower)",
-    ["WoW"] = true,
-  }, -- [33]
-  {
-    ["Album"] = "",
-    ["Song"] = "SP_GeneralWalkB_Day02",
-    ["Name"] = "Sound\\Music\\ZoneMusic\\StormPeaks\\SP_GeneralWalkB_Day02.mp3",
-    ["Length"] = 82,
-    ["Artist"] =  "StormPeaks",
-    ["WoW"] = true,
-  }, -- [34]
-  {
-    ["Album"] = "",
-    ["Song"] = "SP_GeneralWalkB_Uni02",
-    ["Name"] = "Sound\\Music\\ZoneMusic\\StormPeaks\\SP_GeneralWalkB_Uni02.mp3",
-    ["Length"] = 82,
-    ["Artist"] =  "StormPeaks",
-    ["WoW"] = true,
-  }, -- [35]
-  {
-    ["Album"] = "",
-    ["Song"] = "spooky01-moment",
-    ["Name"] = "Sound\\Music\\Musical Moments\\spooky\\spooky01-moment.mp3",
-    ["Length"] = 25,
-    ["Artist"] =  "spooky (Jason Hayes)",
-    ["WoW"] = true,
-  }, -- [36]
-  {
-    ["Album"] = "",
-    ["Song"] = "stormwind01-moment",
-    ["Name"] = "Sound\\Music\\CityMusic\\Stormwind\\stormwind02-moment.mp3",
-    ["Length"] = 35,
-    ["Artist"] =  "Stormwind (Jason Hayes)",
-    ["WoW"] = true,
-  }, -- [37]
-  {
-    ["Album"] = "",
-    ["Song"] = "stormwind02-moment",
-    ["Name"] = "Sound\\Music\\CityMusic\\Stormwind\\stormwind01-moment.mp3",
-    ["Length"] = 54,
-    ["Artist"] =  "Stormwind (Jason Hayes)",
-    ["WoW"] = true,
-  }, -- [38]
-  {
-    ["Album"] = "",
-    ["Song"] = "stormwind07-live",
-    ["Name"] = "Sound\\Music\\CityMusic\\Stormwind\\stormwind07-zone.mp3",
-    ["Length"] = 87,
-    ["Artist"] =  "Stormwind (Jason Hayes)",
-    ["WoW"] = true,
-  }, -- [39]
-  {
-    ["Album"] = "",
-    ["Song"] = "stormwind_intro-moment",
-    ["Name"] = "Sound\\Music\\CityMusic\\Stormwind\\stormwind_intro-moment.mp3",
-    ["Length"] = 66,
-    ["Artist"] =  "Stormwind (Jason Hayes)",
-    ["WoW"] = true,
-  }, -- [40]
-  {
-    ["Album"] = "",
-    ["Song"] = "Stormwind_Variation_NA_v4",
-    ["Name"] = "Sound\\Music\\cataclysm\\MUS_Stormwind_GU04.mp3",
-    ["Length"] = 66,
-    ["Artist"] =  "cataclysm (Neal Acree)",
-    ["WoW"] = true,
-  }, -- [41]
+  }, -- [15]
   {
     ["Album"] = "",
     ["Song"] = "Sunwell Flyby",
@@ -331,47 +123,279 @@ local BestofWoW = {
     ["Length"] = 57,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
+  }, -- [16]
+  {
+    ["Album"] = "",
+    ["Song"] = "CT_BrazensFlightIntroUni",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\CavernsOfTime\\CT_BrazensFlightIntroUni.mp3",
+    ["Length"] = 93,
+    ["Artist"] =  "CavernsOfTime (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [17]
+  {
+    ["Album"] = "",
+    ["Song"] = "CT_DurnholdeKeepExtWalk3Uni",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\CavernsOfTime\\CT_DurnholdeKeepExtWalk3Uni.mp3",
+    ["Length"] = 70,
+    ["Artist"] =  "CavernsOfTime (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [18]
+  {
+    ["Album"] = "",
+    ["Song"] = "CT_EscapeDurnIntroUni",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\CavernsOfTime\\CT_EscapeDurnIntroUni.mp3",
+    ["Length"] = 112,
+    ["Artist"] =  "CavernsOfTime (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [19]
+  {
+    ["Album"] = "",
+    ["Song"] = "CT_HillsbradExtWalk2Uni",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\CavernsOfTime\\CT_HillsbradExtWalk2Uni.mp3",
+    ["Length"] = 56,
+    ["Artist"] =  "CavernsOfTime (Jason Hayes)",
+    ["WoW"] = true,
+  }, -- [20]
+  {
+    ["Album"] = "",
+    ["Song"] = "CT_HyjalExtWalk7Uni",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\CavernsOfTime\\CT_HyjalExtWalk7Uni.mp3",
+    ["Length"] = 66,
+    ["Artist"] =  "CavernsOfTime (Jason Hayes)",
+    ["WoW"] = true,
+  }, -- [21]
+  {
+    ["Album"] = "",
+    ["Song"] = "CT_HyjalExtWalk8Uni",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\CavernsOfTime\\CT_HyjalExtWalk8Uni.mp3",
+    ["Length"] = 70,
+    ["Artist"] =  "CavernsOfTime (Jason Hayes)",
+    ["WoW"] = true,
+  }, -- [22]
+  {
+    ["Album"] = "",
+    ["Song"] = "CT_StratholmePastAlleyIntro",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\StratholmePast\\CT_StratholmePastAlleyIntro.mp3",
+    ["Length"] = 99,
+    ["Artist"] =  "StratholmePast",
+    ["WoW"] = true,
+  }, -- [23]
+  {
+    ["Album"] = "",
+    ["Song"] = "CT_ThrallEscapeIntroUni",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\CavernsOfTime\\CT_ThrallEscapeIntroUni.mp3",
+    ["Length"] = 45,
+    ["Artist"] =  "CavernsOfTime (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [24]
+  {
+    ["Album"] = "",
+    ["Song"] = "Fire Festival",
+    ["Name"] = "Sound\\Music\\WorldEvents\\AllianceFirepole.mp3",
+    ["Length"] = 68,
+    ["Artist"] =  "WorldEvents (David Arkenstone)",
+    ["WoW"] = true,
+  }, -- [25]
+  {
+    ["Album"] = "",
+    ["Song"] = "Joust",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\ArgentTournament\\AT_JoustEvent.mp3",
+    ["Length"] = 123,
+    ["Artist"] =  "ArgentTournament (David Arkenstone)",
+    ["WoW"] = true,
+  }, -- [26]
+  {
+    ["Album"] = "",
+    ["Song"] = "battle01",
+    ["Name"] = "Sound\\Music\\Musical Moments\\battle\\battle01.mp3",
+    ["Length"] = 48,
+    ["Artist"] =  "battle",
+    ["WoW"] = true,
+  }, -- [27]
+  {
+    ["Album"] = "",
+    ["Song"] = "EnchantedForest01",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\EnchantedForest\\EnchantedForest01.mp3",
+    ["Length"] = 50,
+    ["Artist"] =  "EnchantedForest (Jason Hayes)",
+    ["WoW"] = true,
+  }, -- [28]
+  {
+    ["Album"] = "",
+    ["Song"] = "Dalaran 1",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\Dalaran\\DC_GeneralWalkUni01.mp3",
+    ["Length"] = 67,
+    ["Artist"] =  "Dalaran (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [29]
+  {
+    ["Album"] = "",
+    ["Song"] = "Dalaran Intro",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\Dalaran\\DC_IntroUni01.mp3",
+    ["Length"] = 68,
+    ["Artist"] =  "Dalaran (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [30]
+  {
+    ["Album"] = "",
+    ["Song"] = "Ebon Hold 1",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\Ebon Hold\\EH_GeneralWalkUni01.mp3",
+    ["Length"] = 82,
+    ["Artist"] =  "Ebon Hold (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [31]
+  {
+    ["Album"] = "",
+    ["Song"] = "Assault 2",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\Ebon Hold\\EH_AssaultUni02.mp3",
+    ["Length"] = 70,
+    ["Artist"] =  "Ebon Hold (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [32]
+  {
+    ["Album"] = "",
+    ["Song"] = "Gates_9",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\BlackTemple\\BT_IllidariWalkHero09.mp3",
+    ["Length"] = 74,
+    ["Artist"] =  "BlackTemple (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [33]
+  {
+    ["Album"] = "",
+    ["Song"] = "GH1 Harpa",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\GrizzlyHills\\GH_Intro1Uni01.mp3",
+    ["Length"] = 284,
+    ["Artist"] =  "GrizzlyHills (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [34]
+  {
+    ["Album"] = "",
+    ["Song"] = "GH2 Hero v3",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\GrizzlyHills\\GH_Intro2Uni01.mp3",
+    ["Length"] = 149,
+    ["Artist"] =  "GrizzlyHills (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [35]
+  {
+    ["Album"] = "",
+    ["Song"] = "IronforgeWalking02",
+    ["Name"] = "Sound\\Music\\CityMusic\\Ironforge\\IronForge Walking 02.mp3",
+    ["Length"] = 50,
+    ["Artist"] =  "Ironforge (Brian Farr)",
+    ["WoW"] = true,
+  }, -- [36]
+  {
+    ["Album"] = "",
+    ["Song"] = "Lament of the Highborne",
+    ["Name"] = "Sound\\Music\\GlueScreenMusic\\BCCredits_Lament_of_the_Highborne.mp3",
+    ["Length"] = 171,
+    ["Artist"] =  "GlueScreenMusic (Russell Brower & Derek Duke)",
+    ["WoW"] = true,
+  }, -- [37]
+  {
+    ["Album"] = "",
+    ["Song"] = "LI_Event_Rescue01",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_LIRescue_EU01.mp3",
+    ["Length"] = 37,
+    ["Artist"] =  "cataclysm (Derek Duke)",
+    ["WoW"] = true,
+  }, -- [38]
+  {
+    ["Album"] = "",
+    ["Song"] = "NR_Dwarf_GeneralWalkB_Day02",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\Northrend\\IronDwarf\\NR_Dwarf_GeneralWalkB_Day02.mp3",
+    ["Length"] = 97,
+    ["Artist"] =  "IronDwarf",
+    ["WoW"] = true,
+  }, -- [39]
+  {
+    ["Album"] = "",
+    ["Song"] = "NR_Dwarf_GeneralWalkDDark_Uni05",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\Northrend\\IronDwarf\\NR_Dwarf_GeneralWalkDDark_Uni05.mp3",
+    ["Length"] = 69,
+    ["Artist"] =  "IronDwarf",
+    ["WoW"] = true,
+  }, -- [40]
+  {
+    ["Album"] = "",
+    ["Song"] = "pvp_d",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\PVP\\pvp3.mp3",
+    ["Length"] = 40,
+    ["Artist"] =  "PVP (Derek Duke)",
+    ["WoW"] = true,
+  }, -- [41]
+  {
+    ["Album"] = "",
+    ["Song"] = "Shorel'Aran Vocal",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\Sunwell\\SW_ShorelAranWalkUni01.mp3",
+    ["Length"] = 87,
+    ["Artist"] =  "Sunwell (Russell Brower)",
+    ["WoW"] = true,
   }, -- [42]
   {
     ["Album"] = "",
-    ["Song"] = "The Burning Legion - WoW BC Main Title",
-    ["Name"] = "Sound\\Music\\GlueScreenMusic\\BC_main_theme.mp3",
-    ["Length"] = 226,
-    ["Artist"] =  "GlueScreenMusic (Russell Brower)",
+    ["Song"] = "Silvermoon 2",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\Sunwell\\SW_MagistersAsylumWalkUni01.mp3",
+    ["Length"] = 97,
+    ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
   }, -- [43]
   {
     ["Album"] = "",
-    ["Song"] = "The Shattering v5",
-    ["Name"] = "Sound\\Music\\cataclysm\\MUS_Shattering_UU01.mp3",
-    ["Length"] = 725,
-    ["Artist"] =  "cataclysm (Russell Brower)",
+    ["Song"] = "SP_GeneralWalkB_Day02",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\StormPeaks\\SP_GeneralWalkB_Day02.mp3",
+    ["Length"] = 82,
+    ["Artist"] =  "StormPeaks",
     ["WoW"] = true,
   }, -- [44]
   {
     ["Album"] = "",
-    ["Song"] = "UnderCityThorneRoom",
-    ["Name"] = "Sound\\Ambience\\WMOAmbience\\UnderCityThorneRoom.wav",
-    ["Length"] = 118,
-    ["Artist"] =  "WMOAmbience",
+    ["Song"] = "SP_GeneralWalkB_Uni02",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\StormPeaks\\SP_GeneralWalkB_Uni02.mp3",
+    ["Length"] = 82,
+    ["Artist"] =  "StormPeaks",
     ["WoW"] = true,
   }, -- [45]
   {
     ["Album"] = "",
-    ["Song"] = "wow_main_theme",
-    ["Name"] = "Sound\\Music\\GlueScreenMusic\\wow_main_theme.mp3",
-    ["Length"] = 161,
-    ["Artist"] =  "GlueScreenMusic",
+    ["Song"] = "spooky01-moment",
+    ["Name"] = "Sound\\Music\\Musical Moments\\spooky\\spooky01-moment.mp3",
+    ["Length"] = 25,
+    ["Artist"] =  "spooky (Jason Hayes)",
     ["WoW"] = true,
   }, -- [46]
   {
     ["Album"] = "",
-    ["Song"] = "Wrath of the Lich King - Main Title",
-    ["Name"] = "Sound\\Music\\GlueScreenMusic\\WotLK_main_title.mp3",
-    ["Length"] = 544,
-    ["Artist"] =  "GlueScreenMusic (Russell Brower)",
+    ["Song"] = "stormwind02-moment",
+    ["Name"] = "Sound\\Music\\CityMusic\\Stormwind\\stormwind01-moment.mp3",
+    ["Length"] = 54,
+    ["Artist"] =  "Stormwind (Jason Hayes)",
     ["WoW"] = true,
   }, -- [47]
+  {
+    ["Album"] = "",
+    ["Song"] = "stormwind07-live",
+    ["Name"] = "Sound\\Music\\CityMusic\\Stormwind\\stormwind07-zone.mp3",
+    ["Length"] = 87,
+    ["Artist"] =  "Stormwind (Jason Hayes)",
+    ["WoW"] = true,
+  }, -- [48]
+  {
+    ["Album"] = "",
+    ["Song"] = "stormwind_intro-moment",
+    ["Name"] = "Sound\\Music\\CityMusic\\Stormwind\\stormwind_intro-moment.mp3",
+    ["Length"] = 66,
+    ["Artist"] =  "Stormwind (Jason Hayes)",
+    ["WoW"] = true,
+  }, -- [49]
+  {
+    ["Album"] = "",
+    ["Song"] = "Stormwind_Variation_NA_v4",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_Stormwind_GU04.mp3",
+    ["Length"] = 66,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [50]
   {
     ["Album"] = "",
     ["Song"] = "ZulGurubVoodoo",
@@ -379,7 +403,7 @@ local BestofWoW = {
     ["Length"] = 84,
     ["Artist"] =  "Musical Moments (Derek Duke)",
     ["WoW"] = true,
-  }, -- [48]
+  }, -- [51]
   {
     ["Album"] = "",
     ["Song"] = "Darnassus_Intro_New_NA_v1",
@@ -387,7 +411,7 @@ local BestofWoW = {
     ["Length"] = 48,
     ["Artist"] =  "cataclysm (Neal Acree)",
     ["WoW"] = true,
-  }, -- [49]
+  }, -- [52]
   {
     ["Album"] = "",
     ["Song"] = "Druids of the Flame 1H",
@@ -395,7 +419,7 @@ local BestofWoW = {
     ["Length"] = 91,
     ["Artist"] =  "cataclysm (Russell Brower)",
     ["WoW"] = true,
-  }, -- [50]
+  }, -- [53]
   {
     ["Album"] = "",
     ["Song"] = "MUS_42_ThrallAggraB_ED01",
@@ -403,14 +427,38 @@ local BestofWoW = {
     ["Length"] = 53,
     ["Artist"] =  "cataclysm",
     ["WoW"] = true,
-  }, -- [51]
+  }, -- [54]
+  {
+    ["Album"] = "",
+    ["Song"] = "Aftermath 1",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_Aftermath_UU01.mp3",
+    ["Length"] = 125,
+    ["Artist"] =  "cataclysm (David Arkenstone)",
+    ["WoW"] = true,
+  }, -- [55]
+  {
+    ["Album"] = "",
+    ["Song"] = "BC_Two_1",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\BlackTemple\\BT_SummitWalkUni03.mp3",
+    ["Length"] = 41,
+    ["Artist"] =  "BlackTemple (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [56]
+  {
+    ["Album"] = "",
+    ["Song"] = "UnderCityThorneRoom",
+    ["Name"] = "Sound\\Ambience\\WMOAmbience\\UnderCityThorneRoom.wav",
+    ["Length"] = 118,
+    ["Artist"] =  "WMOAmbience",
+    ["WoW"] = true,
+  }, -- [57]
 }
 local GameMusic = {
   {
     ["ListName"] = "Game Music",
     ["PlaylistVersion"] = "3.1",
-    ["PlaylistType"] = "gamemusic",
-	["MusicDir"] = "MyMusic\\",
+    ["PlaylistType"] = "generated",
+    ["MusicDir"] = "MyMusic\\",
     ["Album"] = "WoW 4.1 Rise of the Zandalari",
     ["Song"] = "MUS_41_faeriedragon_UE01",
     ["Name"] = "Sound\\Music\\cataclysm\\MUS_41_faeriedragon_UE01.mp3",
@@ -13562,6 +13610,3374 @@ local GameMusic = {
     ["Artist"] =  "ZulDrak (Derek Duke)",
     ["WoW"] = true,
   }, -- [1645]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Corrupted Dragonblight 1",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_CorruptedDragonblight_UU01.mp3",
+    ["Length"] = 122,
+    ["Artist"] =  "cataclysm (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1646]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Corrupted Dragonblight 2",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_CorruptedDragonblight_UU02.mp3",
+    ["Length"] = 122,
+    ["Artist"] =  "cataclysm (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1647]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Corrupted Dragonblight 3",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_CorruptedDragonblight_UU03.mp3",
+    ["Length"] = 84,
+    ["Artist"] =  "cataclysm (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1648]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Deathwing_Kit_V1",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_DeathwingCorruption_UU01.mp3",
+    ["Length"] = 35,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1649]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Deathwing_Kit_V2",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_DeathwingCorruption_UU02.mp3",
+    ["Length"] = 34,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1650]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Deathwing_Kit_V3",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_DeathwingCorruption_UU03.mp3",
+    ["Length"] = 32,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1651]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Deathwing_Kit_V4",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_DeathwingCorruption_UU04.mp3",
+    ["Length"] = 59,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1652]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Deathwing_Kit_V5",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_DeathwingCorruption_UU05.mp3",
+    ["Length"] = 58,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1653]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Deathwing_Kit_V6",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_DeathwingCorruption_UU06.mp3",
+    ["Length"] = 31,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1654]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Deathwing_Kit_V7",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_DeathwingCorruption_UU07.mp3",
+    ["Length"] = 70,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1655]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Deathwings_Last_Stand",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_DeathwingOutro_UU01.mp3",
+    ["Length"] = 58,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1656]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "The_Fall_of_Deathwing_V1",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_DeathwingsFall_Hero_UU01.mp3",
+    ["Length"] = 147,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1657]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "The_Fall_of_Deathwing_V2",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_DeathwingsFall_UU01.mp3",
+    ["Length"] = 111,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1658]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "The_Fall_of_Deathwing_V4",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_DeathwingsFall_UU02.mp3",
+    ["Length"] = 104,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1659]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Dragonsoul 2H",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_DragonSoulA_Hero_UU01.mp3",
+    ["Length"] = 32,
+    ["Artist"] =  "cataclysm (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1660]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Dragonsoul 2A",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_DragonSoulA_Moment_01.mp3",
+    ["Length"] = 31,
+    ["Artist"] =  "cataclysm (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1661]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Dragonsoul 2B",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_DragonSoulA_Moment_02.mp3",
+    ["Length"] = 32,
+    ["Artist"] =  "cataclysm (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1662]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Dragonsoul 2C",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_DragonSoulA_Moment_03.mp3",
+    ["Length"] = 32,
+    ["Artist"] =  "cataclysm (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1663]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Dragonsoul 2D",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_DragonSoulA_Moment_04.mp3",
+    ["Length"] = 60,
+    ["Artist"] =  "cataclysm (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1664]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "The_Journey_Begins_V1",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_DragonSoulB_UU01.mp3",
+    ["Length"] = 47,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1665]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "The_Journey_Begins_V2",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_DragonSoulB_UU02.mp3",
+    ["Length"] = 49,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1666]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "The_Journey_Begins_V3",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_DragonSoulB_UU03.mp3",
+    ["Length"] = 51,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1667]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Assassins_V1",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_FangsOfTheFatherA_Hero_UU01.mp3",
+    ["Length"] = 121,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1668]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Assassins_V2",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_FangsOfTheFatherA_UU01.mp3",
+    ["Length"] = 97,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1669]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Assassins_V2-No_Whispers",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_FangsOfTheFatherA_UU02.mp3",
+    ["Length"] = 99,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1670]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Assassins_V3",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_FangsOfTheFatherA_UU03.mp3",
+    ["Length"] = 92,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1671]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Sneaking_2_V1",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_FangsOfTheFatherB_UU01.mp3",
+    ["Length"] = 77,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1672]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Sneaking_2_V2",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_FangsOfTheFatherB_UU02.mp3",
+    ["Length"] = 61,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1673]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Sneaking_2_V3",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_FangsOfTheFatherB_UU03.mp3",
+    ["Length"] = 61,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1674]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Sneaking_Kit_V1",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_FangsOfTheFatherC_Hero_UU01.mp3",
+    ["Length"] = 151,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1675]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Sneaking_Kit_V2",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_FangsOfTheFatherC_UU02.mp3",
+    ["Length"] = 80,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1676]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Sneaking_Kit_V4",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_FangsOfTheFatherC_UU03.mp3",
+    ["Length"] = 74,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1677]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Sneaking_Kit_V5",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_FangsOfTheFatherC_UU04.mp3",
+    ["Length"] = 63,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1678]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Gunships 2H",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_Gunships_Hero_UU01.mp3",
+    ["Length"] = 189,
+    ["Artist"] =  "cataclysm (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1679]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Gunships 2A",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_Gunships_Stinger_01.mp3",
+    ["Length"] = 15,
+    ["Artist"] =  "cataclysm (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1680]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Gunships 2E",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_Gunships_Stinger_02.mp3",
+    ["Length"] = 14,
+    ["Artist"] =  "cataclysm (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1681]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Gunships 2G",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_Gunships_Stinger_03.mp3",
+    ["Length"] = 5,
+    ["Artist"] =  "cataclysm (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1682]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Gunships 2J",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_Gunships_Stinger_04.mp3",
+    ["Length"] = 10,
+    ["Artist"] =  "cataclysm (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1683]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Gunships 2B",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_Gunships_UU01.mp3",
+    ["Length"] = 31,
+    ["Artist"] =  "cataclysm (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1684]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Gunships 2C",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_Gunships_UU02.mp3",
+    ["Length"] = 18,
+    ["Artist"] =  "cataclysm (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1685]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Gunships 2D",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_Gunships_UU03.mp3",
+    ["Length"] = 42,
+    ["Artist"] =  "cataclysm (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1686]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Gunships 2F",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_Gunships_UU04.mp3",
+    ["Length"] = 45,
+    ["Artist"] =  "cataclysm (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1687]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Night_Walk_V1",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_NightWalk_UU01.mp3",
+    ["Length"] = 59,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1688]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Night_Walk_V2",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_NightWalk_UU02.mp3",
+    ["Length"] = 60,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1689]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Night_Walk_V3",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_NightWalk_UU03.mp3",
+    ["Length"] = 59,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1690]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Night_Walk_V4",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_NightWalk_UU04.mp3",
+    ["Length"] = 59,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1691]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Thrall_Battle_V1",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_ThrallEarthWarder_UU01.mp3",
+    ["Length"] = 62,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1692]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Thrall_Battle_V2",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_ThrallEarthWarder_UU02.mp3",
+    ["Length"] = 42,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1693]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Thrall_Intro_V1",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_ThrallEarthWarder_UU03.mp3",
+    ["Length"] = 47,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1694]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Thrall_Intro_V2",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_ThrallEarthWarder_UU04.mp3",
+    ["Length"] = 29,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1695]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Twilight_Hammer_Intro_V1",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_TwilightsHammer_UU01.mp3",
+    ["Length"] = 113,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1696]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Twilight_Hammer_Intro_V2",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_TwilightsHammer_UU02.mp3",
+    ["Length"] = 55,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1697]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Warships_V1",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_Warships_Hero_01.mp3",
+    ["Length"] = 90,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1698]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Warships_V2",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_Warships_UU01.mp3",
+    ["Length"] = 66,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1699]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Warships_V3",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_Warships_UU02.mp3",
+    ["Length"] = 29,
+    ["Artist"] =  "cataclysm (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [1700]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Well of Eternity H",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_WellOfEternity_Hero_UU01.mp3",
+    ["Length"] = 84,
+    ["Artist"] =  "cataclysm (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1701]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Well of Eternity A",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_WellOfEternity_UU01.mp3",
+    ["Length"] = 84,
+    ["Artist"] =  "cataclysm (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1702]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Well of Eternity B",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_WellOfEternity_UU02.mp3",
+    ["Length"] = 84,
+    ["Artist"] =  "cataclysm (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1703]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Well of Eternity C",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_WellOfEternity_UU03.mp3",
+    ["Length"] = 92,
+    ["Artist"] =  "cataclysm (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1704]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Well of Eternity D",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_WellOfEternity_UU04.mp3",
+    ["Length"] = 102,
+    ["Artist"] =  "cataclysm (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1705]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Well of Eternity E",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_WellOfEternity_UU05.mp3",
+    ["Length"] = 85,
+    ["Artist"] =  "cataclysm (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1706]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Well of Eternity F",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_WellOfEternity_UU06.mp3",
+    ["Length"] = 85,
+    ["Artist"] =  "cataclysm (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1707]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "MUS_43_ZinAzshari_Hero_UU01",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_ZinAzshari_Hero_UU01.mp3",
+    ["Length"] = 177,
+    ["Artist"] =  "cataclysm (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1708]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "MUS_43_ZinAzshari_UU01",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_ZinAzshari_UU01.mp3",
+    ["Length"] = 92,
+    ["Artist"] =  "cataclysm (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1709]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "MUS_43_ZinAzshari_UU02",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_ZinAzshari_UU02.mp3",
+    ["Length"] = 71,
+    ["Artist"] =  "cataclysm (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1710]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "MUS_43_ZinAzshari_UU03",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_ZinAzshari_UU03.mp3",
+    ["Length"] = 51,
+    ["Artist"] =  "cataclysm (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1711]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "MUS_43_ZinAzshari_UU04",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_ZinAzshari_UU04.mp3",
+    ["Length"] = 107,
+    ["Artist"] =  "cataclysm (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1712]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "MUS_43_ZinAzshari_UU05",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_ZinAzshari_UU05.mp3",
+    ["Length"] = 46,
+    ["Artist"] =  "cataclysm (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1713]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "MUS_43_ZinAzshari_UU06",
+    ["Name"] = "Sound\\Music\\cataclysm\\MUS_43_ZinAzshari_UU06.mp3",
+    ["Length"] = 113,
+    ["Artist"] =  "cataclysm (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1714]
+  {
+    ["Album"] = "",
+    ["Song"] = "Valley of the Four Winds NA v2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_AugustCelestials_01.mp3",
+    ["Length"] = 61,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1715]
+  {
+    ["Album"] = "",
+    ["Song"] = "Valley of the Four Winds NA v3",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_AugustCelestials_02.mp3",
+    ["Length"] = 65,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1716]
+  {
+    ["Album"] = "",
+    ["Song"] = "Valley of the Four Winds NA v4",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_AugustCelestials_03.mp3",
+    ["Length"] = 59,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1717]
+  {
+    ["Album"] = "",
+    ["Song"] = "Valley of the Four Winds NA v5",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_AugustCelestials_04.mp3",
+    ["Length"] = 91,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1718]
+  {
+    ["Album"] = "",
+    ["Song"] = "Valley of the Four Winds NA v6",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_AugustCelestials_05.mp3",
+    ["Length"] = 150,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1719]
+  {
+    ["Album"] = "",
+    ["Song"] = "Valley of the Four Winds NA v1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_AugustCelestials_Hero_01.mp3",
+    ["Length"] = 130,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1720]
+  {
+    ["Album"] = "",
+    ["Song"] = "Valley of the Four Winds H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_BalloonRide_Hero_01.mp3",
+    ["Length"] = 169,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1721]
+  {
+    ["Album"] = "",
+    ["Song"] = "Bamboo 1A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Bamboo_01.mp3",
+    ["Length"] = 46,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1722]
+  {
+    ["Album"] = "",
+    ["Song"] = "Bamboo 1B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Bamboo_02.mp3",
+    ["Length"] = 52,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1723]
+  {
+    ["Album"] = "",
+    ["Song"] = "Bamboo 1C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Bamboo_03.mp3",
+    ["Length"] = 69,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1724]
+  {
+    ["Album"] = "",
+    ["Song"] = "Bamboo 1D",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Bamboo_04.mp3",
+    ["Length"] = 98,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1725]
+  {
+    ["Album"] = "WoW 5",
+    ["Song"] = "Bamboo 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Bamboo_Hero_01.mp3",
+    ["Length"] = 88,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1726]
+  {
+    ["Album"] = "",
+    ["Song"] = "The Great Wall Night EG1 A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Bamboo_Night_01.mp3",
+    ["Length"] = 61,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1727]
+  {
+    ["Album"] = "",
+    ["Song"] = "The Great Wall Night EG1 H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Bamboo_Night_Hero_01.mp3",
+    ["Length"] = 102,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1728]
+  {
+    ["Album"] = "",
+    ["Song"] = "Battle for Pandaria v1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_BattleforPandaria_Hero_01.mp3",
+    ["Length"] = 67,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1729]
+  {
+    ["Album"] = "",
+    ["Song"] = "Battle for Pandaria v2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_BattleforPandaria_Hero_02.mp3",
+    ["Length"] = 61,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1730]
+  {
+    ["Album"] = "",
+    ["Song"] = "Bottoms Up A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_BottomsUp_01.mp3",
+    ["Length"] = 87,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1731]
+  {
+    ["Album"] = "",
+    ["Song"] = "Bottoms Up H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_BottomsUp_Hero_01.mp3",
+    ["Length"] = 88,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1732]
+  {
+    ["Album"] = "",
+    ["Song"] = "Darkbrew B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Darkbrew_01.mp3",
+    ["Length"] = 88,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1733]
+  {
+    ["Album"] = "",
+    ["Song"] = "Darkbrew H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Darkbrew_Hero_01.mp3",
+    ["Length"] = 61,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1734]
+  {
+    ["Album"] = "",
+    ["Song"] = "Dread Wastes 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_DreadWastes_A_Hero_01.mp3",
+    ["Length"] = 84,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1735]
+  {
+    ["Album"] = "",
+    ["Song"] = "Dread Wastes 2H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_DreadWastes_A_Hero_02.mp3",
+    ["Length"] = 72,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1736]
+  {
+    ["Album"] = "",
+    ["Song"] = "The Great Wall Sunset 1 H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_GateoftheSettingSun_A_Hero_01.mp3",
+    ["Length"] = 57,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1737]
+  {
+    ["Album"] = "",
+    ["Song"] = "The Great Wall Sunset 2 H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_GateoftheSettingSun_A_Hero_02.mp3",
+    ["Length"] = 60,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1738]
+  {
+    ["Album"] = "",
+    ["Song"] = "The Great Wall Sunset 3 H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_GateoftheSettingSun_A_Hero_03.mp3",
+    ["Length"] = 53,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1739]
+  {
+    ["Album"] = "",
+    ["Song"] = "The Great Wall Sunset 4 H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_GateoftheSettingSun_A_Hero_04.mp3",
+    ["Length"] = 69,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1740]
+  {
+    ["Album"] = "",
+    ["Song"] = "Brewery Storage B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_GateoftheSettingSun_B_01.mp3",
+    ["Length"] = 97,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1741]
+  {
+    ["Album"] = "",
+    ["Song"] = "Brewery Storage 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_GateoftheSettingSun_B_Hero_01.mp3",
+    ["Length"] = 81,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1742]
+  {
+    ["Album"] = "",
+    ["Song"] = "Brewery Storage 2H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_GateoftheSettingSun_B_Hero_02.mp3",
+    ["Length"] = 52,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1743]
+  {
+    ["Album"] = "",
+    ["Song"] = "Heart of Pandaria v5",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_HeartofPandaria_01.mp3",
+    ["Length"] = 480,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1744]
+  {
+    ["Album"] = "",
+    ["Song"] = "Hozu 1A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Hozen_A_01.mp3",
+    ["Length"] = 57,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1745]
+  {
+    ["Album"] = "",
+    ["Song"] = "Hozu 1B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Hozen_A_02.mp3",
+    ["Length"] = 34,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1746]
+  {
+    ["Album"] = "",
+    ["Song"] = "Hozu 1C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Hozen_A_03.mp3",
+    ["Length"] = 42,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1747]
+  {
+    ["Album"] = "",
+    ["Song"] = "Hozu 1D",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Hozen_A_04.mp3",
+    ["Length"] = 50,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1748]
+  {
+    ["Album"] = "",
+    ["Song"] = "Hozu 1E",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Hozen_A_05.mp3",
+    ["Length"] = 78,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1749]
+  {
+    ["Album"] = "",
+    ["Song"] = "Hozu 1G",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Hozen_A_06.mp3",
+    ["Length"] = 105,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1750]
+  {
+    ["Album"] = "",
+    ["Song"] = "Hozu 1J",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Hozen_A_07.mp3",
+    ["Length"] = 32,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1751]
+  {
+    ["Album"] = "",
+    ["Song"] = "Hozu 1K",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Hozen_A_08.mp3",
+    ["Length"] = 30,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1752]
+  {
+    ["Album"] = "",
+    ["Song"] = "Hozu 1L",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Hozen_A_09.mp3",
+    ["Length"] = 40,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1753]
+  {
+    ["Album"] = "",
+    ["Song"] = "Hozu 1M",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Hozen_A_10.mp3",
+    ["Length"] = 58,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1754]
+  {
+    ["Album"] = "",
+    ["Song"] = "Hozu 1N",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Hozen_A_11.mp3",
+    ["Length"] = 68,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1755]
+  {
+    ["Album"] = "",
+    ["Song"] = "Hozu 1P",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Hozen_A_12.mp3",
+    ["Length"] = 55,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1756]
+  {
+    ["Album"] = "",
+    ["Song"] = "Hozu 1Q",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Hozen_A_13.mp3",
+    ["Length"] = 31,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1757]
+  {
+    ["Album"] = "WoW 5",
+    ["Song"] = "Hozu 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Hozen_A_Hero_01.mp3",
+    ["Length"] = 108,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1758]
+  {
+    ["Album"] = "",
+    ["Song"] = "Hozu Too 1A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Hozen_B_01.mp3",
+    ["Length"] = 49,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1759]
+  {
+    ["Album"] = "",
+    ["Song"] = "Hozu Too 1B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Hozen_B_02.mp3",
+    ["Length"] = 49,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1760]
+  {
+    ["Album"] = "",
+    ["Song"] = "Hozu Too 1C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Hozen_B_03.mp3",
+    ["Length"] = 49,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1761]
+  {
+    ["Album"] = "WoW 5",
+    ["Song"] = "Hozu Too 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Hozen_B_Hero_01.mp3",
+    ["Length"] = 49,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1762]
+  {
+    ["Album"] = "",
+    ["Song"] = "Hozen Myst",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Hozen_Walk_01.mp3",
+    ["Length"] = 75,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1763]
+  {
+    ["Album"] = "",
+    ["Song"] = "Jinyu Water 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Jinyu_A_Hero_01.mp3",
+    ["Length"] = 57,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1764]
+  {
+    ["Album"] = "",
+    ["Song"] = "Jinyu Water 2H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Jinyu_A_Hero_02.mp3",
+    ["Length"] = 63,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1765]
+  {
+    ["Album"] = "",
+    ["Song"] = "Jinyu Water 3H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Jinyu_A_Hero_03.mp3",
+    ["Length"] = 62,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1766]
+  {
+    ["Album"] = "",
+    ["Song"] = "Jinyu Water 4H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Jinyu_A_Hero_04.mp3",
+    ["Length"] = 91,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1767]
+  {
+    ["Album"] = "",
+    ["Song"] = "Jinyu Day A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Jinyu_B_01.mp3",
+    ["Length"] = 104,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1768]
+  {
+    ["Album"] = "",
+    ["Song"] = "Jinyu Day B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Jinyu_B_02.mp3",
+    ["Length"] = 97,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1769]
+  {
+    ["Album"] = "",
+    ["Song"] = "Jinyu Day H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Jinyu_B_Hero_01.mp3",
+    ["Length"] = 95,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1770]
+  {
+    ["Album"] = "",
+    ["Song"] = "Praypond Entreaty A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Jinyu_C_01.mp3",
+    ["Length"] = 100,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1771]
+  {
+    ["Album"] = "",
+    ["Song"] = "Praypond Entreaty 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Jinyu_C_Hero_01.mp3",
+    ["Length"] = 80,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1772]
+  {
+    ["Album"] = "",
+    ["Song"] = "Praypond Entreaty 2H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Jinyu_C_Hero_02.mp3",
+    ["Length"] = 85,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1773]
+  {
+    ["Album"] = "",
+    ["Song"] = "Praypond Wishes C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Jinyu_D_01.mp3",
+    ["Length"] = 45,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1774]
+  {
+    ["Album"] = "",
+    ["Song"] = "Praypond Wishes 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Jinyu_D_Hero_01.mp3",
+    ["Length"] = 76,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1775]
+  {
+    ["Album"] = "",
+    ["Song"] = "Praypond Wishes 2H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Jinyu_D_Hero_02.mp3",
+    ["Length"] = 66,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1776]
+  {
+    ["Album"] = "",
+    ["Song"] = "Praypond Wishes Night A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Jinyu_D_Night_01.mp3",
+    ["Length"] = 52,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1777]
+  {
+    ["Album"] = "",
+    ["Song"] = "Praypond Wishes Night 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Jinyu_D_Night_Hero_01.mp3",
+    ["Length"] = 80,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1778]
+  {
+    ["Album"] = "",
+    ["Song"] = "Praypond Wishes Night 2H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Jinyu_D_Night_Hero_02.mp3",
+    ["Length"] = 84,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1779]
+  {
+    ["Album"] = "",
+    ["Song"] = "Mantid Steppes 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_KrasarangWilds_A_Hero_01.mp3",
+    ["Length"] = 90,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1780]
+  {
+    ["Album"] = "",
+    ["Song"] = "Mantid Steppes 2H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_KrasarangWilds_A_Hero_02.mp3",
+    ["Length"] = 75,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1781]
+  {
+    ["Album"] = "",
+    ["Song"] = "Kunlai 2H1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_KrasarangWilds_B_Hero_01.mp3",
+    ["Length"] = 82,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1782]
+  {
+    ["Album"] = "",
+    ["Song"] = "Kunlai 2H2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_KrasarangWilds_B_Hero_02.mp3",
+    ["Length"] = 60,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1783]
+  {
+    ["Album"] = "",
+    ["Song"] = "Kunlai 2H3",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_KrasarangWilds_B_Hero_03.mp3",
+    ["Length"] = 70,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1784]
+  {
+    ["Album"] = "",
+    ["Song"] = "Kunlai 1H1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_KunLaiSummit_A_Hero_01.mp3",
+    ["Length"] = 51,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1785]
+  {
+    ["Album"] = "",
+    ["Song"] = "Kunlai 1H2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_KunLaiSummit_A_Hero_02.mp3",
+    ["Length"] = 64,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1786]
+  {
+    ["Album"] = "",
+    ["Song"] = "Kunlai 1H3",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_KunLaiSummit_A_Hero_03.mp3",
+    ["Length"] = 79,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1787]
+  {
+    ["Album"] = "",
+    ["Song"] = "Kunlai 1H4",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_KunLaiSummit_A_Hero_04.mp3",
+    ["Length"] = 46,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1788]
+  {
+    ["Album"] = "",
+    ["Song"] = "Evil Chi H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_KunLaiSummit_B_Hero_01.mp3",
+    ["Length"] = 158,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1789]
+  {
+    ["Album"] = "",
+    ["Song"] = "Kunlai Summit SC 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_KunLaiSummit_C_Hero_01.mp3",
+    ["Length"] = 72,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1790]
+  {
+    ["Album"] = "",
+    ["Song"] = "Kunlai Summit SC 2H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_KunLaiSummit_C_Hero_02.mp3",
+    ["Length"] = 77,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1791]
+  {
+    ["Album"] = "",
+    ["Song"] = "Mantid v2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Mantid_A_01.mp3",
+    ["Length"] = 35,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1792]
+  {
+    ["Album"] = "",
+    ["Song"] = "Mantid v3",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Mantid_A_02.mp3",
+    ["Length"] = 88,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1793]
+  {
+    ["Album"] = "",
+    ["Song"] = "Mantid v4",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Mantid_A_03.mp3",
+    ["Length"] = 109,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1794]
+  {
+    ["Album"] = "",
+    ["Song"] = "Mantid v1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Mantid_A_Hero_01.mp3",
+    ["Length"] = 95,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1795]
+  {
+    ["Album"] = "",
+    ["Song"] = "Dungeon Doom 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Mogu_A_Hero_01.mp3",
+    ["Length"] = 85,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1796]
+  {
+    ["Album"] = "",
+    ["Song"] = "Dungeon Doom 2H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Mogu_A_Hero_02.mp3",
+    ["Length"] = 90,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1797]
+  {
+    ["Album"] = "",
+    ["Song"] = "Mogu 1A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Mogu_B_01.mp3",
+    ["Length"] = 92,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1798]
+  {
+    ["Album"] = "",
+    ["Song"] = "Mogu 1B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Mogu_B_02.mp3",
+    ["Length"] = 34,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1799]
+  {
+    ["Album"] = "",
+    ["Song"] = "Mogu 1C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Mogu_B_03.mp3",
+    ["Length"] = 77,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1800]
+  {
+    ["Album"] = "",
+    ["Song"] = "Mogu 1D",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Mogu_B_04.mp3",
+    ["Length"] = 61,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1801]
+  {
+    ["Album"] = "",
+    ["Song"] = "Mogu 1E",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Mogu_B_05.mp3",
+    ["Length"] = 80,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1802]
+  {
+    ["Album"] = "",
+    ["Song"] = "Mogu 1F",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Mogu_B_06.mp3",
+    ["Length"] = 82,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1803]
+  {
+    ["Album"] = "WoW 5",
+    ["Song"] = "Mogu 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Mogu_B_Hero_01.mp3",
+    ["Length"] = 138,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1804]
+  {
+    ["Album"] = "",
+    ["Song"] = "Drunken Chen v2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Monk_Brewmaster_A_01.mp3",
+    ["Length"] = 87,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1805]
+  {
+    ["Album"] = "",
+    ["Song"] = "Drunken Chen v1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Monk_Brewmaster_A_Hero_01.mp3",
+    ["Length"] = 79,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1806]
+  {
+    ["Album"] = "",
+    ["Song"] = "Monk 2 v2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Monk_Mistweaver_A_01.mp3",
+    ["Length"] = 124,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1807]
+  {
+    ["Album"] = "",
+    ["Song"] = "Monk 2 v3",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Monk_Mistweaver_A_02.mp3",
+    ["Length"] = 91,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1808]
+  {
+    ["Album"] = "",
+    ["Song"] = "Monk 2 v4",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Monk_Mistweaver_A_03.mp3",
+    ["Length"] = 92,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1809]
+  {
+    ["Album"] = "",
+    ["Song"] = "Monk 2H1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Monk_Mistweaver_A_Hero_01.mp3",
+    ["Length"] = 48,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1810]
+  {
+    ["Album"] = "",
+    ["Song"] = "Monk 2H2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Monk_Mistweaver_A_Hero_02.mp3",
+    ["Length"] = 79,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1811]
+  {
+    ["Album"] = "",
+    ["Song"] = "Sleepwalking Monk A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Monk_Mistweaver_A_Walk_01.mp3",
+    ["Length"] = 69,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1812]
+  {
+    ["Album"] = "",
+    ["Song"] = "Sleepwalking Monk B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Monk_Mistweaver_A_Walk_02.mp3",
+    ["Length"] = 59,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1813]
+  {
+    ["Album"] = "",
+    ["Song"] = "Brewery Exterior A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Monk_Mistweaver_B_01.mp3",
+    ["Length"] = 89,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1814]
+  {
+    ["Album"] = "",
+    ["Song"] = "Brewery Exterior B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Monk_Mistweaver_B_02.mp3",
+    ["Length"] = 91,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1815]
+  {
+    ["Album"] = "",
+    ["Song"] = "Brewery Exterior C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Monk_Mistweaver_B_03.mp3",
+    ["Length"] = 66,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1816]
+  {
+    ["Album"] = "",
+    ["Song"] = "Brewery Exterior D",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Monk_Mistweaver_B_04.mp3",
+    ["Length"] = 70,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1817]
+  {
+    ["Album"] = "",
+    ["Song"] = "Brewery Exterior H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Monk_Mistweaver_B_Hero_01.mp3",
+    ["Length"] = 87,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1818]
+  {
+    ["Album"] = "",
+    ["Song"] = "Way of the Monk v2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Monk_Windwalker_A_01.mp3",
+    ["Length"] = 157,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1819]
+  {
+    ["Album"] = "",
+    ["Song"] = "Way of the Monk v3",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Monk_Windwalker_A_02.mp3",
+    ["Length"] = 105,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1820]
+  {
+    ["Album"] = "",
+    ["Song"] = "Way of the Monk v4",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Monk_Windwalker_A_03.mp3",
+    ["Length"] = 68,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1821]
+  {
+    ["Album"] = "",
+    ["Song"] = "Way of the Monk 1H1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Monk_Windwalker_A_Hero_01.mp3",
+    ["Length"] = 93,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1822]
+  {
+    ["Album"] = "",
+    ["Song"] = "Way of the Monk 1H2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Monk_Windwalker_A_Hero_02.mp3",
+    ["Length"] = 81,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1823]
+  {
+    ["Album"] = "",
+    ["Song"] = "Live Monk Walking A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Monk_Windwalker_A_Walk_01.mp3",
+    ["Length"] = 108,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1824]
+  {
+    ["Album"] = "",
+    ["Song"] = "Live Monk Walking B1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Monk_Windwalker_A_Walk_02.mp3",
+    ["Length"] = 118,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1825]
+  {
+    ["Album"] = "",
+    ["Song"] = "Live Monk Walking B2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Monk_Windwalker_A_Walk_03.mp3",
+    ["Length"] = 94,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1826]
+  {
+    ["Album"] = "",
+    ["Song"] = "Live Monk Walking C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Monk_Windwalker_A_Walk_04.mp3",
+    ["Length"] = 71,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1827]
+  {
+    ["Album"] = "",
+    ["Song"] = "PVP General H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_PandariaPVP_Hero_01.mp3",
+    ["Length"] = 134,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1828]
+  {
+    ["Album"] = "",
+    ["Song"] = "PVP General 2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_PandariaPVP_Hero_02.mp3",
+    ["Length"] = 66,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1829]
+  {
+    ["Album"] = "",
+    ["Song"] = "Gecko 5 1A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Pandaria_A_01.mp3",
+    ["Length"] = 38,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1830]
+  {
+    ["Album"] = "",
+    ["Song"] = "Gecko 5 1B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Pandaria_A_02.mp3",
+    ["Length"] = 53,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1831]
+  {
+    ["Album"] = "",
+    ["Song"] = "Gecko 5 1C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Pandaria_A_03.mp3",
+    ["Length"] = 79,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1832]
+  {
+    ["Album"] = "",
+    ["Song"] = "Gecko 5 A Cappella 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Pandaria_A_Choir_01.mp3",
+    ["Length"] = 92,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1833]
+  {
+    ["Album"] = "WoW 5",
+    ["Song"] = "Gecko 5 Orchestra 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Pandaria_A_Hero_01.mp3",
+    ["Length"] = 91,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1834]
+  {
+    ["Album"] = "",
+    ["Song"] = "Litebrew B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Pandaria_B_01.mp3",
+    ["Length"] = 55,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1835]
+  {
+    ["Album"] = "",
+    ["Song"] = "Litebrew 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Pandaria_B_Hero_01.mp3",
+    ["Length"] = 80,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1836]
+  {
+    ["Album"] = "",
+    ["Song"] = "Litebrew 2H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Pandaria_B_Hero_02.mp3",
+    ["Length"] = 71,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1837]
+  {
+    ["Album"] = "",
+    ["Song"] = "WoW-Cardon 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Pandaria_C_Hero_01.mp3",
+    ["Length"] = 43,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1838]
+  {
+    ["Album"] = "",
+    ["Song"] = "WoW-Cardon 2H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Pandaria_C_Hero_02.mp3",
+    ["Length"] = 75,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1839]
+  {
+    ["Album"] = "",
+    ["Song"] = "WoW-Cardon 3H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Pandaria_C_Hero_03.mp3",
+    ["Length"] = 67,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1840]
+  {
+    ["Album"] = "",
+    ["Song"] = "Cardonian Primeval Epoch A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Pandaria_C_Walk_01.mp3",
+    ["Length"] = 69,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1841]
+  {
+    ["Album"] = "",
+    ["Song"] = "Cardonian Primeval Epoch B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Pandaria_C_Walk_02.mp3",
+    ["Length"] = 63,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1842]
+  {
+    ["Album"] = "",
+    ["Song"] = "Cardonian Primeval Epoch C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Pandaria_C_Walk_03.mp3",
+    ["Length"] = 110,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1843]
+  {
+    ["Album"] = "",
+    ["Song"] = "Basement B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Pandaria_D_01.mp3",
+    ["Length"] = 53,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1844]
+  {
+    ["Album"] = "",
+    ["Song"] = "Basement C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Pandaria_D_02.mp3",
+    ["Length"] = 60,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1845]
+  {
+    ["Album"] = "",
+    ["Song"] = "Basement D",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Pandaria_D_03.mp3",
+    ["Length"] = 43,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1846]
+  {
+    ["Album"] = "",
+    ["Song"] = "Basement H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Pandaria_D_Hero_01.mp3",
+    ["Length"] = 116,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1847]
+  {
+    ["Album"] = "",
+    ["Song"] = "Scarlet Monastery 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_ScarletMonastery_A_Hero_01.mp3",
+    ["Length"] = 83,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1848]
+  {
+    ["Album"] = "",
+    ["Song"] = "Scarlet Monastery 2H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_ScarletMonastery_A_Hero_02.mp3",
+    ["Length"] = 54,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1849]
+  {
+    ["Album"] = "",
+    ["Song"] = "Scarlet Monastery 3H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_ScarletMonastery_A_Hero_03.mp3",
+    ["Length"] = 117,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1850]
+  {
+    ["Album"] = "",
+    ["Song"] = "Scholo 1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Scholomance_A_01.mp3",
+    ["Length"] = 59,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1851]
+  {
+    ["Album"] = "",
+    ["Song"] = "Scholo 2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Scholomance_A_02.mp3",
+    ["Length"] = 68,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1852]
+  {
+    ["Album"] = "",
+    ["Song"] = "Scholo 3",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Scholomance_A_03.mp3",
+    ["Length"] = 61,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1853]
+  {
+    ["Album"] = "",
+    ["Song"] = "Scholo 4",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Scholomance_A_04.mp3",
+    ["Length"] = 78,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1854]
+  {
+    ["Album"] = "",
+    ["Song"] = "Scholo 5",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Scholomance_A_05.mp3",
+    ["Length"] = 67,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1855]
+  {
+    ["Album"] = "",
+    ["Song"] = "Scholo 6",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Scholomance_A_06.mp3",
+    ["Length"] = 81,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1856]
+  {
+    ["Album"] = "",
+    ["Song"] = "Scholo 7",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Scholomance_A_07.mp3",
+    ["Length"] = 74,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1857]
+  {
+    ["Album"] = "",
+    ["Song"] = "Scholo 8",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Scholomance_A_08.mp3",
+    ["Length"] = 78,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1858]
+  {
+    ["Album"] = "",
+    ["Song"] = "Scholo 9",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Scholomance_A_09.mp3",
+    ["Length"] = 91,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1859]
+  {
+    ["Album"] = "",
+    ["Song"] = "Scholo 10",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Scholomance_A_10.mp3",
+    ["Length"] = 84,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1860]
+  {
+    ["Album"] = "",
+    ["Song"] = "Scholo 11",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Scholomance_A_11.mp3",
+    ["Length"] = 58,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1861]
+  {
+    ["Album"] = "",
+    ["Song"] = "Scholo 12",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Scholomance_A_12.mp3",
+    ["Length"] = 103,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1862]
+  {
+    ["Album"] = "",
+    ["Song"] = "Serpent Riders 1A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SerpentRiders_01.mp3",
+    ["Length"] = 152,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1863]
+  {
+    ["Album"] = "WoW 5",
+    ["Song"] = "Serpent Riders 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SerpentRiders_Hero_01.mp3",
+    ["Length"] = 152,
+    ["Artist"] =  "Pandaria (Jeremy Soule)",
+    ["WoW"] = true,
+  }, -- [1864]
+  {
+    ["Album"] = "",
+    ["Song"] = "MUS_50_SerpentRiders_SerpentRace",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SerpentRiders_SerpentRace.mp3",
+    ["Length"] = 238,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1865]
+  {
+    ["Album"] = "",
+    ["Song"] = "MUS_50_SerpentRiders_Victory_Stinger",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SerpentRiders_Victory_Stinger.mp3",
+    ["Length"] = 39,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1866]
+  {
+    ["Album"] = "",
+    ["Song"] = "Positive Chi 3H1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SerpentsHeart_Hero_01.mp3",
+    ["Length"] = 93,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1867]
+  {
+    ["Album"] = "",
+    ["Song"] = "Positive Chi 3H2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SerpentsHeart_Hero_02.mp3",
+    ["Length"] = 84,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1868]
+  {
+    ["Album"] = "",
+    ["Song"] = "Positive Chi 3H3",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SerpentsHeart_Hero_03.mp3",
+    ["Length"] = 93,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1869]
+  {
+    ["Album"] = "",
+    ["Song"] = "Jade Forest H1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SerpentsHeart_Night_Hero_01.mp3",
+    ["Length"] = 110,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1870]
+  {
+    ["Album"] = "",
+    ["Song"] = "Jade Forest H2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SerpentsHeart_Night_Hero_02.mp3",
+    ["Length"] = 91,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1871]
+  {
+    ["Album"] = "",
+    ["Song"] = "Jade Forest JS A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SerpentsHeart_Night_Walk_01.mp3",
+    ["Length"] = 131,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1872]
+  {
+    ["Album"] = "",
+    ["Song"] = "Jade Forest JS B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SerpentsHeart_Night_Walk_02.mp3",
+    ["Length"] = 71,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1873]
+  {
+    ["Album"] = "",
+    ["Song"] = "Jade Forest JS C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SerpentsHeart_Night_Walk_03.mp3",
+    ["Length"] = 102,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1874]
+  {
+    ["Album"] = "",
+    ["Song"] = "Ginsu Valor 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_ShadoPan_A_Hero_01.mp3",
+    ["Length"] = 75,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1875]
+  {
+    ["Album"] = "",
+    ["Song"] = "Ginsu Valor 2H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_ShadoPan_A_Hero_02.mp3",
+    ["Length"] = 63,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1876]
+  {
+    ["Album"] = "",
+    ["Song"] = "Ginsu Valor 3H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_ShadoPan_A_Hero_03.mp3",
+    ["Length"] = 172,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1877]
+  {
+    ["Album"] = "",
+    ["Song"] = "Cardonian Wood Walk",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_ShadoPan_A_Walk_01.mp3",
+    ["Length"] = 54,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1878]
+  {
+    ["Album"] = "",
+    ["Song"] = "WoW Cardon 4 Strings",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_ShadoPan_A_Walk_02.mp3",
+    ["Length"] = 66,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1879]
+  {
+    ["Album"] = "",
+    ["Song"] = "Positive Chi 2H1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_ShadoPan_B_Hero_01.mp3",
+    ["Length"] = 116,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1880]
+  {
+    ["Album"] = "",
+    ["Song"] = "Positive Chi 2H2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_ShadoPan_B_Hero_02.mp3",
+    ["Length"] = 76,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1881]
+  {
+    ["Album"] = "",
+    ["Song"] = "Ancient Mogu 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_ShaWalk_Hero_01.mp3",
+    ["Length"] = 85,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1882]
+  {
+    ["Album"] = "",
+    ["Song"] = "Ancient Mogu 2H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_ShaWalk_Hero_02.mp3",
+    ["Length"] = 57,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1883]
+  {
+    ["Album"] = "",
+    ["Song"] = "Ancient Mogu 3H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_ShaWalk_Hero_03.mp3",
+    ["Length"] = 88,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1884]
+  {
+    ["Album"] = "",
+    ["Song"] = "Ancient Mogu 4H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_ShaWalk_Hero_04.mp3",
+    ["Length"] = 61,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1885]
+  {
+    ["Album"] = "",
+    ["Song"] = "Sha-Shank 1A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Sha_01.mp3",
+    ["Length"] = 67,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1886]
+  {
+    ["Album"] = "",
+    ["Song"] = "Sha-Shank 1B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Sha_02.mp3",
+    ["Length"] = 66,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1887]
+  {
+    ["Album"] = "",
+    ["Song"] = "Sha-Shank 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Sha_Hero_01.mp3",
+    ["Length"] = 70,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1888]
+  {
+    ["Album"] = "",
+    ["Song"] = "Sha Stinger Hvy-Resolve",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Sha_Stinger_Heavy_01.mp3",
+    ["Length"] = 26,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1889]
+  {
+    ["Album"] = "",
+    ["Song"] = "Sha Stinger Hvy 1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Sha_Stinger_Heavy_02.mp3",
+    ["Length"] = 18,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1890]
+  {
+    ["Album"] = "",
+    ["Song"] = "Sha Stinger Hvy 2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Sha_Stinger_Heavy_03.mp3",
+    ["Length"] = 21,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1891]
+  {
+    ["Album"] = "",
+    ["Song"] = "Sha Stinger Lite 1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Sha_Stinger_Lite_01.mp3",
+    ["Length"] = 20,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1892]
+  {
+    ["Album"] = "",
+    ["Song"] = "Sha Stinger Lite 2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Sha_Stinger_Lite_02.mp3",
+    ["Length"] = 18,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1893]
+  {
+    ["Album"] = "",
+    ["Song"] = "Sha Stinger Lite 3",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Sha_Stinger_Lite_03.mp3",
+    ["Length"] = 18,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1894]
+  {
+    ["Album"] = "",
+    ["Song"] = "Sha Stinger Lite 4",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Sha_Stinger_Lite_04.mp3",
+    ["Length"] = 19,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1895]
+  {
+    ["Album"] = "",
+    ["Song"] = "Sha Stinger Med 1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Sha_Stinger_Med_01.mp3",
+    ["Length"] = 24,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1896]
+  {
+    ["Album"] = "",
+    ["Song"] = "Sha Stinger Med 2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Sha_Stinger_Med_02.mp3",
+    ["Length"] = 15,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1897]
+  {
+    ["Album"] = "",
+    ["Song"] = "Vale 2 v2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_ShenZinSu_01.mp3",
+    ["Length"] = 99,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1898]
+  {
+    ["Album"] = "",
+    ["Song"] = "Vale 2 v3",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_ShenZinSu_02.mp3",
+    ["Length"] = 114,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1899]
+  {
+    ["Album"] = "",
+    ["Song"] = "Vale 2 v4",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_ShenZinSu_03.mp3",
+    ["Length"] = 114,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1900]
+  {
+    ["Album"] = "",
+    ["Song"] = "Vale 2H1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_ShenZinSu_Hero_01.mp3",
+    ["Length"] = 51,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1901]
+  {
+    ["Album"] = "",
+    ["Song"] = "Vale 2H2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_ShenZinSu_Hero_02.mp3",
+    ["Length"] = 67,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1902]
+  {
+    ["Album"] = "",
+    ["Song"] = "MUS_50_ShoSha_A_01",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_ShoSha_A_01.mp3",
+    ["Length"] = 19,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1903]
+  {
+    ["Album"] = "",
+    ["Song"] = "MUS_50_ShoSha_A_02",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_ShoSha_A_02.mp3",
+    ["Length"] = 20,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1904]
+  {
+    ["Album"] = "",
+    ["Song"] = "MUS_50_ShoSha_A_03",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_ShoSha_A_03.mp3",
+    ["Length"] = 20,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1905]
+  {
+    ["Album"] = "",
+    ["Song"] = "MUS_50_ShoSha_A_04",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_ShoSha_A_04.mp3",
+    ["Length"] = 20,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1906]
+  {
+    ["Album"] = "",
+    ["Song"] = "MUS_50_ShoSha_A_05",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_ShoSha_A_05.mp3",
+    ["Length"] = 19,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1907]
+  {
+    ["Album"] = "",
+    ["Song"] = "MUS_50_ShoSha_B_01",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_ShoSha_B_01.mp3",
+    ["Length"] = 20,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1908]
+  {
+    ["Album"] = "",
+    ["Song"] = "MUS_50_ShoSha_B_02",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_ShoSha_B_02.mp3",
+    ["Length"] = 20,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1909]
+  {
+    ["Album"] = "",
+    ["Song"] = "MUS_50_ShoSha_B_03",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_ShoSha_B_03.mp3",
+    ["Length"] = 20,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1910]
+  {
+    ["Album"] = "",
+    ["Song"] = "MUS_50_ShoSha_B_04",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_ShoSha_B_04.mp3",
+    ["Length"] = 20,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1911]
+  {
+    ["Album"] = "",
+    ["Song"] = "MUS_50_ShoSha_B_05",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_ShoSha_B_05.mp3",
+    ["Length"] = 19,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1912]
+  {
+    ["Album"] = "",
+    ["Song"] = "MUS_50_ShoSha_B_06",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_ShoSha_B_06.mp3",
+    ["Length"] = 24,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1913]
+  {
+    ["Album"] = "",
+    ["Song"] = "Scholomance H1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SiegeofNiuzaoTemple_Hero_01.mp3",
+    ["Length"] = 78,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1914]
+  {
+    ["Album"] = "",
+    ["Song"] = "Scholomance H2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SiegeofNiuzaoTemple_Hero_02.mp3",
+    ["Length"] = 55,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1915]
+  {
+    ["Album"] = "",
+    ["Song"] = "Scholomance H3",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SiegeofNiuzaoTemple_Hero_03.mp3",
+    ["Length"] = 58,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1916]
+  {
+    ["Album"] = "",
+    ["Song"] = "Song of Liulang 1A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SongofLiulang_Inst_01.mp3",
+    ["Length"] = 125,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1917]
+  {
+    ["Album"] = "",
+    ["Song"] = "Song of Liulang 1B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SongofLiulang_Inst_02.mp3",
+    ["Length"] = 166,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1918]
+  {
+    ["Album"] = "",
+    ["Song"] = "Song of Liulang 1C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SongofLiulang_Inst_03.mp3",
+    ["Length"] = 52,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1919]
+  {
+    ["Album"] = "",
+    ["Song"] = "Song of Liulang 1D",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SongofLiulang_Inst_04.mp3",
+    ["Length"] = 45,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1920]
+  {
+    ["Album"] = "",
+    ["Song"] = "Song of Liulang 1E",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SongofLiulang_Inst_05.mp3",
+    ["Length"] = 82,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1921]
+  {
+    ["Album"] = "",
+    ["Song"] = "Song of Liulang 1F",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SongofLiulang_Inst_06.mp3",
+    ["Length"] = 72,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1922]
+  {
+    ["Album"] = "",
+    ["Song"] = "Song of Liulang 1G",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SongofLiulang_Inst_07.mp3",
+    ["Length"] = 114,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1923]
+  {
+    ["Album"] = "WoW 5",
+    ["Song"] = "Song of Liulang Inst 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SongofLiulang_Inst_Hero_01.mp3",
+    ["Length"] = 168,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1924]
+  {
+    ["Album"] = "WoW 5",
+    ["Song"] = "Song of Liulang Orch plus Vox 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SongofLiulang_VOX_Hero_01.mp3",
+    ["Length"] = 170,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1925]
+  {
+    ["Album"] = "WoW 5",
+    ["Song"] = "Song of Liulang Lite plus Vox",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SongofLiulang_VOX_Lite_01.mp3",
+    ["Length"] = 234,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1926]
+  {
+    ["Album"] = "",
+    ["Song"] = "Spirit Cave 1A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SpiritCave_01.mp3",
+    ["Length"] = 91,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1927]
+  {
+    ["Album"] = "",
+    ["Song"] = "Spirit Cave 1B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SpiritCave_02.mp3",
+    ["Length"] = 98,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1928]
+  {
+    ["Album"] = "",
+    ["Song"] = "Spirit Cave 1C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SpiritCave_03.mp3",
+    ["Length"] = 98,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1929]
+  {
+    ["Album"] = "",
+    ["Song"] = "Spirit Cave 1D",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SpiritCave_04.mp3",
+    ["Length"] = 70,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1930]
+  {
+    ["Album"] = "",
+    ["Song"] = "Spirit Cave 1E",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SpiritCave_05.mp3",
+    ["Length"] = 129,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1931]
+  {
+    ["Album"] = "",
+    ["Song"] = "Spirit Cave 1F",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SpiritCave_06.mp3",
+    ["Length"] = 131,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1932]
+  {
+    ["Album"] = "WoW 5",
+    ["Song"] = "Spirit Cave 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SpiritCave_Hero_01.mp3",
+    ["Length"] = 130,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1933]
+  {
+    ["Album"] = "",
+    ["Song"] = "Spirit Path 1A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SpiritPath_01.mp3",
+    ["Length"] = 74,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1934]
+  {
+    ["Album"] = "",
+    ["Song"] = "Spirit Path 1B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SpiritPath_02.mp3",
+    ["Length"] = 73,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1935]
+  {
+    ["Album"] = "",
+    ["Song"] = "Spirit Path 1C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SpiritPath_03.mp3",
+    ["Length"] = 77,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1936]
+  {
+    ["Album"] = "",
+    ["Song"] = "Spirit Path 1D",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SpiritPath_04.mp3",
+    ["Length"] = 51,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1937]
+  {
+    ["Album"] = "WoW 5",
+    ["Song"] = "Spirit Path 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SpiritPath_Hero_01.mp3",
+    ["Length"] = 72,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1938]
+  {
+    ["Album"] = "",
+    ["Song"] = "Spirits 2D",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SpiritsB_01.mp3",
+    ["Length"] = 74,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1939]
+  {
+    ["Album"] = "",
+    ["Song"] = "Spirits 2E",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_SpiritsB_02.mp3",
+    ["Length"] = 73,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1940]
+  {
+    ["Album"] = "WoW 5",
+    ["Song"] = "Spirits 1A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Spirits_A_01.mp3",
+    ["Length"] = 52,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1941]
+  {
+    ["Album"] = "WoW 5",
+    ["Song"] = "Spirits 1B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Spirits_A_02.mp3",
+    ["Length"] = 72,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1942]
+  {
+    ["Album"] = "WoW 5",
+    ["Song"] = "Spirits 1C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Spirits_A_03.mp3",
+    ["Length"] = 67,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1943]
+  {
+    ["Album"] = "WoW 5",
+    ["Song"] = "Spirits 1D",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Spirits_A_04.mp3",
+    ["Length"] = 83,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1944]
+  {
+    ["Album"] = "",
+    ["Song"] = "Temple of the Five Dawns 1A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TempleoftheFiveDawns_01.mp3",
+    ["Length"] = 68,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1945]
+  {
+    ["Album"] = "",
+    ["Song"] = "Temple of the Five Dawns 1B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TempleoftheFiveDawns_02.mp3",
+    ["Length"] = 64,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1946]
+  {
+    ["Album"] = "",
+    ["Song"] = "Temple of the Five Dawns 1C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TempleoftheFiveDawns_03.mp3",
+    ["Length"] = 70,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1947]
+  {
+    ["Album"] = "",
+    ["Song"] = "Temple of the Five Dawns 1D",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TempleoftheFiveDawns_04.mp3",
+    ["Length"] = 40,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1948]
+  {
+    ["Album"] = "",
+    ["Song"] = "Temple of the Five Dawns 1E",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TempleoftheFiveDawns_05.mp3",
+    ["Length"] = 39,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1949]
+  {
+    ["Album"] = "",
+    ["Song"] = "Temple of the Five Dawns 1J",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TempleoftheFiveDawns_06.mp3",
+    ["Length"] = 48,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1950]
+  {
+    ["Album"] = "",
+    ["Song"] = "Temple of the Five Dawns 1K",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TempleoftheFiveDawns_07.mp3",
+    ["Length"] = 43,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1951]
+  {
+    ["Album"] = "",
+    ["Song"] = "Temple of the Five Dawns 1L",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TempleoftheFiveDawns_08.mp3",
+    ["Length"] = 11,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1952]
+  {
+    ["Album"] = "",
+    ["Song"] = "Temple of the Five Dawns 1M",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TempleoftheFiveDawns_09.mp3",
+    ["Length"] = 93,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1953]
+  {
+    ["Album"] = "",
+    ["Song"] = "Temple of the Five Dawns 1N",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TempleoftheFiveDawns_10.mp3",
+    ["Length"] = 100,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1954]
+  {
+    ["Album"] = "",
+    ["Song"] = "Temple of the Five Dawns 1F",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TempleoftheFiveDawns_11.mp3",
+    ["Length"] = 52,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1955]
+  {
+    ["Album"] = "",
+    ["Song"] = "Temple of the Five Dawns 1G",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TempleoftheFiveDawns_12.mp3",
+    ["Length"] = 19,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1956]
+  {
+    ["Album"] = "WoW 5",
+    ["Song"] = "Temple of the Five Dawns 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TempleoftheFiveDawns_Hero_01.mp3",
+    ["Length"] = 101,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1957]
+  {
+    ["Album"] = "",
+    ["Song"] = "Krasarang Wilds 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TempleoftheJadeSerpent_Hero_01.mp3",
+    ["Length"] = 75,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1958]
+  {
+    ["Album"] = "",
+    ["Song"] = "Krasarang Wilds 2H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TempleoftheJadeSerpent_Hero_02.mp3",
+    ["Length"] = 88,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1959]
+  {
+    ["Album"] = "",
+    ["Song"] = "Krasarang Wilds 3H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TempleoftheJadeSerpent_Hero_03.mp3",
+    ["Length"] = 73,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1960]
+  {
+    ["Album"] = "",
+    ["Song"] = "Night Dreams Cello 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TheHeartland_Hero_01.mp3",
+    ["Length"] = 85,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1961]
+  {
+    ["Album"] = "",
+    ["Song"] = "Night Dreams Cello 2H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TheHeartland_Hero_02.mp3",
+    ["Length"] = 58,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1962]
+  {
+    ["Album"] = "",
+    ["Song"] = "Night Dreams Choral H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TheHeartland_Hero_03.mp3",
+    ["Length"] = 87,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1963]
+  {
+    ["Album"] = "",
+    ["Song"] = "Night Dreams Cello Flute A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TheHeartland_Hero_04.mp3",
+    ["Length"] = 147,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1964]
+  {
+    ["Album"] = "",
+    ["Song"] = "The River 1A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TheRiver_01.mp3",
+    ["Length"] = 42,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1965]
+  {
+    ["Album"] = "",
+    ["Song"] = "The River 1B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TheRiver_02.mp3",
+    ["Length"] = 58,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1966]
+  {
+    ["Album"] = "",
+    ["Song"] = "The River 1C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TheRiver_03.mp3",
+    ["Length"] = 51,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1967]
+  {
+    ["Album"] = "",
+    ["Song"] = "The River 1D",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TheRiver_04.mp3",
+    ["Length"] = 64,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1968]
+  {
+    ["Album"] = "",
+    ["Song"] = "The River 1E",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TheRiver_05.mp3",
+    ["Length"] = 124,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1969]
+  {
+    ["Album"] = "",
+    ["Song"] = "The River 1F",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TheRiver_06.mp3",
+    ["Length"] = 129,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1970]
+  {
+    ["Album"] = "",
+    ["Song"] = "The River 1G",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TheRiver_07.mp3",
+    ["Length"] = 126,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1971]
+  {
+    ["Album"] = "WoW 5",
+    ["Song"] = "The River 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TheRiver_Hero_01.mp3",
+    ["Length"] = 133,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1972]
+  {
+    ["Album"] = "",
+    ["Song"] = "Toast 1A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Toast_A_01.mp3",
+    ["Length"] = 54,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1973]
+  {
+    ["Album"] = "",
+    ["Song"] = "Toast 1 H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Toast_A_Hero_01.mp3",
+    ["Length"] = 91,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1974]
+  {
+    ["Album"] = "",
+    ["Song"] = "Toast 2A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Toast_B_02.mp3",
+    ["Length"] = 87,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1975]
+  {
+    ["Album"] = "",
+    ["Song"] = "Toast 2B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Toast_B_03.mp3",
+    ["Length"] = 87,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1976]
+  {
+    ["Album"] = "",
+    ["Song"] = "Toast 2C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Toast_B_04.mp3",
+    ["Length"] = 88,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1977]
+  {
+    ["Album"] = "",
+    ["Song"] = "Toast 2 H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Toast_B_Hero_01.mp3",
+    ["Length"] = 91,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1978]
+  {
+    ["Album"] = "",
+    ["Song"] = "Ginsu Paranoia 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TownlongSteppes_A_Hero_01.mp3",
+    ["Length"] = 95,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1979]
+  {
+    ["Album"] = "",
+    ["Song"] = "Ginsu Paranoia 2H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TownlongSteppes_A_Hero_02.mp3",
+    ["Length"] = 114,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1980]
+  {
+    ["Album"] = "",
+    ["Song"] = "Brewery Ghosts A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TownlongSteppes_B_01.mp3",
+    ["Length"] = 97,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1981]
+  {
+    ["Album"] = "",
+    ["Song"] = "Brewery Ghosts B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TownlongSteppes_B_02.mp3",
+    ["Length"] = 90,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1982]
+  {
+    ["Album"] = "",
+    ["Song"] = "Brewery Ghosts H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TownlongSteppes_B_Hero_01.mp3",
+    ["Length"] = 105,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1983]
+  {
+    ["Album"] = "",
+    ["Song"] = "Townlong Steppes 1H1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TownlongSteppes_C_Hero_01.mp3",
+    ["Length"] = 80,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1984]
+  {
+    ["Album"] = "",
+    ["Song"] = "Townlong Steppes 1H2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TownlongSteppes_C_Hero_02.mp3",
+    ["Length"] = 58,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1985]
+  {
+    ["Album"] = "",
+    ["Song"] = "Townlong Steppes 1H3",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TownlongSteppes_C_Hero_03.mp3",
+    ["Length"] = 67,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1986]
+  {
+    ["Album"] = "",
+    ["Song"] = "Townlong Steppes 2H1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TownlongSteppes_C_Night_Hero_01.mp3",
+    ["Length"] = 58,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1987]
+  {
+    ["Album"] = "",
+    ["Song"] = "Townlong Steppes 2H2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TownlongSteppes_C_Night_Hero_02.mp3",
+    ["Length"] = 70,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1988]
+  {
+    ["Album"] = "",
+    ["Song"] = "Townlong Steppes 2H3",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TownlongSteppes_C_Night_Hero_03.mp3",
+    ["Length"] = 70,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1989]
+  {
+    ["Album"] = "",
+    ["Song"] = "Night 2 A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TownlongSteppes_D_01.mp3",
+    ["Length"] = 63,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1990]
+  {
+    ["Album"] = "",
+    ["Song"] = "Night 2H1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TownlongSteppes_D_Hero_01.mp3",
+    ["Length"] = 42,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1991]
+  {
+    ["Album"] = "",
+    ["Song"] = "Night 2H2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_TownlongSteppes_D_Hero_02.mp3",
+    ["Length"] = 70,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1992]
+  {
+    ["Album"] = "",
+    ["Song"] = "Gecko 4 1A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VEB_A_01.mp3",
+    ["Length"] = 57,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1993]
+  {
+    ["Album"] = "",
+    ["Song"] = "Gecko 4 1B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VEB_A_02.mp3",
+    ["Length"] = 55,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1994]
+  {
+    ["Album"] = "",
+    ["Song"] = "Gecko 4 1C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VEB_A_03.mp3",
+    ["Length"] = 38,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1995]
+  {
+    ["Album"] = "",
+    ["Song"] = "Gecko 4 1D",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VEB_A_04.mp3",
+    ["Length"] = 50,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1996]
+  {
+    ["Album"] = "",
+    ["Song"] = "Gecko 4 1E",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VEB_A_05.mp3",
+    ["Length"] = 52,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1997]
+  {
+    ["Album"] = "",
+    ["Song"] = "Gecko 4 1F",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VEB_A_06.mp3",
+    ["Length"] = 85,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [1998]
+  {
+    ["Album"] = "WoW 5",
+    ["Song"] = "Gecko 4 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VEB_A_Hero_01.mp3",
+    ["Length"] = 122,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1999]
+  {
+    ["Album"] = "",
+    ["Song"] = "Family 1 v2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VEB_B_01.mp3",
+    ["Length"] = 110,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2000]
+  {
+    ["Album"] = "",
+    ["Song"] = "Family 1 v3",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VEB_B_02.mp3",
+    ["Length"] = 111,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2001]
+  {
+    ["Album"] = "",
+    ["Song"] = "Family 1 v4",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VEB_B_03.mp3",
+    ["Length"] = 111,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2002]
+  {
+    ["Album"] = "",
+    ["Song"] = "Family 1 v1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VEB_B_Hero_01.mp3",
+    ["Length"] = 113,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2003]
+  {
+    ["Album"] = "",
+    ["Song"] = "Family 2H1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VEB_B_Night_01.mp3",
+    ["Length"] = 69,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2004]
+  {
+    ["Album"] = "",
+    ["Song"] = "Family 2H2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VEB_B_Night_02.mp3",
+    ["Length"] = 45,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2005]
+  {
+    ["Album"] = "",
+    ["Song"] = "Family 2 v2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VEB_B_Night_03.mp3",
+    ["Length"] = 109,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2006]
+  {
+    ["Album"] = "",
+    ["Song"] = "Family 3 v1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VEB_B_Night_04.mp3",
+    ["Length"] = 122,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2007]
+  {
+    ["Album"] = "",
+    ["Song"] = "Family 3 v2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VEB_B_Night_05.mp3",
+    ["Length"] = 124,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2008]
+  {
+    ["Album"] = "",
+    ["Song"] = "Family 3 v3",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VEB_B_Night_06.mp3",
+    ["Length"] = 117,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2009]
+  {
+    ["Album"] = "",
+    ["Song"] = "The Great Wall v1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VEB_C_Hero_01.mp3",
+    ["Length"] = 26,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2010]
+  {
+    ["Album"] = "",
+    ["Song"] = "The Great Wall v2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VEB_C_Hero_02.mp3",
+    ["Length"] = 29,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2011]
+  {
+    ["Album"] = "",
+    ["Song"] = "Vale of Eternal Blossoms JS H1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VEB_D_Hero_01.mp3",
+    ["Length"] = 73,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2012]
+  {
+    ["Album"] = "",
+    ["Song"] = "Vale of Eternal Blossoms JS H2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VEB_D_Hero_02.mp3",
+    ["Length"] = 71,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2013]
+  {
+    ["Album"] = "",
+    ["Song"] = "Vale of Eternal Blossoms JS H3",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VEB_D_Hero_03.mp3",
+    ["Length"] = 52,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2014]
+  {
+    ["Album"] = "",
+    ["Song"] = "Vale of Eternal Blossoms JS H4",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VEB_D_Hero_04.mp3",
+    ["Length"] = 50,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2015]
+  {
+    ["Album"] = "",
+    ["Song"] = "Vale Night v2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VFW_A_01.mp3",
+    ["Length"] = 52,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2016]
+  {
+    ["Album"] = "",
+    ["Song"] = "Vale Night v3",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VFW_A_02.mp3",
+    ["Length"] = 82,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2017]
+  {
+    ["Album"] = "",
+    ["Song"] = "Vale Night v4",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VFW_A_03.mp3",
+    ["Length"] = 53,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2018]
+  {
+    ["Album"] = "",
+    ["Song"] = "Vale Night v5",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VFW_A_04.mp3",
+    ["Length"] = 81,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2019]
+  {
+    ["Album"] = "",
+    ["Song"] = "Vale Night v6",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VFW_A_05.mp3",
+    ["Length"] = 54,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2020]
+  {
+    ["Album"] = "",
+    ["Song"] = "Vale Night v7",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VFW_A_06.mp3",
+    ["Length"] = 81,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2021]
+  {
+    ["Album"] = "",
+    ["Song"] = "Vale Night v8",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VFW_A_07.mp3",
+    ["Length"] = 54,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2022]
+  {
+    ["Album"] = "",
+    ["Song"] = "Vale Night v9",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VFW_A_08.mp3",
+    ["Length"] = 102,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2023]
+  {
+    ["Album"] = "",
+    ["Song"] = "Vale Night 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VFW_A_Hero_01.mp3",
+    ["Length"] = 51,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2024]
+  {
+    ["Album"] = "",
+    ["Song"] = "Vale Night 2H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_VFW_A_Hero_02.mp3",
+    ["Length"] = 82,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2025]
+  {
+    ["Album"] = "",
+    ["Song"] = "Vale of Eternal Blossoms NA v2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Windspire_01.mp3",
+    ["Length"] = 86,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2026]
+  {
+    ["Album"] = "",
+    ["Song"] = "Vale of Eternal Blossoms NA v3",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Windspire_02.mp3",
+    ["Length"] = 117,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2027]
+  {
+    ["Album"] = "",
+    ["Song"] = "Vale of Eternal Blossoms NA v4",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Windspire_03.mp3",
+    ["Length"] = 115,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2028]
+  {
+    ["Album"] = "",
+    ["Song"] = "Vale of Eternal Blossoms NA 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_Windspire_Hero_01.mp3",
+    ["Length"] = 87,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2029]
+  {
+    ["Album"] = "",
+    ["Song"] = "Valley Mist 1H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_WoodofStaves_Hero_01.mp3",
+    ["Length"] = 64,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2030]
+  {
+    ["Album"] = "",
+    ["Song"] = "Valley Mist 2H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_WoodofStaves_Hero_02.mp3",
+    ["Length"] = 76,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2031]
+  {
+    ["Album"] = "",
+    ["Song"] = "Valley Mist 3H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_WoodofStaves_Hero_03.mp3",
+    ["Length"] = 65,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [2032]
+  {
+    ["Album"] = "",
+    ["Song"] = "Toy Trumpet in the Basement H",
+    ["Name"] = "Sound\\Music\\PetBattles\\MUS_PB_ToyTrumpet.mp3",
+    ["Length"] = 93,
+    ["Artist"] =  "PetBattles",
+    ["WoW"] = true,
+  }, -- [2033]
+  {
+    ["Album"] = "",
+    ["Song"] = "PB-W2-Human1",
+    ["Name"] = "Sound\\Music\\PetBattles\\MUS_PB_W2_Human1.mp3",
+    ["Length"] = 128,
+    ["Artist"] =  "PetBattles",
+    ["WoW"] = true,
+  }, -- [2034]
+  {
+    ["Album"] = "",
+    ["Song"] = "PB-W2-Human2",
+    ["Name"] = "Sound\\Music\\PetBattles\\MUS_PB_W2_Human2.mp3",
+    ["Length"] = 110,
+    ["Artist"] =  "PetBattles",
+    ["WoW"] = true,
+  }, -- [2035]
+  {
+    ["Album"] = "",
+    ["Song"] = "PB-W2-Human3",
+    ["Name"] = "Sound\\Music\\PetBattles\\MUS_PB_W2_Human3.mp3",
+    ["Length"] = 112,
+    ["Artist"] =  "PetBattles",
+    ["WoW"] = true,
+  }, -- [2036]
+  {
+    ["Album"] = "",
+    ["Song"] = "PB-W2-Human4",
+    ["Name"] = "Sound\\Music\\PetBattles\\MUS_PB_W2_Human4.mp3",
+    ["Length"] = 158,
+    ["Artist"] =  "PetBattles",
+    ["WoW"] = true,
+  }, -- [2037]
+  {
+    ["Album"] = "",
+    ["Song"] = "PB-W2-HumanVictory",
+    ["Name"] = "Sound\\Music\\PetBattles\\MUS_PB_W2_HumanVictory.mp3",
+    ["Length"] = 16,
+    ["Artist"] =  "PetBattles",
+    ["WoW"] = true,
+  }, -- [2038]
+  {
+    ["Album"] = "",
+    ["Song"] = "PB-W2-HumanWarRoom",
+    ["Name"] = "Sound\\Music\\PetBattles\\MUS_PB_W2_HumanWarRoom.mp3",
+    ["Length"] = 47,
+    ["Artist"] =  "PetBattles",
+    ["WoW"] = true,
+  }, -- [2039]
+  {
+    ["Album"] = "",
+    ["Song"] = "PB-W2-Orc1",
+    ["Name"] = "Sound\\Music\\PetBattles\\MUS_PB_W2_Orc1.mp3",
+    ["Length"] = 106,
+    ["Artist"] =  "PetBattles",
+    ["WoW"] = true,
+  }, -- [2040]
+  {
+    ["Album"] = "",
+    ["Song"] = "PB-W2-Orc2",
+    ["Name"] = "Sound\\Music\\PetBattles\\MUS_PB_W2_Orc2.mp3",
+    ["Length"] = 122,
+    ["Artist"] =  "PetBattles",
+    ["WoW"] = true,
+  }, -- [2041]
+  {
+    ["Album"] = "",
+    ["Song"] = "PB-W2-Orc3",
+    ["Name"] = "Sound\\Music\\PetBattles\\MUS_PB_W2_Orc3.mp3",
+    ["Length"] = 124,
+    ["Artist"] =  "PetBattles",
+    ["WoW"] = true,
+  }, -- [2042]
+  {
+    ["Album"] = "",
+    ["Song"] = "PB-W2-Orc4",
+    ["Name"] = "Sound\\Music\\PetBattles\\MUS_PB_W2_Orc4.mp3",
+    ["Length"] = 121,
+    ["Artist"] =  "PetBattles",
+    ["WoW"] = true,
+  }, -- [2043]
+  {
+    ["Album"] = "",
+    ["Song"] = "PB-W2-OrcVictory",
+    ["Name"] = "Sound\\Music\\PetBattles\\MUS_PB_W2_OrcVictory.mp3",
+    ["Length"] = 19,
+    ["Artist"] =  "PetBattles",
+    ["WoW"] = true,
+  }, -- [2044]
+  {
+    ["Album"] = "",
+    ["Song"] = "PB-W2-OrcWarRoom",
+    ["Name"] = "Sound\\Music\\PetBattles\\MUS_PB_W2_OrcWarRoom.mp3",
+    ["Length"] = 35,
+    ["Artist"] =  "PetBattles",
+    ["WoW"] = true,
+  }, -- [2045]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Darkmoon Faire 3H",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\DarkmoonFaire\\MUS_43_DarkmoonFaireA_Hero_UU01.mp3",
+    ["Length"] = 61,
+    ["Artist"] =  "DarkmoonFaire (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [2046]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Darkmoon Faire 3A",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\DarkmoonFaire\\MUS_43_DarkmoonFaireA_UU01.mp3",
+    ["Length"] = 59,
+    ["Artist"] =  "DarkmoonFaire (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [2047]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Darkmoon_Faire_2_V1",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\DarkmoonFaire\\MUS_43_DarkmoonFaireB_Hero_UU01.mp3",
+    ["Length"] = 71,
+    ["Artist"] =  "DarkmoonFaire (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [2048]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Darkmoon_Faire_2_V5",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\DarkmoonFaire\\MUS_43_DarkmoonFaireB_UU01.mp3",
+    ["Length"] = 97,
+    ["Artist"] =  "DarkmoonFaire (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [2049]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Darkmoon_Faire_2_V7",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\DarkmoonFaire\\MUS_43_DarkmoonFaireB_UU02.mp3",
+    ["Length"] = 89,
+    ["Artist"] =  "DarkmoonFaire (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [2050]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Darkmoon Faire 3B",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\DarkmoonFaire\\MUS_43_DarkmoonFaireC_UU02.mp3",
+    ["Length"] = 172,
+    ["Artist"] =  "DarkmoonFaire (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [2051]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Darkmoon_Faire_2_Accordion_1",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\DarkmoonFaire\\MUS_43_DarkmoonFaireD_UU01.mp3",
+    ["Length"] = 86,
+    ["Artist"] =  "DarkmoonFaire (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [2052]
+  {
+    ["Album"] = "WoW 4.3",
+    ["Song"] = "Darkmoon_Faire_2_Accordion_3",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\DarkmoonFaire\\MUS_43_DarkmoonFaireD_UU02.mp3",
+    ["Length"] = 106,
+    ["Artist"] =  "DarkmoonFaire (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [2053]
+  {
+    ["Album"] = "WoWX5",
+    ["Song"] = "Gecko 3H",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\WanderingIsle\\MUS_50_WanderingIsleA_Hero_UU01.mp3",
+    ["Length"] = 101,
+    ["Artist"] =  "WanderingIsle (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [2054]
+  {
+    ["Album"] = "WoWX5",
+    ["Song"] = "Gecko 3A",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\WanderingIsle\\MUS_50_WanderingIsleA_UU01.mp3",
+    ["Length"] = 97,
+    ["Artist"] =  "WanderingIsle (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [2055]
+  {
+    ["Album"] = "WoWX5",
+    ["Song"] = "Gecko 3B",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\WanderingIsle\\MUS_50_WanderingIsleA_UU02.mp3",
+    ["Length"] = 107,
+    ["Artist"] =  "WanderingIsle (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [2056]
+  {
+    ["Album"] = "WoWX5",
+    ["Song"] = "Gecko 3C",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\WanderingIsle\\MUS_50_WanderingIsleA_UU03.mp3",
+    ["Length"] = 68,
+    ["Artist"] =  "WanderingIsle (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [2057]
+  {
+    ["Album"] = "WoWX5",
+    ["Song"] = "Gecko 3D",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\WanderingIsle\\MUS_50_WanderingIsleA_UU04.mp3",
+    ["Length"] = 108,
+    ["Artist"] =  "WanderingIsle (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [2058]
+  {
+    ["Album"] = "WoWX5",
+    ["Song"] = "Gecko 3E",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\WanderingIsle\\MUS_50_WanderingIsleA_UU05.mp3",
+    ["Length"] = 54,
+    ["Artist"] =  "WanderingIsle (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [2059]
+  {
+    ["Album"] = "WoWX5",
+    ["Song"] = "Gecko_2_V1",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\WanderingIsle\\MUS_50_WanderingIsleB_Hero_UU01.mp3",
+    ["Length"] = 135,
+    ["Artist"] =  "WanderingIsle (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [2060]
+  {
+    ["Album"] = "WoWX5",
+    ["Song"] = "Gecko_2_V3",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\WanderingIsle\\MUS_50_WanderingIsleB_UU01.mp3",
+    ["Length"] = 87,
+    ["Artist"] =  "WanderingIsle (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [2061]
+  {
+    ["Album"] = "WoWX5",
+    ["Song"] = "Gecko_1_V1",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\WanderingIsle\\MUS_50_WanderingIsleC_Hero_UU01.mp3",
+    ["Length"] = 84,
+    ["Artist"] =  "WanderingIsle (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [2062]
+  {
+    ["Album"] = "WoWX5",
+    ["Song"] = "Gecko_1_V2",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\WanderingIsle\\MUS_50_WanderingIsleC_UU01.mp3",
+    ["Length"] = 88,
+    ["Artist"] =  "WanderingIsle (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [2063]
+  {
+    ["Album"] = "WoWX5",
+    ["Song"] = "Gecko_1_V3",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\WanderingIsle\\MUS_50_WanderingIsleC_UU02.mp3",
+    ["Length"] = 75,
+    ["Artist"] =  "WanderingIsle (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [2064]
+  {
+    ["Album"] = "WoWX5",
+    ["Song"] = "Gecko_1_V4",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\WanderingIsle\\MUS_50_WanderingIsleC_UU03.mp3",
+    ["Length"] = 88,
+    ["Artist"] =  "WanderingIsle (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [2065]
+  {
+    ["Album"] = "WoWX5",
+    ["Song"] = "Gecko_1_V5",
+    ["Name"] = "Sound\\Music\\ZoneMusic\\WanderingIsle\\MUS_50_WanderingIsleC_UU04.mp3",
+    ["Length"] = 82,
+    ["Artist"] =  "WanderingIsle (Neal Acree)",
+    ["WoW"] = true,
+  }, -- [2066]
 }
 local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer")
 

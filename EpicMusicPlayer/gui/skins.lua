@@ -360,6 +360,8 @@ EpicMusicPlayerGui.skins = {
 			backgroundtexture = "cata-back.tga",
 			normaltexture = "emp-list.tga",
 			pushedtexture = "emp-list-p.tga",
+			onleftclick = EpicMusicPlayer.TogglePlayListGui,
+			onrightclick = EpicMusicPlayerGui.SetNextModel,
 		},
 	},
 	-- compact layout -------------------------------------------------------------------------------------

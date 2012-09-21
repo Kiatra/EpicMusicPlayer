@@ -244,6 +244,7 @@ local function CreatePlaylistGui(width, height)
 	
 	selectedlist = EpicMusicPlayer:GetListByIndex(1)--EpicMusicPlayer:GetCurrentList()
 	frame = CreateFrame("Frame","EpicMusicPlayer_PlaylistMain",_G.UIParent)
+	frame:SetFrameStrata("FULLSCREEN_DIALOG")
 	--frame.Update = Update
 	
 	frame:SetWidth(width)

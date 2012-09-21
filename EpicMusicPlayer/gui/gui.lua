@@ -27,6 +27,7 @@ local volumetextframe = nil;
 
 local path
 local list = nil
+local EpicMusicDancer
 
 EpicMusicPlayerGui = LibStub("AceAddon-3.0"):NewAddon("EpicMusicPlayerGui", "AceEvent-3.0","AceTimer-3.0")
 local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
@@ -359,7 +360,7 @@ function EpicMusicPlayerGui:OnEnable(first)
 	self:RegisterMessage("EMPUpdateRandom")
 	
 	self:SendMessage("EMPGuiLoaded")
-	
+	EpicMusicDancer = EpicMusicPlayer.EpicMusicDancer
 end
 
 function EpicMusicPlayerGui:OnDisable()
