@@ -142,6 +142,7 @@ function EpicMusicPlayer:OnInitialize()
 		db.font = media:GetDefault("font")
 	end
 	self:RegisterComm("EpicMusicPlayer", "ReciveMessage")
+	self:ScheduleRepeatingTimer("CheckDate", 30)
 end
 
 function EpicMusicPlayer:OnEnable(first)
@@ -223,7 +224,7 @@ function EpicMusicPlayer:OnEnteringWorld(event)
 			if(EpicMusicPlayer.Playing)then
 				EpicMusicPlayer:Play(currentsong)
 			end
-		end, 5, arg)
+		end, 5)
 	end
 end
 
@@ -239,12 +240,12 @@ function EpicMusicPlayer:OnPlayerAlive(event)
 			if(EpicMusicPlayer.Playing)then
 				EpicMusicPlayer:Play()
 			end
-		end, 2, arg)
+		end, 2)
 	end
 end
 
 function EpicMusicPlayer:OnPlayerLevelUp(level)
-	if level == 85 then
+	if level == 90 then
 		--EpicMusicPlayer:Debug(level)
 		EpicMusicPlayer:SetVolume(1,"music")
 		if(EpicMusicPlayerGui)then
@@ -256,9 +257,32 @@ function EpicMusicPlayer:OnPlayerLevelUp(level)
 		song = {
 			["WoW"] = true,
 			["Album"] = "ingame", 
-			["Song"] = "Gratulations to level 85!!!",
+			["Song"] = "Gratulations to level 90!!!",
 			["Name"] = "Sound\\Music\\ZoneMusic\\ArgentTournament\\AT_JoustEvent.mp3",
 			["Length"] = 123, 
+			["Artist"] = "",
+		}
+		EpicMusicPlayer:Play(song)
+	end
+end
+
+function EpicMusicPlayer:CheckDate()
+	local datetime = date("%d%m%H%M")
+	--if datetime == "01010000" then
+	if datetime == "18120041" then	
+		EpicMusicPlayer:SetVolume(1,"music")
+		if(EpicMusicPlayerGui)then
+			if(not EpicMusicPlayer.db.char.showgui)then
+				EpicMusicPlayer.db.char.showgui = true
+				EpicMusicPlayerGui:Toggle()
+			end
+		end
+		song = {
+			["WoW"] = true,
+			["Album"] = "ingame", 
+			["Song"] = "Happy New Year! ;)",
+			["Name"] = "Sound\\Music\\WorldEvents\\HordeFirepole.mp3",
+			["Length"] = 72, 
 			["Artist"] = "",
 		}
 		EpicMusicPlayer:Play(song)
@@ -423,7 +447,7 @@ function EpicMusicPlayer:SetVolume(vol, voltype)
 		self:SendMessage("EMPUpdateVolume", "sound", vol)
 	end
 	
-	voltimer = self:ScheduleTimer(EpicMusicPlayer.VolumeDone, 3, arg)
+	voltimer = self:ScheduleTimer(EpicMusicPlayer.VolumeDone, 3)
 end
 
 function EpicMusicPlayer:VolumeDone()
