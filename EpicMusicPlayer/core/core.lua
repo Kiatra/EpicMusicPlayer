@@ -268,8 +268,7 @@ end
 
 function EpicMusicPlayer:CheckDate()
 	local datetime = date("%d%m%H%M")
-	--if datetime == "01010000" then
-	if datetime == "18120041" then	
+	if datetime == "01010000" then
 		EpicMusicPlayer:SetVolume(1,"music")
 		if(EpicMusicPlayerGui)then
 			if(not EpicMusicPlayer.db.char.showgui)then
