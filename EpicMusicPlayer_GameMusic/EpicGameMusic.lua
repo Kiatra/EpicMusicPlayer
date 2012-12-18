@@ -16922,6 +16922,48 @@ local GameMusic = {
     ["Artist"] =  "ZulDrak (Derek Duke)",
     ["WoW"] = true,
   }, -- [2059]
+  {
+      ["Album"] = "ingame",
+      ["Song"] = "BF_Dwarves1",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\BrewFest\\BF_Dwarves1.mp3",
+      ["Length"] = 94,
+      ["Artist"] = "Brewfest Event",
+  }, -- [2060]
+  {
+      ["Album"] = "ingame",
+      ["Song"] = "BF_Dwarves2",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\BrewFest\\BF_Dwarves2.mp3",
+      ["Length"] = 115,
+      ["Artist"] = "Brewfest Event",
+  }, -- [2061]
+  {
+      ["Album"] = "ingame",
+      ["Song"] = "BF_Dwarves3",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\BrewFest\\BF_Dwarves3.mp3",
+      ["Length"] = 23,
+      ["Artist"] = "Brewfest Event",
+  }, -- [2062]
+  {
+      ["Album"] = "ingame",
+      ["Song"] = "BF_Goblins1",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\BrewFest\\BF_Goblins1.mp3",
+      ["Length"] = 67,
+      ["Artist"] = "Brewfest Event",
+  }, -- [2063]
+  {
+      ["Album"] = "ingame",
+      ["Song"] = "BF_Goblins2",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\BrewFest\\BF_Goblins2.mp3",
+      ["Length"] = 93,
+      ["Artist"] = "Brewfest Event",
+  }, -- [2064]
+  {
+      ["Album"] = "ingame",
+      ["Song"] = "BF_Goblins3",
+      ["Name"] = "Sound\\Music\\ZoneMusic\\BrewFest\\BF_Goblins3.mp3",
+      ["Length"] = 28,
+      ["Artist"] = "Brewfest Event",
+  }, -- [2065
 }
 local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer")
 
