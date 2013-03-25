@@ -901,7 +901,7 @@ function EpicMusicPlayerGui:CreateMinimapButton()
 	
 	minibutton:SetNormalTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\emp-minimap.tga")
 	minibutton:SetHighlightTexture("Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight")
-	minibutton:SetPushedTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\emp-minimap-p.tga")
+	minibutton:SetPushedTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\emp-minimap-p.tga")
 	
 	--minibutton:RegisterForClicks("LeftButtonUp","RightButtonUp","MiddleButtonUp")
 	minibutton:RegisterForClicks("AnyUp")

@@ -215,7 +215,7 @@ end
 -- patch 2.4.3  workaround
 function EpicMusicPlayer:OnEnteringWorld(event)
 	--EpicMusicPlayer:Debug(event)
-    if(EpicMusicPlayer.Playing)then
+	if(EpicMusicPlayer.Playing)then
 		SetCVar("Sound_EnableMusic", 0);
 		
 		

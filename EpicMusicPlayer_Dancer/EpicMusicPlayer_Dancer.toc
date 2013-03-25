@@ -1,4 +1,4 @@
-## Interface: 50100
+## Interface: 50200
 
 ## Title: EpicMusicPlayer [|cffeda55fDancer|r]
 ## Notes: A little model that will dance/play to your music.
