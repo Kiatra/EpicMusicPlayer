@@ -5308,12 +5308,28 @@ local GameMusic = {
   }, -- [607]
   {
     ["Album"] = "",
+    ["Song"] = "BridgeCollapse_FULLMIX",
+    ["Name"] = "Sound\\Music\\Pandaria\\FlyBy_52_MoguBridge_MX_SFX.mp3",
+    ["Length"] = 42,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [608]
+  {
+    ["Album"] = "",
+    ["Song"] = "HiddenDoor_FULLMIX",
+    ["Name"] = "Sound\\Music\\Pandaria\\FlyBy_52_MoguSecret_MX_SFX.mp3",
+    ["Length"] = 27,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [609]
+  {
+    ["Album"] = "",
     ["Song"] = "Valley of the Four Winds NA v2",
     ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_AugustCelestials_01.mp3",
     ["Length"] = 61,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [608]
+  }, -- [610]
   {
     ["Album"] = "",
     ["Song"] = "Valley of the Four Winds NA v3",
@@ -5321,7 +5337,7 @@ local GameMusic = {
     ["Length"] = 65,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [609]
+  }, -- [611]
   {
     ["Album"] = "",
     ["Song"] = "Valley of the Four Winds NA v4",
@@ -5329,7 +5345,7 @@ local GameMusic = {
     ["Length"] = 59,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [610]
+  }, -- [612]
   {
     ["Album"] = "",
     ["Song"] = "Valley of the Four Winds NA v5",
@@ -5337,7 +5353,7 @@ local GameMusic = {
     ["Length"] = 91,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [611]
+  }, -- [613]
   {
     ["Album"] = "",
     ["Song"] = "Valley of the Four Winds NA v6",
@@ -5345,7 +5361,7 @@ local GameMusic = {
     ["Length"] = 150,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [612]
+  }, -- [614]
   {
     ["Album"] = "",
     ["Song"] = "Valley of the Four Winds NA v1",
@@ -5353,7 +5369,7 @@ local GameMusic = {
     ["Length"] = 130,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [613]
+  }, -- [615]
   {
     ["Album"] = "",
     ["Song"] = "Bamboo 1A",
@@ -5361,7 +5377,7 @@ local GameMusic = {
     ["Length"] = 46,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [614]
+  }, -- [616]
   {
     ["Album"] = "",
     ["Song"] = "Bamboo 1B",
@@ -5369,7 +5385,7 @@ local GameMusic = {
     ["Length"] = 52,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [615]
+  }, -- [617]
   {
     ["Album"] = "",
     ["Song"] = "Bamboo 1C",
@@ -5377,7 +5393,7 @@ local GameMusic = {
     ["Length"] = 69,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [616]
+  }, -- [618]
   {
     ["Album"] = "",
     ["Song"] = "Bamboo 1D",
@@ -5385,7 +5401,7 @@ local GameMusic = {
     ["Length"] = 98,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [617]
+  }, -- [619]
   {
     ["Album"] = "WoW 5",
     ["Song"] = "Bamboo 1H",
@@ -5393,7 +5409,7 @@ local GameMusic = {
     ["Length"] = 88,
     ["Artist"] =  "Pandaria (Russell Brower)",
     ["WoW"] = true,
-  }, -- [618]
+  }, -- [620]
   {
     ["Album"] = "",
     ["Song"] = "The Great Wall Night EG1 A",
@@ -5401,7 +5417,7 @@ local GameMusic = {
     ["Length"] = 61,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [619]
+  }, -- [621]
   {
     ["Album"] = "",
     ["Song"] = "The Great Wall Night EG1 H",
@@ -5409,7 +5425,7 @@ local GameMusic = {
     ["Length"] = 102,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [620]
+  }, -- [622]
   {
     ["Album"] = "",
     ["Song"] = "Battle for Pandaria v1",
@@ -5417,7 +5433,7 @@ local GameMusic = {
     ["Length"] = 67,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [621]
+  }, -- [623]
   {
     ["Album"] = "",
     ["Song"] = "Battle for Pandaria v2",
@@ -5425,7 +5441,7 @@ local GameMusic = {
     ["Length"] = 61,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [622]
+  }, -- [624]
   {
     ["Album"] = "",
     ["Song"] = "Bottoms Up A",
@@ -5433,7 +5449,7 @@ local GameMusic = {
     ["Length"] = 87,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [623]
+  }, -- [625]
   {
     ["Album"] = "",
     ["Song"] = "Bottoms Up H",
@@ -5441,7 +5457,7 @@ local GameMusic = {
     ["Length"] = 88,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [624]
+  }, -- [626]
   {
     ["Album"] = "",
     ["Song"] = "Darkbrew B",
@@ -5449,7 +5465,7 @@ local GameMusic = {
     ["Length"] = 88,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [625]
+  }, -- [627]
   {
     ["Album"] = "",
     ["Song"] = "Darkbrew H",
@@ -5457,7 +5473,7 @@ local GameMusic = {
     ["Length"] = 61,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [626]
+  }, -- [628]
   {
     ["Album"] = "",
     ["Song"] = "Dread Wastes 1H",
@@ -5465,7 +5481,7 @@ local GameMusic = {
     ["Length"] = 84,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [627]
+  }, -- [629]
   {
     ["Album"] = "",
     ["Song"] = "Dread Wastes 2H",
@@ -5473,7 +5489,7 @@ local GameMusic = {
     ["Length"] = 72,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [628]
+  }, -- [630]
   {
     ["Album"] = "",
     ["Song"] = "The Great Wall Sunset 1 H",
@@ -5481,7 +5497,7 @@ local GameMusic = {
     ["Length"] = 57,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [629]
+  }, -- [631]
   {
     ["Album"] = "",
     ["Song"] = "The Great Wall Sunset 2 H",
@@ -5489,7 +5505,7 @@ local GameMusic = {
     ["Length"] = 60,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [630]
+  }, -- [632]
   {
     ["Album"] = "",
     ["Song"] = "The Great Wall Sunset 3 H",
@@ -5497,7 +5513,7 @@ local GameMusic = {
     ["Length"] = 53,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [631]
+  }, -- [633]
   {
     ["Album"] = "",
     ["Song"] = "The Great Wall Sunset 4 H",
@@ -5505,7 +5521,7 @@ local GameMusic = {
     ["Length"] = 69,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [632]
+  }, -- [634]
   {
     ["Album"] = "",
     ["Song"] = "Brewery Storage B",
@@ -5513,7 +5529,7 @@ local GameMusic = {
     ["Length"] = 97,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [633]
+  }, -- [635]
   {
     ["Album"] = "",
     ["Song"] = "Brewery Storage 1H",
@@ -5521,7 +5537,7 @@ local GameMusic = {
     ["Length"] = 81,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [634]
+  }, -- [636]
   {
     ["Album"] = "",
     ["Song"] = "Brewery Storage 2H",
@@ -5529,7 +5545,7 @@ local GameMusic = {
     ["Length"] = 52,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [635]
+  }, -- [637]
   {
     ["Album"] = "",
     ["Song"] = "Hozu 1A",
@@ -5537,7 +5553,7 @@ local GameMusic = {
     ["Length"] = 57,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [636]
+  }, -- [638]
   {
     ["Album"] = "",
     ["Song"] = "Hozu 1B",
@@ -5545,7 +5561,7 @@ local GameMusic = {
     ["Length"] = 34,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [637]
+  }, -- [639]
   {
     ["Album"] = "",
     ["Song"] = "Hozu 1C",
@@ -5553,7 +5569,7 @@ local GameMusic = {
     ["Length"] = 42,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [638]
+  }, -- [640]
   {
     ["Album"] = "",
     ["Song"] = "Hozu 1D",
@@ -5561,7 +5577,7 @@ local GameMusic = {
     ["Length"] = 50,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [639]
+  }, -- [641]
   {
     ["Album"] = "",
     ["Song"] = "Hozu 1E",
@@ -5569,7 +5585,7 @@ local GameMusic = {
     ["Length"] = 78,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [640]
+  }, -- [642]
   {
     ["Album"] = "",
     ["Song"] = "Hozu 1G",
@@ -5577,7 +5593,7 @@ local GameMusic = {
     ["Length"] = 105,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [641]
+  }, -- [643]
   {
     ["Album"] = "",
     ["Song"] = "Hozu 1J",
@@ -5585,7 +5601,7 @@ local GameMusic = {
     ["Length"] = 32,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [642]
+  }, -- [644]
   {
     ["Album"] = "",
     ["Song"] = "Hozu 1K",
@@ -5593,7 +5609,7 @@ local GameMusic = {
     ["Length"] = 30,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [643]
+  }, -- [645]
   {
     ["Album"] = "",
     ["Song"] = "Hozu 1L",
@@ -5601,7 +5617,7 @@ local GameMusic = {
     ["Length"] = 40,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [644]
+  }, -- [646]
   {
     ["Album"] = "",
     ["Song"] = "Hozu 1M",
@@ -5609,7 +5625,7 @@ local GameMusic = {
     ["Length"] = 58,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [645]
+  }, -- [647]
   {
     ["Album"] = "",
     ["Song"] = "Hozu 1N",
@@ -5617,7 +5633,7 @@ local GameMusic = {
     ["Length"] = 68,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [646]
+  }, -- [648]
   {
     ["Album"] = "",
     ["Song"] = "Hozu 1P",
@@ -5625,7 +5641,7 @@ local GameMusic = {
     ["Length"] = 55,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [647]
+  }, -- [649]
   {
     ["Album"] = "",
     ["Song"] = "Hozu 1Q",
@@ -5633,7 +5649,7 @@ local GameMusic = {
     ["Length"] = 31,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [648]
+  }, -- [650]
   {
     ["Album"] = "WoW 5",
     ["Song"] = "Hozu 1H",
@@ -5641,7 +5657,7 @@ local GameMusic = {
     ["Length"] = 108,
     ["Artist"] =  "Pandaria (Russell Brower)",
     ["WoW"] = true,
-  }, -- [649]
+  }, -- [651]
   {
     ["Album"] = "",
     ["Song"] = "Hozu Too 1A",
@@ -5649,7 +5665,7 @@ local GameMusic = {
     ["Length"] = 49,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [650]
+  }, -- [652]
   {
     ["Album"] = "",
     ["Song"] = "Hozu Too 1B",
@@ -5657,7 +5673,7 @@ local GameMusic = {
     ["Length"] = 49,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [651]
+  }, -- [653]
   {
     ["Album"] = "",
     ["Song"] = "Hozu Too 1C",
@@ -5665,7 +5681,7 @@ local GameMusic = {
     ["Length"] = 49,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [652]
+  }, -- [654]
   {
     ["Album"] = "WoW 5",
     ["Song"] = "Hozu Too 1H",
@@ -5673,7 +5689,7 @@ local GameMusic = {
     ["Length"] = 49,
     ["Artist"] =  "Pandaria (Russell Brower)",
     ["WoW"] = true,
-  }, -- [653]
+  }, -- [655]
   {
     ["Album"] = "",
     ["Song"] = "Hozen Myst",
@@ -5681,7 +5697,7 @@ local GameMusic = {
     ["Length"] = 75,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [654]
+  }, -- [656]
   {
     ["Album"] = "",
     ["Song"] = "Jinyu Water 1H",
@@ -5689,7 +5705,7 @@ local GameMusic = {
     ["Length"] = 57,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [655]
+  }, -- [657]
   {
     ["Album"] = "",
     ["Song"] = "Jinyu Water 2H",
@@ -5697,7 +5713,7 @@ local GameMusic = {
     ["Length"] = 63,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [656]
+  }, -- [658]
   {
     ["Album"] = "",
     ["Song"] = "Jinyu Water 3H",
@@ -5705,7 +5721,7 @@ local GameMusic = {
     ["Length"] = 62,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [657]
+  }, -- [659]
   {
     ["Album"] = "",
     ["Song"] = "Jinyu Water 4H",
@@ -5713,7 +5729,7 @@ local GameMusic = {
     ["Length"] = 91,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [658]
+  }, -- [660]
   {
     ["Album"] = "",
     ["Song"] = "Jinyu Day A",
@@ -5721,7 +5737,7 @@ local GameMusic = {
     ["Length"] = 104,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [659]
+  }, -- [661]
   {
     ["Album"] = "",
     ["Song"] = "Jinyu Day B",
@@ -5729,7 +5745,7 @@ local GameMusic = {
     ["Length"] = 97,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [660]
+  }, -- [662]
   {
     ["Album"] = "",
     ["Song"] = "Jinyu Day H",
@@ -5737,7 +5753,7 @@ local GameMusic = {
     ["Length"] = 95,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [661]
+  }, -- [663]
   {
     ["Album"] = "",
     ["Song"] = "Praypond Entreaty A",
@@ -5745,7 +5761,7 @@ local GameMusic = {
     ["Length"] = 100,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [662]
+  }, -- [664]
   {
     ["Album"] = "",
     ["Song"] = "Praypond Entreaty 1H",
@@ -5753,7 +5769,7 @@ local GameMusic = {
     ["Length"] = 80,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [663]
+  }, -- [665]
   {
     ["Album"] = "",
     ["Song"] = "Praypond Entreaty 2H",
@@ -5761,7 +5777,7 @@ local GameMusic = {
     ["Length"] = 85,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [664]
+  }, -- [666]
   {
     ["Album"] = "",
     ["Song"] = "Praypond Wishes C",
@@ -5769,7 +5785,7 @@ local GameMusic = {
     ["Length"] = 45,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [665]
+  }, -- [667]
   {
     ["Album"] = "",
     ["Song"] = "Praypond Wishes 1H",
@@ -5777,7 +5793,7 @@ local GameMusic = {
     ["Length"] = 76,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [666]
+  }, -- [668]
   {
     ["Album"] = "",
     ["Song"] = "Praypond Wishes 2H",
@@ -5785,7 +5801,7 @@ local GameMusic = {
     ["Length"] = 66,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [667]
+  }, -- [669]
   {
     ["Album"] = "",
     ["Song"] = "Praypond Wishes Night A",
@@ -5793,7 +5809,7 @@ local GameMusic = {
     ["Length"] = 52,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [668]
+  }, -- [670]
   {
     ["Album"] = "",
     ["Song"] = "Praypond Wishes Night 1H",
@@ -5801,7 +5817,7 @@ local GameMusic = {
     ["Length"] = 80,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [669]
+  }, -- [671]
   {
     ["Album"] = "",
     ["Song"] = "Praypond Wishes Night 2H",
@@ -5809,7 +5825,7 @@ local GameMusic = {
     ["Length"] = 84,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [670]
+  }, -- [672]
   {
     ["Album"] = "",
     ["Song"] = "Mantid Steppes 1H",
@@ -5817,7 +5833,7 @@ local GameMusic = {
     ["Length"] = 90,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [671]
+  }, -- [673]
   {
     ["Album"] = "",
     ["Song"] = "Mantid Steppes 2H",
@@ -5825,7 +5841,7 @@ local GameMusic = {
     ["Length"] = 75,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [672]
+  }, -- [674]
   {
     ["Album"] = "",
     ["Song"] = "Kunlai 2H1",
@@ -5833,7 +5849,7 @@ local GameMusic = {
     ["Length"] = 82,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [673]
+  }, -- [675]
   {
     ["Album"] = "",
     ["Song"] = "Kunlai 2H2",
@@ -5841,7 +5857,7 @@ local GameMusic = {
     ["Length"] = 60,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [674]
+  }, -- [676]
   {
     ["Album"] = "",
     ["Song"] = "Kunlai 2H3",
@@ -5849,7 +5865,7 @@ local GameMusic = {
     ["Length"] = 70,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [675]
+  }, -- [677]
   {
     ["Album"] = "",
     ["Song"] = "Kunlai 1H1",
@@ -5857,7 +5873,7 @@ local GameMusic = {
     ["Length"] = 51,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [676]
+  }, -- [678]
   {
     ["Album"] = "",
     ["Song"] = "Kunlai 1H2",
@@ -5865,7 +5881,7 @@ local GameMusic = {
     ["Length"] = 64,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [677]
+  }, -- [679]
   {
     ["Album"] = "",
     ["Song"] = "Kunlai 1H3",
@@ -5873,7 +5889,7 @@ local GameMusic = {
     ["Length"] = 79,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [678]
+  }, -- [680]
   {
     ["Album"] = "",
     ["Song"] = "Kunlai 1H4",
@@ -5881,7 +5897,7 @@ local GameMusic = {
     ["Length"] = 46,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [679]
+  }, -- [681]
   {
     ["Album"] = "",
     ["Song"] = "Evil Chi H",
@@ -5889,7 +5905,7 @@ local GameMusic = {
     ["Length"] = 158,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [680]
+  }, -- [682]
   {
     ["Album"] = "",
     ["Song"] = "Kunlai Summit SC 1H",
@@ -5897,7 +5913,7 @@ local GameMusic = {
     ["Length"] = 72,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [681]
+  }, -- [683]
   {
     ["Album"] = "",
     ["Song"] = "Kunlai Summit SC 2H",
@@ -5905,7 +5921,7 @@ local GameMusic = {
     ["Length"] = 77,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [682]
+  }, -- [684]
   {
     ["Album"] = "",
     ["Song"] = "Mantid v2",
@@ -5913,7 +5929,7 @@ local GameMusic = {
     ["Length"] = 35,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [683]
+  }, -- [685]
   {
     ["Album"] = "",
     ["Song"] = "Mantid v3",
@@ -5921,7 +5937,7 @@ local GameMusic = {
     ["Length"] = 88,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [684]
+  }, -- [686]
   {
     ["Album"] = "",
     ["Song"] = "Mantid v4",
@@ -5929,7 +5945,7 @@ local GameMusic = {
     ["Length"] = 109,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [685]
+  }, -- [687]
   {
     ["Album"] = "",
     ["Song"] = "Mantid v1",
@@ -5937,7 +5953,7 @@ local GameMusic = {
     ["Length"] = 95,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [686]
+  }, -- [688]
   {
     ["Album"] = "",
     ["Song"] = "Dungeon Doom 1H",
@@ -5945,7 +5961,7 @@ local GameMusic = {
     ["Length"] = 85,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [687]
+  }, -- [689]
   {
     ["Album"] = "",
     ["Song"] = "Dungeon Doom 2H",
@@ -5953,7 +5969,7 @@ local GameMusic = {
     ["Length"] = 90,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [688]
+  }, -- [690]
   {
     ["Album"] = "",
     ["Song"] = "Mogu 1A",
@@ -5961,7 +5977,7 @@ local GameMusic = {
     ["Length"] = 92,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [689]
+  }, -- [691]
   {
     ["Album"] = "",
     ["Song"] = "Mogu 1B",
@@ -5969,7 +5985,7 @@ local GameMusic = {
     ["Length"] = 34,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [690]
+  }, -- [692]
   {
     ["Album"] = "",
     ["Song"] = "Mogu 1C",
@@ -5977,7 +5993,7 @@ local GameMusic = {
     ["Length"] = 77,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [691]
+  }, -- [693]
   {
     ["Album"] = "",
     ["Song"] = "Mogu 1D",
@@ -5985,7 +6001,7 @@ local GameMusic = {
     ["Length"] = 61,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [692]
+  }, -- [694]
   {
     ["Album"] = "",
     ["Song"] = "Mogu 1E",
@@ -5993,7 +6009,7 @@ local GameMusic = {
     ["Length"] = 80,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [693]
+  }, -- [695]
   {
     ["Album"] = "",
     ["Song"] = "Mogu 1F",
@@ -6001,7 +6017,7 @@ local GameMusic = {
     ["Length"] = 82,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [694]
+  }, -- [696]
   {
     ["Album"] = "WoW 5",
     ["Song"] = "Mogu 1H",
@@ -6009,7 +6025,7 @@ local GameMusic = {
     ["Length"] = 138,
     ["Artist"] =  "Pandaria (Russell Brower)",
     ["WoW"] = true,
-  }, -- [695]
+  }, -- [697]
   {
     ["Album"] = "",
     ["Song"] = "Drunken Chen v2",
@@ -6017,7 +6033,7 @@ local GameMusic = {
     ["Length"] = 87,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [696]
+  }, -- [698]
   {
     ["Album"] = "",
     ["Song"] = "Drunken Chen v1",
@@ -6025,7 +6041,7 @@ local GameMusic = {
     ["Length"] = 79,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [697]
+  }, -- [699]
   {
     ["Album"] = "",
     ["Song"] = "Monk 2 v2",
@@ -6033,7 +6049,7 @@ local GameMusic = {
     ["Length"] = 124,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [698]
+  }, -- [700]
   {
     ["Album"] = "",
     ["Song"] = "Monk 2 v3",
@@ -6041,7 +6057,7 @@ local GameMusic = {
     ["Length"] = 91,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [699]
+  }, -- [701]
   {
     ["Album"] = "",
     ["Song"] = "Monk 2 v4",
@@ -6049,7 +6065,7 @@ local GameMusic = {
     ["Length"] = 92,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [700]
+  }, -- [702]
   {
     ["Album"] = "",
     ["Song"] = "Monk 2H1",
@@ -6057,7 +6073,7 @@ local GameMusic = {
     ["Length"] = 48,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [701]
+  }, -- [703]
   {
     ["Album"] = "",
     ["Song"] = "Monk 2H2",
@@ -6065,7 +6081,7 @@ local GameMusic = {
     ["Length"] = 79,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [702]
+  }, -- [704]
   {
     ["Album"] = "",
     ["Song"] = "Sleepwalking Monk A",
@@ -6073,7 +6089,7 @@ local GameMusic = {
     ["Length"] = 69,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [703]
+  }, -- [705]
   {
     ["Album"] = "",
     ["Song"] = "Sleepwalking Monk B",
@@ -6081,7 +6097,7 @@ local GameMusic = {
     ["Length"] = 59,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [704]
+  }, -- [706]
   {
     ["Album"] = "",
     ["Song"] = "Brewery Exterior A",
@@ -6089,7 +6105,7 @@ local GameMusic = {
     ["Length"] = 89,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [705]
+  }, -- [707]
   {
     ["Album"] = "",
     ["Song"] = "Brewery Exterior B",
@@ -6097,7 +6113,7 @@ local GameMusic = {
     ["Length"] = 91,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [706]
+  }, -- [708]
   {
     ["Album"] = "",
     ["Song"] = "Brewery Exterior C",
@@ -6105,7 +6121,7 @@ local GameMusic = {
     ["Length"] = 66,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [707]
+  }, -- [709]
   {
     ["Album"] = "",
     ["Song"] = "Brewery Exterior D",
@@ -6113,7 +6129,7 @@ local GameMusic = {
     ["Length"] = 70,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [708]
+  }, -- [710]
   {
     ["Album"] = "",
     ["Song"] = "Brewery Exterior H",
@@ -6121,7 +6137,7 @@ local GameMusic = {
     ["Length"] = 87,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [709]
+  }, -- [711]
   {
     ["Album"] = "",
     ["Song"] = "Way of the Monk v3",
@@ -6129,7 +6145,7 @@ local GameMusic = {
     ["Length"] = 105,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [710]
+  }, -- [712]
   {
     ["Album"] = "",
     ["Song"] = "Way of the Monk v4",
@@ -6137,7 +6153,7 @@ local GameMusic = {
     ["Length"] = 68,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [711]
+  }, -- [713]
   {
     ["Album"] = "",
     ["Song"] = "Way of the Monk 1H1",
@@ -6145,7 +6161,7 @@ local GameMusic = {
     ["Length"] = 93,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [712]
+  }, -- [714]
   {
     ["Album"] = "",
     ["Song"] = "Way of the Monk 1H2",
@@ -6153,7 +6169,7 @@ local GameMusic = {
     ["Length"] = 81,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [713]
+  }, -- [715]
   {
     ["Album"] = "",
     ["Song"] = "Live Monk Walking A",
@@ -6161,7 +6177,7 @@ local GameMusic = {
     ["Length"] = 108,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [714]
+  }, -- [716]
   {
     ["Album"] = "",
     ["Song"] = "Live Monk Walking B1",
@@ -6169,7 +6185,7 @@ local GameMusic = {
     ["Length"] = 118,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [715]
+  }, -- [717]
   {
     ["Album"] = "",
     ["Song"] = "Live Monk Walking B2",
@@ -6177,7 +6193,7 @@ local GameMusic = {
     ["Length"] = 94,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [716]
+  }, -- [718]
   {
     ["Album"] = "",
     ["Song"] = "Live Monk Walking C",
@@ -6185,7 +6201,7 @@ local GameMusic = {
     ["Length"] = 71,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [717]
+  }, -- [719]
   {
     ["Album"] = "",
     ["Song"] = "PVP General H",
@@ -6193,7 +6209,7 @@ local GameMusic = {
     ["Length"] = 134,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [718]
+  }, -- [720]
   {
     ["Album"] = "",
     ["Song"] = "PVP General 2",
@@ -6201,7 +6217,7 @@ local GameMusic = {
     ["Length"] = 66,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [719]
+  }, -- [721]
   {
     ["Album"] = "",
     ["Song"] = "Gecko 5 1A",
@@ -6209,7 +6225,7 @@ local GameMusic = {
     ["Length"] = 38,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [720]
+  }, -- [722]
   {
     ["Album"] = "",
     ["Song"] = "Gecko 5 1B",
@@ -6217,7 +6233,7 @@ local GameMusic = {
     ["Length"] = 53,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [721]
+  }, -- [723]
   {
     ["Album"] = "",
     ["Song"] = "Gecko 5 1C",
@@ -6225,7 +6241,7 @@ local GameMusic = {
     ["Length"] = 79,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [722]
+  }, -- [724]
   {
     ["Album"] = "",
     ["Song"] = "Gecko 5 A Cappella 1H",
@@ -6233,7 +6249,7 @@ local GameMusic = {
     ["Length"] = 92,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [723]
+  }, -- [725]
   {
     ["Album"] = "WoW 5",
     ["Song"] = "Gecko 5 Orchestra 1H",
@@ -6241,7 +6257,7 @@ local GameMusic = {
     ["Length"] = 91,
     ["Artist"] =  "Pandaria (Russell Brower)",
     ["WoW"] = true,
-  }, -- [724]
+  }, -- [726]
   {
     ["Album"] = "",
     ["Song"] = "Litebrew B",
@@ -6249,7 +6265,7 @@ local GameMusic = {
     ["Length"] = 55,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [725]
+  }, -- [727]
   {
     ["Album"] = "",
     ["Song"] = "Litebrew 1H",
@@ -6257,7 +6273,7 @@ local GameMusic = {
     ["Length"] = 80,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [726]
+  }, -- [728]
   {
     ["Album"] = "",
     ["Song"] = "Litebrew 2H",
@@ -6265,7 +6281,7 @@ local GameMusic = {
     ["Length"] = 71,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [727]
+  }, -- [729]
   {
     ["Album"] = "",
     ["Song"] = "WoW-Cardon 1H",
@@ -6273,7 +6289,7 @@ local GameMusic = {
     ["Length"] = 43,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [728]
+  }, -- [730]
   {
     ["Album"] = "",
     ["Song"] = "WoW-Cardon 2H",
@@ -6281,7 +6297,7 @@ local GameMusic = {
     ["Length"] = 75,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [729]
+  }, -- [731]
   {
     ["Album"] = "",
     ["Song"] = "WoW-Cardon 3H",
@@ -6289,7 +6305,7 @@ local GameMusic = {
     ["Length"] = 67,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [730]
+  }, -- [732]
   {
     ["Album"] = "",
     ["Song"] = "Cardonian Primeval Epoch A",
@@ -6297,7 +6313,7 @@ local GameMusic = {
     ["Length"] = 69,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [731]
+  }, -- [733]
   {
     ["Album"] = "",
     ["Song"] = "Cardonian Primeval Epoch B",
@@ -6305,7 +6321,7 @@ local GameMusic = {
     ["Length"] = 63,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [732]
+  }, -- [734]
   {
     ["Album"] = "",
     ["Song"] = "Cardonian Primeval Epoch C",
@@ -6313,7 +6329,7 @@ local GameMusic = {
     ["Length"] = 110,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [733]
+  }, -- [735]
   {
     ["Album"] = "",
     ["Song"] = "Basement B",
@@ -6321,7 +6337,7 @@ local GameMusic = {
     ["Length"] = 53,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [734]
+  }, -- [736]
   {
     ["Album"] = "",
     ["Song"] = "Basement C",
@@ -6329,7 +6345,7 @@ local GameMusic = {
     ["Length"] = 60,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [735]
+  }, -- [737]
   {
     ["Album"] = "",
     ["Song"] = "Basement D",
@@ -6337,7 +6353,7 @@ local GameMusic = {
     ["Length"] = 43,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [736]
+  }, -- [738]
   {
     ["Album"] = "",
     ["Song"] = "Basement H",
@@ -6345,7 +6361,7 @@ local GameMusic = {
     ["Length"] = 116,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [737]
+  }, -- [739]
   {
     ["Album"] = "",
     ["Song"] = "Scarlet Monastery 1H",
@@ -6353,7 +6369,7 @@ local GameMusic = {
     ["Length"] = 83,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [738]
+  }, -- [740]
   {
     ["Album"] = "",
     ["Song"] = "Scarlet Monastery 2H",
@@ -6361,7 +6377,7 @@ local GameMusic = {
     ["Length"] = 54,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [739]
+  }, -- [741]
   {
     ["Album"] = "",
     ["Song"] = "Scarlet Monastery 3H",
@@ -6369,7 +6385,7 @@ local GameMusic = {
     ["Length"] = 117,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [740]
+  }, -- [742]
   {
     ["Album"] = "",
     ["Song"] = "Scholo 1",
@@ -6377,7 +6393,7 @@ local GameMusic = {
     ["Length"] = 59,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [741]
+  }, -- [743]
   {
     ["Album"] = "",
     ["Song"] = "Scholo 2",
@@ -6385,7 +6401,7 @@ local GameMusic = {
     ["Length"] = 68,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [742]
+  }, -- [744]
   {
     ["Album"] = "",
     ["Song"] = "Scholo 3",
@@ -6393,7 +6409,7 @@ local GameMusic = {
     ["Length"] = 61,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [743]
+  }, -- [745]
   {
     ["Album"] = "",
     ["Song"] = "Scholo 4",
@@ -6401,7 +6417,7 @@ local GameMusic = {
     ["Length"] = 78,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [744]
+  }, -- [746]
   {
     ["Album"] = "",
     ["Song"] = "Scholo 5",
@@ -6409,7 +6425,7 @@ local GameMusic = {
     ["Length"] = 67,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [745]
+  }, -- [747]
   {
     ["Album"] = "",
     ["Song"] = "Scholo 6",
@@ -6417,7 +6433,7 @@ local GameMusic = {
     ["Length"] = 81,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [746]
+  }, -- [748]
   {
     ["Album"] = "",
     ["Song"] = "Scholo 7",
@@ -6425,7 +6441,7 @@ local GameMusic = {
     ["Length"] = 74,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [747]
+  }, -- [749]
   {
     ["Album"] = "",
     ["Song"] = "Scholo 8",
@@ -6433,7 +6449,7 @@ local GameMusic = {
     ["Length"] = 78,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [748]
+  }, -- [750]
   {
     ["Album"] = "",
     ["Song"] = "Scholo 9",
@@ -6441,7 +6457,7 @@ local GameMusic = {
     ["Length"] = 91,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [749]
+  }, -- [751]
   {
     ["Album"] = "",
     ["Song"] = "Scholo 10",
@@ -6449,7 +6465,7 @@ local GameMusic = {
     ["Length"] = 84,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [750]
+  }, -- [752]
   {
     ["Album"] = "",
     ["Song"] = "Scholo 11",
@@ -6457,7 +6473,7 @@ local GameMusic = {
     ["Length"] = 58,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [751]
+  }, -- [753]
   {
     ["Album"] = "",
     ["Song"] = "Scholo 12",
@@ -6465,7 +6481,7 @@ local GameMusic = {
     ["Length"] = 103,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [752]
+  }, -- [754]
   {
     ["Album"] = "",
     ["Song"] = "Serpent Riders 1A",
@@ -6473,7 +6489,7 @@ local GameMusic = {
     ["Length"] = 152,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [753]
+  }, -- [755]
   {
     ["Album"] = "WoW 5",
     ["Song"] = "Serpent Riders 1H",
@@ -6481,7 +6497,7 @@ local GameMusic = {
     ["Length"] = 152,
     ["Artist"] =  "Pandaria (Jeremy Soule)",
     ["WoW"] = true,
-  }, -- [754]
+  }, -- [756]
   {
     ["Album"] = "",
     ["Song"] = "MUS_50_SerpentRiders_Victory_Stinger",
@@ -6489,7 +6505,7 @@ local GameMusic = {
     ["Length"] = 39,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [755]
+  }, -- [757]
   {
     ["Album"] = "",
     ["Song"] = "Positive Chi 3H1",
@@ -6497,7 +6513,7 @@ local GameMusic = {
     ["Length"] = 93,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [756]
+  }, -- [758]
   {
     ["Album"] = "",
     ["Song"] = "Positive Chi 3H2",
@@ -6505,7 +6521,7 @@ local GameMusic = {
     ["Length"] = 84,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [757]
+  }, -- [759]
   {
     ["Album"] = "",
     ["Song"] = "Positive Chi 3H3",
@@ -6513,7 +6529,7 @@ local GameMusic = {
     ["Length"] = 93,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [758]
+  }, -- [760]
   {
     ["Album"] = "",
     ["Song"] = "Jade Forest H1",
@@ -6521,7 +6537,7 @@ local GameMusic = {
     ["Length"] = 110,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [759]
+  }, -- [761]
   {
     ["Album"] = "",
     ["Song"] = "Jade Forest H2",
@@ -6529,7 +6545,7 @@ local GameMusic = {
     ["Length"] = 91,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [760]
+  }, -- [762]
   {
     ["Album"] = "",
     ["Song"] = "Jade Forest JS A",
@@ -6537,7 +6553,7 @@ local GameMusic = {
     ["Length"] = 131,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [761]
+  }, -- [763]
   {
     ["Album"] = "",
     ["Song"] = "Jade Forest JS B",
@@ -6545,7 +6561,7 @@ local GameMusic = {
     ["Length"] = 71,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [762]
+  }, -- [764]
   {
     ["Album"] = "",
     ["Song"] = "Jade Forest JS C",
@@ -6553,7 +6569,7 @@ local GameMusic = {
     ["Length"] = 102,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [763]
+  }, -- [765]
   {
     ["Album"] = "",
     ["Song"] = "Ginsu Valor 1H",
@@ -6561,7 +6577,7 @@ local GameMusic = {
     ["Length"] = 75,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [764]
+  }, -- [766]
   {
     ["Album"] = "",
     ["Song"] = "Ginsu Valor 2H",
@@ -6569,7 +6585,7 @@ local GameMusic = {
     ["Length"] = 63,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [765]
+  }, -- [767]
   {
     ["Album"] = "",
     ["Song"] = "Cardonian Wood Walk",
@@ -6577,7 +6593,7 @@ local GameMusic = {
     ["Length"] = 54,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [766]
+  }, -- [768]
   {
     ["Album"] = "",
     ["Song"] = "Positive Chi 2H1",
@@ -6585,7 +6601,7 @@ local GameMusic = {
     ["Length"] = 116,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [767]
+  }, -- [769]
   {
     ["Album"] = "",
     ["Song"] = "Positive Chi 2H2",
@@ -6593,7 +6609,7 @@ local GameMusic = {
     ["Length"] = 76,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [768]
+  }, -- [770]
   {
     ["Album"] = "",
     ["Song"] = "Ancient Mogu 1H",
@@ -6601,7 +6617,7 @@ local GameMusic = {
     ["Length"] = 85,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [769]
+  }, -- [771]
   {
     ["Album"] = "",
     ["Song"] = "Ancient Mogu 2H",
@@ -6609,7 +6625,7 @@ local GameMusic = {
     ["Length"] = 57,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [770]
+  }, -- [772]
   {
     ["Album"] = "",
     ["Song"] = "Ancient Mogu 3H",
@@ -6617,7 +6633,7 @@ local GameMusic = {
     ["Length"] = 88,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [771]
+  }, -- [773]
   {
     ["Album"] = "",
     ["Song"] = "Ancient Mogu 4H",
@@ -6625,7 +6641,7 @@ local GameMusic = {
     ["Length"] = 61,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [772]
+  }, -- [774]
   {
     ["Album"] = "",
     ["Song"] = "Sha-Shank 1A",
@@ -6633,7 +6649,7 @@ local GameMusic = {
     ["Length"] = 67,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [773]
+  }, -- [775]
   {
     ["Album"] = "",
     ["Song"] = "Sha-Shank 1B",
@@ -6641,7 +6657,7 @@ local GameMusic = {
     ["Length"] = 66,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [774]
+  }, -- [776]
   {
     ["Album"] = "",
     ["Song"] = "Sha-Shank 1H",
@@ -6649,7 +6665,7 @@ local GameMusic = {
     ["Length"] = 70,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [775]
+  }, -- [777]
   {
     ["Album"] = "",
     ["Song"] = "Sha Stinger Hvy-Resolve",
@@ -6657,7 +6673,7 @@ local GameMusic = {
     ["Length"] = 26,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [776]
+  }, -- [778]
   {
     ["Album"] = "",
     ["Song"] = "Sha Stinger Hvy 1",
@@ -6665,7 +6681,7 @@ local GameMusic = {
     ["Length"] = 18,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [777]
+  }, -- [779]
   {
     ["Album"] = "",
     ["Song"] = "Sha Stinger Hvy 2",
@@ -6673,7 +6689,7 @@ local GameMusic = {
     ["Length"] = 21,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [778]
+  }, -- [780]
   {
     ["Album"] = "",
     ["Song"] = "Sha Stinger Lite 1",
@@ -6681,7 +6697,7 @@ local GameMusic = {
     ["Length"] = 20,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [779]
+  }, -- [781]
   {
     ["Album"] = "",
     ["Song"] = "Sha Stinger Lite 2",
@@ -6689,7 +6705,7 @@ local GameMusic = {
     ["Length"] = 18,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [780]
+  }, -- [782]
   {
     ["Album"] = "",
     ["Song"] = "Sha Stinger Lite 3",
@@ -6697,7 +6713,7 @@ local GameMusic = {
     ["Length"] = 18,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [781]
+  }, -- [783]
   {
     ["Album"] = "",
     ["Song"] = "Sha Stinger Lite 4",
@@ -6705,7 +6721,7 @@ local GameMusic = {
     ["Length"] = 19,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [782]
+  }, -- [784]
   {
     ["Album"] = "",
     ["Song"] = "Sha Stinger Med 1",
@@ -6713,7 +6729,7 @@ local GameMusic = {
     ["Length"] = 24,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [783]
+  }, -- [785]
   {
     ["Album"] = "",
     ["Song"] = "Sha Stinger Med 2",
@@ -6721,7 +6737,7 @@ local GameMusic = {
     ["Length"] = 15,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [784]
+  }, -- [786]
   {
     ["Album"] = "",
     ["Song"] = "Vale 2 v2",
@@ -6729,7 +6745,7 @@ local GameMusic = {
     ["Length"] = 99,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [785]
+  }, -- [787]
   {
     ["Album"] = "",
     ["Song"] = "Vale 2 v3",
@@ -6737,7 +6753,7 @@ local GameMusic = {
     ["Length"] = 114,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [786]
+  }, -- [788]
   {
     ["Album"] = "",
     ["Song"] = "Vale 2 v4",
@@ -6745,7 +6761,7 @@ local GameMusic = {
     ["Length"] = 114,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [787]
+  }, -- [789]
   {
     ["Album"] = "",
     ["Song"] = "Vale 2H1",
@@ -6753,7 +6769,7 @@ local GameMusic = {
     ["Length"] = 51,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [788]
+  }, -- [790]
   {
     ["Album"] = "",
     ["Song"] = "Vale 2H2",
@@ -6761,7 +6777,7 @@ local GameMusic = {
     ["Length"] = 67,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [789]
+  }, -- [791]
   {
     ["Album"] = "",
     ["Song"] = "MUS_50_ShoSha_A_01",
@@ -6769,7 +6785,7 @@ local GameMusic = {
     ["Length"] = 19,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [790]
+  }, -- [792]
   {
     ["Album"] = "",
     ["Song"] = "MUS_50_ShoSha_A_02",
@@ -6777,7 +6793,7 @@ local GameMusic = {
     ["Length"] = 20,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [791]
+  }, -- [793]
   {
     ["Album"] = "",
     ["Song"] = "MUS_50_ShoSha_A_03",
@@ -6785,7 +6801,7 @@ local GameMusic = {
     ["Length"] = 20,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [792]
+  }, -- [794]
   {
     ["Album"] = "",
     ["Song"] = "MUS_50_ShoSha_A_04",
@@ -6793,7 +6809,7 @@ local GameMusic = {
     ["Length"] = 20,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [793]
+  }, -- [795]
   {
     ["Album"] = "",
     ["Song"] = "MUS_50_ShoSha_A_05",
@@ -6801,7 +6817,7 @@ local GameMusic = {
     ["Length"] = 19,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [794]
+  }, -- [796]
   {
     ["Album"] = "",
     ["Song"] = "MUS_50_ShoSha_B_01",
@@ -6809,7 +6825,7 @@ local GameMusic = {
     ["Length"] = 20,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [795]
+  }, -- [797]
   {
     ["Album"] = "",
     ["Song"] = "MUS_50_ShoSha_B_02",
@@ -6817,7 +6833,7 @@ local GameMusic = {
     ["Length"] = 20,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [796]
+  }, -- [798]
   {
     ["Album"] = "",
     ["Song"] = "MUS_50_ShoSha_B_03",
@@ -6825,7 +6841,7 @@ local GameMusic = {
     ["Length"] = 20,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [797]
+  }, -- [799]
   {
     ["Album"] = "",
     ["Song"] = "MUS_50_ShoSha_B_04",
@@ -6833,7 +6849,7 @@ local GameMusic = {
     ["Length"] = 20,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [798]
+  }, -- [800]
   {
     ["Album"] = "",
     ["Song"] = "MUS_50_ShoSha_B_05",
@@ -6841,7 +6857,7 @@ local GameMusic = {
     ["Length"] = 19,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [799]
+  }, -- [801]
   {
     ["Album"] = "",
     ["Song"] = "MUS_50_ShoSha_B_06",
@@ -6849,7 +6865,7 @@ local GameMusic = {
     ["Length"] = 24,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [800]
+  }, -- [802]
   {
     ["Album"] = "",
     ["Song"] = "Scholomance H1",
@@ -6857,7 +6873,7 @@ local GameMusic = {
     ["Length"] = 78,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [801]
+  }, -- [803]
   {
     ["Album"] = "",
     ["Song"] = "Scholomance H2",
@@ -6865,7 +6881,7 @@ local GameMusic = {
     ["Length"] = 55,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [802]
+  }, -- [804]
   {
     ["Album"] = "",
     ["Song"] = "Scholomance H3",
@@ -6873,7 +6889,7 @@ local GameMusic = {
     ["Length"] = 58,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [803]
+  }, -- [805]
   {
     ["Album"] = "",
     ["Song"] = "Song of Liulang 1A",
@@ -6881,7 +6897,7 @@ local GameMusic = {
     ["Length"] = 125,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [804]
+  }, -- [806]
   {
     ["Album"] = "",
     ["Song"] = "Song of Liulang 1B",
@@ -6889,7 +6905,7 @@ local GameMusic = {
     ["Length"] = 166,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [805]
+  }, -- [807]
   {
     ["Album"] = "",
     ["Song"] = "Song of Liulang 1C",
@@ -6897,7 +6913,7 @@ local GameMusic = {
     ["Length"] = 52,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [806]
+  }, -- [808]
   {
     ["Album"] = "",
     ["Song"] = "Song of Liulang 1D",
@@ -6905,7 +6921,7 @@ local GameMusic = {
     ["Length"] = 45,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [807]
+  }, -- [809]
   {
     ["Album"] = "",
     ["Song"] = "Song of Liulang 1E",
@@ -6913,7 +6929,7 @@ local GameMusic = {
     ["Length"] = 82,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [808]
+  }, -- [810]
   {
     ["Album"] = "",
     ["Song"] = "Song of Liulang 1F",
@@ -6921,7 +6937,7 @@ local GameMusic = {
     ["Length"] = 72,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [809]
+  }, -- [811]
   {
     ["Album"] = "",
     ["Song"] = "Song of Liulang 1G",
@@ -6929,7 +6945,7 @@ local GameMusic = {
     ["Length"] = 114,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [810]
+  }, -- [812]
   {
     ["Album"] = "WoW 5",
     ["Song"] = "Song of Liulang Inst 1H",
@@ -6937,7 +6953,7 @@ local GameMusic = {
     ["Length"] = 168,
     ["Artist"] =  "Pandaria (Russell Brower)",
     ["WoW"] = true,
-  }, -- [811]
+  }, -- [813]
   {
     ["Album"] = "WoW 5",
     ["Song"] = "Song of Liulang Lite plus Vox",
@@ -6945,7 +6961,7 @@ local GameMusic = {
     ["Length"] = 234,
     ["Artist"] =  "Pandaria (Russell Brower)",
     ["WoW"] = true,
-  }, -- [812]
+  }, -- [814]
   {
     ["Album"] = "",
     ["Song"] = "Spirit Cave 1A",
@@ -6953,7 +6969,7 @@ local GameMusic = {
     ["Length"] = 91,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [813]
+  }, -- [815]
   {
     ["Album"] = "",
     ["Song"] = "Spirit Cave 1B",
@@ -6961,7 +6977,7 @@ local GameMusic = {
     ["Length"] = 98,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [814]
+  }, -- [816]
   {
     ["Album"] = "",
     ["Song"] = "Spirit Cave 1C",
@@ -6969,7 +6985,7 @@ local GameMusic = {
     ["Length"] = 98,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [815]
+  }, -- [817]
   {
     ["Album"] = "",
     ["Song"] = "Spirit Cave 1D",
@@ -6977,7 +6993,7 @@ local GameMusic = {
     ["Length"] = 70,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [816]
+  }, -- [818]
   {
     ["Album"] = "",
     ["Song"] = "Spirit Cave 1E",
@@ -6985,7 +7001,7 @@ local GameMusic = {
     ["Length"] = 129,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [817]
+  }, -- [819]
   {
     ["Album"] = "",
     ["Song"] = "Spirit Cave 1F",
@@ -6993,7 +7009,7 @@ local GameMusic = {
     ["Length"] = 131,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [818]
+  }, -- [820]
   {
     ["Album"] = "WoW 5",
     ["Song"] = "Spirit Cave 1H",
@@ -7001,7 +7017,7 @@ local GameMusic = {
     ["Length"] = 130,
     ["Artist"] =  "Pandaria (Russell Brower)",
     ["WoW"] = true,
-  }, -- [819]
+  }, -- [821]
   {
     ["Album"] = "",
     ["Song"] = "Spirit Path 1A",
@@ -7009,7 +7025,7 @@ local GameMusic = {
     ["Length"] = 74,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [820]
+  }, -- [822]
   {
     ["Album"] = "",
     ["Song"] = "Spirit Path 1B",
@@ -7017,7 +7033,7 @@ local GameMusic = {
     ["Length"] = 73,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [821]
+  }, -- [823]
   {
     ["Album"] = "",
     ["Song"] = "Spirit Path 1C",
@@ -7025,7 +7041,7 @@ local GameMusic = {
     ["Length"] = 77,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [822]
+  }, -- [824]
   {
     ["Album"] = "",
     ["Song"] = "Spirit Path 1D",
@@ -7033,7 +7049,7 @@ local GameMusic = {
     ["Length"] = 51,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [823]
+  }, -- [825]
   {
     ["Album"] = "WoW 5",
     ["Song"] = "Spirit Path 1H",
@@ -7041,7 +7057,7 @@ local GameMusic = {
     ["Length"] = 72,
     ["Artist"] =  "Pandaria (Russell Brower)",
     ["WoW"] = true,
-  }, -- [824]
+  }, -- [826]
   {
     ["Album"] = "",
     ["Song"] = "Spirits 2D",
@@ -7049,7 +7065,7 @@ local GameMusic = {
     ["Length"] = 74,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [825]
+  }, -- [827]
   {
     ["Album"] = "",
     ["Song"] = "Spirits 2E",
@@ -7057,7 +7073,7 @@ local GameMusic = {
     ["Length"] = 73,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [826]
+  }, -- [828]
   {
     ["Album"] = "WoW 5",
     ["Song"] = "Spirits 1A",
@@ -7065,7 +7081,7 @@ local GameMusic = {
     ["Length"] = 52,
     ["Artist"] =  "Pandaria (Russell Brower)",
     ["WoW"] = true,
-  }, -- [827]
+  }, -- [829]
   {
     ["Album"] = "WoW 5",
     ["Song"] = "Spirits 1B",
@@ -7073,7 +7089,7 @@ local GameMusic = {
     ["Length"] = 72,
     ["Artist"] =  "Pandaria (Russell Brower)",
     ["WoW"] = true,
-  }, -- [828]
+  }, -- [830]
   {
     ["Album"] = "WoW 5",
     ["Song"] = "Spirits 1C",
@@ -7081,7 +7097,7 @@ local GameMusic = {
     ["Length"] = 67,
     ["Artist"] =  "Pandaria (Russell Brower)",
     ["WoW"] = true,
-  }, -- [829]
+  }, -- [831]
   {
     ["Album"] = "WoW 5",
     ["Song"] = "Spirits 1D",
@@ -7089,7 +7105,7 @@ local GameMusic = {
     ["Length"] = 83,
     ["Artist"] =  "Pandaria (Russell Brower)",
     ["WoW"] = true,
-  }, -- [830]
+  }, -- [832]
   {
     ["Album"] = "",
     ["Song"] = "Temple of the Five Dawns 1A",
@@ -7097,7 +7113,7 @@ local GameMusic = {
     ["Length"] = 68,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [831]
+  }, -- [833]
   {
     ["Album"] = "",
     ["Song"] = "Temple of the Five Dawns 1B",
@@ -7105,7 +7121,7 @@ local GameMusic = {
     ["Length"] = 64,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [832]
+  }, -- [834]
   {
     ["Album"] = "",
     ["Song"] = "Temple of the Five Dawns 1C",
@@ -7113,7 +7129,7 @@ local GameMusic = {
     ["Length"] = 70,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [833]
+  }, -- [835]
   {
     ["Album"] = "",
     ["Song"] = "Temple of the Five Dawns 1D",
@@ -7121,7 +7137,7 @@ local GameMusic = {
     ["Length"] = 40,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [834]
+  }, -- [836]
   {
     ["Album"] = "",
     ["Song"] = "Temple of the Five Dawns 1E",
@@ -7129,7 +7145,7 @@ local GameMusic = {
     ["Length"] = 39,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [835]
+  }, -- [837]
   {
     ["Album"] = "",
     ["Song"] = "Temple of the Five Dawns 1J",
@@ -7137,7 +7153,7 @@ local GameMusic = {
     ["Length"] = 48,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [836]
+  }, -- [838]
   {
     ["Album"] = "",
     ["Song"] = "Temple of the Five Dawns 1K",
@@ -7145,7 +7161,7 @@ local GameMusic = {
     ["Length"] = 43,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [837]
+  }, -- [839]
   {
     ["Album"] = "",
     ["Song"] = "Temple of the Five Dawns 1L",
@@ -7153,7 +7169,7 @@ local GameMusic = {
     ["Length"] = 11,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [838]
+  }, -- [840]
   {
     ["Album"] = "",
     ["Song"] = "Temple of the Five Dawns 1M",
@@ -7161,7 +7177,7 @@ local GameMusic = {
     ["Length"] = 93,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [839]
+  }, -- [841]
   {
     ["Album"] = "",
     ["Song"] = "Temple of the Five Dawns 1N",
@@ -7169,7 +7185,7 @@ local GameMusic = {
     ["Length"] = 100,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [840]
+  }, -- [842]
   {
     ["Album"] = "",
     ["Song"] = "Temple of the Five Dawns 1F",
@@ -7177,7 +7193,7 @@ local GameMusic = {
     ["Length"] = 52,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [841]
+  }, -- [843]
   {
     ["Album"] = "",
     ["Song"] = "Temple of the Five Dawns 1G",
@@ -7185,7 +7201,7 @@ local GameMusic = {
     ["Length"] = 19,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [842]
+  }, -- [844]
   {
     ["Album"] = "WoW 5",
     ["Song"] = "Temple of the Five Dawns 1H",
@@ -7193,7 +7209,7 @@ local GameMusic = {
     ["Length"] = 101,
     ["Artist"] =  "Pandaria (Russell Brower)",
     ["WoW"] = true,
-  }, -- [843]
+  }, -- [845]
   {
     ["Album"] = "",
     ["Song"] = "Krasarang Wilds 1H",
@@ -7201,7 +7217,7 @@ local GameMusic = {
     ["Length"] = 75,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [844]
+  }, -- [846]
   {
     ["Album"] = "",
     ["Song"] = "Krasarang Wilds 2H",
@@ -7209,7 +7225,7 @@ local GameMusic = {
     ["Length"] = 88,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [845]
+  }, -- [847]
   {
     ["Album"] = "",
     ["Song"] = "Krasarang Wilds 3H",
@@ -7217,7 +7233,7 @@ local GameMusic = {
     ["Length"] = 73,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [846]
+  }, -- [848]
   {
     ["Album"] = "",
     ["Song"] = "Night Dreams Cello 1H",
@@ -7225,7 +7241,7 @@ local GameMusic = {
     ["Length"] = 85,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [847]
+  }, -- [849]
   {
     ["Album"] = "",
     ["Song"] = "Night Dreams Cello 2H",
@@ -7233,7 +7249,7 @@ local GameMusic = {
     ["Length"] = 58,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [848]
+  }, -- [850]
   {
     ["Album"] = "",
     ["Song"] = "Night Dreams Choral H",
@@ -7241,7 +7257,7 @@ local GameMusic = {
     ["Length"] = 87,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [849]
+  }, -- [851]
   {
     ["Album"] = "",
     ["Song"] = "Night Dreams Cello Flute A",
@@ -7249,7 +7265,7 @@ local GameMusic = {
     ["Length"] = 147,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [850]
+  }, -- [852]
   {
     ["Album"] = "",
     ["Song"] = "The River 1A",
@@ -7257,7 +7273,7 @@ local GameMusic = {
     ["Length"] = 42,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [851]
+  }, -- [853]
   {
     ["Album"] = "",
     ["Song"] = "The River 1B",
@@ -7265,7 +7281,7 @@ local GameMusic = {
     ["Length"] = 58,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [852]
+  }, -- [854]
   {
     ["Album"] = "",
     ["Song"] = "The River 1C",
@@ -7273,7 +7289,7 @@ local GameMusic = {
     ["Length"] = 51,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [853]
+  }, -- [855]
   {
     ["Album"] = "",
     ["Song"] = "The River 1D",
@@ -7281,7 +7297,7 @@ local GameMusic = {
     ["Length"] = 64,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [854]
+  }, -- [856]
   {
     ["Album"] = "",
     ["Song"] = "The River 1E",
@@ -7289,7 +7305,7 @@ local GameMusic = {
     ["Length"] = 124,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [855]
+  }, -- [857]
   {
     ["Album"] = "",
     ["Song"] = "The River 1F",
@@ -7297,7 +7313,7 @@ local GameMusic = {
     ["Length"] = 129,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [856]
+  }, -- [858]
   {
     ["Album"] = "",
     ["Song"] = "The River 1G",
@@ -7305,7 +7321,7 @@ local GameMusic = {
     ["Length"] = 126,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [857]
+  }, -- [859]
   {
     ["Album"] = "WoW 5",
     ["Song"] = "The River 1H",
@@ -7313,7 +7329,7 @@ local GameMusic = {
     ["Length"] = 133,
     ["Artist"] =  "Pandaria (Russell Brower)",
     ["WoW"] = true,
-  }, -- [858]
+  }, -- [860]
   {
     ["Album"] = "",
     ["Song"] = "Toast 1A",
@@ -7321,7 +7337,7 @@ local GameMusic = {
     ["Length"] = 54,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [859]
+  }, -- [861]
   {
     ["Album"] = "",
     ["Song"] = "Toast 1 H",
@@ -7329,7 +7345,7 @@ local GameMusic = {
     ["Length"] = 91,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [860]
+  }, -- [862]
   {
     ["Album"] = "",
     ["Song"] = "Toast 2A",
@@ -7337,7 +7353,7 @@ local GameMusic = {
     ["Length"] = 87,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [861]
+  }, -- [863]
   {
     ["Album"] = "",
     ["Song"] = "Toast 2B",
@@ -7345,7 +7361,7 @@ local GameMusic = {
     ["Length"] = 87,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [862]
+  }, -- [864]
   {
     ["Album"] = "",
     ["Song"] = "Toast 2C",
@@ -7353,7 +7369,7 @@ local GameMusic = {
     ["Length"] = 88,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [863]
+  }, -- [865]
   {
     ["Album"] = "",
     ["Song"] = "Toast 2 H",
@@ -7361,7 +7377,7 @@ local GameMusic = {
     ["Length"] = 91,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [864]
+  }, -- [866]
   {
     ["Album"] = "",
     ["Song"] = "Ginsu Paranoia 1H",
@@ -7369,7 +7385,7 @@ local GameMusic = {
     ["Length"] = 95,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [865]
+  }, -- [867]
   {
     ["Album"] = "",
     ["Song"] = "Ginsu Paranoia 2H",
@@ -7377,7 +7393,7 @@ local GameMusic = {
     ["Length"] = 114,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [866]
+  }, -- [868]
   {
     ["Album"] = "",
     ["Song"] = "Brewery Ghosts A",
@@ -7385,7 +7401,7 @@ local GameMusic = {
     ["Length"] = 97,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [867]
+  }, -- [869]
   {
     ["Album"] = "",
     ["Song"] = "Brewery Ghosts B",
@@ -7393,7 +7409,7 @@ local GameMusic = {
     ["Length"] = 90,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [868]
+  }, -- [870]
   {
     ["Album"] = "",
     ["Song"] = "Brewery Ghosts H",
@@ -7401,7 +7417,7 @@ local GameMusic = {
     ["Length"] = 105,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [869]
+  }, -- [871]
   {
     ["Album"] = "",
     ["Song"] = "Townlong Steppes 1H1",
@@ -7409,7 +7425,7 @@ local GameMusic = {
     ["Length"] = 80,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [870]
+  }, -- [872]
   {
     ["Album"] = "",
     ["Song"] = "Townlong Steppes 1H2",
@@ -7417,7 +7433,7 @@ local GameMusic = {
     ["Length"] = 58,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [871]
+  }, -- [873]
   {
     ["Album"] = "",
     ["Song"] = "Townlong Steppes 1H3",
@@ -7425,7 +7441,7 @@ local GameMusic = {
     ["Length"] = 67,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [872]
+  }, -- [874]
   {
     ["Album"] = "",
     ["Song"] = "Townlong Steppes 2H1",
@@ -7433,7 +7449,7 @@ local GameMusic = {
     ["Length"] = 58,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [873]
+  }, -- [875]
   {
     ["Album"] = "",
     ["Song"] = "Townlong Steppes 2H2",
@@ -7441,7 +7457,7 @@ local GameMusic = {
     ["Length"] = 70,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [874]
+  }, -- [876]
   {
     ["Album"] = "",
     ["Song"] = "Townlong Steppes 2H3",
@@ -7449,7 +7465,7 @@ local GameMusic = {
     ["Length"] = 70,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [875]
+  }, -- [877]
   {
     ["Album"] = "",
     ["Song"] = "Night 2 A",
@@ -7457,7 +7473,7 @@ local GameMusic = {
     ["Length"] = 63,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [876]
+  }, -- [878]
   {
     ["Album"] = "",
     ["Song"] = "Night 2H1",
@@ -7465,7 +7481,7 @@ local GameMusic = {
     ["Length"] = 42,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [877]
+  }, -- [879]
   {
     ["Album"] = "",
     ["Song"] = "Night 2H2",
@@ -7473,7 +7489,7 @@ local GameMusic = {
     ["Length"] = 70,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [878]
+  }, -- [880]
   {
     ["Album"] = "",
     ["Song"] = "Gecko 4 1A",
@@ -7481,7 +7497,7 @@ local GameMusic = {
     ["Length"] = 57,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [879]
+  }, -- [881]
   {
     ["Album"] = "",
     ["Song"] = "Gecko 4 1B",
@@ -7489,7 +7505,7 @@ local GameMusic = {
     ["Length"] = 55,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [880]
+  }, -- [882]
   {
     ["Album"] = "",
     ["Song"] = "Gecko 4 1C",
@@ -7497,7 +7513,7 @@ local GameMusic = {
     ["Length"] = 38,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [881]
+  }, -- [883]
   {
     ["Album"] = "",
     ["Song"] = "Gecko 4 1D",
@@ -7505,7 +7521,7 @@ local GameMusic = {
     ["Length"] = 50,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [882]
+  }, -- [884]
   {
     ["Album"] = "",
     ["Song"] = "Gecko 4 1E",
@@ -7513,7 +7529,7 @@ local GameMusic = {
     ["Length"] = 52,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [883]
+  }, -- [885]
   {
     ["Album"] = "",
     ["Song"] = "Gecko 4 1F",
@@ -7521,7 +7537,7 @@ local GameMusic = {
     ["Length"] = 85,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [884]
+  }, -- [886]
   {
     ["Album"] = "WoW 5",
     ["Song"] = "Gecko 4 1H",
@@ -7529,7 +7545,7 @@ local GameMusic = {
     ["Length"] = 122,
     ["Artist"] =  "Pandaria (Russell Brower)",
     ["WoW"] = true,
-  }, -- [885]
+  }, -- [887]
   {
     ["Album"] = "",
     ["Song"] = "Family 1 v2",
@@ -7537,7 +7553,7 @@ local GameMusic = {
     ["Length"] = 110,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [886]
+  }, -- [888]
   {
     ["Album"] = "",
     ["Song"] = "Family 1 v3",
@@ -7545,7 +7561,7 @@ local GameMusic = {
     ["Length"] = 111,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [887]
+  }, -- [889]
   {
     ["Album"] = "",
     ["Song"] = "Family 1 v4",
@@ -7553,7 +7569,7 @@ local GameMusic = {
     ["Length"] = 111,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [888]
+  }, -- [890]
   {
     ["Album"] = "",
     ["Song"] = "Family 1 v1",
@@ -7561,7 +7577,7 @@ local GameMusic = {
     ["Length"] = 113,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [889]
+  }, -- [891]
   {
     ["Album"] = "",
     ["Song"] = "Family 2H1",
@@ -7569,7 +7585,7 @@ local GameMusic = {
     ["Length"] = 69,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [890]
+  }, -- [892]
   {
     ["Album"] = "",
     ["Song"] = "Family 2H2",
@@ -7577,7 +7593,7 @@ local GameMusic = {
     ["Length"] = 45,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [891]
+  }, -- [893]
   {
     ["Album"] = "",
     ["Song"] = "Family 2 v2",
@@ -7585,7 +7601,7 @@ local GameMusic = {
     ["Length"] = 109,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [892]
+  }, -- [894]
   {
     ["Album"] = "",
     ["Song"] = "Family 3 v1",
@@ -7593,7 +7609,7 @@ local GameMusic = {
     ["Length"] = 122,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [893]
+  }, -- [895]
   {
     ["Album"] = "",
     ["Song"] = "Family 3 v2",
@@ -7601,7 +7617,7 @@ local GameMusic = {
     ["Length"] = 124,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [894]
+  }, -- [896]
   {
     ["Album"] = "",
     ["Song"] = "Family 3 v3",
@@ -7609,7 +7625,7 @@ local GameMusic = {
     ["Length"] = 117,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [895]
+  }, -- [897]
   {
     ["Album"] = "",
     ["Song"] = "The Great Wall v1",
@@ -7617,7 +7633,7 @@ local GameMusic = {
     ["Length"] = 26,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [896]
+  }, -- [898]
   {
     ["Album"] = "",
     ["Song"] = "The Great Wall v2",
@@ -7625,7 +7641,7 @@ local GameMusic = {
     ["Length"] = 29,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [897]
+  }, -- [899]
   {
     ["Album"] = "",
     ["Song"] = "Vale of Eternal Blossoms JS H1",
@@ -7633,7 +7649,7 @@ local GameMusic = {
     ["Length"] = 73,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [898]
+  }, -- [900]
   {
     ["Album"] = "",
     ["Song"] = "Vale of Eternal Blossoms JS H2",
@@ -7641,7 +7657,7 @@ local GameMusic = {
     ["Length"] = 71,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [899]
+  }, -- [901]
   {
     ["Album"] = "",
     ["Song"] = "Vale of Eternal Blossoms JS H3",
@@ -7649,7 +7665,7 @@ local GameMusic = {
     ["Length"] = 52,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [900]
+  }, -- [902]
   {
     ["Album"] = "",
     ["Song"] = "Vale of Eternal Blossoms JS H4",
@@ -7657,7 +7673,7 @@ local GameMusic = {
     ["Length"] = 50,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [901]
+  }, -- [903]
   {
     ["Album"] = "",
     ["Song"] = "Vale Night v2",
@@ -7665,7 +7681,7 @@ local GameMusic = {
     ["Length"] = 52,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [902]
+  }, -- [904]
   {
     ["Album"] = "",
     ["Song"] = "Vale Night v3",
@@ -7673,7 +7689,7 @@ local GameMusic = {
     ["Length"] = 82,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [903]
+  }, -- [905]
   {
     ["Album"] = "",
     ["Song"] = "Vale Night v4",
@@ -7681,7 +7697,7 @@ local GameMusic = {
     ["Length"] = 53,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [904]
+  }, -- [906]
   {
     ["Album"] = "",
     ["Song"] = "Vale Night v5",
@@ -7689,7 +7705,7 @@ local GameMusic = {
     ["Length"] = 81,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [905]
+  }, -- [907]
   {
     ["Album"] = "",
     ["Song"] = "Vale Night v6",
@@ -7697,7 +7713,7 @@ local GameMusic = {
     ["Length"] = 54,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [906]
+  }, -- [908]
   {
     ["Album"] = "",
     ["Song"] = "Vale Night v7",
@@ -7705,7 +7721,7 @@ local GameMusic = {
     ["Length"] = 81,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [907]
+  }, -- [909]
   {
     ["Album"] = "",
     ["Song"] = "Vale Night v8",
@@ -7713,7 +7729,7 @@ local GameMusic = {
     ["Length"] = 54,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [908]
+  }, -- [910]
   {
     ["Album"] = "",
     ["Song"] = "Vale Night v9",
@@ -7721,7 +7737,7 @@ local GameMusic = {
     ["Length"] = 102,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [909]
+  }, -- [911]
   {
     ["Album"] = "",
     ["Song"] = "Vale Night 1H",
@@ -7729,7 +7745,7 @@ local GameMusic = {
     ["Length"] = 51,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [910]
+  }, -- [912]
   {
     ["Album"] = "",
     ["Song"] = "Vale Night 2H",
@@ -7737,7 +7753,7 @@ local GameMusic = {
     ["Length"] = 82,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [911]
+  }, -- [913]
   {
     ["Album"] = "",
     ["Song"] = "Vale of Eternal Blossoms NA v2",
@@ -7745,7 +7761,7 @@ local GameMusic = {
     ["Length"] = 86,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [912]
+  }, -- [914]
   {
     ["Album"] = "",
     ["Song"] = "Vale of Eternal Blossoms NA v3",
@@ -7753,7 +7769,7 @@ local GameMusic = {
     ["Length"] = 117,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [913]
+  }, -- [915]
   {
     ["Album"] = "",
     ["Song"] = "Vale of Eternal Blossoms NA v4",
@@ -7761,7 +7777,7 @@ local GameMusic = {
     ["Length"] = 115,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [914]
+  }, -- [916]
   {
     ["Album"] = "",
     ["Song"] = "Vale of Eternal Blossoms NA 1H",
@@ -7769,7 +7785,7 @@ local GameMusic = {
     ["Length"] = 87,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [915]
+  }, -- [917]
   {
     ["Album"] = "",
     ["Song"] = "Valley Mist 1H",
@@ -7777,7 +7793,7 @@ local GameMusic = {
     ["Length"] = 64,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [916]
+  }, -- [918]
   {
     ["Album"] = "",
     ["Song"] = "Valley Mist 2H",
@@ -7785,7 +7801,7 @@ local GameMusic = {
     ["Length"] = 76,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [917]
+  }, -- [919]
   {
     ["Album"] = "",
     ["Song"] = "Valley Mist 3H",
@@ -7793,7 +7809,7 @@ local GameMusic = {
     ["Length"] = 65,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [918]
+  }, -- [920]
   {
     ["Album"] = "WoW 5.1",
     ["Song"] = "Alliance_Battle_March_a",
@@ -7801,7 +7817,7 @@ local GameMusic = {
     ["Length"] = 119,
     ["Artist"] =  "Pandaria (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [919]
+  }, -- [921]
   {
     ["Album"] = "WoW 5.1",
     ["Song"] = "Alliance_Battle_March_b",
@@ -7809,7 +7825,7 @@ local GameMusic = {
     ["Length"] = 119,
     ["Artist"] =  "Pandaria (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [920]
+  }, -- [922]
   {
     ["Album"] = "WoW 5.1",
     ["Song"] = "Alliance_Battle_March_h",
@@ -7817,7 +7833,7 @@ local GameMusic = {
     ["Length"] = 119,
     ["Artist"] =  "Pandaria (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [921]
+  }, -- [923]
   {
     ["Album"] = "WoW 5.1",
     ["Song"] = "For_The_Alliance_a",
@@ -7825,7 +7841,7 @@ local GameMusic = {
     ["Length"] = 128,
     ["Artist"] =  "Pandaria (Jason Hayes, Arr. Russell Brower)",
     ["WoW"] = true,
-  }, -- [922]
+  }, -- [924]
   {
     ["Album"] = "WoW 5.1",
     ["Song"] = "For_The_Alliance_b",
@@ -7833,7 +7849,7 @@ local GameMusic = {
     ["Length"] = 100,
     ["Artist"] =  "Pandaria (Jason Hayes, Arr. Russell Brower)",
     ["WoW"] = true,
-  }, -- [923]
+  }, -- [925]
   {
     ["Album"] = "WoW 5.1",
     ["Song"] = "For_The_Alliance_c",
@@ -7841,7 +7857,7 @@ local GameMusic = {
     ["Length"] = 66,
     ["Artist"] =  "Pandaria (Jason Hayes, Arr. Russell Brower)",
     ["WoW"] = true,
-  }, -- [924]
+  }, -- [926]
   {
     ["Album"] = "WoW 5.1",
     ["Song"] = "For_The_Alliance_d",
@@ -7849,7 +7865,7 @@ local GameMusic = {
     ["Length"] = 67,
     ["Artist"] =  "Pandaria (Jason Hayes, Arr. Russell Brower)",
     ["WoW"] = true,
-  }, -- [925]
+  }, -- [927]
   {
     ["Album"] = "WoW 5.1",
     ["Song"] = "For_The_Alliance_e",
@@ -7857,7 +7873,7 @@ local GameMusic = {
     ["Length"] = 67,
     ["Artist"] =  "Pandaria (Jason Hayes, Arr. Russell Brower)",
     ["WoW"] = true,
-  }, -- [926]
+  }, -- [928]
   {
     ["Album"] = "WoW 5.1",
     ["Song"] = "For_The_Alliance_h",
@@ -7865,7 +7881,7 @@ local GameMusic = {
     ["Length"] = 128,
     ["Artist"] =  "Pandaria (Jason Hayes, Arr. Russell Brower)",
     ["WoW"] = true,
-  }, -- [927]
+  }, -- [929]
   {
     ["Album"] = "WoW 5.1",
     ["Song"] = "Garrosh_Theme_Big_a",
@@ -7873,7 +7889,7 @@ local GameMusic = {
     ["Length"] = 163,
     ["Artist"] =  "Pandaria (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [928]
+  }, -- [930]
   {
     ["Album"] = "WoW 5.1",
     ["Song"] = "Garrosh_Theme_Big_b",
@@ -7881,7 +7897,7 @@ local GameMusic = {
     ["Length"] = 166,
     ["Artist"] =  "Pandaria (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [929]
+  }, -- [931]
   {
     ["Album"] = "WoW 5.1",
     ["Song"] = "Garrosh_Theme_Big_h",
@@ -7889,7 +7905,7 @@ local GameMusic = {
     ["Length"] = 166,
     ["Artist"] =  "Pandaria (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [930]
+  }, -- [932]
   {
     ["Album"] = "",
     ["Song"] = "MUS_51_GarroshTheme_Big_DivineBellFinale",
@@ -7897,7 +7913,7 @@ local GameMusic = {
     ["Length"] = 123,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [931]
+  }, -- [933]
   {
     ["Album"] = "WoW 5.1",
     ["Song"] = "Garrosh_Theme_Small_a",
@@ -7905,7 +7921,7 @@ local GameMusic = {
     ["Length"] = 175,
     ["Artist"] =  "Pandaria (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [932]
+  }, -- [934]
   {
     ["Album"] = "WoW 5.1",
     ["Song"] = "Garrosh_Theme_Small_b",
@@ -7913,7 +7929,7 @@ local GameMusic = {
     ["Length"] = 174,
     ["Artist"] =  "Pandaria (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [933]
+  }, -- [935]
   {
     ["Album"] = "WoW 5.1",
     ["Song"] = "Garrosh_Theme_Small_h",
@@ -7921,7 +7937,7 @@ local GameMusic = {
     ["Length"] = 175,
     ["Artist"] =  "Pandaria (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [934]
+  }, -- [936]
   {
     ["Album"] = "WoW 5.1",
     ["Song"] = "Jaina_Homeland_Theme_Lyrical_a",
@@ -7929,7 +7945,7 @@ local GameMusic = {
     ["Length"] = 107,
     ["Artist"] =  "Pandaria (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [935]
+  }, -- [937]
   {
     ["Album"] = "WoW 5.1",
     ["Song"] = "Jaina_Homeland_Theme_Lyrical_b",
@@ -7937,7 +7953,7 @@ local GameMusic = {
     ["Length"] = 106,
     ["Artist"] =  "Pandaria (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [936]
+  }, -- [938]
   {
     ["Album"] = "WoW 5.1",
     ["Song"] = "Jaina_Homeland_Theme_Lyrical_h",
@@ -7945,7 +7961,7 @@ local GameMusic = {
     ["Length"] = 107,
     ["Artist"] =  "Pandaria (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [937]
+  }, -- [939]
   {
     ["Album"] = "WoW 5.1",
     ["Song"] = "Jaina_Homeland_Theme_Military_a",
@@ -7953,7 +7969,7 @@ local GameMusic = {
     ["Length"] = 102,
     ["Artist"] =  "Pandaria (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [938]
+  }, -- [940]
   {
     ["Album"] = "WoW 5.1",
     ["Song"] = "Jaina_Homeland_Theme_Military_b",
@@ -7961,7 +7977,7 @@ local GameMusic = {
     ["Length"] = 103,
     ["Artist"] =  "Pandaria (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [939]
+  }, -- [941]
   {
     ["Album"] = "WoW 5.1",
     ["Song"] = "Jaina_Homeland_Theme_Military_c",
@@ -7969,7 +7985,7 @@ local GameMusic = {
     ["Length"] = 41,
     ["Artist"] =  "Pandaria (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [940]
+  }, -- [942]
   {
     ["Album"] = "WoW 5.1",
     ["Song"] = "Jaina_Homeland_Theme_Military_h",
@@ -7977,7 +7993,7 @@ local GameMusic = {
     ["Length"] = 104,
     ["Artist"] =  "Pandaria (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [941]
+  }, -- [943]
   {
     ["Album"] = "",
     ["Song"] = "Sunreavers A",
@@ -7985,7 +8001,7 @@ local GameMusic = {
     ["Length"] = 59,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [942]
+  }, -- [944]
   {
     ["Album"] = "",
     ["Song"] = "Sunreavers B",
@@ -7993,7 +8009,7 @@ local GameMusic = {
     ["Length"] = 58,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [943]
+  }, -- [945]
   {
     ["Album"] = "",
     ["Song"] = "Sunreavers C",
@@ -8001,7 +8017,7 @@ local GameMusic = {
     ["Length"] = 76,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [944]
+  }, -- [946]
   {
     ["Album"] = "",
     ["Song"] = "Sunreavers D",
@@ -8009,7 +8025,7 @@ local GameMusic = {
     ["Length"] = 65,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [945]
+  }, -- [947]
   {
     ["Album"] = "",
     ["Song"] = "Sunreavers E",
@@ -8017,7 +8033,7 @@ local GameMusic = {
     ["Length"] = 23,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [946]
+  }, -- [948]
   {
     ["Album"] = "",
     ["Song"] = "Sunreavers F",
@@ -8025,7 +8041,7 @@ local GameMusic = {
     ["Length"] = 19,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [947]
+  }, -- [949]
   {
     ["Album"] = "",
     ["Song"] = "Sunreavers G",
@@ -8033,7 +8049,7 @@ local GameMusic = {
     ["Length"] = 22,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [948]
+  }, -- [950]
   {
     ["Album"] = "",
     ["Song"] = "Sunreavers J",
@@ -8041,7 +8057,7 @@ local GameMusic = {
     ["Length"] = 23,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [949]
+  }, -- [951]
   {
     ["Album"] = "",
     ["Song"] = "Sunreavers K",
@@ -8049,7 +8065,7 @@ local GameMusic = {
     ["Length"] = 36,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [950]
+  }, -- [952]
   {
     ["Album"] = "",
     ["Song"] = "Sunreavers L",
@@ -8057,7 +8073,7 @@ local GameMusic = {
     ["Length"] = 58,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [951]
+  }, -- [953]
   {
     ["Album"] = "",
     ["Song"] = "Sunreavers M",
@@ -8065,7 +8081,7 @@ local GameMusic = {
     ["Length"] = 58,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [952]
+  }, -- [954]
   {
     ["Album"] = "",
     ["Song"] = "Sunreavers N",
@@ -8073,7 +8089,7 @@ local GameMusic = {
     ["Length"] = 57,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [953]
+  }, -- [955]
   {
     ["Album"] = "",
     ["Song"] = "Sunreavers P",
@@ -8081,7 +8097,7 @@ local GameMusic = {
     ["Length"] = 112,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [954]
+  }, -- [956]
   {
     ["Album"] = "",
     ["Song"] = "Sunreavers Q",
@@ -8089,7 +8105,7 @@ local GameMusic = {
     ["Length"] = 34,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [955]
+  }, -- [957]
   {
     ["Album"] = "",
     ["Song"] = "Sunreavers R",
@@ -8097,7 +8113,7 @@ local GameMusic = {
     ["Length"] = 12,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [956]
+  }, -- [958]
   {
     ["Album"] = "",
     ["Song"] = "Sunreavers S",
@@ -8105,7 +8121,7 @@ local GameMusic = {
     ["Length"] = 65,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [957]
+  }, -- [959]
   {
     ["Album"] = "",
     ["Song"] = "Sunreavers T",
@@ -8113,7 +8129,7 @@ local GameMusic = {
     ["Length"] = 10,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [958]
+  }, -- [960]
   {
     ["Album"] = "",
     ["Song"] = "Sunreavers U",
@@ -8121,7 +8137,7 @@ local GameMusic = {
     ["Length"] = 9,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [959]
+  }, -- [961]
   {
     ["Album"] = "",
     ["Song"] = "Sunreavers V",
@@ -8129,7 +8145,7 @@ local GameMusic = {
     ["Length"] = 9,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [960]
+  }, -- [962]
   {
     ["Album"] = "",
     ["Song"] = "Sunreavers H",
@@ -8137,7 +8153,7 @@ local GameMusic = {
     ["Length"] = 130,
     ["Artist"] =  "Pandaria",
     ["WoW"] = true,
-  }, -- [961]
+  }, -- [963]
   {
     ["Album"] = "",
     ["Song"] = "Theramore_Fall_Cinematic_Music",
@@ -8145,7 +8161,847 @@ local GameMusic = {
     ["Length"] = 56,
     ["Artist"] =  "Pandaria (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [962]
+  }, -- [964]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Forgotten Bastions of Antiquity A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_AncientMogu_A_01.mp3",
+    ["Length"] = 128,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [965]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Forgotten Bastions of Antiquity C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_AncientMogu_A_02.mp3",
+    ["Length"] = 61,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [966]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Forgotten Bastions of Antiquity D",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_AncientMogu_A_03.mp3",
+    ["Length"] = 59,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [967]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Forgotten Bastions of Antiquity F",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_AncientMogu_A_04.mp3",
+    ["Length"] = 71,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [968]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Forgotten Bastions of Antiquity H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_AncientMogu_A_Hero_01.mp3",
+    ["Length"] = 133,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [969]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Mogu March B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_AncientMogu_B_01.mp3",
+    ["Length"] = 46,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [970]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Mogu March H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_AncientMogu_B_Hero_01.mp3",
+    ["Length"] = 58,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [971]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Mogu March Stinger",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_AncientMogu_B_Stinger_01.mp3",
+    ["Length"] = 9,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [972]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Mogu'Shan A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_AncientMogu_C_01.mp3",
+    ["Length"] = 83,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [973]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Mogu'Shan B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_AncientMogu_C_02.mp3",
+    ["Length"] = 78,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [974]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Mogu'Shan C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_AncientMogu_C_03.mp3",
+    ["Length"] = 26,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [975]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Mogu'Shan D",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_AncientMogu_C_04.mp3",
+    ["Length"] = 186,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [976]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Mogu'Shan F",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_AncientMogu_C_05.mp3",
+    ["Length"] = 155,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [977]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Mogu'Shan G",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_AncientMogu_C_06.mp3",
+    ["Length"] = 141,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [978]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Mogu'Shan H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_AncientMogu_C_Hero_01.mp3",
+    ["Length"] = 167,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [979]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Mogu'Shan Stinger 1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_AncientMogu_C_Stinger_01.mp3",
+    ["Length"] = 13,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [980]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Mogu'Shan Stinger 2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_AncientMogu_C_Stinger_02.mp3",
+    ["Length"] = 14,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [981]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Moguzhueng A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_AncientMogu_D_01.mp3",
+    ["Length"] = 112,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [982]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Moguzhueng B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_AncientMogu_D_02.mp3",
+    ["Length"] = 85,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [983]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Moguzhueng H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_AncientMogu_D_Hero_01.mp3",
+    ["Length"] = 117,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [984]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "AncientPandaria_Alt1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_AncientPandaria_A_01.mp3",
+    ["Length"] = 100,
+    ["Artist"] =  "Pandaria (Glenn Stafford)",
+    ["WoW"] = true,
+  }, -- [985]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "AncientPandaria_Full",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_AncientPandaria_Hero_01.mp3",
+    ["Length"] = 100,
+    ["Artist"] =  "Pandaria (Glenn Stafford)",
+    ["WoW"] = true,
+  }, -- [986]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "GodsAndMonsters",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_GodsAndMonster_01.mp3",
+    ["Length"] = 159,
+    ["Artist"] =  "Pandaria (Russell Brower, Glenn Stafford)",
+    ["WoW"] = true,
+  }, -- [987]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "It Is Done A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ItIsDone_A_01.mp3",
+    ["Length"] = 39,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [988]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "It Is Done B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ItIsDone_A_02.mp3",
+    ["Length"] = 46,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [989]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "It Is Done C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ItIsDone_A_03.mp3",
+    ["Length"] = 49,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [990]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "It Is Done D",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ItIsDone_A_04.mp3",
+    ["Length"] = 91,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [991]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "It Is Done H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ItIsDone_A_05.mp3",
+    ["Length"] = 53,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [992]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Mysterioso_Alt1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_Mysterioso_A_01.mp3",
+    ["Length"] = 74,
+    ["Artist"] =  "Pandaria (Jason Hayes, Glenn Stafford)",
+    ["WoW"] = true,
+  }, -- [993]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Mysterioso_Alt2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_Mysterioso_A_02.mp3",
+    ["Length"] = 74,
+    ["Artist"] =  "Pandaria (Jason Hayes, Glenn Stafford)",
+    ["WoW"] = true,
+  }, -- [994]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Mysterioso_Full",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_Mysterioso_Hero_01.mp3",
+    ["Length"] = 74,
+    ["Artist"] =  "Pandaria (Jason Hayes, Glenn Stafford)",
+    ["WoW"] = true,
+  }, -- [995]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "It Has Begun A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderIsle_A_01.mp3",
+    ["Length"] = 87,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [996]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "It Has Begun B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderIsle_A_02.mp3",
+    ["Length"] = 87,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [997]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "It Has Begun C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderIsle_A_03.mp3",
+    ["Length"] = 66,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [998]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "It Has Begun D",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderIsle_A_04.mp3",
+    ["Length"] = 22,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [999]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "It Has Begun E",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderIsle_A_05.mp3",
+    ["Length"] = 124,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1000]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "It Has Begun F",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderIsle_A_06.mp3",
+    ["Length"] = 60,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1001]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "It Has Begun G",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderIsle_A_07.mp3",
+    ["Length"] = 71,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1002]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "It Has Begun H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderIsle_A_Hero_01.mp3",
+    ["Length"] = 114,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1003]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "It Has Begun Stinger 1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderIsle_A_Stinger_01.mp3",
+    ["Length"] = 9,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1004]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "It Has Begun Stinger 2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderIsle_A_Stinger_02.mp3",
+    ["Length"] = 8,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1005]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "It Has Begun Stinger 3",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderIsle_A_Stinger_03.mp3",
+    ["Length"] = 6,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1006]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "It Has Begun Stinger 4",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderIsle_A_Stinger_04.mp3",
+    ["Length"] = 9,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1007]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Repose A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderIsle_B_01.mp3",
+    ["Length"] = 66,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1008]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Repose B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderIsle_B_02.mp3",
+    ["Length"] = 73,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1009]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Repose C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderIsle_B_03.mp3",
+    ["Length"] = 94,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1010]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Repose D",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderIsle_B_04.mp3",
+    ["Length"] = 106,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1011]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Repose E",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderIsle_B_05.mp3",
+    ["Length"] = 97,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1012]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Repose H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderIsle_B_Hero_01.mp3",
+    ["Length"] = 121,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1013]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Rolling Thunder A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderIsle_C_01.mp3",
+    ["Length"] = 95,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1014]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Rolling Thunder B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderIsle_C_02.mp3",
+    ["Length"] = 98,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1015]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Rolling Thunder C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderIsle_C_03.mp3",
+    ["Length"] = 119,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1016]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Rolling Thunder D",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderIsle_C_04.mp3",
+    ["Length"] = 48,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1017]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Rolling Thunder H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderIsle_C_Hero_01.mp3",
+    ["Length"] = 121,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1018]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Rolling Thunder Stinger 1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderIsle_C_Stinger_01.mp3",
+    ["Length"] = 11,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1019]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Rolling Thunder Stinger 2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderIsle_C_Stinger_02.mp3",
+    ["Length"] = 23,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1020]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Rolling Thunder Stinger 3",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderIsle_C_Stinger_03.mp3",
+    ["Length"] = 9,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1021]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Call Down the Thunder A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderKing_A_01.mp3",
+    ["Length"] = 42,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1022]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Call Down the Thunder B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderKing_A_02.mp3",
+    ["Length"] = 10,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1023]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Call Down the Thunder C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderKing_A_03.mp3",
+    ["Length"] = 56,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1024]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Call Down the Thunder H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderKing_A_Hero_01.mp3",
+    ["Length"] = 97,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1025]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Call Down the Thunder Stinger 1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderKing_A_Stinger_01.mp3",
+    ["Length"] = 8,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1026]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Call Down the Thunder Stinger 2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderKing_A_Stinger_02.mp3",
+    ["Length"] = 13,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1027]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Call Down the Thunder Stinger 3",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderKing_A_Stinger_03.mp3",
+    ["Length"] = 12,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1028]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Call Down the Thunder Stinger 4",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderKing_A_Stinger_04.mp3",
+    ["Length"] = 12,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1029]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Call Down the Thunder Stinger 5",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderKing_A_Stinger_05.mp3",
+    ["Length"] = 14,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1030]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Call Down the Thunder Stinger 6",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderKing_A_Stinger_06.mp3",
+    ["Length"] = 15,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1031]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Call Down the Thunder Stinger 7",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderKing_A_Stinger_07.mp3",
+    ["Length"] = 13,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1032]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Ozone A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderKing_B_01.mp3",
+    ["Length"] = 44,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1033]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Ozone H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ThunderKing_B_Hero_01.mp3",
+    ["Length"] = 44,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1034]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "TrollBattle_Full_Part1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_TrollBattle_A_01.mp3",
+    ["Length"] = 40,
+    ["Artist"] =  "Pandaria (Jason Hayes, Glenn Stafford)",
+    ["WoW"] = true,
+  }, -- [1035]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "TrollBattle_Full_Part2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_TrollBattle_A_02.mp3",
+    ["Length"] = 84,
+    ["Artist"] =  "Pandaria (Jason Hayes, Glenn Stafford)",
+    ["WoW"] = true,
+  }, -- [1036]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "TrollBattle_Full_Part3",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_TrollBattle_A_03.mp3",
+    ["Length"] = 56,
+    ["Artist"] =  "Pandaria (Jason Hayes, Glenn Stafford)",
+    ["WoW"] = true,
+  }, -- [1037]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "TrollBattle_Alt1_Part1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_TrollBattle_B_01.mp3",
+    ["Length"] = 41,
+    ["Artist"] =  "Pandaria (Jason Hayes, Glenn Stafford)",
+    ["WoW"] = true,
+  }, -- [1038]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "TrollBattle_Alt1_Part2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_TrollBattle_B_02.mp3",
+    ["Length"] = 80,
+    ["Artist"] =  "Pandaria (Jason Hayes, Glenn Stafford)",
+    ["WoW"] = true,
+  }, -- [1039]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "TrollBattle_Alt1_Part3",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_TrollBattle_B_03.mp3",
+    ["Length"] = 54,
+    ["Artist"] =  "Pandaria (Jason Hayes, Glenn Stafford)",
+    ["WoW"] = true,
+  }, -- [1040]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Troves of the Thunder King",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_TrovesOfTheThunderKing_01.mp3",
+    ["Length"] = 309,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1041]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Wrathion_Full_Part2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_Wrathion_A_02.mp3",
+    ["Length"] = 36,
+    ["Artist"] =  "Pandaria (Glenn Stafford, Jason Hayes)",
+    ["WoW"] = true,
+  }, -- [1042]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Wrathion_Full_Part3",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_Wrathion_A_03.mp3",
+    ["Length"] = 65,
+    ["Artist"] =  "Pandaria (Glenn Stafford, Jason Hayes)",
+    ["WoW"] = true,
+  }, -- [1043]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Wrathion_Full",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_Wrathion_A_Hero_01.mp3",
+    ["Length"] = 159,
+    ["Artist"] =  "Pandaria (Glenn Stafford, Jason Hayes)",
+    ["WoW"] = true,
+  }, -- [1044]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Wrathion_Alt1_Part1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_Wrathion_B_01.mp3",
+    ["Length"] = 79,
+    ["Artist"] =  "Pandaria (Glenn Stafford, Jason Hayes)",
+    ["WoW"] = true,
+  }, -- [1045]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Wrathion_Alt1_Part2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_Wrathion_B_02.mp3",
+    ["Length"] = 39,
+    ["Artist"] =  "Pandaria (Glenn Stafford, Jason Hayes)",
+    ["WoW"] = true,
+  }, -- [1046]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Wrathion_Alt1_Part3",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_Wrathion_B_03.mp3",
+    ["Length"] = 65,
+    ["Artist"] =  "Pandaria (Glenn Stafford, Jason Hayes)",
+    ["WoW"] = true,
+  }, -- [1047]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Zandalari_Prophecy",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_ZandalariProphecy_01.mp3",
+    ["Length"] = 170,
+    ["Artist"] =  "Pandaria (Jason Hayes, Glenn Stafford)",
+    ["WoW"] = true,
+  }, -- [1048]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Zandalari1_Full_Part1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_Zandalari_1_A_01.mp3",
+    ["Length"] = 72,
+    ["Artist"] =  "Pandaria (Jason Hayes, Glenn Stafford)",
+    ["WoW"] = true,
+  }, -- [1049]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Zandalari1_Full_Part2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_Zandalari_1_A_02.mp3",
+    ["Length"] = 80,
+    ["Artist"] =  "Pandaria (Jason Hayes, Glenn Stafford)",
+    ["WoW"] = true,
+  }, -- [1050]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Zandalari1_Full_Part3",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_Zandalari_1_A_03.mp3",
+    ["Length"] = 75,
+    ["Artist"] =  "Pandaria (Jason Hayes, Glenn Stafford)",
+    ["WoW"] = true,
+  }, -- [1051]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Zandalari1_Alt_Part1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_Zandalari_1_B_01.mp3",
+    ["Length"] = 72,
+    ["Artist"] =  "Pandaria (Jason Hayes, Glenn Stafford)",
+    ["WoW"] = true,
+  }, -- [1052]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Zandalari1_Alt_Part2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_Zandalari_1_B_02.mp3",
+    ["Length"] = 80,
+    ["Artist"] =  "Pandaria (Jason Hayes, Glenn Stafford)",
+    ["WoW"] = true,
+  }, -- [1053]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Zandalari1_Alt_Part3",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_Zandalari_1_B_03.mp3",
+    ["Length"] = 74,
+    ["Artist"] =  "Pandaria (Jason Hayes, Glenn Stafford)",
+    ["WoW"] = true,
+  }, -- [1054]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Zandalari1_Alt2_Part1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_Zandalari_1_C_01.mp3",
+    ["Length"] = 64,
+    ["Artist"] =  "Pandaria (Jason Hayes, Glenn Stafford)",
+    ["WoW"] = true,
+  }, -- [1055]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Zandalari1_Alt2_Part2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_Zandalari_1_C_02.mp3",
+    ["Length"] = 79,
+    ["Artist"] =  "Pandaria (Jason Hayes, Glenn Stafford)",
+    ["WoW"] = true,
+  }, -- [1056]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Zandalari2_Full_Part1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_Zandalari_2_A_01.mp3",
+    ["Length"] = 77,
+    ["Artist"] =  "Pandaria (Jason Hayes, Glenn Stafford)",
+    ["WoW"] = true,
+  }, -- [1057]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Zandalari2_Full_Part2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_Zandalari_2_A_02.mp3",
+    ["Length"] = 50,
+    ["Artist"] =  "Pandaria (Jason Hayes, Glenn Stafford)",
+    ["WoW"] = true,
+  }, -- [1058]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Zandalari2_Full_Part3",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_Zandalari_2_A_03.mp3",
+    ["Length"] = 38,
+    ["Artist"] =  "Pandaria (Jason Hayes, Glenn Stafford)",
+    ["WoW"] = true,
+  }, -- [1059]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Zandalari2_Full_Part4",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_Zandalari_2_A_04.mp3",
+    ["Length"] = 49,
+    ["Artist"] =  "Pandaria (Jason Hayes, Glenn Stafford)",
+    ["WoW"] = true,
+  }, -- [1060]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Zandalari2_Full_Part5",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_Zandalari_2_A_05.mp3",
+    ["Length"] = 64,
+    ["Artist"] =  "Pandaria (Jason Hayes, Glenn Stafford)",
+    ["WoW"] = true,
+  }, -- [1061]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Zandalari2_Alt_Part1&2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_Zandalari_2_B_01.mp3",
+    ["Length"] = 118,
+    ["Artist"] =  "Pandaria (Jason Hayes, Glenn Stafford)",
+    ["WoW"] = true,
+  }, -- [1062]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Zandalari2_Alt_Part4",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_Zandalari_2_B_02.mp3",
+    ["Length"] = 46,
+    ["Artist"] =  "Pandaria (Jason Hayes, Glenn Stafford)",
+    ["WoW"] = true,
+  }, -- [1063]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Zandalari2_Alt_Part5",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_Zandalari_2_B_03.mp3",
+    ["Length"] = 64,
+    ["Artist"] =  "Pandaria (Jason Hayes, Glenn Stafford)",
+    ["WoW"] = true,
+  }, -- [1064]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Zandalari2_Alt2_Part1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_Zandalari_2_C_01.mp3",
+    ["Length"] = 77,
+    ["Artist"] =  "Pandaria (Jason Hayes, Glenn Stafford)",
+    ["WoW"] = true,
+  }, -- [1065]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Zandalari2_Alt2_Part2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_Zandalari_2_C_02.mp3",
+    ["Length"] = 50,
+    ["Artist"] =  "Pandaria (Jason Hayes, Glenn Stafford)",
+    ["WoW"] = true,
+  }, -- [1066]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Zandalari2_Alt2_Part3",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_52_Zandalari_2_C_03.mp3",
+    ["Length"] = 33,
+    ["Artist"] =  "Pandaria (Jason Hayes, Glenn Stafford)",
+    ["WoW"] = true,
+  }, -- [1067]
+  {
+    ["Album"] = "WoW 5.3",
+    ["Song"] = "The Emperor Is Revealed",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_53_EmperorRevealed.mp3",
+    ["Length"] = 139,
+    ["Artist"] =  "Pandaria (Russell Brower)",
+    ["WoW"] = true,
+  }, -- [1068]
+  {
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Wrathion_Alt2_Part2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_53_Wrathion_C_02.mp3",
+    ["Length"] = 45,
+    ["Artist"] =  "Pandaria (Glenn Stafford, Jason Hayes)",
+    ["WoW"] = true,
+  }, -- [1069]
   {
     ["Album"] = "",
     ["Song"] = "Toy Trumpet in the Basement H",
@@ -8153,7 +9009,7 @@ local GameMusic = {
     ["Length"] = 93,
     ["Artist"] =  "PetBattles",
     ["WoW"] = true,
-  }, -- [963]
+  }, -- [1070]
   {
     ["Album"] = "",
     ["Song"] = "PB-W2-Human1",
@@ -8161,7 +9017,7 @@ local GameMusic = {
     ["Length"] = 128,
     ["Artist"] =  "PetBattles",
     ["WoW"] = true,
-  }, -- [964]
+  }, -- [1071]
   {
     ["Album"] = "",
     ["Song"] = "PB-W2-Human2",
@@ -8169,7 +9025,7 @@ local GameMusic = {
     ["Length"] = 110,
     ["Artist"] =  "PetBattles",
     ["WoW"] = true,
-  }, -- [965]
+  }, -- [1072]
   {
     ["Album"] = "",
     ["Song"] = "PB-W2-Human3",
@@ -8177,7 +9033,7 @@ local GameMusic = {
     ["Length"] = 112,
     ["Artist"] =  "PetBattles",
     ["WoW"] = true,
-  }, -- [966]
+  }, -- [1073]
   {
     ["Album"] = "",
     ["Song"] = "PB-W2-Human4",
@@ -8185,7 +9041,7 @@ local GameMusic = {
     ["Length"] = 158,
     ["Artist"] =  "PetBattles",
     ["WoW"] = true,
-  }, -- [967]
+  }, -- [1074]
   {
     ["Album"] = "",
     ["Song"] = "PB-W2-HumanVictory",
@@ -8193,7 +9049,7 @@ local GameMusic = {
     ["Length"] = 16,
     ["Artist"] =  "PetBattles",
     ["WoW"] = true,
-  }, -- [968]
+  }, -- [1075]
   {
     ["Album"] = "",
     ["Song"] = "PB-W2-HumanWarRoom",
@@ -8201,7 +9057,7 @@ local GameMusic = {
     ["Length"] = 47,
     ["Artist"] =  "PetBattles",
     ["WoW"] = true,
-  }, -- [969]
+  }, -- [1076]
   {
     ["Album"] = "",
     ["Song"] = "PB-W2-Orc1",
@@ -8209,7 +9065,7 @@ local GameMusic = {
     ["Length"] = 106,
     ["Artist"] =  "PetBattles",
     ["WoW"] = true,
-  }, -- [970]
+  }, -- [1077]
   {
     ["Album"] = "",
     ["Song"] = "PB-W2-Orc2",
@@ -8217,7 +9073,7 @@ local GameMusic = {
     ["Length"] = 122,
     ["Artist"] =  "PetBattles",
     ["WoW"] = true,
-  }, -- [971]
+  }, -- [1078]
   {
     ["Album"] = "",
     ["Song"] = "PB-W2-Orc3",
@@ -8225,7 +9081,7 @@ local GameMusic = {
     ["Length"] = 124,
     ["Artist"] =  "PetBattles",
     ["WoW"] = true,
-  }, -- [972]
+  }, -- [1079]
   {
     ["Album"] = "",
     ["Song"] = "PB-W2-Orc4",
@@ -8233,7 +9089,7 @@ local GameMusic = {
     ["Length"] = 121,
     ["Artist"] =  "PetBattles",
     ["WoW"] = true,
-  }, -- [973]
+  }, -- [1080]
   {
     ["Album"] = "",
     ["Song"] = "PB-W2-OrcVictory",
@@ -8241,7 +9097,7 @@ local GameMusic = {
     ["Length"] = 19,
     ["Artist"] =  "PetBattles",
     ["WoW"] = true,
-  }, -- [974]
+  }, -- [1081]
   {
     ["Album"] = "",
     ["Song"] = "PB-W2-OrcWarRoom",
@@ -8249,7 +9105,7 @@ local GameMusic = {
     ["Length"] = 35,
     ["Artist"] =  "PetBattles",
     ["WoW"] = true,
-  }, -- [975]
+  }, -- [1082]
   {
     ["Album"] = "World of Warcraft",
     ["Song"] = "DMFaire_1",
@@ -8257,7 +9113,7 @@ local GameMusic = {
     ["Length"] = 28,
     ["Artist"] =  "WorldEvents (D. Arkenstone/R.Brower)",
     ["WoW"] = true,
-  }, -- [976]
+  }, -- [1083]
   {
     ["Album"] = "World of Warcraft",
     ["Song"] = "DMFaire_2",
@@ -8265,7 +9121,7 @@ local GameMusic = {
     ["Length"] = 74,
     ["Artist"] =  "WorldEvents (D. Arkenstone/R.Brower)",
     ["WoW"] = true,
-  }, -- [977]
+  }, -- [1084]
   {
     ["Album"] = "World of Warcraft",
     ["Song"] = "DMFaire_3",
@@ -8273,7 +9129,7 @@ local GameMusic = {
     ["Length"] = 58,
     ["Artist"] =  "WorldEvents (D. Arkenstone/R.Brower)",
     ["WoW"] = true,
-  }, -- [978]
+  }, -- [1085]
   {
     ["Album"] = "World of Warcraft",
     ["Song"] = "DMFaire_4",
@@ -8281,7 +9137,7 @@ local GameMusic = {
     ["Length"] = 37,
     ["Artist"] =  "WorldEvents (D. Arkenstone/R.Brower)",
     ["WoW"] = true,
-  }, -- [979]
+  }, -- [1086]
   {
     ["Album"] = "Burning Crusade",
     ["Song"] = "Fire Festival",
@@ -8289,7 +9145,7 @@ local GameMusic = {
     ["Length"] = 72,
     ["Artist"] =  "WorldEvents (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [980]
+  }, -- [1087]
   {
     ["Album"] = "WoW 1.9",
     ["Song"] = "Ahn Qiraj Exterior Walking 1",
@@ -8297,7 +9153,7 @@ local GameMusic = {
     ["Length"] = 67,
     ["Artist"] =  "AhnQiraj (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [981]
+  }, -- [1088]
   {
     ["Album"] = "WoW 1.9",
     ["Song"] = "Ahn Qiraj Exterior 2",
@@ -8305,7 +9161,7 @@ local GameMusic = {
     ["Length"] = 84,
     ["Artist"] =  "AhnQiraj (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [982]
+  }, -- [1089]
   {
     ["Album"] = "WoW 1.9",
     ["Song"] = "Ahn Qiraj Exterior 3",
@@ -8313,7 +9169,7 @@ local GameMusic = {
     ["Length"] = 58,
     ["Artist"] =  "AhnQiraj (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [983]
+  }, -- [1090]
   {
     ["Album"] = "WoW 1.9",
     ["Song"] = "Ahn Qiraj Exterior 4",
@@ -8321,7 +9177,7 @@ local GameMusic = {
     ["Length"] = 59,
     ["Artist"] =  "AhnQiraj (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [984]
+  }, -- [1091]
   {
     ["Album"] = "",
     ["Song"] = "AQBreath1",
@@ -8329,7 +9185,7 @@ local GameMusic = {
     ["Length"] = 52,
     ["Artist"] =  "AhnQiraj",
     ["WoW"] = true,
-  }, -- [985]
+  }, -- [1092]
   {
     ["Album"] = "",
     ["Song"] = "AQBreath2",
@@ -8337,7 +9193,7 @@ local GameMusic = {
     ["Length"] = 81,
     ["Artist"] =  "AhnQiraj",
     ["WoW"] = true,
-  }, -- [986]
+  }, -- [1093]
   {
     ["Album"] = "",
     ["Song"] = "AQBreath3",
@@ -8345,7 +9201,7 @@ local GameMusic = {
     ["Length"] = 67,
     ["Artist"] =  "AhnQiraj",
     ["WoW"] = true,
-  }, -- [987]
+  }, -- [1094]
   {
     ["Album"] = "WoW 1.9",
     ["Song"] = "AhnQirajInteriorCenterRoom1",
@@ -8353,7 +9209,7 @@ local GameMusic = {
     ["Length"] = 69,
     ["Artist"] =  "AhnQiraj (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [988]
+  }, -- [1095]
   {
     ["Album"] = "",
     ["Song"] = "Fireflies1",
@@ -8361,7 +9217,7 @@ local GameMusic = {
     ["Length"] = 69,
     ["Artist"] =  "AhnQiraj",
     ["WoW"] = true,
-  }, -- [989]
+  }, -- [1096]
   {
     ["Album"] = "WoW 1.9",
     ["Song"] = "AQKingRoom",
@@ -8369,7 +9225,7 @@ local GameMusic = {
     ["Length"] = 73,
     ["Artist"] =  "AhnQiraj (Russell Brower)",
     ["WoW"] = true,
-  }, -- [990]
+  }, -- [1097]
   {
     ["Album"] = "WoW 1.9",
     ["Song"] = "AQTriangle1",
@@ -8377,7 +9233,7 @@ local GameMusic = {
     ["Length"] = 23,
     ["Artist"] =  "AhnQiraj (Russell Brower)",
     ["WoW"] = true,
-  }, -- [991]
+  }, -- [1098]
   {
     ["Album"] = "WoW 1.9",
     ["Song"] = "AQTriangle2",
@@ -8385,7 +9241,7 @@ local GameMusic = {
     ["Length"] = 17,
     ["Artist"] =  "AhnQiraj (Russell Brower)",
     ["WoW"] = true,
-  }, -- [992]
+  }, -- [1099]
   {
     ["Album"] = "WoW 1.9",
     ["Song"] = "AQTriangle3",
@@ -8393,7 +9249,7 @@ local GameMusic = {
     ["Length"] = 15,
     ["Artist"] =  "AhnQiraj (Russell Brower)",
     ["WoW"] = true,
-  }, -- [993]
+  }, -- [1100]
   {
     ["Album"] = "WoW 1.9",
     ["Song"] = "AQTriangle4",
@@ -8401,7 +9257,7 @@ local GameMusic = {
     ["Length"] = 19,
     ["Artist"] =  "AhnQiraj (Russell Brower)",
     ["WoW"] = true,
-  }, -- [994]
+  }, -- [1101]
   {
     ["Album"] = "WoW 1.9",
     ["Song"] = "AQTriangle5",
@@ -8409,7 +9265,7 @@ local GameMusic = {
     ["Length"] = 31,
     ["Artist"] =  "AhnQiraj (Russell Brower)",
     ["WoW"] = true,
-  }, -- [995]
+  }, -- [1102]
   {
     ["Album"] = "WoW 1.9",
     ["Song"] = "AQTriangle6",
@@ -8417,7 +9273,7 @@ local GameMusic = {
     ["Length"] = 20,
     ["Artist"] =  "AhnQiraj (Russell Brower)",
     ["WoW"] = true,
-  }, -- [996]
+  }, -- [1103]
   {
     ["Album"] = "WoW 1.9",
     ["Song"] = "AQTriangle7",
@@ -8425,7 +9281,7 @@ local GameMusic = {
     ["Length"] = 17,
     ["Artist"] =  "AhnQiraj (Russell Brower)",
     ["WoW"] = true,
-  }, -- [997]
+  }, -- [1104]
   {
     ["Album"] = "WoW 3.2 Call of the Crusade",
     ["Song"] = "TourneyBattle1",
@@ -8433,7 +9289,7 @@ local GameMusic = {
     ["Length"] = 145,
     ["Artist"] =  "ArgentColiseum (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [998]
+  }, -- [1105]
   {
     ["Album"] = "WoW 3.2 Call of the Crusade",
     ["Song"] = "TourneyBattle2",
@@ -8441,7 +9297,7 @@ local GameMusic = {
     ["Length"] = 185,
     ["Artist"] =  "ArgentColiseum (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [999]
+  }, -- [1106]
   {
     ["Album"] = "WoW 3.2 Call of the Crusade",
     ["Song"] = "TourneyBattle3",
@@ -8449,7 +9305,7 @@ local GameMusic = {
     ["Length"] = 162,
     ["Artist"] =  "ArgentColiseum (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1000]
+  }, -- [1107]
   {
     ["Album"] = "WoW 3.2 Call of the Crusade",
     ["Song"] = "TourneyBattle4",
@@ -8457,7 +9313,7 @@ local GameMusic = {
     ["Length"] = 160,
     ["Artist"] =  "ArgentColiseum (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1001]
+  }, -- [1108]
   {
     ["Album"] = "WoW 3.2 Call of the Crusade",
     ["Song"] = "TourneyBattle5",
@@ -8465,7 +9321,7 @@ local GameMusic = {
     ["Length"] = 193,
     ["Artist"] =  "ArgentColiseum (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1002]
+  }, -- [1109]
   {
     ["Album"] = "WoW 3.2 Call of the Crusade",
     ["Song"] = "TourneyBattle6",
@@ -8473,7 +9329,7 @@ local GameMusic = {
     ["Length"] = 185,
     ["Artist"] =  "ArgentColiseum (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1003]
+  }, -- [1110]
   {
     ["Album"] = "WoW 3.1 Argent Crusade Tournament",
     ["Song"] = "Herald",
@@ -8481,7 +9337,7 @@ local GameMusic = {
     ["Length"] = 13,
     ["Artist"] =  "ArgentTournament (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1004]
+  }, -- [1111]
   {
     ["Album"] = "WoW 3.1 Argent Crusade Tournament",
     ["Song"] = "Tourney 1",
@@ -8489,7 +9345,7 @@ local GameMusic = {
     ["Length"] = 156,
     ["Artist"] =  "ArgentTournament (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1005]
+  }, -- [1112]
   {
     ["Album"] = "WoW 3.1 Argent Crusade Tournament",
     ["Song"] = "Tourney 2",
@@ -8497,7 +9353,7 @@ local GameMusic = {
     ["Length"] = 157,
     ["Artist"] =  "ArgentTournament (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1006]
+  }, -- [1113]
   {
     ["Album"] = "WoW 3.1 Argent Crusade Tournament",
     ["Song"] = "Tourney 3",
@@ -8505,7 +9361,7 @@ local GameMusic = {
     ["Length"] = 162,
     ["Artist"] =  "ArgentTournament (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1007]
+  }, -- [1114]
   {
     ["Album"] = "WoW 3.1 Argent Crusade Tournament",
     ["Song"] = "Tourney 5",
@@ -8513,7 +9369,7 @@ local GameMusic = {
     ["Length"] = 164,
     ["Artist"] =  "ArgentTournament (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1008]
+  }, -- [1115]
   {
     ["Album"] = "WoW 3.1 Argent Crusade Tournament",
     ["Song"] = "Tourney 6",
@@ -8521,7 +9377,7 @@ local GameMusic = {
     ["Length"] = 144,
     ["Artist"] =  "ArgentTournament (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1009]
+  }, -- [1116]
   {
     ["Album"] = "WoW 3.1 Argent Crusade Tournament",
     ["Song"] = "Tourney 7",
@@ -8529,7 +9385,7 @@ local GameMusic = {
     ["Length"] = 185,
     ["Artist"] =  "ArgentTournament (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1010]
+  }, -- [1117]
   {
     ["Album"] = "WoW 3.1 Argent Crusade Tournament",
     ["Song"] = "Tourney 8",
@@ -8537,7 +9393,7 @@ local GameMusic = {
     ["Length"] = 189,
     ["Artist"] =  "ArgentTournament (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1011]
+  }, -- [1118]
   {
     ["Album"] = "WoW 3.1 Argent Crusade Tournament",
     ["Song"] = "Tourney 9",
@@ -8545,7 +9401,7 @@ local GameMusic = {
     ["Length"] = 151,
     ["Artist"] =  "ArgentTournament (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1012]
+  }, -- [1119]
   {
     ["Album"] = "WoW 3.1 Argent Crusade Tournament",
     ["Song"] = "Tourney 10",
@@ -8553,7 +9409,7 @@ local GameMusic = {
     ["Length"] = 151,
     ["Artist"] =  "ArgentTournament (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1013]
+  }, -- [1120]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "AN_GeneralIntro_01",
@@ -8561,7 +9417,7 @@ local GameMusic = {
     ["Length"] = 62,
     ["Artist"] =  "AzjolNerub (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1014]
+  }, -- [1121]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "AN_GeneralIntro_02",
@@ -8569,7 +9425,7 @@ local GameMusic = {
     ["Length"] = 98,
     ["Artist"] =  "AzjolNerub (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1015]
+  }, -- [1122]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "AN_GeneralIntro_03",
@@ -8577,7 +9433,7 @@ local GameMusic = {
     ["Length"] = 111,
     ["Artist"] =  "AzjolNerub (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1016]
+  }, -- [1123]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "AN_GeneralIntro_04",
@@ -8585,7 +9441,7 @@ local GameMusic = {
     ["Length"] = 62,
     ["Artist"] =  "AzjolNerub (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1017]
+  }, -- [1124]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "AN_GeneralIntro_05",
@@ -8593,7 +9449,7 @@ local GameMusic = {
     ["Length"] = 76,
     ["Artist"] =  "AzjolNerub (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1018]
+  }, -- [1125]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "AN_GeneralIntro_06",
@@ -8601,7 +9457,7 @@ local GameMusic = {
     ["Length"] = 107,
     ["Artist"] =  "AzjolNerub (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1019]
+  }, -- [1126]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "AN_GeneralIntro_07",
@@ -8609,7 +9465,7 @@ local GameMusic = {
     ["Length"] = 107,
     ["Artist"] =  "AzjolNerub (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1020]
+  }, -- [1127]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "AN_GeneralIntro_08",
@@ -8617,7 +9473,7 @@ local GameMusic = {
     ["Length"] = 104,
     ["Artist"] =  "AzjolNerub (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1021]
+  }, -- [1128]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "AN_GeneralWalk_01",
@@ -8625,7 +9481,7 @@ local GameMusic = {
     ["Length"] = 61,
     ["Artist"] =  "AzjolNerub (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1022]
+  }, -- [1129]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "AN_GeneralWalk_02",
@@ -8633,7 +9489,7 @@ local GameMusic = {
     ["Length"] = 98,
     ["Artist"] =  "AzjolNerub (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1023]
+  }, -- [1130]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "AN_GeneralWalk_03",
@@ -8641,7 +9497,7 @@ local GameMusic = {
     ["Length"] = 110,
     ["Artist"] =  "AzjolNerub (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1024]
+  }, -- [1131]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "AN_GeneralWalk_04",
@@ -8649,7 +9505,7 @@ local GameMusic = {
     ["Length"] = 63,
     ["Artist"] =  "AzjolNerub (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1025]
+  }, -- [1132]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "AN_GeneralWalk_05",
@@ -8657,7 +9513,7 @@ local GameMusic = {
     ["Length"] = 76,
     ["Artist"] =  "AzjolNerub (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1026]
+  }, -- [1133]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "AN_GeneralWalk_06",
@@ -8665,7 +9521,7 @@ local GameMusic = {
     ["Length"] = 104,
     ["Artist"] =  "AzjolNerub (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1027]
+  }, -- [1134]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "AN_GeneralWalk_07",
@@ -8673,7 +9529,7 @@ local GameMusic = {
     ["Length"] = 62,
     ["Artist"] =  "AzjolNerub (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1028]
+  }, -- [1135]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "AN_GeneralWalk_08",
@@ -8681,7 +9537,7 @@ local GameMusic = {
     ["Length"] = 62,
     ["Artist"] =  "AzjolNerub (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1029]
+  }, -- [1136]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "AN_GeneralWalk_09",
@@ -8689,7 +9545,7 @@ local GameMusic = {
     ["Length"] = 98,
     ["Artist"] =  "AzjolNerub (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1030]
+  }, -- [1137]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "AN_GeneralWalk_10",
@@ -8697,7 +9553,7 @@ local GameMusic = {
     ["Length"] = 98,
     ["Artist"] =  "AzjolNerub (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1031]
+  }, -- [1138]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "AN_GeneralWalk_11",
@@ -8705,7 +9561,7 @@ local GameMusic = {
     ["Length"] = 111,
     ["Artist"] =  "AzjolNerub (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1032]
+  }, -- [1139]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "AN_GeneralWalk_12",
@@ -8713,7 +9569,7 @@ local GameMusic = {
     ["Length"] = 110,
     ["Artist"] =  "AzjolNerub (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1033]
+  }, -- [1140]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "AN_GeneralWalk_13",
@@ -8721,7 +9577,7 @@ local GameMusic = {
     ["Length"] = 63,
     ["Artist"] =  "AzjolNerub (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1034]
+  }, -- [1141]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "AN_GeneralWalk_14",
@@ -8729,7 +9585,7 @@ local GameMusic = {
     ["Length"] = 63,
     ["Artist"] =  "AzjolNerub (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1035]
+  }, -- [1142]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "AN_GeneralWalk_15",
@@ -8737,7 +9593,7 @@ local GameMusic = {
     ["Length"] = 76,
     ["Artist"] =  "AzjolNerub (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1036]
+  }, -- [1143]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "AN_GeneralWalk_16",
@@ -8745,7 +9601,7 @@ local GameMusic = {
     ["Length"] = 77,
     ["Artist"] =  "AzjolNerub (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1037]
+  }, -- [1144]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "AI_DraeneiWalkUni05",
@@ -8753,7 +9609,7 @@ local GameMusic = {
     ["Length"] = 191,
     ["Artist"] =  "Azuremyst (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1038]
+  }, -- [1145]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "AV_DraeneiWalkUni06",
@@ -8761,7 +9617,7 @@ local GameMusic = {
     ["Length"] = 110,
     ["Artist"] =  "Azuremyst (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1039]
+  }, -- [1146]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "AI_DraeneiWalkUni07",
@@ -8769,7 +9625,7 @@ local GameMusic = {
     ["Length"] = 110,
     ["Artist"] =  "Azuremyst (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1040]
+  }, -- [1147]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "AI_DraeneiWalkUni08",
@@ -8777,7 +9633,7 @@ local GameMusic = {
     ["Length"] = 99,
     ["Artist"] =  "Azuremyst (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1041]
+  }, -- [1148]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "AI_ExodarIntro01",
@@ -8785,7 +9641,7 @@ local GameMusic = {
     ["Length"] = 82,
     ["Artist"] =  "Azuremyst (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1042]
+  }, -- [1149]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "AI_ExodarWalkUni01",
@@ -8793,7 +9649,7 @@ local GameMusic = {
     ["Length"] = 109,
     ["Artist"] =  "Azuremyst (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1043]
+  }, -- [1150]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "AI_ExodarWalkUni02",
@@ -8801,7 +9657,7 @@ local GameMusic = {
     ["Length"] = 107,
     ["Artist"] =  "Azuremyst (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1044]
+  }, -- [1151]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "AI_ExodarWalkUni03",
@@ -8809,7 +9665,7 @@ local GameMusic = {
     ["Length"] = 93,
     ["Artist"] =  "Azuremyst (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1045]
+  }, -- [1152]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "AI_NagaWalkUni01",
@@ -8817,7 +9673,7 @@ local GameMusic = {
     ["Length"] = 103,
     ["Artist"] =  "Azuremyst (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1046]
+  }, -- [1153]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "AI_NagaWalkUni02",
@@ -8825,7 +9681,7 @@ local GameMusic = {
     ["Length"] = 74,
     ["Artist"] =  "Azuremyst (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1047]
+  }, -- [1154]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "AI_NagaWalkUni03",
@@ -8833,7 +9689,7 @@ local GameMusic = {
     ["Length"] = 150,
     ["Artist"] =  "Azuremyst (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1048]
+  }, -- [1155]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "AI_NagaWalkUni04",
@@ -8841,7 +9697,7 @@ local GameMusic = {
     ["Length"] = 73,
     ["Artist"] =  "Azuremyst (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1049]
+  }, -- [1156]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "AI_NagaWalkUni05",
@@ -8849,7 +9705,7 @@ local GameMusic = {
     ["Length"] = 98,
     ["Artist"] =  "Azuremyst (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1050]
+  }, -- [1157]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "AI_OwlkinWalkUni01",
@@ -8857,7 +9713,7 @@ local GameMusic = {
     ["Length"] = 49,
     ["Artist"] =  "Azuremyst (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1051]
+  }, -- [1158]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "AI_OwlkinWalkUni02",
@@ -8865,7 +9721,7 @@ local GameMusic = {
     ["Length"] = 45,
     ["Artist"] =  "Azuremyst (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1052]
+  }, -- [1159]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "AV_DraeneiWalkUni01",
@@ -8873,7 +9729,7 @@ local GameMusic = {
     ["Length"] = 206,
     ["Artist"] =  "Azuremyst (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1053]
+  }, -- [1160]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "AV_DraeneiWalkUni02",
@@ -8881,7 +9737,7 @@ local GameMusic = {
     ["Length"] = 124,
     ["Artist"] =  "Azuremyst (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1054]
+  }, -- [1161]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "AV_DraeneiWalkUni02",
@@ -8889,7 +9745,7 @@ local GameMusic = {
     ["Length"] = 129,
     ["Artist"] =  "Azuremyst (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1055]
+  }, -- [1162]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "AV_DraeneiWalkUni03",
@@ -8897,7 +9753,7 @@ local GameMusic = {
     ["Length"] = 188,
     ["Artist"] =  "Azuremyst (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1056]
+  }, -- [1163]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "AV_DraeneiWalkUni03",
@@ -8905,7 +9761,7 @@ local GameMusic = {
     ["Length"] = 188,
     ["Artist"] =  "Azuremyst (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1057]
+  }, -- [1164]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "AV_DraeneiWalkUni04",
@@ -8913,7 +9769,7 @@ local GameMusic = {
     ["Length"] = 158,
     ["Artist"] =  "Azuremyst (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1058]
+  }, -- [1165]
   {
     ["Album"] = "",
     ["Song"] = "DayBarrenDry01",
@@ -8921,7 +9777,7 @@ local GameMusic = {
     ["Length"] = 64,
     ["Artist"] =  "BarrenDry",
     ["WoW"] = true,
-  }, -- [1059]
+  }, -- [1166]
   {
     ["Album"] = "",
     ["Song"] = "DayBarrenDry02",
@@ -8929,7 +9785,7 @@ local GameMusic = {
     ["Length"] = 64,
     ["Artist"] =  "BarrenDry",
     ["WoW"] = true,
-  }, -- [1060]
+  }, -- [1167]
   {
     ["Album"] = "World of Warcraft",
     ["Song"] = "DayBarrenDry03",
@@ -8937,7 +9793,7 @@ local GameMusic = {
     ["Length"] = 55,
     ["Artist"] =  "BarrenDry (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1061]
+  }, -- [1168]
   {
     ["Album"] = "",
     ["Song"] = "NightBarrenDry01",
@@ -8945,7 +9801,7 @@ local GameMusic = {
     ["Length"] = 67,
     ["Artist"] =  "BarrenDry",
     ["WoW"] = true,
-  }, -- [1062]
+  }, -- [1169]
   {
     ["Album"] = "",
     ["Song"] = "NightBarrenDry02",
@@ -8953,7 +9809,7 @@ local GameMusic = {
     ["Length"] = 41,
     ["Artist"] =  "BarrenDry",
     ["WoW"] = true,
-  }, -- [1063]
+  }, -- [1170]
   {
     ["Album"] = "",
     ["Song"] = "NightBarrenDry03",
@@ -8961,7 +9817,7 @@ local GameMusic = {
     ["Length"] = 47,
     ["Artist"] =  "BarrenDry",
     ["WoW"] = true,
-  }, -- [1064]
+  }, -- [1171]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Arrival_1",
@@ -8969,7 +9825,7 @@ local GameMusic = {
     ["Length"] = 164,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1065]
+  }, -- [1172]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Arrival_2",
@@ -8977,7 +9833,7 @@ local GameMusic = {
     ["Length"] = 81,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1066]
+  }, -- [1173]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Arrival_3",
@@ -8985,7 +9841,7 @@ local GameMusic = {
     ["Length"] = 74,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1067]
+  }, -- [1174]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Arrival_4",
@@ -8993,7 +9849,7 @@ local GameMusic = {
     ["Length"] = 64,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1068]
+  }, -- [1175]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Gates_1",
@@ -9001,7 +9857,7 @@ local GameMusic = {
     ["Length"] = 61,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1069]
+  }, -- [1176]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Gates_2",
@@ -9009,7 +9865,7 @@ local GameMusic = {
     ["Length"] = 71,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1070]
+  }, -- [1177]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Gates_3",
@@ -9017,7 +9873,7 @@ local GameMusic = {
     ["Length"] = 78,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1071]
+  }, -- [1178]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Gates_4",
@@ -9025,7 +9881,7 @@ local GameMusic = {
     ["Length"] = 91,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1072]
+  }, -- [1179]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Gates_5",
@@ -9033,7 +9889,7 @@ local GameMusic = {
     ["Length"] = 90,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1073]
+  }, -- [1180]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Gates_6",
@@ -9041,7 +9897,7 @@ local GameMusic = {
     ["Length"] = 29,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1074]
+  }, -- [1181]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Gates_7",
@@ -9049,7 +9905,7 @@ local GameMusic = {
     ["Length"] = 78,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1075]
+  }, -- [1182]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Gates_8",
@@ -9057,7 +9913,7 @@ local GameMusic = {
     ["Length"] = 65,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1076]
+  }, -- [1183]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Gates_10",
@@ -9065,7 +9921,7 @@ local GameMusic = {
     ["Length"] = 75,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1077]
+  }, -- [1184]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Gates_11",
@@ -9073,7 +9929,7 @@ local GameMusic = {
     ["Length"] = 35,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1078]
+  }, -- [1185]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Citadel_1",
@@ -9081,7 +9937,7 @@ local GameMusic = {
     ["Length"] = 106,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1079]
+  }, -- [1186]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Citadel_2",
@@ -9089,7 +9945,7 @@ local GameMusic = {
     ["Length"] = 88,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1080]
+  }, -- [1187]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Citadel_3",
@@ -9097,7 +9953,7 @@ local GameMusic = {
     ["Length"] = 57,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1081]
+  }, -- [1188]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Citadel_4",
@@ -9105,7 +9961,7 @@ local GameMusic = {
     ["Length"] = 126,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1082]
+  }, -- [1189]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Illikama Event Music Mix2",
@@ -9113,7 +9969,7 @@ local GameMusic = {
     ["Length"] = 253,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1083]
+  }, -- [1190]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Well_1",
@@ -9121,7 +9977,7 @@ local GameMusic = {
     ["Length"] = 112,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1084]
+  }, -- [1191]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Well_2",
@@ -9129,7 +9985,7 @@ local GameMusic = {
     ["Length"] = 66,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1085]
+  }, -- [1192]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Well_3",
@@ -9137,7 +9993,7 @@ local GameMusic = {
     ["Length"] = 79,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1086]
+  }, -- [1193]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Well_4",
@@ -9145,7 +10001,7 @@ local GameMusic = {
     ["Length"] = 63,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1087]
+  }, -- [1194]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Well_5",
@@ -9153,7 +10009,7 @@ local GameMusic = {
     ["Length"] = 75,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1088]
+  }, -- [1195]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Well_6",
@@ -9161,7 +10017,7 @@ local GameMusic = {
     ["Length"] = 125,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1089]
+  }, -- [1196]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Well_7",
@@ -9169,7 +10025,7 @@ local GameMusic = {
     ["Length"] = 64,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1090]
+  }, -- [1197]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Well_8",
@@ -9177,7 +10033,7 @@ local GameMusic = {
     ["Length"] = 88,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1091]
+  }, -- [1198]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Shattered_1",
@@ -9185,7 +10041,7 @@ local GameMusic = {
     ["Length"] = 131,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1092]
+  }, -- [1199]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Shattered_2",
@@ -9193,7 +10049,7 @@ local GameMusic = {
     ["Length"] = 65,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1093]
+  }, -- [1200]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Shattered_3",
@@ -9201,7 +10057,7 @@ local GameMusic = {
     ["Length"] = 66,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1094]
+  }, -- [1201]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Shattered_4",
@@ -9209,7 +10065,7 @@ local GameMusic = {
     ["Length"] = 65,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1095]
+  }, -- [1202]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Shattered_5",
@@ -9217,7 +10073,7 @@ local GameMusic = {
     ["Length"] = 56,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1096]
+  }, -- [1203]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Shattered_6",
@@ -9225,7 +10081,7 @@ local GameMusic = {
     ["Length"] = 58,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1097]
+  }, -- [1204]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Shattered_7",
@@ -9233,7 +10089,7 @@ local GameMusic = {
     ["Length"] = 64,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1098]
+  }, -- [1205]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Shattered_8",
@@ -9241,7 +10097,7 @@ local GameMusic = {
     ["Length"] = 57,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1099]
+  }, -- [1206]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Storm_2",
@@ -9249,7 +10105,7 @@ local GameMusic = {
     ["Length"] = 73,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1100]
+  }, -- [1207]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Storm_1",
@@ -9257,7 +10113,7 @@ local GameMusic = {
     ["Length"] = 67,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1101]
+  }, -- [1208]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Storm_3",
@@ -9265,7 +10121,7 @@ local GameMusic = {
     ["Length"] = 32,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1102]
+  }, -- [1209]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "Storm_4",
@@ -9273,7 +10129,7 @@ local GameMusic = {
     ["Length"] = 48,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1103]
+  }, -- [1210]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "BC_One_1",
@@ -9281,7 +10137,7 @@ local GameMusic = {
     ["Length"] = 59,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1104]
+  }, -- [1211]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "BC_One_2",
@@ -9289,7 +10145,7 @@ local GameMusic = {
     ["Length"] = 69,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1105]
+  }, -- [1212]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "BC_Two_2",
@@ -9297,7 +10153,7 @@ local GameMusic = {
     ["Length"] = 114,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1106]
+  }, -- [1213]
   {
     ["Album"] = "WoW - The Black Temple",
     ["Song"] = "BC_Two_3",
@@ -9305,7 +10161,7 @@ local GameMusic = {
     ["Length"] = 51,
     ["Artist"] =  "BlackTemple (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1107]
+  }, -- [1214]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Blade's Edge Dry Forest Walking 1",
@@ -9313,7 +10169,7 @@ local GameMusic = {
     ["Length"] = 89,
     ["Artist"] =  "BladesEdge (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1108]
+  }, -- [1215]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Blade's Edge Dry Forest Walking 2",
@@ -9321,7 +10177,7 @@ local GameMusic = {
     ["Length"] = 127,
     ["Artist"] =  "BladesEdge (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1109]
+  }, -- [1216]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Blade's Edge Dry Forest Walking 3",
@@ -9329,7 +10185,7 @@ local GameMusic = {
     ["Length"] = 131,
     ["Artist"] =  "BladesEdge (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1110]
+  }, -- [1217]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Blade's Edge Walking 1",
@@ -9337,7 +10193,7 @@ local GameMusic = {
     ["Length"] = 80,
     ["Artist"] =  "BladesEdge (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1111]
+  }, -- [1218]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Blade's Edge Walking 2",
@@ -9345,7 +10201,7 @@ local GameMusic = {
     ["Length"] = 75,
     ["Artist"] =  "BladesEdge (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1112]
+  }, -- [1219]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Blade's Edge Walking 3",
@@ -9353,7 +10209,7 @@ local GameMusic = {
     ["Length"] = 158,
     ["Artist"] =  "BladesEdge (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1113]
+  }, -- [1220]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Blade's Edge Walking 4",
@@ -9361,7 +10217,7 @@ local GameMusic = {
     ["Length"] = 110,
     ["Artist"] =  "BladesEdge (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1114]
+  }, -- [1221]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Blade's Edge Walking 5",
@@ -9369,7 +10225,7 @@ local GameMusic = {
     ["Length"] = 110,
     ["Artist"] =  "BladesEdge (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1115]
+  }, -- [1222]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Blade's Edge Ogre Walking 1",
@@ -9377,7 +10233,7 @@ local GameMusic = {
     ["Length"] = 75,
     ["Artist"] =  "BladesEdge (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1116]
+  }, -- [1223]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Blade's Edge Ogre Walking 2",
@@ -9385,7 +10241,7 @@ local GameMusic = {
     ["Length"] = 110,
     ["Artist"] =  "BladesEdge (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1117]
+  }, -- [1224]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "BM_NagaMoment01",
@@ -9393,7 +10249,7 @@ local GameMusic = {
     ["Length"] = 31,
     ["Artist"] =  "Bloodmyst (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1118]
+  }, -- [1225]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "BI_NagaIntro01",
@@ -9401,7 +10257,7 @@ local GameMusic = {
     ["Length"] = 25,
     ["Artist"] =  "Bloodmyst (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1119]
+  }, -- [1226]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "BI_SatyrWalkUni01",
@@ -9409,7 +10265,7 @@ local GameMusic = {
     ["Length"] = 126,
     ["Artist"] =  "Bloodmyst (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1120]
+  }, -- [1227]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "AI_SatyrWalkUni02",
@@ -9417,7 +10273,7 @@ local GameMusic = {
     ["Length"] = 129,
     ["Artist"] =  "Bloodmyst (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1121]
+  }, -- [1228]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "AI_SatyrWalkUni03",
@@ -9425,7 +10281,7 @@ local GameMusic = {
     ["Length"] = 114,
     ["Artist"] =  "Bloodmyst (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1122]
+  }, -- [1229]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "AI_SatyrWalkUni04",
@@ -9433,7 +10289,7 @@ local GameMusic = {
     ["Length"] = 69,
     ["Artist"] =  "Bloodmyst (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1123]
+  }, -- [1230]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "AI_SatyrWalkUni05",
@@ -9441,7 +10297,7 @@ local GameMusic = {
     ["Length"] = 144,
     ["Artist"] =  "Bloodmyst (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1124]
+  }, -- [1231]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Coldarra 1",
@@ -9449,7 +10305,7 @@ local GameMusic = {
     ["Length"] = 64,
     ["Artist"] =  "BoreanTundra (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1125]
+  }, -- [1232]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Coldarra 2",
@@ -9457,7 +10313,7 @@ local GameMusic = {
     ["Length"] = 63,
     ["Artist"] =  "BoreanTundra (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1126]
+  }, -- [1233]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Coldarra 3",
@@ -9465,7 +10321,7 @@ local GameMusic = {
     ["Length"] = 124,
     ["Artist"] =  "BoreanTundra (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1127]
+  }, -- [1234]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Tundra_Day01",
@@ -9473,7 +10329,7 @@ local GameMusic = {
     ["Length"] = 73,
     ["Artist"] =  "BoreanTundra (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1128]
+  }, -- [1235]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Tundra_Day02",
@@ -9481,7 +10337,7 @@ local GameMusic = {
     ["Length"] = 101,
     ["Artist"] =  "BoreanTundra (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1129]
+  }, -- [1236]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Tundra_Day03",
@@ -9489,7 +10345,7 @@ local GameMusic = {
     ["Length"] = 78,
     ["Artist"] =  "BoreanTundra (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1130]
+  }, -- [1237]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Tundra_Day04",
@@ -9497,7 +10353,7 @@ local GameMusic = {
     ["Length"] = 112,
     ["Artist"] =  "BoreanTundra (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1131]
+  }, -- [1238]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Tundra_Day05",
@@ -9505,7 +10361,7 @@ local GameMusic = {
     ["Length"] = 73,
     ["Artist"] =  "BoreanTundra (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1132]
+  }, -- [1239]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Tundra_Day06",
@@ -9513,7 +10369,7 @@ local GameMusic = {
     ["Length"] = 115,
     ["Artist"] =  "BoreanTundra (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1133]
+  }, -- [1240]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Tundra_Day07",
@@ -9521,7 +10377,7 @@ local GameMusic = {
     ["Length"] = 86,
     ["Artist"] =  "BoreanTundra (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1134]
+  }, -- [1241]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Tundra_Day08",
@@ -9529,7 +10385,7 @@ local GameMusic = {
     ["Length"] = 71,
     ["Artist"] =  "BoreanTundra (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1135]
+  }, -- [1242]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Tundra_Night01",
@@ -9537,7 +10393,7 @@ local GameMusic = {
     ["Length"] = 73,
     ["Artist"] =  "BoreanTundra (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1136]
+  }, -- [1243]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Tundra_Night02",
@@ -9545,7 +10401,7 @@ local GameMusic = {
     ["Length"] = 115,
     ["Artist"] =  "BoreanTundra (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1137]
+  }, -- [1244]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Tundra_Night03",
@@ -9553,7 +10409,7 @@ local GameMusic = {
     ["Length"] = 88,
     ["Artist"] =  "BoreanTundra (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1138]
+  }, -- [1245]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Tundra_Night04",
@@ -9561,7 +10417,7 @@ local GameMusic = {
     ["Length"] = 70,
     ["Artist"] =  "BoreanTundra (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1139]
+  }, -- [1246]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Tundra_Night05",
@@ -9569,7 +10425,7 @@ local GameMusic = {
     ["Length"] = 77,
     ["Artist"] =  "BoreanTundra (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1140]
+  }, -- [1247]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Tundra_Night06",
@@ -9577,7 +10433,7 @@ local GameMusic = {
     ["Length"] = 100,
     ["Artist"] =  "BoreanTundra (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1141]
+  }, -- [1248]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Tundra_Night07",
@@ -9585,7 +10441,7 @@ local GameMusic = {
     ["Length"] = 78,
     ["Artist"] =  "BoreanTundra (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1142]
+  }, -- [1249]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Tundra_Night08",
@@ -9593,7 +10449,7 @@ local GameMusic = {
     ["Length"] = 111,
     ["Artist"] =  "BoreanTundra (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1143]
+  }, -- [1250]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_GeyserField_General01",
@@ -9601,7 +10457,7 @@ local GameMusic = {
     ["Length"] = 58,
     ["Artist"] =  "BoreanTundra (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1144]
+  }, -- [1251]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_GeyserField_General02",
@@ -9609,7 +10465,7 @@ local GameMusic = {
     ["Length"] = 48,
     ["Artist"] =  "BoreanTundra (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1145]
+  }, -- [1252]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_GeyserField_General03",
@@ -9617,7 +10473,7 @@ local GameMusic = {
     ["Length"] = 62,
     ["Artist"] =  "BoreanTundra (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1146]
+  }, -- [1253]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Riplash_Day01",
@@ -9625,7 +10481,7 @@ local GameMusic = {
     ["Length"] = 151,
     ["Artist"] =  "BoreanTundra (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1147]
+  }, -- [1254]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Riplash_Day02",
@@ -9633,7 +10489,7 @@ local GameMusic = {
     ["Length"] = 186,
     ["Artist"] =  "BoreanTundra (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1148]
+  }, -- [1255]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Riplash_Day03",
@@ -9641,7 +10497,7 @@ local GameMusic = {
     ["Length"] = 161,
     ["Artist"] =  "BoreanTundra (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1149]
+  }, -- [1256]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Riplash_Intro01",
@@ -9649,7 +10505,7 @@ local GameMusic = {
     ["Length"] = 153,
     ["Artist"] =  "BoreanTundra (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1150]
+  }, -- [1257]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Riplash_Intro02",
@@ -9657,7 +10513,7 @@ local GameMusic = {
     ["Length"] = 177,
     ["Artist"] =  "BoreanTundra (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1151]
+  }, -- [1258]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Riplash_Night01",
@@ -9665,7 +10521,7 @@ local GameMusic = {
     ["Length"] = 159,
     ["Artist"] =  "BoreanTundra (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1152]
+  }, -- [1259]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Riplash_Night02",
@@ -9673,7 +10529,7 @@ local GameMusic = {
     ["Length"] = 79,
     ["Artist"] =  "BoreanTundra (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1153]
+  }, -- [1260]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Riplash_Night03",
@@ -9681,7 +10537,7 @@ local GameMusic = {
     ["Length"] = 76,
     ["Artist"] =  "BoreanTundra (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1154]
+  }, -- [1261]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Riplash_Night04",
@@ -9689,7 +10545,7 @@ local GameMusic = {
     ["Length"] = 95,
     ["Artist"] =  "BoreanTundra (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1155]
+  }, -- [1262]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BT_tuskarr_kaskala_day1",
@@ -9697,7 +10553,7 @@ local GameMusic = {
     ["Length"] = 101,
     ["Artist"] =  "BoreanTundra (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1156]
+  }, -- [1263]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Tusk_KaskalaDay02",
@@ -9705,7 +10561,7 @@ local GameMusic = {
     ["Length"] = 79,
     ["Artist"] =  "BoreanTundra (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1157]
+  }, -- [1264]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BT_tuskarr_kaskala_night1",
@@ -9713,7 +10569,7 @@ local GameMusic = {
     ["Length"] = 99,
     ["Artist"] =  "BoreanTundra (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1158]
+  }, -- [1265]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BT_tuskarr_kaskala_night2",
@@ -9721,7 +10577,7 @@ local GameMusic = {
     ["Length"] = 59,
     ["Artist"] =  "BoreanTundra (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1159]
+  }, -- [1266]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "CT_CavernsWalk1Uni",
@@ -9729,7 +10585,7 @@ local GameMusic = {
     ["Length"] = 112,
     ["Artist"] =  "CavernsOfTime (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1160]
+  }, -- [1267]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "CT_CavernsWalk2Uni",
@@ -9737,7 +10593,7 @@ local GameMusic = {
     ["Length"] = 120,
     ["Artist"] =  "CavernsOfTime (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1161]
+  }, -- [1268]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "CT_CavernsWalk3Uni",
@@ -9745,7 +10601,7 @@ local GameMusic = {
     ["Length"] = 169,
     ["Artist"] =  "CavernsOfTime (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1162]
+  }, -- [1269]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "CT_CavernsWalk4Uni",
@@ -9753,7 +10609,7 @@ local GameMusic = {
     ["Length"] = 130,
     ["Artist"] =  "CavernsOfTime (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1163]
+  }, -- [1270]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "CT_CavernsWalk5Uni",
@@ -9761,7 +10617,7 @@ local GameMusic = {
     ["Length"] = 151,
     ["Artist"] =  "CavernsOfTime (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1164]
+  }, -- [1271]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "CT_CavernsWalk6Uni",
@@ -9769,7 +10625,7 @@ local GameMusic = {
     ["Length"] = 161,
     ["Artist"] =  "CavernsOfTime (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1165]
+  }, -- [1272]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "CT_CavernsWalk7Uni",
@@ -9777,7 +10633,7 @@ local GameMusic = {
     ["Length"] = 178,
     ["Artist"] =  "CavernsOfTime (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1166]
+  }, -- [1273]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "CT_CavernsWalk8Uni",
@@ -9785,7 +10641,7 @@ local GameMusic = {
     ["Length"] = 140,
     ["Artist"] =  "CavernsOfTime (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1167]
+  }, -- [1274]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "CT_CavernsWalk9Uni",
@@ -9793,7 +10649,7 @@ local GameMusic = {
     ["Length"] = 161,
     ["Artist"] =  "CavernsOfTime (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1168]
+  }, -- [1275]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "CT_DurnholdeCellarWalk1Uni",
@@ -9801,7 +10657,7 @@ local GameMusic = {
     ["Length"] = 104,
     ["Artist"] =  "CavernsOfTime (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1169]
+  }, -- [1276]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "CT_DurnholdeCellarWalk2Uni",
@@ -9809,7 +10665,7 @@ local GameMusic = {
     ["Length"] = 59,
     ["Artist"] =  "CavernsOfTime (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1170]
+  }, -- [1277]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "CT_DurnholdeCellarWalk3Uni",
@@ -9817,7 +10673,7 @@ local GameMusic = {
     ["Length"] = 66,
     ["Artist"] =  "CavernsOfTime (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1171]
+  }, -- [1278]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "CT_DurnholdeKeepExtWalk1Uni",
@@ -9825,7 +10681,7 @@ local GameMusic = {
     ["Length"] = 81,
     ["Artist"] =  "CavernsOfTime (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1172]
+  }, -- [1279]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "CT_DurnholdeKeepExtWalk2Uni",
@@ -9833,7 +10689,7 @@ local GameMusic = {
     ["Length"] = 66,
     ["Artist"] =  "CavernsOfTime (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1173]
+  }, -- [1280]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "CT_DurnholdeKeepExtWalk4Uni",
@@ -9841,7 +10697,7 @@ local GameMusic = {
     ["Length"] = 58,
     ["Artist"] =  "CavernsOfTime (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1174]
+  }, -- [1281]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "CT_DurnholdeKeepExtWalk5Uni",
@@ -9849,7 +10705,7 @@ local GameMusic = {
     ["Length"] = 93,
     ["Artist"] =  "CavernsOfTime (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1175]
+  }, -- [1282]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "CT_DurnholdeKeepExtWalk6Uni",
@@ -9857,7 +10713,7 @@ local GameMusic = {
     ["Length"] = 60,
     ["Artist"] =  "CavernsOfTime (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1176]
+  }, -- [1283]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "CT_DurnholdeKeepIntWalk1Uni",
@@ -9865,7 +10721,7 @@ local GameMusic = {
     ["Length"] = 69,
     ["Artist"] =  "CavernsOfTime (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1177]
+  }, -- [1284]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "CT_DurnholdeKeepIntWalk2Uni",
@@ -9873,7 +10729,7 @@ local GameMusic = {
     ["Length"] = 123,
     ["Artist"] =  "CavernsOfTime (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1178]
+  }, -- [1285]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "CT_DurnholdeKeepIntWalk3Uni",
@@ -9881,7 +10737,7 @@ local GameMusic = {
     ["Length"] = 73,
     ["Artist"] =  "CavernsOfTime (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1179]
+  }, -- [1286]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "CT_HillsbradExtWalk1Uni",
@@ -9889,7 +10745,7 @@ local GameMusic = {
     ["Length"] = 62,
     ["Artist"] =  "CavernsOfTime (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1180]
+  }, -- [1287]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "CT_HyjalExtWalk9Uni",
@@ -9897,7 +10753,7 @@ local GameMusic = {
     ["Length"] = 73,
     ["Artist"] =  "CavernsOfTime (Derek Duke - Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1181]
+  }, -- [1288]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "CT_HyjalExtWalk1Uni",
@@ -9905,7 +10761,7 @@ local GameMusic = {
     ["Length"] = 69,
     ["Artist"] =  "CavernsOfTime (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1182]
+  }, -- [1289]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "CT_HyjalExtWalk2Uni",
@@ -9913,7 +10769,7 @@ local GameMusic = {
     ["Length"] = 48,
     ["Artist"] =  "CavernsOfTime (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1183]
+  }, -- [1290]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "CT_HyjalExtWalk3Uni",
@@ -9921,7 +10777,7 @@ local GameMusic = {
     ["Length"] = 45,
     ["Artist"] =  "CavernsOfTime (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1184]
+  }, -- [1291]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "CT_HyjalExtWalk4Uni",
@@ -9929,7 +10785,7 @@ local GameMusic = {
     ["Length"] = 85,
     ["Artist"] =  "CavernsOfTime (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1185]
+  }, -- [1292]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "CT_HyjalExtWalk5Uni",
@@ -9937,7 +10793,7 @@ local GameMusic = {
     ["Length"] = 47,
     ["Artist"] =  "CavernsOfTime (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1186]
+  }, -- [1293]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "CT_HyjalExtWalk6Uni",
@@ -9945,7 +10801,7 @@ local GameMusic = {
     ["Length"] = 46,
     ["Artist"] =  "CavernsOfTime (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1187]
+  }, -- [1294]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "CT_HyjalExtWalk10Uni",
@@ -9953,7 +10809,7 @@ local GameMusic = {
     ["Length"] = 66,
     ["Artist"] =  "CavernsOfTime (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1188]
+  }, -- [1295]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "CT_HyjalExtWalk11Uni",
@@ -9961,7 +10817,7 @@ local GameMusic = {
     ["Length"] = 49,
     ["Artist"] =  "CavernsOfTime (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1189]
+  }, -- [1296]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "CT_HyjalExtWalk12Uni",
@@ -9969,7 +10825,7 @@ local GameMusic = {
     ["Length"] = 67,
     ["Artist"] =  "CavernsOfTime (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1190]
+  }, -- [1297]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "BM_MorassPortalIntro",
@@ -9977,7 +10833,7 @@ local GameMusic = {
     ["Length"] = 28,
     ["Artist"] =  "CavernsOfTime (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1191]
+  }, -- [1298]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "BM_MorassWalkUniP",
@@ -9985,7 +10841,7 @@ local GameMusic = {
     ["Length"] = 108,
     ["Artist"] =  "CavernsOfTime (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1192]
+  }, -- [1299]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "BM_MorassWalkUniQ",
@@ -9993,7 +10849,7 @@ local GameMusic = {
     ["Length"] = 80,
     ["Artist"] =  "CavernsOfTime (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1193]
+  }, -- [1300]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "BM_MorassWalkUniR",
@@ -10001,7 +10857,7 @@ local GameMusic = {
     ["Length"] = 114,
     ["Artist"] =  "CavernsOfTime (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1194]
+  }, -- [1301]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "BM_MorassWalkUniS",
@@ -10009,7 +10865,7 @@ local GameMusic = {
     ["Length"] = 123,
     ["Artist"] =  "CavernsOfTime (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1195]
+  }, -- [1302]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "BM_MorassWalkUniV",
@@ -10017,7 +10873,7 @@ local GameMusic = {
     ["Length"] = 73,
     ["Artist"] =  "CavernsOfTime (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1196]
+  }, -- [1303]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "CT_TarrenMillExtWalk1Uni",
@@ -10025,7 +10881,7 @@ local GameMusic = {
     ["Length"] = 78,
     ["Artist"] =  "CavernsOfTime (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1197]
+  }, -- [1304]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "CT_TarrenMillExtWalk2Uni",
@@ -10033,7 +10889,7 @@ local GameMusic = {
     ["Length"] = 66,
     ["Artist"] =  "CavernsOfTime (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1198]
+  }, -- [1305]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "CT_TarrenMillExtWalk3Uni",
@@ -10041,7 +10897,7 @@ local GameMusic = {
     ["Length"] = 62,
     ["Artist"] =  "CavernsOfTime (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1199]
+  }, -- [1306]
   {
     ["Album"] = "",
     ["Song"] = "CA_AspectsGeneralWalkADay01",
@@ -10049,7 +10905,7 @@ local GameMusic = {
     ["Length"] = 93,
     ["Artist"] =  "ChamberOfTheAspects",
     ["WoW"] = true,
-  }, -- [1200]
+  }, -- [1307]
   {
     ["Album"] = "",
     ["Song"] = "CA_AspectsGeneralWalkADay02",
@@ -10057,7 +10913,7 @@ local GameMusic = {
     ["Length"] = 133,
     ["Artist"] =  "ChamberOfTheAspects",
     ["WoW"] = true,
-  }, -- [1201]
+  }, -- [1308]
   {
     ["Album"] = "",
     ["Song"] = "CA_AspectsGeneralWalkADay03",
@@ -10065,7 +10921,7 @@ local GameMusic = {
     ["Length"] = 75,
     ["Artist"] =  "ChamberOfTheAspects",
     ["WoW"] = true,
-  }, -- [1202]
+  }, -- [1309]
   {
     ["Album"] = "",
     ["Song"] = "CA_AspectsGeneralWalkADay04",
@@ -10073,7 +10929,7 @@ local GameMusic = {
     ["Length"] = 65,
     ["Artist"] =  "ChamberOfTheAspects",
     ["WoW"] = true,
-  }, -- [1203]
+  }, -- [1310]
   {
     ["Album"] = "",
     ["Song"] = "CA_AspectsGeneralWalkANight01",
@@ -10081,7 +10937,7 @@ local GameMusic = {
     ["Length"] = 90,
     ["Artist"] =  "ChamberOfTheAspects",
     ["WoW"] = true,
-  }, -- [1204]
+  }, -- [1311]
   {
     ["Album"] = "",
     ["Song"] = "CA_AspectsGeneralWalkANight02",
@@ -10089,7 +10945,7 @@ local GameMusic = {
     ["Length"] = 133,
     ["Artist"] =  "ChamberOfTheAspects",
     ["WoW"] = true,
-  }, -- [1205]
+  }, -- [1312]
   {
     ["Album"] = "",
     ["Song"] = "CA_AspectsGeneralWalkANight03",
@@ -10097,7 +10953,7 @@ local GameMusic = {
     ["Length"] = 75,
     ["Artist"] =  "ChamberOfTheAspects",
     ["WoW"] = true,
-  }, -- [1206]
+  }, -- [1313]
   {
     ["Album"] = "",
     ["Song"] = "CA_AspectsGeneralWalkANight04",
@@ -10105,7 +10961,7 @@ local GameMusic = {
     ["Length"] = 65,
     ["Artist"] =  "ChamberOfTheAspects",
     ["WoW"] = true,
-  }, -- [1207]
+  }, -- [1314]
   {
     ["Album"] = "",
     ["Song"] = "CA_AspectsGeneralWalkAUni01",
@@ -10113,7 +10969,7 @@ local GameMusic = {
     ["Length"] = 75,
     ["Artist"] =  "ChamberOfTheAspects",
     ["WoW"] = true,
-  }, -- [1208]
+  }, -- [1315]
   {
     ["Album"] = "",
     ["Song"] = "CA_AspectsGeneralWalkAUni02",
@@ -10121,7 +10977,7 @@ local GameMusic = {
     ["Length"] = 65,
     ["Artist"] =  "ChamberOfTheAspects",
     ["WoW"] = true,
-  }, -- [1209]
+  }, -- [1316]
   {
     ["Album"] = "",
     ["Song"] = "CA_AspectsIntroADay01",
@@ -10129,7 +10985,7 @@ local GameMusic = {
     ["Length"] = 73,
     ["Artist"] =  "ChamberOfTheAspects",
     ["WoW"] = true,
-  }, -- [1210]
+  }, -- [1317]
   {
     ["Album"] = "",
     ["Song"] = "CA_AspectsIntroANight01",
@@ -10137,7 +10993,7 @@ local GameMusic = {
     ["Length"] = 73,
     ["Artist"] =  "ChamberOfTheAspects",
     ["WoW"] = true,
-  }, -- [1211]
+  }, -- [1318]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Crystalsong 1",
@@ -10145,7 +11001,7 @@ local GameMusic = {
     ["Length"] = 113,
     ["Artist"] =  "Crystalsong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1212]
+  }, -- [1319]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Crystalsong 2",
@@ -10153,7 +11009,7 @@ local GameMusic = {
     ["Length"] = 98,
     ["Artist"] =  "Crystalsong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1213]
+  }, -- [1320]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Crystalsong 3",
@@ -10161,7 +11017,7 @@ local GameMusic = {
     ["Length"] = 72,
     ["Artist"] =  "Crystalsong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1214]
+  }, -- [1321]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Crystalsong 4",
@@ -10169,7 +11025,7 @@ local GameMusic = {
     ["Length"] = 113,
     ["Artist"] =  "Crystalsong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1215]
+  }, -- [1322]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Crystalsong 5",
@@ -10177,7 +11033,7 @@ local GameMusic = {
     ["Length"] = 107,
     ["Artist"] =  "Crystalsong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1216]
+  }, -- [1323]
   {
     ["Album"] = "World of Warcraft",
     ["Song"] = "Felwood_zone1",
@@ -10185,7 +11041,7 @@ local GameMusic = {
     ["Length"] = 54,
     ["Artist"] =  "CursedLand (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1217]
+  }, -- [1324]
   {
     ["Album"] = "World of Warcraft",
     ["Song"] = "cursedland02_zone",
@@ -10193,7 +11049,7 @@ local GameMusic = {
     ["Length"] = 58,
     ["Artist"] =  "CursedLand (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1218]
+  }, -- [1325]
   {
     ["Album"] = "World of Warcraft",
     ["Song"] = "cursedland03_zone",
@@ -10201,7 +11057,7 @@ local GameMusic = {
     ["Length"] = 64,
     ["Artist"] =  "CursedLand (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1219]
+  }, -- [1326]
   {
     ["Album"] = "World of Warcraft",
     ["Song"] = "cursedland04",
@@ -10209,7 +11065,7 @@ local GameMusic = {
     ["Length"] = 79,
     ["Artist"] =  "CursedLand (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1220]
+  }, -- [1327]
   {
     ["Album"] = "World of Warcraft",
     ["Song"] = "cursedland05",
@@ -10217,7 +11073,7 @@ local GameMusic = {
     ["Length"] = 82,
     ["Artist"] =  "CursedLand (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1221]
+  }, -- [1328]
   {
     ["Album"] = "World of Warcraft",
     ["Song"] = "cursedland06",
@@ -10225,7 +11081,7 @@ local GameMusic = {
     ["Length"] = 74,
     ["Artist"] =  "CursedLand (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1222]
+  }, -- [1329]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Dalaran 2",
@@ -10233,7 +11089,7 @@ local GameMusic = {
     ["Length"] = 42,
     ["Artist"] =  "Dalaran (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1223]
+  }, -- [1330]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Dalaran 3",
@@ -10241,7 +11097,7 @@ local GameMusic = {
     ["Length"] = 70,
     ["Artist"] =  "Dalaran (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1224]
+  }, -- [1331]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Dalaran 4",
@@ -10249,7 +11105,7 @@ local GameMusic = {
     ["Length"] = 88,
     ["Artist"] =  "Dalaran (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1225]
+  }, -- [1332]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Dalaran Sewer 1",
@@ -10257,7 +11113,7 @@ local GameMusic = {
     ["Length"] = 66,
     ["Artist"] =  "Dalaran (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1226]
+  }, -- [1333]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Dalaran Sewer 2",
@@ -10265,7 +11121,7 @@ local GameMusic = {
     ["Length"] = 101,
     ["Artist"] =  "Dalaran (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1227]
+  }, -- [1334]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Dalaran Sewer 3",
@@ -10273,7 +11129,7 @@ local GameMusic = {
     ["Length"] = 72,
     ["Artist"] =  "Dalaran (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1228]
+  }, -- [1335]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Dalaran Sewer 4",
@@ -10281,7 +11137,7 @@ local GameMusic = {
     ["Length"] = 65,
     ["Artist"] =  "Dalaran (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1229]
+  }, -- [1336]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Dalaran 5 Spire",
@@ -10289,7 +11145,7 @@ local GameMusic = {
     ["Length"] = 91,
     ["Artist"] =  "Dalaran (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1230]
+  }, -- [1337]
   {
     ["Album"] = "WoW 4.3",
     ["Song"] = "Darkmoon Faire 3H",
@@ -10297,7 +11153,7 @@ local GameMusic = {
     ["Length"] = 61,
     ["Artist"] =  "DarkmoonFaire (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1231]
+  }, -- [1338]
   {
     ["Album"] = "WoW 4.3",
     ["Song"] = "Darkmoon Faire 3A",
@@ -10305,7 +11161,7 @@ local GameMusic = {
     ["Length"] = 59,
     ["Artist"] =  "DarkmoonFaire (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1232]
+  }, -- [1339]
   {
     ["Album"] = "WoW 4.3",
     ["Song"] = "Darkmoon_Faire_2_V1",
@@ -10313,7 +11169,7 @@ local GameMusic = {
     ["Length"] = 71,
     ["Artist"] =  "DarkmoonFaire (Neal Acree)",
     ["WoW"] = true,
-  }, -- [1233]
+  }, -- [1340]
   {
     ["Album"] = "WoW 4.3",
     ["Song"] = "Darkmoon_Faire_2_V5",
@@ -10321,7 +11177,7 @@ local GameMusic = {
     ["Length"] = 97,
     ["Artist"] =  "DarkmoonFaire (Neal Acree)",
     ["WoW"] = true,
-  }, -- [1234]
+  }, -- [1341]
   {
     ["Album"] = "WoW 4.3",
     ["Song"] = "Darkmoon_Faire_2_V7",
@@ -10329,7 +11185,7 @@ local GameMusic = {
     ["Length"] = 89,
     ["Artist"] =  "DarkmoonFaire (Neal Acree)",
     ["WoW"] = true,
-  }, -- [1235]
+  }, -- [1342]
   {
     ["Album"] = "WoW 4.3",
     ["Song"] = "Darkmoon Faire 3B",
@@ -10337,7 +11193,7 @@ local GameMusic = {
     ["Length"] = 172,
     ["Artist"] =  "DarkmoonFaire (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1236]
+  }, -- [1343]
   {
     ["Album"] = "WoW 4.3",
     ["Song"] = "Darkmoon_Faire_2_Accordion_1",
@@ -10345,7 +11201,7 @@ local GameMusic = {
     ["Length"] = 86,
     ["Artist"] =  "DarkmoonFaire (Neal Acree)",
     ["WoW"] = true,
-  }, -- [1237]
+  }, -- [1344]
   {
     ["Album"] = "WoW 4.3",
     ["Song"] = "Darkmoon_Faire_2_Accordion_3",
@@ -10353,7 +11209,7 @@ local GameMusic = {
     ["Length"] = 106,
     ["Artist"] =  "DarkmoonFaire (Neal Acree)",
     ["WoW"] = true,
-  }, -- [1238]
+  }, -- [1345]
   {
     ["Album"] = "WoW 5.1",
     ["Song"] = "Darkmoon_Faire_Merry_Go_Round",
@@ -10361,7 +11217,7 @@ local GameMusic = {
     ["Length"] = 180,
     ["Artist"] =  "DarkmoonFaire (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1239]
+  }, -- [1346]
   {
     ["Album"] = "",
     ["Song"] = "DayDesert01",
@@ -10369,7 +11225,7 @@ local GameMusic = {
     ["Length"] = 65,
     ["Artist"] =  "Desert",
     ["WoW"] = true,
-  }, -- [1240]
+  }, -- [1347]
   {
     ["Album"] = "",
     ["Song"] = "DayDesert02",
@@ -10377,7 +11233,7 @@ local GameMusic = {
     ["Length"] = 81,
     ["Artist"] =  "Desert",
     ["WoW"] = true,
-  }, -- [1241]
+  }, -- [1348]
   {
     ["Album"] = "",
     ["Song"] = "DayDesert03",
@@ -10385,7 +11241,7 @@ local GameMusic = {
     ["Length"] = 54,
     ["Artist"] =  "Desert",
     ["WoW"] = true,
-  }, -- [1242]
+  }, -- [1349]
   {
     ["Album"] = "",
     ["Song"] = "NightDesert01",
@@ -10393,7 +11249,7 @@ local GameMusic = {
     ["Length"] = 77,
     ["Artist"] =  "Desert",
     ["WoW"] = true,
-  }, -- [1243]
+  }, -- [1350]
   {
     ["Album"] = "",
     ["Song"] = "NightDesert02",
@@ -10401,7 +11257,7 @@ local GameMusic = {
     ["Length"] = 62,
     ["Artist"] =  "Desert",
     ["WoW"] = true,
-  }, -- [1244]
+  }, -- [1351]
   {
     ["Album"] = "",
     ["Song"] = "NightDesert03",
@@ -10409,7 +11265,7 @@ local GameMusic = {
     ["Length"] = 57,
     ["Artist"] =  "Desert",
     ["WoW"] = true,
-  }, -- [1245]
+  }, -- [1352]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "DB_GeneralIntro_01",
@@ -10417,7 +11273,7 @@ local GameMusic = {
     ["Length"] = 92,
     ["Artist"] =  "Dragonblight (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1246]
+  }, -- [1353]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "DB_GeneralIntro_02",
@@ -10425,7 +11281,7 @@ local GameMusic = {
     ["Length"] = 93,
     ["Artist"] =  "Dragonblight (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1247]
+  }, -- [1354]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "DB_GeneralIntro_03",
@@ -10433,7 +11289,7 @@ local GameMusic = {
     ["Length"] = 92,
     ["Artist"] =  "Dragonblight (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1248]
+  }, -- [1355]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "DB_GeneralIntro_04",
@@ -10441,7 +11297,7 @@ local GameMusic = {
     ["Length"] = 92,
     ["Artist"] =  "Dragonblight (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1249]
+  }, -- [1356]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "DB_Dragonblight_Day01",
@@ -10449,7 +11305,7 @@ local GameMusic = {
     ["Length"] = 75,
     ["Artist"] =  "Dragonblight (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1250]
+  }, -- [1357]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "DB_Dragonblight_Day02",
@@ -10457,7 +11313,7 @@ local GameMusic = {
     ["Length"] = 57,
     ["Artist"] =  "Dragonblight (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1251]
+  }, -- [1358]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "DB_Dragonblight_Day03",
@@ -10465,7 +11321,7 @@ local GameMusic = {
     ["Length"] = 120,
     ["Artist"] =  "Dragonblight (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1252]
+  }, -- [1359]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "DB_Dragonblight_Day04",
@@ -10473,7 +11329,7 @@ local GameMusic = {
     ["Length"] = 76,
     ["Artist"] =  "Dragonblight (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1253]
+  }, -- [1360]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "DB_GeneralWalk_Day05",
@@ -10481,7 +11337,7 @@ local GameMusic = {
     ["Length"] = 93,
     ["Artist"] =  "Dragonblight (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1254]
+  }, -- [1361]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "DB_GeneralWalk_Day06",
@@ -10489,7 +11345,7 @@ local GameMusic = {
     ["Length"] = 93,
     ["Artist"] =  "Dragonblight (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1255]
+  }, -- [1362]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "DB_GeneralWalk_Day07",
@@ -10497,7 +11353,7 @@ local GameMusic = {
     ["Length"] = 92,
     ["Artist"] =  "Dragonblight (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1256]
+  }, -- [1363]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "DB_GeneralWalk_Day08",
@@ -10505,7 +11361,7 @@ local GameMusic = {
     ["Length"] = 93,
     ["Artist"] =  "Dragonblight (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1257]
+  }, -- [1364]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "DB_Dragonblight_Night01",
@@ -10513,7 +11369,7 @@ local GameMusic = {
     ["Length"] = 73,
     ["Artist"] =  "Dragonblight (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1258]
+  }, -- [1365]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "DB_Dragonblight_Night02",
@@ -10521,7 +11377,7 @@ local GameMusic = {
     ["Length"] = 57,
     ["Artist"] =  "Dragonblight (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1259]
+  }, -- [1366]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "DB_Dragonblight_Night03",
@@ -10529,7 +11385,7 @@ local GameMusic = {
     ["Length"] = 119,
     ["Artist"] =  "Dragonblight (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1260]
+  }, -- [1367]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "DB_Dragonblight_Night04",
@@ -10537,7 +11393,7 @@ local GameMusic = {
     ["Length"] = 76,
     ["Artist"] =  "Dragonblight (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1261]
+  }, -- [1368]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "DB_GeneralWalk_Night05",
@@ -10545,7 +11401,7 @@ local GameMusic = {
     ["Length"] = 93,
     ["Artist"] =  "Dragonblight (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1262]
+  }, -- [1369]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "DB_GeneralWalk_Night06",
@@ -10553,7 +11409,7 @@ local GameMusic = {
     ["Length"] = 92,
     ["Artist"] =  "Dragonblight (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1263]
+  }, -- [1370]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "DB_GeneralWalk_Night07",
@@ -10561,7 +11417,7 @@ local GameMusic = {
     ["Length"] = 93,
     ["Artist"] =  "Dragonblight (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1264]
+  }, -- [1371]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "DB_GeneralWalk_Night08",
@@ -10569,7 +11425,7 @@ local GameMusic = {
     ["Length"] = 93,
     ["Artist"] =  "Dragonblight (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1265]
+  }, -- [1372]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "DB_tuskarr_indule_day1",
@@ -10577,7 +11433,7 @@ local GameMusic = {
     ["Length"] = 129,
     ["Artist"] =  "Dragonblight (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1266]
+  }, -- [1373]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "DB_tuskarr_indule_day2",
@@ -10585,7 +11441,7 @@ local GameMusic = {
     ["Length"] = 60,
     ["Artist"] =  "Dragonblight (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1267]
+  }, -- [1374]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "DB_tuskarr_indule_day3",
@@ -10593,7 +11449,7 @@ local GameMusic = {
     ["Length"] = 39,
     ["Artist"] =  "Dragonblight (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1268]
+  }, -- [1375]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "DB_tuskarr_indule_night1",
@@ -10601,7 +11457,7 @@ local GameMusic = {
     ["Length"] = 132,
     ["Artist"] =  "Dragonblight (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1269]
+  }, -- [1376]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "DB_Tusk_InduleNight02",
@@ -10609,7 +11465,7 @@ local GameMusic = {
     ["Length"] = 64,
     ["Artist"] =  "Dragonblight (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1270]
+  }, -- [1377]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "DB_tuskarr_indule_day1",
@@ -10617,7 +11473,7 @@ local GameMusic = {
     ["Length"] = 39,
     ["Artist"] =  "Dragonblight (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1271]
+  }, -- [1378]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "DB_Tusk_Indule_Day01",
@@ -10625,7 +11481,7 @@ local GameMusic = {
     ["Length"] = 129,
     ["Artist"] =  "Dragonblight (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1272]
+  }, -- [1379]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "DB_Tusk_Indule_Day02",
@@ -10633,7 +11489,7 @@ local GameMusic = {
     ["Length"] = 62,
     ["Artist"] =  "Dragonblight (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1273]
+  }, -- [1380]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Assault 1",
@@ -10641,7 +11497,7 @@ local GameMusic = {
     ["Length"] = 65,
     ["Artist"] =  "Ebon Hold (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1274]
+  }, -- [1381]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Assault 3",
@@ -10649,7 +11505,7 @@ local GameMusic = {
     ["Length"] = 65,
     ["Artist"] =  "Ebon Hold (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1275]
+  }, -- [1382]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Assault 4",
@@ -10657,7 +11513,7 @@ local GameMusic = {
     ["Length"] = 67,
     ["Artist"] =  "Ebon Hold (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1276]
+  }, -- [1383]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Assault 5",
@@ -10665,7 +11521,7 @@ local GameMusic = {
     ["Length"] = 117,
     ["Artist"] =  "Ebon Hold (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1277]
+  }, -- [1384]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Assault 6",
@@ -10673,7 +11529,7 @@ local GameMusic = {
     ["Length"] = 93,
     ["Artist"] =  "Ebon Hold (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1278]
+  }, -- [1385]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Assault 7",
@@ -10681,7 +11537,7 @@ local GameMusic = {
     ["Length"] = 96,
     ["Artist"] =  "Ebon Hold (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1279]
+  }, -- [1386]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Ebon Hold 2",
@@ -10689,7 +11545,7 @@ local GameMusic = {
     ["Length"] = 78,
     ["Artist"] =  "Ebon Hold (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1280]
+  }, -- [1387]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Ebon Hold 3",
@@ -10697,7 +11553,7 @@ local GameMusic = {
     ["Length"] = 82,
     ["Artist"] =  "Ebon Hold (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1281]
+  }, -- [1388]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "EnchantedForest02",
@@ -10705,7 +11561,7 @@ local GameMusic = {
     ["Length"] = 67,
     ["Artist"] =  "EnchantedForest (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1282]
+  }, -- [1389]
   {
     ["Album"] = "",
     ["Song"] = "EnchantedForest03",
@@ -10713,7 +11569,7 @@ local GameMusic = {
     ["Length"] = 235,
     ["Artist"] =  "EnchantedForest",
     ["WoW"] = true,
-  }, -- [1283]
+  }, -- [1390]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "EnchantedForest04",
@@ -10721,7 +11577,7 @@ local GameMusic = {
     ["Length"] = 60,
     ["Artist"] =  "EnchantedForest (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1284]
+  }, -- [1391]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "EnchantedForest05",
@@ -10729,7 +11585,7 @@ local GameMusic = {
     ["Length"] = 70,
     ["Artist"] =  "EnchantedForest (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1285]
+  }, -- [1392]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "ES_BuildingWalkDay01",
@@ -10737,7 +11593,7 @@ local GameMusic = {
     ["Length"] = 65,
     ["Artist"] =  "Eversong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1286]
+  }, -- [1393]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "ES_BuildingWalkDay02",
@@ -10745,7 +11601,7 @@ local GameMusic = {
     ["Length"] = 68,
     ["Artist"] =  "Eversong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1287]
+  }, -- [1394]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "ES_BuildingWalkNight01",
@@ -10753,7 +11609,7 @@ local GameMusic = {
     ["Length"] = 84,
     ["Artist"] =  "Eversong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1288]
+  }, -- [1395]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "ES_BuildingWalkNight02",
@@ -10761,7 +11617,7 @@ local GameMusic = {
     ["Length"] = 83,
     ["Artist"] =  "Eversong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1289]
+  }, -- [1396]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "ES_RuinsWalkDay01",
@@ -10769,7 +11625,7 @@ local GameMusic = {
     ["Length"] = 48,
     ["Artist"] =  "Eversong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1290]
+  }, -- [1397]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "ES_RuinsWalkDay02",
@@ -10777,7 +11633,7 @@ local GameMusic = {
     ["Length"] = 72,
     ["Artist"] =  "Eversong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1291]
+  }, -- [1398]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "ES_RuinsWalkDay03",
@@ -10785,7 +11641,7 @@ local GameMusic = {
     ["Length"] = 70,
     ["Artist"] =  "Eversong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1292]
+  }, -- [1399]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "ES_RuinsWalkNight01",
@@ -10793,7 +11649,7 @@ local GameMusic = {
     ["Length"] = 51,
     ["Artist"] =  "Eversong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1293]
+  }, -- [1400]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "ES_RuinsWalkNight02",
@@ -10801,7 +11657,7 @@ local GameMusic = {
     ["Length"] = 83,
     ["Artist"] =  "Eversong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1294]
+  }, -- [1401]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "ES_RuinsWalkNight03",
@@ -10809,7 +11665,7 @@ local GameMusic = {
     ["Length"] = 67,
     ["Artist"] =  "Eversong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1295]
+  }, -- [1402]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "ES_ScenicIntroNight01",
@@ -10817,7 +11673,7 @@ local GameMusic = {
     ["Length"] = 97,
     ["Artist"] =  "Eversong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1296]
+  }, -- [1403]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "ES_ScortchedWalkDay01",
@@ -10825,7 +11681,7 @@ local GameMusic = {
     ["Length"] = 116,
     ["Artist"] =  "Eversong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1297]
+  }, -- [1404]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "ES_ScortchedWalkDay02",
@@ -10833,7 +11689,7 @@ local GameMusic = {
     ["Length"] = 103,
     ["Artist"] =  "Eversong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1298]
+  }, -- [1405]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "ES_ScortchedWalkNight01",
@@ -10841,7 +11697,7 @@ local GameMusic = {
     ["Length"] = 69,
     ["Artist"] =  "Eversong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1299]
+  }, -- [1406]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "ES_ScortchedWalkNight02",
@@ -10849,7 +11705,7 @@ local GameMusic = {
     ["Length"] = 61,
     ["Artist"] =  "Eversong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1300]
+  }, -- [1407]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "ES_SilvermoonIntroUni01",
@@ -10857,7 +11713,7 @@ local GameMusic = {
     ["Length"] = 132,
     ["Artist"] =  "Eversong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1301]
+  }, -- [1408]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "ES_SilvermoonWalkDay01",
@@ -10865,7 +11721,7 @@ local GameMusic = {
     ["Length"] = 64,
     ["Artist"] =  "Eversong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1302]
+  }, -- [1409]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "ES_SilvermoonWalkDay02",
@@ -10873,7 +11729,7 @@ local GameMusic = {
     ["Length"] = 79,
     ["Artist"] =  "Eversong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1303]
+  }, -- [1410]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "ES_SilvermoonWalkDay03",
@@ -10881,7 +11737,7 @@ local GameMusic = {
     ["Length"] = 65,
     ["Artist"] =  "Eversong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1304]
+  }, -- [1411]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "ES_SilvermoonWalkNight01",
@@ -10889,7 +11745,7 @@ local GameMusic = {
     ["Length"] = 177,
     ["Artist"] =  "Eversong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1305]
+  }, -- [1412]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "ES_SilvermoonWalkNight02",
@@ -10897,7 +11753,7 @@ local GameMusic = {
     ["Length"] = 71,
     ["Artist"] =  "Eversong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1306]
+  }, -- [1413]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "ES_SilvermoonWalkNight03",
@@ -10905,7 +11761,7 @@ local GameMusic = {
     ["Length"] = 80,
     ["Artist"] =  "Eversong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1307]
+  }, -- [1414]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "ES_SunstriderWalkDay01",
@@ -10913,7 +11769,7 @@ local GameMusic = {
     ["Length"] = 80,
     ["Artist"] =  "Eversong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1308]
+  }, -- [1415]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "ES_SunstriderWalkDay02",
@@ -10921,7 +11777,7 @@ local GameMusic = {
     ["Length"] = 58,
     ["Artist"] =  "Eversong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1309]
+  }, -- [1416]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "ES_SunstriderWalkDay03",
@@ -10929,7 +11785,7 @@ local GameMusic = {
     ["Length"] = 67,
     ["Artist"] =  "Eversong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1310]
+  }, -- [1417]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "ES_SunstriderWalkNight01",
@@ -10937,7 +11793,7 @@ local GameMusic = {
     ["Length"] = 100,
     ["Artist"] =  "Eversong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1311]
+  }, -- [1418]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "ES_SunstriderWalkNight02",
@@ -10945,7 +11801,7 @@ local GameMusic = {
     ["Length"] = 100,
     ["Artist"] =  "Eversong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1312]
+  }, -- [1419]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "ES_SunstriderWalkNight03",
@@ -10953,7 +11809,7 @@ local GameMusic = {
     ["Length"] = 86,
     ["Artist"] =  "Eversong (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1313]
+  }, -- [1420]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "DayEvilForest01",
@@ -10961,7 +11817,7 @@ local GameMusic = {
     ["Length"] = 70,
     ["Artist"] =  "EvilForest (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1314]
+  }, -- [1421]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "DayEvilForest02",
@@ -10969,7 +11825,7 @@ local GameMusic = {
     ["Length"] = 72,
     ["Artist"] =  "EvilForest (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1315]
+  }, -- [1422]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "DayEvilForest03",
@@ -10977,7 +11833,7 @@ local GameMusic = {
     ["Length"] = 70,
     ["Artist"] =  "EvilForest (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1316]
+  }, -- [1423]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "NightEvilForest01",
@@ -10985,7 +11841,7 @@ local GameMusic = {
     ["Length"] = 57,
     ["Artist"] =  "EvilForest (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1317]
+  }, -- [1424]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "NightEvilForest02",
@@ -10993,7 +11849,7 @@ local GameMusic = {
     ["Length"] = 75,
     ["Artist"] =  "EvilForest (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1318]
+  }, -- [1425]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "NightEvilForest03",
@@ -11001,7 +11857,7 @@ local GameMusic = {
     ["Length"] = 70,
     ["Artist"] =  "EvilForest (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1319]
+  }, -- [1426]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "DayForest01",
@@ -11009,7 +11865,7 @@ local GameMusic = {
     ["Length"] = 55,
     ["Artist"] =  "Forest (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1320]
+  }, -- [1427]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "DayForest02",
@@ -11017,7 +11873,7 @@ local GameMusic = {
     ["Length"] = 72,
     ["Artist"] =  "Forest (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1321]
+  }, -- [1428]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "DayForest03",
@@ -11025,7 +11881,7 @@ local GameMusic = {
     ["Length"] = 64,
     ["Artist"] =  "Forest (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1322]
+  }, -- [1429]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "NightForest01",
@@ -11033,7 +11889,7 @@ local GameMusic = {
     ["Length"] = 53,
     ["Artist"] =  "Forest (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1323]
+  }, -- [1430]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "NightForest02",
@@ -11041,7 +11897,7 @@ local GameMusic = {
     ["Length"] = 43,
     ["Artist"] =  "Forest (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1324]
+  }, -- [1431]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "NightForest03",
@@ -11049,7 +11905,7 @@ local GameMusic = {
     ["Length"] = 59,
     ["Artist"] =  "Forest (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1325]
+  }, -- [1432]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "NightForest04",
@@ -11057,7 +11913,7 @@ local GameMusic = {
     ["Length"] = 54,
     ["Artist"] =  "Forest (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1326]
+  }, -- [1433]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Eversong2A",
@@ -11065,7 +11921,7 @@ local GameMusic = {
     ["Length"] = 62,
     ["Artist"] =  "Ghostlands (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1327]
+  }, -- [1434]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Eversong2B",
@@ -11073,7 +11929,7 @@ local GameMusic = {
     ["Length"] = 62,
     ["Artist"] =  "Ghostlands (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1328]
+  }, -- [1435]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Eversong2C",
@@ -11081,7 +11937,7 @@ local GameMusic = {
     ["Length"] = 64,
     ["Artist"] =  "Ghostlands (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1329]
+  }, -- [1436]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Eversong2D",
@@ -11089,7 +11945,7 @@ local GameMusic = {
     ["Length"] = 60,
     ["Artist"] =  "Ghostlands (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1330]
+  }, -- [1437]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "GL_Forest1WalkDay01",
@@ -11097,7 +11953,7 @@ local GameMusic = {
     ["Length"] = 67,
     ["Artist"] =  "Ghostlands (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1331]
+  }, -- [1438]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "GL_Forest1WalkDay02",
@@ -11105,7 +11961,7 @@ local GameMusic = {
     ["Length"] = 70,
     ["Artist"] =  "Ghostlands (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1332]
+  }, -- [1439]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "GL_Forest1WalkNight01",
@@ -11113,7 +11969,7 @@ local GameMusic = {
     ["Length"] = 67,
     ["Artist"] =  "Ghostlands (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1333]
+  }, -- [1440]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "GL_Forest2WalkDay01",
@@ -11121,7 +11977,7 @@ local GameMusic = {
     ["Length"] = 83,
     ["Artist"] =  "Ghostlands (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1334]
+  }, -- [1441]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "GL_Forest2WalkNight01",
@@ -11129,7 +11985,7 @@ local GameMusic = {
     ["Length"] = 59,
     ["Artist"] =  "Ghostlands (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1335]
+  }, -- [1442]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "GL_Forest2WalkNight02",
@@ -11137,7 +11993,7 @@ local GameMusic = {
     ["Length"] = 60,
     ["Artist"] =  "Ghostlands (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1336]
+  }, -- [1443]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "GL_Forest3WalkDay01",
@@ -11145,7 +12001,7 @@ local GameMusic = {
     ["Length"] = 154,
     ["Artist"] =  "Ghostlands (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1337]
+  }, -- [1444]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "GL_Forest3WalkNight01",
@@ -11153,7 +12009,7 @@ local GameMusic = {
     ["Length"] = 51,
     ["Artist"] =  "Ghostlands (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1338]
+  }, -- [1445]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "GL_Forest3WalkNight02",
@@ -11161,7 +12017,7 @@ local GameMusic = {
     ["Length"] = 28,
     ["Artist"] =  "Ghostlands (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1339]
+  }, -- [1446]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "GL_Forest3WalkNight03",
@@ -11169,7 +12025,7 @@ local GameMusic = {
     ["Length"] = 44,
     ["Artist"] =  "Ghostlands (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1340]
+  }, -- [1447]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "GL_ScenicWalkUni01",
@@ -11177,7 +12033,7 @@ local GameMusic = {
     ["Length"] = 89,
     ["Artist"] =  "Ghostlands (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1341]
+  }, -- [1448]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "GL_ScenicWalkUni02",
@@ -11185,7 +12041,7 @@ local GameMusic = {
     ["Length"] = 81,
     ["Artist"] =  "Ghostlands (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1342]
+  }, -- [1449]
   {
     ["Album"] = "WoWBC",
     ["Song"] = "GL_ScenicWalkUni03",
@@ -11193,7 +12049,7 @@ local GameMusic = {
     ["Length"] = 78,
     ["Artist"] =  "Ghostlands (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1343]
+  }, -- [1450]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Shalandis Isle 1",
@@ -11201,7 +12057,7 @@ local GameMusic = {
     ["Length"] = 131,
     ["Artist"] =  "Ghostlands (David Arkenstone & Russell Brower)",
     ["WoW"] = true,
-  }, -- [1344]
+  }, -- [1451]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Shalandis Isle 2",
@@ -11209,7 +12065,7 @@ local GameMusic = {
     ["Length"] = 104,
     ["Artist"] =  "Ghostlands (David Arkenstone & Russell Brower)",
     ["WoW"] = true,
-  }, -- [1345]
+  }, -- [1452]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Shalandis Isle 3",
@@ -11217,7 +12073,7 @@ local GameMusic = {
     ["Length"] = 67,
     ["Artist"] =  "Ghostlands (Jason Hayes & Russell Brower)",
     ["WoW"] = true,
-  }, -- [1346]
+  }, -- [1453]
   {
     ["Album"] = "",
     ["Song"] = "GhostMusic03",
@@ -11225,7 +12081,7 @@ local GameMusic = {
     ["Length"] = 62,
     ["Artist"] =  "GhostMusic",
     ["WoW"] = true,
-  }, -- [1347]
+  }, -- [1454]
   {
     ["Album"] = "WoW 3.0.1",
     ["Song"] = "GH Day A1",
@@ -11233,7 +12089,7 @@ local GameMusic = {
     ["Length"] = 94,
     ["Artist"] =  "GrizzlyHills (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1348]
+  }, -- [1455]
   {
     ["Album"] = "WoW 3.0.1",
     ["Song"] = "GH Day A2",
@@ -11241,7 +12097,7 @@ local GameMusic = {
     ["Length"] = 144,
     ["Artist"] =  "GrizzlyHills (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1349]
+  }, -- [1456]
   {
     ["Album"] = "WoW 3.0.1",
     ["Song"] = "GH Day A3",
@@ -11249,7 +12105,7 @@ local GameMusic = {
     ["Length"] = 88,
     ["Artist"] =  "GrizzlyHills (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1350]
+  }, -- [1457]
   {
     ["Album"] = "WoW 3.0.1",
     ["Song"] = "GH Day A4",
@@ -11257,7 +12113,7 @@ local GameMusic = {
     ["Length"] = 95,
     ["Artist"] =  "GrizzlyHills (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1351]
+  }, -- [1458]
   {
     ["Album"] = "WoW 3.0.1",
     ["Song"] = "GH Night A1",
@@ -11265,7 +12121,7 @@ local GameMusic = {
     ["Length"] = 130,
     ["Artist"] =  "GrizzlyHills (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1352]
+  }, -- [1459]
   {
     ["Album"] = "WoW 3.0.1",
     ["Song"] = "GH Night A2",
@@ -11273,7 +12129,7 @@ local GameMusic = {
     ["Length"] = 141,
     ["Artist"] =  "GrizzlyHills (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1353]
+  }, -- [1460]
   {
     ["Album"] = "WoW 3.0.1",
     ["Song"] = "GH Day B1",
@@ -11281,7 +12137,7 @@ local GameMusic = {
     ["Length"] = 107,
     ["Artist"] =  "GrizzlyHills (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1354]
+  }, -- [1461]
   {
     ["Album"] = "WoW 3.0.1",
     ["Song"] = "GH Day B2",
@@ -11289,7 +12145,7 @@ local GameMusic = {
     ["Length"] = 108,
     ["Artist"] =  "GrizzlyHills (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1355]
+  }, -- [1462]
   {
     ["Album"] = "WoW 3.0.1",
     ["Song"] = "GH Night B1",
@@ -11297,7 +12153,7 @@ local GameMusic = {
     ["Length"] = 101,
     ["Artist"] =  "GrizzlyHills (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1356]
+  }, -- [1463]
   {
     ["Album"] = "WoW 3.0.1",
     ["Song"] = "GH Night B2",
@@ -11305,7 +12161,7 @@ local GameMusic = {
     ["Length"] = 116,
     ["Artist"] =  "GrizzlyHills (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1357]
+  }, -- [1464]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "GH1 Day 1 v2",
@@ -11313,7 +12169,7 @@ local GameMusic = {
     ["Length"] = 141,
     ["Artist"] =  "GrizzlyHills (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1358]
+  }, -- [1465]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "GH1 Day 2",
@@ -11321,7 +12177,7 @@ local GameMusic = {
     ["Length"] = 138,
     ["Artist"] =  "GrizzlyHills (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1359]
+  }, -- [1466]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "GH1 Day 3",
@@ -11329,7 +12185,7 @@ local GameMusic = {
     ["Length"] = 238,
     ["Artist"] =  "GrizzlyHills (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1360]
+  }, -- [1467]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "GH1 Day 4",
@@ -11337,7 +12193,7 @@ local GameMusic = {
     ["Length"] = 111,
     ["Artist"] =  "GrizzlyHills (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1361]
+  }, -- [1468]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "GH1 Day 5",
@@ -11345,7 +12201,7 @@ local GameMusic = {
     ["Length"] = 97,
     ["Artist"] =  "GrizzlyHills (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1362]
+  }, -- [1469]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "GH2 Day 1",
@@ -11353,7 +12209,7 @@ local GameMusic = {
     ["Length"] = 155,
     ["Artist"] =  "GrizzlyHills (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1363]
+  }, -- [1470]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "GH2 Day 2",
@@ -11361,7 +12217,7 @@ local GameMusic = {
     ["Length"] = 155,
     ["Artist"] =  "GrizzlyHills (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1364]
+  }, -- [1471]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "GH2 Day 3",
@@ -11369,7 +12225,7 @@ local GameMusic = {
     ["Length"] = 88,
     ["Artist"] =  "GrizzlyHills (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1365]
+  }, -- [1472]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "GH2 Day 4",
@@ -11377,7 +12233,7 @@ local GameMusic = {
     ["Length"] = 88,
     ["Artist"] =  "GrizzlyHills (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1366]
+  }, -- [1473]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "GH1 Night 1",
@@ -11385,7 +12241,7 @@ local GameMusic = {
     ["Length"] = 101,
     ["Artist"] =  "GrizzlyHills (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1367]
+  }, -- [1474]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "GH1 Night 2",
@@ -11393,7 +12249,7 @@ local GameMusic = {
     ["Length"] = 111,
     ["Artist"] =  "GrizzlyHills (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1368]
+  }, -- [1475]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "GH1 Night 3",
@@ -11401,7 +12257,7 @@ local GameMusic = {
     ["Length"] = 99,
     ["Artist"] =  "GrizzlyHills (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1369]
+  }, -- [1476]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "GH1 Night 4",
@@ -11409,7 +12265,7 @@ local GameMusic = {
     ["Length"] = 155,
     ["Artist"] =  "GrizzlyHills (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1370]
+  }, -- [1477]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "GH2 Night 1",
@@ -11417,7 +12273,7 @@ local GameMusic = {
     ["Length"] = 149,
     ["Artist"] =  "GrizzlyHills (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1371]
+  }, -- [1478]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "GH2 Night 2",
@@ -11425,7 +12281,7 @@ local GameMusic = {
     ["Length"] = 133,
     ["Artist"] =  "GrizzlyHills (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1372]
+  }, -- [1479]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Blade's Edge Ogre Walking 1",
@@ -11433,7 +12289,7 @@ local GameMusic = {
     ["Length"] = 75,
     ["Artist"] =  "HellfirePeninsula (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1373]
+  }, -- [1480]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Blade's Edge Ogre Walking 2",
@@ -11441,7 +12297,7 @@ local GameMusic = {
     ["Length"] = 110,
     ["Artist"] =  "HellfirePeninsula (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1374]
+  }, -- [1481]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Armoury",
@@ -11449,7 +12305,7 @@ local GameMusic = {
     ["Length"] = 14,
     ["Artist"] =  "HellfirePeninsula (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1375]
+  }, -- [1482]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Citadel Demon Wing Walking 1",
@@ -11457,7 +12313,7 @@ local GameMusic = {
     ["Length"] = 53,
     ["Artist"] =  "HellfirePeninsula (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1376]
+  }, -- [1483]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Hellfire Citadel Walking 2",
@@ -11465,7 +12321,7 @@ local GameMusic = {
     ["Length"] = 63,
     ["Artist"] =  "HellfirePeninsula (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1377]
+  }, -- [1484]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Citadel",
@@ -11473,7 +12329,7 @@ local GameMusic = {
     ["Length"] = 19,
     ["Artist"] =  "HellfirePeninsula (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1378]
+  }, -- [1485]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Hellfire Walking 1",
@@ -11481,7 +12337,7 @@ local GameMusic = {
     ["Length"] = 130,
     ["Artist"] =  "HellfirePeninsula (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1379]
+  }, -- [1486]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Hellfire Walking 2",
@@ -11489,7 +12345,7 @@ local GameMusic = {
     ["Length"] = 66,
     ["Artist"] =  "HellfirePeninsula (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1380]
+  }, -- [1487]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Hellfire Walking 3",
@@ -11497,7 +12353,7 @@ local GameMusic = {
     ["Length"] = 59,
     ["Artist"] =  "HellfirePeninsula (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1381]
+  }, -- [1488]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Hellfire Walking 4",
@@ -11505,7 +12361,7 @@ local GameMusic = {
     ["Length"] = 96,
     ["Artist"] =  "HellfirePeninsula (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1382]
+  }, -- [1489]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Hellfire Walking 5",
@@ -11513,7 +12369,7 @@ local GameMusic = {
     ["Length"] = 126,
     ["Artist"] =  "HellfirePeninsula (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1383]
+  }, -- [1490]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Path Of Glory",
@@ -11521,7 +12377,7 @@ local GameMusic = {
     ["Length"] = 18,
     ["Artist"] =  "HellfirePeninsula (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1384]
+  }, -- [1491]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Hellfire Citadel Walking 1",
@@ -11529,7 +12385,7 @@ local GameMusic = {
     ["Length"] = 62,
     ["Artist"] =  "HellfirePeninsula (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1385]
+  }, -- [1492]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Hellfire Citadel Walking 2",
@@ -11537,7 +12393,7 @@ local GameMusic = {
     ["Length"] = 69,
     ["Artist"] =  "HellfirePeninsula (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1386]
+  }, -- [1493]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Stairs Of Destiny",
@@ -11545,7 +12401,7 @@ local GameMusic = {
     ["Length"] = 18,
     ["Artist"] =  "HellfirePeninsula (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1387]
+  }, -- [1494]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Wistful 1",
@@ -11553,7 +12409,7 @@ local GameMusic = {
     ["Length"] = 25,
     ["Artist"] =  "HellfirePeninsula (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1388]
+  }, -- [1495]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Wistful 2",
@@ -11561,7 +12417,7 @@ local GameMusic = {
     ["Length"] = 17,
     ["Artist"] =  "HellfirePeninsula (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1389]
+  }, -- [1496]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "HF Dist 1",
@@ -11569,7 +12425,7 @@ local GameMusic = {
     ["Length"] = 30,
     ["Artist"] =  "HowlingFjord (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1390]
+  }, -- [1497]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "HF Dist 2",
@@ -11577,7 +12433,7 @@ local GameMusic = {
     ["Length"] = 47,
     ["Artist"] =  "HowlingFjord (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1391]
+  }, -- [1498]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "HF Dist 3",
@@ -11585,7 +12441,7 @@ local GameMusic = {
     ["Length"] = 52,
     ["Artist"] =  "HowlingFjord (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1392]
+  }, -- [1499]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "HF Dist 4",
@@ -11593,7 +12449,7 @@ local GameMusic = {
     ["Length"] = 26,
     ["Artist"] =  "HowlingFjord (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1393]
+  }, -- [1500]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "HF Dist 5",
@@ -11601,7 +12457,7 @@ local GameMusic = {
     ["Length"] = 22,
     ["Artist"] =  "HowlingFjord (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1394]
+  }, -- [1501]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "HF Dist 6",
@@ -11609,7 +12465,7 @@ local GameMusic = {
     ["Length"] = 41,
     ["Artist"] =  "HowlingFjord (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1395]
+  }, -- [1502]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "HF Dist 7",
@@ -11617,7 +12473,7 @@ local GameMusic = {
     ["Length"] = 23,
     ["Artist"] =  "HowlingFjord (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1396]
+  }, -- [1503]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "HF_GeneralWalk_Day01",
@@ -11625,7 +12481,7 @@ local GameMusic = {
     ["Length"] = 110,
     ["Artist"] =  "HowlingFjord (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1397]
+  }, -- [1504]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "HF_GeneralWalk_Day02",
@@ -11633,7 +12489,7 @@ local GameMusic = {
     ["Length"] = 75,
     ["Artist"] =  "HowlingFjord (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1398]
+  }, -- [1505]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "HF_GeneralWalk_Day03",
@@ -11641,7 +12497,7 @@ local GameMusic = {
     ["Length"] = 90,
     ["Artist"] =  "HowlingFjord (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1399]
+  }, -- [1506]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "HF_GeneralWalk_Day04",
@@ -11649,7 +12505,7 @@ local GameMusic = {
     ["Length"] = 64,
     ["Artist"] =  "HowlingFjord (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1400]
+  }, -- [1507]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "HF_GeneralWalk_Day05",
@@ -11657,7 +12513,7 @@ local GameMusic = {
     ["Length"] = 124,
     ["Artist"] =  "HowlingFjord (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1401]
+  }, -- [1508]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "HF_GeneralWalk_Day06",
@@ -11665,7 +12521,7 @@ local GameMusic = {
     ["Length"] = 114,
     ["Artist"] =  "HowlingFjord (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1402]
+  }, -- [1509]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "HF_GeneralWalk_Day07",
@@ -11673,7 +12529,7 @@ local GameMusic = {
     ["Length"] = 149,
     ["Artist"] =  "HowlingFjord (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1403]
+  }, -- [1510]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "HF_GeneralWalk_Night01",
@@ -11681,7 +12537,7 @@ local GameMusic = {
     ["Length"] = 106,
     ["Artist"] =  "HowlingFjord (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1404]
+  }, -- [1511]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "HF_GeneralWalk_Night02",
@@ -11689,7 +12545,7 @@ local GameMusic = {
     ["Length"] = 91,
     ["Artist"] =  "HowlingFjord (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1405]
+  }, -- [1512]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "HF_GeneralWalk_Night03",
@@ -11697,7 +12553,7 @@ local GameMusic = {
     ["Length"] = 84,
     ["Artist"] =  "HowlingFjord (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1406]
+  }, -- [1513]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "HF_GeneralWalk_Night04",
@@ -11705,7 +12561,7 @@ local GameMusic = {
     ["Length"] = 157,
     ["Artist"] =  "HowlingFjord (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1407]
+  }, -- [1514]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "HF_Tusk_KamaguaDay01",
@@ -11713,7 +12569,7 @@ local GameMusic = {
     ["Length"] = 95,
     ["Artist"] =  "HowlingFjord (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1408]
+  }, -- [1515]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "HF_Tusk_KamaguaDay02",
@@ -11721,7 +12577,7 @@ local GameMusic = {
     ["Length"] = 54,
     ["Artist"] =  "HowlingFjord (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1409]
+  }, -- [1516]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "HF_tuskarr_kamagua_night1",
@@ -11729,7 +12585,7 @@ local GameMusic = {
     ["Length"] = 99,
     ["Artist"] =  "HowlingFjord (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1410]
+  }, -- [1517]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "HF_tuskarr_kamagua_night2",
@@ -11737,7 +12593,7 @@ local GameMusic = {
     ["Length"] = 80,
     ["Artist"] =  "HowlingFjord (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1411]
+  }, -- [1518]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "IC_GeneralIntro_01",
@@ -11745,7 +12601,7 @@ local GameMusic = {
     ["Length"] = 58,
     ["Artist"] =  "IcecrownGlacier (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1412]
+  }, -- [1519]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "IC_GeneralIntro_02",
@@ -11753,7 +12609,7 @@ local GameMusic = {
     ["Length"] = 56,
     ["Artist"] =  "IcecrownGlacier (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1413]
+  }, -- [1520]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "IC_GeneralIntro_03",
@@ -11761,7 +12617,7 @@ local GameMusic = {
     ["Length"] = 57,
     ["Artist"] =  "IcecrownGlacier (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1414]
+  }, -- [1521]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "IC_GeneralWalk_Day01",
@@ -11769,7 +12625,7 @@ local GameMusic = {
     ["Length"] = 75,
     ["Artist"] =  "IcecrownGlacier (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1415]
+  }, -- [1522]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "IC_GeneralWalk_Day02",
@@ -11777,7 +12633,7 @@ local GameMusic = {
     ["Length"] = 101,
     ["Artist"] =  "IcecrownGlacier (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1416]
+  }, -- [1523]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "IC_GeneralWalk_Day03",
@@ -11785,7 +12641,7 @@ local GameMusic = {
     ["Length"] = 62,
     ["Artist"] =  "IcecrownGlacier (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1417]
+  }, -- [1524]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "IC_GeneralWalk_Day04",
@@ -11793,7 +12649,7 @@ local GameMusic = {
     ["Length"] = 98,
     ["Artist"] =  "IcecrownGlacier (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1418]
+  }, -- [1525]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "IC_GeneralWalk_Night01",
@@ -11801,7 +12657,7 @@ local GameMusic = {
     ["Length"] = 99,
     ["Artist"] =  "IcecrownGlacier (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1419]
+  }, -- [1526]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "IC_GeneralWalk_Night02",
@@ -11809,7 +12665,7 @@ local GameMusic = {
     ["Length"] = 81,
     ["Artist"] =  "IcecrownGlacier (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1420]
+  }, -- [1527]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "IC_GeneralWalk_Night03",
@@ -11817,7 +12673,7 @@ local GameMusic = {
     ["Length"] = 94,
     ["Artist"] =  "IcecrownGlacier (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1421]
+  }, -- [1528]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "IC_GeneralWalk_Night04",
@@ -11825,7 +12681,7 @@ local GameMusic = {
     ["Length"] = 64,
     ["Artist"] =  "IcecrownGlacier (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1422]
+  }, -- [1529]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "IC_GeneralWalk_Night05",
@@ -11833,7 +12689,7 @@ local GameMusic = {
     ["Length"] = 102,
     ["Artist"] =  "IcecrownGlacier (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1423]
+  }, -- [1530]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Bronze Jam",
@@ -11841,7 +12697,7 @@ local GameMusic = {
     ["Length"] = 116,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1424]
+  }, -- [1531]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Crimson Hall 1",
@@ -11849,7 +12705,7 @@ local GameMusic = {
     ["Length"] = 121,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1425]
+  }, -- [1532]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Crimson Hall 2",
@@ -11857,7 +12713,7 @@ local GameMusic = {
     ["Length"] = 73,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1426]
+  }, -- [1533]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Crimson Hall 3",
@@ -11865,7 +12721,7 @@ local GameMusic = {
     ["Length"] = 61,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1427]
+  }, -- [1534]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Crimson Hall 4",
@@ -11873,7 +12729,7 @@ local GameMusic = {
     ["Length"] = 130,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1428]
+  }, -- [1535]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Forge of Souls 1",
@@ -11881,7 +12737,7 @@ local GameMusic = {
     ["Length"] = 103,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1429]
+  }, -- [1536]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Forge of Souls 2",
@@ -11889,7 +12745,7 @@ local GameMusic = {
     ["Length"] = 87,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1430]
+  }, -- [1537]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Forge of Souls 3",
@@ -11897,7 +12753,7 @@ local GameMusic = {
     ["Length"] = 97,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1431]
+  }, -- [1538]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Forge of Souls 4",
@@ -11905,7 +12761,7 @@ local GameMusic = {
     ["Length"] = 99,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1432]
+  }, -- [1539]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Frostmourne 1",
@@ -11913,7 +12769,7 @@ local GameMusic = {
     ["Length"] = 103,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1433]
+  }, -- [1540]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Frostmourne 2",
@@ -11921,7 +12777,7 @@ local GameMusic = {
     ["Length"] = 103,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1434]
+  }, -- [1541]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Frostmourne 3",
@@ -11929,7 +12785,7 @@ local GameMusic = {
     ["Length"] = 103,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1435]
+  }, -- [1542]
   {
     ["Album"] = "WoW 3.3.2 Fall of the Lich King",
     ["Song"] = "Back Off",
@@ -11937,7 +12793,7 @@ local GameMusic = {
     ["Length"] = 24,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1436]
+  }, -- [1543]
   {
     ["Album"] = "WoW 3.3.2 Fall of the Lich King",
     ["Song"] = "Bring It",
@@ -11945,7 +12801,7 @@ local GameMusic = {
     ["Length"] = 41,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1437]
+  }, -- [1544]
   {
     ["Album"] = "",
     ["Song"] = "IR_StingN_05",
@@ -11953,7 +12809,7 @@ local GameMusic = {
     ["Length"] = 20,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1438]
+  }, -- [1545]
   {
     ["Album"] = "",
     ["Song"] = "IR_StingN_06",
@@ -11961,7 +12817,7 @@ local GameMusic = {
     ["Length"] = 15,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1439]
+  }, -- [1546]
   {
     ["Album"] = "",
     ["Song"] = "IR_StingN_07",
@@ -11969,7 +12825,7 @@ local GameMusic = {
     ["Length"] = 10,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1440]
+  }, -- [1547]
   {
     ["Album"] = "",
     ["Song"] = "IR_StingN_08",
@@ -11977,7 +12833,7 @@ local GameMusic = {
     ["Length"] = 20,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1441]
+  }, -- [1548]
   {
     ["Album"] = "WoW 3.3.2 Fall of the Lich King",
     ["Song"] = "Souls' Torment",
@@ -11985,7 +12841,7 @@ local GameMusic = {
     ["Length"] = 283,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1442]
+  }, -- [1549]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Gunships",
@@ -11993,7 +12849,7 @@ local GameMusic = {
     ["Length"] = 73,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1443]
+  }, -- [1550]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "GunStrings",
@@ -12001,7 +12857,7 @@ local GameMusic = {
     ["Length"] = 61,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1444]
+  }, -- [1551]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Halls of Chase",
@@ -12009,7 +12865,7 @@ local GameMusic = {
     ["Length"] = 106,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1445]
+  }, -- [1552]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Halls of Reflection",
@@ -12017,7 +12873,7 @@ local GameMusic = {
     ["Length"] = 157,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1446]
+  }, -- [1553]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Ice Fortress",
@@ -12025,7 +12881,7 @@ local GameMusic = {
     ["Length"] = 133,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1447]
+  }, -- [1554]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Ice Fortress 1",
@@ -12033,7 +12889,7 @@ local GameMusic = {
     ["Length"] = 153,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1448]
+  }, -- [1555]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Ice Fortress 2",
@@ -12041,7 +12897,7 @@ local GameMusic = {
     ["Length"] = 105,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1449]
+  }, -- [1556]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Ice Fortress 3",
@@ -12049,7 +12905,7 @@ local GameMusic = {
     ["Length"] = 80,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1450]
+  }, -- [1557]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Ice Fortress 4",
@@ -12057,7 +12913,7 @@ local GameMusic = {
     ["Length"] = 106,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1451]
+  }, -- [1558]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Lady or the Lich",
@@ -12065,7 +12921,7 @@ local GameMusic = {
     ["Length"] = 75,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1452]
+  }, -- [1559]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Let Him Pass",
@@ -12073,7 +12929,7 @@ local GameMusic = {
     ["Length"] = 92,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1453]
+  }, -- [1560]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Light's Hammer 1",
@@ -12081,7 +12937,7 @@ local GameMusic = {
     ["Length"] = 108,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1454]
+  }, -- [1561]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Light's Hammer 2",
@@ -12089,7 +12945,7 @@ local GameMusic = {
     ["Length"] = 40,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1455]
+  }, -- [1562]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Light's Hammer 3",
@@ -12097,7 +12953,7 @@ local GameMusic = {
     ["Length"] = 83,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1456]
+  }, -- [1563]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Light's Hammer 4",
@@ -12105,7 +12961,7 @@ local GameMusic = {
     ["Length"] = 102,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1457]
+  }, -- [1564]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Light's Hammer 5",
@@ -12113,7 +12969,7 @@ local GameMusic = {
     ["Length"] = 58,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1458]
+  }, -- [1565]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Light's Hammer 6",
@@ -12121,7 +12977,7 @@ local GameMusic = {
     ["Length"] = 108,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1459]
+  }, -- [1566]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Reflected Halls 1",
@@ -12129,7 +12985,7 @@ local GameMusic = {
     ["Length"] = 60,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1460]
+  }, -- [1567]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Reflected Halls 2",
@@ -12137,7 +12993,7 @@ local GameMusic = {
     ["Length"] = 75,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1461]
+  }, -- [1568]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Reflected Halls 3",
@@ -12145,7 +13001,7 @@ local GameMusic = {
     ["Length"] = 67,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1462]
+  }, -- [1569]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Reflected Halls 4",
@@ -12153,7 +13009,7 @@ local GameMusic = {
     ["Length"] = 129,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1463]
+  }, -- [1570]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Reflected Halls 5",
@@ -12161,7 +13017,7 @@ local GameMusic = {
     ["Length"] = 59,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1464]
+  }, -- [1571]
   {
     ["Album"] = "",
     ["Song"] = "IR_RunK_01",
@@ -12169,7 +13025,7 @@ local GameMusic = {
     ["Length"] = 27,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1465]
+  }, -- [1572]
   {
     ["Album"] = "",
     ["Song"] = "IR_RunK_02",
@@ -12177,7 +13033,7 @@ local GameMusic = {
     ["Length"] = 27,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1466]
+  }, -- [1573]
   {
     ["Album"] = "",
     ["Song"] = "IR_RunK_03",
@@ -12185,7 +13041,7 @@ local GameMusic = {
     ["Length"] = 27,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1467]
+  }, -- [1574]
   {
     ["Album"] = "",
     ["Song"] = "IR_RunL_01",
@@ -12193,7 +13049,7 @@ local GameMusic = {
     ["Length"] = 23,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1468]
+  }, -- [1575]
   {
     ["Album"] = "",
     ["Song"] = "IR_RunL_02",
@@ -12201,7 +13057,7 @@ local GameMusic = {
     ["Length"] = 42,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1469]
+  }, -- [1576]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Sindragosa",
@@ -12209,7 +13065,7 @@ local GameMusic = {
     ["Length"] = 68,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1470]
+  }, -- [1577]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "SindraStrings",
@@ -12217,7 +13073,7 @@ local GameMusic = {
     ["Length"] = 66,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1471]
+  }, -- [1578]
   {
     ["Album"] = "",
     ["Song"] = "IR_StingH_01",
@@ -12225,7 +13081,7 @@ local GameMusic = {
     ["Length"] = 27,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1472]
+  }, -- [1579]
   {
     ["Album"] = "",
     ["Song"] = "IR_StingH_02",
@@ -12233,7 +13089,7 @@ local GameMusic = {
     ["Length"] = 16,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1473]
+  }, -- [1580]
   {
     ["Album"] = "",
     ["Song"] = "IR_StingH_03",
@@ -12241,7 +13097,7 @@ local GameMusic = {
     ["Length"] = 25,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1474]
+  }, -- [1581]
   {
     ["Album"] = "",
     ["Song"] = "IR_StingH_04",
@@ -12249,7 +13105,7 @@ local GameMusic = {
     ["Length"] = 26,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1475]
+  }, -- [1582]
   {
     ["Album"] = "",
     ["Song"] = "IR_StingH_05",
@@ -12257,7 +13113,7 @@ local GameMusic = {
     ["Length"] = 27,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1476]
+  }, -- [1583]
   {
     ["Album"] = "",
     ["Song"] = "IR_StingH_06",
@@ -12265,7 +13121,7 @@ local GameMusic = {
     ["Length"] = 27,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1477]
+  }, -- [1584]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Summit 1",
@@ -12273,7 +13129,7 @@ local GameMusic = {
     ["Length"] = 103,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1478]
+  }, -- [1585]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Summit 2",
@@ -12281,7 +13137,7 @@ local GameMusic = {
     ["Length"] = 103,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1479]
+  }, -- [1586]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Summit 3",
@@ -12289,7 +13145,7 @@ local GameMusic = {
     ["Length"] = 103,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1480]
+  }, -- [1587]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Summit 4",
@@ -12297,7 +13153,7 @@ local GameMusic = {
     ["Length"] = 103,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1481]
+  }, -- [1588]
   {
     ["Album"] = "WoW 3.3 Fall of the Lich King",
     ["Song"] = "Summit 5",
@@ -12305,7 +13161,7 @@ local GameMusic = {
     ["Length"] = 103,
     ["Artist"] =  "IcecrownRaid (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1482]
+  }, -- [1589]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkA_01",
@@ -12313,7 +13169,7 @@ local GameMusic = {
     ["Length"] = 98,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1483]
+  }, -- [1590]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkA_02",
@@ -12321,7 +13177,7 @@ local GameMusic = {
     ["Length"] = 97,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1484]
+  }, -- [1591]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkA_03",
@@ -12329,7 +13185,7 @@ local GameMusic = {
     ["Length"] = 91,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1485]
+  }, -- [1592]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkA_04",
@@ -12337,7 +13193,7 @@ local GameMusic = {
     ["Length"] = 98,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1486]
+  }, -- [1593]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkA_05",
@@ -12345,7 +13201,7 @@ local GameMusic = {
     ["Length"] = 100,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1487]
+  }, -- [1594]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkA_06",
@@ -12353,7 +13209,7 @@ local GameMusic = {
     ["Length"] = 52,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1488]
+  }, -- [1595]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkB_01",
@@ -12361,7 +13217,7 @@ local GameMusic = {
     ["Length"] = 52,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1489]
+  }, -- [1596]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkD_01",
@@ -12369,7 +13225,7 @@ local GameMusic = {
     ["Length"] = 43,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1490]
+  }, -- [1597]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkD_02",
@@ -12377,7 +13233,7 @@ local GameMusic = {
     ["Length"] = 42,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1491]
+  }, -- [1598]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkD_03",
@@ -12385,7 +13241,7 @@ local GameMusic = {
     ["Length"] = 42,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1492]
+  }, -- [1599]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkD_04",
@@ -12393,7 +13249,7 @@ local GameMusic = {
     ["Length"] = 43,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1493]
+  }, -- [1600]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkD_05",
@@ -12401,7 +13257,7 @@ local GameMusic = {
     ["Length"] = 43,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1494]
+  }, -- [1601]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkD_06",
@@ -12409,7 +13265,7 @@ local GameMusic = {
     ["Length"] = 43,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1495]
+  }, -- [1602]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkE_01",
@@ -12417,7 +13273,7 @@ local GameMusic = {
     ["Length"] = 29,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1496]
+  }, -- [1603]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkE_02",
@@ -12425,7 +13281,7 @@ local GameMusic = {
     ["Length"] = 29,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1497]
+  }, -- [1604]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkE_03",
@@ -12433,7 +13289,7 @@ local GameMusic = {
     ["Length"] = 28,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1498]
+  }, -- [1605]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkE_04",
@@ -12441,7 +13297,7 @@ local GameMusic = {
     ["Length"] = 29,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1499]
+  }, -- [1606]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkE_05",
@@ -12449,7 +13305,7 @@ local GameMusic = {
     ["Length"] = 28,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1500]
+  }, -- [1607]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkF_01",
@@ -12457,7 +13313,7 @@ local GameMusic = {
     ["Length"] = 49,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1501]
+  }, -- [1608]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkF_02",
@@ -12465,7 +13321,7 @@ local GameMusic = {
     ["Length"] = 47,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1502]
+  }, -- [1609]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkF_03",
@@ -12473,7 +13329,7 @@ local GameMusic = {
     ["Length"] = 43,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1503]
+  }, -- [1610]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkF_04",
@@ -12481,7 +13337,7 @@ local GameMusic = {
     ["Length"] = 48,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1504]
+  }, -- [1611]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkF_05",
@@ -12489,7 +13345,7 @@ local GameMusic = {
     ["Length"] = 43,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1505]
+  }, -- [1612]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkF_06",
@@ -12497,7 +13353,7 @@ local GameMusic = {
     ["Length"] = 43,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1506]
+  }, -- [1613]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkF_07",
@@ -12505,7 +13361,7 @@ local GameMusic = {
     ["Length"] = 43,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1507]
+  }, -- [1614]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkF_08",
@@ -12513,7 +13369,7 @@ local GameMusic = {
     ["Length"] = 42,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1508]
+  }, -- [1615]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkG_01",
@@ -12521,7 +13377,7 @@ local GameMusic = {
     ["Length"] = 24,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1509]
+  }, -- [1616]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkG_02",
@@ -12529,7 +13385,7 @@ local GameMusic = {
     ["Length"] = 24,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1510]
+  }, -- [1617]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkG_03",
@@ -12537,7 +13393,7 @@ local GameMusic = {
     ["Length"] = 24,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1511]
+  }, -- [1618]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkG_04",
@@ -12545,7 +13401,7 @@ local GameMusic = {
     ["Length"] = 23,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1512]
+  }, -- [1619]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkG_05",
@@ -12553,7 +13409,7 @@ local GameMusic = {
     ["Length"] = 25,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1513]
+  }, -- [1620]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkG_06",
@@ -12561,7 +13417,7 @@ local GameMusic = {
     ["Length"] = 24,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1514]
+  }, -- [1621]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkJ_01",
@@ -12569,7 +13425,7 @@ local GameMusic = {
     ["Length"] = 82,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1515]
+  }, -- [1622]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkJ_02",
@@ -12577,7 +13433,7 @@ local GameMusic = {
     ["Length"] = 82,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1516]
+  }, -- [1623]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkJ_03",
@@ -12585,7 +13441,7 @@ local GameMusic = {
     ["Length"] = 81,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1517]
+  }, -- [1624]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkJ_04",
@@ -12593,7 +13449,7 @@ local GameMusic = {
     ["Length"] = 82,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1518]
+  }, -- [1625]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkJ_05",
@@ -12601,7 +13457,7 @@ local GameMusic = {
     ["Length"] = 82,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1519]
+  }, -- [1626]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkJ_06",
@@ -12609,7 +13465,7 @@ local GameMusic = {
     ["Length"] = 82,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1520]
+  }, -- [1627]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkM_01",
@@ -12617,7 +13473,7 @@ local GameMusic = {
     ["Length"] = 156,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1521]
+  }, -- [1628]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkZ_01",
@@ -12625,7 +13481,7 @@ local GameMusic = {
     ["Length"] = 46,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1522]
+  }, -- [1629]
   {
     ["Album"] = "",
     ["Song"] = "IR_WalkZ_02",
@@ -12633,7 +13489,7 @@ local GameMusic = {
     ["Length"] = 46,
     ["Artist"] =  "IcecrownRaid",
     ["WoW"] = true,
-  }, -- [1523]
+  }, -- [1630]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "DayJungle01",
@@ -12641,7 +13497,7 @@ local GameMusic = {
     ["Length"] = 46,
     ["Artist"] =  "Jungle (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1524]
+  }, -- [1631]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "DayJungle02",
@@ -12649,7 +13505,7 @@ local GameMusic = {
     ["Length"] = 98,
     ["Artist"] =  "Jungle (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1525]
+  }, -- [1632]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "DayJungle03",
@@ -12657,7 +13513,7 @@ local GameMusic = {
     ["Length"] = 48,
     ["Artist"] =  "Jungle (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1526]
+  }, -- [1633]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "NightJungle01",
@@ -12665,7 +13521,7 @@ local GameMusic = {
     ["Length"] = 54,
     ["Artist"] =  "Jungle (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1527]
+  }, -- [1634]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "NightJungle02",
@@ -12673,7 +13529,7 @@ local GameMusic = {
     ["Length"] = 53,
     ["Artist"] =  "Jungle (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1528]
+  }, -- [1635]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "NightJungle03",
@@ -12681,7 +13537,7 @@ local GameMusic = {
     ["Length"] = 89,
     ["Artist"] =  "Jungle (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1529]
+  }, -- [1636]
   {
     ["Album"] = "WoW Patch 2.3",
     ["Song"] = "KA_BackstageWalkUni01",
@@ -12689,7 +13545,7 @@ local GameMusic = {
     ["Length"] = 98,
     ["Artist"] =  "Karazhan (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1530]
+  }, -- [1637]
   {
     ["Album"] = "WoW Patch 2.3",
     ["Song"] = "KA_BackstageWalkUni02",
@@ -12697,7 +13553,7 @@ local GameMusic = {
     ["Length"] = 98,
     ["Artist"] =  "Karazhan (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1531]
+  }, -- [1638]
   {
     ["Album"] = "WoW Patch 2.3",
     ["Song"] = "KA_FoyerIntroUni01",
@@ -12705,7 +13561,7 @@ local GameMusic = {
     ["Length"] = 117,
     ["Artist"] =  "Karazhan (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1532]
+  }, -- [1639]
   {
     ["Album"] = "WoW Patch 2.3",
     ["Song"] = "KA_FoyerWalkUni01",
@@ -12713,7 +13569,7 @@ local GameMusic = {
     ["Length"] = 113,
     ["Artist"] =  "Karazhan (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1533]
+  }, -- [1640]
   {
     ["Album"] = "WoW Patch 2.3",
     ["Song"] = "KA_FoyerWalkUni02",
@@ -12721,7 +13577,7 @@ local GameMusic = {
     ["Length"] = 112,
     ["Artist"] =  "Karazhan (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1534]
+  }, -- [1641]
   {
     ["Album"] = "WoW Patch 2.3",
     ["Song"] = "KA_FoyerWalkUni03",
@@ -12729,7 +13585,7 @@ local GameMusic = {
     ["Length"] = 124,
     ["Artist"] =  "Karazhan (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1535]
+  }, -- [1642]
   {
     ["Album"] = "WoW Patch 2.3",
     ["Song"] = "KA_FoyerWalkUni04",
@@ -12737,7 +13593,7 @@ local GameMusic = {
     ["Length"] = 31,
     ["Artist"] =  "Karazhan (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1536]
+  }, -- [1643]
   {
     ["Album"] = "WoW Patch 2.3",
     ["Song"] = "KA_GeneralWalkUni01",
@@ -12745,7 +13601,7 @@ local GameMusic = {
     ["Length"] = 130,
     ["Artist"] =  "Karazhan (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1537]
+  }, -- [1644]
   {
     ["Album"] = "WoW Patch 2.3",
     ["Song"] = "KA_GeneralWalkUni02",
@@ -12753,7 +13609,7 @@ local GameMusic = {
     ["Length"] = 123,
     ["Artist"] =  "Karazhan (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1538]
+  }, -- [1645]
   {
     ["Album"] = "WoW Patch 2.3",
     ["Song"] = "KA_GeneralWalkUni03",
@@ -12761,7 +13617,7 @@ local GameMusic = {
     ["Length"] = 119,
     ["Artist"] =  "Karazhan (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1539]
+  }, -- [1646]
   {
     ["Album"] = "WoW Patch 2.3",
     ["Song"] = "KA_GeneralWalkUni04",
@@ -12769,7 +13625,7 @@ local GameMusic = {
     ["Length"] = 112,
     ["Artist"] =  "Karazhan (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1540]
+  }, -- [1647]
   {
     ["Album"] = "WoW Patch 2.3",
     ["Song"] = "KA_GeneralWalkUni05",
@@ -12777,7 +13633,7 @@ local GameMusic = {
     ["Length"] = 125,
     ["Artist"] =  "Karazhan (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1541]
+  }, -- [1648]
   {
     ["Album"] = "WoW Patch 2.3",
     ["Song"] = "KA_GeneralWalkUni06",
@@ -12785,7 +13641,7 @@ local GameMusic = {
     ["Length"] = 92,
     ["Artist"] =  "Karazhan (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1542]
+  }, -- [1649]
   {
     ["Album"] = "WoW Patch 2.3",
     ["Song"] = "KA_GeneralWalkUni07",
@@ -12793,7 +13649,7 @@ local GameMusic = {
     ["Length"] = 81,
     ["Artist"] =  "Karazhan (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1543]
+  }, -- [1650]
   {
     ["Album"] = "WoW Patch 2.3",
     ["Song"] = "KA_LibraryWalkUni01",
@@ -12801,7 +13657,7 @@ local GameMusic = {
     ["Length"] = 128,
     ["Artist"] =  "Karazhan (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1544]
+  }, -- [1651]
   {
     ["Album"] = "WoW Patch 2.3",
     ["Song"] = "KA_LibraryWalkUni02",
@@ -12809,7 +13665,7 @@ local GameMusic = {
     ["Length"] = 147,
     ["Artist"] =  "Karazhan (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1545]
+  }, -- [1652]
   {
     ["Album"] = "WoW Patch 2.3",
     ["Song"] = "KA_LibraryWalkUni03",
@@ -12817,7 +13673,7 @@ local GameMusic = {
     ["Length"] = 126,
     ["Artist"] =  "Karazhan (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1546]
+  }, -- [1653]
   {
     ["Album"] = "WoW Patch 2.3",
     ["Song"] = "KA_LibraryWalkUni04",
@@ -12825,7 +13681,7 @@ local GameMusic = {
     ["Length"] = 124,
     ["Artist"] =  "Karazhan (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1547]
+  }, -- [1654]
   {
     ["Album"] = "WoW Patch 2.3",
     ["Song"] = "KA_MalchezarWalkUni01",
@@ -12833,7 +13689,7 @@ local GameMusic = {
     ["Length"] = 124,
     ["Artist"] =  "Karazhan (Brian David Farr & Russell Brower)",
     ["WoW"] = true,
-  }, -- [1548]
+  }, -- [1655]
   {
     ["Album"] = "WoW Patch 2.3",
     ["Song"] = "KA_MalchezarWalkUni02",
@@ -12841,7 +13697,7 @@ local GameMusic = {
     ["Length"] = 112,
     ["Artist"] =  "Karazhan (Brian David Farr & Russell Brower)",
     ["WoW"] = true,
-  }, -- [1549]
+  }, -- [1656]
   {
     ["Album"] = "WoW Patch 2.3",
     ["Song"] = "KA_MalchezarWalkUni03",
@@ -12849,7 +13705,7 @@ local GameMusic = {
     ["Length"] = 114,
     ["Artist"] =  "Karazhan (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1550]
+  }, -- [1657]
   {
     ["Album"] = "WoW Patch 2.3",
     ["Song"] = "KA_OperaHarpsiWalkUni01",
@@ -12857,7 +13713,7 @@ local GameMusic = {
     ["Length"] = 82,
     ["Artist"] =  "Karazhan (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1551]
+  }, -- [1658]
   {
     ["Album"] = "WoW Patch 2.3",
     ["Song"] = "KA_OperaOrganWalkUni01",
@@ -12865,7 +13721,7 @@ local GameMusic = {
     ["Length"] = 80,
     ["Artist"] =  "Karazhan (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1552]
+  }, -- [1659]
   {
     ["Album"] = "WoW Patch 2.3",
     ["Song"] = "KA_StableIntroUni01",
@@ -12873,7 +13729,7 @@ local GameMusic = {
     ["Length"] = 53,
     ["Artist"] =  "Karazhan (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1553]
+  }, -- [1660]
   {
     ["Album"] = "WoW Patch 2.3",
     ["Song"] = "KA_StableWalkUni01",
@@ -12881,7 +13737,7 @@ local GameMusic = {
     ["Length"] = 96,
     ["Artist"] =  "Karazhan (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1554]
+  }, -- [1661]
   {
     ["Album"] = "WoW Patch 2.3",
     ["Song"] = "KA_StableWalkUni02",
@@ -12889,7 +13745,7 @@ local GameMusic = {
     ["Length"] = 111,
     ["Artist"] =  "Karazhan (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1555]
+  }, -- [1662]
   {
     ["Album"] = "WoW Patch 2.3",
     ["Song"] = "KA_StableWalkUni03",
@@ -12897,7 +13753,7 @@ local GameMusic = {
     ["Length"] = 114,
     ["Artist"] =  "Karazhan (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1556]
+  }, -- [1663]
   {
     ["Album"] = "WoW Patch 2.3",
     ["Song"] = "KA_TowerWalkUni01",
@@ -12905,7 +13761,7 @@ local GameMusic = {
     ["Length"] = 94,
     ["Artist"] =  "Karazhan (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1557]
+  }, -- [1664]
   {
     ["Album"] = "WoW Patch 2.3",
     ["Song"] = "KA_TowerWalkUni02",
@@ -12913,7 +13769,7 @@ local GameMusic = {
     ["Length"] = 115,
     ["Artist"] =  "Karazhan (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1558]
+  }, -- [1665]
   {
     ["Album"] = "WoW Patch 2.3",
     ["Song"] = "KA_TowerWalkUni03",
@@ -12921,7 +13777,7 @@ local GameMusic = {
     ["Length"] = 127,
     ["Artist"] =  "Karazhan (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1559]
+  }, -- [1666]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "LG_Contested_01",
@@ -12929,7 +13785,7 @@ local GameMusic = {
     ["Length"] = 40,
     ["Artist"] =  "LakeWintergrasp (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1560]
+  }, -- [1667]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "LG_Contested_02",
@@ -12937,7 +13793,7 @@ local GameMusic = {
     ["Length"] = 93,
     ["Artist"] =  "LakeWintergrasp (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1561]
+  }, -- [1668]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "LG_Contested_03",
@@ -12945,7 +13801,7 @@ local GameMusic = {
     ["Length"] = 57,
     ["Artist"] =  "LakeWintergrasp (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1562]
+  }, -- [1669]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "WG_GeneralWalk_01",
@@ -12953,7 +13809,7 @@ local GameMusic = {
     ["Length"] = 92,
     ["Artist"] =  "LakeWintergrasp (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1563]
+  }, -- [1670]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "WG_GeneralWalk_02",
@@ -12961,7 +13817,7 @@ local GameMusic = {
     ["Length"] = 62,
     ["Artist"] =  "LakeWintergrasp (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1564]
+  }, -- [1671]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "WG_GeneralWalk_03",
@@ -12969,7 +13825,7 @@ local GameMusic = {
     ["Length"] = 92,
     ["Artist"] =  "LakeWintergrasp (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1565]
+  }, -- [1672]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "WG_GeneralWalk_04",
@@ -12977,7 +13833,7 @@ local GameMusic = {
     ["Length"] = 43,
     ["Artist"] =  "LakeWintergrasp (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1566]
+  }, -- [1673]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "WG_GeneralWalk_05",
@@ -12985,7 +13841,7 @@ local GameMusic = {
     ["Length"] = 57,
     ["Artist"] =  "LakeWintergrasp (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1567]
+  }, -- [1674]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "DayMountain01",
@@ -12993,7 +13849,7 @@ local GameMusic = {
     ["Length"] = 120,
     ["Artist"] =  "Mountain (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1568]
+  }, -- [1675]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "DayMountain02",
@@ -13001,7 +13857,7 @@ local GameMusic = {
     ["Length"] = 67,
     ["Artist"] =  "Mountain (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1569]
+  }, -- [1676]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "DayMountain03",
@@ -13009,7 +13865,7 @@ local GameMusic = {
     ["Length"] = 80,
     ["Artist"] =  "Mountain (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1570]
+  }, -- [1677]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "NightMountain01",
@@ -13017,7 +13873,7 @@ local GameMusic = {
     ["Length"] = 64,
     ["Artist"] =  "Mountain (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1571]
+  }, -- [1678]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "NightMountain02",
@@ -13025,7 +13881,7 @@ local GameMusic = {
     ["Length"] = 63,
     ["Artist"] =  "Mountain (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1572]
+  }, -- [1679]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "NightMountain03",
@@ -13033,7 +13889,7 @@ local GameMusic = {
     ["Length"] = 69,
     ["Artist"] =  "Mountain (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1573]
+  }, -- [1680]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "NightMountain04",
@@ -13041,7 +13897,7 @@ local GameMusic = {
     ["Length"] = 64,
     ["Artist"] =  "Mountain (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1574]
+  }, -- [1681]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Diamond Mountain",
@@ -13049,7 +13905,7 @@ local GameMusic = {
     ["Length"] = 73,
     ["Artist"] =  "Nagrand (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1575]
+  }, -- [1682]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Nagrand Day 1",
@@ -13057,7 +13913,7 @@ local GameMusic = {
     ["Length"] = 72,
     ["Artist"] =  "Nagrand (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1576]
+  }, -- [1683]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Nagrand Day 2",
@@ -13065,7 +13921,7 @@ local GameMusic = {
     ["Length"] = 100,
     ["Artist"] =  "Nagrand (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1577]
+  }, -- [1684]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Nagrand Day 3",
@@ -13073,7 +13929,7 @@ local GameMusic = {
     ["Length"] = 63,
     ["Artist"] =  "Nagrand (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1578]
+  }, -- [1685]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Nagrand Night 1",
@@ -13081,7 +13937,7 @@ local GameMusic = {
     ["Length"] = 88,
     ["Artist"] =  "Nagrand (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1579]
+  }, -- [1686]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Nagrand Night 2",
@@ -13089,7 +13945,7 @@ local GameMusic = {
     ["Length"] = 80,
     ["Artist"] =  "Nagrand (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1580]
+  }, -- [1687]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Nagrand Night 3",
@@ -13097,7 +13953,7 @@ local GameMusic = {
     ["Length"] = 166,
     ["Artist"] =  "Nagrand (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1581]
+  }, -- [1688]
   {
     ["Album"] = "Patch 1.11",
     ["Song"] = "AbominationBoss1",
@@ -13105,7 +13961,7 @@ local GameMusic = {
     ["Length"] = 61,
     ["Artist"] =  "Naxxramas (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1582]
+  }, -- [1689]
   {
     ["Album"] = "Patch 1.11",
     ["Song"] = "AbominationBoss2",
@@ -13113,7 +13969,7 @@ local GameMusic = {
     ["Length"] = 67,
     ["Artist"] =  "Naxxramas (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1583]
+  }, -- [1690]
   {
     ["Album"] = "Patch 1.11",
     ["Song"] = "AbominationWing1",
@@ -13121,7 +13977,7 @@ local GameMusic = {
     ["Length"] = 61,
     ["Artist"] =  "Naxxramas (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1584]
+  }, -- [1691]
   {
     ["Album"] = "Patch 1.11",
     ["Song"] = "AbominationWing2",
@@ -13129,7 +13985,7 @@ local GameMusic = {
     ["Length"] = 66,
     ["Artist"] =  "Naxxramas (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1585]
+  }, -- [1692]
   {
     ["Album"] = "Patch 1.11",
     ["Song"] = "AbominationWing3",
@@ -13137,7 +13993,7 @@ local GameMusic = {
     ["Length"] = 61,
     ["Artist"] =  "Naxxramas (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1586]
+  }, -- [1693]
   {
     ["Album"] = "Patch 1.11",
     ["Song"] = "Frostwyrm1",
@@ -13145,7 +14001,7 @@ local GameMusic = {
     ["Length"] = 58,
     ["Artist"] =  "Naxxramas (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1587]
+  }, -- [1694]
   {
     ["Album"] = "Patch 1.11",
     ["Song"] = "Frostwyrm2",
@@ -13153,7 +14009,7 @@ local GameMusic = {
     ["Length"] = 82,
     ["Artist"] =  "Naxxramas (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1588]
+  }, -- [1695]
   {
     ["Album"] = "Patch 1.11",
     ["Song"] = "Frostwyrm3",
@@ -13161,7 +14017,7 @@ local GameMusic = {
     ["Length"] = 62,
     ["Artist"] =  "Naxxramas (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1589]
+  }, -- [1696]
   {
     ["Album"] = "Patch 1.11",
     ["Song"] = "Frostwyrm4",
@@ -13169,7 +14025,7 @@ local GameMusic = {
     ["Length"] = 60,
     ["Artist"] =  "Naxxramas (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1590]
+  }, -- [1697]
   {
     ["Album"] = "Patch 1.11",
     ["Song"] = "HubBase1",
@@ -13177,7 +14033,7 @@ local GameMusic = {
     ["Length"] = 72,
     ["Artist"] =  "Naxxramas (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1591]
+  }, -- [1698]
   {
     ["Album"] = "Patch 1.11",
     ["Song"] = "HubBase2",
@@ -13185,7 +14041,7 @@ local GameMusic = {
     ["Length"] = 81,
     ["Artist"] =  "Naxxramas (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1592]
+  }, -- [1699]
   {
     ["Album"] = "Patch 1.11",
     ["Song"] = "KelThuzad1A",
@@ -13193,7 +14049,7 @@ local GameMusic = {
     ["Length"] = 95,
     ["Artist"] =  "Naxxramas (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1593]
+  }, -- [1700]
   {
     ["Album"] = "Patch 1.11",
     ["Song"] = "KelThuzad2A",
@@ -13201,7 +14057,7 @@ local GameMusic = {
     ["Length"] = 97,
     ["Artist"] =  "Naxxramas (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1594]
+  }, -- [1701]
   {
     ["Album"] = "Patch 1.11",
     ["Song"] = "KelThuzad3A",
@@ -13209,7 +14065,7 @@ local GameMusic = {
     ["Length"] = 75,
     ["Artist"] =  "Naxxramas (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1595]
+  }, -- [1702]
   {
     ["Album"] = "Patch 1.11",
     ["Song"] = "PlagueBoss1",
@@ -13217,7 +14073,7 @@ local GameMusic = {
     ["Length"] = 87,
     ["Artist"] =  "Naxxramas (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1596]
+  }, -- [1703]
   {
     ["Album"] = "Patch 1.11",
     ["Song"] = "PlagueWing1",
@@ -13225,7 +14081,7 @@ local GameMusic = {
     ["Length"] = 88,
     ["Artist"] =  "Naxxramas (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1597]
+  }, -- [1704]
   {
     ["Album"] = "Patch 1.11",
     ["Song"] = "PlagueWing2",
@@ -13233,7 +14089,7 @@ local GameMusic = {
     ["Length"] = 72,
     ["Artist"] =  "Naxxramas (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1598]
+  }, -- [1705]
   {
     ["Album"] = "Patch 1.11",
     ["Song"] = "PlagueWing3",
@@ -13241,7 +14097,7 @@ local GameMusic = {
     ["Length"] = 77,
     ["Artist"] =  "Naxxramas (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1599]
+  }, -- [1706]
   {
     ["Album"] = "Patch 1.11",
     ["Song"] = "SpiderBoss1",
@@ -13249,7 +14105,7 @@ local GameMusic = {
     ["Length"] = 60,
     ["Artist"] =  "Naxxramas (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1600]
+  }, -- [1707]
   {
     ["Album"] = "Patch 1.11",
     ["Song"] = "SpiderBoss2",
@@ -13257,7 +14113,7 @@ local GameMusic = {
     ["Length"] = 64,
     ["Artist"] =  "Naxxramas (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1601]
+  }, -- [1708]
   {
     ["Album"] = "Patch 1.11",
     ["Song"] = "SpiderWing1",
@@ -13265,7 +14121,7 @@ local GameMusic = {
     ["Length"] = 88,
     ["Artist"] =  "Naxxramas (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1602]
+  }, -- [1709]
   {
     ["Album"] = "Patch 1.11",
     ["Song"] = "SpiderWing2",
@@ -13273,7 +14129,7 @@ local GameMusic = {
     ["Length"] = 67,
     ["Artist"] =  "Naxxramas (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1603]
+  }, -- [1710]
   {
     ["Album"] = "Patch 1.11",
     ["Song"] = "SpiderWing3",
@@ -13281,7 +14137,7 @@ local GameMusic = {
     ["Length"] = 47,
     ["Artist"] =  "Naxxramas (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1604]
+  }, -- [1711]
   {
     ["Album"] = "WoW 1.11",
     ["Song"] = "NaxxramasWalking1",
@@ -13289,7 +14145,7 @@ local GameMusic = {
     ["Length"] = 102,
     ["Artist"] =  "Naxxramas (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1605]
+  }, -- [1712]
   {
     ["Album"] = "WoW 1.11",
     ["Song"] = "NaxxramasWalking2",
@@ -13297,7 +14153,7 @@ local GameMusic = {
     ["Length"] = 72,
     ["Artist"] =  "Naxxramas (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1606]
+  }, -- [1713]
   {
     ["Album"] = "WoW 1.11",
     ["Song"] = "NaxxramasWalking3",
@@ -13305,7 +14161,7 @@ local GameMusic = {
     ["Length"] = 87,
     ["Artist"] =  "Naxxramas (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1607]
+  }, -- [1714]
   {
     ["Album"] = "WoW 1.11",
     ["Song"] = "NaxxramasWalking4",
@@ -13313,7 +14169,7 @@ local GameMusic = {
     ["Length"] = 82,
     ["Artist"] =  "Naxxramas (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1608]
+  }, -- [1715]
   {
     ["Album"] = "WoW 1.11",
     ["Song"] = "NaxxramasWalking5",
@@ -13321,7 +14177,7 @@ local GameMusic = {
     ["Length"] = 100,
     ["Artist"] =  "Naxxramas (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1609]
+  }, -- [1716]
   {
     ["Album"] = "WoW 1.11",
     ["Song"] = "NaxxramasWalking6",
@@ -13329,7 +14185,7 @@ local GameMusic = {
     ["Length"] = 99,
     ["Artist"] =  "Naxxramas (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1610]
+  }, -- [1717]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Netherstorm Walking 1",
@@ -13337,7 +14193,7 @@ local GameMusic = {
     ["Length"] = 150,
     ["Artist"] =  "Netherstorm (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1611]
+  }, -- [1718]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Netherstorm Walking 2",
@@ -13345,7 +14201,7 @@ local GameMusic = {
     ["Length"] = 175,
     ["Artist"] =  "Netherstorm (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1612]
+  }, -- [1719]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Netherstorm Walking 3",
@@ -13353,7 +14209,7 @@ local GameMusic = {
     ["Length"] = 178,
     ["Artist"] =  "Netherstorm (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1613]
+  }, -- [1720]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Netherstorm Walking 4",
@@ -13361,7 +14217,7 @@ local GameMusic = {
     ["Length"] = 181,
     ["Artist"] =  "Netherstorm (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1614]
+  }, -- [1721]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Netherstorm Walking 5",
@@ -13369,7 +14225,7 @@ local GameMusic = {
     ["Length"] = 184,
     ["Artist"] =  "Netherstorm (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1615]
+  }, -- [1722]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Netherstorm Walking 6",
@@ -13377,7 +14233,7 @@ local GameMusic = {
     ["Length"] = 192,
     ["Artist"] =  "Netherstorm (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1616]
+  }, -- [1723]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Netherstorm Walking 7",
@@ -13385,7 +14241,7 @@ local GameMusic = {
     ["Length"] = 193,
     ["Artist"] =  "Netherstorm (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1617]
+  }, -- [1724]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Netherstorm Walking 8",
@@ -13393,7 +14249,7 @@ local GameMusic = {
     ["Length"] = 169,
     ["Artist"] =  "Netherstorm (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1618]
+  }, -- [1725]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Netherstorm Walking 9",
@@ -13401,7 +14257,7 @@ local GameMusic = {
     ["Length"] = 199,
     ["Artist"] =  "Netherstorm (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1619]
+  }, -- [1726]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Netherstorm Walking 10",
@@ -13409,7 +14265,7 @@ local GameMusic = {
     ["Length"] = 223,
     ["Artist"] =  "Netherstorm (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1620]
+  }, -- [1727]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Mushroom 1",
@@ -13417,7 +14273,7 @@ local GameMusic = {
     ["Length"] = 39,
     ["Artist"] =  "Netherstorm (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1621]
+  }, -- [1728]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Mushroom 2",
@@ -13425,7 +14281,7 @@ local GameMusic = {
     ["Length"] = 33,
     ["Artist"] =  "Netherstorm (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1622]
+  }, -- [1729]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Mushroom 3",
@@ -13433,7 +14289,7 @@ local GameMusic = {
     ["Length"] = 37,
     ["Artist"] =  "Netherstorm (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1623]
+  }, -- [1730]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Nether Plant 1",
@@ -13441,7 +14297,7 @@ local GameMusic = {
     ["Length"] = 44,
     ["Artist"] =  "Netherstorm (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1624]
+  }, -- [1731]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Nether Plant 2",
@@ -13449,7 +14305,7 @@ local GameMusic = {
     ["Length"] = 51,
     ["Artist"] =  "Netherstorm (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1625]
+  }, -- [1732]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Nether Plant 3",
@@ -13457,7 +14313,7 @@ local GameMusic = {
     ["Length"] = 47,
     ["Artist"] =  "Netherstorm (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1626]
+  }, -- [1733]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Nether Plant 4",
@@ -13465,7 +14321,7 @@ local GameMusic = {
     ["Length"] = 45,
     ["Artist"] =  "Netherstorm (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1627]
+  }, -- [1734]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Nexus Action 1",
@@ -13473,7 +14329,7 @@ local GameMusic = {
     ["Length"] = 76,
     ["Artist"] =  "Nexus (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1628]
+  }, -- [1735]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Nexus Action 2",
@@ -13481,7 +14337,7 @@ local GameMusic = {
     ["Length"] = 68,
     ["Artist"] =  "Nexus (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1629]
+  }, -- [1736]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Nexus Slow Action 1",
@@ -13489,7 +14345,7 @@ local GameMusic = {
     ["Length"] = 102,
     ["Artist"] =  "Nexus (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1630]
+  }, -- [1737]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Nexus Slow Action 2",
@@ -13497,7 +14353,7 @@ local GameMusic = {
     ["Length"] = 107,
     ["Artist"] =  "Nexus (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1631]
+  }, -- [1738]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Nexus Slow Action 3",
@@ -13505,7 +14361,7 @@ local GameMusic = {
     ["Length"] = 90,
     ["Artist"] =  "Nexus (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1632]
+  }, -- [1739]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Nexus Hail 1",
@@ -13513,7 +14369,7 @@ local GameMusic = {
     ["Length"] = 57,
     ["Artist"] =  "Nexus (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1633]
+  }, -- [1740]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Nexus Hail 2",
@@ -13521,7 +14377,7 @@ local GameMusic = {
     ["Length"] = 65,
     ["Artist"] =  "Nexus (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1634]
+  }, -- [1741]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Nexus Pulse 1",
@@ -13529,7 +14385,7 @@ local GameMusic = {
     ["Length"] = 61,
     ["Artist"] =  "Nexus (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1635]
+  }, -- [1742]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Nexus Pulse 2",
@@ -13537,7 +14393,7 @@ local GameMusic = {
     ["Length"] = 70,
     ["Artist"] =  "Nexus (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1636]
+  }, -- [1743]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Nexus Quiet 1",
@@ -13545,7 +14401,7 @@ local GameMusic = {
     ["Length"] = 114,
     ["Artist"] =  "Nexus (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1637]
+  }, -- [1744]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Nexus Quiet 2",
@@ -13553,7 +14409,7 @@ local GameMusic = {
     ["Length"] = 111,
     ["Artist"] =  "Nexus (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1638]
+  }, -- [1745]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Nexus Quiet 3",
@@ -13561,7 +14417,7 @@ local GameMusic = {
     ["Length"] = 56,
     ["Artist"] =  "Nexus (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1639]
+  }, -- [1746]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Nexus Quiet 4",
@@ -13569,7 +14425,7 @@ local GameMusic = {
     ["Length"] = 71,
     ["Artist"] =  "Nexus (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1640]
+  }, -- [1747]
   {
     ["Album"] = "",
     ["Song"] = "NR_Dwarf_GeneralWalkADark_Uni01",
@@ -13577,7 +14433,7 @@ local GameMusic = {
     ["Length"] = 112,
     ["Artist"] =  "IronDwarf",
     ["WoW"] = true,
-  }, -- [1641]
+  }, -- [1748]
   {
     ["Album"] = "",
     ["Song"] = "NR_Dwarf_GeneralWalkA_Day01",
@@ -13585,7 +14441,7 @@ local GameMusic = {
     ["Length"] = 99,
     ["Artist"] =  "IronDwarf",
     ["WoW"] = true,
-  }, -- [1642]
+  }, -- [1749]
   {
     ["Album"] = "",
     ["Song"] = "NR_Dwarf_GeneralWalkA_Night01",
@@ -13593,7 +14449,7 @@ local GameMusic = {
     ["Length"] = 99,
     ["Artist"] =  "IronDwarf",
     ["WoW"] = true,
-  }, -- [1643]
+  }, -- [1750]
   {
     ["Album"] = "",
     ["Song"] = "NR_Dwarf_GeneralWalkB_Night02",
@@ -13601,7 +14457,7 @@ local GameMusic = {
     ["Length"] = 95,
     ["Artist"] =  "IronDwarf",
     ["WoW"] = true,
-  }, -- [1644]
+  }, -- [1751]
   {
     ["Album"] = "",
     ["Song"] = "NR_Dwarf_GeneralWalkB_Uni02",
@@ -13609,7 +14465,7 @@ local GameMusic = {
     ["Length"] = 164,
     ["Artist"] =  "IronDwarf",
     ["WoW"] = true,
-  }, -- [1645]
+  }, -- [1752]
   {
     ["Album"] = "",
     ["Song"] = "NR_Dwarf_GeneralWalkCDark_Uni04",
@@ -13617,7 +14473,7 @@ local GameMusic = {
     ["Length"] = 82,
     ["Artist"] =  "IronDwarf",
     ["WoW"] = true,
-  }, -- [1646]
+  }, -- [1753]
   {
     ["Album"] = "",
     ["Song"] = "NR_Dwarf_GeneralWalkC_Day03",
@@ -13625,7 +14481,7 @@ local GameMusic = {
     ["Length"] = 42,
     ["Artist"] =  "IronDwarf",
     ["WoW"] = true,
-  }, -- [1647]
+  }, -- [1754]
   {
     ["Album"] = "",
     ["Song"] = "NR_Dwarf_GeneralWalkC_Night03",
@@ -13633,7 +14489,7 @@ local GameMusic = {
     ["Length"] = 42,
     ["Artist"] =  "IronDwarf",
     ["WoW"] = true,
-  }, -- [1648]
+  }, -- [1755]
   {
     ["Album"] = "",
     ["Song"] = "NR_Dwarf_GeneralWalkC_Uni03",
@@ -13641,7 +14497,7 @@ local GameMusic = {
     ["Length"] = 42,
     ["Artist"] =  "IronDwarf",
     ["WoW"] = true,
-  }, -- [1649]
+  }, -- [1756]
   {
     ["Album"] = "",
     ["Song"] = "NR_Dwarf_GeneralWalkD_Day04",
@@ -13649,7 +14505,7 @@ local GameMusic = {
     ["Length"] = 45,
     ["Artist"] =  "IronDwarf",
     ["WoW"] = true,
-  }, -- [1650]
+  }, -- [1757]
   {
     ["Album"] = "",
     ["Song"] = "NR_Dwarf_GeneralWalkD_Night04",
@@ -13657,7 +14513,7 @@ local GameMusic = {
     ["Length"] = 45,
     ["Artist"] =  "IronDwarf",
     ["WoW"] = true,
-  }, -- [1651]
+  }, -- [1758]
   {
     ["Album"] = "",
     ["Song"] = "NR_NorthrendTransportGeneralDay",
@@ -13665,7 +14521,7 @@ local GameMusic = {
     ["Length"] = 152,
     ["Artist"] =  "NorthrendTransport",
     ["WoW"] = true,
-  }, -- [1652]
+  }, -- [1759]
   {
     ["Album"] = "",
     ["Song"] = "NR_NorthrendTransportGeneralNight",
@@ -13673,7 +14529,7 @@ local GameMusic = {
     ["Length"] = 92,
     ["Artist"] =  "NorthrendTransport",
     ["WoW"] = true,
-  }, -- [1653]
+  }, -- [1760]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Orc_GeneralWalk_Day01",
@@ -13681,7 +14537,7 @@ local GameMusic = {
     ["Length"] = 23,
     ["Artist"] =  "Orc (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1654]
+  }, -- [1761]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Orc_GeneralWalk_Day02",
@@ -13689,7 +14545,7 @@ local GameMusic = {
     ["Length"] = 23,
     ["Artist"] =  "Orc (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1655]
+  }, -- [1762]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Orc_GeneralWalk_Day03",
@@ -13697,7 +14553,7 @@ local GameMusic = {
     ["Length"] = 23,
     ["Artist"] =  "Orc (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1656]
+  }, -- [1763]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Orc_GeneralWalk_Day04",
@@ -13705,7 +14561,7 @@ local GameMusic = {
     ["Length"] = 45,
     ["Artist"] =  "Orc (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1657]
+  }, -- [1764]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Orc_GeneralWalk_Night01",
@@ -13713,7 +14569,7 @@ local GameMusic = {
     ["Length"] = 78,
     ["Artist"] =  "Orc (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1658]
+  }, -- [1765]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Orc_GeneralWalk_Night02",
@@ -13721,7 +14577,7 @@ local GameMusic = {
     ["Length"] = 80,
     ["Artist"] =  "Orc (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1659]
+  }, -- [1766]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_Orc_GeneralWalk_Night03",
@@ -13729,7 +14585,7 @@ local GameMusic = {
     ["Length"] = 79,
     ["Artist"] =  "Orc (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1660]
+  }, -- [1767]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "BO_OrcGeneral_Intro01",
@@ -13737,7 +14593,7 @@ local GameMusic = {
     ["Length"] = 27,
     ["Artist"] =  "Orc (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1661]
+  }, -- [1768]
   {
     ["Album"] = "",
     ["Song"] = "NR_Taunka_GeneralWalkA_Day01",
@@ -13745,7 +14601,7 @@ local GameMusic = {
     ["Length"] = 138,
     ["Artist"] =  "Taunka",
     ["WoW"] = true,
-  }, -- [1662]
+  }, -- [1769]
   {
     ["Album"] = "",
     ["Song"] = "NR_Taunka_GeneralWalkA_Night01",
@@ -13753,7 +14609,7 @@ local GameMusic = {
     ["Length"] = 141,
     ["Artist"] =  "Taunka",
     ["WoW"] = true,
-  }, -- [1663]
+  }, -- [1770]
   {
     ["Album"] = "",
     ["Song"] = "NR_Taunka_GeneralWalkA_Uni01",
@@ -13761,7 +14617,7 @@ local GameMusic = {
     ["Length"] = 140,
     ["Artist"] =  "Taunka",
     ["WoW"] = true,
-  }, -- [1664]
+  }, -- [1771]
   {
     ["Album"] = "",
     ["Song"] = "NR_Taunka_GeneralWalkB_Day02",
@@ -13769,7 +14625,7 @@ local GameMusic = {
     ["Length"] = 127,
     ["Artist"] =  "Taunka",
     ["WoW"] = true,
-  }, -- [1665]
+  }, -- [1772]
   {
     ["Album"] = "",
     ["Song"] = "NR_Taunka_GeneralWalkB_Night02",
@@ -13777,7 +14633,7 @@ local GameMusic = {
     ["Length"] = 127,
     ["Artist"] =  "Taunka",
     ["WoW"] = true,
-  }, -- [1666]
+  }, -- [1773]
   {
     ["Album"] = "",
     ["Song"] = "NR_Taunka_GeneralWalkC_Day03",
@@ -13785,7 +14641,7 @@ local GameMusic = {
     ["Length"] = 108,
     ["Artist"] =  "Taunka",
     ["WoW"] = true,
-  }, -- [1667]
+  }, -- [1774]
   {
     ["Album"] = "",
     ["Song"] = "NR_Taunka_GeneralWalkC_Night03",
@@ -13793,7 +14649,7 @@ local GameMusic = {
     ["Length"] = 108,
     ["Artist"] =  "Taunka",
     ["WoW"] = true,
-  }, -- [1668]
+  }, -- [1775]
   {
     ["Album"] = "",
     ["Song"] = "NR_Taunka_GeneralWalkD_Day04",
@@ -13801,7 +14657,7 @@ local GameMusic = {
     ["Length"] = 70,
     ["Artist"] =  "Taunka",
     ["WoW"] = true,
-  }, -- [1669]
+  }, -- [1776]
   {
     ["Album"] = "",
     ["Song"] = "NR_Taunka_GeneralWalkD_Night04",
@@ -13809,7 +14665,7 @@ local GameMusic = {
     ["Length"] = 69,
     ["Artist"] =  "Taunka",
     ["WoW"] = true,
-  }, -- [1670]
+  }, -- [1777]
   {
     ["Album"] = "",
     ["Song"] = "NR_Taunka_GeneralWalkD_Uni02",
@@ -13817,7 +14673,7 @@ local GameMusic = {
     ["Length"] = 70,
     ["Artist"] =  "Taunka",
     ["WoW"] = true,
-  }, -- [1671]
+  }, -- [1778]
   {
     ["Album"] = "",
     ["Song"] = "NR_Taunka_GeneralWalkE_Uni03",
@@ -13825,7 +14681,7 @@ local GameMusic = {
     ["Length"] = 73,
     ["Artist"] =  "Taunka",
     ["WoW"] = true,
-  }, -- [1672]
+  }, -- [1779]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "NR_Troll_General01",
@@ -13833,7 +14689,7 @@ local GameMusic = {
     ["Length"] = 46,
     ["Artist"] =  "Troll (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1673]
+  }, -- [1780]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "NR_Troll_General02",
@@ -13841,7 +14697,7 @@ local GameMusic = {
     ["Length"] = 55,
     ["Artist"] =  "Troll (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1674]
+  }, -- [1781]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "NR_Troll_General03",
@@ -13849,7 +14705,7 @@ local GameMusic = {
     ["Length"] = 38,
     ["Artist"] =  "Troll (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1675]
+  }, -- [1782]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "NR_Troll_General04",
@@ -13857,7 +14713,7 @@ local GameMusic = {
     ["Length"] = 44,
     ["Artist"] =  "Troll (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1676]
+  }, -- [1783]
   {
     ["Album"] = "",
     ["Song"] = "OS1",
@@ -13865,7 +14721,7 @@ local GameMusic = {
     ["Length"] = 82,
     ["Artist"] =  "ZoneMusic",
     ["WoW"] = true,
-  }, -- [1677]
+  }, -- [1784]
   {
     ["Album"] = "",
     ["Song"] = "OS2",
@@ -13873,7 +14729,7 @@ local GameMusic = {
     ["Length"] = 86,
     ["Artist"] =  "ZoneMusic",
     ["WoW"] = true,
-  }, -- [1678]
+  }, -- [1785]
   {
     ["Album"] = "",
     ["Song"] = "OS3",
@@ -13881,7 +14737,7 @@ local GameMusic = {
     ["Length"] = 119,
     ["Artist"] =  "ZoneMusic",
     ["WoW"] = true,
-  }, -- [1679]
+  }, -- [1786]
   {
     ["Album"] = "",
     ["Song"] = "OS4",
@@ -13889,7 +14745,7 @@ local GameMusic = {
     ["Length"] = 57,
     ["Artist"] =  "ZoneMusic",
     ["WoW"] = true,
-  }, -- [1680]
+  }, -- [1787]
   {
     ["Album"] = "",
     ["Song"] = "OS5",
@@ -13897,7 +14753,7 @@ local GameMusic = {
     ["Length"] = 87,
     ["Artist"] =  "ZoneMusic",
     ["WoW"] = true,
-  }, -- [1681]
+  }, -- [1788]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "OL_ActionWalkUni01",
@@ -13905,7 +14761,7 @@ local GameMusic = {
     ["Length"] = 80,
     ["Artist"] =  "OutlandGeneral (Brian David Farr)",
     ["WoW"] = true,
-  }, -- [1682]
+  }, -- [1789]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Alliance Base 1",
@@ -13913,7 +14769,7 @@ local GameMusic = {
     ["Length"] = 134,
     ["Artist"] =  "OutlandGeneral (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1683]
+  }, -- [1790]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Alliance Base 2",
@@ -13921,7 +14777,7 @@ local GameMusic = {
     ["Length"] = 110,
     ["Artist"] =  "OutlandGeneral (Matt Uelmen (incorporating Nocturne by F. Chopin))",
     ["WoW"] = true,
-  }, -- [1684]
+  }, -- [1791]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Arrakoa 1",
@@ -13929,7 +14785,7 @@ local GameMusic = {
     ["Length"] = 18,
     ["Artist"] =  "OutlandGeneral (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1685]
+  }, -- [1792]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Arrakoa 2",
@@ -13937,7 +14793,7 @@ local GameMusic = {
     ["Length"] = 14,
     ["Artist"] =  "OutlandGeneral (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1686]
+  }, -- [1793]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Blood Elf Base 1",
@@ -13945,7 +14801,7 @@ local GameMusic = {
     ["Length"] = 120,
     ["Artist"] =  "OutlandGeneral (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1687]
+  }, -- [1794]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Blood Elf Base 2",
@@ -13953,7 +14809,7 @@ local GameMusic = {
     ["Length"] = 121,
     ["Artist"] =  "OutlandGeneral (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1688]
+  }, -- [1795]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Legion 1",
@@ -13961,7 +14817,7 @@ local GameMusic = {
     ["Length"] = 16,
     ["Artist"] =  "OutlandGeneral (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1689]
+  }, -- [1796]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Legion 2",
@@ -13969,7 +14825,7 @@ local GameMusic = {
     ["Length"] = 35,
     ["Artist"] =  "OutlandGeneral (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1690]
+  }, -- [1797]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Cenarion 1",
@@ -13977,7 +14833,7 @@ local GameMusic = {
     ["Length"] = 44,
     ["Artist"] =  "OutlandGeneral (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1691]
+  }, -- [1798]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Cenarion 2",
@@ -13985,7 +14841,7 @@ local GameMusic = {
     ["Length"] = 45,
     ["Artist"] =  "OutlandGeneral (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1692]
+  }, -- [1799]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Cenarion 3",
@@ -13993,7 +14849,7 @@ local GameMusic = {
     ["Length"] = 71,
     ["Artist"] =  "OutlandGeneral (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1693]
+  }, -- [1800]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Corrupt 1",
@@ -14001,7 +14857,7 @@ local GameMusic = {
     ["Length"] = 61,
     ["Artist"] =  "OutlandGeneral (Brian David Farr)",
     ["WoW"] = true,
-  }, -- [1694]
+  }, -- [1801]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Corrupt 2",
@@ -14009,7 +14865,7 @@ local GameMusic = {
     ["Length"] = 62,
     ["Artist"] =  "OutlandGeneral (Brian David Farr)",
     ["WoW"] = true,
-  }, -- [1695]
+  }, -- [1802]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Corrupt 3",
@@ -14017,7 +14873,7 @@ local GameMusic = {
     ["Length"] = 74,
     ["Artist"] =  "OutlandGeneral (Brian David Farr)",
     ["WoW"] = true,
-  }, -- [1696]
+  }, -- [1803]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Corrupt 4",
@@ -14025,7 +14881,7 @@ local GameMusic = {
     ["Length"] = 71,
     ["Artist"] =  "OutlandGeneral (Brian David Farr)",
     ["WoW"] = true,
-  }, -- [1697]
+  }, -- [1804]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Corrupt 5",
@@ -14033,7 +14889,7 @@ local GameMusic = {
     ["Length"] = 72,
     ["Artist"] =  "OutlandGeneral (Brian David Farr)",
     ["WoW"] = true,
-  }, -- [1698]
+  }, -- [1805]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Corrupt 6",
@@ -14041,7 +14897,7 @@ local GameMusic = {
     ["Length"] = 74,
     ["Artist"] =  "OutlandGeneral (Brian David Farr)",
     ["WoW"] = true,
-  }, -- [1699]
+  }, -- [1806]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Corrupt 7",
@@ -14049,7 +14905,7 @@ local GameMusic = {
     ["Length"] = 52,
     ["Artist"] =  "OutlandGeneral (Brian David Farr)",
     ["WoW"] = true,
-  }, -- [1700]
+  }, -- [1807]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Corrupt Intro",
@@ -14057,7 +14913,7 @@ local GameMusic = {
     ["Length"] = 75,
     ["Artist"] =  "OutlandGeneral (Brian David Farr)",
     ["WoW"] = true,
-  }, -- [1701]
+  }, -- [1808]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Crystal 1",
@@ -14065,7 +14921,7 @@ local GameMusic = {
     ["Length"] = 26,
     ["Artist"] =  "OutlandGeneral (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1702]
+  }, -- [1809]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Crystal 2",
@@ -14073,7 +14929,7 @@ local GameMusic = {
     ["Length"] = 21,
     ["Artist"] =  "OutlandGeneral (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1703]
+  }, -- [1810]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Crystal 3",
@@ -14081,7 +14937,7 @@ local GameMusic = {
     ["Length"] = 21,
     ["Artist"] =  "OutlandGeneral (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1704]
+  }, -- [1811]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Demons",
@@ -14089,7 +14945,7 @@ local GameMusic = {
     ["Length"] = 46,
     ["Artist"] =  "OutlandGeneral (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1705]
+  }, -- [1812]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "OL_DraeneiBaseWalkUni01",
@@ -14097,7 +14953,7 @@ local GameMusic = {
     ["Length"] = 106,
     ["Artist"] =  "OutlandGeneral (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1706]
+  }, -- [1813]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "OL_DraeneiBaseWalkUni02",
@@ -14105,7 +14961,7 @@ local GameMusic = {
     ["Length"] = 99,
     ["Artist"] =  "OutlandGeneral (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1707]
+  }, -- [1814]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Fel Orc 1",
@@ -14113,7 +14969,7 @@ local GameMusic = {
     ["Length"] = 16,
     ["Artist"] =  "OutlandGeneral (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1708]
+  }, -- [1815]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Fel Orc 2",
@@ -14121,7 +14977,7 @@ local GameMusic = {
     ["Length"] = 15,
     ["Artist"] =  "OutlandGeneral (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1709]
+  }, -- [1816]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Historic",
@@ -14129,7 +14985,7 @@ local GameMusic = {
     ["Length"] = 79,
     ["Artist"] =  "OutlandGeneral (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1710]
+  }, -- [1817]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Horde Base 1",
@@ -14137,7 +14993,7 @@ local GameMusic = {
     ["Length"] = 40,
     ["Artist"] =  "OutlandGeneral (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1711]
+  }, -- [1818]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Horde Base 2",
@@ -14145,7 +15001,7 @@ local GameMusic = {
     ["Length"] = 37,
     ["Artist"] =  "OutlandGeneral (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1712]
+  }, -- [1819]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Horde Base 1",
@@ -14153,7 +15009,7 @@ local GameMusic = {
     ["Length"] = 66,
     ["Artist"] =  "OutlandGeneral (Russell Brower and Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1713]
+  }, -- [1820]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Horde Base 2",
@@ -14161,7 +15017,7 @@ local GameMusic = {
     ["Length"] = 68,
     ["Artist"] =  "OutlandGeneral (Russell Brower and Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1714]
+  }, -- [1821]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Illidan's Army",
@@ -14169,7 +15025,7 @@ local GameMusic = {
     ["Length"] = 35,
     ["Artist"] =  "OutlandGeneral (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1715]
+  }, -- [1822]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Ogre 1",
@@ -14177,7 +15033,7 @@ local GameMusic = {
     ["Length"] = 28,
     ["Artist"] =  "OutlandGeneral (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1716]
+  }, -- [1823]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Ogre 2",
@@ -14185,7 +15041,7 @@ local GameMusic = {
     ["Length"] = 25,
     ["Artist"] =  "OutlandGeneral (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1717]
+  }, -- [1824]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Orc 1",
@@ -14193,7 +15049,7 @@ local GameMusic = {
     ["Length"] = 11,
     ["Artist"] =  "OutlandGeneral (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1718]
+  }, -- [1825]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Orc 2",
@@ -14201,7 +15057,7 @@ local GameMusic = {
     ["Length"] = 17,
     ["Artist"] =  "OutlandGeneral (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1719]
+  }, -- [1826]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Orc 3",
@@ -14209,7 +15065,7 @@ local GameMusic = {
     ["Length"] = 11,
     ["Artist"] =  "OutlandGeneral (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1720]
+  }, -- [1827]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Orc 4",
@@ -14217,7 +15073,7 @@ local GameMusic = {
     ["Length"] = 13,
     ["Artist"] =  "OutlandGeneral (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1721]
+  }, -- [1828]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Nature",
@@ -14225,7 +15081,7 @@ local GameMusic = {
     ["Length"] = 31,
     ["Artist"] =  "OutlandGeneral (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1722]
+  }, -- [1829]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Shaman 1",
@@ -14233,7 +15089,7 @@ local GameMusic = {
     ["Length"] = 44,
     ["Artist"] =  "OutlandGeneral (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1723]
+  }, -- [1830]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Outlands Moment Shaman 2",
@@ -14241,7 +15097,7 @@ local GameMusic = {
     ["Length"] = 53,
     ["Artist"] =  "OutlandGeneral (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1724]
+  }, -- [1831]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "DayPlains01",
@@ -14249,7 +15105,7 @@ local GameMusic = {
     ["Length"] = 53,
     ["Artist"] =  "Plains (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1725]
+  }, -- [1832]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "DayPlains02",
@@ -14257,7 +15113,7 @@ local GameMusic = {
     ["Length"] = 76,
     ["Artist"] =  "Plains (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1726]
+  }, -- [1833]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "NightPlains01",
@@ -14265,7 +15121,7 @@ local GameMusic = {
     ["Length"] = 58,
     ["Artist"] =  "Plains (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1727]
+  }, -- [1834]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "NightPlains02",
@@ -14273,7 +15129,7 @@ local GameMusic = {
     ["Length"] = 68,
     ["Artist"] =  "Plains (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1728]
+  }, -- [1835]
   {
     ["Album"] = "",
     ["Song"] = "MUS_PVP6_01",
@@ -14281,7 +15137,7 @@ local GameMusic = {
     ["Length"] = 157,
     ["Artist"] =  "PVP",
     ["WoW"] = true,
-  }, -- [1729]
+  }, -- [1836]
   {
     ["Album"] = "",
     ["Song"] = "MUS_PVP6_02",
@@ -14289,7 +15145,7 @@ local GameMusic = {
     ["Length"] = 162,
     ["Artist"] =  "PVP",
     ["WoW"] = true,
-  }, -- [1730]
+  }, -- [1837]
   {
     ["Album"] = "",
     ["Song"] = "MUS_PVP7Moment1_01",
@@ -14297,7 +15153,7 @@ local GameMusic = {
     ["Length"] = 40,
     ["Artist"] =  "PVP",
     ["WoW"] = true,
-  }, -- [1731]
+  }, -- [1838]
   {
     ["Album"] = "",
     ["Song"] = "MUS_PVP7Moment1_02",
@@ -14305,7 +15161,7 @@ local GameMusic = {
     ["Length"] = 42,
     ["Artist"] =  "PVP",
     ["WoW"] = true,
-  }, -- [1732]
+  }, -- [1839]
   {
     ["Album"] = "",
     ["Song"] = "MUS_PVP7Moment2_01",
@@ -14313,7 +15169,7 @@ local GameMusic = {
     ["Length"] = 36,
     ["Artist"] =  "PVP",
     ["WoW"] = true,
-  }, -- [1733]
+  }, -- [1840]
   {
     ["Album"] = "",
     ["Song"] = "MUS_PVP7Moment2_02",
@@ -14321,7 +15177,7 @@ local GameMusic = {
     ["Length"] = 36,
     ["Artist"] =  "PVP",
     ["WoW"] = true,
-  }, -- [1734]
+  }, -- [1841]
   {
     ["Album"] = "",
     ["Song"] = "MUS_PVP7Moment3_01",
@@ -14329,7 +15185,7 @@ local GameMusic = {
     ["Length"] = 40,
     ["Artist"] =  "PVP",
     ["WoW"] = true,
-  }, -- [1735]
+  }, -- [1842]
   {
     ["Album"] = "",
     ["Song"] = "MUS_PVP7StingerEnd_01",
@@ -14337,7 +15193,7 @@ local GameMusic = {
     ["Length"] = 31,
     ["Artist"] =  "PVP",
     ["WoW"] = true,
-  }, -- [1736]
+  }, -- [1843]
   {
     ["Album"] = "",
     ["Song"] = "MUS_PVP7StingerIntro_01",
@@ -14345,7 +15201,7 @@ local GameMusic = {
     ["Length"] = 21,
     ["Artist"] =  "PVP",
     ["WoW"] = true,
-  }, -- [1737]
+  }, -- [1844]
   {
     ["Album"] = "",
     ["Song"] = "MUS_PVP7_01",
@@ -14353,7 +15209,7 @@ local GameMusic = {
     ["Length"] = 99,
     ["Artist"] =  "PVP",
     ["WoW"] = true,
-  }, -- [1738]
+  }, -- [1845]
   {
     ["Album"] = "",
     ["Song"] = "MUS_PVP7_02",
@@ -14361,7 +15217,7 @@ local GameMusic = {
     ["Length"] = 99,
     ["Artist"] =  "PVP",
     ["WoW"] = true,
-  }, -- [1739]
+  }, -- [1846]
   {
     ["Album"] = "World of Warcraft",
     ["Song"] = "pvp1",
@@ -14369,7 +15225,7 @@ local GameMusic = {
     ["Length"] = 47,
     ["Artist"] =  "PVP (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1740]
+  }, -- [1847]
   {
     ["Album"] = "World of Warcraft",
     ["Song"] = "PVP2",
@@ -14377,7 +15233,7 @@ local GameMusic = {
     ["Length"] = 52,
     ["Artist"] =  "PVP (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1741]
+  }, -- [1848]
   {
     ["Album"] = "World of Warcraft 1.12",
     ["Song"] = "pvp_e",
@@ -14385,7 +15241,7 @@ local GameMusic = {
     ["Length"] = 63,
     ["Artist"] =  "PVP (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1742]
+  }, -- [1849]
   {
     ["Album"] = "World of Warcraft 1.12",
     ["Song"] = "pvp_f",
@@ -14393,7 +15249,7 @@ local GameMusic = {
     ["Length"] = 62,
     ["Artist"] =  "PVP (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1743]
+  }, -- [1850]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Shadowmoon Valley Walking 1",
@@ -14401,7 +15257,7 @@ local GameMusic = {
     ["Length"] = 67,
     ["Artist"] =  "ShadowmoonValley (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1744]
+  }, -- [1851]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Shadowmoon Valley Walking 2",
@@ -14409,7 +15265,7 @@ local GameMusic = {
     ["Length"] = 112,
     ["Artist"] =  "ShadowmoonValley (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1745]
+  }, -- [1852]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Shadowmoon Valley Walking 3",
@@ -14417,7 +15273,7 @@ local GameMusic = {
     ["Length"] = 106,
     ["Artist"] =  "ShadowmoonValley (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1746]
+  }, -- [1853]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Shadowmoon Valley Walking 4",
@@ -14425,7 +15281,7 @@ local GameMusic = {
     ["Length"] = 93,
     ["Artist"] =  "ShadowmoonValley (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1747]
+  }, -- [1854]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Shadowmoon Valley Walking 5",
@@ -14433,7 +15289,7 @@ local GameMusic = {
     ["Length"] = 93,
     ["Artist"] =  "ShadowmoonValley (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1748]
+  }, -- [1855]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Shadowmoon Valley Walking 6",
@@ -14441,7 +15297,7 @@ local GameMusic = {
     ["Length"] = 67,
     ["Artist"] =  "ShadowmoonValley (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1749]
+  }, -- [1856]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Shola Crystals 1",
@@ -14449,7 +15305,7 @@ local GameMusic = {
     ["Length"] = 130,
     ["Artist"] =  "SholazarBasin (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1750]
+  }, -- [1857]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Shola Crystals 2",
@@ -14457,7 +15313,7 @@ local GameMusic = {
     ["Length"] = 143,
     ["Artist"] =  "SholazarBasin (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1751]
+  }, -- [1858]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Shola Fire 1",
@@ -14465,7 +15321,7 @@ local GameMusic = {
     ["Length"] = 107,
     ["Artist"] =  "SholazarBasin (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1752]
+  }, -- [1859]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Shola Fire 2",
@@ -14473,7 +15329,7 @@ local GameMusic = {
     ["Length"] = 93,
     ["Artist"] =  "SholazarBasin (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1753]
+  }, -- [1860]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Shola Fire 3",
@@ -14481,7 +15337,7 @@ local GameMusic = {
     ["Length"] = 57,
     ["Artist"] =  "SholazarBasin (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1754]
+  }, -- [1861]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Shola Fire 4",
@@ -14489,7 +15345,7 @@ local GameMusic = {
     ["Length"] = 107,
     ["Artist"] =  "SholazarBasin (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1755]
+  }, -- [1862]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Shola Lifeblood Cave 1",
@@ -14497,7 +15353,7 @@ local GameMusic = {
     ["Length"] = 81,
     ["Artist"] =  "SholazarBasin (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1756]
+  }, -- [1863]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Shola Lifeblood Cave 2",
@@ -14505,7 +15361,7 @@ local GameMusic = {
     ["Length"] = 99,
     ["Artist"] =  "SholazarBasin (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1757]
+  }, -- [1864]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Shola Lifeblood Cave 3",
@@ -14513,7 +15369,7 @@ local GameMusic = {
     ["Length"] = 99,
     ["Artist"] =  "SholazarBasin (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1758]
+  }, -- [1865]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Shola Cave 1",
@@ -14521,7 +15377,7 @@ local GameMusic = {
     ["Length"] = 75,
     ["Artist"] =  "SholazarBasin (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1759]
+  }, -- [1866]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Shola Cave 2",
@@ -14529,7 +15385,7 @@ local GameMusic = {
     ["Length"] = 94,
     ["Artist"] =  "SholazarBasin (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1760]
+  }, -- [1867]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Shola Cave 3",
@@ -14537,7 +15393,7 @@ local GameMusic = {
     ["Length"] = 136,
     ["Artist"] =  "SholazarBasin (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1761]
+  }, -- [1868]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Shola Cave 4",
@@ -14545,7 +15401,7 @@ local GameMusic = {
     ["Length"] = 161,
     ["Artist"] =  "SholazarBasin (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1762]
+  }, -- [1869]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Sholazar Day 1",
@@ -14553,7 +15409,7 @@ local GameMusic = {
     ["Length"] = 175,
     ["Artist"] =  "SholazarBasin (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1763]
+  }, -- [1870]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Sholazar Day 2",
@@ -14561,7 +15417,7 @@ local GameMusic = {
     ["Length"] = 114,
     ["Artist"] =  "SholazarBasin (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1764]
+  }, -- [1871]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Sholazar Day 3",
@@ -14569,7 +15425,7 @@ local GameMusic = {
     ["Length"] = 105,
     ["Artist"] =  "SholazarBasin (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1765]
+  }, -- [1872]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Sholazar Day 4",
@@ -14577,7 +15433,7 @@ local GameMusic = {
     ["Length"] = 112,
     ["Artist"] =  "SholazarBasin (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1766]
+  }, -- [1873]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Sholazar Day 5",
@@ -14585,7 +15441,7 @@ local GameMusic = {
     ["Length"] = 123,
     ["Artist"] =  "SholazarBasin (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1767]
+  }, -- [1874]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Sholazar Day 6",
@@ -14593,7 +15449,7 @@ local GameMusic = {
     ["Length"] = 142,
     ["Artist"] =  "SholazarBasin (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1768]
+  }, -- [1875]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Sholazar Night 1",
@@ -14601,7 +15457,7 @@ local GameMusic = {
     ["Length"] = 115,
     ["Artist"] =  "SholazarBasin (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1769]
+  }, -- [1876]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Sholazar Night 2",
@@ -14609,7 +15465,7 @@ local GameMusic = {
     ["Length"] = 137,
     ["Artist"] =  "SholazarBasin (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1770]
+  }, -- [1877]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Sholazar Night 3",
@@ -14617,7 +15473,7 @@ local GameMusic = {
     ["Length"] = 132,
     ["Artist"] =  "SholazarBasin (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1771]
+  }, -- [1878]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Sholazar Night 4",
@@ -14625,7 +15481,7 @@ local GameMusic = {
     ["Length"] = 91,
     ["Artist"] =  "SholazarBasin (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1772]
+  }, -- [1879]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Sholazar Night 5",
@@ -14633,7 +15489,7 @@ local GameMusic = {
     ["Length"] = 99,
     ["Artist"] =  "SholazarBasin (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1773]
+  }, -- [1880]
   {
     ["Album"] = "World of Warcraft",
     ["Song"] = "soggyplace-zone1",
@@ -14641,7 +15497,7 @@ local GameMusic = {
     ["Length"] = 97,
     ["Artist"] =  "SoggyPlace (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1774]
+  }, -- [1881]
   {
     ["Album"] = "World of Warcraft",
     ["Song"] = "soggyplace-zone2",
@@ -14649,7 +15505,7 @@ local GameMusic = {
     ["Length"] = 97,
     ["Artist"] =  "SoggyPlace (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1775]
+  }, -- [1882]
   {
     ["Album"] = "World of Warcraft",
     ["Song"] = "soggyplace-zone3",
@@ -14657,7 +15513,7 @@ local GameMusic = {
     ["Length"] = 90,
     ["Artist"] =  "SoggyPlace (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1776]
+  }, -- [1883]
   {
     ["Album"] = "World of Warcraft",
     ["Song"] = "soggyplace-zone4",
@@ -14665,7 +15521,7 @@ local GameMusic = {
     ["Length"] = 89,
     ["Artist"] =  "SoggyPlace (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1777]
+  }, -- [1884]
   {
     ["Album"] = "World of Warcraft",
     ["Song"] = "soggyplace-zone5",
@@ -14673,7 +15529,7 @@ local GameMusic = {
     ["Length"] = 70,
     ["Artist"] =  "SoggyPlace (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1778]
+  }, -- [1885]
   {
     ["Album"] = "",
     ["Song"] = "SP_GeneralWalkADark_Uni01",
@@ -14681,7 +15537,7 @@ local GameMusic = {
     ["Length"] = 120,
     ["Artist"] =  "StormPeaks",
     ["WoW"] = true,
-  }, -- [1779]
+  }, -- [1886]
   {
     ["Album"] = "",
     ["Song"] = "SP_GeneralWalkA_Day01",
@@ -14689,7 +15545,7 @@ local GameMusic = {
     ["Length"] = 86,
     ["Artist"] =  "StormPeaks",
     ["WoW"] = true,
-  }, -- [1780]
+  }, -- [1887]
   {
     ["Album"] = "",
     ["Song"] = "SP_GeneralWalkA_Night01",
@@ -14697,7 +15553,7 @@ local GameMusic = {
     ["Length"] = 88,
     ["Artist"] =  "StormPeaks",
     ["WoW"] = true,
-  }, -- [1781]
+  }, -- [1888]
   {
     ["Album"] = "",
     ["Song"] = "SP_GeneralWalkB_Night02",
@@ -14705,7 +15561,7 @@ local GameMusic = {
     ["Length"] = 82,
     ["Artist"] =  "StormPeaks",
     ["WoW"] = true,
-  }, -- [1782]
+  }, -- [1889]
   {
     ["Album"] = "",
     ["Song"] = "SP_GeneralWalkC_Day03",
@@ -14713,7 +15569,7 @@ local GameMusic = {
     ["Length"] = 64,
     ["Artist"] =  "StormPeaks",
     ["WoW"] = true,
-  }, -- [1783]
+  }, -- [1890]
   {
     ["Album"] = "",
     ["Song"] = "SP_GeneralWalkC_Night03",
@@ -14721,7 +15577,7 @@ local GameMusic = {
     ["Length"] = 58,
     ["Artist"] =  "StormPeaks",
     ["WoW"] = true,
-  }, -- [1784]
+  }, -- [1891]
   {
     ["Album"] = "",
     ["Song"] = "SP_GeneralWalkC_Uni03",
@@ -14729,7 +15585,7 @@ local GameMusic = {
     ["Length"] = 58,
     ["Artist"] =  "StormPeaks",
     ["WoW"] = true,
-  }, -- [1785]
+  }, -- [1892]
   {
     ["Album"] = "",
     ["Song"] = "SP_GeneralWalkD_Day04",
@@ -14737,7 +15593,7 @@ local GameMusic = {
     ["Length"] = 55,
     ["Artist"] =  "StormPeaks",
     ["WoW"] = true,
-  }, -- [1786]
+  }, -- [1893]
   {
     ["Album"] = "",
     ["Song"] = "SP_GeneralWalkD_Night04",
@@ -14745,7 +15601,7 @@ local GameMusic = {
     ["Length"] = 52,
     ["Artist"] =  "StormPeaks",
     ["WoW"] = true,
-  }, -- [1787]
+  }, -- [1894]
   {
     ["Album"] = "",
     ["Song"] = "SP_GeneralWalkD_Uni04",
@@ -14753,7 +15609,7 @@ local GameMusic = {
     ["Length"] = 54,
     ["Artist"] =  "StormPeaks",
     ["WoW"] = true,
-  }, -- [1788]
+  }, -- [1895]
   {
     ["Album"] = "",
     ["Song"] = "SP_GeneralWalkE_Day05",
@@ -14761,7 +15617,7 @@ local GameMusic = {
     ["Length"] = 83,
     ["Artist"] =  "StormPeaks",
     ["WoW"] = true,
-  }, -- [1789]
+  }, -- [1896]
   {
     ["Album"] = "",
     ["Song"] = "SP_GeneralWalkE_Night05",
@@ -14769,7 +15625,7 @@ local GameMusic = {
     ["Length"] = 74,
     ["Artist"] =  "StormPeaks",
     ["WoW"] = true,
-  }, -- [1790]
+  }, -- [1897]
   {
     ["Album"] = "",
     ["Song"] = "SP_GeneralWalkE_Uni05",
@@ -14777,7 +15633,7 @@ local GameMusic = {
     ["Length"] = 83,
     ["Artist"] =  "StormPeaks",
     ["WoW"] = true,
-  }, -- [1791]
+  }, -- [1898]
   {
     ["Album"] = "",
     ["Song"] = "CT_StratholmePastAlleyEnd",
@@ -14785,7 +15641,7 @@ local GameMusic = {
     ["Length"] = 28,
     ["Artist"] =  "StratholmePast",
     ["WoW"] = true,
-  }, -- [1792]
+  }, -- [1899]
   {
     ["Album"] = "",
     ["Song"] = "CT_StratholmePastBattleWalk01",
@@ -14793,7 +15649,7 @@ local GameMusic = {
     ["Length"] = 94,
     ["Artist"] =  "StratholmePast",
     ["WoW"] = true,
-  }, -- [1793]
+  }, -- [1900]
   {
     ["Album"] = "",
     ["Song"] = "CT_StratholmePastBattleWalk02",
@@ -14801,7 +15657,7 @@ local GameMusic = {
     ["Length"] = 36,
     ["Artist"] =  "StratholmePast",
     ["WoW"] = true,
-  }, -- [1794]
+  }, -- [1901]
   {
     ["Album"] = "",
     ["Song"] = "CT_StratholmePastBattleWalk03",
@@ -14809,7 +15665,7 @@ local GameMusic = {
     ["Length"] = 36,
     ["Artist"] =  "StratholmePast",
     ["WoW"] = true,
-  }, -- [1795]
+  }, -- [1902]
   {
     ["Album"] = "",
     ["Song"] = "CT_StratholmePastEndStinger",
@@ -14817,7 +15673,7 @@ local GameMusic = {
     ["Length"] = 28,
     ["Artist"] =  "StratholmePast",
     ["WoW"] = true,
-  }, -- [1796]
+  }, -- [1903]
   {
     ["Album"] = "",
     ["Song"] = "CT_StratholmePastIndoorsIntro",
@@ -14825,7 +15681,7 @@ local GameMusic = {
     ["Length"] = 99,
     ["Artist"] =  "StratholmePast",
     ["WoW"] = true,
-  }, -- [1797]
+  }, -- [1904]
   {
     ["Album"] = "",
     ["Song"] = "CT_StratholmePastIntro",
@@ -14833,7 +15689,7 @@ local GameMusic = {
     ["Length"] = 32,
     ["Artist"] =  "StratholmePast",
     ["WoW"] = true,
-  }, -- [1798]
+  }, -- [1905]
   {
     ["Album"] = "",
     ["Song"] = "CT_StratholmePastMalGanis",
@@ -14841,7 +15697,7 @@ local GameMusic = {
     ["Length"] = 67,
     ["Artist"] =  "StratholmePast",
     ["WoW"] = true,
-  }, -- [1799]
+  }, -- [1906]
   {
     ["Album"] = "",
     ["Song"] = "CT_StratholmePastOutdoorsIntro",
@@ -14849,7 +15705,7 @@ local GameMusic = {
     ["Length"] = 37,
     ["Artist"] =  "StratholmePast",
     ["WoW"] = true,
-  }, -- [1800]
+  }, -- [1907]
   {
     ["Album"] = "",
     ["Song"] = "CT_StratholmePastOutdoorsWalkANight",
@@ -14857,7 +15713,7 @@ local GameMusic = {
     ["Length"] = 32,
     ["Artist"] =  "StratholmePast",
     ["WoW"] = true,
-  }, -- [1801]
+  }, -- [1908]
   {
     ["Album"] = "",
     ["Song"] = "CT_StratholmePastOutdoorsWalkAUni",
@@ -14865,7 +15721,7 @@ local GameMusic = {
     ["Length"] = 32,
     ["Artist"] =  "StratholmePast",
     ["WoW"] = true,
-  }, -- [1802]
+  }, -- [1909]
   {
     ["Album"] = "",
     ["Song"] = "CT_StratholmePastOutdoorsWalkBNight",
@@ -14873,7 +15729,7 @@ local GameMusic = {
     ["Length"] = 36,
     ["Artist"] =  "StratholmePast",
     ["WoW"] = true,
-  }, -- [1803]
+  }, -- [1910]
   {
     ["Album"] = "",
     ["Song"] = "CT_StratholmePastOutdoorsWalkBUni",
@@ -14881,7 +15737,7 @@ local GameMusic = {
     ["Length"] = 37,
     ["Artist"] =  "StratholmePast",
     ["WoW"] = true,
-  }, -- [1804]
+  }, -- [1911]
   {
     ["Album"] = "",
     ["Song"] = "CT_StratholmePastWalkUni",
@@ -14889,7 +15745,7 @@ local GameMusic = {
     ["Length"] = 102,
     ["Artist"] =  "StratholmePast",
     ["WoW"] = true,
-  }, -- [1805]
+  }, -- [1912]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "Shorel'Aran D1",
@@ -14897,7 +15753,7 @@ local GameMusic = {
     ["Length"] = 82,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1806]
+  }, -- [1913]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "Shorel'Aran Horn",
@@ -14905,7 +15761,7 @@ local GameMusic = {
     ["Length"] = 88,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1807]
+  }, -- [1914]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "Fel Energy Wash",
@@ -14913,7 +15769,7 @@ local GameMusic = {
     ["Length"] = 126,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1808]
+  }, -- [1915]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "Fel Sundering",
@@ -14921,7 +15777,7 @@ local GameMusic = {
     ["Length"] = 139,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1809]
+  }, -- [1916]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "Fel Sundering 2A",
@@ -14929,7 +15785,7 @@ local GameMusic = {
     ["Length"] = 137,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1810]
+  }, -- [1917]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "Fel Sundering 2B",
@@ -14937,7 +15793,7 @@ local GameMusic = {
     ["Length"] = 126,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1811]
+  }, -- [1918]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "Fel Eversong 2A",
@@ -14945,7 +15801,7 @@ local GameMusic = {
     ["Length"] = 115,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1812]
+  }, -- [1919]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "Fel Eversong 2B",
@@ -14953,7 +15809,7 @@ local GameMusic = {
     ["Length"] = 119,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1813]
+  }, -- [1920]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "Fel Shorel'Aran B",
@@ -14961,7 +15817,7 @@ local GameMusic = {
     ["Length"] = 90,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1814]
+  }, -- [1921]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "Fel Eversong 1A",
@@ -14969,7 +15825,7 @@ local GameMusic = {
     ["Length"] = 117,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1815]
+  }, -- [1922]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "Fel Eversong 1B",
@@ -14977,7 +15833,7 @@ local GameMusic = {
     ["Length"] = 126,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1816]
+  }, -- [1923]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "Fel Shorel'Aran",
@@ -14985,7 +15841,7 @@ local GameMusic = {
     ["Length"] = 88,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1817]
+  }, -- [1924]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "Shorel'Aran Choir",
@@ -14993,7 +15849,7 @@ local GameMusic = {
     ["Length"] = 87,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1818]
+  }, -- [1925]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "Sunstrider 2",
@@ -15001,7 +15857,7 @@ local GameMusic = {
     ["Length"] = 95,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1819]
+  }, -- [1926]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "Sunstrider 2B",
@@ -15009,7 +15865,7 @@ local GameMusic = {
     ["Length"] = 65,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1820]
+  }, -- [1927]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "Shorel'Aran Woods",
@@ -15017,7 +15873,7 @@ local GameMusic = {
     ["Length"] = 88,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1821]
+  }, -- [1928]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "Sunstrider 2C1",
@@ -15025,7 +15881,7 @@ local GameMusic = {
     ["Length"] = 90,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1822]
+  }, -- [1929]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "Sunstrider 2C2",
@@ -15033,7 +15889,7 @@ local GameMusic = {
     ["Length"] = 89,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1823]
+  }, -- [1930]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "Sunstrider 2A",
@@ -15041,7 +15897,7 @@ local GameMusic = {
     ["Length"] = 91,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1824]
+  }, -- [1931]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "Quel'Danas C1",
@@ -15049,7 +15905,7 @@ local GameMusic = {
     ["Length"] = 123,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1825]
+  }, -- [1932]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "The Sundering",
@@ -15057,7 +15913,7 @@ local GameMusic = {
     ["Length"] = 138,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1826]
+  }, -- [1933]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "Quel'Danas C2",
@@ -15065,7 +15921,7 @@ local GameMusic = {
     ["Length"] = 85,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1827]
+  }, -- [1934]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "Quel'Danas C3",
@@ -15073,7 +15929,7 @@ local GameMusic = {
     ["Length"] = 78,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1828]
+  }, -- [1935]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "Quel'Danas C4",
@@ -15081,7 +15937,7 @@ local GameMusic = {
     ["Length"] = 90,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1829]
+  }, -- [1936]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "The Sundering 2A",
@@ -15089,7 +15945,7 @@ local GameMusic = {
     ["Length"] = 91,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1830]
+  }, -- [1937]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "The Sundering 2B",
@@ -15097,7 +15953,7 @@ local GameMusic = {
     ["Length"] = 93,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1831]
+  }, -- [1938]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "Shorel'Aran C",
@@ -15105,7 +15961,7 @@ local GameMusic = {
     ["Length"] = 87,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1832]
+  }, -- [1939]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "Quel'Danas Pt1",
@@ -15113,7 +15969,7 @@ local GameMusic = {
     ["Length"] = 108,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1833]
+  }, -- [1940]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "Quel'Danas Pt2",
@@ -15121,7 +15977,7 @@ local GameMusic = {
     ["Length"] = 84,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1834]
+  }, -- [1941]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "Shorel'Aran D2",
@@ -15129,7 +15985,7 @@ local GameMusic = {
     ["Length"] = 85,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1835]
+  }, -- [1942]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "Sunwell Bombing Run v2",
@@ -15137,7 +15993,7 @@ local GameMusic = {
     ["Length"] = 259,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1836]
+  }, -- [1943]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "The Well",
@@ -15145,7 +16001,7 @@ local GameMusic = {
     ["Length"] = 98,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1837]
+  }, -- [1944]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "The Well B",
@@ -15153,7 +16009,7 @@ local GameMusic = {
     ["Length"] = 95,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1838]
+  }, -- [1945]
   {
     ["Album"] = "WoW Patch 2.4",
     ["Song"] = "The Well C",
@@ -15161,7 +16017,7 @@ local GameMusic = {
     ["Length"] = 95,
     ["Artist"] =  "Sunwell (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1839]
+  }, -- [1946]
   {
     ["Album"] = "World of Warcraft",
     ["Song"] = "tavern01_zone1",
@@ -15169,7 +16025,7 @@ local GameMusic = {
     ["Length"] = 47,
     ["Artist"] =  "TavernAlliance (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1840]
+  }, -- [1947]
   {
     ["Album"] = "World of Warcraft",
     ["Song"] = "tavern01_zone2",
@@ -15177,7 +16033,7 @@ local GameMusic = {
     ["Length"] = 51,
     ["Artist"] =  "TavernAlliance (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1841]
+  }, -- [1948]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Dwarves Tavern 1A",
@@ -15185,7 +16041,7 @@ local GameMusic = {
     ["Length"] = 79,
     ["Artist"] =  "TavernDwarf (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1842]
+  }, -- [1949]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Dwarves Tavern 1B",
@@ -15193,7 +16049,7 @@ local GameMusic = {
     ["Length"] = 82,
     ["Artist"] =  "TavernDwarf (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1843]
+  }, -- [1950]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Dwarves Tavern 2A",
@@ -15201,7 +16057,7 @@ local GameMusic = {
     ["Length"] = 86,
     ["Artist"] =  "TavernDwarf (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1844]
+  }, -- [1951]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Dwarves Tavern 2B",
@@ -15209,7 +16065,7 @@ local GameMusic = {
     ["Length"] = 92,
     ["Artist"] =  "TavernDwarf (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1845]
+  }, -- [1952]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Dwarves Tavern 3",
@@ -15217,7 +16073,7 @@ local GameMusic = {
     ["Length"] = 102,
     ["Artist"] =  "TavernDwarf (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1846]
+  }, -- [1953]
   {
     ["Album"] = "World of Warcraft",
     ["Song"] = "tavern02_zone1",
@@ -15225,7 +16081,7 @@ local GameMusic = {
     ["Length"] = 48,
     ["Artist"] =  "TavernHorde (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1847]
+  }, -- [1954]
   {
     ["Album"] = "World of Warcraft",
     ["Song"] = "tavern02_zone2",
@@ -15233,7 +16089,7 @@ local GameMusic = {
     ["Length"] = 39,
     ["Artist"] =  "TavernHorde (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1848]
+  }, -- [1955]
   {
     ["Album"] = "World of Warcraft",
     ["Song"] = "TavernHorde_zone3",
@@ -15241,7 +16097,7 @@ local GameMusic = {
     ["Length"] = 47,
     ["Artist"] =  "TavernHorde (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1849]
+  }, -- [1956]
   {
     ["Album"] = "World of Warcraft",
     ["Song"] = "undead_dance",
@@ -15249,7 +16105,7 @@ local GameMusic = {
     ["Length"] = 25,
     ["Artist"] =  "TavernHorde (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1850]
+  }, -- [1957]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Human Tavern 1A",
@@ -15257,7 +16113,7 @@ local GameMusic = {
     ["Length"] = 92,
     ["Artist"] =  "TavernHuman (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1851]
+  }, -- [1958]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Human Tavern 1B",
@@ -15265,7 +16121,7 @@ local GameMusic = {
     ["Length"] = 79,
     ["Artist"] =  "TavernHuman (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1852]
+  }, -- [1959]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Human Tavern 2A",
@@ -15273,7 +16129,7 @@ local GameMusic = {
     ["Length"] = 86,
     ["Artist"] =  "TavernHuman (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1853]
+  }, -- [1960]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Human Tavern 2B",
@@ -15281,7 +16137,7 @@ local GameMusic = {
     ["Length"] = 81,
     ["Artist"] =  "TavernHuman (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1854]
+  }, -- [1961]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "WoW Tavern 1 Revisited A",
@@ -15289,7 +16145,7 @@ local GameMusic = {
     ["Length"] = 70,
     ["Artist"] =  "TavernHuman (David Arkenstone & Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1855]
+  }, -- [1962]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "WoW Tavern 1 Revisited B",
@@ -15297,7 +16153,7 @@ local GameMusic = {
     ["Length"] = 72,
     ["Artist"] =  "TavernHuman (David Arkenstone & Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1856]
+  }, -- [1963]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Temple of the Moon A",
@@ -15305,7 +16161,7 @@ local GameMusic = {
     ["Length"] = 112,
     ["Artist"] =  "TavernNightElf (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1857]
+  }, -- [1964]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Temple of the Moon B",
@@ -15313,7 +16169,7 @@ local GameMusic = {
     ["Length"] = 119,
     ["Artist"] =  "TavernNightElf (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1858]
+  }, -- [1965]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Orc Rest Area 1A",
@@ -15321,7 +16177,7 @@ local GameMusic = {
     ["Length"] = 100,
     ["Artist"] =  "TavernOrc (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1859]
+  }, -- [1966]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Orc Rest Area 1B",
@@ -15329,7 +16185,7 @@ local GameMusic = {
     ["Length"] = 91,
     ["Artist"] =  "TavernOrc (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1860]
+  }, -- [1967]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Orc Rest Area 2A",
@@ -15337,7 +16193,7 @@ local GameMusic = {
     ["Length"] = 87,
     ["Artist"] =  "TavernOrc (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1861]
+  }, -- [1968]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Orc Rest Area 2B",
@@ -15345,7 +16201,7 @@ local GameMusic = {
     ["Length"] = 86,
     ["Artist"] =  "TavernOrc (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1862]
+  }, -- [1969]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Orc Rest Area 3A",
@@ -15353,7 +16209,7 @@ local GameMusic = {
     ["Length"] = 86,
     ["Artist"] =  "TavernOrc (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1863]
+  }, -- [1970]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Orc Rest Area 3B",
@@ -15361,7 +16217,7 @@ local GameMusic = {
     ["Length"] = 81,
     ["Artist"] =  "TavernOrc (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1864]
+  }, -- [1971]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Pirate Tavern 1A",
@@ -15369,7 +16225,7 @@ local GameMusic = {
     ["Length"] = 83,
     ["Artist"] =  "TavernPirate (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1865]
+  }, -- [1972]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Pirate Tavern 1B",
@@ -15377,7 +16233,7 @@ local GameMusic = {
     ["Length"] = 81,
     ["Artist"] =  "TavernPirate (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1866]
+  }, -- [1973]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Pirate Tavern 2A",
@@ -15385,7 +16241,7 @@ local GameMusic = {
     ["Length"] = 82,
     ["Artist"] =  "TavernPirate (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1867]
+  }, -- [1974]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Pirate Tavern 2B",
@@ -15393,7 +16249,7 @@ local GameMusic = {
     ["Length"] = 81,
     ["Artist"] =  "TavernPirate (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1868]
+  }, -- [1975]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Pirate Tavern 3A",
@@ -15401,7 +16257,7 @@ local GameMusic = {
     ["Length"] = 88,
     ["Artist"] =  "TavernPirate (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1869]
+  }, -- [1976]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Pirate Tavern 3B",
@@ -15409,7 +16265,7 @@ local GameMusic = {
     ["Length"] = 85,
     ["Artist"] =  "TavernPirate (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1870]
+  }, -- [1977]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Tauren Rest Area 1A",
@@ -15417,7 +16273,7 @@ local GameMusic = {
     ["Length"] = 89,
     ["Artist"] =  "TavernTauren (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1871]
+  }, -- [1978]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Tauren Rest Area 1B",
@@ -15425,7 +16281,7 @@ local GameMusic = {
     ["Length"] = 96,
     ["Artist"] =  "TavernTauren (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1872]
+  }, -- [1979]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Tauren Rest Area 2A",
@@ -15433,7 +16289,7 @@ local GameMusic = {
     ["Length"] = 85,
     ["Artist"] =  "TavernTauren (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1873]
+  }, -- [1980]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Tauren Rest Area 2B",
@@ -15441,7 +16297,7 @@ local GameMusic = {
     ["Length"] = 80,
     ["Artist"] =  "TavernTauren (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1874]
+  }, -- [1981]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Tauren Rest Area 3A",
@@ -15449,7 +16305,7 @@ local GameMusic = {
     ["Length"] = 93,
     ["Artist"] =  "TavernTauren (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1875]
+  }, -- [1982]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Tauren Rest Area 3B",
@@ -15457,7 +16313,7 @@ local GameMusic = {
     ["Length"] = 93,
     ["Artist"] =  "TavernTauren (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1876]
+  }, -- [1983]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Undead Tavern 1A",
@@ -15465,7 +16321,7 @@ local GameMusic = {
     ["Length"] = 93,
     ["Artist"] =  "TavernUndead (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1877]
+  }, -- [1984]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Undead Tavern 1B",
@@ -15473,7 +16329,7 @@ local GameMusic = {
     ["Length"] = 87,
     ["Artist"] =  "TavernUndead (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1878]
+  }, -- [1985]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Undead Tavern 2",
@@ -15481,7 +16337,7 @@ local GameMusic = {
     ["Length"] = 124,
     ["Artist"] =  "TavernUndead (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1879]
+  }, -- [1986]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Undead Tavern 3A",
@@ -15489,7 +16345,7 @@ local GameMusic = {
     ["Length"] = 83,
     ["Artist"] =  "TavernUndead (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1880]
+  }, -- [1987]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Undead Tavern 3B",
@@ -15497,7 +16353,7 @@ local GameMusic = {
     ["Length"] = 93,
     ["Artist"] =  "TavernUndead (David Arkenstone)",
     ["WoW"] = true,
-  }, -- [1881]
+  }, -- [1988]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "tk_TempestKeep_AMB_11",
@@ -15505,7 +16361,7 @@ local GameMusic = {
     ["Length"] = 46,
     ["Artist"] =  "TempestKeep (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1882]
+  }, -- [1989]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "tk_TempestKeep_AMB_12",
@@ -15513,7 +16369,7 @@ local GameMusic = {
     ["Length"] = 96,
     ["Artist"] =  "TempestKeep (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1883]
+  }, -- [1990]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "tk_TempestKeep_AMB_13",
@@ -15521,7 +16377,7 @@ local GameMusic = {
     ["Length"] = 67,
     ["Artist"] =  "TempestKeep (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1884]
+  }, -- [1991]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "tk_TempestKeep_AMB_14",
@@ -15529,7 +16385,7 @@ local GameMusic = {
     ["Length"] = 88,
     ["Artist"] =  "TempestKeep (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1885]
+  }, -- [1992]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "tk_TempestKeep_AMB_16",
@@ -15537,7 +16393,7 @@ local GameMusic = {
     ["Length"] = 58,
     ["Artist"] =  "TempestKeep (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1886]
+  }, -- [1993]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "tk_TempestKeep_AMB_17",
@@ -15545,7 +16401,7 @@ local GameMusic = {
     ["Length"] = 62,
     ["Artist"] =  "TempestKeep (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1887]
+  }, -- [1994]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "tk_TempestKeep_AMB_18",
@@ -15553,7 +16409,7 @@ local GameMusic = {
     ["Length"] = 85,
     ["Artist"] =  "TempestKeep (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1888]
+  }, -- [1995]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "tk_TempestKeep_AMB_19",
@@ -15561,7 +16417,7 @@ local GameMusic = {
     ["Length"] = 48,
     ["Artist"] =  "TempestKeep (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1889]
+  }, -- [1996]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "tk_TempestKeep_AMB_20",
@@ -15569,7 +16425,7 @@ local GameMusic = {
     ["Length"] = 47,
     ["Artist"] =  "TempestKeep (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1890]
+  }, -- [1997]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "tk_TempestKeep_AMB_22",
@@ -15577,7 +16433,7 @@ local GameMusic = {
     ["Length"] = 34,
     ["Artist"] =  "TempestKeep (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1891]
+  }, -- [1998]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "tk_TempestKeep_AMB_23",
@@ -15585,7 +16441,7 @@ local GameMusic = {
     ["Length"] = 67,
     ["Artist"] =  "TempestKeep (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1892]
+  }, -- [1999]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "tk_TempestKeep_BTL10",
@@ -15593,7 +16449,7 @@ local GameMusic = {
     ["Length"] = 59,
     ["Artist"] =  "TempestKeep (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1893]
+  }, -- [2000]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "tk_TempestKeep_BTL11",
@@ -15601,7 +16457,7 @@ local GameMusic = {
     ["Length"] = 81,
     ["Artist"] =  "TempestKeep (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1894]
+  }, -- [2001]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "tk_TempestKeep_BTL13",
@@ -15609,7 +16465,7 @@ local GameMusic = {
     ["Length"] = 36,
     ["Artist"] =  "TempestKeep (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1895]
+  }, -- [2002]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "tk_TempestKeep_STG14",
@@ -15617,7 +16473,7 @@ local GameMusic = {
     ["Length"] = 11,
     ["Artist"] =  "TempestKeep (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1896]
+  }, -- [2003]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "tk_TempestKeep_STG15",
@@ -15625,7 +16481,7 @@ local GameMusic = {
     ["Length"] = 11,
     ["Artist"] =  "TempestKeep (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1897]
+  }, -- [2004]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "tk_TempestKeep_STG16",
@@ -15633,7 +16489,7 @@ local GameMusic = {
     ["Length"] = 11,
     ["Artist"] =  "TempestKeep (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1898]
+  }, -- [2005]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Auchindoun Walking 1",
@@ -15641,7 +16497,7 @@ local GameMusic = {
     ["Length"] = 120,
     ["Artist"] =  "Terokkar (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1899]
+  }, -- [2006]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Auchindoun Walking 2",
@@ -15649,7 +16505,7 @@ local GameMusic = {
     ["Length"] = 150,
     ["Artist"] =  "Terokkar (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1900]
+  }, -- [2007]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Auchindoun Walking 3",
@@ -15657,7 +16513,7 @@ local GameMusic = {
     ["Length"] = 120,
     ["Artist"] =  "Terokkar (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1901]
+  }, -- [2008]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Terrokar Bone Wastes Walking 1",
@@ -15665,7 +16521,7 @@ local GameMusic = {
     ["Length"] = 65,
     ["Artist"] =  "Terokkar (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1902]
+  }, -- [2009]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Terrokar Bone Wastes Walking 2",
@@ -15673,7 +16529,7 @@ local GameMusic = {
     ["Length"] = 63,
     ["Artist"] =  "Terokkar (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1903]
+  }, -- [2010]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Terrokar Bone Wastes Walking 3",
@@ -15681,7 +16537,7 @@ local GameMusic = {
     ["Length"] = 56,
     ["Artist"] =  "Terokkar (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1904]
+  }, -- [2011]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Terrokar Bone Wastes Walking 4",
@@ -15689,7 +16545,7 @@ local GameMusic = {
     ["Length"] = 189,
     ["Artist"] =  "Terokkar (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1905]
+  }, -- [2012]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Terrokar Forest 1",
@@ -15697,7 +16553,7 @@ local GameMusic = {
     ["Length"] = 150,
     ["Artist"] =  "Terokkar (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1906]
+  }, -- [2013]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Terrokar Forest 2",
@@ -15705,7 +16561,7 @@ local GameMusic = {
     ["Length"] = 190,
     ["Artist"] =  "Terokkar (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1907]
+  }, -- [2014]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Terrokar Forest 3",
@@ -15713,7 +16569,7 @@ local GameMusic = {
     ["Length"] = 187,
     ["Artist"] =  "Terokkar (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1908]
+  }, -- [2015]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Shattrath Walking 1",
@@ -15721,7 +16577,7 @@ local GameMusic = {
     ["Length"] = 137,
     ["Artist"] =  "Terokkar (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1909]
+  }, -- [2016]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Shattrath Walking 2",
@@ -15729,7 +16585,7 @@ local GameMusic = {
     ["Length"] = 100,
     ["Artist"] =  "Terokkar (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1910]
+  }, -- [2017]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Shattrath Walking 3",
@@ -15737,7 +16593,7 @@ local GameMusic = {
     ["Length"] = 92,
     ["Artist"] =  "Terokkar (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1911]
+  }, -- [2018]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Shattrath Walking 4",
@@ -15745,7 +16601,7 @@ local GameMusic = {
     ["Length"] = 82,
     ["Artist"] =  "Terokkar (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1912]
+  }, -- [2019]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Shattrath Walking 5",
@@ -15753,7 +16609,7 @@ local GameMusic = {
     ["Length"] = 117,
     ["Artist"] =  "Terokkar (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1913]
+  }, -- [2020]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Shattrath Walking 6",
@@ -15761,7 +16617,7 @@ local GameMusic = {
     ["Length"] = 137,
     ["Artist"] =  "Terokkar (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [1914]
+  }, -- [2021]
   {
     ["Album"] = "",
     ["Song"] = "UL_LightningBattleWalk",
@@ -15769,7 +16625,7 @@ local GameMusic = {
     ["Length"] = 52,
     ["Artist"] =  "Ulduar",
     ["WoW"] = true,
-  }, -- [1915]
+  }, -- [2022]
   {
     ["Album"] = "",
     ["Song"] = "UL_LightningGeneralWalk01",
@@ -15777,7 +16633,7 @@ local GameMusic = {
     ["Length"] = 33,
     ["Artist"] =  "Ulduar",
     ["WoW"] = true,
-  }, -- [1916]
+  }, -- [2023]
   {
     ["Album"] = "",
     ["Song"] = "UL_LightningGeneralWalk02",
@@ -15785,7 +16641,7 @@ local GameMusic = {
     ["Length"] = 40,
     ["Artist"] =  "Ulduar",
     ["WoW"] = true,
-  }, -- [1917]
+  }, -- [2024]
   {
     ["Album"] = "",
     ["Song"] = "UL_LightningGeneralWalk03",
@@ -15793,7 +16649,7 @@ local GameMusic = {
     ["Length"] = 35,
     ["Artist"] =  "Ulduar",
     ["WoW"] = true,
-  }, -- [1918]
+  }, -- [2025]
   {
     ["Album"] = "",
     ["Song"] = "UL_LightningIntro",
@@ -15801,7 +16657,7 @@ local GameMusic = {
     ["Length"] = 82,
     ["Artist"] =  "Ulduar",
     ["WoW"] = true,
-  }, -- [1919]
+  }, -- [2026]
   {
     ["Album"] = "",
     ["Song"] = "UL_StoneBattleWalk",
@@ -15809,7 +16665,7 @@ local GameMusic = {
     ["Length"] = 52,
     ["Artist"] =  "Ulduar",
     ["WoW"] = true,
-  }, -- [1920]
+  }, -- [2027]
   {
     ["Album"] = "",
     ["Song"] = "UL_StoneGeneralWalk01",
@@ -15817,7 +16673,7 @@ local GameMusic = {
     ["Length"] = 40,
     ["Artist"] =  "Ulduar",
     ["WoW"] = true,
-  }, -- [1921]
+  }, -- [2028]
   {
     ["Album"] = "",
     ["Song"] = "UL_StoneGeneralWalk02",
@@ -15825,7 +16681,7 @@ local GameMusic = {
     ["Length"] = 40,
     ["Artist"] =  "Ulduar",
     ["WoW"] = true,
-  }, -- [1922]
+  }, -- [2029]
   {
     ["Album"] = "",
     ["Song"] = "UL_StoneGeneralWalk03",
@@ -15833,7 +16689,7 @@ local GameMusic = {
     ["Length"] = 35,
     ["Artist"] =  "Ulduar",
     ["WoW"] = true,
-  }, -- [1923]
+  }, -- [2030]
   {
     ["Album"] = "",
     ["Song"] = "UL_StoneIntro",
@@ -15841,7 +16697,7 @@ local GameMusic = {
     ["Length"] = 85,
     ["Artist"] =  "Ulduar",
     ["WoW"] = true,
-  }, -- [1924]
+  }, -- [2031]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtActionUni01",
@@ -15849,7 +16705,7 @@ local GameMusic = {
     ["Length"] = 31,
     ["Artist"] =  "UlduarRaidExt (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1925]
+  }, -- [2032]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtActionUni02",
@@ -15857,7 +16713,7 @@ local GameMusic = {
     ["Length"] = 137,
     ["Artist"] =  "UlduarRaidExt (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1926]
+  }, -- [2033]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtActionUni03",
@@ -15865,7 +16721,7 @@ local GameMusic = {
     ["Length"] = 136,
     ["Artist"] =  "UlduarRaidExt (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1927]
+  }, -- [2034]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtActionUni04",
@@ -15873,7 +16729,7 @@ local GameMusic = {
     ["Length"] = 53,
     ["Artist"] =  "UlduarRaidExt (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1928]
+  }, -- [2035]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtActionUni05",
@@ -15881,7 +16737,7 @@ local GameMusic = {
     ["Length"] = 93,
     ["Artist"] =  "UlduarRaidExt (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1929]
+  }, -- [2036]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtActionUni06",
@@ -15889,7 +16745,7 @@ local GameMusic = {
     ["Length"] = 93,
     ["Artist"] =  "UlduarRaidExt (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1930]
+  }, -- [2037]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtActionUni07",
@@ -15897,7 +16753,7 @@ local GameMusic = {
     ["Length"] = 40,
     ["Artist"] =  "UlduarRaidExt (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1931]
+  }, -- [2038]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtActionUni08",
@@ -15905,7 +16761,7 @@ local GameMusic = {
     ["Length"] = 40,
     ["Artist"] =  "UlduarRaidExt (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1932]
+  }, -- [2039]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtActionUni09",
@@ -15913,7 +16769,7 @@ local GameMusic = {
     ["Length"] = 28,
     ["Artist"] =  "UlduarRaidExt (Derek Duke, Glenn Stafford)",
     ["WoW"] = true,
-  }, -- [1933]
+  }, -- [2040]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtActionUni10",
@@ -15921,7 +16777,7 @@ local GameMusic = {
     ["Length"] = 28,
     ["Artist"] =  "UlduarRaidExt (Derek Duke, Glenn Stafford)",
     ["WoW"] = true,
-  }, -- [1934]
+  }, -- [2041]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtActionUni11",
@@ -15929,7 +16785,7 @@ local GameMusic = {
     ["Length"] = 27,
     ["Artist"] =  "UlduarRaidExt (Derek Duke, Glenn Stafford)",
     ["WoW"] = true,
-  }, -- [1935]
+  }, -- [2042]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtActionUni12",
@@ -15937,7 +16793,7 @@ local GameMusic = {
     ["Length"] = 28,
     ["Artist"] =  "UlduarRaidExt (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1936]
+  }, -- [2043]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtActionUni13",
@@ -15945,7 +16801,7 @@ local GameMusic = {
     ["Length"] = 27,
     ["Artist"] =  "UlduarRaidExt (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1937]
+  }, -- [2044]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtActionUni14",
@@ -15953,7 +16809,7 @@ local GameMusic = {
     ["Length"] = 36,
     ["Artist"] =  "UlduarRaidExt (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1938]
+  }, -- [2045]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtActionUni15",
@@ -15961,7 +16817,7 @@ local GameMusic = {
     ["Length"] = 36,
     ["Artist"] =  "UlduarRaidExt (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1939]
+  }, -- [2046]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtActionUni16",
@@ -15969,7 +16825,7 @@ local GameMusic = {
     ["Length"] = 36,
     ["Artist"] =  "UlduarRaidExt (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1940]
+  }, -- [2047]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtIntroUni01",
@@ -15977,7 +16833,7 @@ local GameMusic = {
     ["Length"] = 12,
     ["Artist"] =  "UlduarRaidExt (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1941]
+  }, -- [2048]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtIntroUni02",
@@ -15985,7 +16841,7 @@ local GameMusic = {
     ["Length"] = 14,
     ["Artist"] =  "UlduarRaidExt (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1942]
+  }, -- [2049]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtIntroUni03",
@@ -15993,7 +16849,7 @@ local GameMusic = {
     ["Length"] = 14,
     ["Artist"] =  "UlduarRaidExt (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1943]
+  }, -- [2050]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtIntroUni04",
@@ -16001,7 +16857,7 @@ local GameMusic = {
     ["Length"] = 17,
     ["Artist"] =  "UlduarRaidExt (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1944]
+  }, -- [2051]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtIntroUni05",
@@ -16009,7 +16865,7 @@ local GameMusic = {
     ["Length"] = 13,
     ["Artist"] =  "UlduarRaidExt (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1945]
+  }, -- [2052]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtIntroUni06",
@@ -16017,7 +16873,7 @@ local GameMusic = {
     ["Length"] = 13,
     ["Artist"] =  "UlduarRaidExt (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1946]
+  }, -- [2053]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtIntroUni07",
@@ -16025,7 +16881,7 @@ local GameMusic = {
     ["Length"] = 12,
     ["Artist"] =  "UlduarRaidExt (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1947]
+  }, -- [2054]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtIntroUni08",
@@ -16033,7 +16889,7 @@ local GameMusic = {
     ["Length"] = 26,
     ["Artist"] =  "UlduarRaidExt (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1948]
+  }, -- [2055]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtIntroUni09",
@@ -16041,7 +16897,7 @@ local GameMusic = {
     ["Length"] = 25,
     ["Artist"] =  "UlduarRaidExt (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1949]
+  }, -- [2056]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtWalkUni01",
@@ -16049,7 +16905,7 @@ local GameMusic = {
     ["Length"] = 36,
     ["Artist"] =  "UlduarRaidExt (Derek Duke, Glenn Stafford)",
     ["WoW"] = true,
-  }, -- [1950]
+  }, -- [2057]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtWalkUni02",
@@ -16057,7 +16913,7 @@ local GameMusic = {
     ["Length"] = 33,
     ["Artist"] =  "UlduarRaidExt (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1951]
+  }, -- [2058]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtWalkUni03",
@@ -16065,7 +16921,7 @@ local GameMusic = {
     ["Length"] = 87,
     ["Artist"] =  "UlduarRaidExt (Derek Duke, Glenn Stafford)",
     ["WoW"] = true,
-  }, -- [1952]
+  }, -- [2059]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtWalkUni04",
@@ -16073,7 +16929,7 @@ local GameMusic = {
     ["Length"] = 87,
     ["Artist"] =  "UlduarRaidExt (Derek Duke, Glenn Stafford)",
     ["WoW"] = true,
-  }, -- [1953]
+  }, -- [2060]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtWalkUni05",
@@ -16081,7 +16937,7 @@ local GameMusic = {
     ["Length"] = 87,
     ["Artist"] =  "UlduarRaidExt (Derek Duke, Glenn Stafford)",
     ["WoW"] = true,
-  }, -- [1954]
+  }, -- [2061]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtWalkUni06",
@@ -16089,7 +16945,7 @@ local GameMusic = {
     ["Length"] = 26,
     ["Artist"] =  "UlduarRaidExt (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1955]
+  }, -- [2062]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtWalkUni07",
@@ -16097,7 +16953,7 @@ local GameMusic = {
     ["Length"] = 57,
     ["Artist"] =  "UlduarRaidExt (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1956]
+  }, -- [2063]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtWalkUni08",
@@ -16105,7 +16961,7 @@ local GameMusic = {
     ["Length"] = 53,
     ["Artist"] =  "UlduarRaidExt (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1957]
+  }, -- [2064]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtWalkUni09",
@@ -16113,7 +16969,7 @@ local GameMusic = {
     ["Length"] = 27,
     ["Artist"] =  "UlduarRaidExt (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1958]
+  }, -- [2065]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtWalkUni10",
@@ -16121,7 +16977,7 @@ local GameMusic = {
     ["Length"] = 28,
     ["Artist"] =  "UlduarRaidExt (Derek Duke)",
     ["WoW"] = true,
-  }, -- [1959]
+  }, -- [2066]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "UR_UlduarRaidExtWalkUni11",
@@ -16129,7 +16985,7 @@ local GameMusic = {
     ["Length"] = 28,
     ["Artist"] =  "UlduarRaidExt (Derek Duke, Glenn Stafford)",
     ["WoW"] = true,
-  }, -- [1960]
+  }, -- [2067]
   {
     ["Album"] = "WoW 3.1 Ulduar Raid",
     ["Song"] = "Algalon Battle 1",
@@ -16137,7 +16993,7 @@ local GameMusic = {
     ["Length"] = 162,
     ["Artist"] =  "UlduarRaidInt (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1961]
+  }, -- [2068]
   {
     ["Album"] = "WoW 3.1 Ulduar Raid",
     ["Song"] = "Algalon Battle 2",
@@ -16145,7 +17001,7 @@ local GameMusic = {
     ["Length"] = 131,
     ["Artist"] =  "UlduarRaidInt (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1962]
+  }, -- [2069]
   {
     ["Album"] = "WoW 3.1 Ulduar Raid",
     ["Song"] = "Algalon",
@@ -16153,7 +17009,7 @@ local GameMusic = {
     ["Length"] = 148,
     ["Artist"] =  "UlduarRaidInt (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1963]
+  }, -- [2070]
   {
     ["Album"] = "WoW 3.1 Ulduar Raid",
     ["Song"] = "Algalon Planetary Hall",
@@ -16161,7 +17017,7 @@ local GameMusic = {
     ["Length"] = 148,
     ["Artist"] =  "UlduarRaidInt (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1964]
+  }, -- [2071]
   {
     ["Album"] = "WoW 3.1 Ulduar Raid",
     ["Song"] = "Algalon Voices",
@@ -16169,7 +17025,7 @@ local GameMusic = {
     ["Length"] = 148,
     ["Artist"] =  "UlduarRaidInt (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1965]
+  }, -- [2072]
   {
     ["Album"] = "WoW 3.1 Ulduar Raid",
     ["Song"] = "Four Sigils Hall",
@@ -16177,7 +17033,7 @@ local GameMusic = {
     ["Length"] = 123,
     ["Artist"] =  "UlduarRaidInt (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1966]
+  }, -- [2073]
   {
     ["Album"] = "WoW 3.1 Ulduar Raid",
     ["Song"] = "Four Sigils",
@@ -16185,7 +17041,7 @@ local GameMusic = {
     ["Length"] = 218,
     ["Artist"] =  "UlduarRaidInt (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1967]
+  }, -- [2074]
   {
     ["Album"] = "WoW 3.1 Ulduar Raid",
     ["Song"] = "Halls Instrumental",
@@ -16193,7 +17049,7 @@ local GameMusic = {
     ["Length"] = 115,
     ["Artist"] =  "UlduarRaidInt (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1968]
+  }, -- [2075]
   {
     ["Album"] = "WoW 3.1 Ulduar Raid",
     ["Song"] = "Halls of Iron",
@@ -16201,7 +17057,7 @@ local GameMusic = {
     ["Length"] = 196,
     ["Artist"] =  "UlduarRaidInt (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1969]
+  }, -- [2076]
   {
     ["Album"] = "WoW 3.1 Ulduar Raid",
     ["Song"] = "Halls Past",
@@ -16209,7 +17065,7 @@ local GameMusic = {
     ["Length"] = 112,
     ["Artist"] =  "UlduarRaidInt (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1970]
+  }, -- [2077]
   {
     ["Album"] = "WoW 3.1 Ulduar Raid",
     ["Song"] = "Mimiron B",
@@ -16217,7 +17073,7 @@ local GameMusic = {
     ["Length"] = 172,
     ["Artist"] =  "UlduarRaidInt (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1971]
+  }, -- [2078]
   {
     ["Album"] = "WoW 3.1 Ulduar Raid",
     ["Song"] = "Mimiron C",
@@ -16225,7 +17081,7 @@ local GameMusic = {
     ["Length"] = 97,
     ["Artist"] =  "UlduarRaidInt (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1972]
+  }, -- [2079]
   {
     ["Album"] = "WoW 3.1 Ulduar Raid",
     ["Song"] = "Mimiron D",
@@ -16233,7 +17089,7 @@ local GameMusic = {
     ["Length"] = 96,
     ["Artist"] =  "UlduarRaidInt (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1973]
+  }, -- [2080]
   {
     ["Album"] = "WoW 3.1 Ulduar Raid",
     ["Song"] = "Mimiron E",
@@ -16241,7 +17097,7 @@ local GameMusic = {
     ["Length"] = 82,
     ["Artist"] =  "UlduarRaidInt (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1974]
+  }, -- [2081]
   {
     ["Album"] = "WoW 3.1 Ulduar Raid",
     ["Song"] = "Mimiron F",
@@ -16249,7 +17105,7 @@ local GameMusic = {
     ["Length"] = 179,
     ["Artist"] =  "UlduarRaidInt (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1975]
+  }, -- [2082]
   {
     ["Album"] = "WoW 3.1 Ulduar Raid",
     ["Song"] = "Mimiron Ghosts",
@@ -16257,7 +17113,7 @@ local GameMusic = {
     ["Length"] = 179,
     ["Artist"] =  "UlduarRaidInt (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1976]
+  }, -- [2083]
   {
     ["Album"] = "WoW 3.1 Ulduar Raid",
     ["Song"] = "Mimiron",
@@ -16265,7 +17121,7 @@ local GameMusic = {
     ["Length"] = 172,
     ["Artist"] =  "UlduarRaidInt (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1977]
+  }, -- [2084]
   {
     ["Album"] = "WoW 3.1 Ulduar Raid",
     ["Song"] = "Sigil Ghosts",
@@ -16273,7 +17129,7 @@ local GameMusic = {
     ["Length"] = 75,
     ["Artist"] =  "UlduarRaidInt (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1978]
+  }, -- [2085]
   {
     ["Album"] = "WoW 3.1 Ulduar Raid",
     ["Song"] = "Titan Ghosts",
@@ -16281,7 +17137,7 @@ local GameMusic = {
     ["Length"] = 113,
     ["Artist"] =  "UlduarRaidInt (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1979]
+  }, -- [2086]
   {
     ["Album"] = "WoW 3.1 Ulduar Raid",
     ["Song"] = "Titan Halls",
@@ -16289,7 +17145,7 @@ local GameMusic = {
     ["Length"] = 113,
     ["Artist"] =  "UlduarRaidInt (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1980]
+  }, -- [2087]
   {
     ["Album"] = "WoW 3.1 Ulduar Raid",
     ["Song"] = "Titan Mech",
@@ -16297,7 +17153,7 @@ local GameMusic = {
     ["Length"] = 127,
     ["Artist"] =  "UlduarRaidInt (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1981]
+  }, -- [2088]
   {
     ["Album"] = "WoW 3.1 Ulduar Raid",
     ["Song"] = "Titan Orchestra",
@@ -16305,7 +17161,7 @@ local GameMusic = {
     ["Length"] = 102,
     ["Artist"] =  "UlduarRaidInt (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1982]
+  }, -- [2089]
   {
     ["Album"] = "WoW 3.1 Ulduar Raid",
     ["Song"] = "Titan Sigils",
@@ -16313,7 +17169,7 @@ local GameMusic = {
     ["Length"] = 57,
     ["Artist"] =  "UlduarRaidInt (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1983]
+  }, -- [2090]
   {
     ["Album"] = "WoW 3.1 Ulduar Raid",
     ["Song"] = "Titan Yogg",
@@ -16321,7 +17177,7 @@ local GameMusic = {
     ["Length"] = 94,
     ["Artist"] =  "UlduarRaidInt (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1984]
+  }, -- [2091]
   {
     ["Album"] = "WoW 3.1 Ulduar Raid",
     ["Song"] = "Ulduar Tone",
@@ -16329,7 +17185,7 @@ local GameMusic = {
     ["Length"] = 106,
     ["Artist"] =  "UlduarRaidInt (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1985]
+  }, -- [2092]
   {
     ["Album"] = "WoW 3.1 Ulduar Raid",
     ["Song"] = "Yogg Lite",
@@ -16337,7 +17193,7 @@ local GameMusic = {
     ["Length"] = 105,
     ["Artist"] =  "UlduarRaidInt (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1986]
+  }, -- [2093]
   {
     ["Album"] = "WoW 3.1 Ulduar Raid",
     ["Song"] = "Yogg Saron",
@@ -16345,7 +17201,7 @@ local GameMusic = {
     ["Length"] = 105,
     ["Artist"] =  "UlduarRaidInt (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1987]
+  }, -- [2094]
   {
     ["Album"] = "WoW 3.1 Ulduar Raid",
     ["Song"] = "Yogg Woods",
@@ -16353,7 +17209,7 @@ local GameMusic = {
     ["Length"] = 82,
     ["Artist"] =  "UlduarRaidInt (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1988]
+  }, -- [2095]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Utgarde 1",
@@ -16361,7 +17217,7 @@ local GameMusic = {
     ["Length"] = 56,
     ["Artist"] =  "Utgarde Keep (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1989]
+  }, -- [2096]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Utgarde 2",
@@ -16369,7 +17225,7 @@ local GameMusic = {
     ["Length"] = 52,
     ["Artist"] =  "Utgarde Keep (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1990]
+  }, -- [2097]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Utgarde 3",
@@ -16377,7 +17233,7 @@ local GameMusic = {
     ["Length"] = 54,
     ["Artist"] =  "Utgarde Keep (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1991]
+  }, -- [2098]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Utgarde 4",
@@ -16385,7 +17241,7 @@ local GameMusic = {
     ["Length"] = 26,
     ["Artist"] =  "Utgarde Keep (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1992]
+  }, -- [2099]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Utgarde 5",
@@ -16393,7 +17249,7 @@ local GameMusic = {
     ["Length"] = 30,
     ["Artist"] =  "Utgarde Keep (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1993]
+  }, -- [2100]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "HF Dist 8",
@@ -16401,7 +17257,7 @@ local GameMusic = {
     ["Length"] = 108,
     ["Artist"] =  "Utgarde Keep (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1994]
+  }, -- [2101]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "HF Dist 9",
@@ -16409,7 +17265,7 @@ local GameMusic = {
     ["Length"] = 107,
     ["Artist"] =  "Utgarde Keep (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1995]
+  }, -- [2102]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Violet Hold 1",
@@ -16417,7 +17273,7 @@ local GameMusic = {
     ["Length"] = 83,
     ["Artist"] =  "VioletHold (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1996]
+  }, -- [2103]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Violet Hold 2",
@@ -16425,7 +17281,7 @@ local GameMusic = {
     ["Length"] = 83,
     ["Artist"] =  "VioletHold (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1997]
+  }, -- [2104]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "Violet Hold 3",
@@ -16433,7 +17289,7 @@ local GameMusic = {
     ["Length"] = 69,
     ["Artist"] =  "VioletHold (Russell Brower)",
     ["WoW"] = true,
-  }, -- [1998]
+  }, -- [2105]
   {
     ["Album"] = "World of Warcraft",
     ["Song"] = "DayVolcanic01-new",
@@ -16441,7 +17297,7 @@ local GameMusic = {
     ["Length"] = 73,
     ["Artist"] =  "Volcanic (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [1999]
+  }, -- [2106]
   {
     ["Album"] = "World of Warcraft",
     ["Song"] = "DayVolcanic02-new",
@@ -16449,7 +17305,7 @@ local GameMusic = {
     ["Length"] = 87,
     ["Artist"] =  "Volcanic (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [2000]
+  }, -- [2107]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "NightVolcanic01",
@@ -16457,7 +17313,7 @@ local GameMusic = {
     ["Length"] = 71,
     ["Artist"] =  "Volcanic (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [2001]
+  }, -- [2108]
   {
     ["Album"] = "World of Warcraft mp3s",
     ["Song"] = "NightVolcanic02",
@@ -16465,7 +17321,7 @@ local GameMusic = {
     ["Length"] = 64,
     ["Artist"] =  "Volcanic (Jason Hayes)",
     ["WoW"] = true,
-  }, -- [2002]
+  }, -- [2109]
   {
     ["Album"] = "WoWX5",
     ["Song"] = "Gecko 3H",
@@ -16473,7 +17329,7 @@ local GameMusic = {
     ["Length"] = 101,
     ["Artist"] =  "WanderingIsle (Russell Brower)",
     ["WoW"] = true,
-  }, -- [2003]
+  }, -- [2110]
   {
     ["Album"] = "WoWX5",
     ["Song"] = "Gecko 3A",
@@ -16481,7 +17337,7 @@ local GameMusic = {
     ["Length"] = 97,
     ["Artist"] =  "WanderingIsle (Russell Brower)",
     ["WoW"] = true,
-  }, -- [2004]
+  }, -- [2111]
   {
     ["Album"] = "WoWX5",
     ["Song"] = "Gecko 3B",
@@ -16489,7 +17345,7 @@ local GameMusic = {
     ["Length"] = 107,
     ["Artist"] =  "WanderingIsle (Russell Brower)",
     ["WoW"] = true,
-  }, -- [2005]
+  }, -- [2112]
   {
     ["Album"] = "WoWX5",
     ["Song"] = "Gecko 3C",
@@ -16497,7 +17353,7 @@ local GameMusic = {
     ["Length"] = 68,
     ["Artist"] =  "WanderingIsle (Russell Brower)",
     ["WoW"] = true,
-  }, -- [2006]
+  }, -- [2113]
   {
     ["Album"] = "WoWX5",
     ["Song"] = "Gecko 3D",
@@ -16505,7 +17361,7 @@ local GameMusic = {
     ["Length"] = 108,
     ["Artist"] =  "WanderingIsle (Russell Brower)",
     ["WoW"] = true,
-  }, -- [2007]
+  }, -- [2114]
   {
     ["Album"] = "WoWX5",
     ["Song"] = "Gecko 3E",
@@ -16513,7 +17369,7 @@ local GameMusic = {
     ["Length"] = 54,
     ["Artist"] =  "WanderingIsle (Russell Brower)",
     ["WoW"] = true,
-  }, -- [2008]
+  }, -- [2115]
   {
     ["Album"] = "WoWX5",
     ["Song"] = "Gecko_2_V3",
@@ -16521,7 +17377,7 @@ local GameMusic = {
     ["Length"] = 87,
     ["Artist"] =  "WanderingIsle (Neal Acree)",
     ["WoW"] = true,
-  }, -- [2009]
+  }, -- [2116]
   {
     ["Album"] = "WoWX5",
     ["Song"] = "Gecko_1_V1",
@@ -16529,7 +17385,7 @@ local GameMusic = {
     ["Length"] = 84,
     ["Artist"] =  "WanderingIsle (Neal Acree)",
     ["WoW"] = true,
-  }, -- [2010]
+  }, -- [2117]
   {
     ["Album"] = "WoWX5",
     ["Song"] = "Gecko_1_V2",
@@ -16537,7 +17393,7 @@ local GameMusic = {
     ["Length"] = 88,
     ["Artist"] =  "WanderingIsle (Neal Acree)",
     ["WoW"] = true,
-  }, -- [2011]
+  }, -- [2118]
   {
     ["Album"] = "WoWX5",
     ["Song"] = "Gecko_1_V3",
@@ -16545,7 +17401,7 @@ local GameMusic = {
     ["Length"] = 75,
     ["Artist"] =  "WanderingIsle (Neal Acree)",
     ["WoW"] = true,
-  }, -- [2012]
+  }, -- [2119]
   {
     ["Album"] = "WoWX5",
     ["Song"] = "Gecko_1_V4",
@@ -16553,7 +17409,7 @@ local GameMusic = {
     ["Length"] = 88,
     ["Artist"] =  "WanderingIsle (Neal Acree)",
     ["WoW"] = true,
-  }, -- [2013]
+  }, -- [2120]
   {
     ["Album"] = "WoWX5",
     ["Song"] = "Gecko_1_V5",
@@ -16561,7 +17417,7 @@ local GameMusic = {
     ["Length"] = 82,
     ["Artist"] =  "WanderingIsle (Neal Acree)",
     ["WoW"] = true,
-  }, -- [2014]
+  }, -- [2121]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Zangarmarsh Coilfang Walking 1",
@@ -16569,7 +17425,7 @@ local GameMusic = {
     ["Length"] = 133,
     ["Artist"] =  "ZangarMarsh (Matt Uelmen and Joseph Lawrence)",
     ["WoW"] = true,
-  }, -- [2015]
+  }, -- [2122]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Zangarmarsh Coilfang Walking 2",
@@ -16577,7 +17433,7 @@ local GameMusic = {
     ["Length"] = 99,
     ["Artist"] =  "ZangarMarsh (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [2016]
+  }, -- [2123]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Zangarmarsh Coilfang Walking 2",
@@ -16585,7 +17441,7 @@ local GameMusic = {
     ["Length"] = 109,
     ["Artist"] =  "ZangarMarsh (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [2017]
+  }, -- [2124]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Zangarmarsh Walking 1",
@@ -16593,7 +17449,7 @@ local GameMusic = {
     ["Length"] = 81,
     ["Artist"] =  "ZangarMarsh (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [2018]
+  }, -- [2125]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Zangarmarsh Walking 2",
@@ -16601,7 +17457,7 @@ local GameMusic = {
     ["Length"] = 120,
     ["Artist"] =  "ZangarMarsh (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [2019]
+  }, -- [2126]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Zangarmarsh Walking 3",
@@ -16609,7 +17465,7 @@ local GameMusic = {
     ["Length"] = 59,
     ["Artist"] =  "ZangarMarsh (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [2020]
+  }, -- [2127]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Zangarmarsh Walking 4",
@@ -16617,7 +17473,7 @@ local GameMusic = {
     ["Length"] = 103,
     ["Artist"] =  "ZangarMarsh (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [2021]
+  }, -- [2128]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Zangarmarsh Walking 5",
@@ -16625,7 +17481,7 @@ local GameMusic = {
     ["Length"] = 71,
     ["Artist"] =  "ZangarMarsh (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [2022]
+  }, -- [2129]
   {
     ["Album"] = "WoW BC",
     ["Song"] = "Zangarmarsh Walking 6",
@@ -16633,7 +17489,7 @@ local GameMusic = {
     ["Length"] = 89,
     ["Artist"] =  "ZangarMarsh (Matt Uelmen)",
     ["WoW"] = true,
-  }, -- [2023]
+  }, -- [2130]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "ZA_zulaman_AMB10",
@@ -16641,7 +17497,7 @@ local GameMusic = {
     ["Length"] = 113,
     ["Artist"] =  "Zulaman (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2024]
+  }, -- [2131]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "ZA_zulaman_AMB11",
@@ -16649,7 +17505,7 @@ local GameMusic = {
     ["Length"] = 74,
     ["Artist"] =  "Zulaman (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2025]
+  }, -- [2132]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "ZA_zulaman_AMB12",
@@ -16657,7 +17513,7 @@ local GameMusic = {
     ["Length"] = 108,
     ["Artist"] =  "Zulaman (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2026]
+  }, -- [2133]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "ZA_zulaman_AMB13",
@@ -16665,7 +17521,7 @@ local GameMusic = {
     ["Length"] = 70,
     ["Artist"] =  "Zulaman (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2027]
+  }, -- [2134]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "ZA_zulaman_AMB14",
@@ -16673,7 +17529,7 @@ local GameMusic = {
     ["Length"] = 90,
     ["Artist"] =  "Zulaman (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2028]
+  }, -- [2135]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "ZA_zulaman_AMB15",
@@ -16681,7 +17537,7 @@ local GameMusic = {
     ["Length"] = 113,
     ["Artist"] =  "Zulaman (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2029]
+  }, -- [2136]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "ZA_zulaman_BTL11",
@@ -16689,7 +17545,7 @@ local GameMusic = {
     ["Length"] = 136,
     ["Artist"] =  "Zulaman (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2030]
+  }, -- [2137]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "ZA_zulaman_BTL12",
@@ -16697,7 +17553,7 @@ local GameMusic = {
     ["Length"] = 117,
     ["Artist"] =  "Zulaman (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2031]
+  }, -- [2138]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "ZA_zulaman_BTL13",
@@ -16705,7 +17561,7 @@ local GameMusic = {
     ["Length"] = 40,
     ["Artist"] =  "Zulaman (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2032]
+  }, -- [2139]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "ZA_zulaman_BTL14",
@@ -16713,7 +17569,7 @@ local GameMusic = {
     ["Length"] = 92,
     ["Artist"] =  "Zulaman (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2033]
+  }, -- [2140]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "ZA_zulaman_BTL15",
@@ -16721,7 +17577,7 @@ local GameMusic = {
     ["Length"] = 79,
     ["Artist"] =  "Zulaman (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2034]
+  }, -- [2141]
   {
     ["Album"] = "Blizzard Entertainment",
     ["Song"] = "ZA_zulaman_VCT10",
@@ -16729,7 +17585,7 @@ local GameMusic = {
     ["Length"] = 80,
     ["Artist"] =  "Zulaman (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2035]
+  }, -- [2142]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "ZD_GeneralIntro_01",
@@ -16737,7 +17593,7 @@ local GameMusic = {
     ["Length"] = 98,
     ["Artist"] =  "ZulDrak (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2036]
+  }, -- [2143]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "ZD_GeneralIntro_02",
@@ -16745,7 +17601,7 @@ local GameMusic = {
     ["Length"] = 98,
     ["Artist"] =  "ZulDrak (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2037]
+  }, -- [2144]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "ZD_GeneralIntro_03",
@@ -16753,7 +17609,7 @@ local GameMusic = {
     ["Length"] = 128,
     ["Artist"] =  "ZulDrak (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2038]
+  }, -- [2145]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "ZD_GeneralIntro_04",
@@ -16761,7 +17617,7 @@ local GameMusic = {
     ["Length"] = 126,
     ["Artist"] =  "ZulDrak (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2039]
+  }, -- [2146]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "ZD_GeneralIntro_05",
@@ -16769,7 +17625,7 @@ local GameMusic = {
     ["Length"] = 129,
     ["Artist"] =  "ZulDrak (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2040]
+  }, -- [2147]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "ZD_GeneralIntro_06",
@@ -16777,7 +17633,7 @@ local GameMusic = {
     ["Length"] = 125,
     ["Artist"] =  "ZulDrak (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2041]
+  }, -- [2148]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "ZD_GeneralWalk_Day01",
@@ -16785,7 +17641,7 @@ local GameMusic = {
     ["Length"] = 89,
     ["Artist"] =  "ZulDrak (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2042]
+  }, -- [2149]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "ZD_GeneralWalk_Day02",
@@ -16793,7 +17649,7 @@ local GameMusic = {
     ["Length"] = 90,
     ["Artist"] =  "ZulDrak (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2043]
+  }, -- [2150]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "ZD_GeneralWalk_Day03",
@@ -16801,7 +17657,7 @@ local GameMusic = {
     ["Length"] = 101,
     ["Artist"] =  "ZulDrak (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2044]
+  }, -- [2151]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "ZD_GeneralWalk_Day04",
@@ -16809,7 +17665,7 @@ local GameMusic = {
     ["Length"] = 92,
     ["Artist"] =  "ZulDrak (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2045]
+  }, -- [2152]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "ZD_GeneralWalk_Night01",
@@ -16817,7 +17673,7 @@ local GameMusic = {
     ["Length"] = 90,
     ["Artist"] =  "ZulDrak (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2046]
+  }, -- [2153]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "ZD_GeneralWalk_Night02",
@@ -16825,7 +17681,7 @@ local GameMusic = {
     ["Length"] = 90,
     ["Artist"] =  "ZulDrak (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2047]
+  }, -- [2154]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "ZD_GeneralWalk_Night03",
@@ -16833,7 +17689,7 @@ local GameMusic = {
     ["Length"] = 101,
     ["Artist"] =  "ZulDrak (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2048]
+  }, -- [2155]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "ZD_GeneralWalk_Night04",
@@ -16841,7 +17697,7 @@ local GameMusic = {
     ["Length"] = 93,
     ["Artist"] =  "ZulDrak (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2049]
+  }, -- [2156]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "ZD_HarKoa_Intro01",
@@ -16849,7 +17705,7 @@ local GameMusic = {
     ["Length"] = 28,
     ["Artist"] =  "ZulDrak (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2050]
+  }, -- [2157]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "ZD_HarKoa_Intro02",
@@ -16857,7 +17713,7 @@ local GameMusic = {
     ["Length"] = 27,
     ["Artist"] =  "ZulDrak (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2051]
+  }, -- [2158]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "ZD_MamToth_Intro01",
@@ -16865,7 +17721,7 @@ local GameMusic = {
     ["Length"] = 30,
     ["Artist"] =  "ZulDrak (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2052]
+  }, -- [2159]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "ZD_MamToth_Intro02",
@@ -16873,7 +17729,7 @@ local GameMusic = {
     ["Length"] = 27,
     ["Artist"] =  "ZulDrak (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2053]
+  }, -- [2160]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "ZD_QuetzLun_Intro01",
@@ -16881,7 +17737,7 @@ local GameMusic = {
     ["Length"] = 32,
     ["Artist"] =  "ZulDrak (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2054]
+  }, -- [2161]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "ZD_QuetzLun_Intro02",
@@ -16889,7 +17745,7 @@ local GameMusic = {
     ["Length"] = 27,
     ["Artist"] =  "ZulDrak (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2055]
+  }, -- [2162]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "ZD_Rhunok_Intro01",
@@ -16897,7 +17753,7 @@ local GameMusic = {
     ["Length"] = 30,
     ["Artist"] =  "ZulDrak (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2056]
+  }, -- [2163]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "ZD_Rhunok_Intro02",
@@ -16905,7 +17761,7 @@ local GameMusic = {
     ["Length"] = 27,
     ["Artist"] =  "ZulDrak (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2057]
+  }, -- [2164]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "ZD_Sseratus_Intro01",
@@ -16913,7 +17769,7 @@ local GameMusic = {
     ["Length"] = 28,
     ["Artist"] =  "ZulDrak (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2058]
+  }, -- [2165]
   {
     ["Album"] = "Wrath of the Lich King",
     ["Song"] = "ZD_Sseratus_Intro02",
@@ -16921,49 +17777,49 @@ local GameMusic = {
     ["Length"] = 27,
     ["Artist"] =  "ZulDrak (Derek Duke)",
     ["WoW"] = true,
-  }, -- [2059]
+  }, -- [2166]
   {
       ["Album"] = "ingame",
       ["Song"] = "BF_Dwarves1",
       ["Name"] = "Sound\\Music\\ZoneMusic\\BrewFest\\BF_Dwarves1.mp3",
       ["Length"] = 94,
       ["Artist"] = "Brewfest Event",
-  }, -- [2060]
+  }, -- [2167]
   {
       ["Album"] = "ingame",
       ["Song"] = "BF_Dwarves2",
       ["Name"] = "Sound\\Music\\ZoneMusic\\BrewFest\\BF_Dwarves2.mp3",
       ["Length"] = 115,
       ["Artist"] = "Brewfest Event",
-  }, -- [2061]
+  }, -- [2168]
   {
       ["Album"] = "ingame",
       ["Song"] = "BF_Dwarves3",
       ["Name"] = "Sound\\Music\\ZoneMusic\\BrewFest\\BF_Dwarves3.mp3",
       ["Length"] = 23,
       ["Artist"] = "Brewfest Event",
-  }, -- [2062]
+  }, -- [2169]
   {
       ["Album"] = "ingame",
       ["Song"] = "BF_Goblins1",
       ["Name"] = "Sound\\Music\\ZoneMusic\\BrewFest\\BF_Goblins1.mp3",
       ["Length"] = 67,
       ["Artist"] = "Brewfest Event",
-  }, -- [2063]
+  }, -- [2170]
   {
       ["Album"] = "ingame",
       ["Song"] = "BF_Goblins2",
       ["Name"] = "Sound\\Music\\ZoneMusic\\BrewFest\\BF_Goblins2.mp3",
       ["Length"] = 93,
       ["Artist"] = "Brewfest Event",
-  }, -- [2064]
+  }, -- [2171]
   {
       ["Album"] = "ingame",
       ["Song"] = "BF_Goblins3",
       ["Name"] = "Sound\\Music\\ZoneMusic\\BrewFest\\BF_Goblins3.mp3",
       ["Length"] = 28,
       ["Artist"] = "Brewfest Event",
-  }, -- [2065
+  }, -- [2172]
 }
 local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer")
 
