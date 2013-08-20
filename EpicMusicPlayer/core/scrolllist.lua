@@ -15,6 +15,7 @@ local function ScrollUpdate(self, offset)
 		lineplusoffset = line + offset
 		
 		if lineplusoffset <= max then
+			lineplusoffset = math.floor(lineplusoffset)
 			--button:SetText(frame.GetData(lineplusoffset))
 			for c = 1, #colums do
 				button["colum"..c]:SetText(frame.GetData(lineplusoffset,c))

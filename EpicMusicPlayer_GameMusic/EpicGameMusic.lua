@@ -17821,9 +17821,567 @@ local GameMusic = {
       ["Artist"] = "Brewfest Event",
   }, -- [2172]
 }
+
+local Patch50400 = {
+  {
+    ["ListName"] = "Patch 5.4",
+    ["PlaylistVersion"] = "3.1",
+    ["PlaylistType"] = "generated",
+    ["MusicDir"] = "MyMusic\\",
+    ["Album"] = "WoW 5.2",
+    ["Song"] = "Wrathion_Alt2_Part1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_53_Wrathion_C_01.mp3",
+    ["Length"] = 78,
+    ["Artist"] =  "Pandaria (Glenn Stafford, Jason Hayes)",
+    ["WoW"] = true,
+  }, -- [2]
+  {
+    ["Album"] = "",
+    ["Song"] = "Corrupted Vale Day A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_CorruptedVale_Day_01.mp3",
+    ["Length"] = 69,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [3]
+  {
+    ["Album"] = "",
+    ["Song"] = "Corrupted Vale Day B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_CorruptedVale_Day_02.mp3",
+    ["Length"] = 38,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [4]
+  {
+    ["Album"] = "",
+    ["Song"] = "Corrupted Vale Day C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_CorruptedVale_Day_03.mp3",
+    ["Length"] = 41,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [5]
+  {
+    ["Album"] = "",
+    ["Song"] = "Corrupted Vale Day H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_CorruptedVale_Day_Hero.mp3",
+    ["Length"] = 107,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [6]
+  {
+    ["Album"] = "",
+    ["Song"] = "Corrupted Vale Night A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_CorruptedVale_Night_01.mp3",
+    ["Length"] = 40,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [7]
+  {
+    ["Album"] = "",
+    ["Song"] = "Corrupted Vale Night B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_CorruptedVale_Night_02.mp3",
+    ["Length"] = 35,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [8]
+  {
+    ["Album"] = "",
+    ["Song"] = "Corrupted Vale Night C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_CorruptedVale_Night_03.mp3",
+    ["Length"] = 35,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [9]
+  {
+    ["Album"] = "",
+    ["Song"] = "Corrupted Vale Night D",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_CorruptedVale_Night_04.mp3",
+    ["Length"] = 105,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [10]
+  {
+    ["Album"] = "WoW 5.4",
+    ["Song"] = "Corrupted Vale Night E",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_CorruptedVale_Night_05.mp3",
+    ["Length"] = 53,
+    ["Artist"] =  "Pandaria (Edo Guidotti)",
+    ["WoW"] = true,
+  }, -- [11]
+  {
+    ["Album"] = "",
+    ["Song"] = "Corrupted Vale Night H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_CorruptedVale_Night_Hero.mp3",
+    ["Length"] = 140,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [12]
+  {
+    ["Album"] = "",
+    ["Song"] = "Doomhammer A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_Doomhammer_01.mp3",
+    ["Length"] = 124,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [13]
+  {
+    ["Album"] = "",
+    ["Song"] = "Doomhammer B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_Doomhammer_02.mp3",
+    ["Length"] = 110,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [14]
+  {
+    ["Album"] = "",
+    ["Song"] = "Doomhammer C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_Doomhammer_03.mp3",
+    ["Length"] = 67,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [15]
+  {
+    ["Album"] = "",
+    ["Song"] = "Doomhammer D",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_Doomhammer_04.mp3",
+    ["Length"] = 69,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [16]
+  {
+    ["Album"] = "",
+    ["Song"] = "Doomhammer E",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_Doomhammer_05.mp3",
+    ["Length"] = 81,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [17]
+  {
+    ["Album"] = "",
+    ["Song"] = "Doomhammer H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_Doomhammer_Hero.mp3",
+    ["Length"] = 124,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [18]
+  {
+    ["Album"] = "",
+    ["Song"] = "ForThePandarenAlliance_v1_Part1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_ForThePandarenAlliance_A_01.mp3",
+    ["Length"] = 62,
+    ["Artist"] =  "Pandaria (Jason Hayes)",
+    ["WoW"] = true,
+  }, -- [19]
+  {
+    ["Album"] = "",
+    ["Song"] = "ForThePandarenAlliance_v1_Part2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_ForThePandarenAlliance_A_02.mp3",
+    ["Length"] = 79,
+    ["Artist"] =  "Pandaria (Jason Hayes)",
+    ["WoW"] = true,
+  }, -- [20]
+  {
+    ["Album"] = "",
+    ["Song"] = "ForThePandarenAlliance_v2_Part1",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_ForThePandarenAlliance_B_01.mp3",
+    ["Length"] = 61,
+    ["Artist"] =  "Pandaria (Jason Hayes)",
+    ["WoW"] = true,
+  }, -- [21]
+  {
+    ["Album"] = "",
+    ["Song"] = "ForThePandarenAlliance_v2_Part2",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_ForThePandarenAlliance_B_02.mp3",
+    ["Length"] = 78,
+    ["Artist"] =  "Pandaria (Jason Hayes)",
+    ["WoW"] = true,
+  }, -- [22]
+  {
+    ["Album"] = "",
+    ["Song"] = "Good Mourning H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_GoodMourning_Hero.mp3",
+    ["Length"] = 84,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [23]
+  {
+    ["Album"] = "",
+    ["Song"] = "Legendary A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_Legendary_01.mp3",
+    ["Length"] = 36,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [24]
+  {
+    ["Album"] = "",
+    ["Song"] = "Legendary B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_Legendary_02.mp3",
+    ["Length"] = 50,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [25]
+  {
+    ["Album"] = "",
+    ["Song"] = "Legendary C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_Legendary_03.mp3",
+    ["Length"] = 105,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [26]
+  {
+    ["Album"] = "",
+    ["Song"] = "Legendary D",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_Legendary_04.mp3",
+    ["Length"] = 60,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [27]
+  {
+    ["Album"] = "",
+    ["Song"] = "Legendary E",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_Legendary_05.mp3",
+    ["Length"] = 87,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [28]
+  {
+    ["Album"] = "",
+    ["Song"] = "Legendary F",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_Legendary_06.mp3",
+    ["Length"] = 7,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [29]
+  {
+    ["Album"] = "",
+    ["Song"] = "Legendary G",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_Legendary_07.mp3",
+    ["Length"] = 34,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [30]
+  {
+    ["Album"] = "",
+    ["Song"] = "Legendary J",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_Legendary_08.mp3",
+    ["Length"] = 72,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [31]
+  {
+    ["Album"] = "",
+    ["Song"] = "Legendary K",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_Legendary_09.mp3",
+    ["Length"] = 63,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [32]
+  {
+    ["Album"] = "",
+    ["Song"] = "Legendary L",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_Legendary_10.mp3",
+    ["Length"] = 23,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [33]
+  {
+    ["Album"] = "",
+    ["Song"] = "Legendary H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_Legendary_Hero.mp3",
+    ["Length"] = 107,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [34]
+  {
+    ["Album"] = "",
+    ["Song"] = "Mok-Rah A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_Mok-Rah_01.mp3",
+    ["Length"] = 50,
+    ["Artist"] =  "Pandaria (MUS_54_Mok)",
+    ["WoW"] = true,
+  }, -- [35]
+  {
+    ["Album"] = "",
+    ["Song"] = "Mok-Rah B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_Mok-Rah_02.mp3",
+    ["Length"] = 19,
+    ["Artist"] =  "Pandaria (MUS_54_Mok)",
+    ["WoW"] = true,
+  }, -- [36]
+  {
+    ["Album"] = "",
+    ["Song"] = "Mok-Rah C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_Mok-Rah_03.mp3",
+    ["Length"] = 46,
+    ["Artist"] =  "Pandaria (MUS_54_Mok)",
+    ["WoW"] = true,
+  }, -- [37]
+  {
+    ["Album"] = "",
+    ["Song"] = "Mok-Rah D",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_Mok-Rah_04.mp3",
+    ["Length"] = 57,
+    ["Artist"] =  "Pandaria (MUS_54_Mok)",
+    ["WoW"] = true,
+  }, -- [38]
+  {
+    ["Album"] = "",
+    ["Song"] = "Mok-Rah E",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_Mok-Rah_05.mp3",
+    ["Length"] = 55,
+    ["Artist"] =  "Pandaria (MUS_54_Mok)",
+    ["WoW"] = true,
+  }, -- [39]
+  {
+    ["Album"] = "",
+    ["Song"] = "Mok-Rah F",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_Mok-Rah_06.mp3",
+    ["Length"] = 55,
+    ["Artist"] =  "Pandaria (MUS_54_Mok)",
+    ["WoW"] = true,
+  }, -- [40]
+  {
+    ["Album"] = "",
+    ["Song"] = "Mok-Rah G",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_Mok-Rah_07.mp3",
+    ["Length"] = 58,
+    ["Artist"] =  "Pandaria (MUS_54_Mok)",
+    ["WoW"] = true,
+  }, -- [41]
+  {
+    ["Album"] = "",
+    ["Song"] = "Mok-Rah J",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_Mok-Rah_08.mp3",
+    ["Length"] = 79,
+    ["Artist"] =  "Pandaria (MUS_54_Mok)",
+    ["WoW"] = true,
+  }, -- [42]
+  {
+    ["Album"] = "",
+    ["Song"] = "Mok-Rah H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_Mok-Rah_Hero.mp3",
+    ["Length"] = 122,
+    ["Artist"] =  "Pandaria (MUS_54_Mok)",
+    ["WoW"] = true,
+  }, -- [43]
+  {
+    ["Album"] = "",
+    ["Song"] = "No Quarter A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_NoQuarter_01.mp3",
+    ["Length"] = 108,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [44]
+  {
+    ["Album"] = "",
+    ["Song"] = "No Quarter B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_NoQuarter_02.mp3",
+    ["Length"] = 77,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [45]
+  {
+    ["Album"] = "",
+    ["Song"] = "No Quarter C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_NoQuarter_03.mp3",
+    ["Length"] = 68,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [46]
+  {
+    ["Album"] = "",
+    ["Song"] = "No Quarter D",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_NoQuarter_04.mp3",
+    ["Length"] = 84,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [47]
+  {
+    ["Album"] = "",
+    ["Song"] = "No Quarter H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_NoQuarter_Hero.mp3",
+    ["Length"] = 108,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [48]
+  {
+    ["Album"] = "",
+    ["Song"] = "Overlord A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_Overlord_01.mp3",
+    ["Length"] = 69,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [49]
+  {
+    ["Album"] = "",
+    ["Song"] = "Overlord B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_Overlord_02.mp3",
+    ["Length"] = 65,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [50]
+  {
+    ["Album"] = "",
+    ["Song"] = "Overlord C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_Overlord_03.mp3",
+    ["Length"] = 27,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [51]
+  {
+    ["Album"] = "",
+    ["Song"] = "Overlord H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_Overlord_Hero.mp3",
+    ["Length"] = 69,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [52]
+  {
+    ["Album"] = "",
+    ["Song"] = "Sha Ambient A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_ShaAmbient_01.mp3",
+    ["Length"] = 53,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [53]
+  {
+    ["Album"] = "",
+    ["Song"] = "Sha Ambient B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_ShaAmbient_02.mp3",
+    ["Length"] = 59,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [54]
+  {
+    ["Album"] = "",
+    ["Song"] = "Sha Ambient C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_ShaAmbient_03.mp3",
+    ["Length"] = 59,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [55]
+  {
+    ["Album"] = "",
+    ["Song"] = "Sha Ambient D",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_ShaAmbient_04.mp3",
+    ["Length"] = 59,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [56]
+  {
+    ["Album"] = "",
+    ["Song"] = "Sha Ambient H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_ShaAmbient_Hero.mp3",
+    ["Length"] = 114,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [57]
+  {
+    ["Album"] = "",
+    ["Song"] = "Sha Angry A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_ShaAngry_01.mp3",
+    ["Length"] = 58,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [58]
+  {
+    ["Album"] = "",
+    ["Song"] = "Sha Angry B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_ShaAngry_02.mp3",
+    ["Length"] = 61,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [59]
+  {
+    ["Album"] = "",
+    ["Song"] = "Sha Angry H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_ShaAngry_Hero.mp3",
+    ["Length"] = 133,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [60]
+  {
+    ["Album"] = "",
+    ["Song"] = "Sha Descendant A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_ShaDescendant_01.mp3",
+    ["Length"] = 44,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [61]
+  {
+    ["Album"] = "",
+    ["Song"] = "Sha Descendant B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_ShaDescendant_02.mp3",
+    ["Length"] = 49,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [62]
+  {
+    ["Album"] = "",
+    ["Song"] = "Sha Descendant C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_ShaDescendant_03.mp3",
+    ["Length"] = 45,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [63]
+  {
+    ["Album"] = "",
+    ["Song"] = "Sha Descendant H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_ShaDescendant_Hero.mp3",
+    ["Length"] = 88,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [64]
+  {
+    ["Album"] = "",
+    ["Song"] = "Sha Vocaline A",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_ShaVocaline_01.mp3",
+    ["Length"] = 19,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [65]
+  {
+    ["Album"] = "",
+    ["Song"] = "Sha Vocaline B",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_ShaVocaline_02.mp3",
+    ["Length"] = 60,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [66]
+  {
+    ["Album"] = "",
+    ["Song"] = "Sha Vocaline C",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_ShaVocaline_03.mp3",
+    ["Length"] = 60,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [67]
+  {
+    ["Album"] = "",
+    ["Song"] = "Sha Vocaline H",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_ShaVocaline_Hero.mp3",
+    ["Length"] = 66,
+    ["Artist"] =  "Pandaria",
+    ["WoW"] = true,
+  }, -- [68]
+  {
+    ["Album"] = "WoW 5.4",
+    ["Song"] = "MUS_54_ValeHealing",
+    ["Name"] = "Sound\\Music\\Pandaria\\MUS_54_ValeHealing.mp3",
+    ["Length"] = 87,
+    ["Artist"] =  "Pandaria (Jeremy Soule, Sam Cardon, Neal Acree)",
+    ["WoW"] = true,
+  }, -- [69]
+}
+
+
 local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer")
 
 if not EpicMusicPlayer then return end
 
 EpicMusicPlayer:AddPlayList("GameMusic", GameMusic, false)
 EpicMusicPlayer:AddPlayList("Best of Wow", BestofWoW, false)
+
+local version, build, date, tocversion = GetBuildInfo()
+if tocversion > 50300 then
+	EpicMusicPlayer:AddPlayList("Patch 5.4", Patch50400, false)
+end
