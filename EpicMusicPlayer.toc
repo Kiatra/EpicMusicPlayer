@@ -1,0 +1,53 @@
+## Interface: 50400
+## Title: EpicMusicPlayer
+## Notes: Mp3Player
+## Author: yess
+## SavedVariables: EpicMusicPlayer_PlayList, EpicMusicPlayerDB
+## OptionalDeps: Ace3
+## X-Embeds: Ace3
+
+## Version: @project-version@
+## X-Email: starfire@fantasymail.de
+## X-Category: Audio
+
+#@no-lib-strip@
+libs\LibStub\LibStub.lua
+libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+libs\AceAddon-3.0\AceAddon-3.0.xml
+libs\AceGUI-3.0\AceGUI-3.0.xml
+libs\AceConfig-3.0\AceConfig-3.0.xml
+libs\AceLocale-3.0\AceLocale-3.0.xml
+libs\AceConsole-3.0\AceConsole-3.0.xml
+libs\AceDB-3.0\AceDB-3.0.xml
+libs\AceEvent-3.0\AceEvent-3.0.xml
+libs\AceTimer-3.0\AceTimer-3.0.xml
+libs\AceComm-3.0\AceComm-3.0.xml
+libs\LibSharedMedia-3.0\lib.xml
+libs\AceGUI-3.0-SharedMediaWidgets\widget.xml
+#@end-no-lib-strip@
+
+localization.lua
+
+core\core.lua
+core\scrolllist.lua
+core\playlistframe.lua
+core\options.lua
+core\tooltip.lua
+core\dropdown.lua
+core\send.lua
+core\listmanagement.lua
+#core\musicevent.lua
+
+gui\gui.lua
+gui\skins.lua
+playlist_generator\playlist2.lua
+
+modules\boker\LibDataBroker-1.1.lua
+modules\boker\empbroker.lua
+modules\dancer\EpicMusicDancer.lua
+modules\gamemusic\EpicGameMusic.lua
+
+
+
+
+
