@@ -2,7 +2,7 @@
 ## Title: EpicMusicPlayer
 ## Notes: Mp3Player
 ## Author: yess
-## SavedVariables: EpicMusicPlayer_PlayList, EpicMusicPlayerDB
+## SavedVariables: EpicMusicPlayer_PlayList, EpicMusicPlayerDB, EpicMusicPlayerBrokerDB, EpicMusicDancerDB
 ## OptionalDeps: Ace3
 ## X-Embeds: Ace3
 
