@@ -122,19 +122,7 @@ local options={
 				EpicMusicPlayer:TogglePlayerGui()
 			end,
 		},
-		minimap = {
-			type = "toggle",
-			order = 2,
-			name = L["Minimap Button"],
-			desc = L["Toggle show minimap button"],
-			get = function(name)
-				return EpicMusicPlayer:IsMinimap()
-			end,
-			set = function(name)
-				EpicMusicPlayer:ToggleMinimap()
-			end,
-		},
-		minimap = {
+		lockGUI = {
 			type = "toggle",
 			order = 2,
 			name = L["Lock GUI"],
@@ -349,10 +337,6 @@ function EpicMusicPlayerGui:OnInitialize()
 		self:CreateGuiFrame()
 	end
 	
-	if(EpicMusicPlayer.db.profile.minimapbutton)then
-		EpicMusicPlayerGui:CreateMinimapButton()
-	end
-
 	self:RegisterMessage("EMPUpdateStop")
 	self:RegisterMessage("EMPUpdatePlay")
 	self:RegisterMessage("EMPUpdateTime")
@@ -380,17 +364,7 @@ function EpicMusicPlayerGui:OnDisable()
 	self:UnregisterAllEvents("EpicMusicPlayerGui")
 end
 
-function EpicMusicPlayerGui:ToggleMinimap()
-	if(EpicMusicPlayerMiniButton)then
-		if(EpicMusicPlayerMiniButton:IsVisible())then
-			EpicMusicPlayerMiniButton:Hide()
-		else
-			EpicMusicPlayerMiniButton:Show()
-		end
-	else
-		self:CreateMinimapButton()
-	end
-end
+
 
 -----------------------------------------------------------------------------------------------------------------------------
 -- Update functions 
@@ -901,62 +875,4 @@ function EpicMusicPlayerGui:CreateGuiFrame()
 	if(EpicMusicPlayer.db.char.guiscale)then
 		EMPGUI:SetScale(EpicMusicPlayer.db.char.guiscale)
 	end
-end
-
-function EpicMusicPlayerGui:CreateMinimapButton()
-	minibutton = CreateFrame("Button","EpicMusicPlayerMiniButton",Minimap)
-	minibutton:SetWidth(32)
-	minibutton:SetHeight(32)
-	minibutton:SetFrameStrata("LOW")
-	minibutton:SetPoint("TOP", "Minimap", "LEFT", -8, 0);
-	
-	minibutton:SetNormalTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\emp-minimap.tga")
-	minibutton:SetHighlightTexture("Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight")
-	minibutton:SetPushedTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\emp-minimap-p.tga")
-	
-	--minibutton:RegisterForClicks("LeftButtonUp","RightButtonUp","MiddleButtonUp")
-	minibutton:RegisterForClicks("AnyUp")
-	
-	minibutton:SetScript("OnClick", 
-	    function(self, btn)
-			EpicMusicPlayer:OnDisplayClick(self, btn)
-		end
-	)
-	
-	minibutton:Show()
-	minibutton:EnableMouse(true)
-	minibutton:SetMovable(true) 
-	minibutton:RegisterForDrag("RightButton");
-	
-	minibutton:SetScript("OnDragStart", 
-	    function(self)
-			self:StartMoving()
-			self.isMoving = true
-		end
-	)
-	minibutton:SetScript("OnDragStop", 
-	    function(self)
-			self:StopMovingOrSizing()
-			self.isMoving = false
-		end
-	)
-	
-	minibutton:SetScript("OnEnter", 
-	    function(self)
-			EpicMusicPlayer:ShowTooltip(self)		
-		end
-	)
-	
-	minibutton:SetScript("OnLeave", 
-	    function()
-			EpicMusicPlayer:HideTooltip();
-		end
-	)
-	
-	minibutton:EnableMouseWheel(true) 
-	minibutton:SetScript("OnMouseWheel", 
-		function(self, vector)
-			EpicMusicPlayer:DisplyScrollHandler(vector)
-		end
-    )
 end

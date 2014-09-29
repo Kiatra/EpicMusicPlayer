@@ -4,6 +4,7 @@ local L = AceLocale:NewLocale("EpicMusicPlayer", "enUS", true)
 if not L then return end
 
 if L then
+	L["Set the click behaviour for the minimap, the title in the GUI and the data broker plugin."] = true
 	L["Add Game Music"] = true
 	L["Adds playlists with game music (reload required)."] = true
 	L["Lock GUI"] = true

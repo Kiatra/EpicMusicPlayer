@@ -428,7 +428,7 @@ function EpicMusicDancer:OnInitialize()
 			mouse = false,
 			tooltip = false,
 			scale = 1,
-			show = true,
+			show = false,
 			guitoggle = true;
 			strata = "MEDIUM"
 		}

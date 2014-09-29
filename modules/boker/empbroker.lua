@@ -1,5 +1,6 @@
 local _G, mod, math, string = _G, mod, math, string
 local ldb = _G.LibStub:GetLibrary("LibDataBroker-1.1",true)
+local ldbIcon = ldb and LibStub("LibDBIcon-1.0", true)
 if not ldb then return end
 
 local EpicMusicPlayerBroker = LibStub("AceAddon-3.0"):NewAddon("EpicMusicPlayerBroker", "AceEvent-3.0","AceTimer-3.0")
@@ -106,6 +107,19 @@ local function GetTimeSTring(seconds)
 	end
 end
 
+function EpicMusicPlayerBroker:IsMinimap()
+	return not self.db.profile.minimapButton.hide
+end
+
+function EpicMusicPlayerBroker:ToggleMinimap()
+	self.db.profile.minimapButton.hide = not self.db.profile.minimapButton.hide
+	if self.db.profile.minimapButton.hide then
+		ldbIcon:Hide("EpicMusicPlayer")
+	else
+		ldbIcon:Show("EpicMusicPlayer")
+	end
+end
+
 function EpicMusicPlayerBroker:SetMaxTextLength(length)
    
    if length > 40 then
@@ -171,6 +185,9 @@ function EpicMusicPlayerBroker:OnInitialize()
 			showtitle = true,
 			shownumber = false,
 			showartist = false,
+			minimapButton = {
+				hide = LibStub("AceAddon-3.0"):GetAddon("ChocolateBar") and true,
+			},
 		},
 	}
 	self.db = _G.LibStub("AceDB-3.0"):New("EpicMusicPlayerBrokerDB", defaults, "Default")
@@ -179,6 +196,12 @@ function EpicMusicPlayerBroker:OnInitialize()
 	songtitle = EpicMusicPlayer:GetCurrentSongName()
 	shorttitle = self:SetTextLenght(songtitle)
 	self:UpdateText()
+	
+	if ldbIcon then
+		ldbIcon:Register("EpicMusicPlayer", dataobj, self.db.profile.minimapButton)
+		--empdb.MinimapIcon.hide = true
+		--ldbIcon:Show("EpicMusicPlayer")
+	end
 end
 
 function EpicMusicPlayerBroker:OnEnable(first)
@@ -187,6 +210,7 @@ function EpicMusicPlayerBroker:OnEnable(first)
 	self:RegisterMessage("EMPUpdateTime")
 	self:RegisterMessage("EMPUpdateVolume")
 end
+
 
 function EpicMusicPlayerBroker:OnDisable()
    self:UnregisterAllEvents("EpicMusicPlayerBroker")
