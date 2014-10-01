@@ -186,7 +186,7 @@ function EpicMusicPlayerBroker:OnInitialize()
 			shownumber = false,
 			showartist = false,
 			minimapButton = {
-				hide = LibStub("AceAddon-3.0"):GetAddon("ChocolateBar") and true,
+				hide = LibStub("AceAddon-3.0"):GetAddon("ChocolateBar", true) and true,
 			},
 		},
 	}
