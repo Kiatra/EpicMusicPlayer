@@ -1,17 +1,18 @@
 <Bindings>
 	<Binding name="PLAYSTOP" header="EPICMUSICPLAYER">
-		EpicMusicPlayer:TogglePlay()
+		LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer"):TogglePlay()
 	</Binding>
 	<Binding name="NEXT">
-		EpicMusicPlayer:PlayNext()
+		LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer"):PlayNext()
 	</Binding>
 	<Binding name="LAST">
-		EpicMusicPlayer:PlayLast()
+		EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer"):PlayLast()
 	</Binding>
 	<Binding name="MUTE">
-		EpicMusicPlayer:ToggleMute()
+		EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer"):ToggleMute()
 	</Binding>
 	<Binding name="REMOVESONG">
+		EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer")
 		if(EpicMusicPlayer.Playing)then
 			EpicMusicPlayer:RemoveCurrendSong();
 		else
@@ -19,9 +20,9 @@
 		end
 	</Binding>
 	<Binding name="GUI">
-		EpicMusicPlayer:ToggleGui()
+		EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer"):ToggleGui()
 	</Binding>
 	<Binding name="TOGGLELIST">
-		EpicMusicPlayer:TogglePlaylist()
+		EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer"):TogglePlaylist()
 	</Binding>
 </Bindings>

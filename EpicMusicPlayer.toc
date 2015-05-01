@@ -40,7 +40,7 @@ core\listmanagement.lua
 
 gui\gui.lua
 gui\skins.lua
-playlist_generator\playlist2.lua
+playlistcreator\CustomMusic.lua
 
 modules\boker\LibDataBroker-1.1.lua
 modules\boker\empbroker.lua

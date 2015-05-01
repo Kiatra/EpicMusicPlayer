@@ -4,7 +4,17 @@ local L = AceLocale:NewLocale("EpicMusicPlayer", "enUS", true)
 if not L then return end
 
 if L then
-	L["Set the click behaviour for the minimap, the title in the GUI and the data broker plugin."] = true
+	L["Select a playlist to play in this zone"] = true
+	L["Epic Events"] = true
+	L["Enable Events"] = true
+	L["Play a song from this list."] = true
+	L["Delete Zone"] = true
+    L["Delete this zone"] = true
+	L["Events"] = true
+	L["New Zone Event"] = true
+    L["Create a new zone event"] = true
+	
+	L["Set the click behavior for the minimap, the title in the GUI and the data broker plugin."] = true
 	L["Add Game Music"] = true
 	L["Adds playlists with game music (reload required)."] = true
 	L["Lock GUI"] = true
@@ -16,7 +26,7 @@ if L then
 	L["Playlist %s not found."] = true
 	L["Really remove playlist %s?"] = true
 	L["Playlist %s removed."] = true
-	L["Playlists created with the playlist generator or addedy by the game music module are locked for editing."] = true
+	L["Playlists created by the EpicListCreator or addedy by the game music module are locked for editing."] = true
 	L["You can only remove playlists created ingame or with the playlist manager (not the playlist generator)!"] = true
 
 
@@ -108,33 +118,23 @@ if L then
 	L["Scroll GUI Text"] = true
 
 	L["How do I add music to the player?"] = true
-	L["FAQ-Text1"] = [[
-1. Exit Wow if running!
-  Double click the "PlaylistManager.exe" in the Playlistmanger folder of the Addon.
+	L["FAQ-Text1.1"] = [[
+1. Create a folder named "MyMusic" inside the WoW folder: ../World of Warcraft/MyMusic
 
-2. Click File > Add Music Folder, select a folder with your music and click open.
-  OR
-  Just drag and drop some mp3 music files/folders into the Playlist-Manager.
+2. Copy your MP3-files into the MyMusic folder.
 
-3. Close EMP-Playlist-Manager (be sure to click "Yes" Save Playlist.)
-  Start WoW and enjoy your music while farming:)
+3. Extract the all files of the EpicListCreator.zip in the playlistcreator folder of the addon,
+   Double click the "EpicListCreator.exe" and hit the "Create" Button.
 ]]
 
-
 	L["Do I have to copy all of my music files to the wow folder?"] = true
-	L["FAQ-Text2"] = [[ 
-No. The Playlist Manager can create links (inside the wow folder) that point to your original music folder. That way wow thinks the files are in the wow folder.
+	
+	L["FAQ-Text2.1"] = [[ 
+No. You can create a symbolic link from your music to the MyMusic folder inside the wow folder.
 
-You can enable this by:
-Windows Vista:
-Just go to "Tools > Options" and change copy to create links.
+http://en.wikipedia.org/wiki/Symbolic_link
 
-Windows XP:
-Download junction.exe from microsoft: http://technet.microsoft.com/en-us/sysinternals/bb896768.aspx and put it into the junction folder of the playlist manager.
-
-You should also install "ntfslink" (http://elsdoerfer.name/=ntfslink ) To make the use of the links (junctions) save with windos xp. See http://en.wikipedia.org/wiki/NTFS_junction_point#Windows_XP_Professional for more information.
-
-And now go to "Tools > Options" and change copy to create links. 
+See mklink, use with caution...
 ]]
 
 	L["Why is the song playing from the beginning after a loading screen?"] = true

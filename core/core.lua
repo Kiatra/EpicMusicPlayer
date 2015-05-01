@@ -106,6 +106,7 @@ function EpicMusicPlayer:OnInitialize()
 			gui = {
 				scroll = true
 			},
+			eventZones = {},
 		},
 		char = {
 			showgui = false,
@@ -119,7 +120,8 @@ function EpicMusicPlayer:OnInitialize()
 	AceCfgDlg:SetDefaultSize("EpicMusicPlayer", 700, 500)
 	
 	db = self.db.profile
-	
+	EpicMusicPlayer:SetOptionDB(db)
+		
 	self:RegisterChatCommand("emp", "ChatCommand")
     self:RegisterChatCommand("epicmusicplayer", "ChatCommand")
 	
@@ -150,11 +152,16 @@ function EpicMusicPlayer:OnInitialize()
 	if not db.addGameMusic then
 		EpicMusicPlayer:RemoveGameMusicLists()
 	end
+	
+	for name,key in pairs(db.eventZones) do
+		EpicMusicPlayer:AddEventOptions(name)
+	end	
 end
 
 function EpicMusicPlayer:OnEnable(first)
 	self:RegisterEvent("PLAYER_ENTERING_WORLD", EpicMusicPlayer.OnEnteringWorld, "PLAYER_ENTERING_WORLD")
 	self:RegisterEvent("CHAT_MSG_WHISPER_INFORM", EpicMusicPlayer.OnWhisperInform)
+    self:RegisterEvent("ZONE_CHANGED_NEW_AREA", EpicMusicPlayer.OnZoneChanged)
 
 	self:RegisterEvent("PLAYER_ALIVE", EpicMusicPlayer.OnPlayerAlive)
 	self:RegisterEvent("PLAYER_LEVEL_UP", EpicMusicPlayer.OnPlayerLevelUp)
@@ -197,6 +204,28 @@ end
 -- save the name of the last whisper
 function EpicMusicPlayer:OnWhisperInform()
 	EpicMusicPlayer.whisper = arg2
+end
+
+
+function EpicMusicPlayer:OnZoneChanged(event)
+	if db.enableEvents then
+		local zone = GetZoneText()
+		EpicMusicPlayer:Debug(zone)
+		for name,key in pairs(db.eventZones) do
+			if zone == name then
+				EpicMusicPlayer:Debug("key:", key)
+				local list, listIndex = EpicMusicPlayer:GetListByName(key)
+				if db.list ~= listIndex then
+					song, db.list, db.song = EpicMusicPlayer:GetRandomSong(listIndex)
+					EpicMusicPlayer:Debug("list:", list, "listindex: ", listIndex, " db.list:", db.list, " db.song: ", db.song)
+					EpicMusicPlayer:Play()
+				elseif not EpicMusicPlayer.Playing then
+					EpicMusicPlayer:Debug("playing current list on zone event")
+					EpicMusicPlayer:Play()
+				end
+			end
+		end
+	end
 end
 
 -- patch 2.4.3  workaround
@@ -312,7 +341,11 @@ function EpicMusicPlayer:Play(song)
 		self:SendMessage("EMPUpdateTime", self.sec)
 		self.sec = self.sec + 1
 		if(self.sec >= songlength)then
-			self:PlayNext()
+			if db.loopsong then
+				self:Play()
+			else
+				self:PlayNext()
+			end
 		end
 	end, 1)
 	
@@ -347,9 +380,9 @@ function EpicMusicPlayer:PlayNext()
 	local self = EpicMusicPlayer;
 	local song
 	-- check random play
-    if db.loopsong then
-		song = currentsong
-	elseif(db.random) then
+    --if db.loopsong then
+	--	song = currentsong
+	if(db.random) then
         song, listIndex, songIndex = EpicMusicPlayer:GetNextSongFromHistory()
 		if song then
 			db.list = listIndex
@@ -368,7 +401,7 @@ end
 
 function EpicMusicPlayer:PlayLast()
     local song
-	db.loopsong = false
+	--db.loopsong = false
 	EpicMusicPlayer:CheckSongToMove()
 	if not db.random then 
 		song, db.list,db.song = EpicMusicPlayer:GetLastSong(db.list,db.song,db.looplist);
@@ -398,7 +431,7 @@ end
 -- called on user clicked next song, do not call directly 
 -- can't call PlayNext() directly because we need to set loopsong to false
 function EpicMusicPlayer:OnNextClick()
-	db.loopsong = false
+	--db.loopsong = false
 	EpicMusicPlayer:PlayNext()
 end
 
@@ -789,6 +822,10 @@ function EpicMusicPlayer:Debug(...)
 	Debug(self, ...)
 end
 
+--function EpicMusicPlayer:GetListNames()
+--TogglePlay = L["Play/Stop"], OnNextClick = L["Play Next Song"], OpenMenu = L["Drop Down Menu"],
+--	return 
+--end
 
 -- key binding variables
 BINDING_HEADER_EPICMUSICPLAYER = "EpicMusicPlayer";

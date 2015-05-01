@@ -1,1 +1,0 @@
-﻿-- this file is only used by the playlist generator not the playlist manager.

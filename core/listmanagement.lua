@@ -220,6 +220,7 @@ function EpicMusicPlayer:CopySong(newList, song)
 			newList[1]["Name"] = song.Name
 			newList[1]["Length"] = song.Length
 			newList[1]["Artist"] =  song.Artist
+			newList[1]["WoW"] =  song.Wow
 		else
 			table.insert(newList,getCopy(song))
 		end
@@ -287,12 +288,21 @@ function EpicMusicPlayer:RemoveSong(listIndex, songIndex, silent)
 	return false
 end
 
--- add playlist
+
 function EpicMusicPlayer:AddPlayList(name, newlist, save)
+	EpicMusicPlayer:AddPlayList(name, newlist, save, false)
+end
+
+-- add playlist
+function EpicMusicPlayer:AddPlayList(name, newlist, save, replace)
 	local foundindex = EpicMusicPlayer:GetListIndex(name)
 	if(foundindex) then
-		self:Print(string.format(L["Playlist %s already exists."],name))
-		return false;
+		if(replace) then
+			table.remove(playlists, foundindex)
+		else
+			self:Print(string.format(L["Playlist %s already exists."],name))
+		    return false;
+		end
 	end
 	
 	if not newlist then
@@ -532,7 +542,9 @@ end
 
 function EpicMusicPlayer:GetListByName(name)
 	for i, list in ipairs(playlists) do
+		--EpicMusicPlayer:Debug("GetListByName: Listname: ", string.lower(list[1].ListName))
 		if(string.lower(list[1].ListName)==string.lower(name))then
+			EpicMusicPlayer:Debug("GetListByName: match= ", string.lower(name), " i=", i)
 			return list, i
 		end
 	end

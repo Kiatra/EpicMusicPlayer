@@ -5,7 +5,7 @@ local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 -------------------------------------------------------------------------------
 -- ace options table
 -------------------------------------------------------------------------------
---local db
+local db
 local version = GetAddOnMetadata("EpicMusicPlayer","Version") or ""
 local empoptions = { 
     name = "EMP "..version,
@@ -179,7 +179,7 @@ local empoptions = {
 						text = {
 							order = 0,
 							type = "description",
-							name = L["Set the click behaviour for the minimap, the title in the GUI and the data broker plugin."] --L["FAQ-Text"],
+							name = L["Set the click behavior for the minimap, the title in the GUI and the data broker plugin."] --L["FAQ-Text"],
 							--image = "Interface\\AddOns\\EpicMusicPlayer\\media\\icon.tga",
 						},
 						left = {
@@ -547,20 +547,20 @@ local empoptions = {
 					end,
 		        },
 				strata = {
-							type = 'select',
-							values = {FULLSCREEN_DIALOG="Fullscreen_Dialog",FULLSCREEN="Fullscreen", 
-										DIALOG="Dialog",HIGH="High",MEDIUM="Medium",LOW="Low",BACKGROUND="Background"},
-							order = 9,
-							name = L["Frame strata"],
-							desc = L["Frame strata"],
-							get = function() 
-								return EpicMusicPlayer.db.profile.liststrata
-							end,
-							set = function(info, value)
-								EpicMusicPlayer.db.profile.liststrata = value
-								EpicMusicPlayerGui.frames.player:SetFrameStrata(value)
-							end,
-						},
+					type = 'select',
+					values = {FULLSCREEN_DIALOG="Fullscreen_Dialog",FULLSCREEN="Fullscreen", 
+								DIALOG="Dialog",HIGH="High",MEDIUM="Medium",LOW="Low",BACKGROUND="Background"},
+					order = 9,
+					name = L["Frame strata"],
+					desc = L["Frame strata"],
+					get = function() 
+						return EpicMusicPlayer.db.profile.liststrata
+					end,
+					set = function(info, value)
+						EpicMusicPlayer.db.profile.liststrata = value
+						EpicMusicPlayerGui.frames.player:SetFrameStrata(value)
+					end,
+				},
 				scale = {
 		            type = 'range',
 					order = 5,
@@ -579,125 +579,97 @@ local empoptions = {
 				},
 			},
 		},
+		events={
+			name = L["Events"],
+			type ="group",
+			order = 10,
+			args ={
+				new = {
+					type = 'input',
+		            --width = "half",
+					order = 0,
+					name = L["New Zone Event"],
+		            desc = L["Create a new zone event"],
+		            get = GetZoneText,
+					set = function(info, value)
+						local name = value
+						if not db.eventZones.name then
+							db.eventZones[name] = {}  
+						end
+						--EpicMusicPlayer.eventZones.name = 
+						EpicMusicPlayer:AddEventOptions(name)
+					end,
+				},
+				enableEvents = {
+			        type = 'toggle',
+					--width = "half",
+					order = 2,
+			        name = L["Enable Events"],
+			        desc = L["Enable Events"],
+			        get = function()
+						return db.enableEvents
+			        end,
+					set = function() 
+						db.enableEvents = not db.enableEvents
+						EpicMusicPlayer:OnZoneChanged()
+					end,
+				},
+			},
+		},
 		help = {
 			type = "group",
-			order = -1,
+			order = 15,
 			name = L["Help - FAQ"],
-			desc = L["Help - FAQ"],
-			--childGroups = "select",
 			args = {
-				header = {
-					order = 0,
+				header1 = {
 					type = "header",
-					name = L["Frequently Asked Questions"],
+					name = L["How do I add music to the player?"],
+					order = 0,
 				},
-				text = {
+				text1 = {
 					order = 1,
 					type = "description",
-					name = L["Select a question from the left."] --L["FAQ-Text"],
-					--image = "Interface\\AddOns\\EpicMusicPlayer\\media\\icon.tga",
+					name = L["FAQ-Text1.1"]
 				},
-				FAQ1 = {
-					type = "group",
-					order = 1,
-					name = L["How do I add music to the player?"],
-					args = {
-						header = {
-							type = "header",
-							name = L["How do I add music to the player?"],
-							order = 0,
-						},
-						text = {
-							order = 1,
-							type = "description",
-							name = L["FAQ-Text1"],
-						},
-					},
-				},
-				FAQ5 = {
-					type = "group",
-					order = 5,
-					name = L["Do I have to copy all of my music files to the wow folder?"],
-					args = {
-						header = {
-							type = "header",
-							name = L["Do I have to copy all of my music files to the wow folder?"],
-							order = 0,
-						},
-						text = {
-							order = 1,
-							type = "description",
-							name = L["FAQ-Text2"],
-						},
-					},
-				},
-				FAQ7 = {
-					type = "group",
-					order = 7,
+				header4 = {
+					type = "header",
 					name = L["Why is the song playing from the beginning after a loading screen?"],
-					args = {
-						header = {
-							type = "header",
-							name = L["Why is the song playing from the beginning after a loading screen?"],
-							order = 0,
-						},
-						text = {
-							order = 1,
-							type = "description",
-							name = L["This is a wow bug since patch 2.4.3. I only could fix this so far that the song starts from start instead playing the game music. I have reported this in the eu forums but unless someone with an us account finally reports this in the us ui-forum blizzard developers will never fix this."],
-						},
-					},
+					order = 7,
 				},
-				FAQ8 = {
-					type = "group",
+				text4 = {
 					order = 8,
-					name = L["Where the hell is the playlist?"],
-					args = {
-						header = {
-							type = "header",
-							name = L["Where the hell is the playlist?"],
-							order = 0,
-						},
-						text = {
-							order = 1,
-							type = "description",
-							name = L["..\\World of Warcraft\\WTF\\Account\\ACCOUNTNAME\\SavedVariables\\EpicMusicPlayer.lua"],
-						},
-					},
+					type = "description",
+					name = L["This is a wow bug since patch 2.4.3. I only could fix this so far that the song starts from start instead playing the game music. I have reported this in the eu forums but unless someone with an us account finally reports this in the us ui-forum blizzard developers will never fix this."],
 				},
-				FAQ9 = {
-					type = "group",
-					order = 9,
+				header5 = {
+					type = "header",
 					name = L["Why is there no pause button?"],
-					args = {
-						header = {
-							type = "header",
-							name = L["Why is there no pause button?"],
-							order = 0,
-						},
-						text = {
-							order = 1,
-							type = "description",
-							name = L["Not possible with wow. As is playing a song at a specific position. An addon can only tell wow to play and stop a song that's it."],
-						},
-					},
-				},
-				FAQ10 = {
-					type = "group",
 					order = 9,
+				},
+					text5 = {
+					order = 10,
+					type = "description",
+					name = L["Not possible with wow. As is playing a song at a specific position. An addon can only tell wow to play and stop a song that's it."],
+				},
+				header6 = {
+					type = "header",
 					name = L["Why are some playlists grey?"],
-					args = {
-						header = {
-							type = "header",
-							name = L["Why are some playlists grey?"],
-							order = 0,
-						},
-						text = {
-							order = 1,
-							type = "description",
-							name = L["Playlists created with the playlist generator or addedy by the game music module are locked for editing."],
-						},
-					},
+					order = 11,
+				},
+				text6 = {
+					order = 12,
+					type = "description",
+					name = L["Playlists created with the playlist generator or addedy by the game music module are locked for editing."],
+				},
+				header7 = {
+					type = "header",
+					name = L["Do I have to copy all of my music files to the wow folder?"],
+					order = 13,
+				},
+				text7 = {
+					order = 14,
+					type = "description",
+					name = L["FAQ-Text2.1"],
 				},
 			},
 		},
@@ -896,4 +868,86 @@ end
 
 function EpicMusicPlayer:ToggleGui()
 	LibStub("AceConfigDialog-3.0"):Open("EpicMusicPlayer")
+end
+
+local eventOptions = empoptions.args.events.args
+
+local function GetEventName(info)
+	local name = info[#info]
+	return name
+end
+
+local function GetEventIndex(info)
+	local name = info[#info]
+	return 1
+end
+
+local function getZoneList(info)
+	local name = info[#info-2]
+	EpicMusicPlayer:Debug("GetZoneList: ", name)
+	return db.eventZones[name];
+end
+
+local function setZoneList(info, value)
+	local name = info[#info-2]
+	EpicMusicPlayer:Debug("setZoneList: ", name, value)
+	db.eventZones[name] = value;
+	return name
+end
+
+local function deleteZone(info, value)
+	local name = info[#info-2]
+	EpicMusicPlayer:Debug("deleteZone: ", name)
+	db.eventZones[name] = nil;
+	eventOptions[name] = nil;
+end
+
+function EpicMusicPlayer:SetOptionDB(dataBase)
+	db = dataBase
+end
+	
+
+function EpicMusicPlayer:AddEventOptions(name)
+	eventOptions[name] = {
+		name = name,
+		desc = name,
+		type = "group",
+		order = 1,
+		args={
+			general = {
+				inline = true,
+				name="Zone: "..name,
+				type="group",
+				order = 0,
+				args={
+					header = {
+						order = 0,
+						type = "header",
+						name = L["Select a playlist to play in this zone"],
+					},
+					zone = {
+						type = 'select',
+						values = function() 
+							local list = EpicMusicPlayer:GetListnames()
+							list.none = " "
+							return list 
+						end,
+						width = "double",
+						order = 1,
+						name = L["Playlist"],
+						desc = L["Play a song from this list."],
+						get = getZoneList,
+						set = setZoneList,
+					},
+					delete = {
+						type = 'execute',
+						--width = "half",
+						name = L["Delete Zone"],
+					    desc = L["Delete this zone"],
+					    func = deleteZone,
+					},
+				},
+			},
+		}
+	}
 end

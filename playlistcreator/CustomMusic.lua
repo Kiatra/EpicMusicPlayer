@@ -1,0 +1,2 @@
+-- use the EpicListCreator to create a playlist.
+-- http://wow.curseforge.com/addons/epic-music-player/pages/install/

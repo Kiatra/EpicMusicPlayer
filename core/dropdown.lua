@@ -290,6 +290,11 @@ function EpicMusicPlayer:OpenMenu(frame, listIndex)
 			checked = db.loopsong,
 			func = function() db.loopsong = not db.loopsong end,
 	}
+	dropdownmenu[#dropdownmenu + 1] = {
+			text = L["Enable Events"],
+			checked = db.enableEvents,
+			func = function() db.enableEvents = not db.enableEvents; EpicMusicPlayer:OnZoneChanged() end,
+	}
 	
 	local locked = EpicMusicPlayer:IsListLocked(db.list)
 	if(self.Playing)then
