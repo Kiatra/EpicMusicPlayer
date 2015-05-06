@@ -381,50 +381,6 @@ local empoptions = {
 		            get = "IsSpam",
 		            set = "ToggleSpam"
 				},
-				--[[
-				badlist = {
-		            type = 'select',
-					values = function() 
-							local list = EpicMusicPlayer:GetListnames()
-							list.none = " "
-							return list 
-						end,
-					order = 6,
-					name = L["Bad list"],
-		            desc = L["This list will not be played. Unless you select it."].." "..L["Set a key in the key bindings menu to move a song to the selected list by that key."],
-					get = function() 
-						return EpicMusicPlayer.db.profile.badlist
-					end,
-		            set = function(info, value)
-						if value == "none" then
-							EpicMusicPlayer.db.profile.badlist = nil
-						else
-							EpicMusicPlayer.db.profile.badlist = value
-						end
-					end,
-				},
-				bestlist = {
-		            type = 'select',
-					values = function() 
-							local list = EpicMusicPlayer:GetListnames()
-							list.none = " "
-							return list 
-						end,
-					order = 7,
-					name = L["Favorites List"],
-		            desc = L["Set a key in the key bindings menu to move a song to the selected list by that key."],
-					get = function() 
-						return EpicMusicPlayer.db.profile.bestlist
-					end,
-		            set = function(info, value)
-						if value == "none" then
-							EpicMusicPlayer.db.profile.bestlist = nil
-						else
-							EpicMusicPlayer.db.profile.bestlist = value
-						end
-		            end,
-				},
-				--]]
 				defaultchat = {
 		            type = 'select',
 					values = {GUILD=L["Guild"],
@@ -659,7 +615,7 @@ local empoptions = {
 				text6 = {
 					order = 12,
 					type = "description",
-					name = L["Playlists created with the playlist generator or addedy by the game music module are locked for editing."],
+					name = L["Playlists created by the EpicListCreator or addedy by the game music module are locked for editing."],
 				},
 				header7 = {
 					type = "header",

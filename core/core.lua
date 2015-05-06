@@ -219,9 +219,11 @@ function EpicMusicPlayer:OnZoneChanged(event)
 					song, db.list, db.song = EpicMusicPlayer:GetRandomSong(listIndex)
 					EpicMusicPlayer:Debug("list:", list, "listindex: ", listIndex, " db.list:", db.list, " db.song: ", db.song)
 					EpicMusicPlayer:Play()
+					return 1
 				elseif not EpicMusicPlayer.Playing then
 					EpicMusicPlayer:Debug("playing current list on zone event")
 					EpicMusicPlayer:Play()
+					return 1
 				end
 			end
 		end
@@ -230,17 +232,13 @@ end
 
 -- patch 2.4.3  workaround
 function EpicMusicPlayer:OnEnteringWorld(event)
-	if(EpicMusicPlayer.Playing)then
-		SetCVar("Sound_EnableMusic", 0);
-		
-		
-		EpicMusicPlayer:CancelTimer(eventtimer,true)
-		eventtimer = EpicMusicPlayer:ScheduleTimer(function() 
-			if(EpicMusicPlayer.Playing)then
-				EpicMusicPlayer:Play(currentsong)
-			end
-		end, 5)
-	end
+	EpicMusicPlayer:CancelTimer(eventtimer,true)
+	eventtimer = EpicMusicPlayer:ScheduleTimer(function() 
+		if not EpicMusicPlayer:OnZoneChanged() and EpicMusicPlayer.Playing then
+			SetCVar("Sound_EnableMusic", 0);
+			EpicMusicPlayer:Play(currentsong)
+		end
+	end, 5)
 end
 
 -- patch 3.0.8  workaround
