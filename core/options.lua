@@ -411,7 +411,6 @@ local empoptions = {
 						_G.SetCVar("Sound_EnableMusic", 1)
 						_G.PlayMusic("Sound\\Music\\ZoneMusic\\DMF_L70ETC01.mp3") 
 						EpicMusicPlayer:Print("Playing Test Song, do you hear the song: \"Power Of The Horde\"?")
-						EpicMusicPlayer:Print("Music folder is set to: <wowfolder>\\"..EpicMusicPlayer.musicdir)
 		            end,
 				},
 				--@debug@

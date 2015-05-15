@@ -6,7 +6,7 @@ local media = LibStub:GetLibrary("LibSharedMedia-3.0", true) or nil
 local AceCfgDlg = LibStub("AceConfigDialog-3.0")
 --local AceComm = LibStub("AceComm-3.0")
 
-local musicdir = "" -- path to the music :)
+local musicdir = "MyMusic\\" -- path to the music :)
 local volume = 0 -- remember volume on mute
 local messageframe = nil -- song and artst display
 local _G = _G
@@ -32,15 +32,6 @@ EpicMusicPlayer.controlslist = {
 }
 EpicMusicPlayer.version = GetAddOnMetadata("EpicMusicPlayer","Version")
 EpicMusicPlayer.tocversion = select(4, GetBuildInfo());
-
-local function CheckFolder(folder)
-	if not folder or folder == "" then return false end
-	local frame = CreateFrame("Button", "EMPCheckFolder")
-	frame.text = frame:CreateFontString(nil, nil, "GameFontHighlight")
-	local vaild = frame.text:SetFont(folder.."verifyfolder.ttf",16) --will onl be set when path is vald 
-	EpicMusicPlayer:Debug("valid =",vaild)
-	return true
-end
 
 ------------------------------------------------------------------------------
 -- ace load functions 
@@ -135,7 +126,6 @@ function EpicMusicPlayer:OnInitialize()
 		db.cataskinFixed = true
 	end
 	
-	--CheckFolder(musicdir)
 	self:UpdateListnames()
 	
 	if media then
@@ -161,7 +151,9 @@ end
 function EpicMusicPlayer:OnEnable(first)
 	self:RegisterEvent("PLAYER_ENTERING_WORLD", EpicMusicPlayer.OnEnteringWorld, "PLAYER_ENTERING_WORLD")
 	self:RegisterEvent("CHAT_MSG_WHISPER_INFORM", EpicMusicPlayer.OnWhisperInform)
-    self:RegisterEvent("ZONE_CHANGED_NEW_AREA", EpicMusicPlayer.OnZoneChanged)
+    self:RegisterEvent("ZONE_CHANGED_NEW_AREA", EpicMusicPlayer.OnZoneChangedNewArea)
+	self:RegisterEvent("ZONE_CHANGED", EpicMusicPlayer.OnZoneChanged)
+    self:RegisterEvent("ZONE_CHANGED_INDOORS", EpicMusicPlayer.OnZoneChangedIndoors)
 
 	self:RegisterEvent("PLAYER_ALIVE", EpicMusicPlayer.OnPlayerAlive)
 	self:RegisterEvent("PLAYER_LEVEL_UP", EpicMusicPlayer.OnPlayerLevelUp)
@@ -186,7 +178,7 @@ function EpicMusicPlayer:OnEnable(first)
 		end
 	end
 
-	musicdir = self:CheckPlayList()
+	self:CheckPlayList()
 	if EpicMusicPlayer.playlist2 then
 		EpicMusicPlayer:AddPlayList("Playlist", EpicMusicPlayer.playlist2, false)
 		EpicMusicPlayer:RemovePlayList("Common")
@@ -207,10 +199,18 @@ function EpicMusicPlayer:OnWhisperInform()
 end
 
 
-function EpicMusicPlayer:OnZoneChanged(event)
+function EpicMusicPlayer:OnZoneChanged(event, arg1)
+	EpicMusicPlayer:Debug("OnZoneChanged", event, arg1, GetZoneText(), GetRealZoneText())
+end
+	
+function EpicMusicPlayer:OnZoneChangedIndoors(event, arg1)
+	EpicMusicPlayer:Debug("OnZoneChangedIndoors", zone, arg1, GetZoneText(), GetRealZoneText())
+end		
+
+function EpicMusicPlayer:OnZoneChangedNewArea(event)
 	if db.enableEvents then
 		local zone = GetZoneText()
-		EpicMusicPlayer:Debug(zone)
+		EpicMusicPlayer:Debug("OnZoneChangedNewArea", zone)
 		for name,key in pairs(db.eventZones) do
 			if zone == name then
 				EpicMusicPlayer:Debug("key:", key)

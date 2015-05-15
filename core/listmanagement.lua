@@ -39,7 +39,6 @@ local function getCopy(song)
 end
 
 function EpicMusicPlayer:AddSavedPlayList()
-	local musicdir
 	-- put the list that will be saved and lists that will not be saved in one list
 	if _G.EpicMusicPlayer_PlayList then
 		for i, list in ipairs(_G.EpicMusicPlayer_PlayList) do
@@ -48,12 +47,8 @@ function EpicMusicPlayer:AddSavedPlayList()
 				list = ConvertPlaylist(list)
 			end
 			playlists[#playlists +1] = list
-			if list[1].MusicDir then
-				musicdir = list[1].MusicDir
-			end
 		end
 	end
-	EpicMusicPlayer.musicdir = musicdir
 end
 
 -- check playlist - is there a playlist, with content ?
@@ -69,7 +64,6 @@ function EpicMusicPlayer:CheckPlayList()
 	            {
 	                ["ListName"] = "Common",
 					["PlaylistVersion"] = "buildin",
-					["MusicDir"] = "",
 	            }, -- [1]
 	            {
 	                ["Album"] = "", 
@@ -82,16 +76,10 @@ function EpicMusicPlayer:CheckPlayList()
 		}
 	end	
 	
-	if not EpicMusicPlayer.musicdir then 
-		EpicMusicPlayer.musicdir = "MyMusic\\"
-		--self:Print("Musicdir not set. Setting to: <wowdir>\\MyMusic\\")
-	end
-	
 	if db.list > #playlists then db.list = 1 end
 	if db.song > #playlists[db.list] then db.song = 1 end
 	EpicMusicPlayer.playlists = playlists
 	EpicMusicPlayer:UpdateListnames()
-	return EpicMusicPlayer.musicdir;
 end
 
 function EpicMusicPlayer:AddSongToHistory(song, listIndex,songIndex)
@@ -272,7 +260,6 @@ function EpicMusicPlayer:RemoveSong(listIndex, songIndex, silent)
 				list[2].ListName = list[1].ListName
 				list[2].PlaylistVersion = list[1].PlaylistVersion
 				list[2].PlaylistType = list[1].PlaylistType
-				list[2].MusicDir = list[1].MusicDir
 				table.remove(list,songIndex)
 			else
 				table.remove(list,songIndex)
