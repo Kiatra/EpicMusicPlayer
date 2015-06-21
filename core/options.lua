@@ -359,6 +359,19 @@ local empoptions = {
 		            get = "IsShowMessage",
 		            set = "ToggleShowMessage",
 		        },
+				maxLevelSong = {
+		            type = 'toggle',
+					--width = "half",
+					order = 5,
+					name = L["Max Level Song"],
+		            desc = L["Play song when reaching maximum level"],
+		            get = function()
+							return EpicMusicPlayer.db.profile.maxLevelSong
+						end,
+		            set = function(info, value)
+							EpicMusicPlayer.db.profile.maxLevelSong = value
+						end,
+		        },
 				updateinfo = {
 		            type = 'toggle',
 					--width = "half",

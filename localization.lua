@@ -4,6 +4,8 @@ local L = AceLocale:NewLocale("EpicMusicPlayer", "enUS", true)
 if not L then return end
 
 if L then
+	L["Max Level Song"] = true
+	L["Play song when reaching maximum level"] = true
 	L["Select a playlist to play in this zone"] = true
 	L["Epic Events"] = true
 	L["Enable Events"] = true

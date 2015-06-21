@@ -71,6 +71,7 @@ function EpicMusicPlayer:OnInitialize()
 			guiscale = 1,
 			addGameMusic = true,
 			lockGUI = false,
+			maxLevelSong = true,
 			controlset = {
 				LeftButton="OnNextClick",
 				RightButton="OpenMenu",
@@ -257,7 +258,7 @@ function EpicMusicPlayer:OnPlayerAlive(event)
 end
 
 function EpicMusicPlayer:OnPlayerLevelUp(level)
-	if level == 90 then
+	if level == 100 and db.maxLevelSong then
 		EpicMusicPlayer:SetVolume(1,"music")
 		if(EpicMusicPlayerGui)then
 			if(not EpicMusicPlayer.db.char.showgui)then
@@ -268,7 +269,7 @@ function EpicMusicPlayer:OnPlayerLevelUp(level)
 		song = {
 			["WoW"] = true,
 			["Album"] = "ingame", 
-			["Song"] = "Gratulations to level 90!!!",
+			["Song"] = "Gratulations to level 100!!!",
 			["Name"] = "Sound\\Music\\ZoneMusic\\ArgentTournament\\AT_JoustEvent.mp3",
 			["Length"] = 123, 
 			["Artist"] = "",
