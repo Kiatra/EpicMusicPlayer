@@ -45,7 +45,9 @@ playlistcreator\CustomMusic.lua
 modules\boker\LibDataBroker-1.1.lua
 modules\boker\empbroker.lua
 modules\dancer\EpicMusicDancer.lua
+modules\gamemusic\BestofWoW.lua
 modules\gamemusic\EpicGameMusic.lua
+modules\gamemusic\Draenor.lua
 
 
 
