@@ -12,51 +12,59 @@ local BestofWoW = {
     ["WoW"] = true,
   }, -- [2]
   {
-    ["Album"] = "GlueScreenMusic",
-    ["Song"] = "WoW Main Theme",
+    ["Album"] = "WoW Main Theme",
+    ["Song"] = "Main Title - Vanilla",
     ["Name"] = "Sound\\Music\\GlueScreenMusic\\wow_main_theme.mp3",
     ["Length"] = 161,
-    ["Artist"] =  "Russell Brower",
+    ["Artist"] =  "Main Title",
     ["WoW"] = true,
   }, -- [3]
   {
-    ["Album"] = "GlueScreenMusic",
-    ["Song"] = "The Burning Legion - Main Title",
+    ["Album"] = "BC Main Theme",
+    ["Song"] = "Main Title - The Burning Legion",
     ["Name"] = "Sound\\Music\\GlueScreenMusic\\BC_main_theme.mp3",
     ["Length"] = 226,
-    ["Artist"] =  "Russell Brower",
+    ["Artist"] =  "",
     ["WoW"] = true,
   }, -- [4]
   {
-    ["Album"] = "GlueScreenMusic",
-    ["Song"] = "Wrath of the Lich King - Main Title",
+    ["Album"] = "WotLK Main Theme",
+    ["Song"] = "Main Title - Wrath of the Lich King",
     ["Name"] = "Sound\\Music\\GlueScreenMusic\\WotLK_main_title.mp3",
     ["Length"] = 544,
-    ["Artist"] =  "Russell Brower",
+    ["Artist"] =  "",
     ["WoW"] = true,
   }, -- [5]
   {
-    ["Album"] = "GlueScreenMusic",
-    ["Song"] = "Cataclysm - Main Title (The Shattering)",
+    ["Album"] = "The Shattering",
+    ["Song"] = "Main Title - Cataclysm",
     ["Name"] = "Sound\\Music\\cataclysm\\MUS_Shattering_UU01.mp3",
     ["Length"] = 725,
-    ["Artist"] =  "Russell Brower",
+    ["Artist"] =  "",
     ["WoW"] = true,
   }, -- [6]
   {
-    ["Album"] = "GlueScreenMusic",
-    ["Song"] = "Mists of Pandaria - Main Title (Heart of Pandaria)",
+    ["Album"] = "Heart of Pandaria",
+    ["Song"] = "Main Title - Mists of Pandaria",
     ["Name"] = "Sound\\Music\\Pandaria\\MUS_50_HeartofPandaria_01.mp3",
     ["Length"] = 480,
-    ["Artist"] =  "Russell Brower",
+    ["Artist"] =  "",
     ["WoW"] = true,
   }, -- [7]
   {
-    ["Album"] = "GlueScreenMusic",
-    ["Song"] = "Warlords of Dreanor - Main Title (A Siege of Worlds)",
+    ["Album"] = "A Siege of Worlds",
+    ["Song"] = "Main Title - Warlords of Dreanor",
     ["Name"] = "Sound\\Music\\Draenor\\MUS_60_ASiegeofWorlds_MainTitle.mp3",
     ["Length"] = 726,
-    ["Artist"] =  "Draenor",
+    ["Artist"] =  "",
+    ["WoW"] = true,
+  },
+  {
+    ["Album"] = "Kingdoms Will Burn",
+    ["Song"] = "Main Title - Legion",
+    ["Name"] = "Sound\\music\\Legion\\MUS_70_Kingdomswillburn_MainTitle.mp3",
+    ["Length"] = 650,
+    ["Artist"] = "",
     ["WoW"] = true,
   },
   {

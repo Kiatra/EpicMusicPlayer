@@ -1,4 +1,4 @@
-## Interface: 60200
+## Interface: 70000
 ## Title: EpicMusicPlayer
 ## Notes: Mp3Player
 ## Author: yess
@@ -48,8 +48,4 @@ modules\dancer\EpicMusicDancer.lua
 modules\gamemusic\BestofWoW.lua
 modules\gamemusic\EpicGameMusic.lua
 modules\gamemusic\Draenor.lua
-
-
-
-
-
+modules\gamemusic\Legion.lua
