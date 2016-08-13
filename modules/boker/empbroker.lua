@@ -12,7 +12,7 @@ local options={
 			name="DataBroker",
 			order = 7,
 			type="group",
-			args = {		
+			args = {
 			    number = {
 					type = 'toggle',
 					--width = "half",
@@ -82,7 +82,7 @@ local options={
 					set = function(self,value)
 						EpicMusicPlayerBroker:SetMaxTextLength(value)
 					end,
-				},	
+				},
 			}
 }
 
@@ -121,7 +121,7 @@ function EpicMusicPlayerBroker:ToggleMinimap()
 end
 
 function EpicMusicPlayerBroker:SetMaxTextLength(length)
-   
+
    if length > 40 then
       self.db.profile.MaxTextLength = 40
       return
@@ -133,7 +133,7 @@ function EpicMusicPlayerBroker:SetMaxTextLength(length)
    self.db.profile.MaxTextLength = length
    shorttitle = self:SetTextLenght(songtitle)
    self:UpdateText()
-   
+
 end
 
 function EpicMusicPlayerBroker:SetTextLenght(text)
@@ -142,7 +142,7 @@ function EpicMusicPlayerBroker:SetTextLenght(text)
 	if length > maxLength then
 		text = text:sub(1, maxLength - 3) .. '...'
 	end
-	
+
 	return text
 end
 
@@ -152,7 +152,7 @@ local dataobj = ldb:NewDataObject("EpicMusicPlayer", {
 	icon = "Interface\\AddOns\\EpicMusicPlayer\\media\\icon",
 	label = "EpicMusicPlayer",
 	text  = "Stopped",
-	
+
 	--OnEnter = EpicMusicPlayerBrokerObj.OnEnter,
 	OnClick = function(self, btn)
 		EpicMusicPlayer:OnDisplayClick(self, btn)
@@ -160,11 +160,11 @@ local dataobj = ldb:NewDataObject("EpicMusicPlayer", {
 })
 
 local function OnScroll(self, vector)
-	EpicMusicPlayer:DisplyScrollHandler(vector)			
+	EpicMusicPlayer:DisplyScrollHandler(vector)
 end
 
 function dataobj:OnEnter()
-	self:EnableMouseWheel(1) 
+	self:EnableMouseWheel(1)
 	self:SetScript("OnMouseWheel", OnScroll)
 	--EpicMusicPlayerGui:ShowTooltip(self)
 	EpicMusicPlayer:ShowTooltip(self)
@@ -191,24 +191,29 @@ function EpicMusicPlayerBroker:OnInitialize()
 		},
 	}
 	self.db = _G.LibStub("AceDB-3.0"):New("EpicMusicPlayerBrokerDB", defaults, "Default")
-	
+
 	EpicMusicPlayer:AddOptions("broker",options)
 	songtitle = EpicMusicPlayer:GetCurrentSongName()
 	shorttitle = self:SetTextLenght(songtitle)
 	self:UpdateText()
-	
+
 	if ldbIcon then
 		ldbIcon:Register("EpicMusicPlayer", dataobj, self.db.profile.minimapButton)
 		--empdb.MinimapIcon.hide = true
 		--ldbIcon:Show("EpicMusicPlayer")
 	end
-end
 
-function EpicMusicPlayerBroker:OnEnable(first)
 	self:RegisterMessage("EMPUpdateStop")
 	self:RegisterMessage("EMPUpdatePlay")
 	self:RegisterMessage("EMPUpdateTime")
 	self:RegisterMessage("EMPUpdateVolume")
+end
+
+function EpicMusicPlayerBroker:OnEnable(first)
+	--self:RegisterMessage("EMPUpdateStop")
+	--self:RegisterMessage("EMPUpdatePlay")
+	--self:RegisterMessage("EMPUpdateTime")
+	--self:RegisterMessage("EMPUpdateVolume")
 end
 
 
@@ -216,8 +221,9 @@ function EpicMusicPlayerBroker:OnDisable()
    self:UnregisterAllEvents("EpicMusicPlayerBroker")
 end
 
-function EpicMusicPlayerBroker:EMPUpdateTime(event)
-	sec = sec +1
+function EpicMusicPlayerBroker:EMPUpdateTime(event, seconds)
+	--sec = sec +1
+	sec = seconds
 	self:UpdateText()
 end
 
@@ -231,7 +237,7 @@ function EpicMusicPlayerBroker:EMPUpdateVolume(event, voltype, vol)
 end
 
 function EpicMusicPlayerBroker:EMPUpdatePlay(event, artist, songname, length)
-	--dataobj.text = songname
+	EpicMusicPlayer:Debug("EpicMusicPlayerBroker:EMPUpdatePlay", event, artist, songname, length)
 	volumechanged = false
 	songlength = length
 	songtitle = songname
@@ -256,7 +262,7 @@ function EpicMusicPlayerBroker:EMPUpdateStop(event, artist, songname, length)
 end
 
 function EpicMusicPlayerBroker:UpdateText()
-   
+
     if(volumechanged) then
         if(volumechanged == "music")then
 			dataobj.text = L["Music volume: "]..math.floor((empdb.volume*100)).."%"
@@ -266,12 +272,12 @@ function EpicMusicPlayerBroker:UpdateText()
 			return
 		end
     end
-	
+
 	local text = ""
 	if(self.db.profile.shownumber)then
 		text = empdb.list.."/"..(empdb.song-1).." "
 	end
-	
+
 	if(self.db.profile.showtitle or self.db.profile.showtime)then
 		local title
 	    if (playing == true) then
@@ -281,11 +287,11 @@ function EpicMusicPlayerBroker:UpdateText()
 	        if(self.db.profile.showtime) then
 				text = text.." "..GetTimeSTring(sec).."/"
 					..GetTimeSTring(songlength)
-			end      
+			end
 	    else
 			    text = text..shorttitle
 		end
 	end
-	
+
 	dataobj.text = text;
 end

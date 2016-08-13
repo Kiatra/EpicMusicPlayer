@@ -4,6 +4,11 @@ local L = AceLocale:NewLocale("EpicMusicPlayer", "enUS", true)
 if not L then return end
 
 if L then
+	L["%s will be played next"] = true
+	L["The option to use PlaySoundFile was auto enabled as the WoW API PlayMusic(file) is broken for non WoW music. See FAQ for details."] = true
+	L["Use PlaySoundFile API"] = true
+	L["Use the PlaySoundFile() API instead of PlayMusic. As music/sounds played via PlaySoundFile() can not be stopped the stop button will act as mute."] = true
+
 	L["Max Level Song"] = true
 	L["Play song when reaching maximum level"] = true
 	L["Select a playlist to play in this zone"] = true
@@ -14,8 +19,8 @@ if L then
     L["Delete this zone"] = true
 	L["Events"] = true
 	L["New Zone Event"] = true
-    L["Create a new zone event"] = true
-	
+  L["Create a new zone event"] = true
+
 	L["Set the click behavior for the minimap, the title in the GUI and the data broker plugin."] = true
 	L["Add Game Music"] = true
 	L["Adds playlists with game music (reload required)."] = true
@@ -39,7 +44,7 @@ if L then
 	L["Select a question from the left."] = true
 	L["EpicMusicPlayer Update Info"] = true
 
-	L["Read the FAQ for more info about this."] = true		
+	L["Read the FAQ for more info about this."] = true
 	L["Reset GUI Position"] = true
 	L["Reset the GUI window position"] = true
 	L["Playlist font"] = true
@@ -49,7 +54,7 @@ if L then
 	L["Playlist Scale"] = true
 	L["Adjust the scale of the playlist"] = true
 	L["Frame strata"] = true
-	L["MusicDancer"] = true 
+	L["MusicDancer"] = true
 	L["Show Dancer"] = true
 	L["Toggle show model."] = true
 	L["Random Model"] = true
@@ -76,12 +81,12 @@ if L then
 	L["Right click"] = true
 	L["Alt click"] = true
 	L["Shift click"] = true
-	L["Ctrl click"] = true 
+	L["Ctrl click"] = true
 
 	L["List"] = true
 	L['Show List/Song Numbers'] = true
 	L['Show playlist and song number'] = true
-						
+
 	L['Show Title'] = true
 	L['Toggle show title'] = true
 
@@ -104,7 +109,7 @@ if L then
 	L["Ctrl + use scroll wheel - adjust effects volume"] = true
 	L["Alt + use scroll wheel - fine adjust volume"] = true
 
-	L["Ctrl click - Write artist and title to default chat. (Guild,party etc.)"] = true 
+	L["Ctrl click - Write artist and title to default chat. (Guild,party etc.)"] = true
 
 	L["GUI Layout"] = true
 	L["Help - FAQ"] = true
@@ -130,8 +135,8 @@ if L then
 ]]
 
 	L["Do I have to copy all of my music files to the wow folder?"] = true
-	
-	L["FAQ-Text2.1"] = [[ 
+
+	L["FAQ-Question1.1"] = [[
 No. You can create a symbolic link from your music to the MyMusic folder inside the wow folder.
 
 http://en.wikipedia.org/wiki/Symbolic_link
@@ -142,9 +147,19 @@ See mklink, use with caution...
 	L["Why is the song playing from the beginning after a loading screen?"] = true
 	L["This is a wow bug since patch 2.4.3. I only could fix this so far that the song starts from start instead playing the game music. I have reported this in the eu forums but unless someone with an us account finally reports this in the us ui-forum blizzard developers will never fix this."] = true
 
+	L["What is PlayMusic()/PlaySoundFile() all about?"] = true
+	L["FAQ-Text3.1"] = [[
+PlayMusic(file) and PlaySoundFile(file) are API functions provided by the WoW client to play music/sound files via an Add-on.
 
-	L["Where the hell is the playlist?"] = true
-	L["..\\World of Warcraft\\WTF\\Account\\ACCOUNTNAME\\SavedVariables\\EpicMusicPlayer.lua"] = true
+PlayMusic():
+Files played via PlayMusic(file) can be stopped via StopMusic() but the music also stops after a loading screen.
+
+PlaySoundFile():
+Files played via PlaySoundFile(file) will not stop after a loading screen but there is no API function to stop playing the sound.
+]]
+
+	--L["Where the hell is the playlist?"] = true
+	--L["..\\World of Warcraft\\WTF\\Account\\ACCOUNTNAME\\SavedVariables\\EpicMusicPlayer.lua"] = true
 
 	L["Why is there no pause button?"] = true
 	L["Not possible with wow. As is playing a song at a specific position. An addon can only tell wow to play and stop a song that's it."] = true
@@ -212,34 +227,34 @@ See mklink, use with caution...
 
 	L["Console"] = true
 	L["Show console commands"] = true
-						
+
 	L["Mute"] = true
 	L["Mute / unmute music sound."] = true
 
 	L["Show Info"] = true
 	L["Show song and artist on new song"] = true
-						
+
 	L["Autoplay"] = true
 	L["Toggles auto play on load."] = true
 
 	L["Show Song In Chat"] = true
 	L["Show message in your chat when playing a new song."] = true
-						
+
 	L["Disable WoW Music"] = true
 	L["Disable WoW Music when not Playing."] = true
-						
+
 	L["Show GUI"] = true
 	L["Toggle show GUI"] = true
 
 	L["Minimap Button"] = true
 	L["Toggle show minimap button"] = true
-						   
+
 	L["Loop Playlist"] = true
 	L["Playing the last song of a list will not switch to the next list."] = true
-						
+
 	L["Remove Song"] = true
 	L["Remove the playing song from list"] = true
-						   
+
 	L["Add Playlist"] = true
 	L["Add Playlist"] = true
 	L["Remove Playlist"] = true
@@ -305,7 +320,7 @@ end
 
 
 local L = AceLocale:NewLocale("EpicMusicPlayer", "deDE")
-if L then 
+if L then
 	--@localization(locale="deDE", format="lua_additive_table", handle-subnamespaces="concat", handle-unlocalized="ignore")@
 	return
 end

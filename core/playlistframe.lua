@@ -26,7 +26,7 @@ local function SelectList(listindex)
 	--listslist.selectedIndex = listindex
 	selectedlist = EpicMusicPlayer:GetListByIndex(listindex)
 	selectedlistIndex = listindex
-	
+
 	listslist:SetSelected(listindex)
 	songlist:SetMax(#selectedlist)
 end
@@ -41,13 +41,8 @@ end
 
 local function OnSongClick(self,button)
 	if (button == "LeftButton") then
-			EpicMusicPlayer:PlaySong(listslist.selectedIndex, self.listindex)
+		EpicMusicPlayer:PlaySong(listslist.selectedIndex, self.listindex)
 	else
-		--local song = EpicMusicPlayer:GetSong(listslist.selectedIndex, self.listindex)
-		--GameTooltip:SetOwner(self, "ANCHOR_NONE")
-		--GameTooltip:SetPoint("TOPRIGHT", self, "BOTTOMRIGHT")
-		--GameTooltip:AddLine(song.Name)
-		--GameTooltip:Show()
 		EpicMusicPlayer:OpenSongMenu(self, listslist.selectedIndex, self.listindex)
 	end
 end
@@ -87,13 +82,13 @@ local function OnDragUpdate(self, elapsed)
 		--EpicMusicPlayer:Debug(x,round(seperator.posx-x, 0))
 		local x, y = _G.GetCursorPosition();
 		--EpicMusicPlayer:Debug(songlist:GetWidth(), seperator.x - x)
-		
+
 		--if songlist:GetWidth() > 110 then
 			---songlist:SetWidth(111)
 			x = seperator.x - x
-			
+
 			local posx = round(seperator.posx-x, 0)
-			
+
 			seperator:SetPoint("TOPLEFT", frame ,posx, -25)
 			seperator:SetPoint("BOTTOM", frame ,"BOTTOM",posx, 27)
 		--end
@@ -102,11 +97,11 @@ end
 
 local function UpdatePlayStop(event, artist, songname, length)
 	if(EpicMusicPlayer.Playing)then
-		if listslist then 
+		if listslist then
 			listslist:Update()
 			songlist:Update()
 		end
-		
+
 		UpdatePlayButon(true)
 		if artist ~= "" then
 			title:SetText("|cffffd200"..artist.."|r - "..songname)
@@ -123,12 +118,12 @@ local function CreateHeader(parent)
 	local header = CreateFrame("Frame",nil,parent)
 	header:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background"});
 	header:SetBackdropColor(0.2,0.2,0.2,0.9)
-	
+
 	local lastbutton = CreateFrame("Button",nil,header)
 	lastbutton:SetWidth(16)
 	lastbutton:SetHeight(16)
 	lastbutton:SetPoint("TOPLEFT", header, 0,0)
-	lastbutton:EnableMouse(true); 
+	lastbutton:EnableMouse(true);
 	lastbutton:SetScript("OnMouseUp", EpicMusicPlayer.PlayLast)
 	lastbutton:SetNormalTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\emp-last.tga")
 	lastbutton:SetPushedTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\emp-last-p.tga")
@@ -137,7 +132,7 @@ local function CreateHeader(parent)
 	playbutton:SetWidth(16)
 	playbutton:SetHeight(16)
 	playbutton:SetPoint("TOPLEFT", lastbutton,"TOPRIGHT", 0,0)
-	playbutton:EnableMouse(true); 
+	playbutton:EnableMouse(true);
 	playbutton:SetScript("OnMouseUp", function(self)
 		if(EpicMusicPlayer.Playing)then
 			EpicMusicPlayer:Stop()
@@ -153,40 +148,40 @@ local function CreateHeader(parent)
 	nextbutton:SetWidth(16)
 	nextbutton:SetHeight(16)
 	nextbutton:SetPoint("TOPLEFT", playbutton,"TOPRIGHT", 0,0)
-	nextbutton:EnableMouse(true); 
+	nextbutton:EnableMouse(true);
 	nextbutton:SetScript("OnMouseUp", EpicMusicPlayer.PlayNext)
-	
+
 	randombutton = CreateFrame("Button",nil,header)
 	randombutton:SetWidth(16)
 	randombutton:SetHeight(16)
 	randombutton:SetPoint("TOPLEFT", nextbutton,"TOPRIGHT", 0,0)
-	randombutton:EnableMouse(true); 
+	randombutton:EnableMouse(true);
 	randombutton:SetScript("OnMouseUp", EpicMusicPlayer.ToggleRandom)
 	UpdateRandomButon(nil, EpicMusicPlayer.db.profile.random)
-	
+
 	local mutebutton = CreateFrame("Button",nil,header)
 	mutebutton:SetNormalTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\emp-conf.tga")
 	mutebutton:SetPushedTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\emp-conf-p.tga")
 	mutebutton:SetWidth(16)
 	mutebutton:SetHeight(16)
 	mutebutton:SetPoint("TOPLEFT", randombutton,"TOPRIGHT", 0,0)
-	mutebutton:EnableMouse(true); 
+	mutebutton:EnableMouse(true);
 	mutebutton:SetScript("OnMouseUp", EpicMusicPlayer.ToggleMute)
-	
+
 	local listbutton = CreateFrame("Button",nil,header)
 	listbutton:SetNormalTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\emp-list.tga")
 	listbutton:SetPushedTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\emp-list-p.tga")
 	listbutton:SetWidth(16)
 	listbutton:SetHeight(16)
 	listbutton:SetPoint("TOPLEFT", mutebutton,"TOPRIGHT", 0,-1)
-	listbutton:EnableMouse(true); 
+	listbutton:EnableMouse(true);
 	listbutton:SetScript("OnMouseUp", function() db.hideListsList = not db.hideListsList; ToggleLists() end)
-	
+
 	local x = CreateFrame("Button",nil,parent,"UIPanelCloseButton")
 	x:SetWidth(29)
 	x:SetHeight(29)
 	x:SetPoint("TOPRIGHT",header,7,6)
-	
+
 	title = header:CreateFontString()
 	--db.playlistfont^GameFontNormal:GetFont()
 	--EpicMusicPlayer:Debug("db.playlistfont",db.playlistfont,GameFontNormal:GetFont())
@@ -194,10 +189,10 @@ local function CreateHeader(parent)
 	title:SetPoint("TOPLEFT", listbutton,"TOPRIGHT", 5,1)
 	title:SetPoint("BOTTOMRIGHT", header, -25,0)
 	title:SetShadowColor(0, 0, 0,0.8)
-	title:SetShadowOffset(1, -1) 
+	title:SetShadowOffset(1, -1)
 	parent.title = title
 	local song = EpicMusicPlayer:GetCurrentSong()
-	if song then 
+	if song then
 		UpdatePlayStop(nil, song.Artist, EpicMusicPlayer:GetCurrentSongName(),0)
 	else
 		UpdatePlayStop(nil, "", EpicMusicPlayer:GetCurrentSongName(), 0)
@@ -209,23 +204,23 @@ local function CreateFooter(parent)
 	local footer = CreateFrame("Frame",nil,parent)
 	footer:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background"});
 	footer:SetBackdropColor(0.2,0.2,0.2,0.9)
-	
+
 	local editbox = CreateFrame("EditBox",nil,footer)
 	--editbox:SetAllPoints(footer)
 	editbox:SetPoint("TOPLEFT", footer, 3,0)
 	editbox:SetPoint("BOTTOMRIGHT", footer, -3,0)
-	
+
 	editbox:SetAutoFocus(false)
-	editbox:SetScript("OnEscapePressed",function(self) 
-		--parent:Hide() 
+	editbox:SetScript("OnEscapePressed",function(self)
+		--parent:Hide()
 		self:ClearFocus()
 	end)
 	editbox:SetFont(parent.font, 12)
 	editbox:SetText(L["Search..."])
-	
+
 	--OnTextChanged OnEnterPressed
-	
-	editbox:SetScript("OnTextChanged",function(self) 
+
+	editbox:SetScript("OnTextChanged",function(self)
 		if self:GetText() ~= L["Search..."] then
 			EpicMusicPlayer:Search(self:GetText())
 			SelectList(EpicMusicPlayer:GetListIndex("lastsearch"))
@@ -240,19 +235,19 @@ local function CreatePlaylistGui(width, height)
 	aceevent:RegisterMessage("EMPUpdatePlay",UpdatePlayStop)
 	aceevent:RegisterMessage("EMPUpdateStop",UpdatePlayStop)
 	aceevent:RegisterMessage("EMPUpdateRandom",UpdateRandomButon)
-	
-	
+
+
 	selectedlist = EpicMusicPlayer:GetListByIndex(1)--EpicMusicPlayer:GetCurrentList()
 	frame = CreateFrame("Frame","EpicMusicPlayer_PlaylistMain",_G.UIParent)
 	frame:SetFrameStrata(EpicMusicPlayer.db.profile.liststrata)
 	--frame.Update = Update
-	
+
 	frame:SetWidth(width)
 	frame:SetHeight(height)
 	frame.font = EpicMusicPlayer:GetFont(db.playlistfont)
-	frame:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background", 
-		edgeFile = "Interface/Tooltips/UI-Tooltip-Border", 
-		tile = true, tileSize = 16, edgeSize = 16, 
+	frame:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background",
+		edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
+		tile = true, tileSize = 16, edgeSize = 16,
 		insets = { left = 4, right = 4, top = 4, bottom = 4 }});
 	frame:SetBackdropColor(0,0,0,1)
 	frame:SetBackdropBorderColor(0.5,0.5,0.5,0.5)
@@ -260,21 +255,21 @@ local function CreatePlaylistGui(width, height)
 	frame:SetPoint(db.playlistPoint,_G.UIParent,db.playlistOffx,db.playlistOffy)
 	--frame:SetPoint("Center")
 	frame:EnableMouse(1)
-	
-	
+
+
 	frame:SetMovable(true)
 	frame:SetResizable(true)
 	frame:RegisterForDrag("LeftButton");
     frame:SetMinResize(300,200)
 	--frame:SetMaxResize(1000,800)
-	
-	frame:SetScript("OnDragStart", 
+
+	frame:SetScript("OnDragStart",
 	    function(self)
 			self:StartMoving()
 			self.isMoving = true
 		end
 	)
-	frame:SetScript("OnDragStop", 
+	frame:SetScript("OnDragStop",
 	    function(self)
 			local relative, relativePoint
 			db.playlistPoint ,relative ,relativePoint,db.playlistOffx ,db.playlistOffy = self:GetPoint()
@@ -284,16 +279,16 @@ local function CreatePlaylistGui(width, height)
 	)
 	frame:SetClampedToScreen(1)
 	_G.tinsert(_G.UISpecialFrames,frame:GetName());
-	
+
 	local sizer = CreateFrame("Frame","EmpDragsizer",frame)
 	sizer:SetWidth(25)
 	sizer:SetHeight(25)
 	sizer:SetPoint("BOTTOMRIGHT",frame,"BOTTOMRIGHT",0,0)
 	sizer:EnableMouse(1)
-	
-	sizer:SetMovable(true) 
+
+	sizer:SetMovable(true)
 	sizer:RegisterForDrag("LeftButton");
-    
+
 	sizer:SetScript("OnDragStart", function(self)
 			frame:StartSizing()
 			frame.isSizing = true
@@ -302,9 +297,9 @@ local function CreatePlaylistGui(width, height)
 			frame:StopMovingOrSizing()
 			frame.isSizing = false
 			db.playlistWidth = frame:GetWidth()
-			db.playlistHeight = frame:GetHeight() 
+			db.playlistHeight = frame:GetHeight()
 	end)
-	
+
 	local sizertx = sizer:CreateTexture(nil, "BACKGROUND")
 	sizertx:SetWidth(12)
 	sizertx:SetHeight(12)
@@ -316,11 +311,11 @@ local function CreatePlaylistGui(width, height)
 	seperator.posx = 120
 	seperator:SetPoint("TOPLEFT", frame ,seperator.posx, -25)
 	seperator:SetPoint("BOTTOM", frame ,"BOTTOM",seperator.posx, 27)
-	
+
 	--seperator:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background"});
-	seperator:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background", 
-		edgeFile = nil, 
-		tile = true, tileSize = 16, edgeSize = 16, 
+	seperator:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background",
+		edgeFile = nil,
+		tile = true, tileSize = 16, edgeSize = 16,
 		insets = { left = 1, right = 1, top = 4, bottom = 4 }});
 	seperator:SetBackdropColor(1,1,1,0)
 	--seperator:SetBackdropColor(0,1,0,0)
@@ -329,13 +324,13 @@ local function CreatePlaylistGui(width, height)
 		self:SetBackdropColor(1,1,1,1)
 	end)
 	seperator:SetScript("OnLeave", function(self)
-		if not self.moving then 
+		if not self.moving then
 			self:SetBackdropColor(1,1,1,0)
 		end
 	end)
-	
+
 	--seperator:EnableMouse(1)
-	--seperator:SetMovable(true) 
+	--seperator:SetMovable(true)
 	seperator:SetScript("OnMouseDown", function(self)
 		EpicMusicPlayer:Debug("OnMouseDown")
 		self:SetScript("OnUpdate", OnDragUpdate)
@@ -359,7 +354,7 @@ local function CreatePlaylistGui(width, height)
 	header:SetPoint("RIGHT", frame ,"RIGHT",-9, 9);
 
 	songlist = EpicMusicPlayer:CreateListWidget("EpicMusicPlayer_Songlist",frame, #selectedlist, {0.6,0.3,0.09},
-		function(row, colum) 
+		function(row, colum)
 			local song = EpicMusicPlayer:GetSong(listslist.selectedIndex, row)
 				if song then
 					local seperator = " - "
@@ -386,13 +381,13 @@ local function CreatePlaylistGui(width, height)
 					end
 				end
 			end,
-		OnSongClick,nil, 
+		OnSongClick,nil,
 		OnSongLeave, frame.font)
 	--songlist:SetPoint("TOPLEFT", frame ,120, -25)
 	--songlist:SetPoint("BOTTOMRIGHT", frame ,-5, 27)
 	--songlist:SetPoint("TOPLEFT", seperator ,0, 0)
 	--songlist:SetPoint("BOTTOMRIGHT", frame ,-5, 27)
-	
+
 	listslist = EpicMusicPlayer:CreateListWidget("EpicMusicPlayer_Playlists",frame,#EpicMusicPlayer.playlists,nil,
 		function(row, colum)
 			listname = ""
@@ -411,23 +406,23 @@ local function CreatePlaylistGui(width, height)
 			return listname
 		end,
 		OnListClick, nil, nil, frame.font)
-		
+
 	listslist:SetPoint("TOPLEFT", frame ,5, -25)
 	listslist:SetPoint("BOTTOMRIGHT", songlist, "BOTTOMLEFT" ,3, 0)
 	listslist:SetSelected(db.list)
-	
+
 	listslist:EnableMouse(1)
 	listslist:SetScript("OnMouseUp",function(self,button)
 		if button == "RightButton" then
-			EpicMusicPlayer:OpenListMenu() 
+			EpicMusicPlayer:OpenListMenu()
 		end
 	end)
 	ToggleLists()
-	
+
 	local footer = CreateFooter(frame)
 	footer:SetPoint("TOPLEFT", listslist ,"BOTTOMLEFT",4, 0)
 	footer:SetPoint("BOTTOMRIGHT", frame,-9, 9);
-	
+
 	mainframe = frame
 end
 
@@ -442,13 +437,13 @@ function EpicMusicPlayer:PlayListGuiUpdate(list)
 end
 
 function EpicMusicPlayer:PlayListGuiListUpdate()
-	if listslist then 
+	if listslist then
 		listslist:Update()
 	end
 end
 
 function EpicMusicPlayer:TogglePlayListGui()
-	if not frame then 
+	if not frame then
 		db = EpicMusicPlayer.db.profile
 		CreatePlaylistGui(db.playlistWidth,db.playlistHeight)
 		SelectList(db.list)
