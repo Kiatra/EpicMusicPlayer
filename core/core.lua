@@ -31,7 +31,6 @@ function EpicMusicPlayer:OnInitialize()
 			list = 1,
 			skin = "quest",
 			showmessage = true,
-			showUpdateInfo = true,
 			defaultchannel = "PARTY",
 			playlistPoint = "CENTER",
 			playlistOffx = 0,
