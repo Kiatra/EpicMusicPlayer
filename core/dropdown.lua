@@ -16,7 +16,7 @@ function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
 	--local self = EpicMusicPlayer
 	local dropdown = self.dropdown
 	if not dropdown then
-		dropdown = _G.CreateFrame("Frame", "EMPDropDown", nil, "UIDropDownMenuTemplate")	
+		dropdown = _G.CreateFrame("Frame", "EMPDropDown", nil, "UIDropDownMenuTemplate")
 		dropdown.xOffset = 0
 		dropdown.yOffset = 0
 		dropdown.point = "TOPLEFT"
@@ -26,7 +26,7 @@ function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
 	end
 	dropdown:Show()
 	dropdown.relativeTo = frame
-	
+
 	local locked = EpicMusicPlayer:IsListLocked(db.list)
 	dropdownmenu = {}
 	dropdownmove = {}
@@ -37,9 +37,9 @@ function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
 		func = function() EpicMusicPlayer:RemoveSong(listIndex,songIndex);dropdown:Hide() end,
 		disabled = locked,
 	}
-	
+
 	for i, list in ipairs(EpicMusicPlayer.playlists) do
-		if not EpicMusicPlayer:IsListLocked(i) and i ~=listIndex then 
+		if not EpicMusicPlayer:IsListLocked(i) and i ~=listIndex then
 			dropdownmove[#dropdownmove + 1] = {
 				text = list[1].ListName,
 				notCheckable = true,
@@ -60,7 +60,7 @@ function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
 			}
 		end
 	end
-	
+
 	if #dropdownmove > 0 and not EpicMusicPlayer:IsListLocked(listIndex) then
 		dropdownmenu[#dropdownmenu + 1] = {
 			text = L["Move song to"],
@@ -69,7 +69,7 @@ function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
 			menuList = dropdownmove,
 		}
 	end
-	
+
 	if #dropdowncopy > 0 then
 		dropdownmenu[#dropdownmenu + 1] = {
 			text = L["Copy song to"],
@@ -78,12 +78,12 @@ function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
 			menuList = dropdowncopy
 		}
 	end
-	
+
 	dropdownmenu[#dropdownmenu + 1] = {
 		text = _G.CANCEL,
 		notCheckable = true,
 		func = function() dropdown:Hide() end,
-	
+
 	}
 	_G.EasyMenu(dropdownmenu, dropdown, "cursor", -25 , 0, "MENU")
 end
@@ -105,13 +105,13 @@ function EpicMusicPlayer:OpenListMenu(frame, listIndex)
 	end
 	dropdown:Show()
 	dropdown.relativeTo = frame
-	
+
 	local listName = self:GetListName(listIndex)
-	dropdownmenu ={ 
+	dropdownmenu ={
 		{
 			text = L["Add Playlist"],
-			func = function() 
-				local name 
+			func = function()
+				local name
 				_G.StaticPopupDialogs["EPICMUSICPLAYER_ADDPLAYLIST"] = {
 					text = "Enter playlist name:",
 					button1 = _G.ACCEPT,
@@ -133,7 +133,7 @@ function EpicMusicPlayer:OpenListMenu(frame, listIndex)
 					end
 				}
 				_G.StaticPopup_Show("EPICMUSICPLAYER_ADDPLAYLIST")
-				
+
 			end,
 			notCheckable = true
 		},
@@ -143,7 +143,7 @@ function EpicMusicPlayer:OpenListMenu(frame, listIndex)
 			text = L["Remove Playlist"],
 			func = function() self:RemovePlayList(listName); dropdown:Hide() end,
 			notCheckable = true,
-			disabled = EpicMusicPlayer:IsListLocked(listIndex) 
+			disabled = EpicMusicPlayer:IsListLocked(listIndex)
 		}
 		--[[
 		if EpicMusicPlayer:IsListIgnored(listIndex) then
@@ -151,7 +151,7 @@ function EpicMusicPlayer:OpenListMenu(frame, listIndex)
 				text = L["Unignore Playlist"],
 				func = function() self:SetListIsIgnored(listIndex, false); EpicMusicPlayer:PlayListGuiListUpdate(); dropdown:Hide() end,
 				notCheckable = true,
-			
+
 			}
 		else
 			dropdownmenu[#dropdownmenu + 1] = {
@@ -166,7 +166,7 @@ function EpicMusicPlayer:OpenListMenu(frame, listIndex)
 		text = _G.CANCEL,
 		notCheckable = true,
 		func = function() dropdown:Hide() end,
-	
+
 	}
 	if frame then
 		_G.EasyMenu(dropdownmenu, dropdown)
@@ -179,7 +179,7 @@ end
 function EpicMusicPlayer:OpenMenu(frame, listIndex)
 	EpicMusicPlayer:HideTooltip()
 	--GameTooltip:Hide();
-	local db = EpicMusicPlayer.db.profile
+	local db = EpicMusicPlayer.db
 	--local self = EpicMusicPlayer
 	local dropdown = self.dropdown
 	if not dropdown then
@@ -193,54 +193,54 @@ function EpicMusicPlayer:OpenMenu(frame, listIndex)
 	end
 	dropdown:Show()
 	dropdown.relativeTo = frame
-		
+
 	dropdownmove = {}
 	dropdowncopy = {}
 	if(not dropdownchat)then
 		dropdownchat = {
 			{
-				text = L["Guild"], 
+				text = L["Guild"],
 				notCheckable = true,
-				func = function() self:Spam("GUILD") end, 
+				func = function() self:Spam("GUILD") end,
 			},
 			{
-				text = L["Party"], 
+				text = L["Party"],
 				notCheckable = true,
-				func = function() self:Spam("PARTY") end, 
+				func = function() self:Spam("PARTY") end,
 			},
 			{
-				text = L["Say"], 
+				text = L["Say"],
 				notCheckable = true,
-				func = function() self:Spam("SAY") end, 
+				func = function() self:Spam("SAY") end,
 			},
 			{
-				text = L["Raid"], 
+				text = L["Raid"],
 				notCheckable = true,
-				func = function() self:Spam("RAID") end, 
+				func = function() self:Spam("RAID") end,
 			},
 			{
-				text = L["To target"], 
+				text = L["To target"],
 				notCheckable = true,
 				func = function()
 					EpicMusicPlayer:Spam("TARGET")
-				end, 
+				end,
 			},
 		}
 	end
-	
+
 	if(self.whisper)then
 		dropdownchat[6] = {
-				text = L["Whisper to"].." "..self.whisper, 
+				text = L["Whisper to"].." "..self.whisper,
 				notCheckable = true,
 				func = function()
 					EpicMusicPlayer:Spam("WHISPER")
-				end, 
+				end,
 			}
 	end
-	
-	dropdownmenu ={ 
+
+	dropdownmenu ={
 		{
-			text = L["Playlist"], 
+			text = L["Playlist"],
 			func = function() self:TogglePlayListGui() end,
 			notCheckable = true,
 		},
@@ -258,7 +258,7 @@ function EpicMusicPlayer:OpenMenu(frame, listIndex)
 			text = L["Show GUI"],
 			checked = self:IsPlayerGui(),
 			func = function() self:TogglePlayerGui() end,
-		},	
+		},
 	}
 	local EpicMusicDancer = EpicMusicPlayer.EpicMusicDancer
 	if(EpicMusicDancer)then
@@ -266,10 +266,10 @@ function EpicMusicPlayer:OpenMenu(frame, listIndex)
 			text = L["Show Dancer"],
 			checked = EpicMusicDancer:IsVisible(),
 			func = function() EpicMusicDancer:ToggleShow() end,
-			
+
 		}
 	end
-	
+
 	dropdownmenu[#dropdownmenu + 1] = {
 			text = L["Shuffle"],
 			checked = self.IsRandom(),
@@ -279,7 +279,7 @@ function EpicMusicPlayer:OpenMenu(frame, listIndex)
 			text = L["Shuffle Cross Playlist"],
 			checked = db.shuffleAll,
 			func = function() self:ToggleRandom(true) end,
-	} 
+	}
 	dropdownmenu[#dropdownmenu + 1] = {
 			text = L["Loop Playlist"],
 			checked = db.looplist,
@@ -295,7 +295,7 @@ function EpicMusicPlayer:OpenMenu(frame, listIndex)
 			checked = db.enableEvents,
 			func = function() db.enableEvents = not db.enableEvents; EpicMusicPlayer:OnZoneChanged() end,
 	}
-	
+
 	local locked = EpicMusicPlayer:IsListLocked(db.list)
 	if(self.Playing)then
 		dropdownmenu[#dropdownmenu + 1] = {
@@ -316,16 +316,16 @@ function EpicMusicPlayer:OpenMenu(frame, listIndex)
 			menuList = dropdownmove,
 			disabled = locked
 		}
-		
+
 		dropdownmenu[#dropdownmenu + 1] = {
 			text = L["Copy song to"],
 			hasArrow = true,
 			notCheckable = true,
 			menuList = dropdowncopy
 		}
-		
+
 		for i, list in ipairs(EpicMusicPlayer.playlists) do
-			if not EpicMusicPlayer:IsListLocked(i) and i ~=listIndex then 
+			if not EpicMusicPlayer:IsListLocked(i) and i ~=listIndex then
 				dropdownmove[#dropdownmove + 1] = {
 					text = list[1].ListName,
 					notCheckable = true,
@@ -342,7 +342,7 @@ function EpicMusicPlayer:OpenMenu(frame, listIndex)
 				}
 			end
 		end
-		
+
 		dropdownmenu[#dropdownmenu + 1] = {
 			text = L["Spam to"],
 			hasArrow = true,

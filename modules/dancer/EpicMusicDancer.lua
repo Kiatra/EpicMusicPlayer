@@ -1,6 +1,6 @@
 ﻿--EpicMusicDancer a litle dancer by yess
---i am using two frames for the models because somehow the setmodelscale 
---function does not work if the model file ist not fully loaded. Therefore i have to load the new model in a hidden frame and 
+--i am using two frames for the models because somehow the setmodelscale
+--function does not work if the model file ist not fully loaded. Therefore i have to load the new model in a hidden frame and
 --switch frames after an estimated time the model needs to be loaded.
 local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer")
 local rot = 0
@@ -49,7 +49,7 @@ local model = {
 				["seqence"] = 216,
 				["endframe"] = 1166,
 			},
-		},			
+		},
 	},
 	{
 		file = "Creature/band/bandBloodElfMale.M2",
@@ -76,7 +76,7 @@ local model = {
 				["seqence"] = 216,
 				["endframe"] = 6766,
 			},
-		},			
+		},
 	},
 	{
 		file = "Creature/band/bandTrollMale.M2",
@@ -103,7 +103,7 @@ local model = {
 				["seqence"] = 215,
 				["endframe"] = 3833,
 			},
-		},			
+		},
 	},
 	{
 		file = "Creature/band/bandUndeadMale.M2",
@@ -130,7 +130,7 @@ local model = {
 				["seqence"] = 216,
 				["endframe"] = 3800,
 			},
-		},			
+		},
 	},
 	{
 		file = "Creature/band/bandOrcMale.M2",
@@ -166,7 +166,7 @@ local model = {
 				["seqence"] = 218,
 				["endframe"] = 2666,
 			},
-		},			
+		},
 	},
 	{
 		file = "Creature/BloodElfGuard/BloodElfMale_Guard.M2",
@@ -213,7 +213,7 @@ local options={
 					order = 1,
 					name = L["Show Dancer"],
 		            desc = L["Toggle show model."],
-		            get = function() 
+		            get = function()
 						return EpicMusicDancer:IsVisible()
 					end,
 		            set = function()
@@ -226,7 +226,7 @@ local options={
 					order = 2,
 					name = L["Toggle with GUI"],
 		            desc = L["Showing/hiding the GUI will show/hide the dancer."],
-		            get = function() 
+		            get = function()
 						return EpicMusicDancer:IsGuiToggle()
 					end,
 		            set = function()
@@ -239,7 +239,7 @@ local options={
 					order = 3,
 					name = L["Random Model"],
 		            desc = L["Show a random model when playing a new song."],
-		            get = function() 
+		            get = function()
 						return EpicMusicDancer:IsRandom()
 					end,
 		            set = function()
@@ -253,7 +253,7 @@ local options={
 					order = 4,
 		            name = L["Set Model"],
 		            desc = L["Select a model"],
-					get = function() 
+					get = function()
 						return EpicMusicDancer:GetDefaultModel()
 					end,
 		            set = function(info, value)
@@ -268,10 +268,10 @@ local options={
 		            step = 0.1,
 					min = 0.1,
 					max = 5,
-					get = function() 
+					get = function()
 						return EpicMusicDancer:GetScale()
 					end,
-		            set =  function(self,value) 
+		            set =  function(self,value)
 						return EpicMusicDancer:SetScale(value)
 					end,
 				},
@@ -280,10 +280,10 @@ local options={
 					order = 2,
 					name = L["Lock"] ,
 		            desc = L["Unlock to allow moving the model. Moving will release the model from the GUI. Use reset to reattach."],
-					get = function() 
+					get = function()
 						return lock
 					end,
-		            set =  function(self,value) 
+		            set =  function(self,value)
 						return EpicMusicDancer:Togglelock()
 					end,
 				},
@@ -292,10 +292,10 @@ local options={
 					order = 9,
 					name = L["Show Background"] ,
 		            desc = L["Show Background"],
-					get = function() 
+					get = function()
 						return EpicMusicDancer:HasBackground()
 					end,
-		            set =  function() 
+		            set =  function()
 						EpicMusicDancer:ToggleBackground()
 					end,
 				},
@@ -304,10 +304,10 @@ local options={
 					order = 11,
 					name = L["Enable Mouse"],
 		            desc = L["Click me or scroll me. I won\'t bite. 8==8"],
-					get = function() 
+					get = function()
 						return EpicMusicDancer:IsMouse()
 					end,
-		            set =  function() 
+		            set =  function()
 						EpicMusicDancer:ToggleMouse()
 					end,
 				},
@@ -316,10 +316,10 @@ local options={
 					order = 10,
 					name = L["Show Pedestal"] ,
 		            desc = L["Show Pedestal"],
-					get = function() 
+					get = function()
 						return EpicMusicDancer:IsPedestal()
 					end,
-		            set =  function() 
+		            set =  function()
 						EpicMusicDancer:TogglePedestal()
 					end,
 				},
@@ -328,21 +328,21 @@ local options={
 					order = 12,
 					name = L["Show Tooltip"] ,
 		            desc = L["Show Tooltip"] ,
-					get = function() 
+					get = function()
 						return EpicMusicDancer:IsShowTooltip()
 					end,
-		            set =  function() 
+		            set =  function()
 						EpicMusicDancer:ToggleShowTooltip()
 					end,
 				},
 				strata = {
 					type = 'select',
-					values = {FULLSCREEN_DIALOG="Fullscreen_Dialog",FULLSCREEN="Fullscreen", 
+					values = {FULLSCREEN_DIALOG="Fullscreen_Dialog",FULLSCREEN="Fullscreen",
 								DIALOG="Dialog",HIGH="High",MEDIUM="Medium",LOW="Low",BACKGROUND="Background"},
 					order = 13,
 					name = L["Frame strata"],
 					desc = L["Frame strata"],
-					get = function() 
+					get = function()
 						return EpicMusicDancer.db.char.strata
 					end,
 					set = function(info, value)
@@ -355,7 +355,7 @@ local options={
 					order = -1,
 					name = L["Reset Position"],
 		            desc = L["This will set the model to the default size and attach it to the GUI."],
-					func = function() 
+					func = function()
 						return EpicMusicDancer:ResetPos()
 					end,
 				},
@@ -363,7 +363,7 @@ local options={
 	}
 
 function EpicMusicDancer:Test()
-		EpicMusicDancer.testframe:SetModelScale(1) 
+		EpicMusicDancer.testframe:SetModelScale(1)
 		--self.testframe:SetModel("Creature/band/bandTaurenMale.M2")
 		EpicMusicDancer.testframe:SetModelScale(0.5)
 		_G.DEFAULT_CHAT_FRAME:AddMessage("TestFrameScale")
@@ -373,19 +373,19 @@ end
 local function OnUpdate(self, elapsed)
 	TimeSinceLastUpdate = TimeSinceLastUpdate + elapsed
 
-	if seqence then 
+	if seqence then
 		seqtime = seqtime + (elapsed * 1000)
 		if(dancing)then
 			EpicMusicDancer:GetModelFrame():SetSequenceTime(seqence, seqtime)
 		end
 		if(EpicMusicPlayer.Playing)then
 		if seqtime > endframe then
-			--if nextseqence then    
+			--if nextseqence then
 				seqence = animdata[nextseqence].seqence
 				endframe = animdata[nextseqence].endframe
 				nextseqence = 1
 				seqtime = 0
-			--else	
+			--else
 			--	seqtime = 0
 			--	seqence = 69
 			--	endframe = 2000
@@ -393,7 +393,7 @@ local function OnUpdate(self, elapsed)
 		end
 		end
 	end
-	
+
 	if(TimeSinceLastUpdate > 1)then
 		TimeSinceLastUpdate = 0
 		randomcountdown = randomcountdown -1
@@ -433,19 +433,19 @@ function EpicMusicDancer:OnInitialize()
 			strata = "MEDIUM"
 		}
 	}
-	
+
 	self.db = _G.LibStub("AceDB-3.0"):New("EpicMusicDancerDB", defaults, "Default")
-	
-	
+
+
 	self:CreateDancerFrame(_G.UIParent)
 	self:RegisterMessage("EMPUpdateStop")
 	self:RegisterMessage("EMPUpdatePlay")
 	self:RegisterMessage("EMPGuiLoaded")
 	self:RegisterEvent("WORLD_MAP_UPDATE", EpicMusicDancer.OnWorldMapUpdate, "WORLD_MAP_UPDATE")
-	
+
 	EpicMusicPlayer:AddOptions("dancer",options)
-	
-	_G.UIParent:HookScript("OnShow", 
+
+	_G.UIParent:HookScript("OnShow",
 		function(self, ...)
 			if EpicMusicDancer.db.char.show then
 				EpicMusicDancer:Show()
@@ -456,12 +456,12 @@ function EpicMusicDancer:OnInitialize()
 end
 
 function EpicMusicDancer:EMPGuiLoaded(event)
-	
+
 	if(self.frame:IsUserPlaced())then
 		self:SetScale(self.db.char.scale)
 	end
 	modelid = modelmap[self.db.profile.defaultmodel]
-    self:SetModel(modelid)
+	self:SetModel(modelid)
 	seqence = model[modelid].stand
 end
 
@@ -489,18 +489,18 @@ function EpicMusicDancer:Togglelock()
 		if(not self:IsMouse())then
 			self.frame:EnableMouse(false)
 		end
-		
+
 	else
-		
-		EpicMusicDancer.frame:SetMovable(true) 
+
+		EpicMusicDancer.frame:SetMovable(true)
 		EpicMusicDancer.frame:RegisterForDrag("LeftButton");
 		self.hitbox:Show()
 		self.frame:EnableMouse(true)
 		EpicMusicDancer.frame:SetParent(_G.UIParent)
 	end
-	
+
 	if(frame1)then
-			EpicMusicDancer.Model2:SetModelScale(1) 
+			EpicMusicDancer.Model2:SetModelScale(1)
 			EpicMusicDancer.Model2:SetModel(model[modelid].file)
 		else
 			EpicMusicDancer.Model:SetModelScale(1)
@@ -518,7 +518,7 @@ function EpicMusicDancer:SetScale(val)
 	self.db.char.scale = val
 	self.frame:SetScale(val)
 	if(frame1)then
-		EpicMusicDancer.Model2:SetModelScale(1) 
+		EpicMusicDancer.Model2:SetModelScale(1)
 		EpicMusicDancer.Model2:SetModel(model[modelid].file)
 	else
 		EpicMusicDancer.Model:SetModelScale(1)
@@ -585,7 +585,7 @@ function EpicMusicDancer:ToggleBackground()
 	else
 		EpicMusicDancer.frame:SetBackdrop(nil)
 	end
-	
+
 end
 
 
@@ -598,9 +598,9 @@ function EpicMusicDancer:ToggleShowTooltip()
 end
 
 function EpicMusicDancer:SetBackground()
-	EpicMusicDancer.frame:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background", 
-	                                        edgeFile = "Interface/Tooltips/UI-Tooltip-Border", 
-	                                        tile = true, tileSize = 16, edgeSize = 16, 
+	EpicMusicDancer.frame:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background",
+	                                        edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
+	                                        tile = true, tileSize = 16, edgeSize = 16,
 	                                        insets = { left = 4, right = 4, top = 4, bottom = 4 }});
 	EpicMusicDancer.frame:SetBackdropColor(0,0,0,1);
 end
@@ -609,23 +609,23 @@ function EpicMusicDancer:ResetPos()
 	self:SetScale(1)
 	if(_G.EMPGUI)then
 		EpicMusicDancer.frame:SetParent(_G.EMPGUI)
-		EpicMusicDancer.frame:ClearAllPoints() 
+		EpicMusicDancer.frame:ClearAllPoints()
 		EpicMusicDancer.frame:SetPoint("BOTTOM", "EMPGUI", "TOP", -25, -22);
 		EpicMusicDancer.frame:SetPoint("CENTER", "EMPGUI", "CENTER", -25, -22);
 		_G.EMPGUI:Show()
-		EpicMusicPlayer.db.profile.showgui = true;
+		EpicMusicPlayer.dataBase.profile.showgui = true;
 	else
 		EpicMusicDancer.frame:SetParent(_G.UIParent)
-		EpicMusicDancer.frame:ClearAllPoints() 
+		EpicMusicDancer.frame:ClearAllPoints()
 		EpicMusicDancer.frame:SetPoint("CENTER");
 	end
-	EpicMusicDancer.frame:SetWidth(100) 
+	EpicMusicDancer.frame:SetWidth(100)
 	EpicMusicDancer.frame:SetHeight(100)
 	EpicMusicDancer.frame:SetUserPlaced(false)
 	EpicMusicDancer.db.char.pedestal = true;
 	EpicMusicDancer:TogglePedestal()
 	EpicMusicDancer:SetModel(modelid)
-	self.db.profile.sticky = true
+	self.db.sticky = true
 end
 
 function EpicMusicDancer:EMPUpdatePlay()
@@ -689,7 +689,7 @@ end
 
 function EpicMusicDancer:SetModel(modelid)
 	if(frame1)then
-		EpicMusicDancer.Model2:SetModelScale(1) 
+		EpicMusicDancer.Model2:SetModelScale(1)
 		EpicMusicDancer.Model2:SetModel(model[modelid].file)
 	else
 		EpicMusicDancer.Model:SetModelScale(1)
@@ -698,13 +698,13 @@ function EpicMusicDancer:SetModel(modelid)
 	animdata = model[modelid].animdata
 	nextseqence = 1
 	endframe = animdata[nextseqence].endframe
-	
+
 	self:CancelAllTimers()
 	self:ScheduleTimer(EpicMusicDancer.SetModelScale, 0.3)
 end
 
 function EpicMusicDancer:ToggleDancing()
-	
+
 	if(EpicMusicPlayer.Playing)then
 		dancing = true;
 	elseif(model[modelid].animdata)then
@@ -713,7 +713,7 @@ function EpicMusicDancer:ToggleDancing()
 	else
 		dancing = false;
 	end
-	
+
 end
 
 function EpicMusicDancer:SetLastModel()
@@ -736,34 +736,34 @@ function EpicMusicDancer:CreateDancerFrame(parent)
 	--EpicMusicDancer:CreateTestFrame(parent)
 	self.frame = _G.CreateFrame("Button","EMPDancerFrame",_G.UIParent)
 	EMPDancerFrame = self.frame
-	self.frame:SetWidth(100) 
+	self.frame:SetWidth(100)
 	self.frame:SetHeight(100)
-	
+
 	self.frame:SetParent(parent)
 	EpicMusicDancer.frame:SetPoint("BOTTOM", "EMPGUI", "TOP", -25, -22);
 	EpicMusicDancer.frame:SetPoint("CENTER", "EMPGUI", "CENTER", -25, -22);
 	sticky = true;
-		
+
     self.frame:SetFrameStrata(self.db.char.strata)
-	
-	self.frame:SetMovable(true) 
+
+	self.frame:SetMovable(true)
 	self.frame:SetClampedToScreen(1)
-	
+
 	if(self.db.char.show)then
 		self.frame:Show()
 	else
 		self.frame:Hide()
 	end
-	
+
 	-- set background
 	if(self.db.char.background)then
 		self.db.char.background = false;
 		self:ToggleBackground()
 	end
-	
-	self.frame:SetHitRectInsets(10, 10, 25, 0); 
-	
-	self.frame:SetScript("OnMouseUp", 
+
+	self.frame:SetHitRectInsets(10, 10, 25, 0);
+
+	self.frame:SetScript("OnMouseUp",
 		function(self, btn)
 			EpicMusicPlayer:OnDisplayClick(self,btn)
 			if(tooltip) then
@@ -771,7 +771,7 @@ function EpicMusicDancer:CreateDancerFrame(parent)
 			end
 		end
 	)
-	
+
 	if(self.db.char.mouse)then
 		self.frame:EnableMouse(true)
 		self.frame:EnableMouseWheel(true)
@@ -779,46 +779,46 @@ function EpicMusicDancer:CreateDancerFrame(parent)
 		self.frame:EnableMouse(false)
 		self.frame:EnableMouseWheel(false)
 	end
-	
+
 	self.hitbox = _G.CreateFrame("Frame","EMPDancerHitbox",EMPDancerFrame)
-	self.hitbox:SetWidth(80) 
+	self.hitbox:SetWidth(80)
 	self.hitbox:SetHeight(75)
 	self.hitbox:SetPoint("BOTTOMLEFT",EMPDancerFrame,10,0)
-	
+
 	--hitbox.SetAllPoints(EMPDancerFrame)
-    self.hitbox:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background", 
-	                                        edgeFile = "Interface/Tooltips/UI-Tooltip-Border", 
-	                                        tile = true, tileSize = 16, edgeSize = 16, 
+    self.hitbox:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background",
+	                                        edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
+	                                        tile = true, tileSize = 16, edgeSize = 16,
 	                                        insets = { left = 4, right = 4, top = 4, bottom = 4 }});
 	self.hitbox:SetBackdropColor(0,0,0,1);
 	self.hitbox:SetBackdropBorderColor(1, 0, 0)
 	self.hitbox:Hide()
 	--pedestal
-	
+
 	self.pedestal = _G.CreateFrame("Frame","EMPDancerPodest",EMPDancerFrame)
 	self.pedestal.texture = self.pedestal:CreateTexture(nil)
 	self.pedestal.texture:SetTexture("Interface\\AddOns\\EpicMusicPlayer\\modules\\dancer\\podest.tga")
 	self.pedestal.texture:SetAllPoints(self.pedestal)
-	
+
 	self.pedestal:SetWidth(100)
 	self.pedestal:SetHeight(32)
 	self.pedestal:SetPoint("CENTER",0,-46)
-	
+
 
 	if(not self:IsPedestal())then
 		self.pedestal:Hide()
 	end
 
 	local model = _G.CreateFrame("PlayerModel",nil,EMPDancerFrame)
-	model:SetWidth(100) 
+	model:SetWidth(100)
 	model:SetHeight(100)
-	model:ClearAllPoints() 
+	model:ClearAllPoints()
 	--EpicMusicDancer.Model:SetPoint("CENTER")
-	model:SetAllPoints(EpicMusicDancer.frame);	
+	model:SetAllPoints(EpicMusicDancer.frame);
 	model:Show()
 	model:SetCamera(1);
 	EpicMusicDancer.Model = model
-	
+
 	local model2 = _G.CreateFrame("PlayerModel",nil,EMPDancerFrame)
 	model2:SetWidth(100)
 	model2:SetHeight(100)
@@ -826,36 +826,36 @@ function EpicMusicDancer:CreateDancerFrame(parent)
 	model2:SetAllPoints(EpicMusicDancer.frame);
 	--EpicMusicDancer.Model2:SetPoint("CENTER")
 	EpicMusicDancer.Model2 = model2
-	
-	EpicMusicDancer.frame:SetScript("OnMouseWheel", 
+
+	EpicMusicDancer.frame:SetScript("OnMouseWheel",
 		function(self, value)
 			EpicMusicPlayer:DisplyScrollHandler(value)
 		end
     )
 
-	self.frame:SetScript("OnDragStart", 
+	self.frame:SetScript("OnDragStart",
 	    function(self)
 			self:StartMoving()
 			self.isMoving = true
 		end
 	)
-	self.frame:SetScript("OnDragStop", 
+	self.frame:SetScript("OnDragStop",
 	    function(self)
 			self:StopMovingOrSizing()
 			self.isMoving = false
 		end
 	)
-	
-	self.frame:SetScript("OnEnter", 
+
+	self.frame:SetScript("OnEnter",
 	    function(self)
-			if(EpicMusicPlayer.db.char.tooltip)then
+			if(EpicMusicPlayer.dataBase.char.tooltip)then
 				tooltip = self
 				EpicMusicPlayer:ShowTooltip(self)
 			end
 		end
 	)
-	
-	self.frame:SetScript("OnLeave", 
+
+	self.frame:SetScript("OnLeave",
 	    function()
 			if(self.db.char.tooltip)then
 				tooltip = nil
@@ -863,7 +863,7 @@ function EpicMusicDancer:CreateDancerFrame(parent)
 			end
 		end
 	)
-	
+
 	model:SetScript("OnUpdate", OnUpdate)
 	model2:SetScript("OnUpdate", OnUpdate)
 
@@ -873,6 +873,6 @@ function EpicMusicDancer:RandomAnim()
 	oldseqence = seqence
 	randomcountdown = math.random(5,10)
 	if #animdata > 1 then
-		nextseqence = math.random(2,#animdata)	
+		nextseqence = math.random(2,#animdata)
 	end
 end

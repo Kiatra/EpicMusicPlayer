@@ -124,7 +124,7 @@ local function CreateHeader(parent)
 	lastbutton:SetHeight(16)
 	lastbutton:SetPoint("TOPLEFT", header, 0,0)
 	lastbutton:EnableMouse(true);
-	lastbutton:SetScript("OnMouseUp", EpicMusicPlayer.PlayLast)
+	lastbutton:SetScript("OnMouseUp", function() EpicMusicPlayer:PlayLast() end)
 	lastbutton:SetNormalTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\emp-last.tga")
 	lastbutton:SetPushedTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\emp-last-p.tga")
 
@@ -149,15 +149,15 @@ local function CreateHeader(parent)
 	nextbutton:SetHeight(16)
 	nextbutton:SetPoint("TOPLEFT", playbutton,"TOPRIGHT", 0,0)
 	nextbutton:EnableMouse(true);
-	nextbutton:SetScript("OnMouseUp", EpicMusicPlayer.PlayNext)
+	nextbutton:SetScript("OnMouseUp", function() EpicMusicPlayer:PlayNext() end)
 
 	randombutton = CreateFrame("Button",nil,header)
 	randombutton:SetWidth(16)
 	randombutton:SetHeight(16)
 	randombutton:SetPoint("TOPLEFT", nextbutton,"TOPRIGHT", 0,0)
 	randombutton:EnableMouse(true);
-	randombutton:SetScript("OnMouseUp", EpicMusicPlayer.ToggleRandom)
-	UpdateRandomButon(nil, EpicMusicPlayer.db.profile.random)
+	randombutton:SetScript("OnMouseUp", function() EpicMusicPlayer:ToggleRandom() end)
+	UpdateRandomButon(nil, EpicMusicPlayer.db.random)
 
 	local mutebutton = CreateFrame("Button",nil,header)
 	mutebutton:SetNormalTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\emp-conf.tga")
@@ -166,7 +166,7 @@ local function CreateHeader(parent)
 	mutebutton:SetHeight(16)
 	mutebutton:SetPoint("TOPLEFT", randombutton,"TOPRIGHT", 0,0)
 	mutebutton:EnableMouse(true);
-	mutebutton:SetScript("OnMouseUp", EpicMusicPlayer.ToggleMute)
+	mutebutton:SetScript("OnMouseUp", function() EpicMusicPlayer:ToggleMute() end)
 
 	local listbutton = CreateFrame("Button",nil,header)
 	listbutton:SetNormalTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\emp-list.tga")
@@ -239,7 +239,7 @@ local function CreatePlaylistGui(width, height)
 
 	selectedlist = EpicMusicPlayer:GetListByIndex(1)--EpicMusicPlayer:GetCurrentList()
 	frame = CreateFrame("Frame","EpicMusicPlayer_PlaylistMain",_G.UIParent)
-	frame:SetFrameStrata(EpicMusicPlayer.db.profile.liststrata)
+	frame:SetFrameStrata(EpicMusicPlayer.db.liststrata)
 	--frame.Update = Update
 
 	frame:SetWidth(width)
@@ -444,7 +444,7 @@ end
 
 function EpicMusicPlayer:TogglePlayListGui()
 	if not frame then
-		db = EpicMusicPlayer.db.profile
+		db = EpicMusicPlayer.db
 		CreatePlaylistGui(db.playlistWidth,db.playlistHeight)
 		SelectList(db.list)
 	else

@@ -45,17 +45,17 @@ local function GetSkinsList()
 end
 
 local function setButtonColor(info, r, g, b, a)
-	EpicMusicPlayer.db.profile.buttoncolour.r = r
-	EpicMusicPlayer.db.profile.buttoncolour.g = g
-	EpicMusicPlayer.db.profile.buttoncolour.b = b
-	EpicMusicPlayer.db.profile.buttoncolour.a = a
+	EpicMusicPlayer.db.buttoncolour.r = r
+	EpicMusicPlayer.db.buttoncolour.g = g
+	EpicMusicPlayer.db.buttoncolour.b = b
+	EpicMusicPlayer.db.buttoncolour.a = a
 	--update gui
-	EpicMusicPlayer.db.profile.useartistcolour = false
+	EpicMusicPlayer.db.useartistcolour = false
 	EpicMusicPlayerGui:UpdateFrame(EpicMusicPlayer)
 end
 
 local function setBackColor(info, r, g, b, a)
-	local c = EpicMusicPlayer.db.profile.backcolour
+	local c = EpicMusicPlayer.db.backcolour
 	c.r = r
 	c.g = g
 	c.b = b
@@ -67,10 +67,10 @@ local function setBackColor(info, r, g, b, a)
 end
 
 local function setBorderColor(info, r, g, b, a)
-	EpicMusicPlayer.db.profile.bordercolour.r = r
-	EpicMusicPlayer.db.profile.bordercolour.g = g
-	EpicMusicPlayer.db.profile.bordercolour.b = b
-	EpicMusicPlayer.db.profile.bordercolour.a = a
+	EpicMusicPlayer.db.bordercolour.r = r
+	EpicMusicPlayer.db.bordercolour.g = g
+	EpicMusicPlayer.db.bordercolour.b = b
+	EpicMusicPlayer.db.bordercolour.a = a
 	--update gui
 	if(EpicMusicPlayerGui)then
 		EpicMusicPlayerGui:UpdateFrame(EpicMusicPlayer)
@@ -78,7 +78,7 @@ local function setBorderColor(info, r, g, b, a)
 end
 
 function EpicMusicPlayerGui:ChangeSettingsToSkin()
-	self.cuurskin = self.skins[EpicMusicPlayer.db.profile.skin] or self.skins["default"]
+	self.cuurskin = self.skins[EpicMusicPlayer.db.skin] or self.skins["default"]
 	if(self.cuurskin.buttonColor)then
 		local color = self.cuurskin.buttonColor
 		setButtonColor(nil,color.r,color.g,color.b,color.a)
@@ -94,12 +94,12 @@ function EpicMusicPlayerGui:ChangeSettingsToSkin()
 
 	if(self.cuurskin.artistColor)then
 		local color = self.cuurskin.artistColor
-		local c = EpicMusicPlayer.db.profile.artistcolour
+		local c = EpicMusicPlayer.db.artistcolour
 		c.r, c.g ,c.b ,c.a = color.r,color.g,color.b,color.a
 	end
 	if(self.cuurskin.titleColor)then
 		local color = self.cuurskin.titleColor
-		local c = EpicMusicPlayer.db.profile.titlecolour
+		local c = EpicMusicPlayer.db.titlecolour
 		c.r, c.g ,c.b ,c.a = color.r,color.g,color.b,color.a
 	end
 	self:UpdateFrame(EpicMusicPlayer)
@@ -128,10 +128,10 @@ local options={
 			name = L["Lock GUI"],
 			desc = L["Prevent accidentally moving the GUI."],
 			get = function(info)
-				return EpicMusicPlayer.db.profile.lockGUI
+				return EpicMusicPlayer.db.lockGUI
 			end,
 			set = function(info,val)
-				EpicMusicPlayer.db.profile.lockGUI = val;
+				EpicMusicPlayer.db.lockGUI = val;
 			end,
 		},
 		scale = {
@@ -168,15 +168,15 @@ local options={
 			name = L["Use artist color"],
 			desc = L["Use artist color as button color"],
 			get = function(name)
-				return EpicMusicPlayer.db.profile.useartistcolour
+				return EpicMusicPlayer.db.useartistcolour
 			end,
 			set = function(name)
-				EpicMusicPlayer.db.profile.useartistcolour = not EpicMusicPlayer.db.profile.useartistcolour
-				if(EpicMusicPlayer.db.profile.useartistcolour)then
-					EpicMusicPlayer.db.profile.buttoncolour.r = EpicMusicPlayer.db.profile.artistcolour.r
-					EpicMusicPlayer.db.profile.buttoncolour.g = EpicMusicPlayer.db.profile.artistcolour.g
-					EpicMusicPlayer.db.profile.buttoncolour.b = EpicMusicPlayer.db.profile.artistcolour.b
-					EpicMusicPlayer.db.profile.buttoncolour.a = EpicMusicPlayer.db.profile.artistcolour.a
+				EpicMusicPlayer.db.useartistcolour = not EpicMusicPlayer.db.useartistcolour
+				if(EpicMusicPlayer.db.useartistcolour)then
+					EpicMusicPlayer.db.buttoncolour.r = EpicMusicPlayer.db.artistcolour.r
+					EpicMusicPlayer.db.buttoncolour.g = EpicMusicPlayer.db.artistcolour.g
+					EpicMusicPlayer.db.buttoncolour.b = EpicMusicPlayer.db.artistcolour.b
+					EpicMusicPlayer.db.buttoncolour.a = EpicMusicPlayer.db.artistcolour.a
 					EpicMusicPlayerGui:UpdateFrame(EpicMusicPlayer)
 				end
 			end,
@@ -188,10 +188,10 @@ local options={
 			desc = L["Button color"],
 			hasAlpha = true,
 			get = function(info)
-				local r = EpicMusicPlayer.db.profile.buttoncolour.r
-				local g = EpicMusicPlayer.db.profile.buttoncolour.g
-				local b = EpicMusicPlayer.db.profile.buttoncolour.b
-				local a = EpicMusicPlayer.db.profile.buttoncolour.a
+				local r = EpicMusicPlayer.db.buttoncolour.r
+				local g = EpicMusicPlayer.db.buttoncolour.g
+				local b = EpicMusicPlayer.db.buttoncolour.b
+				local a = EpicMusicPlayer.db.buttoncolour.a
 				return r, g, b, a
 			end,
 			set = setButtonColor,
@@ -203,10 +203,10 @@ local options={
 			desc = L["Background color"],
 			hasAlpha = true,
 			get = function(info)
-				local r = EpicMusicPlayer.db.profile.backcolour.r
-				local g = EpicMusicPlayer.db.profile.backcolour.g
-				local b = EpicMusicPlayer.db.profile.backcolour.b
-				local a = EpicMusicPlayer.db.profile.backcolour.a
+				local r = EpicMusicPlayer.db.backcolour.r
+				local g = EpicMusicPlayer.db.backcolour.g
+				local b = EpicMusicPlayer.db.backcolour.b
+				local a = EpicMusicPlayer.db.backcolour.a
 				return r, g, b, a
 			end,
 			set = setBackColor,
@@ -218,10 +218,10 @@ local options={
 			desc = L["Border color"],
 			hasAlpha = true,
 			get = function(info)
-				local r = EpicMusicPlayer.db.profile.bordercolour.r
-				local g = EpicMusicPlayer.db.profile.bordercolour.g
-				local b = EpicMusicPlayer.db.profile.bordercolour.b
-				local a = EpicMusicPlayer.db.profile.bordercolour.a
+				local r = EpicMusicPlayer.db.bordercolour.r
+				local g = EpicMusicPlayer.db.bordercolour.g
+				local b = EpicMusicPlayer.db.bordercolour.b
+				local a = EpicMusicPlayer.db.bordercolour.a
 				return r, g, b, a
 			end,
 			set = setBorderColor,
@@ -234,10 +234,10 @@ local options={
 			name = L["Frame strata"],
 			desc = L["Frame strata"],
 			get = function()
-				return EpicMusicPlayer.db.profile.guistrata
+				return EpicMusicPlayer.db.guistrata
 			end,
 			set = function(info, value)
-				EpicMusicPlayer.db.profile.guistrata = value
+				EpicMusicPlayer.db.guistrata = value
 				EpicMusicPlayerGui.frames.player:SetFrameStrata(value)
 			end,
 		},
@@ -255,14 +255,13 @@ local options={
 			name = L["Layout & Skin"],
 			desc = L["Layout & Skin"],
 			get = function()
-				return EpicMusicPlayer.db.profile.skin
+				return EpicMusicPlayer.db.skin
 			end,
 			set = function(info, value)
 				for k, v in pairs(EpicMusicPlayerGui.frames) do
 					v:Hide()
 				end
-				--EpicMusicPlayer.Debug("select",value)
-				EpicMusicPlayer.db.profile.skin = value
+				EpicMusicPlayer.db.skin = value
 				EpicMusicPlayerGui.frames.player:Hide()
 				EpicMusicPlayerGui:ChangeSettingsToSkin()
 				EpicMusicPlayerGui:CreateGuiFrame()
@@ -293,7 +292,7 @@ end
 
 local function SetScrollText(text)
 	if(scrollchild)then
-		--if(EpicMusicPlayer.db.profile.gui.scroll)then
+		--if(EpicMusicPlayer.db.gui.scroll)then
 			scrolllag = 0
 			scrolloffsetx = 0
 			guitext:SetText(text)
@@ -342,6 +341,8 @@ function EpicMusicPlayerGui:OnInitialize()
 	self:RegisterMessage("EMPUpdateTime")
 	self:RegisterMessage("EMPUpdateVolume")
 	self:RegisterMessage("EMPUpdateRandom")
+	self:RegisterMessage("EMPUpdateVolumeTimerUp")
+
 	EpicMusicPlayer:AddOptions("gui",options)
 end
 
@@ -349,10 +350,6 @@ function EpicMusicPlayerGui:OnEnable(first)
 	if(EMPGUI == nil)then
 		self:CreateGuiFrame()
 	end
-	self:RegisterMessage("EMPUpdateStop")
-	self:RegisterMessage("EMPUpdatePlay")
-	self:RegisterMessage("EMPUpdateTime")
-	self:RegisterMessage("EMPUpdateRandom")
 
 	self:SendMessage("EMPGuiLoaded")
 	EpicMusicDancer = EpicMusicPlayer.EpicMusicDancer
@@ -370,6 +367,7 @@ end
 -- Update functions
 ------------------------------------------------------------------------------------------------------------------------------
 function EpicMusicPlayerGui:EMPUpdateTime(event, seconds)
+	--EpicMusicPlayer:Debug("EMPUpdateTime", "timeBarFrame", timeBarFrame, "timeBarFramewidth", timeBarFramewidth)
 	if(timeBarFrame)then
 		timeBarFramewidth = timeBarFramewidth + timeBarFramestep
 		exchangecount = exchangecount +1
@@ -380,37 +378,31 @@ function EpicMusicPlayerGui:EMPUpdateTime(event, seconds)
 	end
 end
 
-function EpicMusicPlayerGui:EMPUpdateVolume(event, voltype, vol)
-	if(voltype == "music")then
-		volumechanged = true
-		SetScrollText(L["Music volume: "]..math.floor((vol*100)).."%")
-	elseif(voltype == "sound")then
-		volumechanged = true
-		SetScrollText(L["Effects vol.: "]..math.floor((vol*100)).."%")
-	elseif(voltype == "done")then
-		volumechanged = false
-		if scrollchild then
-			scrollchild:SetPoint("TOPLEFT", scrollframe ,"TOPLEFT", -scrolloffsetx, 0)
-			if(playing)then
-				--SetScrollText(currsongname..currartist)
-				if(EpicMusicPlayer.db.profile.gui.scroll)then
-					SetScrollText(currsongname..currartist)
-				else
-					if(guitext)then
-						--scrollchild:ClearAllPoints()
-						scrollchild:SetAllPoints(scrollframe)
-						guitext:SetText(currsongname)
-						scrollframe:SetScript("OnUpdate", exchangeText)
-					end
-				end
-				self:EMPUpdateTime()
+function EpicMusicPlayerGui:EMPUpdateVolumeTimerUp()
+	volumechanged = false
+	if scrollchild then
+		scrollchild:SetPoint("TOPLEFT", scrollframe ,"TOPLEFT", -scrolloffsetx, 0)
+		if(playing)then
+			if(EpicMusicPlayer.db.gui.scroll)then
+				SetScrollText(currsongname..currartist)
 			else
-				self:EMPUpdateStop(nil, "", currsongname, 0)
-				--guitext:SetText(songname)
-				--SetScrollText(currsongname..currartist)
+				if(guitext)then
+					scrollchild:SetAllPoints(scrollframe)
+					guitext:SetText(currsongname)
+					scrollframe:SetScript("OnUpdate", exchangeText)
+				end
 			end
+			self:EMPUpdateTime()
+		else
+			self:EMPUpdateStop(nil, "", currsongname, 0)
 		end
 	end
+end
+
+function EpicMusicPlayerGui:EMPUpdateVolume(event, voltype, vol)
+	local volumeText = EpicMusicPlayer:GetVolumeText(voltype)
+	volumechanged = true
+  SetScrollText(volumeText..math.floor((vol*100)).."%")
 end
 
 function EpicMusicPlayerGui:SetNextModel()
@@ -437,9 +429,7 @@ function EpicMusicPlayerGui:TogglePlay()
 end
 
 function EpicMusicPlayerGui:EMPUpdatePlay(event, artist, songname, length)
-	EpicMusicPlayer:Debug("EMPUpdatePlay", songname, length)
 	playing = true;
-	-- update textframe
 	songlength = length
 	currsongname = songname
 	if(artist=="")then
@@ -447,11 +437,11 @@ function EpicMusicPlayerGui:EMPUpdatePlay(event, artist, songname, length)
 	else
 		hasartist = true
 	end
-	currartist = "|c"..EpicMusicPlayer:ToHex(EpicMusicPlayer.db.profile.artistcolour).." -"..artist.."-".."|r"
+	currartist = "|c"..EpicMusicPlayer:ToHex(EpicMusicPlayer.db.artistcolour).." -"..artist.."-".."|r"
 	displaysong = false
 	exchangecount = 4
 
-	if(EpicMusicPlayer.db.profile.gui.scroll)then
+	if(EpicMusicPlayer.db.gui.scroll)then
 		SetScrollText(currsongname..currartist)
 	else
 		if(guitext)then
@@ -489,12 +479,7 @@ function EpicMusicPlayerGui:EMPUpdateStop(event, artist, songname, length)
 		scrollframe:SetScript("OnUpdate", nil)
 		guitext:SetText(songname)
 		scrolloffsetx = 0
-		--guitext:SetWidth(self.frames.player:GetWidth()-20)
-		--scrollchild:SetWidth(guitext:GetStringWidth())
 		scrollchild:SetAllPoints(scrollframe)
-		--scrollchild:SetPoint("TOPLEFT", scrollframe ,"TOPRIGHT", 0, 0)
-		--scrollchild:SetPoint("TOPLEFT", scrollframe ,"TOPLEFT", 0, 0)
-		--guitext:SetJustifyH("CENTER", 0, 0)
 	end
 	if(timeBarFrame)then
 		timeBarFrame:Hide()
@@ -519,7 +504,7 @@ end
 function EpicMusicPlayerGui:EMPUpdateRandom(event, val)
 	local button = self.frames.random
 	local settings = self.cuurskin.random
-	if button then
+	if button and settings then
 		if val then
 			button:SetNormalTexture(path..settings.normaltexture)
 			button:SetPushedTexture(path..settings.pushedtexture)
@@ -554,25 +539,25 @@ end
 -- called only on settings changes
 function EpicMusicPlayerGui:UpdateFrame(emp)
 	local self = EpicMusicPlayerGui
-	local profile = emp.db.profile
-	local c = profile.buttoncolour
+	local db = emp.db
+	local c = db.buttoncolour
 
 	for k, v in pairs(self.frames) do
-		if v:IsObjectType("Button") then
+		if v:IsObjectType("Button") and v.hasBackdrop then
 			v:SetBackdropColor(c.r,c.g,c.b,c.a)
 		end
 	end
 
-	currartist = "|c"..EpicMusicPlayer:ToHex(EpicMusicPlayer.db.profile.artistcolour).." -"..EpicMusicPlayer:GetCurrentArtstName().."-".."|r"
+	currartist = "|c"..EpicMusicPlayer:ToHex(db.artistcolour).." -"..EpicMusicPlayer:GetCurrentArtstName().."-".."|r"
 	if(guitext)then
-		c = profile.titlecolour
+		c = db.titlecolour
 		guitext:SetTextColor(c.r,c.g,c.b,c.a)
 		local font = emp:GetFont()
-		guitext:SetFont(font, emp.db.profile.guifontsize)
+		guitext:SetFont(font, db.guifontsize)
 		guitext:SetText(text)
 	end
 
-	if(EpicMusicPlayer.db.profile.gui.scroll and currsongname)then
+	if(db.gui.scroll and currsongname)then
 		SetScrollText(currsongname..currartist)
 	else
 		if(guitext)then
@@ -580,20 +565,24 @@ function EpicMusicPlayerGui:UpdateFrame(emp)
 		end
 	end
 
-	--currartist = "|c"..EpicMusicPlayer:ToHex(profile.artistcolour)  --..emp:GetCurrentArtistName()
-
 	if(timeBarFrame)then
-		c = profile.buttoncolour
+		c = db.buttoncolour
 		timeBarFrame.timebar:SetTexture(c.r,c.g,c.b,c.a)
 	end
 
-	c = profile.backcolour
-	self.frames.player:SetBackdropColor(c.r,c.g,c.b,c.a)
-	c = profile.bordercolour
-	self.frames.player:SetBackdropBorderColor(c.r,c.g,c.b,c.a)
+
+	if self.frames.player.hasBackdrop then
+		c = db.backcolour
+		self.frames.player:SetBackdropColor(c.r,c.g,c.b,c.a)
+		c = db.bordercolour
+		self.frames.player:SetBackdropBorderColor(c.r,c.g,c.b,c.a)
+	else
+		self.frames.player:SetBackdropColor(0,0,0,0)
+		self.frames.player:SetBackdropBorderColor(0,0,0,0)
+	end
 
 	if timerframe then
-		c = profile.titlecolour
+		c = db.titlecolour
 		timerframe.text:SetTextColor(c.r,c.g,c.b,c.a)
 	end
 end
@@ -628,7 +617,7 @@ local function newControl(settings, frame)
 						settings.onleftclick()
 					else
 						if settings.onrightclick then
-							settings.onrightclick()
+							settings.onrightclick(EpicMusicPlayer)
 						end
 					end
 				end
@@ -642,6 +631,10 @@ local function newControl(settings, frame)
 	--frame:SetPushedTexture(settings.pushedtexture)
 	if backgroundtexture then
 		frame:SetBackdrop({bgFile = path..backgroundtexture})
+		frame.hasBackdrop = true
+	else
+		frame.hasBackdrop = false
+		frame:SetBackdropColor(0,0,0,0)
 	end
 
 	return frame
@@ -650,7 +643,7 @@ end
 local skin = {}
 function EpicMusicPlayerGui:CreateGuiFrame()
 
-	self.cuurskin = self.skins[EpicMusicPlayer.db.profile.skin] or self.skins["cataclysm"]
+	self.cuurskin = self.skins[EpicMusicPlayer.db.skin] or self.skins["cataclysm"]
 
 	--[[
 	-- needs fix
@@ -660,10 +653,8 @@ function EpicMusicPlayerGui:CreateGuiFrame()
 
 		-- overwrite the parent with the child values
 		for key, value in pairs(childskin) do
-			--EpicMusicPlayer.Debug(type(value))
 			if type(value) == "table" then
 				for k, v in pairs(value) do
-					EpicMusicPlayer.Debug(self.cuurskin[key][k],"=", v,"key=",key,"k=",k)
 					self.cuurskin[key][k] = v
 				end
 			else
@@ -683,24 +674,25 @@ function EpicMusicPlayerGui:CreateGuiFrame()
 	self.frames.player = self.frames.player or CreateFrame("Frame","EMPGUI",UIParent)
 	self.frames.player:SetWidth(self.cuurskin.guiframe.width)
 	self.frames.player:SetHeight(self.cuurskin.guiframe.height)
-	--/run EMPGUI:ClearAllPoints();EMPGUI:SetPoint("CENTER")
+
 
 	--frame background
 	--self.frames.player:SetFrameLevel(2)
-	local bgtextrue =  self.cuurskin.bgtextrue or {bgFile = "Interface/Tooltips/UI-Tooltip-Background",
-		edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
-		tile = false, tileSize = 16, edgeSize = 16,
-		insets = { left = 4, right = 4, top = 4, bottom = 4 }}
-		--insets = { left = 1, right = 1, top = 1, bottom = 1 }});
-
-	self.frames.player:SetBackdrop(bgtextrue)
+	local bgtexture =  self.cuurskin.bgtexture
+	if self.cuurskin.bgtexture then
+		self.frames.player:SetBackdrop(bgtexture)
+		--self.frames.player:SetBackdropColor(1,1,1,1)
+		self.frames.player.hasBackdrop = true
+	else
+		self.frames.player.hasBackdrop = false
+	end
 	self.frames.player:SetPoint("CENTER",0,0)
 	self.frames.player:Show()
 	self.frames.player:EnableMouse(true)
 	self.frames.player:SetMovable(true)
 	self.frames.player:RegisterForDrag("LeftButton");
 
-	self.frames.player:SetFrameStrata(EpicMusicPlayer.db.profile.guistrata)
+	self.frames.player:SetFrameStrata(EpicMusicPlayer.db.guistrata)
 	self.frames.player:SetScript("OnDragStart",
 	    function(self)
 			self:StartMoving()
@@ -720,7 +712,6 @@ function EpicMusicPlayerGui:CreateGuiFrame()
 		end
     )
 
-
 	------------------- create frames according to current skin ---------------------------
 	for k, v in pairs(self.cuurskin) do
 		if k ~= "guiframe" then
@@ -734,21 +725,40 @@ function EpicMusicPlayerGui:CreateGuiFrame()
 			timeBarFrame = CreateFrame("Frame",nil,EMPGUI)
 			timeBarFrame.timebar = timeBarFrame:CreateTexture()
 		end
-
+		--timeBarFrame:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background",
+		--	edgeFile = "",
+		--	tile = false, tileSize = 16, edgeSize = 16,
+		--	insets = { left = 0, right = 0, top = 0, bottom = 0 }})
 		--timeBarFrame:SetAllPoints(self.frames.player)
 		timeBarFrame.timebar:SetAllPoints(timeBarFrame)
 		--timeBarFrame.timebar:SetTexture(0.6,0.2,0.8,0.8)
-		timeBarFrame.timebar:SetTexture(EpicMusicPlayer.db.profile.artistcolour.r,
-								EpicMusicPlayer.db.profile.artistcolour.g,
-								EpicMusicPlayer.db.profile.artistcolour.b,
-								EpicMusicPlayer.db.profile.artistcolour.a)
-		timeBarFrame:SetWidth(0)
+		local c = EpicMusicPlayer.db.artistcolour
+		timeBarFrame.timebar:SetTexture(c.r, c.g, c.b, c.a)
+		--timeBarFrame:SetBackdropColor(c.r, c.g, c.b, c.a)
+		timeBarFrame.timebar:Show()
+		timeBarFrame:SetWidth(100)
 		timeBarFrame:SetHeight(self.cuurskin.timebar.height)
 		timeBarFrame:SetPoint("BOTTOMLEFT",8,6)
 	elseif timeBarFrame then
 		timeBarFrame:Hide()
 	end
 
+	if(self.cuurskin.atlasTexture) then
+		local settings = self.cuurskin.atlasTexture
+		if not EMPGUI.atlasTexture then
+			atlasTexture = EMPGUI:CreateTexture()
+			EMPGUI.atlasTexture = atlasTexture
+			EpicMusicPlayer:Debug("settings.atlas:", settings.atlas)
+			atlasTexture:SetAtlas(settings.atlas)
+			atlasTexture:SetHeight(settings.height)
+			atlasTexture:SetWidth(settings.width)
+			atlasTexture:SetPoint("TOPLEFT", settings.offx, settings.offy)
+		else
+			EMPGUI.atlasTexture:Show()
+		end
+	elseif EMPGUI.atlasTexture then
+		EMPGUI.atlasTexture:Hide()
+	end
 
 	if(self.cuurskin.timer)then
 		local settings = self.cuurskin.timer
@@ -837,7 +847,7 @@ function EpicMusicPlayerGui:CreateGuiFrame()
 		scrollframe:RegisterForDrag("LeftButton");
 		scrollframe:SetScript("OnDragStart",
 	    function()
-			if not EpicMusicPlayer.db.profile.lockGUI then
+			if not EpicMusicPlayer.db.lockGUI then
 				self.frames.player:StartMoving()
 				self.frames.player.isMoving = true
 			end
@@ -871,8 +881,8 @@ function EpicMusicPlayerGui:CreateGuiFrame()
 	----------------------------------------------------------------------------------------------------
 	self:UpdateFrame(EpicMusicPlayer)
 
-	EpicMusicPlayerGui:EMPUpdateRandom(nil, EpicMusicPlayer.db.profile.random)
-	if(EpicMusicPlayer.db.char.guiscale)then
-		EMPGUI:SetScale(EpicMusicPlayer.db.char.guiscale)
+	EpicMusicPlayerGui:EMPUpdateRandom(nil, EpicMusicPlayer.db.random)
+	if(EpicMusicPlayer.dataBase.char.guiscale)then
+		EMPGUI:SetScale(EpicMusicPlayer.dataBase.char.guiscale)
 	end
 end

@@ -1,33 +1,19 @@
 ﻿--EpicMusicPlayer by yess
 local EpicMusicPlayer = LibStub("AceAddon-3.0"):NewAddon("EpicMusicPlayer", "AceConsole-3.0", "AceEvent-3.0", "AceTimer-3.0","AceComm-3.0")
-
 local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 local media = LibStub:GetLibrary("LibSharedMedia-3.0", true) or nil
 local AceCfgDlg = LibStub("AceConfigDialog-3.0")
---local AceComm = LibStub("AceComm-3.0")
 
-local musicdir = "MyMusic\\" -- path to the music :)
-local volume = 0 -- remember volume on mute
-local messageframe = nil -- song and artst display
-local _G = _G
+local _G, eventtimer = _G, ""
+local db, movesong, currentsong
+local timer = "" -- timer for display of seconds
+local historyInUse = false --true when a sond from histroy is played
 
-local timer = "" -- timer vor display seconds
-local voltimer = "" -- volum chanded disply countdown
-local eventtimer = ""
-local db
-local movesong
-local currentsong
-local historyInUse = false --true wwhen a sond from histroy is played
-local songlength
-
---EpicMusicPlayer.fonts = {"Default"}
---EpicMusicPlayer.fontslist = {default="WoW Default", Adventure="Adventure", BlackChancery="BlackChancery"}
 EpicMusicPlayer.controlslist = {
 	TogglePlay = L["Play/Stop"], OnNextClick = L["Play Next Song"], OpenMenu = L["Drop Down Menu"],
 	ShowConfig = L["Config"], ToggleMute = L["Mute / unmute music sound."], TogglePlayListGui = L["Playlist"],
 	PlayLast = L["Play Last Song"], TogglePlayerGui = L["Toggle show GUI"], ToggleRandom = L["Toggle shuffle"],
 	RemoveCurrendSong = L["Remove Song"], SpamDefault = L["Spam to default channel"],
-	--ToBadList = L["Move to bad songs list"], ToBestList = L["Move song to favorite list"],
 }
 EpicMusicPlayer.version = GetAddOnMetadata("EpicMusicPlayer","Version")
 EpicMusicPlayer.tocversion = select(4, GetBuildInfo());
@@ -38,20 +24,13 @@ EpicMusicPlayer.tocversion = select(4, GetBuildInfo());
 function EpicMusicPlayer:OnInitialize()
 	  local defaults = {
 		profile = {
-			random = false,
-			auto = false,
 			volume = 1,
 			oldversion = "",
 			spam = trume,
-			--first song = 2 (song 1 is playlist name)
 			song = 2,
 			list = 1,
-			skin = "cataclysm",
-			looplist = false,
-			loopsong = false,
-			disablewowmusic = false,
+			skin = "quest",
 			showmessage = true,
-			minimapbutton = false,
 			showUpdateInfo = true,
 			defaultchannel = "PARTY",
 			playlistPoint = "CENTER",
@@ -60,11 +39,8 @@ function EpicMusicPlayer:OnInitialize()
 			playlistWidth = 900,
 			playlistHeight = 602,
 			playlistScale = 1,
-			link = false,
-			badlist = nil,
 			guiscale = 1,
 			addGameMusic = true,
-			lockGUI = false,
 			maxLevelSong = true,
 			controlset = {
 				LeftButton="OnNextClick",
@@ -94,19 +70,15 @@ function EpicMusicPlayer:OnInitialize()
 			},
 			eventZones = {},
 		},
-		char = {
-			showgui = false,
-			debug = false,
-		}
 	}
 
-	self.db = LibStub("AceDB-3.0"):New("EpicMusicPlayerDB", defaults, "Default")
+	self.dataBase = LibStub("AceDB-3.0"):New("EpicMusicPlayerDB", defaults, "Default")
 
   AceCfgDlg:AddToBlizOptions("EpicMusicPlayer", "EpicMusicPlayer")
 	AceCfgDlg:SetDefaultSize("EpicMusicPlayer", 700, 500)
 
-	db = self.db.profile
-	EpicMusicPlayer:SetOptionDB(db)
+	db = self.dataBase.profile
+	self.db = db
 
 	self:RegisterChatCommand("emp", "ChatCommand")
   self:RegisterChatCommand("epicmusicplayer", "ChatCommand")
@@ -134,38 +106,12 @@ function EpicMusicPlayer:OnInitialize()
 	for name,key in pairs(db.eventZones) do
 		EpicMusicPlayer:AddEventOptions(name)
 	end
-
-	songlength = 0
-end
-
--- realign ui with a song still playing after reload ui
-function EpicMusicPlayer:RealignWithPlaying()
-	if db.usePlaySoundFile and db.lastSong then
-		local timeDelta = GetTime() - db.lastTime
-		local remainigPlayTime = db.lastSong.Length - db.playedSeconds + timeDelta
-		self:Debug("still remainig:", remainigPlayTime, "db.lastSong.Length", db.lastSong.Length, "db.playedSeconds",db.playedSeconds)
-
-		if remainigPlayTime > 2 then
-				self:ScheduledPlay(db.lastSong, true)
-		end
-	end
-end
-
-function EpicMusicPlayer:OnLeavingWorld()
-		db.lastTime = GetTime()
-		if self.Playing then
-			db.lastSong = currentsong
-		else
-			db.lastSong = nil
-		end
 end
 
 function EpicMusicPlayer:OnEnable(first)
 	self:RegisterEvent("PLAYER_ENTERING_WORLD", EpicMusicPlayer.OnEnteringWorld, "PLAYER_ENTERING_WORLD")
 	self:RegisterEvent("CHAT_MSG_WHISPER_INFORM", EpicMusicPlayer.OnWhisperInform)
   self:RegisterEvent("ZONE_CHANGED_NEW_AREA", EpicMusicPlayer.OnZoneChangedNewArea)
-	self:RegisterEvent("ZONE_CHANGED", EpicMusicPlayer.OnZoneChanged)
-  self:RegisterEvent("ZONE_CHANGED_INDOORS", EpicMusicPlayer.OnZoneChangedIndoors)
 	self:RegisterEvent("PLAYER_ALIVE", EpicMusicPlayer.OnPlayerAlive)
 	self:RegisterEvent("PLAYER_LEVEL_UP", EpicMusicPlayer.OnPlayerLevelUp)
 	self:RegisterEvent("PLAYER_LEAVING_WORLD", EpicMusicPlayer.OnLeavingWorld)
@@ -177,7 +123,6 @@ function EpicMusicPlayer:OnEnable(first)
         else
 			if(db.disablewowmusic) then
 				SetCVar("Sound_EnableMusic", 0);
-				--/run SetCVar("Sound_NumChannels", 128);
 			else
 				SetCVar("Sound_EnableMusic", 1);
 			end
@@ -186,7 +131,7 @@ function EpicMusicPlayer:OnEnable(first)
     end
 
 	if(EpicMusicPlayerGui)then
-		if(not self.db.char.showgui)then
+		if(not self.dataBase.char.showgui)then
 			EpicMusicPlayerGui:Toggle()
 		end
 	end
@@ -206,42 +151,40 @@ end
 
 ------------------------------------------------------------------------------
 -- event functions
--------------------------------------------------------------------------------
--- save the name of the last whisper
-function EpicMusicPlayer:OnWhisperInform()
-	EpicMusicPlayer.whisper = arg2
+------------------------------------------------------------------------------
+-- realign ui with a song still playing after reload ui
+function EpicMusicPlayer:RealignWithPlaying()
+	if db.usePlaySoundFile and db.lastSong then
+		local timeDelta = GetTime() - db.lastTime
+		local remainigPlayTime = db.lastSong.Length - db.playedSeconds + timeDelta
+		if remainigPlayTime > 2 then
+				self:ScheduledPlay(db.lastSong, true)
+		end
+	end
 end
 
-
+-- player login NOT reloadUi -> music played with PlaySoundFile() is stopped
 function EpicMusicPlayer:OnCommentatorEnterWorld(event, arg1)
-		EpicMusicPlayer:Debug("OnCommentatorEnterWorld")
 		db.lastSong = nil
 		EpicMusicPlayer:ScheduledStop()
 end
 
-function EpicMusicPlayer:OnZoneChanged(event, arg1)
-	---EpicMusicPlayer:Debug("OnZoneChanged", event, arg1, GetZoneText(), GetRealZoneText())
-end
-
-function EpicMusicPlayer:OnZoneChangedIndoors(event, arg1)
-	--EpicMusicPlayer:Debug("OnZoneChangedIndoors", zone, arg1, GetZoneText(), GetRealZoneText())
+function EpicMusicPlayer:OnLeavingWorld()
+		db.lastTime = GetTime()
+		db.lastSong = self.Playing and currentsong or nil
 end
 
 function EpicMusicPlayer:OnZoneChangedNewArea(event)
 	if db.enableEvents then
 		local zone = GetZoneText()
-		EpicMusicPlayer:Debug("OnZoneChangedNewArea", zone)
 		for name,key in pairs(db.eventZones) do
 			if zone == name then
-				EpicMusicPlayer:Debug("key:", key)
 				local list, listIndex = EpicMusicPlayer:GetListByName(key)
 				if db.list ~= listIndex then
 					song, db.list, db.song = EpicMusicPlayer:GetRandomSong(listIndex)
-					--EpicMusicPlayer:Debug("list:", list, "listindex: ", listIndex, " db.list:", db.list, " db.song: ", db.song)
 					EpicMusicPlayer:Play()
 					return 1
 				elseif not EpicMusicPlayer.Playing then
-					--EpicMusicPlayer:Debug("playing current list on zone event")
 					EpicMusicPlayer:Play()
 					return 1
 				end
@@ -254,22 +197,18 @@ end
 function EpicMusicPlayer:OnEnteringWorld(event)
 	EpicMusicPlayer:CancelTimer(eventtimer,true)
 	eventtimer = EpicMusicPlayer:ScheduleTimer(function()
-		if not EpicMusicPlayer:OnZoneChanged() and EpicMusicPlayer.Playing and not db.usePlaySoundFile then
+		if EpicMusicPlayer.Playing and not db.usePlaySoundFile then
 			SetCVar("Sound_EnableMusic", 0);
 			EpicMusicPlayer:Play(currentsong)
 		end
 	end, 5)
-
-	EpicMusicPlayer:Debug("OnEnteringWorld")
 end
 
 -- patch 3.0.8  workaround
 function EpicMusicPlayer:OnPlayerAlive(event)
     if( UnitIsDeadOrGhost("Player") and EpicMusicPlayer.Playing and not db.usePlaySoundFile )then
 		SetCVar("Sound_EnableMusic", 0);
-
 		EpicMusicPlayer:CancelTimer(eventtimer,true)
-
 		eventtimer = EpicMusicPlayer:ScheduleTimer(function()
 			if(EpicMusicPlayer.Playing)then
 				EpicMusicPlayer:Play()
@@ -278,277 +217,16 @@ function EpicMusicPlayer:OnPlayerAlive(event)
 	end
 end
 
-function EpicMusicPlayer:OnPlayerLevelUp(level)
-	if level == 110 and db.maxLevelSong then
-		EpicMusicPlayer:SetVolume(1,"music")
-		if(EpicMusicPlayerGui)then
-			if(not EpicMusicPlayer.db.char.showgui)then
-				EpicMusicPlayer.db.char.showgui = true
-				EpicMusicPlayerGui:Toggle()
-			end
-		end
-		song = {
-			["WoW"] = true,
-			["Album"] = "ingame",
-			["Song"] = "Gratulations to level 100!!!",
-			["Name"] = "Sound\\Music\\ZoneMusic\\ArgentTournament\\AT_JoustEvent.mp3",
-			["Length"] = 123,
-			["Artist"] = "",
-		}
-		EpicMusicPlayer:Play(song)
-	end
-end
-
-function EpicMusicPlayer:CheckDate()
-	local datetime = date("%d%m%H%M")
-	if datetime == "01010000" then
-		EpicMusicPlayer:SetVolume(1,"music")
-		if(EpicMusicPlayerGui)then
-			if(not EpicMusicPlayer.db.char.showgui)then
-				EpicMusicPlayer.db.char.showgui = true
-				EpicMusicPlayerGui:Toggle()
-			end
-		end
-		song = {
-			["WoW"] = true,
-			["Album"] = "ingame",
-			["Song"] = "Happy New Year! ;)",
-			["Name"] = "Sound\\Music\\WorldEvents\\HordeFirepole.mp3",
-			["Length"] = 72,
-			["Artist"] = "",
-		}
-		EpicMusicPlayer:Play(song)
-	end
-end
-
-
-------------------------------------------------------------
--- private play/stop functions
-------------------------------------------------------------
-queue = nil
-local function play(file)
-	if db.usePlaySoundFile then
-		SetCVar("Sound_AmbienceVolume", db.volume)
-		SetCVar("Sound_EnableMusic", 0)
-		PlaySoundFile(file, "Ambience")
-	else
-		SetCVar("Sound_EnableMusic", 1)
-		SetCVar("Sound_MusicVolume", db.volume);
-		PlayMusic(file)
-	end
-end
-
-function EpicMusicPlayer:ScheduledPlay(song, stillPlaying)
-	self:CheckSongToMove()
-
-	if queue then
-		song = queue
-		queue = nil
-	end
-
-	if not song then -- no song given try to play last song again
-		song = self:GetSong(db.list,db.song)
-		if not song then -- song not found get next
-			song, db.list,db.song = self:GetNextSong(db.song,db.list,db.looplist)
-		end
-	end
-
-	self:CancelTimer(timer,true)
-
-	if not stillPlaying then
-		db.playedSeconds = 0
-	end
-
-	self:Debug("db.playedSeconds", db.playedSeconds)
-	self.Playing = true;
-	songlength = song.Length
-
-	self:Debug("stillPlaying",stillPlaying)
-	if not stillPlaying then
-		if(song.Album == "ingame" or song.WoW) then
-			-- ingame music do not add addon mp3 path
-			play(song.Name)
-		else
-			-- auto enable usePlaySoundFile for non WoW music until the PlayMusc() API is fixed
-			-- see: http://us.battle.net/forums/en/wow/topic/20747574714#1
-			if not db.usePlaySoundFile then
-				db.usePlaySoundFile = true
-				print(L["The option to use PlaySoundFile was auto enabled as the WoW API PlayMusic(file) is broken for non WoW music. See FAQ for details."])
-			end
-			play(musicdir..song.Name)
-		end
-	end
-	stillPlaying = nil
-
-	if(db.spam) then
-		DEFAULT_CHAT_FRAME:AddMessage("|TInterface\\AddOns\\EpicMusicPlayer\\media\\icon.tga:18|t |c"
-		..self:ToHex(db.artistcolour)..song.Artist.."|r - |c"..self:ToHex(db.titlecolour)..song.Song)
-	end
-
-
-	timer = self:ScheduleRepeatingTimer(function()
-		self:SendMessage("EMPUpdateTime", db.playedSeconds)
-		db.playedSeconds = db.playedSeconds + 1
-		if(db.playedSeconds >= songlength)then
-			if self.scheduledStop then
-					self:Debug("self.scheduledStop:",self.scheduledStop)
-					self:ScheduledStop()
-					return
-			end
-			if db.loopsong then
-				self:ScheduledPlay()
-			else
-				self:ScheduledPlayNext()
-			end
-		end
-	end, 1)
-
-	if(db.showmessage)then
-		self:UpdateMessageFrameText(song.Artist, song.Song)
-	end
-
-	currentsong = song
-	self:UpdateTooltip()
-	self:SendMessage("EMPUpdatePlay", song.Artist, song.Song, song.Length, song.Album)
-end
-
-function EpicMusicPlayer:ScheduledPlayNext()
-	self:Debug("scheduledPlayNext")
-	local self = EpicMusicPlayer;
-	local song
-
-	if(db.random) then
-        song, listIndex, songIndex = EpicMusicPlayer:GetNextSongFromHistory()
-		if song then
-			db.list = listIndex
-			db.song = songIndex
-			historyInUse = true
-		else
-			song, db.list,db.song = self:GetRandomSong(db.list)
-			EpicMusicPlayer:AddSongToHistory(song,db.list,db.song)
-			historyInUse = false
-		end
-	else
-		song, db.list,db.song = EpicMusicPlayer:GetNextSong(db.list,db.song,db.looplist)
-    end
-	self:ScheduledPlay(song)
-end
-
-------------------------------------------------------------
--- public play/stop functions
-------------------------------------------------------------
-
-function EpicMusicPlayer:ScheduledStop()
-	self.scheduledStop = false
-	EpicMusicPlayer:CheckSongToMove()
-	--self:CancelTimer(songtimer,true)
-	self:CancelTimer(timer,true)
-
-	local wowmusic
-	if(db.disablewowmusic) then
-		SetCVar("Sound_EnableMusic", 0);
-		wowmusic = L["Music off"]
-	else
-		SetCVar("Sound_EnableMusic", 1);
-		wowmusic = L["Game Music"]
-	end
-	SetCVar("Sound_AmbienceVolume", db.volume);
-	StopMusic()
-	self.Playing = false;
-	self:SendMessage("EMPUpdateStop", "", wowmusic, 0)
-end
-
-function EpicMusicPlayer:Stop()
-	if db.usePlaySoundFile then
-		SetCVar("Sound_AmbienceVolume", 0)
-		self.scheduledStop = true
-	else
-		self:ScheduledStop()
-	end
-end
-
-
-function EpicMusicPlayer:Play(song)
-	if db.usePlaySoundFile and self.Playing then
-		if song then
-		print("|TInterface\\AddOns\\EpicMusicPlayer\\media\\icon.tga:18|t "..L["Next"]..": |c"
-		..self:ToHex(db.artistcolour)..song.Artist.."|r - |c"..self:ToHex(db.titlecolour)..song.Song)
-		queue = song
-		end
-	else
-		self:ScheduledPlay(song)
-	end
-end
-
-function EpicMusicPlayer:PlayLast()
-    local song
-	--db.loopsong = false
-	EpicMusicPlayer:CheckSongToMove()
-	if not db.random then
-		song, db.list,db.song = EpicMusicPlayer:GetLastSong(db.list,db.song,db.looplist);
-		EpicMusicPlayer:Play(song)
-	else
-		song, listIndex, songIndex = EpicMusicPlayer:GetLastSongFromHistory()
-		if song then
-			db.list = listIndex
-			db.song = songIndex
-			historyInUse = true
-		else
-			historyInUse = false
-			EpicMusicPlayer:GetSong(db.list, db.song)
-		end
-		EpicMusicPlayer:Play(song);
-	end
-end
-
-function EpicMusicPlayer:PlaySong(list, song)
-	self:Debug(list, song, "self.Playing:", self.Playing, "db.usePlaySoundFile",db.usePlaySoundFile)
-	if db.usePlaySoundFile and self.Playing then
-		song = EpicMusicPlayer:GetSong(list,song)
-		if song then
-			print("|TInterface\\AddOns\\EpicMusicPlayer\\media\\icon.tga:18|t "..L["Next"]..": |c"
-			..self:ToHex(db.artistcolour)..song.Artist.."|r - |c"..self:ToHex(db.titlecolour)..song.Song)
-			queue = song
-			self.scheduledStop = false
-		end
-	else
-		historyInUse = false
-		db.list = list
-		db.song = song
-    EpicMusicPlayer:AddSongToHistory(EpicMusicPlayer:GetSong(list, song),list, song)
-		self:ScheduledPlay()
-	end
-end
-
-function EpicMusicPlayer:PlayNext()
-	--historyInUse = false
-	local self = EpicMusicPlayer;
-	local song
-	-- check random play
-    --if db.loopsong then
-	--	song = currentsong
-	if(db.random) then
-        song, listIndex, songIndex = EpicMusicPlayer:GetNextSongFromHistory()
-		if song then
-			db.list = listIndex
-			db.song = songIndex
-			historyInUse = true
-		else
-			song, db.list,db.song = self:GetRandomSong(db.list)
-			EpicMusicPlayer:AddSongToHistory(song,db.list,db.song)
-			historyInUse = false
-		end
-	else
-		song, db.list,db.song = EpicMusicPlayer:GetNextSong(db.list,db.song,db.looplist)
-    end
-	self:Play(song)
-end
-
 -- called on user clicked next song, do not call directly
 -- can't call PlayNext() directly because we need to set loopsong to false
 function EpicMusicPlayer:OnNextClick()
 	--db.loopsong = false
 	EpicMusicPlayer:PlayNext()
+end
+
+-- save the name of the last whisper
+function EpicMusicPlayer:OnWhisperInform()
+	EpicMusicPlayer.whisper = arg2
 end
 
 -- move song if one is marked
@@ -559,199 +237,13 @@ function EpicMusicPlayer:CheckSongToMove()
 	end
 end
 
---------------------------------------------------------
--- adjust the music volume
---------------------------------------------------------
-function EpicMusicPlayer:SetVolume(vol, voltype)
-    self:CancelTimer(voltimer,true)
-
-	if(voltype == "music")then
-		db.volume = vol;
-		if db.usePlaySoundFile and self.Playing then
-			SetCVar("Sound_AmbienceVolume", vol);
-		else
-			SetCVar("Sound_MusicVolume", vol);
-		end
-		self:SendMessage("EMPUpdateVolume", "music", vol)
-    else
-		SetCVar("Sound_SFXVolume", vol);
-		self:SendMessage("EMPUpdateVolume", "sound", vol)
-	end
-
-	voltimer = self:ScheduleTimer(EpicMusicPlayer.VolumeDone, 3)
-end
-
-function EpicMusicPlayer:VolumeDone()
-	EpicMusicPlayer:SendMessage("EMPUpdateVolume", "done")
-end
-
-------------------------------------------------------------------------------
--- send song info
--------------------------------------------------------------------------------
-function EpicMusicPlayer:SpamDefault()
-	self:Spam(db.defaultchannel)
-end
-
-local origSetItemRef = SetItemRef;
-SetItemRef = function(...)
-	local link, text, button = ...;
-	if type(text) == "string" and text.find(text,"epicmusicplayer") and not IsModifiedClick() then
-		return ShowSongTip(link);
-	end
-	return origSetItemRef(...);
-end
-
-function ShowSongTip(link)
-	local a, b, c, title, artist, album, length, path = strfind(link, "(.+):(.+):(.+):(.+):(.+):(.+)");
-
-	local lastsearch, listIndex = EpicMusicPlayer:GetListByName("lastsearch")
-	if lastsearch then
-		table.insert(lastsearch,
-		{
-			["Album"] = album,
-			["Song"] = title,
-			["Name"] = path,
-			["Length"] = tonumber(length),
-			["Artist"] =  artist,
-		})
-
-
-		db.song = #lastsearch
-		db.list = listIndex
-		EpicMusicPlayer:Play()
-	end
-end
-
-function EpicMusicPlayer:Spam(chat)
-	local song = EpicMusicPlayer:GetCurrentSong()
-	local title = song.Song
-	local artist = song.Artist
-	local album = song.Album
-	local text = ""
-
-	text = title
-	if(artist~="") then
-		text = artist.." - "..text
-	end
-	if(artist~="") then
-		text = text.." ("..album..")"
-	end
-	text = L["[~mymusic~] "]..text
-
-	if(chat == "WHISPER") then
-		if(self.whisper)then
-			target = self.whisper
-		else
-			return
-		end
-	end
-
-	if(chat == "TARGET") then
-		target = UnitName("target")
-		chat = "WHISPER"
-		if(not target) then
-			EpicMusicPlayer:Print(L["No Target"])
-			return
-		end
-	end
-
-	SendChatMessage(text,chat,nil,target)
-
-	if album == "ingame" and target then
-		--local a, b, mptext, title, artist, album, quality, genre = strfind(link, "(.+):(.+):(.+):(.+):(.+):(.+)");
-		local songlink = strjoin(":",title,artist,album,song.Length, song.Name)
-		EpicMusicPlayer:SendSearch(songlink, target)
-	else
-		if(db.link) then
-			local link = title.." "..artist
-			link  = string.gsub(link, " ", "+")
-			link = "http://www.youtube.com/results?search_query="..link.."&search_type=&aq=f"
-
-			SendChatMessage(link,chat,nil,target)
-		end
-    end
-end
-
 function EpicMusicPlayer:GetFonts()
 	return media:HashTable("font")
 end
 
 ------------------------------------------------------------------------------
--- osd display
--------------------------------------------------------------------------------
-function EpicMusicPlayer:UpdateMessageFrameText(artist,title)
-	if not messageframe then self:CreateMessageFrame() end
-	local c = db.artistcolour
-	messageframe:AddMessage(artist.."\n |c"..self:ToHex(db.titlecolour)..title, c.r,c.g,c.b, 53, 5);
-end
-
-function EpicMusicPlayer:CreateMessageFrame()
-	messageframe = CreateFrame("MessageFrame",nil,UIParent)
-	messageframe:SetFrameStrata("BACKGROUND")
-	messageframe:SetWidth(600)
-	messageframe:SetHeight(50)
-	messageframe:SetPoint("CENTER",0,300)
-	messageframe:Show()
-
-	local font = self:GetFont()
-	if font then
-		messageframe:SetFont(font, db.fontsize)
-	else
-		messageframe:SetFont(GameFontNormal:GetFont(),db.fontsize)
-	end
-
-	messageframe:SetShadowColor(0, 0, 0,0.8)
-	messageframe:SetShadowOffset(1, -1)
-end
-
-function EpicMusicPlayer:UpdateMessageFrame()
-	if(not messageframe)then
-			self:CreateMessageFrame()
-	end
-	local font = EpicMusicPlayer:GetFont()
-	if font then
-		messageframe:SetFont(font, db.fontsize)
-		if currentsong and currentsong.Artist then
-			EpicMusicPlayer:UpdateMessageFrameText(currentsong.Artist, currentsong.Song)
-		end
-	else
-		messageframe:SetFont(GameFontNormal:GetFont(),db.fontsize)
-	end
-end
-
-------------------------------------------------------------------------------
 -- functions used by modules
--------------------------------------------------------------------------------
-function EpicMusicPlayer:ToBestList()
-	local self = EpicMusicPlayer
-	if not self.Playing then
-		self:Print(L["Not playing."])
-		return
-	end
-	local list, listIndex = self:GetListByName(db.bestlist)
-	if listIndex then
-		--move the song
-		self:MoveCurrentSong(listIndex)
-	else
-		self:Print(L["Best list not found."].." "..L["Please set a favorites list."])
-	end
-end
-
-function EpicMusicPlayer:ToBadList()
-	local self = EpicMusicPlayer
-	if not self.Playing then
-		self:Print(L["Not playing."])
-		return
-	end
-	local list, listIndex = self:GetListByName(db.badlist)
-	if listIndex then
-		--move the song
-		self:MoveCurrentSong(listIndex)
-	else
-	self:Print(L["Bad list not found."].." "..L["Please set a bad songs list."])
-	end
-end
-
+------------------------------------------------------------------------------
 function EpicMusicPlayer:GetCurrentListIndex()
 	return db.list;
 end
@@ -807,7 +299,6 @@ function EpicMusicPlayer:MoveCurrentSong(newListIndex)
 			return false;
 		end
 
-		--todo localization
 		self:Print(L["Current will be moved on playing next song."])
 		movesong = true
 		self.movesongIndex = db.song
@@ -817,7 +308,6 @@ function EpicMusicPlayer:MoveCurrentSong(newListIndex)
 end
 
 function EpicMusicPlayer:ShowConfig()
-	--LibStub("AceConfigDialog-3.0"):Open("EpicMusicPlayer")
 	EpicMusicPlayer:ChatCommand()
 end
 
@@ -833,67 +323,9 @@ function EpicMusicPlayer:OnDisplayClick(parent, button)
 	elseif(IsControlKeyDown()) then
 		self[db.controlset.leftcontrol](self, parent)
 	else --no key pressed
-		local func = db.controlset[button]
+		local func = self.db.controlset[button]
 		self[func](self, parent)
 	end
-end
-
-function EpicMusicPlayer:DisplyScrollHandler(vector)
-		local vol
-		if(IsControlKeyDown()) then --adjust sound volume
-			vol = GetCVar("Sound_SFXVolume")
-
-			if(vector == 1) then --volume up
-			  if(IsAltKeyDown()) then -- fine tune
-				vol = vol +.01
-			  else
-				vol = vol +.1
-	          end
-
-			  if(vol > 1) then
-	              vol = 1
-	          end
-			else -- volume down
-	          if(IsAltKeyDown()) then -- fine tune
-				vol = vol -.01
-			  else
-				vol = vol -.1
-	          end
-			  if(vol < 0) then
-	              vol = 0
-	          end
-			end
-			EpicMusicPlayer:SetVolume(vol,"sound")
-
-		else --adjust music volume
-			if db.usePlaySoundFile and self.Playing then
-				vol = GetCVar("Sound_AmbienceVolume")
-			else
-				vol = GetCVar("Sound_MusicVolume")
-			end
-
-			if(vector == 1) then --volume up
-			  if(IsAltKeyDown()) then -- fine tune
-				vol = vol +.01
-			  else
-				vol = vol +.1
-	          end
-
-			  if(vol > 1) then
-	              vol = 1
-	          end
-			else -- volume down
-	          if(IsAltKeyDown()) then -- fine tune
-				vol = vol -.01
-			  else
-				vol = vol -.1
-	          end
-			  if(vol < 0) then
-	              vol = 0
-	          end
-			end
-			EpicMusicPlayer:SetVolume(vol,"music")
-		end
 end
 
 function EpicMusicPlayer:GetFont(fontname)
@@ -905,49 +337,3 @@ function EpicMusicPlayer:GetFont(fontname)
 	end
 	return font
 end
-
---r=0.83, g=0.22, b=0, a=1
---/dump ("%02x%02x%02x%02x"):format(1*255,0.83*255, 0.22*255, 0*255)
-function EpicMusicPlayer:ToHex(r,g,b)
-	if r and type(r) == "table" then
-		r,g,b = r.r, r.g, r.b
-	end
-	return ("%02x%02x%02x%02x"):format(1*255,r*255, g*255, b*255)
-end
-
-function EpicMusicPlayer:GetTimeSTring(seconds)
-    local min = seconds / 60
-		local sec = mod(seconds, 60)
-		if( sec < 10) then
-		    -- add zero
-        return string.format("%d:0%d", min, sec)
-    end
-		return string.format("%d:%d", min, sec)
-end
-
-local function Debug(...)
-	if(EpicMusicPlayer.db.char.debug)then
-	 	local s = "EMP Debug:"
-		for i=1,select("#", ...) do
-			local x = select(i, ...)
-			s = strjoin("  ",s,tostring(x))
-		end
-		DEFAULT_CHAT_FRAME:AddMessage(s)
-	end
-end
-
-function EpicMusicPlayer:Debug(...)
-	Debug(self, ...)
-end
-
--- key binding variables
-BINDING_HEADER_EPICMUSICPLAYER = "EpicMusicPlayer";
-BINDING_NAME_PLAYSTOP = L["Play/Stop"];
-BINDING_NAME_NEXT = L["Play Next Song"];
-BINDING_NAME_LAST = L["Play Last Song"];
-BINDING_NAME_TOGGLELIST = L["Show/Hide Playlist"];
-BINDING_NAME_MUTE = L["Toggle Mute"];
-BINDING_NAME_REMOVESONG = L["Remove Song"];
-BINDING_NAME_GUI = L["Show Controls and Options"];
---BINDING_NAME_BADLIST = L["Move song to bad songs list."];
---BINDING_NAME_BESTLIST = L["Move song to best songs list."];

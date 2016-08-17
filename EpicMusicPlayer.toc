@@ -29,6 +29,7 @@ libs\AceGUI-3.0-SharedMediaWidgets\widget.xml
 localization.lua
 
 core\core.lua
+core\volumeControl.lua
 core\scrolllist.lua
 core\playlistframe.lua
 core\options.lua
@@ -37,6 +38,12 @@ core\dropdown.lua
 core\send.lua
 core\listmanagement.lua
 #core\musicevent.lua
+core\player.lua
+core\util.lua
+core\easter.lua
+core\osd.lua
+core\chat.lua
+core\bindings.lua
 
 gui\gui.lua
 gui\skins.lua
@@ -48,4 +55,3 @@ modules\dancer\EpicMusicDancer.lua
 modules\gamemusic\BestofWoW.lua
 modules\gamemusic\EpicGameMusic.lua
 modules\gamemusic\Draenor.lua
-modules\gamemusic\Legion.lua

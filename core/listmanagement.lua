@@ -53,7 +53,7 @@ end
 
 -- check playlist - is there a playlist, with content ?
 function EpicMusicPlayer:CheckPlayList()
-	db = EpicMusicPlayer.db.profile
+	db = EpicMusicPlayer.db
 
 	EpicMusicPlayer:AddSavedPlayList()
 	if (table.getn(playlists) < 1) then

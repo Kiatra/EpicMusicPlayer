@@ -20,13 +20,13 @@ local function GetTipAnchor(frame)
 end
 
 function EpicMusicPlayer:ShowTooltip(anchor)
-	local db = EpicMusicPlayer.db.profile
+	local db = self.db
 	local song = EpicMusicPlayer:GetCurrentSong()
 	frame = anchor
 	GameTooltip:SetOwner(anchor, "ANCHOR_NONE")
 	GameTooltip:SetPoint(GetTipAnchor(frame))
 	--GameTooltip:SetPoint("TOPLEFT", anchor, "BOTTOMLEFT")
-	if(song)then		
+	if(song)then
 		GameTooltip:SetText("|c"..self:ToHex(db.artistcolour)..
 			song.Artist.."|r  |c"..self:ToHex(db.titlecolour)..EpicMusicPlayer:GetCurrentSongName())
 		local album = song.Album;
@@ -34,7 +34,7 @@ function EpicMusicPlayer:ShowTooltip(anchor)
 		else
 			GameTooltip:AddLine("|cffffffee"..L["Album"]..": "..album)
 		end
-		
+
 		GameTooltip:AddLine("|cffffffee"..L["List"]..": "..EpicMusicPlayer:GetCurrentListName())
 		GameTooltip:AddLine("|cffffffee"..L["Length"]..": "..EpicMusicPlayer:GetTimeSTring(song.Length))
 		GameTooltip:Show()
@@ -42,7 +42,7 @@ function EpicMusicPlayer:ShowTooltip(anchor)
 		GameTooltip:SetText(L["Stopped"], 1,1,1)
 		local controlset = db.controlset
 		local controlslist = EpicMusicPlayer.controlslist
-		if controlslist[controlset.left] then GameTooltip:AddLine(L["Left Click"].." - "..controlslist[controlset.left]) end	
+		if controlslist[controlset.left] then GameTooltip:AddLine(L["Left Click"].." - "..controlslist[controlset.left]) end
 		if controlslist[controlset.middle] then GameTooltip:AddLine(L["Middle Click"].." - "..controlslist[controlset.middle]) end
 		if controlslist[controlset.right] then GameTooltip:AddLine(L["Right Click"].." - "..controlslist[controlset.right]) end
 		GameTooltip:Show()

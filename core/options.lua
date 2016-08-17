@@ -68,7 +68,7 @@ local empoptions = {
   		      desc = L["Remove the playing song from list"],
   		      func = function()
   						if(EpicMusicPlayer.Playing)then
-  							EpicMusicPlayer:RemoveSong(EpicMusicPlayer.db.profile.list,EpicMusicPlayer.db.profile.song);
+  							EpicMusicPlayer:RemoveSong(EpicMusicPlayer.db.list,EpicMusicPlayer.db.song);
   						else
   							EpicMusicPlayer:Print(L["Not playing."])
   						end
@@ -92,14 +92,14 @@ local empoptions = {
 							desc = L["Artist color"],
 							hasAlpha = false,
 							get = function(info)
-								local c = EpicMusicPlayer.db.profile.artistcolour
+								local c = EpicMusicPlayer.db.artistcolour
 								return c.r, c.g, c.b, c.a
 							end,
 							set = function(info, r, g, b, a)
-								local c = EpicMusicPlayer.db.profile.artistcolour
+								local c = EpicMusicPlayer.db.artistcolour
 								c.r, c.g ,c.b ,c.a = r, g, b, a
-								if(EpicMusicPlayer.db.profile.useartistcolour)then
-									local c = EpicMusicPlayer.db.profile.buttoncolour
+								if(EpicMusicPlayer.db.useartistcolour)then
+									local c = EpicMusicPlayer.db.buttoncolour
 									c.r, c.g ,c.b ,c.a = r, g, b, a
 								end
 								--update gui
@@ -114,11 +114,11 @@ local empoptions = {
 							desc = L["Title color"],
 							hasAlpha = false,
 							get = function(info)
-								local c = EpicMusicPlayer.db.profile.titlecolour
+								local c = EpicMusicPlayer.db.titlecolour
 								return c.r, c.g, c.b, c.a
 							end,
 							set = function(info, r, g, b, a)
-								local c = EpicMusicPlayer.db.profile.titlecolour
+								local c = EpicMusicPlayer.db.titlecolour
 								c.r, c.g ,c.b ,c.a = r, g, b, a
 								if(_G.EpicMusicPlayerGui)then
 									_G.EpicMusicPlayerGui:UpdateFrame(EpicMusicPlayer)
@@ -133,10 +133,10 @@ local empoptions = {
 							name = L["Font"],
 							desc = L["Font"],
 							get = function()
-								return EpicMusicPlayer.db.profile.font
+								return EpicMusicPlayer.db.font
 							end,
 							set = function(info, value)
-								EpicMusicPlayer.db.profile.font = value
+								EpicMusicPlayer.db.font = value
 								if(_G.EpicMusicPlayerGui)then
 									_G.EpicMusicPlayerGui:UpdateFrame(EpicMusicPlayer)
 								end
@@ -151,10 +151,10 @@ local empoptions = {
 							name = L["Playlist font"],
 							desc = L["Change the playlist font. Requires relog to take effect."],
 							get = function()
-								return EpicMusicPlayer.db.profile.playlistfont
+								return EpicMusicPlayer.db.playlistfont
 							end,
 							set = function(info, value)
-								EpicMusicPlayer.db.profile.playlistfont = value
+								EpicMusicPlayer.db.playlistfont = value
 							end,
 						},
 					},
@@ -176,10 +176,10 @@ local empoptions = {
 							name = L["Left Click"],
 							desc = L["Left Click"],
 							get = function()
-								return EpicMusicPlayer.db.profile.controlset.LeftButton
+								return EpicMusicPlayer.db.controlset.LeftButton
 							end,
 							set = function(info, value)
-								EpicMusicPlayer.db.profile.controlset.LeftButton = value
+								EpicMusicPlayer.db.controlset.LeftButton = value
 							end,
 						},
 						right = {
@@ -189,10 +189,10 @@ local empoptions = {
 							name = L["Right Click"],
 							desc = L["Right Click"],
 							get = function()
-								return EpicMusicPlayer.db.profile.controlset.RightButton
+								return EpicMusicPlayer.db.controlset.RightButton
 							end,
 							set = function(info, value)
-								EpicMusicPlayer.db.profile.controlset.RightButton = value
+								EpicMusicPlayer.db.controlset.RightButton = value
 							end,
 						},
 						middle = {
@@ -202,10 +202,10 @@ local empoptions = {
 							name = L["Middle Click"],
 							desc = L["Middle Click"],
 							get = function()
-								return EpicMusicPlayer.db.profile.controlset.MiddleButton
+								return EpicMusicPlayer.db.controlset.MiddleButton
 							end,
 							set = function(info, value)
-								EpicMusicPlayer.db.profile.controlset.MiddleButton = value
+								EpicMusicPlayer.db.controlset.MiddleButton = value
 							end,
 						},
 						button4 = {
@@ -215,10 +215,10 @@ local empoptions = {
 							name = L["Button4"],
 							desc = L["Button4"],
 							get = function()
-								return EpicMusicPlayer.db.profile.controlset.Button4
+								return EpicMusicPlayer.db.controlset.Button4
 							end,
 							set = function(info, value)
-								EpicMusicPlayer.db.profile.controlset.Button4 = value
+								EpicMusicPlayer.db.controlset.Button4 = value
 							end,
 						},
 						button5 = {
@@ -228,10 +228,10 @@ local empoptions = {
 							name = L["Button5"],
 							desc = L["Button5"],
 							get = function()
-								return EpicMusicPlayer.db.profile.controlset.Button5
+								return EpicMusicPlayer.db.controlset.Button5
 							end,
 							set = function(info, value)
-								EpicMusicPlayer.db.profile.controlset.Button5 = value
+								EpicMusicPlayer.db.controlset.Button5 = value
 							end,
 						},
 						leftalt = {
@@ -241,10 +241,10 @@ local empoptions = {
 							name = L["Alt+Click"],
 							desc = "",
 							get = function()
-								return EpicMusicPlayer.db.profile.controlset.leftalt
+								return EpicMusicPlayer.db.controlset.leftalt
 							end,
 							set = function(info, value)
-								EpicMusicPlayer.db.profile.controlset.leftalt = value
+								EpicMusicPlayer.db.controlset.leftalt = value
 							end,
 						},
 						leftshift = {
@@ -254,10 +254,10 @@ local empoptions = {
 							name = L["Shift+Click"],
 							desc = "",
 							get = function()
-								return EpicMusicPlayer.db.profile.controlset.leftshift
+								return EpicMusicPlayer.db.controlset.leftshift
 							end,
 							set = function(info, value)
-								EpicMusicPlayer.db.profile.controlset.leftshift = value
+								EpicMusicPlayer.db.controlset.leftshift = value
 							end,
 						},
 						leftcontrol = {
@@ -267,10 +267,10 @@ local empoptions = {
 							name = L["Control+Click"],
 							desc = "",
 							get = function()
-								return EpicMusicPlayer.db.profile.controlset.leftcontrol
+								return EpicMusicPlayer.db.controlset.leftcontrol
 							end,
 							set = function(info, value)
-								EpicMusicPlayer.db.profile.controlset.leftcontrol = value
+								EpicMusicPlayer.db.controlset.leftcontrol = value
 							end,
 						},
 						leftaltcontrol = {
@@ -280,10 +280,10 @@ local empoptions = {
 							name = L["Alt+Control+Click"],
 							desc = "",
 							get = function()
-								return EpicMusicPlayer.db.profile.controlset.leftaltcontrol
+								return EpicMusicPlayer.db.controlset.leftaltcontrol
 							end,
 							set = function(info, value)
-								EpicMusicPlayer.db.profile.controlset.leftaltcontrol = value
+								EpicMusicPlayer.db.controlset.leftaltcontrol = value
 							end,
 						},
 					},
@@ -347,10 +347,10 @@ local empoptions = {
 					name = L["Max Level Song"],
 		      desc = L["Play song when reaching maximum level"],
 		      get = function()
-							return EpicMusicPlayer.db.profile.maxLevelSong
+							return EpicMusicPlayer.db.maxLevelSong
 					end,
 		      set = function(info, value)
-							EpicMusicPlayer.db.profile.maxLevelSong = value
+							EpicMusicPlayer.db.maxLevelSong = value
 					end,
 		    },
 				updateinfo = {
@@ -359,10 +359,10 @@ local empoptions = {
 					name = L["Show Update Info"],
 		      desc = L["Show Update Info"],
 		      get = function()
-							return EpicMusicPlayer.db.profile.showUpdateInfo
+							return EpicMusicPlayer.db.showUpdateInfo
 						end,
 		      set = function(info, value)
-							EpicMusicPlayer.db.profile.showUpdateInfo = value
+							EpicMusicPlayer.db.showUpdateInfo = value
 						end,
 		    },
 		    spam = {
@@ -389,10 +389,10 @@ local empoptions = {
 		      name = L["Use PlaySoundFile API"],
 		      desc = L["Use the PlaySoundFile() API instead of PlayMusic. As music/sounds played via PlaySoundFile() can not be stopped the stop button will act as mute."],
           get = function(info, value)
-						return EpicMusicPlayer.db.profile.usePlaySoundFile
+						return EpicMusicPlayer.db.usePlaySoundFile
 		      end,
 		      set = function(info, value)
-						EpicMusicPlayer.db.profile.usePlaySoundFile = value
+						EpicMusicPlayer.db.usePlaySoundFile = value
 		      end,
 				},
 				link = {
@@ -423,10 +423,10 @@ local empoptions = {
 		      name = "Debug",
 		      desc = "Debug",
 		      get = function(info, value)
-						return EpicMusicPlayer.db.char.debug
+						return EpicMusicPlayer.dataBase.char.debug
 		      end,
 		      set = function(info, value)
-						EpicMusicPlayer.db.char.debug = value
+						EpicMusicPlayer.dataBase.char.debug = value
 		      end,
 				},
 				--@end-debug@
@@ -450,7 +450,7 @@ local empoptions = {
 					order = 2,
           name = L["Shuffle Cross Playlist"],
           desc = L["Shuffle Cross Playlist"],
-          get = function() return EpicMusicPlayer.db.profile.shuffleAll end,
+          get = function() return EpicMusicPlayer.db.shuffleAll end,
           set = function() EpicMusicPlayer:ToggleRandom(true) end,
 		    },
 				looplist = {
@@ -467,10 +467,10 @@ local empoptions = {
 		            name = L["Loop Song"],
 		            desc = L["Play the current song again and again and again...until your head will explode. A click on next song will disable this."],
 		            get = function()
-					  return EpicMusicPlayer.db.profile.loopsong
+					  return EpicMusicPlayer.db.loopsong
 					end,
 					set = function(info, v)
-					  EpicMusicPlayer.db.profile.loopsong = not EpicMusicPlayer.db.profile.loopsong
+					  EpicMusicPlayer.db.loopsong = not EpicMusicPlayer.db.loopsong
 					end,
 				},
 				shuffleALL = {
@@ -479,9 +479,9 @@ local empoptions = {
 		      name = L["Hide Artist in Playlist"],
 		      desc = L["Hide Artist in Playlist"],
 		      get = function()
-						return EpicMusicPlayer.db.profile.playlistHideArtist
+						return EpicMusicPlayer.db.playlistHideArtist
 		      end,
-					set = function() EpicMusicPlayer.db.profile.playlistHideArtist = not EpicMusicPlayer.db.profile.playlistHideArtist
+					set = function() EpicMusicPlayer.db.playlistHideArtist = not EpicMusicPlayer.db.playlistHideArtist
 						EpicMusicPlayer:PlayListGuiUpdate()
 					end,
 		    },
@@ -491,9 +491,9 @@ local empoptions = {
 		      name = L["Add Game Music"],
 		      desc = L["Adds playlists with game music (reload required)."],
 		      get = function()
-						return EpicMusicPlayer.db.profile.addGameMusic
+						return EpicMusicPlayer.db.addGameMusic
 		            end,
-					set = function() EpicMusicPlayer.db.profile.addGameMusic = not EpicMusicPlayer.db.profile.addGameMusic
+					set = function() EpicMusicPlayer.db.addGameMusic = not EpicMusicPlayer.db.addGameMusic
 						EpicMusicPlayer:PlayListGuiUpdate()
 					end,
 		        },
@@ -505,10 +505,10 @@ local empoptions = {
 					name = L["Frame strata"],
 					desc = L["Frame strata"],
 					get = function()
-						return EpicMusicPlayer.db.profile.liststrata
+						return EpicMusicPlayer.db.liststrata
 					end,
 					set = function(info, value)
-						EpicMusicPlayer.db.profile.liststrata = value
+						EpicMusicPlayer.db.liststrata = value
 						EpicMusicPlayerGui.frames.player:SetFrameStrata(value)
 					end,
 				},
@@ -521,10 +521,10 @@ local empoptions = {
 					min = 0.1,
 					max = 2,
 					get = function()
-						return EpicMusicPlayer.db.profile.playlistScale
+						return EpicMusicPlayer.db.playlistScale
 					end,
 		      set =  function(info,val)
-						EpicMusicPlayer.db.profile.playlistScale = val
+						EpicMusicPlayer.db.playlistScale = val
 						EpicMusicPlayer:SetPlaylistScale(val)
 					end,
 				},
@@ -663,7 +663,7 @@ function EpicMusicPlayer:TogglePlayerGui()
 	else
 		EpicMusicPlayer:Print(L["GUI not found"])
 	end
-	EpicMusicPlayer.db.char.showgui = not EpicMusicPlayer.db.char.showgui
+	EpicMusicPlayer.dataBase.char.showgui = not EpicMusicPlayer.dataBase.char.showgui
 
 end
 
@@ -682,15 +682,15 @@ function EpicMusicPlayer:ToggleMinimap()
 	else
 		EpicMusicPlayer:Print(L["GUI not found"])
 	end
-	EpicMusicPlayer.db.profile.minimapbutton = not EpicMusicPlayer.db.profile.minimapbutton
+	EpicMusicPlayer.db.minimapbutton = not EpicMusicPlayer.db.minimapbutton
 end
 
 function EpicMusicPlayer:GetDefaultChannel()
-    return EpicMusicPlayer.db.profile.defaultchannel
+    return EpicMusicPlayer.db.defaultchannel
 end
 
 function EpicMusicPlayer:SetDefaultChannel(info,value)
-    EpicMusicPlayer.db.profile.defaultchannel = value
+    EpicMusicPlayer.db.defaultchannel = value
 end
 
 function EpicMusicPlayer:IsPlay()
@@ -706,104 +706,89 @@ function EpicMusicPlayer:TogglePlay()
 end
 
 function EpicMusicPlayer:IsShowMessage()
-    return EpicMusicPlayer.db.profile.showmessage
+    return EpicMusicPlayer.db.showmessage
 end
 
 function EpicMusicPlayer:ToggleShowMessage()
-    EpicMusicPlayer.db.profile.showmessage = not EpicMusicPlayer.db.profile.showmessage
+    EpicMusicPlayer.db.showmessage = not EpicMusicPlayer.db.showmessage
 end
 
 function EpicMusicPlayer:IsMute()
     return self.mute
 end
 
-local lastvol = 0
-function EpicMusicPlayer:ToggleMute()
-	self = EpicMusicPlayer
-	if(self.db.profile.volume == 0) then --unmute
-		if(lastvol == 0) then
-			EpicMusicPlayer:SetVolume(1,"music")
-		else
-			EpicMusicPlayer:SetVolume(lastvol,"music")
-		end
-    else --mute
-		lastvol = self.db.profile.volume
-		EpicMusicPlayer:SetVolume(0,"music")
-	end
-end
-
 function EpicMusicPlayer:IsSpam()
-	return self.db.profile.spam
+	return self.db.spam
 end
 
 function EpicMusicPlayer:IsScrollGuiText()
-	return EpicMusicPlayer.db.profile.gui.scroll
+	return EpicMusicPlayer.db.gui.scroll
 end
 
 function EpicMusicPlayer:ToggleScrollGuiText()
-	EpicMusicPlayer.db.profile.gui.scroll = not EpicMusicPlayer.db.profile.gui.scroll
+	EpicMusicPlayer.db.gui.scroll = not EpicMusicPlayer.db.gui.scroll
 end
 
 function EpicMusicPlayer:ToggleSpam()
-    EpicMusicPlayer.db.profile.spam = not self.db.profile.spam
+    EpicMusicPlayer.db.spam = not self.db.spam
 end
 
 function EpicMusicPlayer:IsLink()
-	return self.db.profile.link
+	return self.db.link
 end
 
 function EpicMusicPlayer:ToggleLink()
-    EpicMusicPlayer.db.profile.link = not self.db.profile.link
+    EpicMusicPlayer.db.link = not self.db.link
 end
 
 
 function EpicMusicPlayer:IsLoopList()
-	return self.db.profile.looplist
+	return self.db.looplist
 end
 
 function EpicMusicPlayer:ToggleLoopList()
-    EpicMusicPlayer.db.profile.looplist = not self.db.profile.looplist
+    EpicMusicPlayer.db.looplist = not self.db.looplist
 end
 
 function EpicMusicPlayer:IsDisWoWMusic()
-	return EpicMusicPlayer.db.profile.disablewowmusic
+	return EpicMusicPlayer.db.disablewowmusic
 end
 
 function EpicMusicPlayer:ToggleDisWoWMusic()
 	if(not self.Playing)then
-		if(self.db.profile.disablewowmusic) then
+		if(self.db.disablewowmusic) then
 			_G.SetCVar("Sound_EnableMusic", 1);
 		else
 			_G.SetCVar("Sound_EnableMusic", 0);
 		end
 	end
-	self.db.profile.disablewowmusic = not self.db.profile.disablewowmusic
+	self.db.disablewowmusic = not self.db.disablewowmusic
 	self:Stop()
 end
 
 function EpicMusicPlayer:IsRandom()
-    return EpicMusicPlayer.db.profile.random
+    return EpicMusicPlayer.db.random
 end
 
 function EpicMusicPlayer:ToggleRandom(all)
     if all then
-		EpicMusicPlayer.db.profile.shuffleAll = not EpicMusicPlayer.db.profile.shuffleAll
-		if EpicMusicPlayer.db.profile.shuffleAll then
-			EpicMusicPlayer.db.profile.random = true
+		EpicMusicPlayer.db.shuffleAll = not EpicMusicPlayer.db.shuffleAll
+		if EpicMusicPlayer.db.shuffleAll then
+			EpicMusicPlayer.db.random = true
 		end
 	else
-		EpicMusicPlayer.db.profile.random = not EpicMusicPlayer.db.profile.random
+		EpicMusicPlayer.db.random = not EpicMusicPlayer.db.random
 	end
-	EpicMusicPlayer:SendMessage("EMPUpdateRandom",EpicMusicPlayer.db.profile.random)
+	EpicMusicPlayer:SendMessage("EMPUpdateRandom",EpicMusicPlayer.db.random)
 end
 
 
 function EpicMusicPlayer:IsAuto()
-    return self.db.profile.auto
+    return self.db.auto
 end
 
 function EpicMusicPlayer:ToggleAuto()
-    self.db.profile.auto = not self.db.profile.auto
+    self.db.auto = not self.db.auto
 end
 
 function EpicMusicPlayer:ShowPlaylist()
