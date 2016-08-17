@@ -53,7 +53,7 @@ function EpicMusicPlayer:OnInitialize()
 				leftcontrol = "SpamDefault",
 				leftshift = "PlayLast",
 			},
-			artistcolour = {r=0.83, g=0.22, b=0, a=1},
+			artistcolour = {r=1, g=0.82, b=0, a=1},
 			titlecolour = {r=1,g=1,b=1,a=1},
 			backcolour = {r=1,g=1,b=1,a=1},
 			bordercolour = {r=1,g=1,b=1,a=0.28},
