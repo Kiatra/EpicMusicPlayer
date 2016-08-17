@@ -353,18 +353,6 @@ local empoptions = {
 							EpicMusicPlayer.db.maxLevelSong = value
 					end,
 		    },
-				updateinfo = {
-		            type = 'toggle',
-					order = 6,
-					name = L["Show Update Info"],
-		      desc = L["Show Update Info"],
-		      get = function()
-							return EpicMusicPlayer.db.showUpdateInfo
-						end,
-		      set = function(info, value)
-							EpicMusicPlayer.db.showUpdateInfo = value
-						end,
-		    },
 		    spam = {
 		      type = 'toggle',
 					order = 7,
@@ -415,7 +403,7 @@ local empoptions = {
 						EpicMusicPlayer:Print("Playing Test Song, do you hear the song: \"Power Of The Horde\"?")
 		      end,
 				},
-				--@debug@
+				--[===[@debug@
 				debug = {
 		            type = 'toggle',
 					--width = "half",
@@ -429,7 +417,7 @@ local empoptions = {
 						EpicMusicPlayer.dataBase.char.debug = value
 		      end,
 				},
-				--@end-debug@
+				--@end-debug@]===]
 			}
 		},
 		list={

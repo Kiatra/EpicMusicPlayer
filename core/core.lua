@@ -26,11 +26,10 @@ function EpicMusicPlayer:OnInitialize()
 		profile = {
 			volume = 1,
 			oldversion = "",
-			spam = trume,
+			spam = true,
 			song = 2,
 			list = 1,
 			skin = "quest",
-			showmessage = true,
 			defaultchannel = "PARTY",
 			playlistPoint = "CENTER",
 			playlistOffx = 0,
