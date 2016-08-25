@@ -37,10 +37,12 @@ function EpicMusicPlayer:ForceMusicVolume(volume)
 	else
 		SetCVar("Sound_EnableMusic", 1)
 	end
+	EpicMusicPlayer:Debug("ForceMusicVolume", "volume:", volume)
 	self:SetVolume(volume or 1, self:GetMusicVolumeCVar())
 end
 
 function EpicMusicPlayer:RestoreMusic()
+	EpicMusicPlayer:Debug("RestoreMusic", "self.disablewowmusic:", self.disablewowmusic)
 	if(self.disablewowmusic) then
 		SetCVar("Sound_EnableMusic", 0);
 	else

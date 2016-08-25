@@ -59,3 +59,4 @@ modules\dancer\EpicMusicDancer.lua
 modules\gamemusic\BestofWoW.lua
 modules\gamemusic\EpicGameMusic.lua
 modules\gamemusic\Draenor.lua
+modules\gamemusic\Legion.lua

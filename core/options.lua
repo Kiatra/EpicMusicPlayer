@@ -531,8 +531,8 @@ local empoptions = {
 		      get = GetZoneText,
 					set = function(info, value)
 						local name = value
-						if not db.eventZones.name then
-							db.eventZones[name] = {}
+						if not EpicMusicPlayer.db.eventZones.name then
+							EpicMusicPlayer.db.eventZones[name] = {}
 						end
 						--EpicMusicPlayer.eventZones.name =
 						EpicMusicPlayer:AddEventOptions(name)
@@ -544,10 +544,10 @@ local empoptions = {
 			    name = L["Enable Events"],
 			    desc = L["Enable Events"],
 			    get = function()
-						return db.enableEvents
+						return EpicMusicPlayer.db.enableEvents
 			        end,
 					set = function()
-					  db.enableEvents = not db.enableEvents
+					  db.enableEvents = not EpicMusicPlayer.db.enableEvents
 					  EpicMusicPlayer:OnZoneChanged()
 					end,
 				},

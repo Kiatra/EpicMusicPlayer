@@ -77,6 +77,7 @@ function EpicMusicPlayer:OnInitialize()
 
 	db = self.dataBase.profile
 	self.db = db
+	self:SetOptionDB(db)
 
 	self:RegisterChatCommand("emp", "ChatCommand")
   self:RegisterChatCommand("epicmusicplayer", "ChatCommand")
