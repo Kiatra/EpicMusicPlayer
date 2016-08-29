@@ -12,7 +12,7 @@ local db
 function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
 	EpicMusicPlayer:HideTooltip()
 	--GameTooltip:Hide();
-	local db = EpicMusicPlayer.db.profile
+	local db = EpicMusicPlayer.db
 	--local self = EpicMusicPlayer
 	local dropdown = self.dropdown
 	if not dropdown then
@@ -91,7 +91,7 @@ end
 function EpicMusicPlayer:OpenListMenu(frame, listIndex)
 	EpicMusicPlayer:HideTooltip()
 	--GameTooltip:Hide();
-	local db = EpicMusicPlayer.db.profile
+	local db = EpicMusicPlayer.db
 	--local self = EpicMusicPlayer
 	local dropdown = self.dropdown
 	if not dropdown then

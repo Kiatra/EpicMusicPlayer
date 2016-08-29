@@ -79,11 +79,17 @@ function EpicMusicPlayer:OnInitialize()
 	self.db = db
 	self:SetOptionDB(db)
 
+	--fix previous bug
+	if type(db.song) == "table" then
+		db.song = 1
+	end
+
 	self:RegisterChatCommand("emp", "ChatCommand")
   self:RegisterChatCommand("epicmusicplayer", "ChatCommand")
 
 	self.IsSearching = false
 	self.UpdateInterval = 1
+	self.playing = false
 
 	self:UpdateListnames()
 

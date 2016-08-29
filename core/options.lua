@@ -403,7 +403,7 @@ local empoptions = {
 						EpicMusicPlayer:Print("Playing Test Song, do you hear the song: \"Power Of The Horde\"?")
 		      end,
 				},
-				--[===[@debug@
+				--@debug@
 				debug = {
 		            type = 'toggle',
 					--width = "half",
@@ -417,7 +417,7 @@ local empoptions = {
 						EpicMusicPlayer.dataBase.char.debug = value
 		      end,
 				},
-				--@end-debug@]===]
+				--@end-debug@
 			}
 		},
 		list={
