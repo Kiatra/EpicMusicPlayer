@@ -1,6 +1,6 @@
 ## Interface: 70000
 ## Title: EpicMusicPlayer
-## Notes: Mp3Player
+## Notes: Browse and play WoW game music
 ## Author: yess
 ## SavedVariables: EpicMusicPlayer_PlayList, EpicMusicPlayerDB, EpicMusicPlayerBrokerDB, EpicMusicDancerDB
 ## OptionalDeps: Ace3
@@ -53,8 +53,9 @@ gui\gui.lua
 gui\skins.lua
 playlistcreator\CustomMusic.lua
 
-modules\boker\LibDataBroker-1.1.lua
-modules\boker\empbroker.lua
+
+modules\broker\LibDataBroker-1.1.lua
+modules\broker\empbroker.lua
 modules\dancer\EpicMusicDancer.lua
 modules\gamemusic\BestofWoW.lua
 modules\gamemusic\EpicGameMusic.lua

@@ -10,17 +10,22 @@ local musicdir = "MyMusic\\" -- path to the music :)
 local function play(self, file)
 	self:ForceMusicVolume(self.db.volume)
 	if self.db.usePlaySoundFile then
-		PlaySoundFile(file, "Ambience")
+		if self.soundHandle then StopSound(self.soundHandle) end
+		local willplay, soundHandle = PlaySoundFile(file, "Ambience")
+		EpicMusicPlayer:Debug(willplay,soundHandle)
+		self.soundHandle = soundHandle
+		--_, self.musicHandle = PlaySound(file, "Ambience", 1)
 	else
 		PlayMusic(file)
 	end
 end
 
-function EpicMusicPlayer:ScheduledPlay(song, stillPlaying)
+------------------------------------------------------------
+-- public play/stop functions
+------------------------------------------------------------
+function EpicMusicPlayer:Play(song, stillPlaying)
+	self:Debug("Play")
 	self:CheckSongToMove()
-
-	song = queue or song
-	queue = nil
 
 	if not song then -- no song given try to play last song again
 		song = self:GetSong(self.db.list,self.db.song)
@@ -55,8 +60,6 @@ function EpicMusicPlayer:ScheduledPlay(song, stillPlaying)
 	end
 	stillPlaying = nil
 
-
-
 	timer = self:ScheduleRepeatingTimer(function()
 		self:SendMessage("EMPUpdateTime", self.db.playedSeconds)
 		self.db.playedSeconds = self.db.playedSeconds + 1
@@ -67,9 +70,9 @@ function EpicMusicPlayer:ScheduledPlay(song, stillPlaying)
 					return
 			end
 			if self.db.loopsong then
-				self:ScheduledPlay()
+				self:Play()
 			else
-				self:ScheduledPlayNext()
+				self:PlayNext()
 			end
 		end
 	end, 1)
@@ -84,8 +87,8 @@ function EpicMusicPlayer:ScheduledPlay(song, stillPlaying)
 	self:SendMessage("EMPUpdatePlay", song.Artist, song.Song, song.Length, song.Album)
 end
 
-function EpicMusicPlayer:ScheduledPlayNext()
-	self:Debug("scheduledPlayNext")
+function EpicMusicPlayer:PlayNext()
+	self:Debug("PlayNext")
 	local self = EpicMusicPlayer;
 	local song
 
@@ -103,45 +106,22 @@ function EpicMusicPlayer:ScheduledPlayNext()
 	else
 		song, self.db.list,self.db.song = EpicMusicPlayer:GetNextSong(self.db.list,self.db.song,self.db.looplist)
     end
-	self:ScheduledPlay(song)
+	self:Play(song)
 end
 
-function EpicMusicPlayer:ScheduledStop()
-	self.scheduledStop = false
+function EpicMusicPlayer:Stop()
 	EpicMusicPlayer:CheckSongToMove()
 	self:CancelTimer(timer,true)
 	local text = self.db.disablewowmusic and L["Music off"] or  L["Game Music"]
 	self:RestoreSoundVolume()
 	self:RestoreMusic()
-	StopMusic()
+	if self.db.usePlaySoundFile and self.soundHandle then
+		StopSound(self.soundHandle)
+	else
+		StopMusic()
+	end
 	self.Playing = false;
 	self:SendMessage("EMPUpdateStop", "", text, 0)
-end
-------------------------------------------------------------
--- public play/stop functions
-------------------------------------------------------------
-
-function EpicMusicPlayer:Stop()
-	self:RestoreMusic()
-	if self.db.usePlaySoundFile then
-		self:Mute()
-		self.scheduledStop = true
-	else
-		self:ScheduledStop()
-	end
-end
-
-
-function EpicMusicPlayer:Play(song)
-	if self.db.usePlaySoundFile and self.Playing then
-		if song then
-		print("|TInterface\\AddOns\\EpicMusicPlayer\\media\\icon.tga:18|t "..L["Next"]..": |c"
-		..self:ToHex(self.db.artistcolour)..song.Artist.."|r - |c"..self:ToHex(self.db.titlecolour)..song.Song)
-		queue = song
-		end
-	else
-		self:ScheduledPlay(song)
-	end
 end
 
 function EpicMusicPlayer:PlayLast()
@@ -166,42 +146,10 @@ function EpicMusicPlayer:PlayLast()
 end
 
 function EpicMusicPlayer:PlaySong(list, song)
-	--self:Debug(list, song, "self.Playing:", self.Playing, "self.db.usePlaySoundFile",self.db.usePlaySoundFile)
-	if self.db.usePlaySoundFile and self.Playing then
-		song = EpicMusicPlayer:GetSong(list,song)
-		if song then
-			print("|TInterface\\AddOns\\EpicMusicPlayer\\media\\icon.tga:18|t "..L["Next"]..": |c"
-			..self:ToHex(self.db.artistcolour)..song.Artist.."|r - |c"..self:ToHex(self.db.titlecolour)..song.Song)
-			queue = song
-			self.db.list = list
-			self.db.song = song
-			self.scheduledStop = false
-		end
-	else
 		historyInUse = false
 		self.db.list = list
 		self.db.song = song
     EpicMusicPlayer:AddSongToHistory(EpicMusicPlayer:GetSong(list, song),list, song)
-		self:ScheduledPlay()
-	end
-end
-
-function EpicMusicPlayer:PlayNext()
-	local self = EpicMusicPlayer;
-	local song
-	if(self.db.random) then
-        song, listIndex, songIndex = EpicMusicPlayer:GetNextSongFromHistory()
-		if song then
-			self.db.list = listIndex
-			self.db.song = songIndex
-			historyInUse = true
-		else
-			song, self.db.list,self.db.song = self:GetRandomSong(self.db.list)
-			EpicMusicPlayer:AddSongToHistory(song,self.db.list,self.db.song)
-			historyInUse = false
-		end
-	else
-		song, self.db.list,self.db.song = EpicMusicPlayer:GetNextSong(self.db.list,self.db.song,self.db.looplist)
-    end
-	self:Play(song)
+		self:Play()
+	--end
 end

@@ -1,1 +1,1 @@
-This alpha version does not include the EpicListCreator. Download the latest release version.
+The EpicListCreator has been moved into a spereate add-on: https://wow.curseforge.com/addons/epicmusicplayer_mp3/files/

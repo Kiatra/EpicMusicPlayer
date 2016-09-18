@@ -119,8 +119,6 @@ function EpicMusicPlayer:OnEnable(first)
   self:RegisterEvent("ZONE_CHANGED_NEW_AREA", EpicMusicPlayer.OnZoneChangedNewArea)
 	self:RegisterEvent("PLAYER_ALIVE", EpicMusicPlayer.OnPlayerAlive)
 	self:RegisterEvent("PLAYER_LEVEL_UP", EpicMusicPlayer.OnPlayerLevelUp)
-	self:RegisterEvent("PLAYER_LEAVING_WORLD", EpicMusicPlayer.OnLeavingWorld)
-	self:RegisterEvent("COMMENTATOR_ENTER_WORLD", EpicMusicPlayer.OnCommentatorEnterWorld)
 
 	if(self.Playing == false)then
         if(db.auto) then
@@ -146,8 +144,6 @@ function EpicMusicPlayer:OnEnable(first)
 		EpicMusicPlayer:AddPlayList("Playlist", EpicMusicPlayer.playlist2, false)
 		EpicMusicPlayer:RemovePlayList("Common")
 	end
-
-	EpicMusicPlayer:RealignWithPlaying()
 end
 
 function EpicMusicPlayer:OnDisable()
@@ -157,28 +153,6 @@ end
 ------------------------------------------------------------------------------
 -- event functions
 ------------------------------------------------------------------------------
--- realign ui with a song still playing after reload ui
-function EpicMusicPlayer:RealignWithPlaying()
-	if db.usePlaySoundFile and db.lastSong then
-		local timeDelta = GetTime() - db.lastTime
-		local remainigPlayTime = db.lastSong.Length - db.playedSeconds + timeDelta
-		if remainigPlayTime > 2 then
-				self:ScheduledPlay(db.lastSong, true)
-		end
-	end
-end
-
--- player login NOT reloadUi -> music played with PlaySoundFile() is stopped
-function EpicMusicPlayer:OnCommentatorEnterWorld(event, arg1)
-		db.lastSong = nil
-		EpicMusicPlayer:ScheduledStop()
-end
-
-function EpicMusicPlayer:OnLeavingWorld()
-		db.lastTime = GetTime()
-		db.lastSong = self.Playing and currentsong or nil
-end
-
 function EpicMusicPlayer:OnZoneChangedNewArea(event)
 	if db.enableEvents then
 		local zone = GetZoneText()

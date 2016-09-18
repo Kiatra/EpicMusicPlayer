@@ -4,10 +4,8 @@ local L = AceLocale:NewLocale("EpicMusicPlayer", "enUS", true)
 if not L then return end
 
 if L then
-	L["%s will be played next"] = true
-	L["The option to use PlaySoundFile was auto enabled as the WoW API PlayMusic(file) is broken for non WoW music. See FAQ for details."] = true
-	L["Use PlaySoundFile API"] = true
-	L["Use the PlaySoundFile() API instead of PlayMusic. As music/sounds played via PlaySoundFile() can not be stopped the stop button will act as mute."] = true
+	L["Use Ambience Channel"] = true
+	L["When this is enabled music will be played using the ambience channel instead of the music channel. Music will no longer stop on a loading screen but you will not hear ambience sound during music play."] = true
 
 	L["Max Level Song"] = true
 	L["Play song when reaching maximum level"] = true
@@ -16,12 +14,12 @@ if L then
 	L["Enable Events"] = true
 	L["Play a song from this list."] = true
 	L["Delete Zone"] = true
-    L["Delete this zone"] = true
+  L["Delete this zone"] = true
 	L["Events"] = true
 	L["New Zone Event"] = true
   L["Create a new zone event"] = true
 
-	L["Set the click behavior for the minimap, the title in the GUI and the data broker plugin."] = true
+  L["Set the click behaviour for the minimap, the title in the GUI and the data broker plugin."] = true
 	L["Add Game Music"] = true
 	L["Adds playlists with game music (reload required)."] = true
 	L["Lock GUI"] = true
@@ -33,7 +31,7 @@ if L then
 	L["Playlist %s not found."] = true
 	L["Really remove playlist %s?"] = true
 	L["Playlist %s removed."] = true
-	L["Playlists created by the EpicListCreator or addedy by the game music module are locked for editing."] = true
+	L["Playlists created by the EpicListCreator or added by the game music module are locked for editing."] = true
 	L["You can only remove playlists created ingame or with the playlist manager (not the playlist generator)!"] = true
 
 
@@ -126,44 +124,24 @@ if L then
 
 	L["How do I add music to the player?"] = true
 	L["FAQ-Text1.1"] = [[
-1. Create a folder named "MyMusic" inside the WoW folder: ../World of Warcraft/MyMusic
+1. Install the EpicMusicPlayer_MP3 add-on from curse.
 
-2. Copy your MP3-files into the MyMusic folder.
+2. Create a folder named "MyMusic" in your World of Warcraft folder e.g: C:/Program Files/World of Warcraft/ or C:/Program Files (x86)/World of Warcraft.
 
-3. Extract the all files of the EpicListCreator.zip in the playlistcreator folder of the addon,
-   Double click the "EpicListCreator.exe" and hit the "Create" Button.
-]]
+3. After it is created, copy the songs you want into the folder (Reminder: They must be mp3 or ogg format to be used).
 
-	L["Do I have to copy all of my music files to the wow folder?"] = true
+4. In the EpicMusicPlayer_MP3 folder double-click to open the "EpicListCreator.zip" and extract the EpicListCreator.exe file into the "EpicMusicPlayer_MP3" folder.
 
-	L["FAQ-Question1.1"] = [[
-No. You can create a symbolic link from your music to the MyMusic folder inside the wow folder.
+5. Run EpicListCreator.exe
 
-http://en.wikipedia.org/wiki/Symbolic_link
-
-See mklink, use with caution...
+6. Start the game and enjoy your music.
 ]]
 
 	L["Why is the song playing from the beginning after a loading screen?"] = true
-	L["This is a wow bug since patch 2.4.3. I only could fix this so far that the song starts from start instead playing the game music. I have reported this in the eu forums but unless someone with an us account finally reports this in the us ui-forum blizzard developers will never fix this."] = true
-
-	L["What is PlayMusic()/PlaySoundFile() all about?"] = true
-	L["FAQ-Text3.1"] = [[
-PlayMusic(file) and PlaySoundFile(file) are API functions provided by the WoW client to play music/sound files via an Add-on.
-
-PlayMusic():
-Files played via PlayMusic(file) can be stopped via StopMusic() but the music also stops after a loading screen.
-
-PlaySoundFile():
-Files played via PlaySoundFile(file) will not stop after a loading screen but there is no API function to stop playing the sound.
-]]
-
-	--L["Where the hell is the playlist?"] = true
-	--L["..\\World of Warcraft\\WTF\\Account\\ACCOUNTNAME\\SavedVariables\\EpicMusicPlayer.lua"] = true
+	L["Music played on the music channel will stop after a loading screen. Enable the option to use the ambient sound channel to avoid this."] = true
 
 	L["Why is there no pause button?"] = true
 	L["Not possible with wow. As is playing a song at a specific position. An addon can only tell wow to play and stop a song that's it."] = true
-
 
 	L["Current will be moved on playing next song."] = true
 	L["Moved song %s from list %s to list %s."] = true

@@ -167,7 +167,7 @@ local empoptions = {
 						text = {
 							order = 0,
 							type = "description",
-							name = L["Set the click behavior for the minimap, the title in the GUI and the data broker plugin."],
+							name = L["Set the click behaviour for the minimap, the title in the GUI and the data broker plugin."],
 						},
 						left = {
 							type = 'select',
@@ -374,8 +374,8 @@ local empoptions = {
         usePlaySoundFile = {
 		      type = 'toggle',
 					order = 7,
-		      name = L["Use PlaySoundFile API"],
-		      desc = L["Use the PlaySoundFile() API instead of PlayMusic. As music/sounds played via PlaySoundFile() can not be stopped the stop button will act as mute."],
+		      name = L["Use Ambience Channel"],
+		      desc = L["When this is enabled music will be played using the ambience channel instead of the music channel. Music will no longer stop on a loading screen but you will not hear ambience sound during music play."],
           get = function(info, value)
 						return EpicMusicPlayer.db.usePlaySoundFile
 		      end,
@@ -576,7 +576,7 @@ local empoptions = {
 				text4 = {
 					order = 8,
 					type = "description",
-					name = L["This is a wow bug since patch 2.4.3. I only could fix this so far that the song starts from start instead playing the game music. I have reported this in the eu forums but unless someone with an us account finally reports this in the us ui-forum blizzard developers will never fix this."],
+					name = 	L["Music played on the music channel will stop after a loading screen. Enable the option to use the ambient sound channel to avoid this."] ,
 				},
 				header5 = {
 					type = "header",
@@ -596,29 +596,7 @@ local empoptions = {
 				text6 = {
 					order = 12,
 					type = "description",
-					name = L["Playlists created by the EpicListCreator or addedy by the game music module are locked for editing."],
-				},
-        --[[
-				header7 = {
-					type = "header",
-					name = L["Do I have to copy all of my music files to the wow folder?"],
-					order = 13,
-				},
-				text7 = {
-					order = 14,
-					type = "description",
-					name = L["FAQ-Text2.1"],
-				},
-        ]]
-        header8 = {
-					type = "header",
-					name = L["What is PlayMusic()/PlaySoundFile() all about?"],
-					order = 15,
-				},
-				text8 = {
-					order = 16,
-					type = "description",
-					name = L["FAQ-Text3.1"],
+					name = L["Playlists created by the EpicListCreator or added by the game music module are locked for editing."],
 				},
 			},
 		},
@@ -787,8 +765,8 @@ end
 function EpicMusicPlayer:ChatCommand(input)
     if not input or input:trim() == "" then
 		local AceCfgDlg = LibStub("AceConfigDialog-3.0")
-		AceCfgDlg:SelectGroup("EpicMusicPlayer", "general")
-		AceCfgDlg:SelectGroup("EpicMusicPlayer", "help")
+		--AceCfgDlg:SelectGroup("EpicMusicPlayer", "general")
+		--AceCfgDlg:SelectGroup("EpicMusicPlayer", "help")
 
         AceCfgDlg:Open("EpicMusicPlayer")
     else

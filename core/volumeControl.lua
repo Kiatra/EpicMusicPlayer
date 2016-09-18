@@ -10,7 +10,7 @@ local function SetVolumeUnsaved(self, vol, voltypeCVar)
 end
 
 function EpicMusicPlayer:SetVolume(vol, voltypeCVar)
-	EpicMusicPlayer:Debug("SetVolume", self.db.volume)
+	EpicMusicPlayer:Debug("SetVolume", self.db.volume, voltypeCVar)
 	self.db.volume = vol;
 	SetVolumeUnsaved(self, vol, voltypeCVar)
 end
