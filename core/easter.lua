@@ -13,7 +13,7 @@ function EpicMusicPlayer:OnPlayerLevelUp(level)
 		song = {
 			["WoW"] = true,
 			["Album"] = "ingame",
-			["Song"] = "Gratulations to level 100!!!",
+			["Song"] = "Gratulations to level 110!!!",
 			["Name"] = "Sound\\Music\\ZoneMusic\\ArgentTournament\\AT_JoustEvent.mp3",
 			["Length"] = 123,
 			["Artist"] = "",
