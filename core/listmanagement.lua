@@ -512,7 +512,7 @@ function EpicMusicPlayer:Search(pattern)
 	for x, list in ipairs(playlists) do
 		if(list[1].ListName ~= "lastsearch")then
 			for i, song in ipairs(list) do
-				if contains(song.Song, temp) or contains(song.Artist, temp) or contains(song.Album, temp) then
+				if contains(song.Song, temp) or contains(song.Artist, temp) or contains(song.Album, temp) or contains(song.Name, temp) then
 					if i == 1 then
 						local song = getCopy(song)
 						song.ListName = "lastsearch"
