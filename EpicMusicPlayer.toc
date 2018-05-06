@@ -61,3 +61,4 @@ modules\gamemusic\BestofWoW.lua
 modules\gamemusic\EpicGameMusic.lua
 modules\gamemusic\Draenor.lua
 modules\gamemusic\Legion.lua
+modules\gamemusic\BattleForAzeroth.lua
