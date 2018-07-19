@@ -5,7 +5,7 @@ local media = LibStub:GetLibrary("LibSharedMedia-3.0", true) or nil
 local AceCfgDlg = LibStub("AceConfigDialog-3.0")
 
 local _G, eventtimer = _G, ""
-local db, movesong, currentsong
+local db, movesong
 local timer = "" -- timer for display of seconds
 local historyInUse = false --true when a sond from histroy is played
 
@@ -178,7 +178,7 @@ function EpicMusicPlayer:OnEnteringWorld(event)
 	eventtimer = EpicMusicPlayer:ScheduleTimer(function()
 		if EpicMusicPlayer.Playing and not db.usePlaySoundFile then
 			SetCVar("Sound_EnableMusic", 0);
-			EpicMusicPlayer:Play(currentsong)
+			EpicMusicPlayer:Play(EpicMusicPlayer.currentsong)
 		end
 	end, 5)
 end
@@ -229,15 +229,15 @@ end
 
 function EpicMusicPlayer:GetCurrentSong()
 	if self.Playing then
-		return currentsong
+		return self.currentsong
 	else
 		return nil
 	end
 end
 
 function EpicMusicPlayer:GetCurrentSongName()
-	if(playing and currentsong)then
-		return currentsong.Song
+	if(playing and self.currentsong)then
+		return self.currentsong.Song
 	else
 		if(db.disablewowmusic) then
 			return L["Music off"]
@@ -248,8 +248,8 @@ function EpicMusicPlayer:GetCurrentSongName()
 end
 
 function EpicMusicPlayer:GetCurrentArtstName()
-	if(playing and currentsong)then
-		return currentsong.Artist
+	if(playing and self.currentsong)then
+		return self.currentsong.Artist
 	else
 		return ""
 	end

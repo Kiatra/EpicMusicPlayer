@@ -29,10 +29,10 @@ local model = {
 		modelscale = 0.4,
 		stand = 132,
 		animdata = {
-			{ -- regular play
-				["seqence"] = 69,
-				["endframe"] = 2000,
-			},
+			--{ -- regular play
+			--	["seqence"] = 69,
+			--	["endframe"] = 2000,
+			--},
 			{
 				["seqence"] = 213,
 				["endframe"] = 4166,
@@ -56,10 +56,10 @@ local model = {
 		modelscale = 0.7,
 		stand = 132,
 		animdata = {
-			{ -- regular play
-				["seqence"] = 69,
-				["endframe"] = 3700,
-			},
+			--{ -- regular play
+			--	["seqence"] = 69,
+			--	["endframe"] = 3700,
+			--},
 			{
 				["seqence"] = 213,
 				["endframe"] = 4166,
@@ -83,10 +83,10 @@ local model = {
 		modelscale = 0.6,
 		stand = 132,
 		animdata = {
-			{ -- regular play
-				["seqence"] = 69,
-				["endframe"] = 4000,
-			},
+			--{ -- regular play
+			--	["seqence"] = 69,
+			--	["endframe"] = 4000,
+			--},
 			{
 				["seqence"] = 213,
 				["endframe"] = 6633,
@@ -110,10 +110,10 @@ local model = {
 		modelscale = 0.6,
 		stand = 132,
 		animdata = {
-			{ -- regular play
-				["seqence"] = 69,
-				["endframe"] = 3200,
-			},
+			--{ -- regular play
+			--	["seqence"] = 69,
+			--	["endframe"] = 3200,
+			--},
 			{
 				["seqence"] = 213,
 				["endframe"] = 9233,
@@ -136,10 +136,10 @@ local model = {
 		file = "Creature/band/bandOrcMale.M2",
 		modelscale = 0.6,
 		animdata = {
-			{ -- regular play
-				["seqence"] = 69,
-				["endframe"] = 2400,
-			},
+			--{ -- regular play
+			--	["seqence"] = 69,
+			--	["endframe"] = 2400,
+			--},
 			{
 				["seqence"] = 213,
 				["endframe"] = 1200,
@@ -441,7 +441,6 @@ function EpicMusicDancer:OnInitialize()
 	self:RegisterMessage("EMPUpdateStop")
 	self:RegisterMessage("EMPUpdatePlay")
 	self:RegisterMessage("EMPGuiLoaded")
-	self:RegisterEvent("WORLD_MAP_UPDATE", EpicMusicDancer.OnWorldMapUpdate, "WORLD_MAP_UPDATE")
 
 	EpicMusicPlayer:AddOptions("dancer",options)
 
@@ -463,12 +462,6 @@ function EpicMusicDancer:EMPGuiLoaded(event)
 	modelid = modelmap[self.db.profile.defaultmodel]
 	self:SetModel(modelid)
 	seqence = model[modelid].stand
-end
-
-function EpicMusicDancer:OnWorldMapUpdate(event)
-    if EpicMusicDancer.db.char.show and _G.WorldMapFrame:IsVisible() then
-		EpicMusicDancer:Show()
-	end
 end
 
 function EpicMusicDancer:GetDefaultModel()

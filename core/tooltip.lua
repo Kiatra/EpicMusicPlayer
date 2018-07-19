@@ -26,6 +26,9 @@ function EpicMusicPlayer:ShowTooltip(anchor)
 	GameTooltip:SetOwner(anchor, "ANCHOR_NONE")
 	GameTooltip:SetPoint(GetTipAnchor(frame))
 	--GameTooltip:SetPoint("TOPLEFT", anchor, "BOTTOMLEFT")
+
+	EpicMusicPlayer:Debug("song", song)
+
 	if(song)then
 		GameTooltip:SetText("|c"..self:ToHex(db.artistcolour)..
 			song.Artist.."|r  |c"..self:ToHex(db.titlecolour)..EpicMusicPlayer:GetCurrentSongName())

@@ -33,7 +33,7 @@ local function getCopy(song)
 		["Song"] = song.Song,
 		["Name"] = song.Name,
 		["Length"] = song.Length,
-		["Artist"] =  song.Artist,
+		["Artist"] = song.Artist,
 		["WoW"] = song.WoW,
 	}
 end
@@ -228,7 +228,7 @@ function EpicMusicPlayer:CopySong(newList, song)
 			newList[1]["Name"] = song.Name
 			newList[1]["Length"] = song.Length
 			newList[1]["Artist"] =  song.Artist
-			newList[1]["WoW"] =  song.Wow
+			newList[1]["WoW"] =  song.WoW
 		else
 			table.insert(newList,getCopy(song))
 		end

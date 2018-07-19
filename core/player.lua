@@ -81,7 +81,7 @@ function EpicMusicPlayer:Play(song, stillPlaying)
 		self:UpdateMessageFrameText(song.Artist, song.Song)
 	end
 
-	currentsong = song
+	self.currentsong = song
 	self:UpdateTooltip()
 	self:PrintSongToChat(song)
 	self:SendMessage("EMPUpdatePlay", song.Artist, song.Song, song.Length, song.Album)

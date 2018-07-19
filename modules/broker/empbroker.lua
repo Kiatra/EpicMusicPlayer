@@ -166,6 +166,12 @@ function dataobj:OnLeave()
 	EpicMusicPlayer:HideTooltip(self)
 end
 
+function dataobj:OnMouseWheel(vector)
+	EpicMusicPlayer:Debug(self, vector);
+	OnScroll(self, vector)
+end
+
+
 function EpicMusicPlayerBroker:OnInitialize()
 	empdb = EpicMusicPlayer.db.profile
 	local defaults = {
