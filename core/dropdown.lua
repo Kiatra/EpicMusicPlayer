@@ -293,7 +293,7 @@ function EpicMusicPlayer:OpenMenu(frame, listIndex)
 	dropdownmenu[#dropdownmenu + 1] = {
 			text = L["Enable Events"],
 			checked = db.enableEvents,
-			func = function() db.enableEvents = not db.enableEvents; EpicMusicPlayer:OnZoneChanged() end,
+			func = function() db.enableEvents = not db.enableEvents end,
 	}
 
 	local locked = EpicMusicPlayer:IsListLocked(db.list)

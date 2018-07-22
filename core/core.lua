@@ -179,6 +179,8 @@ function EpicMusicPlayer:OnEnteringWorld(event)
 		if EpicMusicPlayer.Playing and not db.usePlaySoundFile then
 			SetCVar("Sound_EnableMusic", 0);
 			EpicMusicPlayer:Play(EpicMusicPlayer.currentsong)
+		else
+			EpicMusicPlayer:OnZoneChangedNewArea()
 		end
 	end, 5)
 end

@@ -1,5 +1,8 @@
 local _G, mod, math, string = _G, mod, math, string
 local ldb = _G.LibStub:GetLibrary("LibDataBroker-1.1",true)
+--@debug@
+local loaded, reason = LoadAddOn("LibDBIcon-1.0")
+--@end-debug@
 local ldbIcon = ldb and LibStub("LibDBIcon-1.0", true)
 if not ldb then return end
 

@@ -548,7 +548,6 @@ local empoptions = {
 			        end,
 					set = function()
 					  db.enableEvents = not EpicMusicPlayer.db.enableEvents
-					  EpicMusicPlayer:OnZoneChanged()
 					end,
 				},
 			},

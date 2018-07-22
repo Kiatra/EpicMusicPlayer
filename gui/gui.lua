@@ -11,7 +11,7 @@ local exchangecount = 0
 local displaysong = true
 local songlength = 0
 local currartist
-local currsongname
+
 local textwidth = 0
 
 local scrolltimer = nil
@@ -33,6 +33,7 @@ EpicMusicPlayerGui = LibStub("AceAddon-3.0"):NewAddon("EpicMusicPlayerGui", "Ace
 local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer")
 
+local currsongname = L["Game Music"]
 
 local function GetSkinsList()
 --{FULLSCREEN_DIALOG="Fullscreen_Dialog",FULLSCREEN="Fullscreen",
@@ -428,6 +429,14 @@ function EpicMusicPlayerGui:TogglePlay()
 	EpicMusicPlayer:TogglePlay(EpicMusicPlayer)
 end
 
+local function getArtistString(artist)
+	if artis and not (artis == "") then
+		return "|c"..EpicMusicPlayer:ToHex(EpicMusicPlayer.db.artistcolour).." -"..artist.."-".."|r"
+	else
+		return ""
+	end
+end
+
 function EpicMusicPlayerGui:EMPUpdatePlay(event, artist, songname, length)
 	playing = true;
 	songlength = length
@@ -437,7 +446,7 @@ function EpicMusicPlayerGui:EMPUpdatePlay(event, artist, songname, length)
 	else
 		hasartist = true
 	end
-	currartist = "|c"..EpicMusicPlayer:ToHex(EpicMusicPlayer.db.artistcolour).." -"..artist.."-".."|r"
+	currartist = getArtistString(artist)
 	displaysong = false
 	exchangecount = 4
 
@@ -548,7 +557,7 @@ function EpicMusicPlayerGui:UpdateFrame(emp)
 		end
 	end
 
-	currartist = "|c"..EpicMusicPlayer:ToHex(db.artistcolour).." -"..EpicMusicPlayer:GetCurrentArtstName().."-".."|r"
+	currartist = getArtistString(artist)
 	if(guitext)then
 		c = db.titlecolour
 		guitext:SetTextColor(c.r,c.g,c.b,c.a)
