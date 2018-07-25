@@ -1,7 +1,7 @@
 -- EpicMusicPlayer playlist created by EpicPlaylistCreator version 1.6.
 local playlist1={
   {
-    ["ListName"] = "GameMusic",
+    ["ListName"] = "All",
     ["PlaylistVersion"] = "3.1",
     ["PlaylistType"] = "generated",
     ["MusicDir"] = "MyMusic\\",

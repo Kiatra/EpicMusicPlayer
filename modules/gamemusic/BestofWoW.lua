@@ -1,6 +1,6 @@
 local BestofWoW = {
   {
-    ["ListName"] = "Best of WoW",
+    ["ListName"] = "Epic",
     ["PlaylistVersion"] = "3.1",
     ["PlaylistType"] = "generated",
     ["MusicDir"] = "MyMusic\\",
@@ -66,6 +66,14 @@ local BestofWoW = {
     ["Length"] = 650,
     ["Artist"] = "",
     ["WoW"] = true,
+  },
+  {
+	["Album"] = "Before the Storm",
+	["Song"] = "Main Title - Battle for Azeroth",
+	["Name"] = "sound\\music\\battleforazeroth\\mus_80_beforethestorm_maintitle.mp3",
+	["Length"] = 677,
+	["Artist"] = "",
+	["WoW"] =  "true",
   },
   {
     ["Album"] = "WoWX5",

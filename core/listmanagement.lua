@@ -76,7 +76,7 @@ function EpicMusicPlayer:CheckPlayList()
 		}
 	end
 
-	EpicMusicPlayer:Debug("#playlists", #playlists, "db.list",db.list, "db.song",db.song, "#playlists[db.list]", #playlists[db.list])
+	--EpicMusicPlayer:Debug("#playlists", #playlists, "db.list",db.list, "db.song",db.song, "#playlists[db.list]", #playlists[db.list])
 	if db.list > #playlists then db.list = 1 end
 	if db.song > #playlists[db.list] then db.song = 1 end
 	EpicMusicPlayer.playlists = playlists
