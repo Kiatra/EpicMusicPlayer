@@ -367,7 +367,7 @@ local empoptions = {
 							  PARTY=L["Party"],SAY=L["Say"],TARGET=L["To target"],RAID=L["Raid"]},
 					order = 8,
 		            name = L["Default Channel"],
-		            desc = L["Select the default channel to spam on ctrl+click"],
+		            desc = L["Select the default channel to send the song name on ctrl+click"],
 					get = "GetDefaultChannel",
 		            set = "SetDefaultChannel"
 				},
@@ -382,14 +382,6 @@ local empoptions = {
 		      set = function(info, value)
 						EpicMusicPlayer.db.usePlaySoundFile = value
 		      end,
-				},
-				link = {
-		      type = 'toggle',
-					order = 9,
-		      name = L["Spam Link"],
-		      desc = L["Add a youtube link to chat spam."],
-		      get = "IsLink",
-		      set = "ToggleLink"
 				},
 				test = {
 		      type = 'execute',

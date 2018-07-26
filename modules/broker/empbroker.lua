@@ -144,7 +144,7 @@ end
 
 local dataobj = ldb:NewDataObject("EpicMusicPlayer", {
 	type = "data source",
-	icon = "Interface\\AddOns\\EpicMusicPlayer\\media\\icon",
+	icon = "Interface\\Common\\VoiceChat-On",
 	label = "EpicMusicPlayer",
 	text  = "Stopped",
 

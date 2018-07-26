@@ -44,8 +44,8 @@ playlistcreator\CustomMusic.lua
 modules\broker\LibDataBroker-1.1.lua
 modules\broker\empbroker.lua
 modules\dancer\EpicMusicDancer.lua
-modules\gamemusic\BestofWoW.lua
-modules\gamemusic\EpicGameMusic.lua
+modules\gamemusic\Epic.lua
+modules\gamemusic\All.lua
 modules\gamemusic\Draenor.lua
 modules\gamemusic\Legion.lua
 modules\gamemusic\BattleForAzeroth.lua

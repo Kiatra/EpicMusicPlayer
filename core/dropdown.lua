@@ -344,7 +344,7 @@ function EpicMusicPlayer:OpenMenu(frame, listIndex)
 		end
 
 		dropdownmenu[#dropdownmenu + 1] = {
-			text = L["Spam to"],
+			text = L["Send song name to"],
 			hasArrow = true,
 			notCheckable = true,
 			menuList = dropdownchat,

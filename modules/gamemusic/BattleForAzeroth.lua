@@ -2711,4 +2711,4 @@ local playlist3 = {
 		["WoW"] =  "true",
 	},
 }
-EpicMusicPlayer:AddPlayList("Battle For Azeroth", playlist3, false)
+EpicMusicPlayer:AddPlayList("Battle for Azeroth", playlist3, false, true)

@@ -2,7 +2,7 @@ local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer")
 local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 
 function EpicMusicPlayer:OnPlayerLevelUp(level)
-	if level == 110 and db.maxLevelSong then
+	if level == 120 and db.maxLevelSong then
 		self:ForceMusicVolume()
 		if(EpicMusicPlayerGui)then
 			if(not EpicMusicPlayer.dataBase.char.showgui)then

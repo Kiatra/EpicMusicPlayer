@@ -172,7 +172,7 @@ if L then
 	L["Play/Stop"] = true
 
 	L["Drop Down Menu"] = true
-	L["Spam to default channel"] = true
+	L["Send song name to default channel"] = true
 
 	L["Mouse Setup"] = true
 	L["Left Click"] = true
@@ -196,9 +196,6 @@ if L then
 	L["Stop playing."] = true
 	L["Playlist"] = true
 	L["Show the Music."] = true
-
-	L["Spam Link"] = true
-	L["Add a youtube link to chat spam."] = true
 
 	L["Shuffle"] = true
 	L["Toggle shuffle"] = true
@@ -239,7 +236,7 @@ if L then
 
 
 	L["Default Channel"] = true
-	L["Select the default channel to spam on ctrl+click"] = true
+	L["Select the default channel to send the song name on ctrl+click"] = true
 
 	L["Loop Song"] = true
 	L["Play the current song again and again and again...until your head will explode. A click on next song will disable this."] = true
@@ -257,7 +254,7 @@ if L then
 	L["Playlist error oO Playlist maybe empty."] = true
 	L["No Target"] = true
 	L["Last playlist can not be removed."] = true
-	L["[~mymusic~] "] = true
+
 	L["Song is already in that list."] = true
 	L["Added playlist %s."] = true
 	L["Right click and drag to move this button"] = true
@@ -281,7 +278,7 @@ if L then
 	L["Play last"] = true
 	L["Show Dancer"] = true
 	L["Move song to"] = true
-	L["Spam to"] = true
+	L["Send song name to"] = true
 
 	L["Music volume: "] = true
 	L["Effects vol.: "] = true

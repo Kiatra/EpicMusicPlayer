@@ -13,7 +13,7 @@ EpicMusicPlayer.controlslist = {
 	TogglePlay = L["Play/Stop"], OnNextClick = L["Play Next Song"], OpenMenu = L["Drop Down Menu"],
 	ShowConfig = L["Config"], ToggleMute = L["Mute / unmute music sound."], TogglePlayListGui = L["Playlist"],
 	PlayLast = L["Play Last Song"], TogglePlayerGui = L["Toggle show GUI"], ToggleRandom = L["Toggle shuffle"],
-	RemoveCurrendSong = L["Remove Song"], SpamDefault = L["Spam to default channel"],
+	RemoveCurrendSong = L["Remove Song"], SpamDefault = L["Send song name to default channel"],
 }
 EpicMusicPlayer.version = GetAddOnMetadata("EpicMusicPlayer","Version")
 EpicMusicPlayer.tocversion = select(4, GetBuildInfo());
