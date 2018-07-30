@@ -19,6 +19,22 @@ local function GetTipAnchor(frame)
 	return vhalf .. hhalf, frame, (vhalf == "TOP" and "BOTTOM" or "TOP") .. hhalf
 end
 
+local function getVolumeText(voltype)
+		return math.floor((_G.GetCVar(voltype)*100)).."%"
+end
+
+local function addVolumeLine(self)
+	if self.db.usePlaySoundFile then
+		GameTooltip:AddLine("EpicMusicPlayer is using the amiance channel.")
+		GameTooltip:AddLine("Ambience Volume: "..getVolumeText("Sound_AmbienceVolume"))
+	else
+		GameTooltip:AddLine("Music Volume: "..getVolumeText("Sound_MusicVolume").." Scroll to change.")
+	end
+
+	GameTooltip:AddLine("Sound Volume: "..getVolumeText("Sound_SFXVolume").." Scroll + control to change.")
+	GameTooltip:AddLine("Master Volume: "..getVolumeText("Sound_MasterVolume").." Scroll + shift to change.")
+end
+
 function EpicMusicPlayer:ShowTooltip(anchor)
 	local db = self.db
 	local song = EpicMusicPlayer:GetCurrentSong()
@@ -30,26 +46,35 @@ function EpicMusicPlayer:ShowTooltip(anchor)
 	EpicMusicPlayer:Debug("song", song)
 
 	if(song)then
-		GameTooltip:SetText("|c"..self:ToHex(db.artistcolour)..
-			song.Artist.."|r  |c"..self:ToHex(db.titlecolour)..EpicMusicPlayer:GetCurrentSongName())
+		if song.Artist == "" then
+			GameTooltip:SetText(EpicMusicPlayer:GetCurrentSongName(), 1,1,1)
+		else
+			GameTooltip:SetText(song.Artist.." - "..EpicMusicPlayer:GetCurrentSongName(), 1,1,1)
+		end
+
 		local album = song.Album;
 		if(album=="")then
 		else
-			GameTooltip:AddLine("|cffffffee"..L["Album"]..": "..album)
+			GameTooltip:AddLine(L["Album"]..": "..album)
 		end
 
-		GameTooltip:AddLine("|cffffffee"..L["List"]..": "..EpicMusicPlayer:GetCurrentListName())
-		GameTooltip:AddLine("|cffffffee"..L["Length"]..": "..EpicMusicPlayer:GetTimeSTring(song.Length))
-		GameTooltip:Show()
+		GameTooltip:AddLine(L["List"]..": "..EpicMusicPlayer:GetCurrentListName())
+		GameTooltip:AddLine(" ")
 	else
-		GameTooltip:SetText(L["Stopped"], 1,1,1)
-		local controlset = db.controlset
-		local controlslist = EpicMusicPlayer.controlslist
-		if controlslist[controlset.left] then GameTooltip:AddLine(L["Left Click"].." - "..controlslist[controlset.left]) end
-		if controlslist[controlset.middle] then GameTooltip:AddLine(L["Middle Click"].." - "..controlslist[controlset.middle]) end
-		if controlslist[controlset.right] then GameTooltip:AddLine(L["Right Click"].." - "..controlslist[controlset.right]) end
-		GameTooltip:Show()
-	end
+		if self.disablewowmusic then GameTooltip:SetText(L["Stopped"], 1,1,1) else GameTooltip:SetText(L["Game Music"], 1,1,1) end
+
+ end
+  GameTooltip:AddLine(" ")
+  addVolumeLine(self)
+  GameTooltip:AddLine(" ")
+	local controlset = self.db.controlset
+	local controlslist = self.controlslist
+	EpicMusicPlayer:Debug("self.db.controlset", self.db.controlset, self.controlslist, controlslist[controlset.left])
+	if controlslist[controlset.LeftButton] then GameTooltip:AddLine(L["Left Click"].." - "..controlslist[controlset.LeftButton]) end
+	if controlslist[controlset.MiddleButton] then GameTooltip:AddLine(L["Middle Click"].." - "..controlslist[controlset.MiddleButton]) end
+	if controlslist[controlset.RightButton] then GameTooltip:AddLine(L["Right Click"].." - "..controlslist[controlset.RightButton]) end
+	GameTooltip:Show()
+
 end
 
 function EpicMusicPlayer:HideTooltip(anchor)

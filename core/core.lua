@@ -74,6 +74,7 @@ function EpicMusicPlayer:OnInitialize()
 
   AceCfgDlg:AddToBlizOptions("EpicMusicPlayer", "EpicMusicPlayer")
 	AceCfgDlg:SetDefaultSize("EpicMusicPlayer", 700, 500)
+  EpicMusicPlayer:AddProfile(self.dataBase)
 
 	db = self.dataBase.profile
 	self.db = db

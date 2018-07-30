@@ -599,6 +599,10 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("EpicMusicPlayer", empoptions)
 -------------------------------------------------------------------------------
 -- option functions
 -------------------------------------------------------------------------------
+function EpicMusicPlayer:AddProfile(baseDB)
+  empoptions.args.profile = LibStub("AceDBOptions-3.0"):GetOptionsTable(baseDB)
+end
+
 function EpicMusicPlayer:AddOptions(name,options)
 	empoptions.args[name] = options
 	LibStub("AceConfigRegistry-3.0"):NotifyChange("EpicMusicPlayer")

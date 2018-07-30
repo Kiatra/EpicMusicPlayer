@@ -56,7 +56,7 @@ function EpicMusicPlayer:RestoreSoundVolume()
 end
 
 function EpicMusicPlayer:GetVolumeText(type)
-	 return type == "Sound_SFXVolume" and L["Effects volume: "] or L["Music volume: "]
+	 return type == "Sound_SFXVolume" and L["Effects volume: "] or "Sound_MasterVolume" and L["Master volume: "] or L["Music volume: "]
 end
 
 function EpicMusicPlayer:GetMusicVolumeCVar()
@@ -65,10 +65,12 @@ end
 
 function EpicMusicPlayer:DisplyScrollHandler(vector)
 		local cVar = IsControlKeyDown() and "Sound_SFXVolume" or self:GetMusicVolumeCVar()
+		cVar = IsShiftKeyDown() and "Sound_MasterVolume" or self:GetMusicVolumeCVar()
 		local vol = GetCVar(cVar)
 		local step = IsAltKeyDown() and vector * .01 or vector * .1
 		vol = vol + step
 		if vol > 1 then vol = 1 end
 		if vol < 0 then vol = 0 end
 		self:SetVolume(vol,cVar)
+		self:UpdateTooltip()
 end

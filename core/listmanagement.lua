@@ -349,6 +349,7 @@ end
 
 function EpicMusicPlayer:GetRandomSong(listIndex)
 	local listnumber = listIndex
+	if listnumber == nil then return EpicMusicPlayer:GetSong(0, 0), 0, 0 end
 	local songnumber = 0
 	--shuffle over multipe playlist's
 	if db.shuffleAll then

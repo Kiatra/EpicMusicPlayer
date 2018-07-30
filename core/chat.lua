@@ -52,7 +52,7 @@ end
 
 function EpicMusicPlayer:PrintSongToChat(song)
 	if(self.db.spam) then
-		DEFAULT_CHAT_FRAME:AddMessage("|TInterface\\Common\\VoiceChat-Speaker:18|tInterface\\Common\\VoiceChat-On:18|t |c"
+		DEFAULT_CHAT_FRAME:AddMessage("|TInterface\\AddOns\\EpicMusicPlayer\\media\\icon:18|t |c"
 		..self:ToHex(self.db.artistcolour)..song.Artist.."|r - |c"..self:ToHex(self.db.titlecolour)..song.Song)
 	end
 end

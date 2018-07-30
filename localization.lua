@@ -7,6 +7,7 @@ if L then
 	L["Use Ambience Channel"] = true
 	L["When this is enabled music will be played using the ambience channel instead of the music channel. Music will no longer stop on a loading screen but you will not hear ambience sound during music play."] = true
 
+  L["Master volume: "]= true
 	L["Max Level Song"] = true
 	L["Play song when reaching maximum level"] = true
 	L["Select a playlist to play in this zone"] = true
