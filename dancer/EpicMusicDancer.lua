@@ -606,7 +606,8 @@ function EpicMusicDancer:ResetPos()
 		EpicMusicDancer.frame:SetPoint("BOTTOM", "EMPGUI", "TOP", -25, -22);
 		EpicMusicDancer.frame:SetPoint("CENTER", "EMPGUI", "CENTER", -25, -22);
 		_G.EMPGUI:Show()
-		EpicMusicPlayer.dataBase.profile.showgui = true;
+		EpicMusicPlayer:Debug("ResetPos", EpicMusicPlayer.db.showgui)
+		EpicMusicPlayer.db.showgui = true;
 	else
 		EpicMusicDancer.frame:SetParent(_G.UIParent)
 		EpicMusicDancer.frame:ClearAllPoints()
@@ -841,7 +842,7 @@ function EpicMusicDancer:CreateDancerFrame(parent)
 
 	self.frame:SetScript("OnEnter",
 	    function(self)
-			if(EpicMusicPlayer.dataBase.char.tooltip)then
+			if(EpicMusicPlayer.db.tooltip)then
 				tooltip = self
 				EpicMusicPlayer:ShowTooltip(self)
 			end

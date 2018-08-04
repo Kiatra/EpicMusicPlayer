@@ -12,7 +12,6 @@ local function play(self, file)
 	if self.db.usePlaySoundFile then
 		if self.soundHandle then StopSound(self.soundHandle) end
 		local willplay, soundHandle = PlaySoundFile(file, "Ambience")
-		EpicMusicPlayer:Debug(willplay,soundHandle)
 		self.soundHandle = soundHandle
 		--_, self.musicHandle = PlaySound(file, "Ambience", 1)
 	else
@@ -24,9 +23,6 @@ end
 -- public play/stop functions
 ------------------------------------------------------------
 function EpicMusicPlayer:Play(song, stillPlaying)
-	self:Debug("Play")
-	self:CheckSongToMove()
-
 	if not song then -- no song given try to play last song again
 		song = self:GetSong(self.db.list,self.db.song)
 		if not song then -- song not found get next
@@ -43,7 +39,6 @@ function EpicMusicPlayer:Play(song, stillPlaying)
 	self.Playing = true;
 	songlength = song.Length
 
-	self:Debug("song:", song,stillPlaying)
 	if not stillPlaying then
 		if(song.Album == "ingame" or song.WoW) then
 			-- ingame music do not add addon mp3 path
@@ -65,7 +60,6 @@ function EpicMusicPlayer:Play(song, stillPlaying)
 		self.db.playedSeconds = self.db.playedSeconds + 1
 		if(self.db.playedSeconds >= songlength)then
 			if self.scheduledStop then
-					self:Debug("self.scheduledStop:",self.scheduledStop)
 					self:ScheduledStop()
 					return
 			end
@@ -88,7 +82,6 @@ function EpicMusicPlayer:Play(song, stillPlaying)
 end
 
 function EpicMusicPlayer:PlayNext()
-	self:Debug("PlayNext")
 	local self = EpicMusicPlayer;
 	local song
 
@@ -110,7 +103,6 @@ function EpicMusicPlayer:PlayNext()
 end
 
 function EpicMusicPlayer:Stop()
-	EpicMusicPlayer:CheckSongToMove()
 	self:CancelTimer(timer,true)
 	local text = self.db.disablewowmusic and L["Music off"] or  L["Game Music"]
 	self:RestoreSoundVolume()
@@ -127,7 +119,6 @@ end
 function EpicMusicPlayer:PlayLast()
   local song
 	--self.db.loopsong = false
-	EpicMusicPlayer:CheckSongToMove()
 	if not self.db.random then
 		song, self.db.list,self.db.song = EpicMusicPlayer:GetLastSong(self.db.list,self.db.song,self.db.looplist);
 		EpicMusicPlayer:Play(song)

@@ -5,11 +5,11 @@ local aceevent = LibStub("AceEvent-3.0")
 local _G, CreateFrame = _G, CreateFrame
 local delay, counter = 0.3, 0
 local frame, mainframe, listslist, songlist, playbutton, randombutton, title, seperator
-local selectedlist, selectedlistIndex, db
+local selectedlist, selectedlistIndex
 
 -- show/hide the left list with the playlists
 local function ToggleLists()
-	if db.hideListsList then
+	if EpicMusicPlayer.db.hideListsList then
 		listslist:Hide()
 		songlist:SetPoint("TOPLEFT", frame ,5, -25)
 		songlist:SetPoint("BOTTOMRIGHT", frame ,-5, 27)
@@ -26,6 +26,7 @@ local function SelectList(listindex)
 	--listslist.selectedIndex = listindex
 	selectedlist = EpicMusicPlayer:GetListByIndex(listindex)
 	selectedlistIndex = listindex
+  EpicMusicPlayer.selectedlistIndex = selectedlistIndex
 
 	listslist:SetSelected(listindex)
 	songlist:SetMax(#selectedlist)
@@ -53,21 +54,21 @@ end
 
 local function UpdatePlayButon(playing)
 	if(playing)then
-			playbutton:SetNormalTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\emp-stop.tga")
-			playbutton:SetPushedTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\emp-stop-p.tga")
+			playbutton:SetNormalTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\stopButton.tga")
+			playbutton:SetPushedTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\stopButton-p.tga")
 		else
-			playbutton:SetNormalTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\emp-play.tga")
-			playbutton:SetPushedTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\emp-play-p.tga")
+			playbutton:SetNormalTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\playButton.tga")
+			playbutton:SetPushedTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\playButton-p.tga")
 	end
 end
 
 local function UpdateRandomButon(event,val)
 	if(val)then
-			randombutton:SetNormalTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\emp-randomon.tga")
-			randombutton:SetPushedTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\emp-randomon-p.tga")
+			randombutton:SetNormalTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\randomButton.tga")
+			randombutton:SetPushedTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\randomButton-p.tga")
 		else
-			randombutton:SetNormalTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\emp-randomoff.tga")
-			randombutton:SetPushedTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\emp-randomoff-p.tga")
+			randombutton:SetNormalTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\randomButtonOff.tga")
+			randombutton:SetPushedTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\randomButtonOff-p.tga")
 	end
 end
 
@@ -79,19 +80,11 @@ end
 local function OnDragUpdate(self, elapsed)
 	counter = counter + elapsed
 	if counter >= delay then
-		--EpicMusicPlayer:Debug(x,round(seperator.posx-x, 0))
 		local x, y = _G.GetCursorPosition();
-		--EpicMusicPlayer:Debug(songlist:GetWidth(), seperator.x - x)
-
-		--if songlist:GetWidth() > 110 then
-			---songlist:SetWidth(111)
 			x = seperator.x - x
-
 			local posx = round(seperator.posx-x, 0)
-
 			seperator:SetPoint("TOPLEFT", frame ,posx, -25)
 			seperator:SetPoint("BOTTOM", frame ,"BOTTOM",posx, 27)
-		--end
 	end
 end
 
@@ -114,68 +107,47 @@ local function UpdatePlayStop(event, artist, songname, length)
 	end
 end
 
+local function addButton(parent, lastButton, func, name, point)
+	local button = CreateFrame("Button", nil, parent)
+	button:SetNormalTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\"..name..".tga")
+	button:SetPushedTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\"..name.."-p.tga")
+	button:SetHighlightTexture("Interface/QuestFrame/UI-QuestTitleHighlight")
+	button:SetWidth(16)
+	button:SetHeight(16)
+	button:SetPoint("TOPLEFT", lastButton, "TOPRIGHT", 0,0)
+	button:EnableMouse(true);
+	button:SetScript("OnMouseUp", func)
+	button:SetScript("OnEnter", function() EpicMusicPlayer:ShowButtonTooltip(button, name) end)
+	button:SetScript("OnLeave", function() GameTooltip:Hide() end)
+	return button
+end
+
 local function CreateHeader(parent)
+	local db = EpicMusicPlayer.db
 	local header = CreateFrame("Frame",nil,parent)
 	header:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background"});
 	header:SetBackdropColor(0.2,0.2,0.2,0.9)
 
-	local lastbutton = CreateFrame("Button",nil,header)
-	lastbutton:SetWidth(16)
-	lastbutton:SetHeight(16)
+	local lastbutton = addButton(header, header, function() EpicMusicPlayer:PlayLast() end, "lastButton")
 	lastbutton:SetPoint("TOPLEFT", header, 0,0)
-	lastbutton:EnableMouse(true);
-	lastbutton:SetScript("OnMouseUp", function() EpicMusicPlayer:PlayLast() end)
-	lastbutton:SetNormalTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\emp-last.tga")
-	lastbutton:SetPushedTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\emp-last-p.tga")
-
-	playbutton = CreateFrame("Button",nil,header)
-	playbutton:SetWidth(16)
-	playbutton:SetHeight(16)
-	playbutton:SetPoint("TOPLEFT", lastbutton,"TOPRIGHT", 0,0)
-	playbutton:EnableMouse(true);
-	playbutton:SetScript("OnMouseUp", function(self)
-		if(EpicMusicPlayer.Playing)then
+	playbutton = addButton(header, lastbutton, function(self)
+		if EpicMusicPlayer.Playing then
 			EpicMusicPlayer:Stop()
 		else
 			EpicMusicPlayer:Play()
 		end
-	end)
+	end, "lastButton")
+
+  local nextbutton = addButton(header, playbutton, function() EpicMusicPlayer:PlayNext() end, "nextButton")
+	randombutton = addButton(header, nextbutton, function() EpicMusicPlayer:ToggleRandom() end, "randomButton")
+
 	UpdatePlayButon(EpicMusicPlayer.Playing)
+	UpdateRandomButon(nil, db.random)
 
-	local nextbutton = CreateFrame("Button",nil,header)
-	nextbutton:SetNormalTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\emp-next.tga")
-	nextbutton:SetPushedTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\emp-next-p.tga")
-	nextbutton:SetWidth(16)
-	nextbutton:SetHeight(16)
-	nextbutton:SetPoint("TOPLEFT", playbutton,"TOPRIGHT", 0,0)
-	nextbutton:EnableMouse(true);
-	nextbutton:SetScript("OnMouseUp", function() EpicMusicPlayer:PlayNext() end)
-
-	randombutton = CreateFrame("Button",nil,header)
-	randombutton:SetWidth(16)
-	randombutton:SetHeight(16)
-	randombutton:SetPoint("TOPLEFT", nextbutton,"TOPRIGHT", 0,0)
-	randombutton:EnableMouse(true);
-	randombutton:SetScript("OnMouseUp", function() EpicMusicPlayer:ToggleRandom() end)
-	UpdateRandomButon(nil, EpicMusicPlayer.db.random)
-
-	local mutebutton = CreateFrame("Button",nil,header)
-	mutebutton:SetNormalTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\emp-conf.tga")
-	mutebutton:SetPushedTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\emp-conf-p.tga")
-	mutebutton:SetWidth(16)
-	mutebutton:SetHeight(16)
-	mutebutton:SetPoint("TOPLEFT", randombutton,"TOPRIGHT", 0,0)
-	mutebutton:EnableMouse(true);
-	mutebutton:SetScript("OnMouseUp", function() EpicMusicPlayer:ToggleMute() end)
-
-	local listbutton = CreateFrame("Button",nil,header)
-	listbutton:SetNormalTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\emp-list.tga")
-	listbutton:SetPushedTexture("Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\emp-list-p.tga")
-	listbutton:SetWidth(16)
-	listbutton:SetHeight(16)
-	listbutton:SetPoint("TOPLEFT", mutebutton,"TOPRIGHT", 0,-1)
-	listbutton:EnableMouse(true);
-	listbutton:SetScript("OnMouseUp", function() db.hideListsList = not db.hideListsList; ToggleLists() end)
+	local mutebutton = addButton(header, randombutton, function(self, button) if button == "RightButton" then EpicMusicPlayer:ToggleMute() else EpicMusicPlayer:ShowConfig() end; end, "configButton")
+  local listbutton = addButton(header, mutebutton, function() db.hideListsList = not db.hideListsList; ToggleLists() end, "listButton")
+	local addButton1 = addButton(header, listbutton, function() EpicMusicPlayer:CreatePlayListDialog() end, "addButton")
+	local importButton = addButton(header, addButton1, function() EpicMusicPlayer:ImportDialog() end, "importButton")
 
 	local x = CreateFrame("Button",nil,parent,"UIPanelCloseButton")
 	x:SetWidth(29)
@@ -183,8 +155,6 @@ local function CreateHeader(parent)
 	x:SetPoint("TOPRIGHT",header,7,6)
 
 	title = header:CreateFontString()
-	--db.playlistfont^GameFontNormal:GetFont()
-	--EpicMusicPlayer:Debug("db.playlistfont",db.playlistfont,GameFontNormal:GetFont())
 	title:SetFont(EpicMusicPlayer:GetFont(db.playlistfont), 12)
 	title:SetPoint("TOPLEFT", listbutton,"TOPRIGHT", 5,1)
 	title:SetPoint("BOTTOMRIGHT", header, -25,0)
@@ -198,6 +168,10 @@ local function CreateHeader(parent)
 		UpdatePlayStop(nil, "", EpicMusicPlayer:GetCurrentSongName(), 0)
 	end
 	return header
+end
+
+function EpicMusicPlayer:ClearSearchFocus()
+  mainframe.editbox:ClearFocus()
 end
 
 local function CreateFooter(parent)
@@ -228,10 +202,25 @@ local function CreateFooter(parent)
 	end)
 	editbox:SetScript("OnEditFocusGained",function(self) self:HighlightText(0, self:GetNumLetters()) end)
 	editbox:SetScript("OnEditFocusLost",function(self) self:SetText(L["Search..."]) end)
+  footer.editbox = editbox
 	return footer
 end
 
+local function ToggleCheck(self, ...)
+	local song = EpicMusicPlayer:GetSong(listslist.selectedIndex, self.listindex)
+	if song then
+		if song.isChecked then
+			song.isChecked = false
+			self.check:Hide()
+		else
+			song.isChecked = true
+			self.check:Show()
+		end
+	end
+end
+
 local function CreatePlaylistGui(width, height)
+	local db = EpicMusicPlayer.db
 	aceevent:RegisterMessage("EMPUpdatePlay",UpdatePlayStop)
 	aceevent:RegisterMessage("EMPUpdateStop",UpdatePlayStop)
 	aceevent:RegisterMessage("EMPUpdateRandom",UpdateRandomButon)
@@ -332,14 +321,12 @@ local function CreatePlaylistGui(width, height)
 	--seperator:EnableMouse(1)
 	--seperator:SetMovable(true)
 	seperator:SetScript("OnMouseDown", function(self)
-		EpicMusicPlayer:Debug("OnMouseDown")
 		self:SetScript("OnUpdate", OnDragUpdate)
 		local x, y = GetCursorPosition();
 		self.x = x
 		self.moving = true
 	end)
 	seperator:SetScript("OnMouseUp", function(self)
-		EpicMusicPlayer:Debug("OnMouseUp")
 		self:SetScript("OnUpdate", nil)
 		self.moving = false
 		seperator:SetBackdropColor(1,1,1,0)
@@ -361,28 +348,26 @@ local function CreatePlaylistGui(width, height)
 					if song.Artist and song.Artist == "" then seperator = "" end
 					if db.list == selectedlistIndex and row == db.song then
 						if colum == 1 then
-							--return db.playlistHideArtist and "|cffd33800"..row.." "..song.Song or "|cffd33800"..row.." "..song.Artist..seperator..song.Song
+							--return self.db.playlistHideArtist and "|cffd33800"..row.." "..song.Song or "|cffd33800"..row.." "..song.Artist..seperator..song.Song
 							return db.playlistHideArtist and "|cffffd200"..row.." "..song.Song or "|cffffd200"..row.." "..song.Artist..seperator..song.Song
 						elseif colum == 2 then
 							return "|cffffd200"..song.Album
 						else
-							return "|cffffd200"..EpicMusicPlayer:GetTimeSTring(song.Length)
+							return "|cffffd200"..EpicMusicPlayer:GetTimeString(song.Length)
 						end
 					else
 						if colum == 1 then
-							--return db.playlistHideArtist and row.." "..song.Song or row.." |cffffd200"..song.Artist.."|r"..seperator..song.Song
 							return db.playlistHideArtist and row.." "..song.Song or row.." "..song.Artist..seperator..song.Song
 						elseif colum == 2 then
-							--return "|cffffd200"..song.Album
 							return song.Album
-						else
-							return EpicMusicPlayer:GetTimeSTring(song.Length)
+						elseif colum == 3 then
+							return EpicMusicPlayer:GetTimeString(song.Length)
 						end
 					end
 				end
 			end,
 		OnSongClick,nil,
-		OnSongLeave, frame.font)
+		OnSongLeave, frame.font, ToggleCheck)
 	--songlist:SetPoint("TOPLEFT", frame ,120, -25)
 	--songlist:SetPoint("BOTTOMRIGHT", frame ,-5, 27)
 	--songlist:SetPoint("TOPLEFT", seperator ,0, 0)
@@ -390,6 +375,7 @@ local function CreatePlaylistGui(width, height)
 
 	listslist = EpicMusicPlayer:CreateListWidget("EpicMusicPlayer_Playlists",frame,#EpicMusicPlayer.playlists,nil,
 		function(row, colum)
+			local db = EpicMusicPlayer.db
 			listname = ""
 			if EpicMusicPlayer:IsListIgnored(row) then
 				listname = "°"
@@ -422,6 +408,7 @@ local function CreatePlaylistGui(width, height)
 	local footer = CreateFooter(frame)
 	footer:SetPoint("TOPLEFT", listslist ,"BOTTOMLEFT",4, 0)
 	footer:SetPoint("BOTTOMRIGHT", frame,-9, 9);
+  frame.editbox = footer.editbox
 
 	mainframe = frame
 end

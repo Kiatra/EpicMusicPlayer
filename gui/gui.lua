@@ -117,7 +117,7 @@ local options={
 			name = L["Show GUI"],
 			desc = L["Toggle show GUI"],
 			get = function(name)
-				return EpicMusicPlayer:IsPlayerGui()
+				return EpicMusicPlayer.db.showgui
 			end,
 				set = function(name)
 				EpicMusicPlayer:TogglePlayerGui()
@@ -147,7 +147,7 @@ local options={
 				return EMPGUI:GetScale()
 			end,
 			set =  function(info,val)
-				EpicMusicPlayer.db.char.guiscale = val
+				EpicMusicPlayer.db.profile.guiscale = val
 				EMPGUI:SetScale(val)
 			end,
 		},
@@ -163,6 +163,7 @@ local options={
 				EpicMusicPlayer:ToggleScrollGuiText()
 			end,
 		},
+		--[[
 		useartiscolour = {
 			type = "toggle",
 			order = 5,
@@ -211,7 +212,7 @@ local options={
 				return r, g, b, a
 			end,
 			set = setBackColor,
-		},
+		},--]]
 		bordercolour = {
 			type = "color",
 			order = 8,
@@ -368,14 +369,13 @@ end
 -- Update functions
 ------------------------------------------------------------------------------------------------------------------------------
 function EpicMusicPlayerGui:EMPUpdateTime(event, seconds)
-	--EpicMusicPlayer:Debug("EMPUpdateTime", "timeBarFrame", timeBarFrame, "timeBarFramewidth", timeBarFramewidth)
 	if(timeBarFrame)then
 		timeBarFramewidth = timeBarFramewidth + timeBarFramestep
 		exchangecount = exchangecount +1
 		timeBarFrame:SetWidth(timeBarFramewidth)
 	end
 	if timerframe and seconds then
-		timerframe.text:SetText(EpicMusicPlayer:GetTimeSTring(songlength-seconds))
+		timerframe.text:SetText(EpicMusicPlayer:GetTimeString(songlength-seconds))
 	end
 end
 
@@ -450,7 +450,7 @@ function EpicMusicPlayerGui:EMPUpdatePlay(event, artist, songname, length)
 	displaysong = false
 	exchangecount = 4
 
-	if(EpicMusicPlayer.db.gui.scroll)then
+	if(EpicMusicPlayer.db.gui and EpicMusicPlayer.db.gui.scroll)then
 		SetScrollText(currsongname..currartist)
 	else
 		if(guitext)then
@@ -469,7 +469,7 @@ function EpicMusicPlayerGui:EMPUpdatePlay(event, artist, songname, length)
 		timeBarFramestep = (self.frames.player:GetWidth()-20) / songlength
 	end
 	if timerframe then
-		timerframe.text:SetText(EpicMusicPlayer:GetTimeSTring(songlength))
+		timerframe.text:SetText(EpicMusicPlayer:GetTimeString(songlength))
 	end
 
 	if(self.frames.play)then
@@ -524,7 +524,24 @@ function EpicMusicPlayerGui:EMPUpdateRandom(event, val)
 	end
 end
 
+function EpicMusicPlayerGui:Show()
+	if EMPGUI then
+		EMPGUI:Show()
+		if EpicMusicDancer and EpicMusicDancer:IsGuiToggle() then
+				EpicMusicDancer:Show()
+	  end
+	end
+end
+
+function EpicMusicPlayerGui:Hide()
+	EMPGUI:Hide()
+	if EpicMusicDancer and EpicMusicDancer:IsGuiToggle() then
+			EpicMusicDancer:Hide()
+	end
+end
+
 function EpicMusicPlayerGui:Toggle()
+	EpicMusicPlayer:Debug("self.showgui", self.showgui)
 	if(EMPGUI)then
 		if(EMPGUI:IsShown()) then
 			EMPGUI:Hide()
@@ -757,7 +774,6 @@ function EpicMusicPlayerGui:CreateGuiFrame()
 		if not EMPGUI.atlasTexture then
 			atlasTexture = EMPGUI:CreateTexture()
 			EMPGUI.atlasTexture = atlasTexture
-			EpicMusicPlayer:Debug("settings.atlas:", settings.atlas)
 			atlasTexture:SetAtlas(settings.atlas)
 			atlasTexture:SetHeight(settings.height)
 			atlasTexture:SetWidth(settings.width)
@@ -891,7 +907,7 @@ function EpicMusicPlayerGui:CreateGuiFrame()
 	self:UpdateFrame(EpicMusicPlayer)
 
 	EpicMusicPlayerGui:EMPUpdateRandom(nil, EpicMusicPlayer.db.random)
-	if(EpicMusicPlayer.dataBase.char.guiscale)then
-		EMPGUI:SetScale(EpicMusicPlayer.dataBase.char.guiscale)
+	if(EpicMusicPlayer.db.guiscale)then
+		EMPGUI:SetScale(EpicMusicPlayer.db.guiscale)
 	end
 end

@@ -1,10 +1,9 @@
 -- EpicMusicPlayer playlist created by EpicPlaylistCreator version 1.6.
 local playlist1={
+  ["listName"] = "All",
+  ["playlistVersion"] = "4.0",
+  ["playlistType"] = "generated",
   {
-    ["ListName"] = "All",
-    ["PlaylistVersion"] = "3.1",
-    ["PlaylistType"] = "generated",
-    ["MusicDir"] = "MyMusic\\",
     ["Album"] = "",
     ["Song"] = "battle04",
     ["Name"] = "sound\\music\\musical moments\\battle\\battle04.mp3",

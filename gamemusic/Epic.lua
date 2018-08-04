@@ -1,9 +1,8 @@
 local BestofWoW = {
+  ["listName"] = "Epic",
+  ["playlistVersion"] = "4.0",
+  ["playlistType"] = "generated",
   {
-    ["ListName"] = "Epic",
-    ["PlaylistVersion"] = "3.1",
-    ["PlaylistType"] = "generated",
-    ["MusicDir"] = "MyMusic\\",
     ["Album"] = "WarCraft III Expansion",
     ["Song"] = "Power Of The Horde",
     ["Name"] = "Sound\\Music\\ZoneMusic\\DMF_L70ETC01.mp3",

@@ -1,12 +1,10 @@
 ﻿local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer")
 
 local playlist3 = {
+	["listName"] = "Battle for Azeroth",
+	["playlistVersion"] = "3.1",
+	["playlistType"] = "generated",
 	{
-		["ListName"] = "Battle for Azeroth",
-		["PlaylistVersion"] = "3.1",
-		["PlaylistType"] = "generated",
-		["MusicDir"] = "MyMusic\\",
-        --first song
 		["Album"] = "WoW7.3.5",
 		["Song"] = "mus_735_pointofimpact_a",
 		["Name"] = "sound\\music\\battleforazeroth\\mus_735_pointofimpact_a.mp3",

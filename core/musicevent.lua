@@ -12,7 +12,6 @@ local typesList = {fight="Fight",boss="Boss Fight",zone="Zone"}
 
 local function GetTypeName(info)
 	local name = info[#info]
-	Debug("GetTypeName",name)
 	return typesList[name]
 end
 
@@ -20,7 +19,7 @@ local options={
 	name="Events",
 	order = 7,
 	type="group",
-	args = {		
+	args = {
 		enabled = {
 			type = 'toggle',
 			--width = "half",
@@ -111,7 +110,6 @@ function MusicEvents:AddEventOptions(name)
 						desc = "Select Playlist",
 						get = function(info)
 							local name = info[#info-2]
-							EpicMusicPlayer.Debug("name=",name)
 							return eventsList[name].list
 						end,
 						set = function(info, value)
@@ -159,7 +157,6 @@ local function OnEvent(self, event, arg1)
 	db = db.events
 	db.eventsList = db.eventsList or {}
 	eventsList = db.eventsList
-	Debug("eventsList",eventsList)
 	for name, event in pairs(eventsList) do
 		MusicEvents:AddEventOptions(name)
 	end
@@ -170,6 +167,3 @@ end
 
 frame:SetScript("OnEvent", OnEvent)
 frame:RegisterEvent("PLAYER_ENTERING_WORLD")
-
-
-

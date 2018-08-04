@@ -5,8 +5,8 @@ function EpicMusicPlayer:OnPlayerLevelUp(level)
 	if level == 120 and db.maxLevelSong then
 		self:ForceMusicVolume()
 		if(EpicMusicPlayerGui)then
-			if(not EpicMusicPlayer.dataBase.char.showgui)then
-				EpicMusicPlayer.dataBase.char.showgui = true
+			if(not self.db.showgui)then
+				self.db.showgui = true
 				EpicMusicPlayerGui:Toggle()
 			end
 		end
@@ -27,8 +27,8 @@ function EpicMusicPlayer:CheckDate()
 	if datetime == "01010000" then
 		self:ForceMusicVolume()
 		if(EpicMusicPlayerGui)then
-			if(not EpicMusicPlayer.dataBase.char.showgui)then
-				EpicMusicPlayer.dataBase.char.showgui = true
+			if(not self.db.showgui)then
+				self.db.showgui = true
 				EpicMusicPlayerGui:Toggle()
 			end
 		end

@@ -10,7 +10,6 @@ local function SetVolumeUnsaved(self, vol, voltypeCVar)
 end
 
 function EpicMusicPlayer:SetVolume(vol, voltypeCVar)
-	EpicMusicPlayer:Debug("SetVolume", self.db.volume, voltypeCVar)
 	self.db.volume = vol;
 	SetVolumeUnsaved(self, vol, voltypeCVar)
 end
@@ -37,11 +36,9 @@ function EpicMusicPlayer:ForceMusicVolume(volume)
 	else
 		SetCVar("Sound_EnableMusic", 1)
 	end
-	EpicMusicPlayer:Debug("ForceMusicVolume", "volume:", volume)
 end
 
 function EpicMusicPlayer:RestoreMusic()
-	EpicMusicPlayer:Debug("RestoreMusic", "self.disablewowmusic:", self.disablewowmusic)
 	if(self.disablewowmusic) then
 		SetCVar("Sound_EnableMusic", 0);
 	else
@@ -56,7 +53,7 @@ function EpicMusicPlayer:RestoreSoundVolume()
 end
 
 function EpicMusicPlayer:GetVolumeText(type)
-	 return type == "Sound_SFXVolume" and L["Effects volume: "] or "Sound_MasterVolume" and L["Master volume: "] or L["Music volume: "]
+	 return type == "Sound_SFXVolume" and L["Effects volume: "] or type == "Sound_MasterVolume" and L["Master volume: "] or L["Music volume: "]
 end
 
 function EpicMusicPlayer:GetMusicVolumeCVar()
@@ -65,7 +62,7 @@ end
 
 function EpicMusicPlayer:DisplyScrollHandler(vector)
 		local cVar = IsControlKeyDown() and "Sound_SFXVolume" or self:GetMusicVolumeCVar()
-		cVar = IsShiftKeyDown() and "Sound_MasterVolume" or self:GetMusicVolumeCVar()
+		cVar = IsShiftKeyDown() and "Sound_MasterVolume" or cVar
 		local vol = GetCVar(cVar)
 		local step = IsAltKeyDown() and vector * .01 or vector * .1
 		vol = vol + step

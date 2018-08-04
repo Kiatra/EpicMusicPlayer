@@ -1,10 +1,9 @@
 -- EpicMusicPlayer playlist created by EpicPlaylistCreator version 1.6.
 local playlist1={
+  ["listName"] = "Legion",
+  ["playlistVersion"] = "3.1",
+  ["playlistType"] = "generated",
   {
-    ["ListName"] = "Legion",
-    ["PlaylistVersion"] = "3.1",
-    ["PlaylistType"] = "generated",
-    ["MusicDir"] = "MyMusic\\",
     ["Album"] = "WoW7.3",
     ["Song"] = "mus_73_arguscore1_h",
     ["Name"] = "sound\\music\\legion\\mus_73_arguscore1_h.mp3",

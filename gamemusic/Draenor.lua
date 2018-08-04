@@ -1,10 +1,10 @@
 -- EpicMusicPlayer playlist created by EpicPlaylistCreator version 0.1.
 local playlist1={
+  ["listName"] = "Draenor",
+  ["playlistVersion"] = "3.1",
+  ["playlistType"] = "generated",
+  ["musicDir"] = "MyMusic\\",
   {
-    ["ListName"] = "Draenor",
-    ["PlaylistVersion"] = "3.1",
-    ["PlaylistType"] = "generated",
-    ["MusicDir"] = "MyMusic\\",
     ["Album"] = "WoW 6",
     ["Song"] = "A Hero's Sacrifice v1",
     ["Name"] = "sound\\music\\Draenor\\MUS_60_AHerosSacrifice_v1.mp3",

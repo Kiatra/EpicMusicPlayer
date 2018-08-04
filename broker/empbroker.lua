@@ -22,10 +22,10 @@ local options={
 					name = L['Show List/Song Numbers'],
 					desc = L['Show playlist and song number'],
 					get = function()
-						return EpicMusicPlayerBroker.db.profile.shownumber
+						return EpicMusicPlayer.db.profile.broker.shownumber
 					end,
 					set = function()
-					    EpicMusicPlayerBroker.db.profile.shownumber = not EpicMusicPlayerBroker.db.profile.shownumber
+					    EpicMusicPlayer.db.profile.broker.shownumber = not EpicMusicPlayer.db.profile.broker.shownumber
 						EpicMusicPlayerBroker:UpdateText()
 					end,
 				},
@@ -36,10 +36,10 @@ local options={
 					name = L['Show Title'],
 					desc = L['Toggle show title'],
 					get = function()
-						return EpicMusicPlayerBroker.db.profile.showtitle
+						return EpicMusicPlayer.db.profile.broker.showtitle
 					end,
 					set = function()
-					    EpicMusicPlayerBroker.db.profile.showtitle = not EpicMusicPlayerBroker.db.profile.showtitle
+					    EpicMusicPlayer.db.profile.broker.showtitle = not self.db.broker.showtitle
 					    EpicMusicPlayerBroker:UpdateText()
 					end,
 				},
@@ -50,10 +50,10 @@ local options={
 					name = L['Show Artist'],
 					desc = L['Toggle show Artist'],
 					get = function()
-						return EpicMusicPlayerBroker.db.profile.showartist
+						return EpicMusicPlayer.db.profile.broker.showartist
 					end,
 					set = function()
-					    EpicMusicPlayerBroker.db.profile.showartist = not EpicMusicPlayerBroker.db.profile.showartist
+					    EpicMusicPlayer.db.profile.broker.showartist = not EpicMusicPlayer.db.profile.broker.showartist
 					    EpicMusicPlayerBroker:UpdateText()
 					end,
 				},
@@ -63,10 +63,10 @@ local options={
 				    name = L["Show time"],
 		            desc = L["Toggle show time"],
 		            get = function()
-						return EpicMusicPlayerBroker.db.profile.showtime
+						return EpicMusicPlayer.db.profile.broker.showtime
 					end,
 					set = function()
-					    EpicMusicPlayerBroker.db.profile.showtime = not EpicMusicPlayerBroker.db.profile.showtime
+					    EpicMusicPlayer.db.profile.broker.showtime = not EpicMusicPlayer.db.profile.broker.showtime
 					    EpicMusicPlayerBroker:UpdateText()
 					end,
 		        },
@@ -79,7 +79,7 @@ local options={
 					max = 40,
 					step = 1,
 					get = function(name)
-						return EpicMusicPlayerBroker.db.profile.MaxTextLength
+						return EpicMusicPlayer.db.profile.broker.MaxTextLength
 					end,
 					set = function(self,value)
 						EpicMusicPlayerBroker:SetMaxTextLength(value)
@@ -91,9 +91,8 @@ local options={
 local songlength, titleoffset, sec = 0, 0, 0
 local songtitle, artist, album, shorttitle = "", "", "", ""
 local playing = false;
-local empdb
 
-local function GetTimeSTring(seconds)
+local function GetTimeString(seconds)
 	local min = seconds / 60
 	local sec = mod(seconds, 60)
 	if( sec < 10) then
@@ -104,12 +103,12 @@ local function GetTimeSTring(seconds)
 end
 
 function EpicMusicPlayerBroker:IsMinimap()
-	return not EpicMusicPlayerBroker.db.profile.minimapButton.hide
+	return not self.db.broker.minimapButton.hide
 end
 
 function EpicMusicPlayerBroker:ToggleMinimap()
-	EpicMusicPlayerBroker.db.profile.minimapButton.hide = not EpicMusicPlayerBroker.db.profile.minimapButton.hide
-	if EpicMusicPlayerBroker.db.profile.minimapButton.hide then
+	self.db.broker.minimapButton.hide = not self.db.broker.minimapButton.hide
+	if self.db.broker.minimapButton.hide then
 		ldbIcon:Hide("EpicMusicPlayer")
 	else
 		ldbIcon:Show("EpicMusicPlayer")
@@ -119,14 +118,14 @@ end
 function EpicMusicPlayerBroker:SetMaxTextLength(length)
 
    if length > 40 then
-      EpicMusicPlayerBroker.db.profile.MaxTextLength = 40
+      self.db.broker.MaxTextLength = 40
       return
    end
    if length < 4 then
-      EpicMusicPlayerBroker.db.profile.MaxTextLength = 4
+      self.db.broker.MaxTextLength = 4
       return
    end
-   EpicMusicPlayerBroker.db.profile.MaxTextLength = length
+   self.db.broker.MaxTextLength = length
    shorttitle = self:SetTextLenght(songtitle)
    self:UpdateText()
 
@@ -134,7 +133,7 @@ end
 
 function EpicMusicPlayerBroker:SetTextLenght(text)
 	local length = text:len()
-	local maxLength = EpicMusicPlayerBroker.db.profile.MaxTextLength
+	local maxLength = self.db.broker.MaxTextLength
 	if length > maxLength then
 		text = text:sub(1, maxLength - 3) .. '...'
 	end
@@ -176,22 +175,7 @@ end
 
 
 function EpicMusicPlayerBroker:OnInitialize()
-	empdb = EpicMusicPlayer.db.profile
-	local defaults = {
-		profile = {
-			MaxTextLength = 20,
-			enabled = true,
-			showtime = true,
-			scroll = false,
-			showtitle = true,
-			shownumber = false,
-			showartist = false,
-			minimapButton = {
-				hide = LibStub("AceAddon-3.0"):GetAddon("ChocolateBar", true) and true,
-			},
-		},
-	}
-	self.db = _G.LibStub("AceDB-3.0"):New("EpicMusicPlayerBrokerDB", defaults, "Default")
+	self.db = EpicMusicPlayer.db
 
 	EpicMusicPlayer:AddOptions("broker",options)
 	songtitle = EpicMusicPlayer:GetCurrentSongName()
@@ -199,7 +183,7 @@ function EpicMusicPlayerBroker:OnInitialize()
 	self:UpdateText()
 
 	if ldbIcon then
-		ldbIcon:Register("EpicMusicPlayer", dataobj, EpicMusicPlayerBroker.db.profile.minimapButton)
+		ldbIcon:Register("EpicMusicPlayer", dataobj, self.db.broker.minimapButton)
 	end
 
 	self:RegisterMessage("EMPUpdateStop")
@@ -232,7 +216,7 @@ function EpicMusicPlayerBroker:EMPUpdatePlay(event, artist, songname, length)
 	songlength = length
 	songtitle = songname
 	--artist = artistname
-	if EpicMusicPlayerBroker.db.profile.showartist and artist then
+	if self.db.broker.showartist and artist then
 		shorttitle = self:SetTextLenght(artist.." - "..songtitle)
 	else
 		shorttitle = self:SetTextLenght(songtitle)
@@ -253,19 +237,19 @@ end
 
 function EpicMusicPlayerBroker:UpdateText()
 	local text = ""
-	if(EpicMusicPlayerBroker.db.profile.shownumber)then
-		text = empdb.list.."/"..(empdb.song-1).." "
+	if(self.db.broker.shownumber)then
+		text = self.db.list.."/"..(self.db.song-1).." "
 	end
 
-	if(EpicMusicPlayerBroker.db.profile.showtitle or EpicMusicPlayerBroker.db.profile.showtime)then
+	if(self.db.broker.showtitle or self.db.broker.showtime)then
 		local title
 	    if (playing == true) then
-			if(EpicMusicPlayerBroker.db.profile.showtitle) then
+			if(self.db.broker.showtitle) then
 				text = text..shorttitle
 			end
-	        if(EpicMusicPlayerBroker.db.profile.showtime) then
-				text = text.." "..GetTimeSTring(sec).."/"
-					..GetTimeSTring(songlength)
+	        if(self.db.broker.showtime) then
+				text = text.." "..GetTimeString(sec).."/"
+					..GetTimeString(songlength)
 			end
 	    else
 			    text = text..shorttitle

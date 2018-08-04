@@ -3,7 +3,7 @@ local EpicMusicPlayer = LibStub("AceAddon-3.0"):NewAddon("EpicMusicPlayer", "Ace
 local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 local media = LibStub:GetLibrary("LibSharedMedia-3.0", true) or nil
 local AceCfgDlg = LibStub("AceConfigDialog-3.0")
-
+--"/etrace"
 local _G, eventtimer = _G, ""
 local db, movesong
 local timer = "" -- timer for display of seconds
@@ -18,6 +18,36 @@ EpicMusicPlayer.controlslist = {
 EpicMusicPlayer.version = GetAddOnMetadata("EpicMusicPlayer","Version")
 EpicMusicPlayer.tocversion = select(4, GetBuildInfo());
 
+
+--unit_threat_situations_update
+--unit_threat_list_update
+--unit_flags
+--name_plate_unit_added
+
+local function Debug(...)
+  --@debug@
+	local s = "EMP Debug:"
+	if not EpicMusicPlayer.dataBase then
+		s = "EMP Initialize:"
+  elseif not EpicMusicPlayer.dataBase.char.debug then
+		return
+	end
+
+	for i=1,select("#", ...) do
+		local x = select(i, ...)
+		s = strjoin("  ",s,tostring(x))
+	end
+	DEFAULT_CHAT_FRAME:AddMessage(s)
+	--@end-debug@
+end
+
+function EpicMusicPlayer:Debug(...)
+	Debug(self, ...)
+end
+
+function EpicMusicPlayer:Error(...)
+	Debug(self, ...)
+end
 ------------------------------------------------------------------------------
 -- ace load functions
 -------------------------------------------------------------------------------
@@ -41,9 +71,9 @@ function EpicMusicPlayer:OnInitialize()
 			addGameMusic = true,
 			maxLevelSong = true,
 			controlset = {
-				LeftButton="OnNextClick",
+				LeftButton="TogglePlayListGui",
 				RightButton="OpenMenu",
-				MiddleButton="TogglePlay",
+				MiddleButton="OnNextClick",
 				Button4="TogglePlayListGui",
 				Button5="TogglePlayListGui",
 				leftaltcontrol = "RemoveCurrendSong",
@@ -65,6 +95,18 @@ function EpicMusicPlayer:OnInitialize()
 			playlistfont = media:GetDefault("font"),
 			gui = {
 				scroll = true
+			},
+			broker = {
+				MaxTextLength = 20,
+				enabled = true,
+				showtime = true,
+				scroll = false,
+				showtitle = true,
+				shownumber = false,
+				showartist = false,
+				minimapButton = {
+					hide = LibStub("AceAddon-3.0"):GetAddon("ChocolateBar", true) and true,
+				},
 			},
 			eventZones = {},
 		},
@@ -134,17 +176,15 @@ function EpicMusicPlayer:OnEnable(first)
         end
     end
 
-	if(EpicMusicPlayerGui)then
-		if(not self.dataBase.char.showgui)then
-			EpicMusicPlayerGui:Toggle()
+	if EpicMusicPlayerGui then
+		if self.db.showgui then
+			EpicMusicPlayerGui:Show()
+		else
+			EpicMusicPlayerGui:Hide()
 		end
 	end
 
 	self:CheckPlayList()
-	if EpicMusicPlayer.playlist2 then
-		EpicMusicPlayer:AddPlayList("Playlist", EpicMusicPlayer.playlist2, false)
-		EpicMusicPlayer:RemovePlayList("Common")
-	end
 end
 
 function EpicMusicPlayer:OnDisable()
@@ -211,14 +251,6 @@ function EpicMusicPlayer:OnWhisperInform()
 	EpicMusicPlayer.whisper = arg2
 end
 
--- move song if one is marked
-function EpicMusicPlayer:CheckSongToMove()
-	if(movesong)then
-		self:MoveSong(self.moveoldlistIndex, self.movenewlistIndex, self.movesongIndex)
-		movesong = nil
-	end
-end
-
 function EpicMusicPlayer:GetFonts()
 	return media:HashTable("font")
 end
@@ -269,24 +301,6 @@ function EpicMusicPlayer:RemoveCurrendSong()
 		self:RemoveSong(db.list,db.song)
 	end
 	self:PlayNext()
-end
-
--- move song after current song
-function EpicMusicPlayer:MoveCurrentSong(newListIndex)
-	if historyInUse then
-		self:Print(L["Playing song from history."]);
-	else
-		if(db.list == newListIndex)then
-			self:Print(L["Song is already in that list."])
-			return false;
-		end
-
-		self:Print(L["Current will be moved on playing next song."])
-		movesong = true
-		self.movesongIndex = db.song
-		self.movenewlistIndex = newListIndex
-		self.moveoldlistIndex = db.list
-	end
 end
 
 function EpicMusicPlayer:ShowConfig()

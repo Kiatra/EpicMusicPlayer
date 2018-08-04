@@ -5,7 +5,6 @@ local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 -------------------------------------------------------------------------------
 -- ace options table
 -------------------------------------------------------------------------------
-local db
 local version = GetAddOnMetadata("EpicMusicPlayer","Version") or ""
 local empoptions = {
     name = "EMP "..version,
@@ -61,19 +60,6 @@ local empoptions = {
   						 EpicMusicPlayer:ShowList()
   					end
   		    },
-  				del = {
-  		      type = 'execute',
-  					order = -1,
-  		      name = L["Remove Song"],
-  		      desc = L["Remove the playing song from list"],
-  		      func = function()
-  						if(EpicMusicPlayer.Playing)then
-  							EpicMusicPlayer:RemoveSong(EpicMusicPlayer.db.list,EpicMusicPlayer.db.song);
-  						else
-  							EpicMusicPlayer:Print(L["Not playing."])
-  						end
-  					end
-  		    },
   			},
 		},
 		general={
@@ -125,6 +111,7 @@ local empoptions = {
 								end
 							end
 						},
+            --[[
 						font = {
 							type = 'select',
 							dialogControl = 'LSM30_Font',
@@ -157,6 +144,7 @@ local empoptions = {
 								EpicMusicPlayer.db.playlistfont = value
 							end,
 						},
+            --]]
 					},
 				},
 				controls={
@@ -489,7 +477,7 @@ local empoptions = {
 					end,
 					set = function(info, value)
 						EpicMusicPlayer.db.liststrata = value
-						EpicMusicPlayerGui.frames.player:SetFrameStrata(value)
+						_G.EpicMusicPlayerGui.frames.player:SetFrameStrata(value)
 					end,
 				},
 				scale = {
@@ -587,7 +575,7 @@ local empoptions = {
 				text6 = {
 					order = 12,
 					type = "description",
-					name = L["Playlists created by the EpicListCreator or added by the game music module are locked for editing."],
+					name = L["Playlists shipped with the addon or created by the PlaylistCreator are locked for editing."],
 				},
 			},
 		},
@@ -601,21 +589,29 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("EpicMusicPlayer", empoptions)
 -------------------------------------------------------------------------------
 function EpicMusicPlayer:AddProfile(baseDB)
   empoptions.args.profile = LibStub("AceDBOptions-3.0"):GetOptionsTable(baseDB)
+  baseDB.RegisterCallback(self, "OnProfileChanged", "OnProfileChanged")
+	baseDB.RegisterCallback(self, "OnProfileCopied", "OnProfileChanged")
+	baseDB.RegisterCallback(self, "OnProfileReset", "OnProfileChanged")
+end
+
+function EpicMusicPlayer:OnProfileChanged(event, database, newProfileKey)
+  local db = database.profile
+  self.db = db
+
+  local EpicMusicPlayerBroker = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayerBroker")
+  EpicMusicPlayerBroker.db = self.db
+
+  self:Stop()
+  _G.EpicMusicPlayerGui:UpdateFrame(self)
+  self:TogglePlayerGui()
+  _G.EpicMusicPlayerGui.frames.player:SetFrameStrata(self.db.liststrata)
+  EpicMusicPlayerBroker:ToggleMinimap()
+
 end
 
 function EpicMusicPlayer:AddOptions(name,options)
 	empoptions.args[name] = options
 	LibStub("AceConfigRegistry-3.0"):NotifyChange("EpicMusicPlayer")
-end
-
-function EpicMusicPlayer:IsPlayerGui()
-    if(_G.EMPGUI)then
-		if(_G.EMPGUI:IsVisible())then
-			return true
-		end
-	end
-
-	return false
 end
 
 function EpicMusicPlayer:TogglePlayerGui()
@@ -624,8 +620,8 @@ function EpicMusicPlayer:TogglePlayerGui()
 	else
 		EpicMusicPlayer:Print(L["GUI not found"])
 	end
-	EpicMusicPlayer.dataBase.char.showgui = not EpicMusicPlayer.dataBase.char.showgui
-
+  self:Debug("TogglePlayerGui showgui", self.db.showgui)
+  self.db.showgui = not self.db.showgui
 end
 
 function EpicMusicPlayer:IsMinimap()
@@ -791,20 +787,17 @@ end
 
 local function getZoneList(info)
 	local name = info[#info-2]
-	EpicMusicPlayer:Debug("GetZoneList: ", name)
 	return db.eventZones[name];
 end
 
 local function setZoneList(info, value)
 	local name = info[#info-2]
-	EpicMusicPlayer:Debug("setZoneList: ", name, value)
 	db.eventZones[name] = value;
 	return name
 end
 
 local function deleteZone(info, value)
 	local name = info[#info-2]
-	EpicMusicPlayer:Debug("deleteZone: ", name)
 	db.eventZones[name] = nil;
 	eventOptions[name] = nil;
 end

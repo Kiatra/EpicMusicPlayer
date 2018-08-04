@@ -20,6 +20,7 @@ libs\LibDBIcon-1.0.xml
 localization.lua
 
 core\core.lua
+core\util.lua
 core\volumeControl.lua
 core\scrolllist.lua
 core\playlistframe.lua
@@ -30,7 +31,6 @@ core\send.lua
 core\listmanagement.lua
 #core\musicevent.lua
 core\player.lua
-core\util.lua
 core\easter.lua
 core\osd.lua
 core\chat.lua
@@ -40,12 +40,10 @@ gui\gui.lua
 gui\skins.lua
 playlistcreator\CustomMusic.lua
 
-
-modules\broker\LibDataBroker-1.1.lua
-modules\broker\empbroker.lua
-modules\dancer\EpicMusicDancer.lua
-modules\gamemusic\Epic.lua
-modules\gamemusic\All.lua
-modules\gamemusic\Draenor.lua
-modules\gamemusic\Legion.lua
-modules\gamemusic\BattleForAzeroth.lua
+broker\empbroker.lua
+dancer\EpicMusicDancer.lua
+gamemusic\Epic.lua
+gamemusic\All.lua
+gamemusic\Draenor.lua
+gamemusic\Legion.lua
+gamemusic\BattleForAzeroth.lua

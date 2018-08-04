@@ -4,6 +4,21 @@ local L = AceLocale:NewLocale("EpicMusicPlayer", "enUS", true)
 if not L then return end
 
 if L then
+ 	L["Toggle Playlist"] = true
+	L["Replaceing already existing playlist %s with the new one."] = true
+	L["Open options (Right click to toggle mute.)"] = true
+  L["Enter playlist name:"] = true
+  L["Exported playlist:"] = true
+  L["Export Playlist"] = true
+  L["Import playlist:"] = true
+  L["Import a playlist. Right click a list to export that list."] = true
+  L["Copy song (%s) to"] = true
+  L["Copy selected songs to"] = true
+  L["Copy all songs to"] = true
+  L["Clear selection"] = true
+  L["New List"] = true
+  L["List or song not found"] = true
+
 	L["Use Ambience Channel"] = true
 	L["When this is enabled music will be played using the ambience channel instead of the music channel. Music will no longer stop on a loading screen but you will not hear ambience sound during music play."] = true
 
@@ -30,11 +45,10 @@ if L then
 	L["Playlist %s already exists."] = true
 	L["Why are some playlists grey?"] = true
 	L["Playlist %s not found."] = true
-	L["Really remove playlist %s?"] = true
+	L["Remove playlist %s?"] = true
 	L["Playlist %s removed."] = true
-	L["Playlists created by the EpicListCreator or added by the game music module are locked for editing."] = true
-	L["You can only remove playlists created ingame or with the playlist manager (not the playlist generator)!"] = true
-
+	L["Playlists shipped with the addon or created by the PlaylistCreator are locked for editing."] = true
+	L["You can only remove playlists created ingame or with the playlist creator."] = true
 
 	L["Shuffle Cross Playlist"] = true
 	L["Hide Artist in Playlist"] = true
@@ -43,11 +57,8 @@ if L then
 	L["Select a question from the left."] = true
 	L["EpicMusicPlayer Update Info"] = true
 
-	L["Read the FAQ for more info about this."] = true
 	L["Reset GUI Position"] = true
 	L["Reset the GUI window position"] = true
-	L["Playlist font"] = true
-	L["Change the playlist font. Requires relog to take effect."] = true
 	L["Test"] = true
 	L["Plays a test song."] = true
 	L["Playlist Scale"] = true
@@ -108,13 +119,8 @@ if L then
 	L["Ctrl + use scroll wheel - adjust effects volume"] = true
 	L["Alt + use scroll wheel - fine adjust volume"] = true
 
-	L["Ctrl click - Write artist and title to default chat. (Guild,party etc.)"] = true
-
-	L["GUI Layout"] = true
 	L["Help - FAQ"] = true
-	L["Frequently Asked Questions"] = true
 
-	L["Current will be moved on playing next song."] = true
 	L["Playing song from history."] = true
 
 	L["Font"] = true
@@ -129,13 +135,11 @@ if L then
 
 2. Create a folder named "MyMusic" in your World of Warcraft folder e.g: C:/Program Files/World of Warcraft/ or C:/Program Files (x86)/World of Warcraft.
 
-3. After it is created, copy the songs you want into the folder (Reminder: They must be mp3 or ogg format to be used).
+3. After it is created, copy the songs you want into the folder (Reminder: They must be mp3 format to be used).
 
-4. In the EpicMusicPlayer_MP3 folder double-click to open the "EpicListCreator.zip" and extract the EpicListCreator.exe file into the "EpicMusicPlayer_MP3" folder.
+4. In the EpicMusicPlayer_MP3 folder double-click the "PlaylistCreator.vbs" file.
 
-5. Run EpicListCreator.exe
-
-6. Start the game and enjoy your music.
+5. Start the game and enjoy your music.
 ]]
 
 	L["Why is the song playing from the beginning after a loading screen?"] = true
@@ -143,9 +147,6 @@ if L then
 
 	L["Why is there no pause button?"] = true
 	L["Not possible with wow. As is playing a song at a specific position. An addon can only tell wow to play and stop a song that's it."] = true
-
-	L["Current will be moved on playing next song."] = true
-	L["Moved song %s from list %s to list %s."] = true
 
 	L["Playing song from history."] = true
 
@@ -165,7 +166,6 @@ if L then
 	L["Use artist color as button color"] = true
 	L["Frame strata"] = true
 
-	L["Copy song to"] = true
 	L["Copied song"] = true
 	L["Console Controls"] = true
 	L["Play Next Song"] = true
@@ -243,8 +243,6 @@ if L then
 	L["Play the current song again and again and again...until your head will explode. A click on next song will disable this."] = true
 
 	L["General"] = true
-	L["Favorites List"] = true
-	L["Move song to favorite list"] = true
 
 	L["GUI Size"] = true
 	L["Adjust the size of the GUI"] = true
@@ -278,7 +276,6 @@ if L then
 	L["Config"] = true
 	L["Play last"] = true
 	L["Show Dancer"] = true
-	L["Move song to"] = true
 	L["Send song name to"] = true
 
 	L["Music volume: "] = true

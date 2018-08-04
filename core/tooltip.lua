@@ -5,6 +5,14 @@ local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 local tooltip, frame
 local _G = _G
 
+local tooltipText = {
+	listButton = L["Toggle Playlist"],
+	addButton = L["Add Playlist"],
+	configButton = L["Open options (Right click to toggle mute.)"],
+	randomButton = L["Toggle shuffle"],
+	importButton = L["Import a playlist. Right click a list to export that list."],
+}
+
 function EpicMusicPlayer:UpdateTooltip()
 	if frame then
 		EpicMusicPlayer:ShowTooltip(frame)
@@ -43,8 +51,6 @@ function EpicMusicPlayer:ShowTooltip(anchor)
 	GameTooltip:SetPoint(GetTipAnchor(frame))
 	--GameTooltip:SetPoint("TOPLEFT", anchor, "BOTTOMLEFT")
 
-	EpicMusicPlayer:Debug("song", song)
-
 	if(song)then
 		if song.Artist == "" then
 			GameTooltip:SetText(EpicMusicPlayer:GetCurrentSongName(), 1,1,1)
@@ -69,7 +75,6 @@ function EpicMusicPlayer:ShowTooltip(anchor)
   GameTooltip:AddLine(" ")
 	local controlset = self.db.controlset
 	local controlslist = self.controlslist
-	EpicMusicPlayer:Debug("self.db.controlset", self.db.controlset, self.controlslist, controlslist[controlset.left])
 	if controlslist[controlset.LeftButton] then GameTooltip:AddLine(L["Left Click"].." - "..controlslist[controlset.LeftButton]) end
 	if controlslist[controlset.MiddleButton] then GameTooltip:AddLine(L["Middle Click"].." - "..controlslist[controlset.MiddleButton]) end
 	if controlslist[controlset.RightButton] then GameTooltip:AddLine(L["Right Click"].." - "..controlslist[controlset.RightButton]) end
@@ -80,4 +85,13 @@ end
 function EpicMusicPlayer:HideTooltip(anchor)
 	GameTooltip:Hide()
 	frame = nil
+end
+
+function EpicMusicPlayer:ShowButtonTooltip(anchor, text)
+  if anchor and text and tooltipText[text] then
+		GameTooltip:SetOwner(anchor, "ANCHOR_NONE")
+		GameTooltip:SetPoint(GetTipAnchor(anchor))
+		GameTooltip:AddLine(tooltipText[text])
+		GameTooltip:Show()
+	end
 end
