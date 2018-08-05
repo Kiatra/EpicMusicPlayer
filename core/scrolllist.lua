@@ -1,5 +1,4 @@
 local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer")
-local ChocolateBar = LibStub("AceAddon-3.0"):GetAddon("ChocolateBar")
 local _G, math = _G, math
 
 local function updateCheckButton(checkButton, lineplusoffset)
