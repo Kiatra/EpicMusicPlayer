@@ -42,12 +42,6 @@ function EpicMusicPlayer:Spam(chat)
 	end
 
 	SendChatMessage(text,chat,nil,target)
-
-	if album == "ingame" and target then
-		--local a, b, mptext, title, artist, album, quality, genre = strfind(link, "(.+):(.+):(.+):(.+):(.+):(.+)");
-		local songlink = strjoin(":",title,artist,album,song.Length, song.Name)
-		EpicMusicPlayer:SendSearch(songlink, target)
-  end
 end
 
 function EpicMusicPlayer:PrintSongToChat(song)

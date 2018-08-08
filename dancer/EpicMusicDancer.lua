@@ -533,6 +533,13 @@ function EpicMusicDancer:IsPedestal()
 end
 
 function EpicMusicDancer:TogglePedestal()
+	--if self.db.debug then
+     --for i=0,1345 do
+--
+		--	 local hasAnimation = self.Model:HasAnimation(i)
+		----	 if hasAnimation then EpicMusicPlayer:Debug("hasAnimation", hasAnimation, i) end
+		 --end
+	--end
 	EpicMusicDancer.db.char.pedestal = not EpicMusicDancer.db.char.pedestal
 	if(EpicMusicDancer.db.char.pedestal)then
 		self.pedestal:Show()
@@ -666,8 +673,8 @@ function EpicMusicDancer:GetModelFrame()
 end
 
 function EpicMusicDancer:ToggleModelFrame()
-		self:GetModelFrame():Hide()
-		frame1 = not frame1
+		--self:GetModelFrame():Hide()
+		--frame1 = not frame1
 		self:GetModelFrame():Show()
 end
 

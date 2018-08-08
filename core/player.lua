@@ -5,7 +5,7 @@ local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 -- private play/stop functions
 ------------------------------------------------------------
 local queue = nil
-local musicdir = "MyMusic\\" -- path to the music :)
+local musicdir = "MyMusic\\" -- path to the CustomMusic
 
 local function play(self, file)
 	self:ForceMusicVolume(self.db.volume)
@@ -13,7 +13,6 @@ local function play(self, file)
 		if self.soundHandle then StopSound(self.soundHandle) end
 		local willplay, soundHandle = PlaySoundFile(file, "Ambience")
 		self.soundHandle = soundHandle
-		--_, self.musicHandle = PlaySound(file, "Ambience", 1)
 	else
 		PlayMusic(file)
 	end
@@ -40,7 +39,7 @@ function EpicMusicPlayer:Play(song, stillPlaying)
 	songlength = song.Length
 
 	if not stillPlaying then
-		if(song.Album == "ingame" or song.WoW) then
+		if song.WoW then
 			-- ingame music do not add addon mp3 path
 			play(self, song.Name)
 		else

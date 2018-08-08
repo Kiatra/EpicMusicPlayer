@@ -288,6 +288,7 @@ function EpicMusicPlayer:OpenMenu(frame, listIndex)
 			text = L["Play last"],
 			func = function() self:PlayLast() end,
 			notCheckable = true,
+			--icon = "Interface\\AddOns\\EpicMusicPlayer\\gui\\pics\\lastButton.tga"
 		},
 		{
 			text = L["Show GUI"],

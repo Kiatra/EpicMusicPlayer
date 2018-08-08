@@ -27,7 +27,6 @@ core\playlistframe.lua
 core\options.lua
 core\tooltip.lua
 core\dropdown.lua
-core\send.lua
 core\listmanagement.lua
 #core\musicevent.lua
 core\player.lua
@@ -38,7 +37,6 @@ core\bindings.lua
 
 gui\gui.lua
 gui\skins.lua
-playlistcreator\CustomMusic.lua
 
 broker\empbroker.lua
 dancer\EpicMusicDancer.lua

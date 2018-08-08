@@ -18,6 +18,7 @@ if L then
   L["Clear selection"] = true
   L["New List"] = true
   L["List or song not found"] = true
+	L["The option to use PlaySoundFile was auto enabled as the WoW API PlayMusic(file) is broken for non WoW music. See FAQ for details."] = true
 
 	L["Use Ambience Channel"] = true
 	L["When this is enabled music will be played using the ambience channel instead of the music channel. Music will no longer stop on a loading screen but you will not hear ambience sound during music play."] = true

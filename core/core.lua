@@ -18,12 +18,6 @@ EpicMusicPlayer.controlslist = {
 EpicMusicPlayer.version = GetAddOnMetadata("EpicMusicPlayer","Version")
 EpicMusicPlayer.tocversion = select(4, GetBuildInfo());
 
-
---unit_threat_situations_update
---unit_threat_list_update
---unit_flags
---name_plate_unit_added
-
 local function Debug(...)
   --@debug@
 	local s = "EMP Debug:"
@@ -144,7 +138,7 @@ function EpicMusicPlayer:OnInitialize()
 	if not db.font then
 		db.font = media:GetDefault("font")
 	end
-	self:RegisterComm("EpicMusicPlayer", "ReciveMessage")
+	
 	self:ScheduleRepeatingTimer("CheckDate", 30)
 
 	if not db.addGameMusic then

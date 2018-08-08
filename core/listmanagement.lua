@@ -14,10 +14,16 @@ local _G, ipairs, pairs, string, table, type, math = _G, ipairs, pairs, string, 
 
 --convert playlist from versions before 4.0 to 4.0
 local function ConvertPlaylist(list)
-	if #list == 1 then
-		list.listName = list[1].ListName
-		list.playlistType = list[1].PlaylistType
-		--list.musicDir = list[1].MusicDir
+	if #list >= 1 then
+    if list[1].ListName then
+			list.listName = list[1].ListName
+		end
+		if list[1].PlaylistType then
+			list.playlistType = list[1].PlaylistType
+		end
+		if list[1].PlaylistVersion then
+			list[1].PlaylistVersion = "4.0"
+		end
 	end
 	list.playlistVersion = "4.0"
 	return list
