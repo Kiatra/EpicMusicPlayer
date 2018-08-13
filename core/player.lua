@@ -10,9 +10,9 @@ local musicdir = "MyMusic\\" -- path to the CustomMusic
 local function play(self, file)
 	self:ForceMusicVolume(self.db.volume)
 	if self.db.usePlaySoundFile then
-		if self.soundHandle then StopSound(self.soundHandle) end
+		if self.db.soundHandle then StopSound(self.db.soundHandle) end
 		local willplay, soundHandle = PlaySoundFile(file, "Ambience")
-		self.soundHandle = soundHandle
+		self.db.soundHandle = soundHandle
 	else
 		PlayMusic(file)
 	end
@@ -106,8 +106,8 @@ function EpicMusicPlayer:Stop()
 	local text = self.db.disablewowmusic and L["Music off"] or  L["Game Music"]
 	self:RestoreSoundVolume()
 	self:RestoreMusic()
-	if self.db.usePlaySoundFile and self.soundHandle then
-		StopSound(self.soundHandle)
+	if self.db.usePlaySoundFile and self.db.soundHandle then
+		StopSound(self.db.soundHandle)
 	else
 		StopMusic()
 	end

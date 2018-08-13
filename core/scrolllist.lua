@@ -160,7 +160,7 @@ local function resize(self)
 				checkbox = _G.CreateFrame("CheckButton",nil,self)
 				checkbox:SetHeight(self.buttonHeight)
 				checkbox:SetWidth(self.buttonHeight)
-				checkbox:SetPoint("TOPLEFT", self, 3,-5)
+				checkbox:SetPoint("TOPLEFT", self, 5,-7)
 				--checkbox:SetPoint("RIGHT", self ,"RIGHT",-225, 0);
 		  end
 

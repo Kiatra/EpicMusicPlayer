@@ -640,7 +640,7 @@ local function newControl(settings, frame)
 		frame:SetScript("OnMouseUp",
 				function(self, button)
 					if(button == "LeftButton")then
-						settings.onleftclick()
+						settings.onleftclick(EpicMusicPlayer)
 					else
 						if settings.onrightclick then
 							settings.onrightclick(EpicMusicPlayer)

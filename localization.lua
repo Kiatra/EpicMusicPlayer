@@ -12,7 +12,7 @@ if L then
   L["Export Playlist"] = true
   L["Import playlist:"] = true
   L["Import a playlist. Right click a list to export that list."] = true
-  L["Copy song (%s) to"] = true
+  L["Copy song %s to"] = true
   L["Copy selected songs to"] = true
   L["Copy all songs to"] = true
   L["Clear selection"] = true

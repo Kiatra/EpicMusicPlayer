@@ -122,8 +122,11 @@ function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
 	 end,
  }
 
+ local song = EpicMusicPlayer:GetSong(listIndex, songIndex)
+ local songName = song and song.Song or ""
+
 	dropdownmenu[#dropdownmenu + 1] = {
-		text = string.format(L["Copy song (%s) to"], songIndex),
+		text = string.format(L["Copy song %s to"], "\""..songName.."\""),
 		hasArrow = true,
 		notCheckable = true,
 		menuList = dropdowncopy

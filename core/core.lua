@@ -102,6 +102,13 @@ function EpicMusicPlayer:OnInitialize()
 					hide = LibStub("AceAddon-3.0"):GetAddon("ChocolateBar", true) and true,
 				},
 			},
+			model = {
+				random = true,
+				defaultmodel = "bloodelf",
+				scale = 1,
+				guitoggle = true;
+				strata = "MEDIUM"
+			},
 			eventZones = {},
 		},
 	}
@@ -138,7 +145,7 @@ function EpicMusicPlayer:OnInitialize()
 	if not db.font then
 		db.font = media:GetDefault("font")
 	end
-	
+
 	self:ScheduleRepeatingTimer("CheckDate", 30)
 
 	if not db.addGameMusic then
