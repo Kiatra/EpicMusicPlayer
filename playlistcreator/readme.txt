@@ -1,1 +1,0 @@
-The EpicListCreator has been moved into a spereate add-on: https://wow.curseforge.com/addons/epicmusicplayer_mp3/files/

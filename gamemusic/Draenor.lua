@@ -1,6 +1,8 @@
 -- EpicMusicPlayer playlist created by EpicPlaylistCreator version 0.1.
+local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
+
 local playlist1={
-  ["listName"] = "Draenor",
+  ["listName"] = L["Draenor"],
   ["playlistVersion"] = "3.1",
   ["playlistType"] = "generated",
   ["musicDir"] = "MyMusic\\",

@@ -1,7 +1,8 @@
 ﻿local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer")
+local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 
 local playlist3 = {
-	["listName"] = "Battle for Azeroth",
+	["listName"] = L["Battle for Azeroth"],
 	["playlistVersion"] = "3.1",
 	["playlistType"] = "generated",
 	{

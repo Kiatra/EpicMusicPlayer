@@ -1,5 +1,7 @@
+local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
+
 local BestofWoW = {
-  ["listName"] = "Epic",
+  ["listName"] = L["Epic"],
   ["playlistVersion"] = "4.0",
   ["playlistType"] = "generated",
   {

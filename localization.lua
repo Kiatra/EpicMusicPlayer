@@ -4,26 +4,32 @@ local L = AceLocale:NewLocale("EpicMusicPlayer", "enUS", true)
 if not L then return end
 
 if L then
- 	L["Toggle Playlist"] = true
+	L["Battle for Azeroth"] = true
+	L["Legion"] = true
+	L["Draenor"] = true
+	L["Epic"] = true
+	L["All"] = true
+	
+	L["Toggle Playlist"] = true
 	L["Replaceing already existing playlist %s with the new one."] = true
 	L["Open options (Right click to toggle mute.)"] = true
-  L["Enter playlist name:"] = true
-  L["Exported playlist:"] = true
-  L["Export Playlist"] = true
-  L["Import playlist:"] = true
-  L["Import a playlist. Right click a list to export that list."] = true
-  L["Copy song %s to"] = true
-  L["Copy selected songs to"] = true
-  L["Copy all songs to"] = true
-  L["Clear selection"] = true
-  L["New List"] = true
-  L["List or song not found"] = true
+	L["Enter playlist name:"] = true
+	L["Exported playlist:"] = true
+	L["Export Playlist"] = true
+	L["Import playlist:"] = true
+	L["Import a playlist. Right click a list to export that list."] = true
+	L["Copy song %s to"] = true
+	L["Copy selected songs to"] = true
+	L["Copy all songs to"] = true
+	L["Clear selection"] = true
+	L["New List"] = true
+	L["List or song not found"] = true
 	L["The option to use PlaySoundFile was auto enabled as the WoW API PlayMusic(file) is broken for non WoW music. See FAQ for details."] = true
 
 	L["Use Ambience Channel"] = true
 	L["When this is enabled music will be played using the ambience channel instead of the music channel. Music will no longer stop on a loading screen but you will not hear ambience sound during music play."] = true
 
-  L["Master volume: "]= true
+	L["Master volume: "]= true
 	L["Max Level Song"] = true
 	L["Play song when reaching maximum level"] = true
 	L["Select a playlist to play in this zone"] = true
@@ -31,12 +37,12 @@ if L then
 	L["Enable Events"] = true
 	L["Play a song from this list."] = true
 	L["Delete Zone"] = true
-  L["Delete this zone"] = true
+	L["Delete this zone"] = true
 	L["Events"] = true
 	L["New Zone Event"] = true
-  L["Create a new zone event"] = true
+	L["Create a new zone event"] = true
 
-  L["Set the click behaviour for the minimap, the title in the GUI and the data broker plugin."] = true
+	L["Set the click behaviour for the minimap, the title in the GUI and the data broker plugin."] = true
 	L["Add Game Music"] = true
 	L["Adds playlists with game music (reload required)."] = true
 	L["Lock GUI"] = true
