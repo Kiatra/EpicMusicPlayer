@@ -1,4 +1,4 @@
-## Interface: 80000
+## Interface: 80200
 ## Title: EpicMusicPlayer
 ## Notes: Browse and play WoW game music
 ## Author: yess
