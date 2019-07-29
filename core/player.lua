@@ -41,7 +41,7 @@ function EpicMusicPlayer:Play(song, stillPlaying)
 	if not stillPlaying then
 		if song.WoW then
 			-- ingame music do not add addon mp3 path
-			play(self, song.Name)
+			if song.Id then play(self, song.Id) end
 		else
 			-- auto enable usePlaySoundFile for non WoW music until the PlayMusc() API is fixed
 			-- see: http://us.battle.net/forums/en/wow/topic/20747574714#1
