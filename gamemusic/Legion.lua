@@ -1,10 +1,13 @@
 -- EpicMusicPlayer playlist created by EpicPlaylistCreator version 1.6.
+local _, _, _, tocversion = GetBuildInfo()
+if tocversion < 80200 then return end
+
 local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 
 local playlist1={
   ["listName"] = L["Legion"],
   ["playlistVersion"] = "3.1",
-  ["playlistType"] = "generated",
+  ["locked"] =  "true",
   {
     ["Album"] = "WoW7.3",
     ["Song"] = "mus_73_arguscore1_h",

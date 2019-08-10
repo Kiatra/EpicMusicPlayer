@@ -1,6 +1,6 @@
 local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer")
 local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
-
+local debug = EpicMusicPlayer.Debug
 ------------------------------------------------------------
 -- private play/stop functions
 ------------------------------------------------------------
@@ -39,9 +39,15 @@ function EpicMusicPlayer:Play(song, stillPlaying)
 	songlength = song.Length
 
 	if not stillPlaying then
-		if song.WoW then
-			-- ingame music do not add addon mp3 path
-			if song.Id then play(self, song.Id) end
+		if song.Id then
+			local _, _, _, tocversion = GetBuildInfo()
+			if tocversion < 80200 then
+				-- shipped music can not be played via file id in classic wow 1.13.2 (31407)
+				play(self, song.Name)
+			else
+				-- shipped music can only be played via file id in 8.2 retail
+				play(self, song.Id) 	
+			end
 		else
 			-- auto enable usePlaySoundFile for non WoW music until the PlayMusc() API is fixed
 			-- see: http://us.battle.net/forums/en/wow/topic/20747574714#1

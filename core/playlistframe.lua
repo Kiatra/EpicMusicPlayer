@@ -377,9 +377,6 @@ local function CreatePlaylistGui(width, height)
 		function(row, colum)
 			local db = EpicMusicPlayer.db
 			listname = ""
-			if EpicMusicPlayer:IsListIgnored(row) then
-				listname = "°"
-			end
 			if db.list == row then
 				listname = listname.."|cffffd200"..EpicMusicPlayer:GetListName(row)
 			else

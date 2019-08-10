@@ -379,8 +379,8 @@ local empoptions = {
 		      func = function(info, value)
 						EpicMusicPlayer:Stop()
 						_G.SetCVar("Sound_EnableMusic", 1)
-						_G.PlayMusic("Sound\\Music\\ZoneMusic\\DMF_L70ETC01.mp3")
-						EpicMusicPlayer:Print("Playing Test Song, do you hear the song: \"Power Of The Horde\"?")
+						_G.PlayMusic(53224)
+						EpicMusicPlayer:Print("Playing Test Song")
 		      end,
 				},
 				--@debug@

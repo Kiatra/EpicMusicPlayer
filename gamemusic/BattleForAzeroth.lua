@@ -1,10 +1,13 @@
 --Created by PlaylistCreator version 4.0
+local _, _, _, tocversion = GetBuildInfo()
+if tocversion < 80200 then return end
+
 local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 
 local playlist1 = {
 	["listName"] = L["Battle for Azeroth"],
 	["playlistVersion"] = "4.0",
-	["playlistType"] = "generated",
+	["locked"] =  "true",
 	{
 		["Album"] = "WoW7.3.5",
 		["Song"] = "mus_735_pointofimpact_a",

@@ -1,9 +1,12 @@
+local _, _, _, tocversion = GetBuildInfo()
+if tocversion < 80200 then return end
+
 local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 
 local BestofWoW = {
   ["listName"] = L["Epic"],
   ["playlistVersion"] = "4.0",
-  ["playlistType"] = "generated",
+  ["locked"] =  "true",
   {
     ["Album"] = "WarCraft III Expansion",
     ["Song"] = "Power Of The Horde",

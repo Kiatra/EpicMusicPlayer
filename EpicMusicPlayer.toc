@@ -3,8 +3,8 @@
 ## Notes: Browse and play WoW game music
 ## Author: yess
 ## SavedVariables: EpicMusicPlayer_PlayList, EpicMusicPlayerDB, EpicMusicPlayerBrokerDB, EpicMusicDancerDB
-## OptionalDeps: Ace3
-## X-Embeds: Ace3
+## OptionalDeps: Ace3, LibSharedMedia-3.0
+## X-Embeds: Ace3, LibSharedMedia-3.0
 
 ## Version: @project-version@
 ## X-Category: Audio
@@ -45,3 +45,4 @@ gamemusic\All.lua
 gamemusic\Draenor.lua
 gamemusic\Legion.lua
 gamemusic\BattleForAzeroth.lua
+gamemusic\Classic.lua

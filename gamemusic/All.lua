@@ -1,10 +1,13 @@
 --Created by PlaylistCreator version 4.0
+local _, _, _, tocversion = GetBuildInfo()
+if tocversion < 80200 then return end
+
 local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 
 local playlist1 = {
 	["listName"] = L["All"],
 	["playlistVersion"] = "4.0",
-	["playlistType"] = "generated",
+	["locked"] =  "true",
 	{
 		["Album"] = "WoW7.3.5",
 		["Song"] = "mus_735_pointofimpact_a",
@@ -12,7 +15,7 @@ local playlist1 = {
     ["Id"] = 1862322,
 		["Length"] = 134,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3.5",
@@ -21,7 +24,6 @@ local playlist1 = {
     ["Id"] = 1862323,
 		["Length"] = 143,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
 	},
 	{
 		["Album"] = "WoW7.3.5",
@@ -30,7 +32,7 @@ local playlist1 = {
     ["Id"] = 1862324,
 		["Length"] = 127,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3.5",
@@ -39,7 +41,7 @@ local playlist1 = {
     ["Id"] = 1862325,
 		["Length"] = 163,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3.5",
@@ -48,7 +50,7 @@ local playlist1 = {
     ["Id"] = 1862326,
 		["Length"] = 143,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3.5",
@@ -57,7 +59,7 @@ local playlist1 = {
     ["Id"] = 1862327,
 		["Length"] = 144,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -66,7 +68,7 @@ local playlist1 = {
     ["Id"] = 2146576,
 		["Length"] = 21,
 		["Artist"] = "Glenn Stafford, Jason Hayes, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -75,7 +77,7 @@ local playlist1 = {
     ["Id"] = 2143489,
 		["Length"] = 125,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -84,7 +86,7 @@ local playlist1 = {
     ["Id"] = 2143491,
 		["Length"] = 108,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -93,7 +95,7 @@ local playlist1 = {
     ["Id"] = 2143492,
 		["Length"] = 108,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -102,7 +104,7 @@ local playlist1 = {
     ["Id"] = 2143493,
 		["Length"] = 132,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -111,7 +113,7 @@ local playlist1 = {
     ["Id"] = 2143494,
 		["Length"] = 132,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -120,7 +122,7 @@ local playlist1 = {
     ["Id"] = 2143495,
 		["Length"] = 125,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -129,7 +131,7 @@ local playlist1 = {
     ["Id"] = 2146227,
 		["Length"] = 93,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -138,7 +140,7 @@ local playlist1 = {
     ["Id"] = 2146228,
 		["Length"] = 93,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -147,7 +149,7 @@ local playlist1 = {
     ["Id"] = 2146229,
 		["Length"] = 93,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -156,7 +158,7 @@ local playlist1 = {
     ["Id"] = 2146230,
 		["Length"] = 93,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -165,7 +167,7 @@ local playlist1 = {
     ["Id"] = 2146231,
 		["Length"] = 93,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -174,7 +176,7 @@ local playlist1 = {
     ["Id"] = 2146580,
 		["Length"] = 677,
 		["Artist"] = "Glenn Stafford, Neal Acree, Sam Cardon, Clint Bajakian, David Arkenstone, Leo Kaliski, Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -183,7 +185,7 @@ local playlist1 = {
     ["Id"] = 2150454,
 		["Length"] = 89,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -192,7 +194,7 @@ local playlist1 = {
     ["Id"] = 1780904,
 		["Length"] = 89,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -201,7 +203,7 @@ local playlist1 = {
     ["Id"] = 1780905,
 		["Length"] = 89,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -210,7 +212,7 @@ local playlist1 = {
     ["Id"] = 1780908,
 		["Length"] = 89,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -219,7 +221,7 @@ local playlist1 = {
     ["Id"] = 1780909,
 		["Length"] = 99,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -228,7 +230,7 @@ local playlist1 = {
     ["Id"] = 1780910,
 		["Length"] = 99,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -237,7 +239,7 @@ local playlist1 = {
     ["Id"] = 2146232,
 		["Length"] = 99,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -246,7 +248,7 @@ local playlist1 = {
     ["Id"] = 2146233,
 		["Length"] = 99,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -255,7 +257,7 @@ local playlist1 = {
     ["Id"] = 1780911,
 		["Length"] = 99,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -264,7 +266,7 @@ local playlist1 = {
     ["Id"] = 2175189,
 		["Length"] = 23,
 		["Artist"] = "Sam Cardon, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -273,7 +275,7 @@ local playlist1 = {
     ["Id"] = 2146234,
 		["Length"] = 81,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -282,7 +284,7 @@ local playlist1 = {
     ["Id"] = 2146235,
 		["Length"] = 81,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -291,7 +293,7 @@ local playlist1 = {
     ["Id"] = 2146236,
 		["Length"] = 81,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -300,7 +302,7 @@ local playlist1 = {
     ["Id"] = 2146581,
 		["Length"] = 163,
 		["Artist"] = "Glenn Stafford, Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -309,7 +311,7 @@ local playlist1 = {
     ["Id"] = 2146582,
 		["Length"] = 164,
 		["Artist"] = "Glenn Stafford, Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -318,7 +320,7 @@ local playlist1 = {
     ["Id"] = 2148018,
 		["Length"] = 102,
 		["Artist"] = "Glenn Stafford, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -327,7 +329,7 @@ local playlist1 = {
     ["Id"] = 2148019,
 		["Length"] = 87,
 		["Artist"] = "Glenn Stafford, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -336,7 +338,7 @@ local playlist1 = {
     ["Id"] = 2148020,
 		["Length"] = 92,
 		["Artist"] = "Glenn Stafford, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -345,7 +347,7 @@ local playlist1 = {
     ["Id"] = 2148021,
 		["Length"] = 102,
 		["Artist"] = "Glenn Stafford, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -354,7 +356,7 @@ local playlist1 = {
     ["Id"] = 2146583,
 		["Length"] = 163,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -363,7 +365,7 @@ local playlist1 = {
     ["Id"] = 2144113,
 		["Length"] = 213,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -372,7 +374,7 @@ local playlist1 = {
     ["Id"] = 2144114,
 		["Length"] = 133,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -381,7 +383,7 @@ local playlist1 = {
     ["Id"] = 2144115,
 		["Length"] = 133,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -390,7 +392,7 @@ local playlist1 = {
     ["Id"] = 2144116,
 		["Length"] = 135,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -399,7 +401,7 @@ local playlist1 = {
     ["Id"] = 2143496,
 		["Length"] = 76,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -408,7 +410,7 @@ local playlist1 = {
     ["Id"] = 2143497,
 		["Length"] = 76,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -417,7 +419,7 @@ local playlist1 = {
     ["Id"] = 2143498,
 		["Length"] = 76,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -426,7 +428,7 @@ local playlist1 = {
     ["Id"] = 2143499,
 		["Length"] = 76,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -435,7 +437,7 @@ local playlist1 = {
     ["Id"] = 2143500,
 		["Length"] = 76,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -444,7 +446,7 @@ local playlist1 = {
     ["Id"] = 2146584,
 		["Length"] = 21,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -453,7 +455,7 @@ local playlist1 = {
     ["Id"] = 2146585,
 		["Length"] = 21,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -462,7 +464,7 @@ local playlist1 = {
     ["Id"] = 2146586,
 		["Length"] = 14,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -471,7 +473,7 @@ local playlist1 = {
     ["Id"] = 2146587,
 		["Length"] = 14,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -480,7 +482,7 @@ local playlist1 = {
     ["Id"] = 2146588,
 		["Length"] = 36,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -489,7 +491,7 @@ local playlist1 = {
     ["Id"] = 2146589,
 		["Length"] = 36,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -498,7 +500,7 @@ local playlist1 = {
     ["Id"] = 2146590,
 		["Length"] = 46,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -507,7 +509,7 @@ local playlist1 = {
     ["Id"] = 2146591,
 		["Length"] = 47,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -516,7 +518,7 @@ local playlist1 = {
     ["Id"] = 2180702,
 		["Length"] = 120,
 		["Artist"] = "Sam Cardon, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -525,7 +527,7 @@ local playlist1 = {
     ["Id"] = 2180703,
 		["Length"] = 86,
 		["Artist"] = "Glenn Stafford, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -534,7 +536,7 @@ local playlist1 = {
     ["Id"] = 2180704,
 		["Length"] = 108,
 		["Artist"] = "Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -543,7 +545,7 @@ local playlist1 = {
     ["Id"] = 1780912,
 		["Length"] = 165,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -552,7 +554,7 @@ local playlist1 = {
     ["Id"] = 1780913,
 		["Length"] = 164,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -561,7 +563,7 @@ local playlist1 = {
     ["Id"] = 2146592,
 		["Length"] = 167,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -570,7 +572,7 @@ local playlist1 = {
     ["Id"] = 1780914,
 		["Length"] = 165,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -579,7 +581,7 @@ local playlist1 = {
     ["Id"] = 2146593,
 		["Length"] = 90,
 		["Artist"] = "Glenn Stafford, Kory McMaster",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -588,7 +590,7 @@ local playlist1 = {
     ["Id"] = 2146594,
 		["Length"] = 90,
 		["Artist"] = "Glenn Stafford, Kory McMaster",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -597,7 +599,7 @@ local playlist1 = {
     ["Id"] = 1780915,
 		["Length"] = 107,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -606,7 +608,7 @@ local playlist1 = {
     ["Id"] = 1780916,
 		["Length"] = 125,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -615,7 +617,7 @@ local playlist1 = {
     ["Id"] = 1780917,
 		["Length"] = 125,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -624,7 +626,7 @@ local playlist1 = {
     ["Id"] = 1780918,
 		["Length"] = 119,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -633,7 +635,7 @@ local playlist1 = {
     ["Id"] = 1780919,
 		["Length"] = 118,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -642,7 +644,7 @@ local playlist1 = {
     ["Id"] = 2146595,
 		["Length"] = 43,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -651,7 +653,7 @@ local playlist1 = {
     ["Id"] = 2146596,
 		["Length"] = 72,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -660,7 +662,7 @@ local playlist1 = {
     ["Id"] = 1780920,
 		["Length"] = 118,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -669,7 +671,7 @@ local playlist1 = {
     ["Id"] = 2145659,
 		["Length"] = 103,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -678,7 +680,7 @@ local playlist1 = {
     ["Id"] = 2145660,
 		["Length"] = 94,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -687,7 +689,7 @@ local playlist1 = {
     ["Id"] = 2145661,
 		["Length"] = 103,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -696,7 +698,7 @@ local playlist1 = {
     ["Id"] = 2145662,
 		["Length"] = 94,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -705,7 +707,7 @@ local playlist1 = {
     ["Id"] = 2145663,
 		["Length"] = 193,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -714,7 +716,7 @@ local playlist1 = {
     ["Id"] = 2145664,
 		["Length"] = 193,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -723,7 +725,7 @@ local playlist1 = {
     ["Id"] = 2146597,
 		["Length"] = 56,
 		["Artist"] = "Glenn Stafford, Kory McMaster",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -732,7 +734,7 @@ local playlist1 = {
     ["Id"] = 2146598,
 		["Length"] = 56,
 		["Artist"] = "Glenn Stafford, Kory McMaster",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -741,7 +743,7 @@ local playlist1 = {
     ["Id"] = 2146599,
 		["Length"] = 64,
 		["Artist"] = "Glenn Stafford, Kory McMaster",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -750,7 +752,7 @@ local playlist1 = {
     ["Id"] = 2146600,
 		["Length"] = 64,
 		["Artist"] = "Glenn Stafford, Kory McMaster",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -759,7 +761,7 @@ local playlist1 = {
     ["Id"] = 2146606,
 		["Length"] = 19,
 		["Artist"] = "Glenn Stafford, Clint Bajakian, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -768,7 +770,7 @@ local playlist1 = {
     ["Id"] = 2146237,
 		["Length"] = 113,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -777,7 +779,7 @@ local playlist1 = {
     ["Id"] = 2146238,
 		["Length"] = 112,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -786,7 +788,7 @@ local playlist1 = {
     ["Id"] = 1780921,
 		["Length"] = 112,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -795,7 +797,7 @@ local playlist1 = {
     ["Id"] = 1780922,
 		["Length"] = 97,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -804,7 +806,7 @@ local playlist1 = {
     ["Id"] = 1780923,
 		["Length"] = 97,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -813,7 +815,7 @@ local playlist1 = {
     ["Id"] = 1780924,
 		["Length"] = 97,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -822,7 +824,7 @@ local playlist1 = {
     ["Id"] = 2146607,
 		["Length"] = 85,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -831,7 +833,7 @@ local playlist1 = {
     ["Id"] = 2148002,
 		["Length"] = 115,
 		["Artist"] = "Glenn Stafford, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -840,7 +842,7 @@ local playlist1 = {
     ["Id"] = 2148003,
 		["Length"] = 101,
 		["Artist"] = "Glenn Stafford, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -849,7 +851,7 @@ local playlist1 = {
     ["Id"] = 2148004,
 		["Length"] = 105,
 		["Artist"] = "Glenn Stafford, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -858,7 +860,7 @@ local playlist1 = {
     ["Id"] = 2148005,
 		["Length"] = 102,
 		["Artist"] = "Glenn Stafford, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -867,7 +869,7 @@ local playlist1 = {
     ["Id"] = 2148006,
 		["Length"] = 100,
 		["Artist"] = "Glenn Stafford, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -876,7 +878,7 @@ local playlist1 = {
     ["Id"] = 2146608,
 		["Length"] = 92,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -885,7 +887,7 @@ local playlist1 = {
     ["Id"] = 2146609,
 		["Length"] = 92,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -894,7 +896,7 @@ local playlist1 = {
     ["Id"] = 2146613,
 		["Length"] = 157,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -903,7 +905,7 @@ local playlist1 = {
     ["Id"] = 2146614,
 		["Length"] = 157,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -912,7 +914,7 @@ local playlist1 = {
     ["Id"] = 2167269,
 		["Length"] = 71,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -921,7 +923,7 @@ local playlist1 = {
     ["Id"] = 2167270,
 		["Length"] = 47,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -930,7 +932,7 @@ local playlist1 = {
     ["Id"] = 2167271,
 		["Length"] = 60,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -939,7 +941,7 @@ local playlist1 = {
     ["Id"] = 2146615,
 		["Length"] = 157,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -948,7 +950,7 @@ local playlist1 = {
     ["Id"] = 2146616,
 		["Length"] = 157,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -957,7 +959,7 @@ local playlist1 = {
     ["Id"] = 2167272,
 		["Length"] = 14,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -966,7 +968,7 @@ local playlist1 = {
     ["Id"] = 2146617,
 		["Length"] = 154,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -975,7 +977,7 @@ local playlist1 = {
     ["Id"] = 2146618,
 		["Length"] = 154,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -984,7 +986,7 @@ local playlist1 = {
     ["Id"] = 2167273,
 		["Length"] = 66,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -993,7 +995,7 @@ local playlist1 = {
     ["Id"] = 2167274,
 		["Length"] = 90,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1002,7 +1004,7 @@ local playlist1 = {
     ["Id"] = 2146619,
 		["Length"] = 154,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1011,7 +1013,7 @@ local playlist1 = {
     ["Id"] = 2167275,
 		["Length"] = 18,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1020,7 +1022,7 @@ local playlist1 = {
     ["Id"] = 2145665,
 		["Length"] = 131,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1029,7 +1031,7 @@ local playlist1 = {
     ["Id"] = 2145666,
 		["Length"] = 131,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1038,7 +1040,7 @@ local playlist1 = {
     ["Id"] = 2145667,
 		["Length"] = 111,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1047,7 +1049,7 @@ local playlist1 = {
     ["Id"] = 2145668,
 		["Length"] = 131,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1056,7 +1058,7 @@ local playlist1 = {
     ["Id"] = 1781897,
 		["Length"] = 143,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1065,7 +1067,7 @@ local playlist1 = {
     ["Id"] = 2146242,
 		["Length"] = 143,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1074,7 +1076,7 @@ local playlist1 = {
     ["Id"] = 1781896,
 		["Length"] = 143,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1083,7 +1085,7 @@ local playlist1 = {
     ["Id"] = 2146620,
 		["Length"] = 64,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1092,7 +1094,7 @@ local playlist1 = {
     ["Id"] = 2146621,
 		["Length"] = 64,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1101,7 +1103,7 @@ local playlist1 = {
     ["Id"] = 2146622,
 		["Length"] = 64,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1110,7 +1112,7 @@ local playlist1 = {
     ["Id"] = 2179261,
 		["Length"] = 55,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1119,7 +1121,7 @@ local playlist1 = {
     ["Id"] = 2144117,
 		["Length"] = 78,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1128,7 +1130,7 @@ local playlist1 = {
     ["Id"] = 2144120,
 		["Length"] = 75,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1137,7 +1139,7 @@ local playlist1 = {
     ["Id"] = 2144121,
 		["Length"] = 82,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1146,7 +1148,7 @@ local playlist1 = {
     ["Id"] = 2144124,
 		["Length"] = 76,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1155,7 +1157,7 @@ local playlist1 = {
     ["Id"] = 2144125,
 		["Length"] = 77,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1164,7 +1166,7 @@ local playlist1 = {
     ["Id"] = 2144128,
 		["Length"] = 75,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1173,7 +1175,7 @@ local playlist1 = {
     ["Id"] = 2144130,
 		["Length"] = 72,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1182,7 +1184,7 @@ local playlist1 = {
     ["Id"] = 2144131,
 		["Length"] = 77,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1191,7 +1193,7 @@ local playlist1 = {
     ["Id"] = 2144132,
 		["Length"] = 82,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1200,7 +1202,7 @@ local playlist1 = {
     ["Id"] = 2144135,
 		["Length"] = 76,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1209,7 +1211,7 @@ local playlist1 = {
     ["Id"] = 2144139,
 		["Length"] = 132,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1218,7 +1220,7 @@ local playlist1 = {
     ["Id"] = 2144141,
 		["Length"] = 68,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1227,7 +1229,7 @@ local playlist1 = {
     ["Id"] = 2144142,
 		["Length"] = 68,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1236,7 +1238,7 @@ local playlist1 = {
     ["Id"] = 2144143,
 		["Length"] = 128,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1245,7 +1247,7 @@ local playlist1 = {
     ["Id"] = 2144144,
 		["Length"] = 92,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1254,7 +1256,7 @@ local playlist1 = {
     ["Id"] = 2144145,
 		["Length"] = 70,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1263,7 +1265,7 @@ local playlist1 = {
     ["Id"] = 2144146,
 		["Length"] = 141,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1272,7 +1274,7 @@ local playlist1 = {
     ["Id"] = 2144150,
 		["Length"] = 94,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1281,7 +1283,7 @@ local playlist1 = {
     ["Id"] = 2144151,
 		["Length"] = 92,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1290,7 +1292,7 @@ local playlist1 = {
     ["Id"] = 2144153,
 		["Length"] = 72,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1299,7 +1301,7 @@ local playlist1 = {
     ["Id"] = 2144155,
 		["Length"] = 141,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1308,7 +1310,7 @@ local playlist1 = {
     ["Id"] = 2144159,
 		["Length"] = 93,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1317,7 +1319,7 @@ local playlist1 = {
     ["Id"] = 2144161,
 		["Length"] = 151,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1326,7 +1328,7 @@ local playlist1 = {
     ["Id"] = 2144164,
 		["Length"] = 76,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1335,7 +1337,7 @@ local playlist1 = {
     ["Id"] = 2144165,
 		["Length"] = 76,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1344,7 +1346,7 @@ local playlist1 = {
     ["Id"] = 2144171,
 		["Length"] = 72,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1353,7 +1355,7 @@ local playlist1 = {
     ["Id"] = 2144172,
 		["Length"] = 72,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1362,7 +1364,7 @@ local playlist1 = {
     ["Id"] = 2144173,
 		["Length"] = 76,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1371,7 +1373,7 @@ local playlist1 = {
     ["Id"] = 2144177,
 		["Length"] = 70,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1380,7 +1382,7 @@ local playlist1 = {
     ["Id"] = 2144178,
 		["Length"] = 70,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1389,7 +1391,7 @@ local playlist1 = {
     ["Id"] = 2144181,
 		["Length"] = 72,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1398,7 +1400,7 @@ local playlist1 = {
     ["Id"] = 2144183,
 		["Length"] = 72,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -1407,7 +1409,7 @@ local playlist1 = {
     ["Id"] = 2180705,
 		["Length"] = 39,
 		["Artist"] = "Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1416,7 +1418,7 @@ local playlist1 = {
     ["Id"] = 2146244,
 		["Length"] = 36,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1425,7 +1427,7 @@ local playlist1 = {
     ["Id"] = 2146245,
 		["Length"] = 36,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1434,7 +1436,7 @@ local playlist1 = {
     ["Id"] = 2146246,
 		["Length"] = 36,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1443,7 +1445,7 @@ local playlist1 = {
     ["Id"] = 2146247,
 		["Length"] = 36,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1452,7 +1454,7 @@ local playlist1 = {
     ["Id"] = 2146250,
 		["Length"] = 36,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1461,7 +1463,7 @@ local playlist1 = {
     ["Id"] = 2146251,
 		["Length"] = 36,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1470,7 +1472,7 @@ local playlist1 = {
     ["Id"] = 2146252,
 		["Length"] = 38,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1479,7 +1481,7 @@ local playlist1 = {
     ["Id"] = 2146253,
 		["Length"] = 46,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1488,7 +1490,7 @@ local playlist1 = {
     ["Id"] = 2146256,
 		["Length"] = 46,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1497,7 +1499,7 @@ local playlist1 = {
     ["Id"] = 2146257,
 		["Length"] = 46,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1506,7 +1508,7 @@ local playlist1 = {
     ["Id"] = 2146258,
 		["Length"] = 41,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1515,7 +1517,7 @@ local playlist1 = {
     ["Id"] = 2146261,
 		["Length"] = 41,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1524,7 +1526,7 @@ local playlist1 = {
     ["Id"] = 2146267,
 		["Length"] = 55,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1533,7 +1535,7 @@ local playlist1 = {
     ["Id"] = 2146268,
 		["Length"] = 55,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1542,7 +1544,7 @@ local playlist1 = {
     ["Id"] = 2143504,
 		["Length"] = 109,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1551,7 +1553,7 @@ local playlist1 = {
     ["Id"] = 2143505,
 		["Length"] = 35,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1560,7 +1562,7 @@ local playlist1 = {
     ["Id"] = 2143506,
 		["Length"] = 56,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1569,7 +1571,7 @@ local playlist1 = {
     ["Id"] = 2143507,
 		["Length"] = 109,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1578,7 +1580,7 @@ local playlist1 = {
     ["Id"] = 2143508,
 		["Length"] = 59,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1587,7 +1589,7 @@ local playlist1 = {
     ["Id"] = 2143509,
 		["Length"] = 59,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1596,7 +1598,7 @@ local playlist1 = {
     ["Id"] = 2143510,
 		["Length"] = 60,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1605,7 +1607,7 @@ local playlist1 = {
     ["Id"] = 2143511,
 		["Length"] = 59,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1614,7 +1616,7 @@ local playlist1 = {
     ["Id"] = 2143512,
 		["Length"] = 42,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1623,7 +1625,7 @@ local playlist1 = {
     ["Id"] = 2143513,
 		["Length"] = 49,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1632,7 +1634,7 @@ local playlist1 = {
     ["Id"] = 2143514,
 		["Length"] = 79,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1641,7 +1643,7 @@ local playlist1 = {
     ["Id"] = 2143515,
 		["Length"] = 45,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1650,7 +1652,7 @@ local playlist1 = {
     ["Id"] = 2143516,
 		["Length"] = 80,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1659,7 +1661,7 @@ local playlist1 = {
     ["Id"] = 2143517,
 		["Length"] = 83,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1668,7 +1670,7 @@ local playlist1 = {
     ["Id"] = 2143518,
 		["Length"] = 78,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1677,7 +1679,7 @@ local playlist1 = {
     ["Id"] = 2143519,
 		["Length"] = 80,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1686,7 +1688,7 @@ local playlist1 = {
     ["Id"] = 2143520,
 		["Length"] = 80,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1695,7 +1697,7 @@ local playlist1 = {
     ["Id"] = 2143521,
 		["Length"] = 26,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1704,7 +1706,7 @@ local playlist1 = {
     ["Id"] = 2143522,
 		["Length"] = 55,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1713,7 +1715,7 @@ local playlist1 = {
     ["Id"] = 2143523,
 		["Length"] = 46,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1722,7 +1724,7 @@ local playlist1 = {
     ["Id"] = 2143524,
 		["Length"] = 95,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1731,7 +1733,7 @@ local playlist1 = {
     ["Id"] = 2143525,
 		["Length"] = 80,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1740,7 +1742,7 @@ local playlist1 = {
     ["Id"] = 2146626,
 		["Length"] = 244,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1749,7 +1751,7 @@ local playlist1 = {
     ["Id"] = 2146627,
 		["Length"] = 143,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1758,7 +1760,7 @@ local playlist1 = {
     ["Id"] = 2146628,
 		["Length"] = 143,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1767,7 +1769,7 @@ local playlist1 = {
     ["Id"] = 2146629,
 		["Length"] = 142,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1776,7 +1778,7 @@ local playlist1 = {
     ["Id"] = 2146630,
 		["Length"] = 142,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1785,7 +1787,7 @@ local playlist1 = {
     ["Id"] = 2146631,
 		["Length"] = 154,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1794,7 +1796,7 @@ local playlist1 = {
     ["Id"] = 2146632,
 		["Length"] = 154,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1803,7 +1805,7 @@ local playlist1 = {
     ["Id"] = 2146633,
 		["Length"] = 69,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1812,7 +1814,7 @@ local playlist1 = {
     ["Id"] = 2146634,
 		["Length"] = 154,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1821,7 +1823,7 @@ local playlist1 = {
     ["Id"] = 2143526,
 		["Length"] = 156,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1830,7 +1832,7 @@ local playlist1 = {
     ["Id"] = 2143527,
 		["Length"] = 103,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1839,7 +1841,7 @@ local playlist1 = {
     ["Id"] = 2143528,
 		["Length"] = 102,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1848,7 +1850,7 @@ local playlist1 = {
     ["Id"] = 2143529,
 		["Length"] = 93,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1857,7 +1859,7 @@ local playlist1 = {
     ["Id"] = 2143530,
 		["Length"] = 97,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1866,7 +1868,7 @@ local playlist1 = {
     ["Id"] = 2143531,
 		["Length"] = 126,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1875,7 +1877,7 @@ local playlist1 = {
     ["Id"] = 2143532,
 		["Length"] = 155,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1884,7 +1886,7 @@ local playlist1 = {
     ["Id"] = 1780933,
 		["Length"] = 172,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1893,7 +1895,7 @@ local playlist1 = {
     ["Id"] = 1780934,
 		["Length"] = 169,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1902,7 +1904,7 @@ local playlist1 = {
     ["Id"] = 2146635,
 		["Length"] = 173,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1911,7 +1913,7 @@ local playlist1 = {
     ["Id"] = 1780935,
 		["Length"] = 172,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1920,7 +1922,7 @@ local playlist1 = {
     ["Id"] = 2145669,
 		["Length"] = 72,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1929,7 +1931,7 @@ local playlist1 = {
     ["Id"] = 2145670,
 		["Length"] = 63,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1938,7 +1940,7 @@ local playlist1 = {
     ["Id"] = 2145671,
 		["Length"] = 49,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1947,7 +1949,7 @@ local playlist1 = {
     ["Id"] = 2145672,
 		["Length"] = 48,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1956,7 +1958,7 @@ local playlist1 = {
     ["Id"] = 2145673,
 		["Length"] = 32,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1965,7 +1967,7 @@ local playlist1 = {
     ["Id"] = 2145674,
 		["Length"] = 31,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1974,7 +1976,7 @@ local playlist1 = {
     ["Id"] = 2145675,
 		["Length"] = 125,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1983,7 +1985,7 @@ local playlist1 = {
     ["Id"] = 2143533,
 		["Length"] = 98,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -1992,7 +1994,7 @@ local playlist1 = {
     ["Id"] = 2143534,
 		["Length"] = 97,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2001,7 +2003,7 @@ local playlist1 = {
     ["Id"] = 2187938,
 		["Length"] = 39,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2010,7 +2012,7 @@ local playlist1 = {
     ["Id"] = 2187939,
 		["Length"] = 36,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2019,7 +2021,7 @@ local playlist1 = {
     ["Id"] = 2198101,
 		["Length"] = 42,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2028,7 +2030,7 @@ local playlist1 = {
     ["Id"] = 2198102,
 		["Length"] = 68,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2037,7 +2039,7 @@ local playlist1 = {
     ["Id"] = 2202584,
 		["Length"] = 51,
 		["Artist"] = "Jason Hayes, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2046,7 +2048,7 @@ local playlist1 = {
     ["Id"] = 2187940,
 		["Length"] = 82,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2055,7 +2057,7 @@ local playlist1 = {
     ["Id"] = 2187942,
 		["Length"] = 39,
 		["Artist"] = "Glenn Stafford, Adam Burgess",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2064,7 +2066,7 @@ local playlist1 = {
     ["Id"] = 2198103,
 		["Length"] = 80,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2073,7 +2075,7 @@ local playlist1 = {
     ["Id"] = 2198104,
 		["Length"] = 69,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2082,7 +2084,7 @@ local playlist1 = {
     ["Id"] = 2198105,
 		["Length"] = 52,
 		["Artist"] = "Derek Duke, Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2091,7 +2093,7 @@ local playlist1 = {
     ["Id"] = 2202582,
 		["Length"] = 49,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2100,7 +2102,7 @@ local playlist1 = {
     ["Id"] = 2187943,
 		["Length"] = 68,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2109,7 +2111,7 @@ local playlist1 = {
     ["Id"] = 2187944,
 		["Length"] = 144,
 		["Artist"] = "Neal Acree, Sam Cardon, David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2118,7 +2120,7 @@ local playlist1 = {
     ["Id"] = 2198106,
 		["Length"] = 78,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2127,7 +2129,7 @@ local playlist1 = {
     ["Id"] = 2202583,
 		["Length"] = 69,
 		["Artist"] = "David Arkenstone, Sam Cardon, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2136,7 +2138,7 @@ local playlist1 = {
     ["Id"] = 2146636,
 		["Length"] = 70,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2145,7 +2147,7 @@ local playlist1 = {
     ["Id"] = 2151743,
 		["Length"] = 73,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2154,7 +2156,7 @@ local playlist1 = {
     ["Id"] = 2146638,
 		["Length"] = 74,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2163,7 +2165,7 @@ local playlist1 = {
     ["Id"] = 2146639,
 		["Length"] = 76,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2172,7 +2174,7 @@ local playlist1 = {
     ["Id"] = 2145676,
 		["Length"] = 16,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2181,7 +2183,7 @@ local playlist1 = {
     ["Id"] = 2145677,
 		["Length"] = 12,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2190,7 +2192,7 @@ local playlist1 = {
     ["Id"] = 2145678,
 		["Length"] = 30,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2199,7 +2201,7 @@ local playlist1 = {
     ["Id"] = 2145679,
 		["Length"] = 50,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2208,7 +2210,7 @@ local playlist1 = {
     ["Id"] = 2145680,
 		["Length"] = 50,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2217,7 +2219,7 @@ local playlist1 = {
     ["Id"] = 2145681,
 		["Length"] = 64,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2226,7 +2228,7 @@ local playlist1 = {
     ["Id"] = 2145682,
 		["Length"] = 75,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2235,7 +2237,7 @@ local playlist1 = {
     ["Id"] = 2145683,
 		["Length"] = 21,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2244,7 +2246,7 @@ local playlist1 = {
     ["Id"] = 2145685,
 		["Length"] = 38,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2253,7 +2255,7 @@ local playlist1 = {
     ["Id"] = 2145686,
 		["Length"] = 82,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2262,7 +2264,7 @@ local playlist1 = {
     ["Id"] = 2146640,
 		["Length"] = 64,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2271,7 +2273,7 @@ local playlist1 = {
     ["Id"] = 2146641,
 		["Length"] = 58,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2280,7 +2282,7 @@ local playlist1 = {
     ["Id"] = 2146642,
 		["Length"] = 57,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2289,7 +2291,7 @@ local playlist1 = {
     ["Id"] = 2146644,
 		["Length"] = 58,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2298,7 +2300,7 @@ local playlist1 = {
     ["Id"] = 2150455,
 		["Length"] = 300,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2307,7 +2309,7 @@ local playlist1 = {
     ["Id"] = 2150456,
 		["Length"] = 307,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2316,7 +2318,7 @@ local playlist1 = {
     ["Id"] = 2150457,
 		["Length"] = 179,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2325,7 +2327,7 @@ local playlist1 = {
     ["Id"] = 2150458,
 		["Length"] = 298,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2334,7 +2336,7 @@ local playlist1 = {
     ["Id"] = 2150459,
 		["Length"] = 160,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2343,7 +2345,7 @@ local playlist1 = {
     ["Id"] = 2150461,
 		["Length"] = 224,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2352,7 +2354,7 @@ local playlist1 = {
     ["Id"] = 2150462,
 		["Length"] = 297,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2361,7 +2363,7 @@ local playlist1 = {
     ["Id"] = 2146271,
 		["Length"] = 128,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2370,7 +2372,7 @@ local playlist1 = {
     ["Id"] = 2146272,
 		["Length"] = 128,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2379,7 +2381,7 @@ local playlist1 = {
     ["Id"] = 2150463,
 		["Length"] = 125,
 		["Artist"] = "Sam Cardon, Kory McMaster",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2388,7 +2390,7 @@ local playlist1 = {
     ["Id"] = 2150464,
 		["Length"] = 75,
 		["Artist"] = "Sam Cardon, Kory McMaster",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2397,7 +2399,7 @@ local playlist1 = {
     ["Id"] = 2146273,
 		["Length"] = 128,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2406,7 +2408,7 @@ local playlist1 = {
     ["Id"] = 2143535,
 		["Length"] = 86,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2415,7 +2417,7 @@ local playlist1 = {
     ["Id"] = 2143536,
 		["Length"] = 89,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2424,7 +2426,7 @@ local playlist1 = {
     ["Id"] = 2143537,
 		["Length"] = 86,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2433,7 +2435,7 @@ local playlist1 = {
     ["Id"] = 2143538,
 		["Length"] = 91,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2442,7 +2444,7 @@ local playlist1 = {
     ["Id"] = 2143539,
 		["Length"] = 91,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2451,7 +2453,7 @@ local playlist1 = {
     ["Id"] = 1780941,
 		["Length"] = 140,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2460,7 +2462,7 @@ local playlist1 = {
     ["Id"] = 1780942,
 		["Length"] = 140,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2469,7 +2471,7 @@ local playlist1 = {
     ["Id"] = 2146274,
 		["Length"] = 140,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2478,7 +2480,7 @@ local playlist1 = {
     ["Id"] = 1780943,
 		["Length"] = 140,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2487,7 +2489,7 @@ local playlist1 = {
     ["Id"] = 2146275,
 		["Length"] = 151,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2496,7 +2498,7 @@ local playlist1 = {
     ["Id"] = 2150465,
 		["Length"] = 150,
 		["Artist"] = "Sam Cardon, Kory McMaster",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2505,7 +2507,7 @@ local playlist1 = {
     ["Id"] = 2150466,
 		["Length"] = 72,
 		["Artist"] = "Sam Cardon, Kory McMaster",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2514,7 +2516,7 @@ local playlist1 = {
     ["Id"] = 2150467,
 		["Length"] = 92,
 		["Artist"] = "Sam Cardon, Kory McMaster",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2523,7 +2525,7 @@ local playlist1 = {
     ["Id"] = 2150468,
 		["Length"] = 149,
 		["Artist"] = "Sam Cardon, Kory McMaster",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2532,7 +2534,7 @@ local playlist1 = {
     ["Id"] = 2146276,
 		["Length"] = 151,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2541,7 +2543,7 @@ local playlist1 = {
     ["Id"] = 2145688,
 		["Length"] = 121,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2550,7 +2552,7 @@ local playlist1 = {
     ["Id"] = 2145689,
 		["Length"] = 95,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2559,7 +2561,7 @@ local playlist1 = {
     ["Id"] = 2145690,
 		["Length"] = 123,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2568,7 +2570,7 @@ local playlist1 = {
     ["Id"] = 2179161,
 		["Length"] = 39,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2577,7 +2579,7 @@ local playlist1 = {
     ["Id"] = 2145694,
 		["Length"] = 75,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2586,7 +2588,7 @@ local playlist1 = {
     ["Id"] = 2146645,
 		["Length"] = 135,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2595,7 +2597,7 @@ local playlist1 = {
     ["Id"] = 2146646,
 		["Length"] = 203,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2604,7 +2606,7 @@ local playlist1 = {
     ["Id"] = 2146647,
 		["Length"] = 129,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2613,7 +2615,7 @@ local playlist1 = {
     ["Id"] = 2146648,
 		["Length"] = 130,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2622,7 +2624,7 @@ local playlist1 = {
     ["Id"] = 2146649,
 		["Length"] = 129,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2631,7 +2633,7 @@ local playlist1 = {
     ["Id"] = 2148022,
 		["Length"] = 118,
 		["Artist"] = "Clint Bajakian, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2640,7 +2642,7 @@ local playlist1 = {
     ["Id"] = 2148023,
 		["Length"] = 88,
 		["Artist"] = "Clint Bajakian, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2649,7 +2651,7 @@ local playlist1 = {
     ["Id"] = 2143540,
 		["Length"] = 137,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2658,7 +2660,7 @@ local playlist1 = {
     ["Id"] = 2148024,
 		["Length"] = 95,
 		["Artist"] = "Clint Bajakian, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2667,7 +2669,7 @@ local playlist1 = {
     ["Id"] = 2148025,
 		["Length"] = 83,
 		["Artist"] = "Clint Bajakian, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2676,7 +2678,7 @@ local playlist1 = {
     ["Id"] = 2148026,
 		["Length"] = 89,
 		["Artist"] = "Clint Bajakian, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2685,7 +2687,7 @@ local playlist1 = {
     ["Id"] = 2148027,
 		["Length"] = 90,
 		["Artist"] = "Clint Bajakian, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2694,7 +2696,7 @@ local playlist1 = {
     ["Id"] = 2148028,
 		["Length"] = 97,
 		["Artist"] = "Clint Bajakian, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2703,7 +2705,7 @@ local playlist1 = {
     ["Id"] = 2148029,
 		["Length"] = 99,
 		["Artist"] = "Clint Bajakian, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2712,7 +2714,7 @@ local playlist1 = {
     ["Id"] = 2148030,
 		["Length"] = 85,
 		["Artist"] = "Clint Bajakian, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2721,7 +2723,7 @@ local playlist1 = {
     ["Id"] = 2148031,
 		["Length"] = 92,
 		["Artist"] = "Clint Bajakian, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2730,7 +2732,7 @@ local playlist1 = {
     ["Id"] = 2146650,
 		["Length"] = 48,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2739,7 +2741,7 @@ local playlist1 = {
     ["Id"] = 2150469,
 		["Length"] = 48,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2748,7 +2750,7 @@ local playlist1 = {
     ["Id"] = 2146651,
 		["Length"] = 48,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2757,7 +2759,7 @@ local playlist1 = {
     ["Id"] = 2146652,
 		["Length"] = 54,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2766,7 +2768,7 @@ local playlist1 = {
     ["Id"] = 2150470,
 		["Length"] = 54,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2775,7 +2777,7 @@ local playlist1 = {
     ["Id"] = 2146653,
 		["Length"] = 54,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2784,7 +2786,7 @@ local playlist1 = {
     ["Id"] = 2146654,
 		["Length"] = 43,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2793,7 +2795,7 @@ local playlist1 = {
     ["Id"] = 2150471,
 		["Length"] = 42,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2802,7 +2804,7 @@ local playlist1 = {
     ["Id"] = 2146655,
 		["Length"] = 43,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2811,7 +2813,7 @@ local playlist1 = {
     ["Id"] = 2146656,
 		["Length"] = 52,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2820,7 +2822,7 @@ local playlist1 = {
     ["Id"] = 2150472,
 		["Length"] = 52,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2829,7 +2831,7 @@ local playlist1 = {
     ["Id"] = 2146657,
 		["Length"] = 53,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2838,7 +2840,7 @@ local playlist1 = {
     ["Id"] = 2203963,
 		["Length"] = 38,
 		["Artist"] = "Glenn Stafford, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2847,7 +2849,7 @@ local playlist1 = {
     ["Id"] = 2203964,
 		["Length"] = 77,
 		["Artist"] = "Glenn Stafford, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2856,7 +2858,7 @@ local playlist1 = {
     ["Id"] = 2146762,
 		["Length"] = 72,
 		["Artist"] = "Glenn Stafford, Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2865,7 +2867,7 @@ local playlist1 = {
     ["Id"] = 2146763,
 		["Length"] = 129,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2874,7 +2876,7 @@ local playlist1 = {
     ["Id"] = 2146764,
 		["Length"] = 81,
 		["Artist"] = "Glenn Stafford, Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2883,7 +2885,7 @@ local playlist1 = {
     ["Id"] = 2146765,
 		["Length"] = 50,
 		["Artist"] = "Glenn Stafford, Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2892,7 +2894,7 @@ local playlist1 = {
     ["Id"] = 2146766,
 		["Length"] = 129,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2901,7 +2903,7 @@ local playlist1 = {
     ["Id"] = 1780948,
 		["Length"] = 82,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2910,7 +2912,7 @@ local playlist1 = {
     ["Id"] = 1780949,
 		["Length"] = 82,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2919,7 +2921,7 @@ local playlist1 = {
     ["Id"] = 1780950,
 		["Length"] = 82,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2928,7 +2930,7 @@ local playlist1 = {
     ["Id"] = 2143541,
 		["Length"] = 148,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2937,7 +2939,7 @@ local playlist1 = {
     ["Id"] = 2143542,
 		["Length"] = 140,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2946,7 +2948,7 @@ local playlist1 = {
     ["Id"] = 2143543,
 		["Length"] = 159,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2955,7 +2957,7 @@ local playlist1 = {
     ["Id"] = 2148033,
 		["Length"] = 111,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2964,7 +2966,7 @@ local playlist1 = {
     ["Id"] = 2148034,
 		["Length"] = 117,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2973,7 +2975,7 @@ local playlist1 = {
     ["Id"] = 2143546,
 		["Length"] = 162,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2982,7 +2984,7 @@ local playlist1 = {
     ["Id"] = 2148036,
 		["Length"] = 122,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -2991,7 +2993,7 @@ local playlist1 = {
     ["Id"] = 2148039,
 		["Length"] = 101,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -3000,7 +3002,7 @@ local playlist1 = {
     ["Id"] = 2148042,
 		["Length"] = 92,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -3009,7 +3011,7 @@ local playlist1 = {
     ["Id"] = 2148044,
 		["Length"] = 92,
 		["Artist"] = "David Arkenstone, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -3018,7 +3020,7 @@ local playlist1 = {
     ["Id"] = 2146277,
 		["Length"] = 72,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -3027,7 +3029,7 @@ local playlist1 = {
     ["Id"] = 2146278,
 		["Length"] = 72,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -3036,7 +3038,7 @@ local playlist1 = {
     ["Id"] = 2146279,
 		["Length"] = 72,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -3045,7 +3047,7 @@ local playlist1 = {
     ["Id"] = 2146280,
 		["Length"] = 85,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -3054,7 +3056,7 @@ local playlist1 = {
     ["Id"] = 2146281,
 		["Length"] = 85,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -3063,7 +3065,7 @@ local playlist1 = {
     ["Id"] = 2146282,
 		["Length"] = 85,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.0",
@@ -3072,7 +3074,7 @@ local playlist1 = {
     ["Id"] = 2146283,
 		["Length"] = 85,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3081,7 +3083,7 @@ local playlist1 = {
     ["Id"] = 2851278,
 		["Length"] = 168,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3090,7 +3092,7 @@ local playlist1 = {
     ["Id"] = 2844613,
 		["Length"] = 84,
 		["Artist"] = "Leo Kaliski, Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3099,7 +3101,7 @@ local playlist1 = {
     ["Id"] = 2844614,
 		["Length"] = 86,
 		["Artist"] = "Leo Kaliski, Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3108,7 +3110,7 @@ local playlist1 = {
     ["Id"] = 2844615,
 		["Length"] = 108,
 		["Artist"] = "Leo Kaliski, Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3117,7 +3119,7 @@ local playlist1 = {
     ["Id"] = 2844616,
 		["Length"] = 140,
 		["Artist"] = "Leo Kaliski, Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3126,7 +3128,7 @@ local playlist1 = {
     ["Id"] = 2844617,
 		["Length"] = 70,
 		["Artist"] = "Leo Kaliski, Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3135,7 +3137,7 @@ local playlist1 = {
     ["Id"] = 2844618,
 		["Length"] = 116,
 		["Artist"] = "Leo Kaliski, Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3144,7 +3146,7 @@ local playlist1 = {
     ["Id"] = 2844619,
 		["Length"] = 69,
 		["Artist"] = "Leo Kaliski, Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3153,7 +3155,7 @@ local playlist1 = {
     ["Id"] = 2844620,
 		["Length"] = 87,
 		["Artist"] = "Leo Kaliski, Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3162,7 +3164,7 @@ local playlist1 = {
     ["Id"] = 2844621,
 		["Length"] = 70,
 		["Artist"] = "Leo Kaliski, Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3171,7 +3173,7 @@ local playlist1 = {
     ["Id"] = 2844622,
 		["Length"] = 114,
 		["Artist"] = "Leo Kaliski, Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3180,7 +3182,7 @@ local playlist1 = {
     ["Id"] = 2844623,
 		["Length"] = 84,
 		["Artist"] = "Leo Kaliski, David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3189,7 +3191,7 @@ local playlist1 = {
     ["Id"] = 2844624,
 		["Length"] = 85,
 		["Artist"] = "Leo Kaliski, David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3198,7 +3200,7 @@ local playlist1 = {
     ["Id"] = 2844625,
 		["Length"] = 68,
 		["Artist"] = "Leo Kaliski, David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3207,7 +3209,7 @@ local playlist1 = {
     ["Id"] = 2844626,
 		["Length"] = 81,
 		["Artist"] = "Leo Kaliski, David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3216,7 +3218,7 @@ local playlist1 = {
     ["Id"] = 2844627,
 		["Length"] = 80,
 		["Artist"] = "Leo Kaliski, David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3225,7 +3227,7 @@ local playlist1 = {
     ["Id"] = 2844628,
 		["Length"] = 105,
 		["Artist"] = "Leo Kaliski, David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3234,7 +3236,7 @@ local playlist1 = {
     ["Id"] = 2851696,
 		["Length"] = 51,
 		["Artist"] = "Leo Kaliski, Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3243,7 +3245,7 @@ local playlist1 = {
     ["Id"] = 2851969,
 		["Length"] = 59,
 		["Artist"] = "Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3252,7 +3254,7 @@ local playlist1 = {
     ["Id"] = 2851697,
 		["Length"] = 49,
 		["Artist"] = "Leo Kaliski, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3261,7 +3263,7 @@ local playlist1 = {
     ["Id"] = 2851698,
 		["Length"] = 75,
 		["Artist"] = "Leo Kaliski, Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3270,7 +3272,7 @@ local playlist1 = {
     ["Id"] = 2851699,
 		["Length"] = 84,
 		["Artist"] = "Neal Acree, Adam Burgess",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3279,7 +3281,7 @@ local playlist1 = {
     ["Id"] = 2851700,
 		["Length"] = 117,
 		["Artist"] = "Leo Kaliski, Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3288,7 +3290,7 @@ local playlist1 = {
     ["Id"] = 2851279,
 		["Length"] = 107,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3297,7 +3299,7 @@ local playlist1 = {
     ["Id"] = 2844629,
 		["Length"] = 121,
 		["Artist"] = "Leo Kaliski, Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3306,7 +3308,7 @@ local playlist1 = {
     ["Id"] = 2844630,
 		["Length"] = 122,
 		["Artist"] = "Leo Kaliski, Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3315,7 +3317,7 @@ local playlist1 = {
     ["Id"] = 2844631,
 		["Length"] = 93,
 		["Artist"] = "Leo Kaliski, Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3324,7 +3326,7 @@ local playlist1 = {
     ["Id"] = 2844632,
 		["Length"] = 116,
 		["Artist"] = "Leo Kaliski, Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3333,7 +3335,7 @@ local playlist1 = {
     ["Id"] = 2844633,
 		["Length"] = 121,
 		["Artist"] = "Leo Kaliski, Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3342,7 +3344,7 @@ local playlist1 = {
     ["Id"] = 2844634,
 		["Length"] = 101,
 		["Artist"] = "Leo Kaliski, Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3351,7 +3353,7 @@ local playlist1 = {
     ["Id"] = 2844635,
 		["Length"] = 139,
 		["Artist"] = "Leo Kaliski, Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3360,7 +3362,7 @@ local playlist1 = {
     ["Id"] = 2844636,
 		["Length"] = 108,
 		["Artist"] = "Leo Kaliski, Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3369,7 +3371,7 @@ local playlist1 = {
     ["Id"] = 2844637,
 		["Length"] = 110,
 		["Artist"] = "Leo Kaliski, Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3378,7 +3380,7 @@ local playlist1 = {
     ["Id"] = 2844638,
 		["Length"] = 127,
 		["Artist"] = "Leo Kaliski, Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3387,7 +3389,7 @@ local playlist1 = {
     ["Id"] = 2844639,
 		["Length"] = 127,
 		["Artist"] = "Leo Kaliski, Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1.5",
@@ -3396,7 +3398,7 @@ local playlist1 = {
     ["Id"] = 2844640,
 		["Length"] = 102,
 		["Artist"] = "Leo Kaliski, Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3405,7 +3407,7 @@ local playlist1 = {
     ["Id"] = 2564843,
 		["Length"] = 87,
 		["Artist"] = "Adam Burgess",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3414,7 +3416,7 @@ local playlist1 = {
     ["Id"] = 2564847,
 		["Length"] = 158,
 		["Artist"] = "Adam Burgess",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3423,7 +3425,7 @@ local playlist1 = {
     ["Id"] = 2564848,
 		["Length"] = 83,
 		["Artist"] = "Adam Burgess",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3432,7 +3434,7 @@ local playlist1 = {
     ["Id"] = 2564849,
 		["Length"] = 154,
 		["Artist"] = "Adam Burgess",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3441,7 +3443,7 @@ local playlist1 = {
     ["Id"] = 2564850,
 		["Length"] = 77,
 		["Artist"] = "Adam Burgess",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3450,7 +3452,7 @@ local playlist1 = {
     ["Id"] = 2564851,
 		["Length"] = 79,
 		["Artist"] = "Adam Burgess",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3459,7 +3461,7 @@ local playlist1 = {
     ["Id"] = 2564852,
 		["Length"] = 82,
 		["Artist"] = "Adam Burgess",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3468,7 +3470,7 @@ local playlist1 = {
     ["Id"] = 2564853,
 		["Length"] = 171,
 		["Artist"] = "Adam Burgess",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3477,7 +3479,7 @@ local playlist1 = {
     ["Id"] = 2564854,
 		["Length"] = 76,
 		["Artist"] = "Adam Burgess",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3486,7 +3488,7 @@ local playlist1 = {
     ["Id"] = 2564855,
 		["Length"] = 82,
 		["Artist"] = "Adam Burgess",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3495,7 +3497,7 @@ local playlist1 = {
     ["Id"] = 2564856,
 		["Length"] = 19,
 		["Artist"] = "Adam Burgess",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3504,7 +3506,7 @@ local playlist1 = {
     ["Id"] = 2575898,
 		["Length"] = 128,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3513,7 +3515,7 @@ local playlist1 = {
     ["Id"] = 2575899,
 		["Length"] = 129,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3522,7 +3524,7 @@ local playlist1 = {
     ["Id"] = 2575900,
 		["Length"] = 130,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3531,7 +3533,7 @@ local playlist1 = {
     ["Id"] = 2575901,
 		["Length"] = 128,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3540,7 +3542,7 @@ local playlist1 = {
     ["Id"] = 2575902,
 		["Length"] = 56,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3549,7 +3551,7 @@ local playlist1 = {
     ["Id"] = 2575903,
 		["Length"] = 92,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3558,7 +3560,7 @@ local playlist1 = {
     ["Id"] = 2575904,
 		["Length"] = 128,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3567,7 +3569,7 @@ local playlist1 = {
     ["Id"] = 2575905,
 		["Length"] = 129,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3576,7 +3578,7 @@ local playlist1 = {
     ["Id"] = 2575906,
 		["Length"] = 28,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3585,7 +3587,7 @@ local playlist1 = {
     ["Id"] = 2564857,
 		["Length"] = 90,
 		["Artist"] = "Sam Cardon, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3594,7 +3596,7 @@ local playlist1 = {
     ["Id"] = 2564858,
 		["Length"] = 90,
 		["Artist"] = "Sam Cardon, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3603,7 +3605,7 @@ local playlist1 = {
     ["Id"] = 2564859,
 		["Length"] = 76,
 		["Artist"] = "Sam Cardon, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3612,7 +3614,7 @@ local playlist1 = {
     ["Id"] = 2564860,
 		["Length"] = 90,
 		["Artist"] = "Sam Cardon, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3621,7 +3623,7 @@ local playlist1 = {
     ["Id"] = 2564861,
 		["Length"] = 82,
 		["Artist"] = "Sam Cardon, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3630,7 +3632,7 @@ local playlist1 = {
     ["Id"] = 2564862,
 		["Length"] = 81,
 		["Artist"] = "Sam Cardon, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3639,7 +3641,7 @@ local playlist1 = {
     ["Id"] = 2564863,
 		["Length"] = 81,
 		["Artist"] = "Sam Cardon, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3648,7 +3650,7 @@ local playlist1 = {
     ["Id"] = 2564864,
 		["Length"] = 82,
 		["Artist"] = "Sam Cardon, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3657,7 +3659,7 @@ local playlist1 = {
     ["Id"] = 2564865,
 		["Length"] = 77,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3666,7 +3668,7 @@ local playlist1 = {
     ["Id"] = 2564866,
 		["Length"] = 74,
 		["Artist"] = "Sam Cardon, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3675,7 +3677,7 @@ local playlist1 = {
     ["Id"] = 2564867,
 		["Length"] = 80,
 		["Artist"] = "Sam Cardon, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3684,7 +3686,7 @@ local playlist1 = {
     ["Id"] = 2564868,
 		["Length"] = 65,
 		["Artist"] = "Sam Cardon, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3693,7 +3695,7 @@ local playlist1 = {
     ["Id"] = 2564869,
 		["Length"] = 77,
 		["Artist"] = "Sam Cardon, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3702,7 +3704,7 @@ local playlist1 = {
     ["Id"] = 2564870,
 		["Length"] = 88,
 		["Artist"] = "Jason Hayes, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3711,7 +3713,7 @@ local playlist1 = {
     ["Id"] = 2564871,
 		["Length"] = 92,
 		["Artist"] = "Jason Hayes, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3720,7 +3722,7 @@ local playlist1 = {
     ["Id"] = 2564872,
 		["Length"] = 102,
 		["Artist"] = "Jason Hayes, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3729,7 +3731,7 @@ local playlist1 = {
     ["Id"] = 2564873,
 		["Length"] = 114,
 		["Artist"] = "Jason Hayes, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3738,7 +3740,7 @@ local playlist1 = {
     ["Id"] = 2564874,
 		["Length"] = 119,
 		["Artist"] = "Jason Hayes, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3747,7 +3749,7 @@ local playlist1 = {
     ["Id"] = 2564875,
 		["Length"] = 119,
 		["Artist"] = "Jason Hayes, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3756,7 +3758,7 @@ local playlist1 = {
     ["Id"] = 2564876,
 		["Length"] = 92,
 		["Artist"] = "Jason Hayes, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3765,7 +3767,7 @@ local playlist1 = {
     ["Id"] = 2564877,
 		["Length"] = 132,
 		["Artist"] = "Jason Hayes, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3774,7 +3776,7 @@ local playlist1 = {
     ["Id"] = 2564878,
 		["Length"] = 133,
 		["Artist"] = "Jason Hayes, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3783,7 +3785,7 @@ local playlist1 = {
     ["Id"] = 2564879,
 		["Length"] = 100,
 		["Artist"] = "Jason Hayes, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3792,7 +3794,7 @@ local playlist1 = {
     ["Id"] = 2564880,
 		["Length"] = 17,
 		["Artist"] = "Jason Hayes, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3801,7 +3803,7 @@ local playlist1 = {
     ["Id"] = 2575459,
 		["Length"] = 95,
 		["Artist"] = "Sam Cardon, Adam Burgess",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3810,7 +3812,7 @@ local playlist1 = {
     ["Id"] = 2575460,
 		["Length"] = 42,
 		["Artist"] = "Sam Cardon, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3819,7 +3821,7 @@ local playlist1 = {
     ["Id"] = 2564881,
 		["Length"] = 121,
 		["Artist"] = "Sam Cardon, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3828,7 +3830,7 @@ local playlist1 = {
     ["Id"] = 2564882,
 		["Length"] = 112,
 		["Artist"] = "Sam Cardon, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3837,7 +3839,7 @@ local playlist1 = {
     ["Id"] = 2564883,
 		["Length"] = 115,
 		["Artist"] = "Sam Cardon, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3846,7 +3848,7 @@ local playlist1 = {
     ["Id"] = 2575919,
 		["Length"] = 100,
 		["Artist"] = "Sam Cardon, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3855,7 +3857,7 @@ local playlist1 = {
     ["Id"] = 2575920,
 		["Length"] = 105,
 		["Artist"] = "Sam Cardon, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3864,7 +3866,7 @@ local playlist1 = {
     ["Id"] = 2575921,
 		["Length"] = 102,
 		["Artist"] = "Sam Cardon, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3873,7 +3875,7 @@ local playlist1 = {
     ["Id"] = 2575922,
 		["Length"] = 94,
 		["Artist"] = "Sam Cardon, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3882,7 +3884,7 @@ local playlist1 = {
     ["Id"] = 2564884,
 		["Length"] = 145,
 		["Artist"] = "Sam Cardon, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3891,7 +3893,7 @@ local playlist1 = {
     ["Id"] = 2575923,
 		["Length"] = 130,
 		["Artist"] = "Sam Cardon, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.1",
@@ -3900,7 +3902,7 @@ local playlist1 = {
     ["Id"] = 2575924,
 		["Length"] = 125,
 		["Artist"] = "Sam Cardon, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.2.0",
@@ -3909,7 +3911,7 @@ local playlist1 = {
     ["Id"] = 3028750,
 		["Length"] = 87,
 		["Artist"] = "Peter McConnell, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.2.0",
@@ -3918,7 +3920,7 @@ local playlist1 = {
     ["Id"] = 3028751,
 		["Length"] = 88,
 		["Artist"] = "Peter McConnell, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.2.0",
@@ -3927,7 +3929,7 @@ local playlist1 = {
     ["Id"] = 3028752,
 		["Length"] = 87,
 		["Artist"] = "Peter McConnell, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.2.0",
@@ -3936,7 +3938,7 @@ local playlist1 = {
     ["Id"] = 3028753,
 		["Length"] = 84,
 		["Artist"] = "Peter McConnell, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.2.0",
@@ -3945,7 +3947,7 @@ local playlist1 = {
     ["Id"] = 3028754,
 		["Length"] = 93,
 		["Artist"] = "Peter McConnell, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.2.0",
@@ -3954,7 +3956,7 @@ local playlist1 = {
     ["Id"] = 3028755,
 		["Length"] = 18,
 		["Artist"] = "Peter McConnell, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.2.0",
@@ -3963,7 +3965,7 @@ local playlist1 = {
     ["Id"] = 3028756,
 		["Length"] = 12,
 		["Artist"] = "Peter McConnell, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.2.0",
@@ -3972,7 +3974,7 @@ local playlist1 = {
     ["Id"] = 3028757,
 		["Length"] = 125,
 		["Artist"] = "Peter McConnell",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.2.0",
@@ -3981,7 +3983,7 @@ local playlist1 = {
     ["Id"] = 3028765,
 		["Length"] = 91,
 		["Artist"] = "Peter McConnell, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.2.0",
@@ -3990,7 +3992,7 @@ local playlist1 = {
     ["Id"] = 3028766,
 		["Length"] = 88,
 		["Artist"] = "Peter McConnell, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.2.0",
@@ -3999,7 +4001,7 @@ local playlist1 = {
     ["Id"] = 3028767,
 		["Length"] = 94,
 		["Artist"] = "Peter McConnell, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.2.0",
@@ -4008,7 +4010,7 @@ local playlist1 = {
     ["Id"] = 3028768,
 		["Length"] = 87,
 		["Artist"] = "Peter McConnell, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.2.0",
@@ -4017,7 +4019,7 @@ local playlist1 = {
     ["Id"] = 3028769,
 		["Length"] = 13,
 		["Artist"] = "Peter McConnell, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.2.0",
@@ -4026,7 +4028,7 @@ local playlist1 = {
     ["Id"] = 3028770,
 		["Length"] = 11,
 		["Artist"] = "Peter McConnell, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.2.0",
@@ -4035,7 +4037,7 @@ local playlist1 = {
     ["Id"] = 3028771,
 		["Length"] = 17,
 		["Artist"] = "Peter McConnell, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.2.0",
@@ -4044,7 +4046,7 @@ local playlist1 = {
     ["Id"] = 3028772,
 		["Length"] = 68,
 		["Artist"] = "Peter McConnell",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW8.2.0",
@@ -4053,7 +4055,7 @@ local playlist1 = {
     ["Id"] = 3028773,
 		["Length"] = 11,
 		["Artist"] = "Peter McConnell, Leo Kaliski",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.1 Rise of the Zandalari",
@@ -4062,7 +4064,7 @@ local playlist1 = {
     ["Id"] = 521000,
 		["Length"] = 132,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.1 Rise of the Zandalari",
@@ -4071,7 +4073,7 @@ local playlist1 = {
     ["Id"] = 520983,
 		["Length"] = 68,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.1 Rise of the Zandalari",
@@ -4080,7 +4082,7 @@ local playlist1 = {
     ["Id"] = 520984,
 		["Length"] = 68,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.1 Rise of the Zandalari",
@@ -4089,7 +4091,7 @@ local playlist1 = {
     ["Id"] = 520985,
 		["Length"] = 68,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.1 Rise of the Zandalari",
@@ -4098,7 +4100,7 @@ local playlist1 = {
     ["Id"] = 520986,
 		["Length"] = 26,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.1 Rise of the Zandalari",
@@ -4107,7 +4109,7 @@ local playlist1 = {
     ["Id"] = 520987,
 		["Length"] = 26,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.1 Rise of the Zandalari",
@@ -4116,7 +4118,7 @@ local playlist1 = {
     ["Id"] = 520988,
 		["Length"] = 34,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.1 Rise of the Zandalari",
@@ -4125,7 +4127,7 @@ local playlist1 = {
     ["Id"] = 520989,
 		["Length"] = 34,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.1 Rise of the Zandalari",
@@ -4134,7 +4136,7 @@ local playlist1 = {
     ["Id"] = 520990,
 		["Length"] = 15,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.1 Rise of the Zandalari",
@@ -4143,7 +4145,7 @@ local playlist1 = {
     ["Id"] = 520991,
 		["Length"] = 15,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.1 Rise of the Zandalari",
@@ -4152,7 +4154,7 @@ local playlist1 = {
     ["Id"] = 520992,
 		["Length"] = 100,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.1 Rise of the Zandalari",
@@ -4161,7 +4163,7 @@ local playlist1 = {
     ["Id"] = 520993,
 		["Length"] = 100,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.1 Rise of the Zandalari",
@@ -4170,7 +4172,7 @@ local playlist1 = {
     ["Id"] = 520994,
 		["Length"] = 60,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.1 Rise of the Zandalari",
@@ -4179,7 +4181,7 @@ local playlist1 = {
     ["Id"] = 520995,
 		["Length"] = 60,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.1 Rise of the Zandalari",
@@ -4188,7 +4190,7 @@ local playlist1 = {
     ["Id"] = 520996,
 		["Length"] = 16,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.1 Rise of the Zandalari",
@@ -4197,7 +4199,7 @@ local playlist1 = {
     ["Id"] = 520997,
 		["Length"] = 16,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.1 Rise of the Zandalari",
@@ -4206,7 +4208,7 @@ local playlist1 = {
     ["Id"] = 520998,
 		["Length"] = 119,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.1 Rise of the Zandalari",
@@ -4215,7 +4217,7 @@ local playlist1 = {
     ["Id"] = 520999,
 		["Length"] = 119,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Rage of the Firelands - WoW 4.2",
@@ -4224,7 +4226,7 @@ local playlist1 = {
     ["Id"] = 528352,
 		["Length"] = 91,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Rage of the Firelands - WoW 4.2",
@@ -4233,7 +4235,7 @@ local playlist1 = {
     ["Id"] = 528353,
 		["Length"] = 84,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Rage of the Firelands - WoW 4.2",
@@ -4242,7 +4244,7 @@ local playlist1 = {
     ["Id"] = 528354,
 		["Length"] = 89,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Rage of the Firelands - WoW 4.2",
@@ -4251,7 +4253,7 @@ local playlist1 = {
     ["Id"] = 528355,
 		["Length"] = 44,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Rage of the Firelands - WoW 4.2",
@@ -4260,7 +4262,7 @@ local playlist1 = {
     ["Id"] = 528356,
 		["Length"] = 88,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Rage of the Firelands - WoW 4.2",
@@ -4269,7 +4271,7 @@ local playlist1 = {
     ["Id"] = 528357,
 		["Length"] = 87,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Rage of the Firelands - WoW 4.2",
@@ -4278,7 +4280,7 @@ local playlist1 = {
     ["Id"] = 528358,
 		["Length"] = 85,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Rage of the Firelands - WoW 4.2",
@@ -4287,7 +4289,7 @@ local playlist1 = {
     ["Id"] = 528359,
 		["Length"] = 86,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -4296,7 +4298,7 @@ local playlist1 = {
     ["Id"] = 528155,
 		["Length"] = 54,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -4305,7 +4307,7 @@ local playlist1 = {
     ["Id"] = 528156,
 		["Length"] = 54,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -4314,7 +4316,7 @@ local playlist1 = {
     ["Id"] = 528157,
 		["Length"] = 54,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -4323,7 +4325,7 @@ local playlist1 = {
     ["Id"] = 528158,
 		["Length"] = 29,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -4332,7 +4334,7 @@ local playlist1 = {
     ["Id"] = 528159,
 		["Length"] = 26,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -4341,7 +4343,7 @@ local playlist1 = {
     ["Id"] = 528160,
 		["Length"] = 47,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -4350,7 +4352,7 @@ local playlist1 = {
     ["Id"] = 528161,
 		["Length"] = 38,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -4359,7 +4361,7 @@ local playlist1 = {
     ["Id"] = 528162,
 		["Length"] = 44,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -4368,7 +4370,7 @@ local playlist1 = {
     ["Id"] = 528163,
 		["Length"] = 54,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -4377,7 +4379,7 @@ local playlist1 = {
     ["Id"] = 528164,
 		["Length"] = 61,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -4386,7 +4388,7 @@ local playlist1 = {
     ["Id"] = 528165,
 		["Length"] = 34,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -4395,7 +4397,7 @@ local playlist1 = {
     ["Id"] = 528166,
 		["Length"] = 34,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Rage of the Firelands - WoW 4.2",
@@ -4404,7 +4406,7 @@ local playlist1 = {
     ["Id"] = 528360,
 		["Length"] = 58,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Rage of the Firelands - WoW 4.2",
@@ -4413,7 +4415,7 @@ local playlist1 = {
     ["Id"] = 528361,
 		["Length"] = 80,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Rage of the Firelands - WoW 4.2",
@@ -4422,7 +4424,7 @@ local playlist1 = {
     ["Id"] = 528362,
 		["Length"] = 65,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Rage of the Firelands - WoW 4.2",
@@ -4431,7 +4433,7 @@ local playlist1 = {
     ["Id"] = 528363,
 		["Length"] = 58,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -4440,7 +4442,7 @@ local playlist1 = {
     ["Id"] = 528167,
 		["Length"] = 66,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -4449,7 +4451,7 @@ local playlist1 = {
     ["Id"] = 528168,
 		["Length"] = 66,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -4458,7 +4460,7 @@ local playlist1 = {
     ["Id"] = 528169,
 		["Length"] = 34,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -4467,7 +4469,7 @@ local playlist1 = {
     ["Id"] = 528170,
 		["Length"] = 34,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -4476,7 +4478,7 @@ local playlist1 = {
     ["Id"] = 528171,
 		["Length"] = 63,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -4485,7 +4487,7 @@ local playlist1 = {
     ["Id"] = 528172,
 		["Length"] = 67,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -4494,7 +4496,7 @@ local playlist1 = {
     ["Id"] = 528173,
 		["Length"] = 75,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Rage of the Firelands - WoW 4.2",
@@ -4503,7 +4505,7 @@ local playlist1 = {
     ["Id"] = 528364,
 		["Length"] = 103,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Rage of the Firelands - WoW 4.2",
@@ -4512,7 +4514,7 @@ local playlist1 = {
     ["Id"] = 528365,
 		["Length"] = 91,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Rage of the Firelands - WoW 4.2",
@@ -4521,7 +4523,7 @@ local playlist1 = {
     ["Id"] = 528366,
 		["Length"] = 76,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Rage of the Firelands - WoW 4.2",
@@ -4530,7 +4532,7 @@ local playlist1 = {
     ["Id"] = 528367,
 		["Length"] = 58,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Rage of the Firelands - WoW 4.2",
@@ -4539,7 +4541,7 @@ local playlist1 = {
     ["Id"] = 528368,
 		["Length"] = 108,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Rage of the Firelands - WoW 4.2",
@@ -4548,7 +4550,7 @@ local playlist1 = {
     ["Id"] = 528369,
 		["Length"] = 63,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Rage of the Firelands - WoW 4.2",
@@ -4557,7 +4559,7 @@ local playlist1 = {
     ["Id"] = 528370,
 		["Length"] = 53,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Rage of the Firelands - WoW 4.2",
@@ -4566,7 +4568,7 @@ local playlist1 = {
     ["Id"] = 528371,
 		["Length"] = 65,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Rage of the Firelands - WoW 4.2",
@@ -4575,7 +4577,7 @@ local playlist1 = {
     ["Id"] = 528372,
 		["Length"] = 52,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -4584,7 +4586,7 @@ local playlist1 = {
     ["Id"] = 528174,
 		["Length"] = 72,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -4593,7 +4595,7 @@ local playlist1 = {
     ["Id"] = 528175,
 		["Length"] = 61,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -4602,7 +4604,7 @@ local playlist1 = {
     ["Id"] = 528176,
 		["Length"] = 53,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -4611,7 +4613,7 @@ local playlist1 = {
     ["Id"] = 528177,
 		["Length"] = 44,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -4620,7 +4622,7 @@ local playlist1 = {
     ["Id"] = 528178,
 		["Length"] = 57,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -4629,7 +4631,7 @@ local playlist1 = {
     ["Id"] = 528373,
 		["Length"] = 57,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4638,7 +4640,7 @@ local playlist1 = {
     ["Id"] = 575749,
 		["Length"] = 122,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4647,7 +4649,7 @@ local playlist1 = {
     ["Id"] = 575750,
 		["Length"] = 122,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4656,7 +4658,7 @@ local playlist1 = {
     ["Id"] = 575751,
 		["Length"] = 84,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4665,7 +4667,7 @@ local playlist1 = {
     ["Id"] = 575651,
 		["Length"] = 35,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4674,7 +4676,7 @@ local playlist1 = {
     ["Id"] = 575652,
 		["Length"] = 34,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4683,7 +4685,7 @@ local playlist1 = {
     ["Id"] = 575653,
 		["Length"] = 32,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4692,7 +4694,7 @@ local playlist1 = {
     ["Id"] = 575654,
 		["Length"] = 59,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4701,7 +4703,7 @@ local playlist1 = {
     ["Id"] = 575655,
 		["Length"] = 58,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4710,7 +4712,7 @@ local playlist1 = {
     ["Id"] = 575656,
 		["Length"] = 31,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4719,7 +4721,7 @@ local playlist1 = {
     ["Id"] = 575657,
 		["Length"] = 69,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4728,7 +4730,7 @@ local playlist1 = {
     ["Id"] = 575658,
 		["Length"] = 58,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4737,7 +4739,7 @@ local playlist1 = {
     ["Id"] = 575659,
 		["Length"] = 147,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4746,7 +4748,7 @@ local playlist1 = {
     ["Id"] = 575660,
 		["Length"] = 111,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4755,7 +4757,7 @@ local playlist1 = {
     ["Id"] = 575661,
 		["Length"] = 104,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4764,7 +4766,7 @@ local playlist1 = {
     ["Id"] = 575662,
 		["Length"] = 32,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4773,7 +4775,7 @@ local playlist1 = {
     ["Id"] = 575663,
 		["Length"] = 31,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4782,7 +4784,7 @@ local playlist1 = {
     ["Id"] = 575664,
 		["Length"] = 32,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4791,7 +4793,7 @@ local playlist1 = {
     ["Id"] = 575665,
 		["Length"] = 32,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4800,7 +4802,7 @@ local playlist1 = {
     ["Id"] = 575666,
 		["Length"] = 60,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4809,7 +4811,7 @@ local playlist1 = {
     ["Id"] = 575667,
 		["Length"] = 47,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4818,7 +4820,7 @@ local playlist1 = {
     ["Id"] = 575668,
 		["Length"] = 49,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4827,7 +4829,7 @@ local playlist1 = {
     ["Id"] = 575669,
 		["Length"] = 51,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4836,7 +4838,7 @@ local playlist1 = {
     ["Id"] = 575670,
 		["Length"] = 121,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4845,7 +4847,7 @@ local playlist1 = {
     ["Id"] = 575671,
 		["Length"] = 97,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4854,7 +4856,7 @@ local playlist1 = {
     ["Id"] = 575672,
 		["Length"] = 99,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4863,7 +4865,7 @@ local playlist1 = {
     ["Id"] = 575673,
 		["Length"] = 92,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4872,7 +4874,7 @@ local playlist1 = {
     ["Id"] = 575674,
 		["Length"] = 77,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4881,7 +4883,7 @@ local playlist1 = {
     ["Id"] = 575675,
 		["Length"] = 61,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4890,7 +4892,7 @@ local playlist1 = {
     ["Id"] = 575676,
 		["Length"] = 61,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4899,7 +4901,7 @@ local playlist1 = {
     ["Id"] = 575677,
 		["Length"] = 151,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4908,7 +4910,7 @@ local playlist1 = {
     ["Id"] = 575678,
 		["Length"] = 80,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4917,7 +4919,7 @@ local playlist1 = {
     ["Id"] = 575679,
 		["Length"] = 74,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4926,7 +4928,7 @@ local playlist1 = {
     ["Id"] = 575680,
 		["Length"] = 63,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4935,7 +4937,7 @@ local playlist1 = {
     ["Id"] = 575681,
 		["Length"] = 189,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4944,7 +4946,7 @@ local playlist1 = {
     ["Id"] = 575682,
 		["Length"] = 15,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4953,7 +4955,7 @@ local playlist1 = {
     ["Id"] = 575683,
 		["Length"] = 14,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4962,7 +4964,7 @@ local playlist1 = {
     ["Id"] = 575684,
 		["Length"] = 5,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4971,7 +4973,7 @@ local playlist1 = {
     ["Id"] = 575685,
 		["Length"] = 10,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4980,7 +4982,7 @@ local playlist1 = {
     ["Id"] = 575686,
 		["Length"] = 31,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4989,7 +4991,7 @@ local playlist1 = {
     ["Id"] = 575687,
 		["Length"] = 18,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -4998,7 +5000,7 @@ local playlist1 = {
     ["Id"] = 575688,
 		["Length"] = 42,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -5007,7 +5009,7 @@ local playlist1 = {
     ["Id"] = 575689,
 		["Length"] = 45,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -5016,7 +5018,7 @@ local playlist1 = {
     ["Id"] = 575690,
 		["Length"] = 59,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -5025,7 +5027,7 @@ local playlist1 = {
     ["Id"] = 575691,
 		["Length"] = 60,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -5034,7 +5036,7 @@ local playlist1 = {
     ["Id"] = 575692,
 		["Length"] = 59,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -5043,7 +5045,7 @@ local playlist1 = {
     ["Id"] = 575693,
 		["Length"] = 59,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -5052,7 +5054,7 @@ local playlist1 = {
     ["Id"] = 575694,
 		["Length"] = 61,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -5061,7 +5063,7 @@ local playlist1 = {
     ["Id"] = 575695,
 		["Length"] = 42,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -5070,7 +5072,7 @@ local playlist1 = {
     ["Id"] = 575696,
 		["Length"] = 47,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -5079,7 +5081,7 @@ local playlist1 = {
     ["Id"] = 575697,
 		["Length"] = 29,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -5088,7 +5090,7 @@ local playlist1 = {
     ["Id"] = 575698,
 		["Length"] = 113,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -5097,7 +5099,7 @@ local playlist1 = {
     ["Id"] = 575699,
 		["Length"] = 54,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -5106,7 +5108,7 @@ local playlist1 = {
     ["Id"] = 575700,
 		["Length"] = 90,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -5115,7 +5117,7 @@ local playlist1 = {
     ["Id"] = 575701,
 		["Length"] = 66,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -5124,7 +5126,7 @@ local playlist1 = {
     ["Id"] = 575702,
 		["Length"] = 29,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -5133,7 +5135,7 @@ local playlist1 = {
     ["Id"] = 575703,
 		["Length"] = 84,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -5142,7 +5144,7 @@ local playlist1 = {
     ["Id"] = 575704,
 		["Length"] = 84,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -5151,7 +5153,7 @@ local playlist1 = {
     ["Id"] = 575705,
 		["Length"] = 84,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -5160,7 +5162,7 @@ local playlist1 = {
     ["Id"] = 575706,
 		["Length"] = 91,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -5169,7 +5171,7 @@ local playlist1 = {
     ["Id"] = 575707,
 		["Length"] = 102,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -5178,7 +5180,7 @@ local playlist1 = {
     ["Id"] = 575708,
 		["Length"] = 85,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -5187,7 +5189,7 @@ local playlist1 = {
     ["Id"] = 575709,
 		["Length"] = 85,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -5196,7 +5198,7 @@ local playlist1 = {
     ["Id"] = 575710,
 		["Length"] = 177,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -5205,7 +5207,7 @@ local playlist1 = {
     ["Id"] = 575711,
 		["Length"] = 92,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -5214,7 +5216,7 @@ local playlist1 = {
     ["Id"] = 575712,
 		["Length"] = 71,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -5223,7 +5225,7 @@ local playlist1 = {
     ["Id"] = 575713,
 		["Length"] = 51,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -5232,7 +5234,7 @@ local playlist1 = {
     ["Id"] = 575714,
 		["Length"] = 107,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -5241,7 +5243,7 @@ local playlist1 = {
     ["Id"] = 575715,
 		["Length"] = 46,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -5250,7 +5252,7 @@ local playlist1 = {
     ["Id"] = 575716,
 		["Length"] = 113,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Rage of the Firelands - WoW 4.2",
@@ -5259,7 +5261,7 @@ local playlist1 = {
     ["Id"] = 528374,
 		["Length"] = 141,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Rage of the Firelands - WoW 4.2",
@@ -5268,7 +5270,7 @@ local playlist1 = {
     ["Id"] = 528375,
 		["Length"] = 13,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Rage of the Firelands - WoW 4.2",
@@ -5277,7 +5279,7 @@ local playlist1 = {
     ["Id"] = 528376,
 		["Length"] = 15,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Rage of the Firelands - WoW 4.2",
@@ -5286,7 +5288,7 @@ local playlist1 = {
     ["Id"] = 528377,
 		["Length"] = 21,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Rage of the Firelands - WoW 4.2",
@@ -5295,7 +5297,7 @@ local playlist1 = {
     ["Id"] = 528378,
 		["Length"] = 16,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Rage of the Firelands - WoW 4.2",
@@ -5304,7 +5306,7 @@ local playlist1 = {
     ["Id"] = 528379,
 		["Length"] = 52,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Rage of the Firelands - WoW 4.2",
@@ -5313,7 +5315,7 @@ local playlist1 = {
     ["Id"] = 528380,
 		["Length"] = 35,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Rage of the Firelands - WoW 4.2",
@@ -5322,7 +5324,7 @@ local playlist1 = {
     ["Id"] = 528381,
 		["Length"] = 49,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Rage of the Firelands - WoW 4.2",
@@ -5331,7 +5333,7 @@ local playlist1 = {
     ["Id"] = 528382,
 		["Length"] = 53,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Rage of the Firelands - WoW 4.2",
@@ -5340,7 +5342,7 @@ local playlist1 = {
     ["Id"] = 528383,
 		["Length"] = 43,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5349,7 +5351,7 @@ local playlist1 = {
     ["Id"] = 441521,
 		["Length"] = 125,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5358,7 +5360,7 @@ local playlist1 = {
     ["Id"] = 441522,
 		["Length"] = 125,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5367,7 +5369,7 @@ local playlist1 = {
     ["Id"] = 441523,
 		["Length"] = 58,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5376,7 +5378,7 @@ local playlist1 = {
     ["Id"] = 441524,
 		["Length"] = 82,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5385,7 +5387,7 @@ local playlist1 = {
     ["Id"] = 441525,
 		["Length"] = 195,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5394,7 +5396,7 @@ local playlist1 = {
     ["Id"] = 443286,
 		["Length"] = 67,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5403,7 +5405,7 @@ local playlist1 = {
     ["Id"] = 443287,
 		["Length"] = 67,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5412,7 +5414,7 @@ local playlist1 = {
     ["Id"] = 443288,
 		["Length"] = 67,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5421,7 +5423,7 @@ local playlist1 = {
     ["Id"] = 443289,
 		["Length"] = 69,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5430,7 +5432,7 @@ local playlist1 = {
     ["Id"] = 443290,
 		["Length"] = 69,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5439,7 +5441,7 @@ local playlist1 = {
     ["Id"] = 443291,
 		["Length"] = 69,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5448,7 +5450,7 @@ local playlist1 = {
     ["Id"] = 443292,
 		["Length"] = 89,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5457,7 +5459,7 @@ local playlist1 = {
     ["Id"] = 443293,
 		["Length"] = 85,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5466,7 +5468,7 @@ local playlist1 = {
     ["Id"] = 443294,
 		["Length"] = 85,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5475,7 +5477,7 @@ local playlist1 = {
     ["Id"] = 450257,
 		["Length"] = 70,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5484,7 +5486,7 @@ local playlist1 = {
     ["Id"] = 450258,
 		["Length"] = 70,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5493,7 +5495,7 @@ local playlist1 = {
     ["Id"] = 441526,
 		["Length"] = 63,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5502,7 +5504,7 @@ local playlist1 = {
     ["Id"] = 441527,
 		["Length"] = 50,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5511,7 +5513,7 @@ local playlist1 = {
     ["Id"] = 441528,
 		["Length"] = 65,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5520,7 +5522,7 @@ local playlist1 = {
     ["Id"] = 441529,
 		["Length"] = 51,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5529,7 +5531,7 @@ local playlist1 = {
     ["Id"] = 441530,
 		["Length"] = 58,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5538,7 +5540,7 @@ local playlist1 = {
     ["Id"] = 441531,
 		["Length"] = 133,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5547,7 +5549,7 @@ local playlist1 = {
     ["Id"] = 441532,
 		["Length"] = 52,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5556,7 +5558,7 @@ local playlist1 = {
     ["Id"] = 441533,
 		["Length"] = 80,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5565,7 +5567,7 @@ local playlist1 = {
     ["Id"] = 441534,
 		["Length"] = 101,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5574,7 +5576,7 @@ local playlist1 = {
     ["Id"] = 443295,
 		["Length"] = 111,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5583,7 +5585,7 @@ local playlist1 = {
     ["Id"] = 443296,
 		["Length"] = 111,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5592,7 +5594,7 @@ local playlist1 = {
     ["Id"] = 443297,
 		["Length"] = 111,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5601,7 +5603,7 @@ local playlist1 = {
     ["Id"] = 441535,
 		["Length"] = 79,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5610,7 +5612,7 @@ local playlist1 = {
     ["Id"] = 441536,
 		["Length"] = 71,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5619,7 +5621,7 @@ local playlist1 = {
     ["Id"] = 441537,
 		["Length"] = 61,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5628,7 +5630,7 @@ local playlist1 = {
     ["Id"] = 441538,
 		["Length"] = 111,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5637,7 +5639,7 @@ local playlist1 = {
     ["Id"] = 441539,
 		["Length"] = 73,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5646,7 +5648,7 @@ local playlist1 = {
     ["Id"] = 441540,
 		["Length"] = 48,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5655,7 +5657,7 @@ local playlist1 = {
     ["Id"] = 441541,
 		["Length"] = 169,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5664,7 +5666,7 @@ local playlist1 = {
     ["Id"] = 441542,
 		["Length"] = 60,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5673,7 +5675,7 @@ local playlist1 = {
     ["Id"] = 441543,
 		["Length"] = 29,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5682,7 +5684,7 @@ local playlist1 = {
     ["Id"] = 441544,
 		["Length"] = 19,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5691,7 +5693,7 @@ local playlist1 = {
     ["Id"] = 441545,
 		["Length"] = 151,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5700,7 +5702,7 @@ local playlist1 = {
     ["Id"] = 441546,
 		["Length"] = 39,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5709,7 +5711,7 @@ local playlist1 = {
     ["Id"] = 441547,
 		["Length"] = 70,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5718,7 +5720,7 @@ local playlist1 = {
     ["Id"] = 441548,
 		["Length"] = 32,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5727,7 +5729,7 @@ local playlist1 = {
     ["Id"] = 441549,
 		["Length"] = 31,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5736,7 +5738,7 @@ local playlist1 = {
     ["Id"] = 441550,
 		["Length"] = 48,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5745,7 +5747,7 @@ local playlist1 = {
     ["Id"] = 441551,
 		["Length"] = 68,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5754,7 +5756,7 @@ local playlist1 = {
     ["Id"] = 441552,
 		["Length"] = 71,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5763,7 +5765,7 @@ local playlist1 = {
     ["Id"] = 443298,
 		["Length"] = 105,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5772,7 +5774,7 @@ local playlist1 = {
     ["Id"] = 441553,
 		["Length"] = 21,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5781,7 +5783,7 @@ local playlist1 = {
     ["Id"] = 441554,
 		["Length"] = 85,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5790,7 +5792,7 @@ local playlist1 = {
     ["Id"] = 441555,
 		["Length"] = 85,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5799,7 +5801,7 @@ local playlist1 = {
     ["Id"] = 441556,
 		["Length"] = 74,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5808,7 +5810,7 @@ local playlist1 = {
     ["Id"] = 441557,
 		["Length"] = 76,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5817,7 +5819,7 @@ local playlist1 = {
     ["Id"] = 441558,
 		["Length"] = 79,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5826,7 +5828,7 @@ local playlist1 = {
     ["Id"] = 441559,
 		["Length"] = 78,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5835,7 +5837,7 @@ local playlist1 = {
     ["Id"] = 441560,
 		["Length"] = 79,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5844,7 +5846,7 @@ local playlist1 = {
     ["Id"] = 441561,
 		["Length"] = 43,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5853,7 +5855,7 @@ local playlist1 = {
     ["Id"] = 441562,
 		["Length"] = 30,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5862,7 +5864,7 @@ local playlist1 = {
     ["Id"] = 441563,
 		["Length"] = 45,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5871,7 +5873,7 @@ local playlist1 = {
     ["Id"] = 441564,
 		["Length"] = 79,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -5880,7 +5882,7 @@ local playlist1 = {
     ["Id"] = 463766,
 		["Length"] = 39,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5889,7 +5891,7 @@ local playlist1 = {
     ["Id"] = 441565,
 		["Length"] = 154,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5898,7 +5900,7 @@ local playlist1 = {
     ["Id"] = 441566,
 		["Length"] = 66,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5907,7 +5909,7 @@ local playlist1 = {
     ["Id"] = 441567,
 		["Length"] = 54,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5916,7 +5918,7 @@ local playlist1 = {
     ["Id"] = 441568,
 		["Length"] = 102,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5925,7 +5927,7 @@ local playlist1 = {
     ["Id"] = 441569,
 		["Length"] = 45,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5934,7 +5936,7 @@ local playlist1 = {
     ["Id"] = 441570,
 		["Length"] = 105,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5943,7 +5945,7 @@ local playlist1 = {
     ["Id"] = 441571,
 		["Length"] = 94,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5952,7 +5954,7 @@ local playlist1 = {
     ["Id"] = 441572,
 		["Length"] = 119,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5961,7 +5963,7 @@ local playlist1 = {
     ["Id"] = 441573,
 		["Length"] = 118,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5970,7 +5972,7 @@ local playlist1 = {
     ["Id"] = 441574,
 		["Length"] = 48,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -5979,7 +5981,7 @@ local playlist1 = {
     ["Id"] = 441575,
 		["Length"] = 45,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -5988,7 +5990,7 @@ local playlist1 = {
     ["Id"] = 463826,
 		["Length"] = 114,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -5997,7 +5999,7 @@ local playlist1 = {
     ["Id"] = 463827,
 		["Length"] = 136,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6006,7 +6008,7 @@ local playlist1 = {
     ["Id"] = 441576,
 		["Length"] = 123,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6015,7 +6017,7 @@ local playlist1 = {
     ["Id"] = 441577,
 		["Length"] = 126,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6024,7 +6026,7 @@ local playlist1 = {
     ["Id"] = 441578,
 		["Length"] = 124,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6033,7 +6035,7 @@ local playlist1 = {
     ["Id"] = 441579,
 		["Length"] = 101,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6042,7 +6044,7 @@ local playlist1 = {
     ["Id"] = 441580,
 		["Length"] = 101,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6051,7 +6053,7 @@ local playlist1 = {
     ["Id"] = 441581,
 		["Length"] = 72,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6060,7 +6062,7 @@ local playlist1 = {
     ["Id"] = 441582,
 		["Length"] = 72,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6069,7 +6071,7 @@ local playlist1 = {
     ["Id"] = 441583,
 		["Length"] = 95,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6078,7 +6080,7 @@ local playlist1 = {
     ["Id"] = 441584,
 		["Length"] = 95,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6087,7 +6089,7 @@ local playlist1 = {
     ["Id"] = 441585,
 		["Length"] = 85,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6096,7 +6098,7 @@ local playlist1 = {
     ["Id"] = 441586,
 		["Length"] = 85,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6105,7 +6107,7 @@ local playlist1 = {
     ["Id"] = 441587,
 		["Length"] = 61,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6114,7 +6116,7 @@ local playlist1 = {
     ["Id"] = 441588,
 		["Length"] = 61,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6123,7 +6125,7 @@ local playlist1 = {
     ["Id"] = 441589,
 		["Length"] = 84,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6132,7 +6134,7 @@ local playlist1 = {
     ["Id"] = 441590,
 		["Length"] = 84,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6141,7 +6143,7 @@ local playlist1 = {
     ["Id"] = 441591,
 		["Length"] = 59,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6150,7 +6152,7 @@ local playlist1 = {
     ["Id"] = 441592,
 		["Length"] = 40,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6159,7 +6161,7 @@ local playlist1 = {
     ["Id"] = 441593,
 		["Length"] = 37,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6168,7 +6170,7 @@ local playlist1 = {
     ["Id"] = 441594,
 		["Length"] = 131,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6177,7 +6179,7 @@ local playlist1 = {
     ["Id"] = 441595,
 		["Length"] = 72,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6186,7 +6188,7 @@ local playlist1 = {
     ["Id"] = 441596,
 		["Length"] = 46,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6195,7 +6197,7 @@ local playlist1 = {
     ["Id"] = 441597,
 		["Length"] = 69,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6204,7 +6206,7 @@ local playlist1 = {
     ["Id"] = 441598,
 		["Length"] = 97,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6213,7 +6215,7 @@ local playlist1 = {
     ["Id"] = 441599,
 		["Length"] = 49,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6222,7 +6224,7 @@ local playlist1 = {
     ["Id"] = 441600,
 		["Length"] = 69,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6231,7 +6233,7 @@ local playlist1 = {
     ["Id"] = 441601,
 		["Length"] = 82,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6240,7 +6242,7 @@ local playlist1 = {
     ["Id"] = 441602,
 		["Length"] = 84,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6249,7 +6251,7 @@ local playlist1 = {
     ["Id"] = 441603,
 		["Length"] = 84,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6258,7 +6260,7 @@ local playlist1 = {
     ["Id"] = 441604,
 		["Length"] = 84,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6267,7 +6269,7 @@ local playlist1 = {
     ["Id"] = 441605,
 		["Length"] = 80,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6276,7 +6278,7 @@ local playlist1 = {
     ["Id"] = 441606,
 		["Length"] = 82,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6285,7 +6287,7 @@ local playlist1 = {
     ["Id"] = 441607,
 		["Length"] = 84,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6294,7 +6296,7 @@ local playlist1 = {
     ["Id"] = 441608,
 		["Length"] = 62,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6303,7 +6305,7 @@ local playlist1 = {
     ["Id"] = 441609,
 		["Length"] = 148,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6312,7 +6314,7 @@ local playlist1 = {
     ["Id"] = 441610,
 		["Length"] = 62,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6321,7 +6323,7 @@ local playlist1 = {
     ["Id"] = 441611,
 		["Length"] = 43,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -6330,7 +6332,7 @@ local playlist1 = {
     ["Id"] = 445197,
 		["Length"] = 27,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6339,7 +6341,7 @@ local playlist1 = {
     ["Id"] = 443299,
 		["Length"] = 84,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6348,7 +6350,7 @@ local playlist1 = {
     ["Id"] = 443300,
 		["Length"] = 84,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6357,7 +6359,7 @@ local playlist1 = {
     ["Id"] = 443301,
 		["Length"] = 91,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -6366,7 +6368,7 @@ local playlist1 = {
     ["Id"] = 462922,
 		["Length"] = 32,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -6375,7 +6377,7 @@ local playlist1 = {
     ["Id"] = 462923,
 		["Length"] = 24,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -6384,7 +6386,7 @@ local playlist1 = {
     ["Id"] = 462924,
 		["Length"] = 28,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -6393,7 +6395,7 @@ local playlist1 = {
     ["Id"] = 462925,
 		["Length"] = 108,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -6402,7 +6404,7 @@ local playlist1 = {
     ["Id"] = 450391,
 		["Length"] = 164,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6411,7 +6413,7 @@ local playlist1 = {
     ["Id"] = 441612,
 		["Length"] = 24,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6420,7 +6422,7 @@ local playlist1 = {
     ["Id"] = 441613,
 		["Length"] = 12,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6429,7 +6431,7 @@ local playlist1 = {
     ["Id"] = 441614,
 		["Length"] = 9,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6438,7 +6440,7 @@ local playlist1 = {
     ["Id"] = 441615,
 		["Length"] = 14,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6447,7 +6449,7 @@ local playlist1 = {
     ["Id"] = 441616,
 		["Length"] = 19,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6456,7 +6458,7 @@ local playlist1 = {
     ["Id"] = 441617,
 		["Length"] = 18,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6465,7 +6467,7 @@ local playlist1 = {
     ["Id"] = 441618,
 		["Length"] = 10,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6474,7 +6476,7 @@ local playlist1 = {
     ["Id"] = 441619,
 		["Length"] = 47,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6483,7 +6485,7 @@ local playlist1 = {
     ["Id"] = 441620,
 		["Length"] = 86,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6492,7 +6494,7 @@ local playlist1 = {
     ["Id"] = 441621,
 		["Length"] = 47,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6501,7 +6503,7 @@ local playlist1 = {
     ["Id"] = 441622,
 		["Length"] = 45,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6510,7 +6512,7 @@ local playlist1 = {
     ["Id"] = 441623,
 		["Length"] = 46,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6519,7 +6521,7 @@ local playlist1 = {
     ["Id"] = 441624,
 		["Length"] = 47,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6528,7 +6530,7 @@ local playlist1 = {
     ["Id"] = 441625,
 		["Length"] = 47,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6537,7 +6539,7 @@ local playlist1 = {
     ["Id"] = 441626,
 		["Length"] = 47,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6546,7 +6548,7 @@ local playlist1 = {
     ["Id"] = 441627,
 		["Length"] = 87,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6555,7 +6557,7 @@ local playlist1 = {
     ["Id"] = 441628,
 		["Length"] = 86,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6564,7 +6566,7 @@ local playlist1 = {
     ["Id"] = 441629,
 		["Length"] = 85,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6573,7 +6575,7 @@ local playlist1 = {
     ["Id"] = 441630,
 		["Length"] = 24,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6582,7 +6584,7 @@ local playlist1 = {
     ["Id"] = 441631,
 		["Length"] = 11,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6591,7 +6593,7 @@ local playlist1 = {
     ["Id"] = 441632,
 		["Length"] = 11,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6600,7 +6602,7 @@ local playlist1 = {
     ["Id"] = 441633,
 		["Length"] = 19,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6609,7 +6611,7 @@ local playlist1 = {
     ["Id"] = 441634,
 		["Length"] = 8,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6618,7 +6620,7 @@ local playlist1 = {
     ["Id"] = 441635,
 		["Length"] = 13,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6627,7 +6629,7 @@ local playlist1 = {
     ["Id"] = 441636,
 		["Length"] = 14,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6636,7 +6638,7 @@ local playlist1 = {
     ["Id"] = 441637,
 		["Length"] = 19,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6645,7 +6647,7 @@ local playlist1 = {
     ["Id"] = 441638,
 		["Length"] = 19,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6654,7 +6656,7 @@ local playlist1 = {
     ["Id"] = 441639,
 		["Length"] = 19,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6663,7 +6665,7 @@ local playlist1 = {
     ["Id"] = 441640,
 		["Length"] = 16,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6672,7 +6674,7 @@ local playlist1 = {
     ["Id"] = 441641,
 		["Length"] = 18,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6681,7 +6683,7 @@ local playlist1 = {
     ["Id"] = 441642,
 		["Length"] = 18,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6690,7 +6692,7 @@ local playlist1 = {
     ["Id"] = 441643,
 		["Length"] = 14,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6699,7 +6701,7 @@ local playlist1 = {
     ["Id"] = 441644,
 		["Length"] = 15,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6708,7 +6710,7 @@ local playlist1 = {
     ["Id"] = 441645,
 		["Length"] = 18,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6717,7 +6719,7 @@ local playlist1 = {
     ["Id"] = 441646,
 		["Length"] = 16,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6726,7 +6728,7 @@ local playlist1 = {
     ["Id"] = 441647,
 		["Length"] = 16,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6735,7 +6737,7 @@ local playlist1 = {
     ["Id"] = 441648,
 		["Length"] = 17,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6744,7 +6746,7 @@ local playlist1 = {
     ["Id"] = 441649,
 		["Length"] = 8,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6753,7 +6755,7 @@ local playlist1 = {
     ["Id"] = 441650,
 		["Length"] = 8,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6762,7 +6764,7 @@ local playlist1 = {
     ["Id"] = 441651,
 		["Length"] = 10,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6771,7 +6773,7 @@ local playlist1 = {
     ["Id"] = 441652,
 		["Length"] = 17,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6780,7 +6782,7 @@ local playlist1 = {
     ["Id"] = 441653,
 		["Length"] = 18,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6789,7 +6791,7 @@ local playlist1 = {
     ["Id"] = 441654,
 		["Length"] = 21,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6798,7 +6800,7 @@ local playlist1 = {
     ["Id"] = 441655,
 		["Length"] = 19,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6807,7 +6809,7 @@ local playlist1 = {
     ["Id"] = 441656,
 		["Length"] = 16,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6816,7 +6818,7 @@ local playlist1 = {
     ["Id"] = 441657,
 		["Length"] = 18,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6825,7 +6827,7 @@ local playlist1 = {
     ["Id"] = 441658,
 		["Length"] = 51,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6834,7 +6836,7 @@ local playlist1 = {
     ["Id"] = 441659,
 		["Length"] = 79,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6843,7 +6845,7 @@ local playlist1 = {
     ["Id"] = 441660,
 		["Length"] = 79,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6852,7 +6854,7 @@ local playlist1 = {
     ["Id"] = 441661,
 		["Length"] = 79,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6861,7 +6863,7 @@ local playlist1 = {
     ["Id"] = 441662,
 		["Length"] = 70,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6870,7 +6872,7 @@ local playlist1 = {
     ["Id"] = 441663,
 		["Length"] = 88,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6879,7 +6881,7 @@ local playlist1 = {
     ["Id"] = 441664,
 		["Length"] = 88,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6888,7 +6890,7 @@ local playlist1 = {
     ["Id"] = 441665,
 		["Length"] = 62,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6897,7 +6899,7 @@ local playlist1 = {
     ["Id"] = 441666,
 		["Length"] = 62,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6906,7 +6908,7 @@ local playlist1 = {
     ["Id"] = 441667,
 		["Length"] = 133,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6915,7 +6917,7 @@ local playlist1 = {
     ["Id"] = 441668,
 		["Length"] = 137,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6924,7 +6926,7 @@ local playlist1 = {
     ["Id"] = 441669,
 		["Length"] = 80,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6933,7 +6935,7 @@ local playlist1 = {
     ["Id"] = 441670,
 		["Length"] = 143,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6942,7 +6944,7 @@ local playlist1 = {
     ["Id"] = 441671,
 		["Length"] = 111,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6951,7 +6953,7 @@ local playlist1 = {
     ["Id"] = 441672,
 		["Length"] = 127,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6960,7 +6962,7 @@ local playlist1 = {
     ["Id"] = 443302,
 		["Length"] = 109,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6969,7 +6971,7 @@ local playlist1 = {
     ["Id"] = 441673,
 		["Length"] = 84,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6978,7 +6980,7 @@ local playlist1 = {
     ["Id"] = 441674,
 		["Length"] = 84,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6987,7 +6989,7 @@ local playlist1 = {
     ["Id"] = 441675,
 		["Length"] = 84,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -6996,7 +6998,7 @@ local playlist1 = {
     ["Id"] = 441676,
 		["Length"] = 116,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7005,7 +7007,7 @@ local playlist1 = {
     ["Id"] = 441677,
 		["Length"] = 53,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7014,7 +7016,7 @@ local playlist1 = {
     ["Id"] = 441678,
 		["Length"] = 53,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7023,7 +7025,7 @@ local playlist1 = {
     ["Id"] = 443303,
 		["Length"] = 37,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7032,7 +7034,7 @@ local playlist1 = {
     ["Id"] = 443304,
 		["Length"] = 11,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7041,7 +7043,7 @@ local playlist1 = {
     ["Id"] = 443305,
 		["Length"] = 53,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7050,7 +7052,7 @@ local playlist1 = {
     ["Id"] = 443306,
 		["Length"] = 87,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7059,7 +7061,7 @@ local playlist1 = {
     ["Id"] = 441679,
 		["Length"] = 133,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7068,7 +7070,7 @@ local playlist1 = {
     ["Id"] = 441680,
 		["Length"] = 118,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7077,7 +7079,7 @@ local playlist1 = {
     ["Id"] = 441681,
 		["Length"] = 80,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7086,7 +7088,7 @@ local playlist1 = {
     ["Id"] = 441682,
 		["Length"] = 98,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7095,7 +7097,7 @@ local playlist1 = {
     ["Id"] = 441683,
 		["Length"] = 72,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7104,7 +7106,7 @@ local playlist1 = {
     ["Id"] = 441684,
 		["Length"] = 110,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7113,7 +7115,7 @@ local playlist1 = {
     ["Id"] = 441685,
 		["Length"] = 88,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7122,7 +7124,7 @@ local playlist1 = {
     ["Id"] = 441686,
 		["Length"] = 84,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7131,7 +7133,7 @@ local playlist1 = {
     ["Id"] = 441687,
 		["Length"] = 68,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7140,7 +7142,7 @@ local playlist1 = {
     ["Id"] = 441688,
 		["Length"] = 103,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7149,7 +7151,7 @@ local playlist1 = {
     ["Id"] = 441689,
 		["Length"] = 111,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7158,7 +7160,7 @@ local playlist1 = {
     ["Id"] = 441690,
 		["Length"] = 110,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7167,7 +7169,7 @@ local playlist1 = {
     ["Id"] = 441691,
 		["Length"] = 98,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7176,7 +7178,7 @@ local playlist1 = {
     ["Id"] = 441692,
 		["Length"] = 90,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7185,7 +7187,7 @@ local playlist1 = {
     ["Id"] = 441693,
 		["Length"] = 38,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7194,7 +7196,7 @@ local playlist1 = {
     ["Id"] = 441694,
 		["Length"] = 32,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7203,7 +7205,7 @@ local playlist1 = {
     ["Id"] = 441695,
 		["Length"] = 89,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7212,7 +7214,7 @@ local playlist1 = {
     ["Id"] = 441696,
 		["Length"] = 87,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7221,7 +7223,7 @@ local playlist1 = {
     ["Id"] = 441697,
 		["Length"] = 73,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7230,7 +7232,7 @@ local playlist1 = {
     ["Id"] = 441698,
 		["Length"] = 91,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7239,7 +7241,7 @@ local playlist1 = {
     ["Id"] = 441699,
 		["Length"] = 90,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7248,7 +7250,7 @@ local playlist1 = {
     ["Id"] = 441700,
 		["Length"] = 73,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7257,7 +7259,7 @@ local playlist1 = {
     ["Id"] = 441701,
 		["Length"] = 94,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7266,7 +7268,7 @@ local playlist1 = {
     ["Id"] = 441702,
 		["Length"] = 94,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7275,7 +7277,7 @@ local playlist1 = {
     ["Id"] = 441703,
 		["Length"] = 94,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7284,7 +7286,7 @@ local playlist1 = {
     ["Id"] = 441704,
 		["Length"] = 98,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7293,7 +7295,7 @@ local playlist1 = {
     ["Id"] = 441705,
 		["Length"] = 160,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7302,7 +7304,7 @@ local playlist1 = {
     ["Id"] = 441706,
 		["Length"] = 85,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7311,7 +7313,7 @@ local playlist1 = {
     ["Id"] = 441707,
 		["Length"] = 85,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7320,7 +7322,7 @@ local playlist1 = {
     ["Id"] = 441708,
 		["Length"] = 80,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7329,7 +7331,7 @@ local playlist1 = {
     ["Id"] = 441709,
 		["Length"] = 80,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7338,7 +7340,7 @@ local playlist1 = {
     ["Id"] = 441710,
 		["Length"] = 117,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7347,7 +7349,7 @@ local playlist1 = {
     ["Id"] = 441711,
 		["Length"] = 115,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7356,7 +7358,7 @@ local playlist1 = {
     ["Id"] = 441712,
 		["Length"] = 117,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7365,7 +7367,7 @@ local playlist1 = {
     ["Id"] = 441713,
 		["Length"] = 91,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7374,7 +7376,7 @@ local playlist1 = {
     ["Id"] = 441714,
 		["Length"] = 108,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7383,7 +7385,7 @@ local playlist1 = {
     ["Id"] = 441715,
 		["Length"] = 128,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7392,7 +7394,7 @@ local playlist1 = {
     ["Id"] = 441716,
 		["Length"] = 90,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7401,7 +7403,7 @@ local playlist1 = {
     ["Id"] = 441717,
 		["Length"] = 63,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7410,7 +7412,7 @@ local playlist1 = {
     ["Id"] = 441718,
 		["Length"] = 32,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7419,7 +7421,7 @@ local playlist1 = {
     ["Id"] = 441719,
 		["Length"] = 61,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7428,7 +7430,7 @@ local playlist1 = {
     ["Id"] = 441720,
 		["Length"] = 100,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7437,7 +7439,7 @@ local playlist1 = {
     ["Id"] = 441721,
 		["Length"] = 83,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7446,7 +7448,7 @@ local playlist1 = {
     ["Id"] = 441722,
 		["Length"] = 83,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7455,7 +7457,7 @@ local playlist1 = {
     ["Id"] = 441723,
 		["Length"] = 77,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7464,7 +7466,7 @@ local playlist1 = {
     ["Id"] = 441724,
 		["Length"] = 77,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7473,7 +7475,7 @@ local playlist1 = {
     ["Id"] = 441725,
 		["Length"] = 78,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7482,7 +7484,7 @@ local playlist1 = {
     ["Id"] = 441726,
 		["Length"] = 27,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7491,7 +7493,7 @@ local playlist1 = {
     ["Id"] = 441727,
 		["Length"] = 35,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7500,7 +7502,7 @@ local playlist1 = {
     ["Id"] = 441728,
 		["Length"] = 51,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7509,7 +7511,7 @@ local playlist1 = {
     ["Id"] = 441729,
 		["Length"] = 87,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7518,7 +7520,7 @@ local playlist1 = {
     ["Id"] = 441730,
 		["Length"] = 87,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7527,7 +7529,7 @@ local playlist1 = {
     ["Id"] = 441731,
 		["Length"] = 111,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7536,7 +7538,7 @@ local playlist1 = {
     ["Id"] = 441732,
 		["Length"] = 90,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7545,7 +7547,7 @@ local playlist1 = {
     ["Id"] = 441733,
 		["Length"] = 29,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7554,7 +7556,7 @@ local playlist1 = {
     ["Id"] = 441734,
 		["Length"] = 53,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7563,7 +7565,7 @@ local playlist1 = {
     ["Id"] = 441735,
 		["Length"] = 70,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7572,7 +7574,7 @@ local playlist1 = {
     ["Id"] = 441736,
 		["Length"] = 59,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7581,7 +7583,7 @@ local playlist1 = {
     ["Id"] = 441737,
 		["Length"] = 725,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7590,7 +7592,7 @@ local playlist1 = {
     ["Id"] = 441738,
 		["Length"] = 99,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7599,7 +7601,7 @@ local playlist1 = {
     ["Id"] = 441739,
 		["Length"] = 62,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7608,7 +7610,7 @@ local playlist1 = {
     ["Id"] = 441740,
 		["Length"] = 98,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7617,7 +7619,7 @@ local playlist1 = {
     ["Id"] = 441741,
 		["Length"] = 111,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7626,7 +7628,7 @@ local playlist1 = {
     ["Id"] = 441742,
 		["Length"] = 98,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7635,7 +7637,7 @@ local playlist1 = {
     ["Id"] = 441743,
 		["Length"] = 141,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7644,7 +7646,7 @@ local playlist1 = {
     ["Id"] = 455562,
 		["Length"] = 42,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7653,7 +7655,7 @@ local playlist1 = {
     ["Id"] = 441744,
 		["Length"] = 159,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7662,7 +7664,7 @@ local playlist1 = {
     ["Id"] = 441745,
 		["Length"] = 207,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7671,7 +7673,7 @@ local playlist1 = {
     ["Id"] = 441746,
 		["Length"] = 109,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7680,7 +7682,7 @@ local playlist1 = {
     ["Id"] = 441747,
 		["Length"] = 117,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7689,7 +7691,7 @@ local playlist1 = {
     ["Id"] = 441748,
 		["Length"] = 140,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7698,7 +7700,7 @@ local playlist1 = {
     ["Id"] = 441749,
 		["Length"] = 42,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7707,7 +7709,7 @@ local playlist1 = {
     ["Id"] = 441750,
 		["Length"] = 42,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7716,7 +7718,7 @@ local playlist1 = {
     ["Id"] = 441751,
 		["Length"] = 42,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7725,7 +7727,7 @@ local playlist1 = {
     ["Id"] = 441752,
 		["Length"] = 207,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7734,7 +7736,7 @@ local playlist1 = {
     ["Id"] = 441753,
 		["Length"] = 109,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7743,7 +7745,7 @@ local playlist1 = {
     ["Id"] = 441754,
 		["Length"] = 78,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7752,7 +7754,7 @@ local playlist1 = {
     ["Id"] = 441755,
 		["Length"] = 55,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7761,7 +7763,7 @@ local playlist1 = {
     ["Id"] = 441756,
 		["Length"] = 20,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7770,7 +7772,7 @@ local playlist1 = {
     ["Id"] = 441757,
 		["Length"] = 22,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7779,7 +7781,7 @@ local playlist1 = {
     ["Id"] = 441758,
 		["Length"] = 36,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7788,7 +7790,7 @@ local playlist1 = {
     ["Id"] = 441759,
 		["Length"] = 27,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7797,7 +7799,7 @@ local playlist1 = {
     ["Id"] = 441760,
 		["Length"] = 87,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7806,7 +7808,7 @@ local playlist1 = {
     ["Id"] = 441761,
 		["Length"] = 80,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7815,7 +7817,7 @@ local playlist1 = {
     ["Id"] = 441762,
 		["Length"] = 80,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7824,7 +7826,7 @@ local playlist1 = {
     ["Id"] = 441763,
 		["Length"] = 80,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7833,7 +7835,7 @@ local playlist1 = {
     ["Id"] = 441764,
 		["Length"] = 73,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7842,7 +7844,7 @@ local playlist1 = {
     ["Id"] = 441765,
 		["Length"] = 38,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7851,7 +7853,7 @@ local playlist1 = {
     ["Id"] = 441766,
 		["Length"] = 116,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7860,7 +7862,7 @@ local playlist1 = {
     ["Id"] = 441767,
 		["Length"] = 66,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7869,7 +7871,7 @@ local playlist1 = {
     ["Id"] = 441768,
 		["Length"] = 78,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7878,7 +7880,7 @@ local playlist1 = {
     ["Id"] = 441769,
 		["Length"] = 92,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7887,7 +7889,7 @@ local playlist1 = {
     ["Id"] = 441770,
 		["Length"] = 91,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7896,7 +7898,7 @@ local playlist1 = {
     ["Id"] = 441771,
 		["Length"] = 102,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7905,7 +7907,7 @@ local playlist1 = {
     ["Id"] = 441772,
 		["Length"] = 64,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7914,7 +7916,7 @@ local playlist1 = {
     ["Id"] = 441773,
 		["Length"] = 90,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7923,7 +7925,7 @@ local playlist1 = {
     ["Id"] = 441774,
 		["Length"] = 84,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7932,7 +7934,7 @@ local playlist1 = {
     ["Id"] = 441775,
 		["Length"] = 89,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7941,7 +7943,7 @@ local playlist1 = {
     ["Id"] = 441776,
 		["Length"] = 87,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7950,7 +7952,7 @@ local playlist1 = {
     ["Id"] = 441777,
 		["Length"] = 87,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7959,7 +7961,7 @@ local playlist1 = {
     ["Id"] = 441778,
 		["Length"] = 84,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7968,7 +7970,7 @@ local playlist1 = {
     ["Id"] = 441779,
 		["Length"] = 66,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7977,7 +7979,7 @@ local playlist1 = {
     ["Id"] = 441780,
 		["Length"] = 82,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7986,7 +7988,7 @@ local playlist1 = {
     ["Id"] = 441781,
 		["Length"] = 72,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -7995,7 +7997,7 @@ local playlist1 = {
     ["Id"] = 441782,
 		["Length"] = 72,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8004,7 +8006,7 @@ local playlist1 = {
     ["Id"] = 441783,
 		["Length"] = 61,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8013,7 +8015,7 @@ local playlist1 = {
     ["Id"] = 441784,
 		["Length"] = 34,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8022,7 +8024,7 @@ local playlist1 = {
     ["Id"] = 441785,
 		["Length"] = 84,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8031,7 +8033,7 @@ local playlist1 = {
     ["Id"] = 441786,
 		["Length"] = 76,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8040,7 +8042,7 @@ local playlist1 = {
     ["Id"] = 441787,
 		["Length"] = 70,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8049,7 +8051,7 @@ local playlist1 = {
     ["Id"] = 441788,
 		["Length"] = 93,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8058,7 +8060,7 @@ local playlist1 = {
     ["Id"] = 441789,
 		["Length"] = 85,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8067,7 +8069,7 @@ local playlist1 = {
     ["Id"] = 441790,
 		["Length"] = 85,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8076,7 +8078,7 @@ local playlist1 = {
     ["Id"] = 441791,
 		["Length"] = 158,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8085,7 +8087,7 @@ local playlist1 = {
     ["Id"] = 441792,
 		["Length"] = 91,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8094,7 +8096,7 @@ local playlist1 = {
     ["Id"] = 441793,
 		["Length"] = 63,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8103,7 +8105,7 @@ local playlist1 = {
     ["Id"] = 441794,
 		["Length"] = 69,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8112,7 +8114,7 @@ local playlist1 = {
     ["Id"] = 441795,
 		["Length"] = 77,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8121,7 +8123,7 @@ local playlist1 = {
     ["Id"] = 441796,
 		["Length"] = 70,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8130,7 +8132,7 @@ local playlist1 = {
     ["Id"] = 441797,
 		["Length"] = 68,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8139,7 +8141,7 @@ local playlist1 = {
     ["Id"] = 441798,
 		["Length"] = 67,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8148,7 +8150,7 @@ local playlist1 = {
     ["Id"] = 441799,
 		["Length"] = 67,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8157,7 +8159,7 @@ local playlist1 = {
     ["Id"] = 441800,
 		["Length"] = 78,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8166,7 +8168,7 @@ local playlist1 = {
     ["Id"] = 441801,
 		["Length"] = 67,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8175,7 +8177,7 @@ local playlist1 = {
     ["Id"] = 441802,
 		["Length"] = 92,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8184,7 +8186,7 @@ local playlist1 = {
     ["Id"] = 441803,
 		["Length"] = 48,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8193,7 +8195,7 @@ local playlist1 = {
     ["Id"] = 441804,
 		["Length"] = 48,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8202,7 +8204,7 @@ local playlist1 = {
     ["Id"] = 441805,
 		["Length"] = 110,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8211,7 +8213,7 @@ local playlist1 = {
     ["Id"] = 441806,
 		["Length"] = 81,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8220,7 +8222,7 @@ local playlist1 = {
     ["Id"] = 441807,
 		["Length"] = 80,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8229,7 +8231,7 @@ local playlist1 = {
     ["Id"] = 441808,
 		["Length"] = 62,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8238,7 +8240,7 @@ local playlist1 = {
     ["Id"] = 441809,
 		["Length"] = 46,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8247,7 +8249,7 @@ local playlist1 = {
     ["Id"] = 441810,
 		["Length"] = 134,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8256,7 +8258,7 @@ local playlist1 = {
     ["Id"] = 441811,
 		["Length"] = 44,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8265,7 +8267,7 @@ local playlist1 = {
     ["Id"] = 441812,
 		["Length"] = 94,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8274,7 +8276,7 @@ local playlist1 = {
     ["Id"] = 441813,
 		["Length"] = 110,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8283,7 +8285,7 @@ local playlist1 = {
     ["Id"] = 441814,
 		["Length"] = 110,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8292,7 +8294,7 @@ local playlist1 = {
     ["Id"] = 441815,
 		["Length"] = 126,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8301,7 +8303,7 @@ local playlist1 = {
     ["Id"] = 441816,
 		["Length"] = 127,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8310,7 +8312,7 @@ local playlist1 = {
     ["Id"] = 441817,
 		["Length"] = 127,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8319,7 +8321,7 @@ local playlist1 = {
     ["Id"] = 441818,
 		["Length"] = 56,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8328,7 +8330,7 @@ local playlist1 = {
     ["Id"] = 441819,
 		["Length"] = 57,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8337,7 +8339,7 @@ local playlist1 = {
     ["Id"] = 441820,
 		["Length"] = 93,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -8346,7 +8348,7 @@ local playlist1 = {
     ["Id"] = 463828,
 		["Length"] = 79,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8355,7 +8357,7 @@ local playlist1 = {
     ["Id"] = 441821,
 		["Length"] = 65,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8364,7 +8366,7 @@ local playlist1 = {
     ["Id"] = 441822,
 		["Length"] = 26,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8373,7 +8375,7 @@ local playlist1 = {
     ["Id"] = 441823,
 		["Length"] = 66,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8382,7 +8384,7 @@ local playlist1 = {
     ["Id"] = 441824,
 		["Length"] = 73,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8391,7 +8393,7 @@ local playlist1 = {
     ["Id"] = 441825,
 		["Length"] = 94,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8400,7 +8402,7 @@ local playlist1 = {
     ["Id"] = 441826,
 		["Length"] = 43,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8409,7 +8411,7 @@ local playlist1 = {
     ["Id"] = 441827,
 		["Length"] = 89,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8418,7 +8420,7 @@ local playlist1 = {
     ["Id"] = 441828,
 		["Length"] = 96,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8427,7 +8429,7 @@ local playlist1 = {
     ["Id"] = 441829,
 		["Length"] = 96,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8436,7 +8438,7 @@ local playlist1 = {
     ["Id"] = 441830,
 		["Length"] = 91,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8445,7 +8447,7 @@ local playlist1 = {
     ["Id"] = 441831,
 		["Length"] = 92,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8454,7 +8456,7 @@ local playlist1 = {
     ["Id"] = 441832,
 		["Length"] = 87,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8463,7 +8465,7 @@ local playlist1 = {
     ["Id"] = 441833,
 		["Length"] = 97,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8472,7 +8474,7 @@ local playlist1 = {
     ["Id"] = 441834,
 		["Length"] = 96,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8481,7 +8483,7 @@ local playlist1 = {
     ["Id"] = 441835,
 		["Length"] = 97,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8490,7 +8492,7 @@ local playlist1 = {
     ["Id"] = 441836,
 		["Length"] = 127,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8499,7 +8501,7 @@ local playlist1 = {
     ["Id"] = 441837,
 		["Length"] = 113,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8508,7 +8510,7 @@ local playlist1 = {
     ["Id"] = 441838,
 		["Length"] = 97,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8517,7 +8519,7 @@ local playlist1 = {
     ["Id"] = 441839,
 		["Length"] = 98,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8526,7 +8528,7 @@ local playlist1 = {
     ["Id"] = 441840,
 		["Length"] = 153,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8535,7 +8537,7 @@ local playlist1 = {
     ["Id"] = 441841,
 		["Length"] = 48,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8544,7 +8546,7 @@ local playlist1 = {
     ["Id"] = 441842,
 		["Length"] = 92,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8553,7 +8555,7 @@ local playlist1 = {
     ["Id"] = 441843,
 		["Length"] = 153,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8562,7 +8564,7 @@ local playlist1 = {
     ["Id"] = 441844,
 		["Length"] = 91,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8571,7 +8573,7 @@ local playlist1 = {
     ["Id"] = 441845,
 		["Length"] = 46,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8580,7 +8582,7 @@ local playlist1 = {
     ["Id"] = 441846,
 		["Length"] = 132,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8589,7 +8591,7 @@ local playlist1 = {
     ["Id"] = 441847,
 		["Length"] = 135,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8598,7 +8600,7 @@ local playlist1 = {
     ["Id"] = 441848,
 		["Length"] = 122,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8607,7 +8609,7 @@ local playlist1 = {
     ["Id"] = 441849,
 		["Length"] = 122,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8616,7 +8618,7 @@ local playlist1 = {
     ["Id"] = 441850,
 		["Length"] = 122,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8625,7 +8627,7 @@ local playlist1 = {
     ["Id"] = 441851,
 		["Length"] = 115,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8634,7 +8636,7 @@ local playlist1 = {
     ["Id"] = 441852,
 		["Length"] = 48,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8643,7 +8645,7 @@ local playlist1 = {
     ["Id"] = 443307,
 		["Length"] = 50,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8652,7 +8654,7 @@ local playlist1 = {
     ["Id"] = 443308,
 		["Length"] = 50,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8661,7 +8663,7 @@ local playlist1 = {
     ["Id"] = 443309,
 		["Length"] = 50,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8670,7 +8672,7 @@ local playlist1 = {
     ["Id"] = 443310,
 		["Length"] = 50,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8679,7 +8681,7 @@ local playlist1 = {
     ["Id"] = 443311,
 		["Length"] = 50,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8688,7 +8690,7 @@ local playlist1 = {
     ["Id"] = 443312,
 		["Length"] = 50,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8697,7 +8699,7 @@ local playlist1 = {
     ["Id"] = 443313,
 		["Length"] = 50,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8706,7 +8708,7 @@ local playlist1 = {
     ["Id"] = 443314,
 		["Length"] = 50,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8715,7 +8717,7 @@ local playlist1 = {
     ["Id"] = 443315,
 		["Length"] = 50,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8724,7 +8726,7 @@ local playlist1 = {
     ["Id"] = 443316,
 		["Length"] = 50,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8733,7 +8735,7 @@ local playlist1 = {
     ["Id"] = 441853,
 		["Length"] = 66,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8742,7 +8744,7 @@ local playlist1 = {
     ["Id"] = 441854,
 		["Length"] = 66,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8751,7 +8753,7 @@ local playlist1 = {
     ["Id"] = 441855,
 		["Length"] = 66,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8760,7 +8762,7 @@ local playlist1 = {
     ["Id"] = 441856,
 		["Length"] = 76,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Cataclysm",
@@ -8769,7 +8771,7 @@ local playlist1 = {
     ["Id"] = 441857,
 		["Length"] = 107,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft: Cataclysm",
@@ -8778,7 +8780,7 @@ local playlist1 = {
     ["Id"] = 464065,
 		["Length"] = 52,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -8787,7 +8789,7 @@ local playlist1 = {
     ["Id"] = 53183,
 		["Length"] = 39,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -8796,7 +8798,7 @@ local playlist1 = {
     ["Id"] = 53184,
 		["Length"] = 85,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -8805,7 +8807,7 @@ local playlist1 = {
     ["Id"] = 53185,
 		["Length"] = 69,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -8814,7 +8816,7 @@ local playlist1 = {
     ["Id"] = 53186,
 		["Length"] = 67,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -8823,7 +8825,7 @@ local playlist1 = {
     ["Id"] = 53187,
 		["Length"] = 44,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -8832,7 +8834,7 @@ local playlist1 = {
     ["Id"] = 53188,
 		["Length"] = 53,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -8841,7 +8843,7 @@ local playlist1 = {
     ["Id"] = 53189,
 		["Length"] = 64,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -8850,7 +8852,7 @@ local playlist1 = {
     ["Id"] = 53190,
 		["Length"] = 64,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -8859,7 +8861,7 @@ local playlist1 = {
     ["Id"] = 53191,
 		["Length"] = 86,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -8868,7 +8870,7 @@ local playlist1 = {
     ["Id"] = 53192,
 		["Length"] = 123,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -8877,7 +8879,7 @@ local playlist1 = {
     ["Id"] = 53193,
 		["Length"] = 50,
 		["Artist"] = "Brian Farr",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -8886,7 +8888,7 @@ local playlist1 = {
     ["Id"] = 53194,
 		["Length"] = 81,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -8895,7 +8897,7 @@ local playlist1 = {
     ["Id"] = 53195,
 		["Length"] = 70,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -8904,7 +8906,7 @@ local playlist1 = {
     ["Id"] = 53196,
 		["Length"] = 51,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -8913,7 +8915,7 @@ local playlist1 = {
     ["Id"] = 53197,
 		["Length"] = 68,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -8922,7 +8924,7 @@ local playlist1 = {
     ["Id"] = 53198,
 		["Length"] = 68,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -8931,7 +8933,7 @@ local playlist1 = {
     ["Id"] = 53199,
 		["Length"] = 62,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -8940,7 +8942,7 @@ local playlist1 = {
     ["Id"] = 53200,
 		["Length"] = 62,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -8949,7 +8951,7 @@ local playlist1 = {
     ["Id"] = 53201,
 		["Length"] = 40,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -8958,7 +8960,7 @@ local playlist1 = {
     ["Id"] = 53202,
 		["Length"] = 54,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -8967,7 +8969,7 @@ local playlist1 = {
     ["Id"] = 53203,
 		["Length"] = 35,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -8976,7 +8978,7 @@ local playlist1 = {
     ["Id"] = 53204,
 		["Length"] = 69,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -8985,7 +8987,7 @@ local playlist1 = {
     ["Id"] = 53205,
 		["Length"] = 62,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -8994,7 +8996,7 @@ local playlist1 = {
     ["Id"] = 53206,
 		["Length"] = 60,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -9003,7 +9005,7 @@ local playlist1 = {
     ["Id"] = 53207,
 		["Length"] = 53,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -9012,7 +9014,7 @@ local playlist1 = {
     ["Id"] = 53208,
 		["Length"] = 86,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -9021,7 +9023,7 @@ local playlist1 = {
     ["Id"] = 53209,
 		["Length"] = 77,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -9030,7 +9032,7 @@ local playlist1 = {
     ["Id"] = 53210,
 		["Length"] = 133,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -9039,7 +9041,7 @@ local playlist1 = {
     ["Id"] = 53211,
 		["Length"] = 66,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -9048,7 +9050,7 @@ local playlist1 = {
     ["Id"] = 53212,
 		["Length"] = 46,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -9057,7 +9059,7 @@ local playlist1 = {
     ["Id"] = 53213,
 		["Length"] = 117,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -9066,7 +9068,7 @@ local playlist1 = {
     ["Id"] = 53214,
 		["Length"] = 116,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -9075,7 +9077,7 @@ local playlist1 = {
     ["Id"] = 53215,
 		["Length"] = 121,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -9084,7 +9086,7 @@ local playlist1 = {
     ["Id"] = 53216,
 		["Length"] = 67,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -9093,7 +9095,7 @@ local playlist1 = {
     ["Id"] = 53217,
 		["Length"] = 85,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -9102,7 +9104,7 @@ local playlist1 = {
     ["Id"] = 53218,
 		["Length"] = 75,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -9111,7 +9113,7 @@ local playlist1 = {
     ["Id"] = 53219,
 		["Length"] = 28,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9120,7 +9122,7 @@ local playlist1 = {
     ["Id"] = 1068302,
 		["Length"] = 116,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9129,7 +9131,7 @@ local playlist1 = {
     ["Id"] = 1068303,
 		["Length"] = 101,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9138,7 +9140,7 @@ local playlist1 = {
     ["Id"] = 1068304,
 		["Length"] = 55,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9147,7 +9149,7 @@ local playlist1 = {
     ["Id"] = 1068305,
 		["Length"] = 60,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9156,7 +9158,7 @@ local playlist1 = {
     ["Id"] = 1068306,
 		["Length"] = 24,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9165,7 +9167,7 @@ local playlist1 = {
     ["Id"] = 1068307,
 		["Length"] = 67,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9174,7 +9176,7 @@ local playlist1 = {
     ["Id"] = 1068308,
 		["Length"] = 155,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9183,7 +9185,7 @@ local playlist1 = {
     ["Id"] = 1068309,
 		["Length"] = 137,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9192,7 +9194,7 @@ local playlist1 = {
     ["Id"] = 1061098,
 		["Length"] = 153,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9201,7 +9203,7 @@ local playlist1 = {
     ["Id"] = 1061099,
 		["Length"] = 69,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9210,7 +9212,7 @@ local playlist1 = {
     ["Id"] = 1064152,
 		["Length"] = 157,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9219,7 +9221,7 @@ local playlist1 = {
     ["Id"] = 1064153,
 		["Length"] = 141,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9228,7 +9230,7 @@ local playlist1 = {
     ["Id"] = 1080405,
 		["Length"] = 142,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9237,7 +9239,7 @@ local playlist1 = {
     ["Id"] = 1080406,
 		["Length"] = 11,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9246,7 +9248,7 @@ local playlist1 = {
     ["Id"] = 1080407,
 		["Length"] = 12,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9255,7 +9257,7 @@ local playlist1 = {
     ["Id"] = 1042428,
 		["Length"] = 726,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9264,7 +9266,7 @@ local playlist1 = {
     ["Id"] = 1064154,
 		["Length"] = 67,
 		["Artist"] = "Craig Stuart Garfinkle",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9273,7 +9275,7 @@ local playlist1 = {
     ["Id"] = 1064155,
 		["Length"] = 106,
 		["Artist"] = "Craig Stuart Garfinkle",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9282,7 +9284,7 @@ local playlist1 = {
     ["Id"] = 1080491,
 		["Length"] = 83,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9291,7 +9293,7 @@ local playlist1 = {
     ["Id"] = 1080492,
 		["Length"] = 41,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9300,7 +9302,7 @@ local playlist1 = {
     ["Id"] = 1080493,
 		["Length"] = 39,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9309,7 +9311,7 @@ local playlist1 = {
     ["Id"] = 1080494,
 		["Length"] = 8,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9318,7 +9320,7 @@ local playlist1 = {
     ["Id"] = 1080495,
 		["Length"] = 37,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9327,7 +9329,7 @@ local playlist1 = {
     ["Id"] = 1080496,
 		["Length"] = 188,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9336,7 +9338,7 @@ local playlist1 = {
     ["Id"] = 1080518,
 		["Length"] = 150,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9345,7 +9347,7 @@ local playlist1 = {
     ["Id"] = 1080519,
 		["Length"] = 150,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9354,7 +9356,7 @@ local playlist1 = {
     ["Id"] = 1080520,
 		["Length"] = 150,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9363,7 +9365,7 @@ local playlist1 = {
     ["Id"] = 1064156,
 		["Length"] = 112,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9372,7 +9374,7 @@ local playlist1 = {
     ["Id"] = 1067039,
 		["Length"] = 96,
 		["Artist"] = "Eimear Noone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9381,7 +9383,7 @@ local playlist1 = {
     ["Id"] = 1080507,
 		["Length"] = 156,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9390,7 +9392,7 @@ local playlist1 = {
     ["Id"] = 1064157,
 		["Length"] = 126,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9399,7 +9401,7 @@ local playlist1 = {
     ["Id"] = 1080408,
 		["Length"] = 127,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9408,7 +9410,7 @@ local playlist1 = {
     ["Id"] = 1080409,
 		["Length"] = 59,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9417,7 +9419,7 @@ local playlist1 = {
     ["Id"] = 1080410,
 		["Length"] = 30,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9426,7 +9428,7 @@ local playlist1 = {
     ["Id"] = 1080411,
 		["Length"] = 27,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6 (BC)",
@@ -9435,7 +9437,7 @@ local playlist1 = {
     ["Id"] = 936323,
 		["Length"] = 44,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6 (BC)",
@@ -9444,7 +9446,7 @@ local playlist1 = {
     ["Id"] = 936324,
 		["Length"] = 33,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6 (BC)",
@@ -9453,7 +9455,7 @@ local playlist1 = {
     ["Id"] = 936325,
 		["Length"] = 52,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6 (BC)",
@@ -9462,7 +9464,7 @@ local playlist1 = {
     ["Id"] = 936326,
 		["Length"] = 94,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6 (BC)",
@@ -9471,7 +9473,7 @@ local playlist1 = {
     ["Id"] = 936327,
 		["Length"] = 75,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9480,7 +9482,7 @@ local playlist1 = {
     ["Id"] = 1061100,
 		["Length"] = 80,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9489,7 +9491,7 @@ local playlist1 = {
     ["Id"] = 1061101,
 		["Length"] = 79,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9498,7 +9500,7 @@ local playlist1 = {
     ["Id"] = 1061102,
 		["Length"] = 81,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9507,7 +9509,7 @@ local playlist1 = {
     ["Id"] = 1061103,
 		["Length"] = 74,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9516,7 +9518,7 @@ local playlist1 = {
     ["Id"] = 1061104,
 		["Length"] = 79,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9525,7 +9527,7 @@ local playlist1 = {
     ["Id"] = 1064158,
 		["Length"] = 102,
 		["Artist"] = "Craig Stuart Garfinkle",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9534,7 +9536,7 @@ local playlist1 = {
     ["Id"] = 1064159,
 		["Length"] = 87,
 		["Artist"] = "Craig Stuart Garfinkle",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6 (BC)",
@@ -9543,7 +9545,7 @@ local playlist1 = {
     ["Id"] = 936328,
 		["Length"] = 71,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6 (BC)",
@@ -9552,7 +9554,7 @@ local playlist1 = {
     ["Id"] = 936329,
 		["Length"] = 90,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6 (BC)",
@@ -9561,7 +9563,7 @@ local playlist1 = {
     ["Id"] = 936330,
 		["Length"] = 31,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6 (BC)",
@@ -9570,7 +9572,7 @@ local playlist1 = {
     ["Id"] = 936331,
 		["Length"] = 85,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6 (BC)",
@@ -9579,7 +9581,7 @@ local playlist1 = {
     ["Id"] = 936332,
 		["Length"] = 124,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6 (BC)",
@@ -9588,7 +9590,7 @@ local playlist1 = {
     ["Id"] = 936333,
 		["Length"] = 82,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6 (BC)",
@@ -9597,7 +9599,7 @@ local playlist1 = {
     ["Id"] = 936334,
 		["Length"] = 124,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6 (BC)",
@@ -9606,7 +9608,7 @@ local playlist1 = {
     ["Id"] = 936335,
 		["Length"] = 99,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6 (BC)",
@@ -9615,7 +9617,7 @@ local playlist1 = {
     ["Id"] = 936336,
 		["Length"] = 47,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6 (BC)",
@@ -9624,7 +9626,7 @@ local playlist1 = {
     ["Id"] = 936337,
 		["Length"] = 126,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9633,7 +9635,7 @@ local playlist1 = {
     ["Id"] = 1080412,
 		["Length"] = 13,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9642,7 +9644,7 @@ local playlist1 = {
     ["Id"] = 1087470,
 		["Length"] = 8,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9651,7 +9653,7 @@ local playlist1 = {
     ["Id"] = 1067040,
 		["Length"] = 89,
 		["Artist"] = "Craig Stuart Garfinkle",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9660,7 +9662,7 @@ local playlist1 = {
     ["Id"] = 1067041,
 		["Length"] = 81,
 		["Artist"] = "Craig Stuart Garfinkle",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9669,7 +9671,7 @@ local playlist1 = {
     ["Id"] = 1067042,
 		["Length"] = 123,
 		["Artist"] = "Craig Stuart Garfinkle",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9678,7 +9680,7 @@ local playlist1 = {
     ["Id"] = 1067043,
 		["Length"] = 101,
 		["Artist"] = "Craig Stuart Garfinkle",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9687,7 +9689,7 @@ local playlist1 = {
     ["Id"] = 1067044,
 		["Length"] = 84,
 		["Artist"] = "Craig Stuart Garfinkle",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9696,7 +9698,7 @@ local playlist1 = {
     ["Id"] = 1061108,
 		["Length"] = 72,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9705,7 +9707,7 @@ local playlist1 = {
     ["Id"] = 1061105,
 		["Length"] = 165,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9714,7 +9716,7 @@ local playlist1 = {
     ["Id"] = 1061106,
 		["Length"] = 47,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9723,7 +9725,7 @@ local playlist1 = {
     ["Id"] = 1061107,
 		["Length"] = 55,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9732,7 +9734,7 @@ local playlist1 = {
     ["Id"] = 1064160,
 		["Length"] = 131,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9741,7 +9743,7 @@ local playlist1 = {
     ["Id"] = 1061109,
 		["Length"] = 150,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9750,7 +9752,7 @@ local playlist1 = {
     ["Id"] = 1061110,
 		["Length"] = 97,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9759,7 +9761,7 @@ local playlist1 = {
     ["Id"] = 1061111,
 		["Length"] = 59,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9768,7 +9770,7 @@ local playlist1 = {
     ["Id"] = 1061112,
 		["Length"] = 75,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9777,7 +9779,7 @@ local playlist1 = {
     ["Id"] = 1061113,
 		["Length"] = 154,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9786,7 +9788,7 @@ local playlist1 = {
     ["Id"] = 1067045,
 		["Length"] = 190,
 		["Artist"] = "Eimear Noone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9795,7 +9797,7 @@ local playlist1 = {
     ["Id"] = 1061114,
 		["Length"] = 144,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9804,7 +9806,7 @@ local playlist1 = {
     ["Id"] = 1061115,
 		["Length"] = 127,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9813,7 +9815,7 @@ local playlist1 = {
     ["Id"] = 1061116,
 		["Length"] = 139,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9822,7 +9824,7 @@ local playlist1 = {
     ["Id"] = 1061117,
 		["Length"] = 114,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9831,7 +9833,7 @@ local playlist1 = {
     ["Id"] = 1061118,
 		["Length"] = 68,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9840,7 +9842,7 @@ local playlist1 = {
     ["Id"] = 1061119,
 		["Length"] = 69,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9849,7 +9851,7 @@ local playlist1 = {
     ["Id"] = 1067555,
 		["Length"] = 83,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9858,7 +9860,7 @@ local playlist1 = {
     ["Id"] = 1067556,
 		["Length"] = 97,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9867,7 +9869,7 @@ local playlist1 = {
     ["Id"] = 1067557,
 		["Length"] = 239,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9876,7 +9878,7 @@ local playlist1 = {
     ["Id"] = 1067558,
 		["Length"] = 130,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9885,7 +9887,7 @@ local playlist1 = {
     ["Id"] = 1067559,
 		["Length"] = 111,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6 (BC)",
@@ -9894,7 +9896,7 @@ local playlist1 = {
     ["Id"] = 936338,
 		["Length"] = 236,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6 (BC)",
@@ -9903,7 +9905,7 @@ local playlist1 = {
     ["Id"] = 936339,
 		["Length"] = 158,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6 (BC)",
@@ -9912,7 +9914,7 @@ local playlist1 = {
     ["Id"] = 936340,
 		["Length"] = 236,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9921,7 +9923,7 @@ local playlist1 = {
     ["Id"] = 1080508,
 		["Length"] = 35,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9930,7 +9932,7 @@ local playlist1 = {
     ["Id"] = 1067046,
 		["Length"] = 127,
 		["Artist"] = "Eimear Noone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9939,7 +9941,7 @@ local playlist1 = {
     ["Id"] = 1067047,
 		["Length"] = 139,
 		["Artist"] = "Eimear Noone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9948,7 +9950,7 @@ local playlist1 = {
     ["Id"] = 1067048,
 		["Length"] = 46,
 		["Artist"] = "Eimear Noone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9957,7 +9959,7 @@ local playlist1 = {
     ["Id"] = 1067049,
 		["Length"] = 66,
 		["Artist"] = "Eimear Noone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9966,7 +9968,7 @@ local playlist1 = {
     ["Id"] = 1061120,
 		["Length"] = 78,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9975,7 +9977,7 @@ local playlist1 = {
     ["Id"] = 1061121,
 		["Length"] = 78,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9984,7 +9986,7 @@ local playlist1 = {
     ["Id"] = 1061122,
 		["Length"] = 88,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -9993,7 +9995,7 @@ local playlist1 = {
     ["Id"] = 1061123,
 		["Length"] = 90,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10002,7 +10004,7 @@ local playlist1 = {
     ["Id"] = 1061124,
 		["Length"] = 124,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10011,7 +10013,7 @@ local playlist1 = {
     ["Id"] = 1061125,
 		["Length"] = 66,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10020,7 +10022,7 @@ local playlist1 = {
     ["Id"] = 1061126,
 		["Length"] = 145,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10029,7 +10031,7 @@ local playlist1 = {
     ["Id"] = 1061127,
 		["Length"] = 62,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10038,7 +10040,7 @@ local playlist1 = {
     ["Id"] = 1061128,
 		["Length"] = 60,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10047,7 +10049,7 @@ local playlist1 = {
     ["Id"] = 1061129,
 		["Length"] = 61,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10056,7 +10058,7 @@ local playlist1 = {
     ["Id"] = 1061130,
 		["Length"] = 82,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10065,7 +10067,7 @@ local playlist1 = {
     ["Id"] = 1061131,
 		["Length"] = 82,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10074,7 +10076,7 @@ local playlist1 = {
     ["Id"] = 1061132,
 		["Length"] = 168,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10083,7 +10085,7 @@ local playlist1 = {
     ["Id"] = 1061133,
 		["Length"] = 102,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10092,7 +10094,7 @@ local playlist1 = {
     ["Id"] = 1061134,
 		["Length"] = 89,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10101,7 +10103,7 @@ local playlist1 = {
     ["Id"] = 1061135,
 		["Length"] = 60,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10110,7 +10112,7 @@ local playlist1 = {
     ["Id"] = 1080413,
 		["Length"] = 141,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10119,7 +10121,7 @@ local playlist1 = {
     ["Id"] = 1080414,
 		["Length"] = 115,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10128,7 +10130,7 @@ local playlist1 = {
     ["Id"] = 1080415,
 		["Length"] = 107,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10137,7 +10139,7 @@ local playlist1 = {
     ["Id"] = 1080416,
 		["Length"] = 113,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10146,7 +10148,7 @@ local playlist1 = {
     ["Id"] = 1080417,
 		["Length"] = 123,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10155,7 +10157,7 @@ local playlist1 = {
     ["Id"] = 1080418,
 		["Length"] = 58,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10164,7 +10166,7 @@ local playlist1 = {
     ["Id"] = 1080419,
 		["Length"] = 22,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10173,7 +10175,7 @@ local playlist1 = {
     ["Id"] = 1064161,
 		["Length"] = 157,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10182,7 +10184,7 @@ local playlist1 = {
     ["Id"] = 1080423,
 		["Length"] = 223,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10191,7 +10193,7 @@ local playlist1 = {
     ["Id"] = 1080424,
 		["Length"] = 106,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10200,7 +10202,7 @@ local playlist1 = {
     ["Id"] = 1080425,
 		["Length"] = 70,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10209,7 +10211,7 @@ local playlist1 = {
     ["Id"] = 1080426,
 		["Length"] = 123,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10218,7 +10220,7 @@ local playlist1 = {
     ["Id"] = 1080427,
 		["Length"] = 120,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10227,7 +10229,7 @@ local playlist1 = {
     ["Id"] = 1064162,
 		["Length"] = 193,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10236,7 +10238,7 @@ local playlist1 = {
     ["Id"] = 1080420,
 		["Length"] = 72,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10245,7 +10247,7 @@ local playlist1 = {
     ["Id"] = 1080421,
 		["Length"] = 81,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10254,7 +10256,7 @@ local playlist1 = {
     ["Id"] = 1080422,
 		["Length"] = 16,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10263,7 +10265,7 @@ local playlist1 = {
     ["Id"] = 1067050,
 		["Length"] = 73,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10272,7 +10274,7 @@ local playlist1 = {
     ["Id"] = 1067051,
 		["Length"] = 86,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10281,7 +10283,7 @@ local playlist1 = {
     ["Id"] = 1067052,
 		["Length"] = 58,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10290,7 +10292,7 @@ local playlist1 = {
     ["Id"] = 1067053,
 		["Length"] = 63,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10299,7 +10301,7 @@ local playlist1 = {
     ["Id"] = 1067054,
 		["Length"] = 68,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10308,7 +10310,7 @@ local playlist1 = {
     ["Id"] = 1067055,
 		["Length"] = 87,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10317,7 +10319,7 @@ local playlist1 = {
     ["Id"] = 1067056,
 		["Length"] = 65,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10326,7 +10328,7 @@ local playlist1 = {
     ["Id"] = 1067057,
 		["Length"] = 83,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10335,7 +10337,7 @@ local playlist1 = {
     ["Id"] = 1067058,
 		["Length"] = 22,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10344,7 +10346,7 @@ local playlist1 = {
     ["Id"] = 1067059,
 		["Length"] = 25,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10353,7 +10355,7 @@ local playlist1 = {
     ["Id"] = 1067060,
 		["Length"] = 15,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10362,7 +10364,7 @@ local playlist1 = {
     ["Id"] = 1064163,
 		["Length"] = 134,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10371,7 +10373,7 @@ local playlist1 = {
     ["Id"] = 1061136,
 		["Length"] = 149,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10380,7 +10382,7 @@ local playlist1 = {
     ["Id"] = 1061137,
 		["Length"] = 149,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10389,7 +10391,7 @@ local playlist1 = {
     ["Id"] = 1061138,
 		["Length"] = 62,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10398,7 +10400,7 @@ local playlist1 = {
     ["Id"] = 1061139,
 		["Length"] = 57,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10407,7 +10409,7 @@ local playlist1 = {
     ["Id"] = 1061140,
 		["Length"] = 86,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10416,7 +10418,7 @@ local playlist1 = {
     ["Id"] = 1061141,
 		["Length"] = 79,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10425,7 +10427,7 @@ local playlist1 = {
     ["Id"] = 1061142,
 		["Length"] = 133,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10434,7 +10436,7 @@ local playlist1 = {
     ["Id"] = 1061143,
 		["Length"] = 88,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10443,7 +10445,7 @@ local playlist1 = {
     ["Id"] = 1061144,
 		["Length"] = 135,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10452,7 +10454,7 @@ local playlist1 = {
     ["Id"] = 1061145,
 		["Length"] = 115,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10461,7 +10463,7 @@ local playlist1 = {
     ["Id"] = 1061146,
 		["Length"] = 134,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10470,7 +10472,7 @@ local playlist1 = {
     ["Id"] = 1061147,
 		["Length"] = 121,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10479,7 +10481,7 @@ local playlist1 = {
     ["Id"] = 1067560,
 		["Length"] = 130,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10488,7 +10490,7 @@ local playlist1 = {
     ["Id"] = 1067561,
 		["Length"] = 126,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10497,7 +10499,7 @@ local playlist1 = {
     ["Id"] = 1067562,
 		["Length"] = 133,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10506,7 +10508,7 @@ local playlist1 = {
     ["Id"] = 1067563,
 		["Length"] = 131,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10515,7 +10517,7 @@ local playlist1 = {
     ["Id"] = 1067564,
 		["Length"] = 124,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10524,7 +10526,7 @@ local playlist1 = {
     ["Id"] = 1061148,
 		["Length"] = 77,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10533,7 +10535,7 @@ local playlist1 = {
     ["Id"] = 1061149,
 		["Length"] = 97,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10542,7 +10544,7 @@ local playlist1 = {
     ["Id"] = 1061150,
 		["Length"] = 77,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10551,7 +10553,7 @@ local playlist1 = {
     ["Id"] = 1061151,
 		["Length"] = 97,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10560,7 +10562,7 @@ local playlist1 = {
     ["Id"] = 1061152,
 		["Length"] = 179,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10569,7 +10571,7 @@ local playlist1 = {
     ["Id"] = 1067061,
 		["Length"] = 99,
 		["Artist"] = "Craig Stuart Garfinkle",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10578,7 +10580,7 @@ local playlist1 = {
     ["Id"] = 1067062,
 		["Length"] = 77,
 		["Artist"] = "Craig Stuart Garfinkle",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6 (BC)",
@@ -10587,7 +10589,7 @@ local playlist1 = {
     ["Id"] = 936341,
 		["Length"] = 131,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10596,7 +10598,7 @@ local playlist1 = {
     ["Id"] = 1061153,
 		["Length"] = 94,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10605,7 +10607,7 @@ local playlist1 = {
     ["Id"] = 1067063,
 		["Length"] = 67,
 		["Artist"] = "Eimear Noone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10614,7 +10616,7 @@ local playlist1 = {
     ["Id"] = 1067064,
 		["Length"] = 98,
 		["Artist"] = "Eimear Noone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10623,7 +10625,7 @@ local playlist1 = {
     ["Id"] = 1067065,
 		["Length"] = 92,
 		["Artist"] = "Eimear Noone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10632,7 +10634,7 @@ local playlist1 = {
     ["Id"] = 1064164,
 		["Length"] = 104,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10641,7 +10643,7 @@ local playlist1 = {
     ["Id"] = 1067565,
 		["Length"] = 224,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10650,7 +10652,7 @@ local playlist1 = {
     ["Id"] = 1067566,
 		["Length"] = 108,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10659,7 +10661,7 @@ local playlist1 = {
     ["Id"] = 1067567,
 		["Length"] = 116,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10668,7 +10670,7 @@ local playlist1 = {
     ["Id"] = 1067568,
 		["Length"] = 229,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10677,7 +10679,7 @@ local playlist1 = {
     ["Id"] = 1067569,
 		["Length"] = 114,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10686,7 +10688,7 @@ local playlist1 = {
     ["Id"] = 1067570,
 		["Length"] = 118,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10695,7 +10697,7 @@ local playlist1 = {
     ["Id"] = 1067066,
 		["Length"] = 93,
 		["Artist"] = "Eimear Noone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10704,7 +10706,7 @@ local playlist1 = {
     ["Id"] = 1067067,
 		["Length"] = 124,
 		["Artist"] = "Eimear Noone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10713,7 +10715,7 @@ local playlist1 = {
     ["Id"] = 1061154,
 		["Length"] = 89,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10722,7 +10724,7 @@ local playlist1 = {
     ["Id"] = 1061155,
 		["Length"] = 88,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10731,7 +10733,7 @@ local playlist1 = {
     ["Id"] = 1061156,
 		["Length"] = 89,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10740,7 +10742,7 @@ local playlist1 = {
     ["Id"] = 1067571,
 		["Length"] = 110,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10749,7 +10751,7 @@ local playlist1 = {
     ["Id"] = 1067572,
 		["Length"] = 138,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10758,7 +10760,7 @@ local playlist1 = {
     ["Id"] = 1067068,
 		["Length"] = 155,
 		["Artist"] = "Eimear Noone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10767,7 +10769,7 @@ local playlist1 = {
     ["Id"] = 1067069,
 		["Length"] = 70,
 		["Artist"] = "Craig Stuart Garfinkle",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10776,7 +10778,7 @@ local playlist1 = {
     ["Id"] = 1067070,
 		["Length"] = 45,
 		["Artist"] = "Craig Stuart Garfinkle",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10785,7 +10787,7 @@ local playlist1 = {
     ["Id"] = 1061157,
 		["Length"] = 128,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10794,7 +10796,7 @@ local playlist1 = {
     ["Id"] = 1061158,
 		["Length"] = 127,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10803,7 +10805,7 @@ local playlist1 = {
     ["Id"] = 1061159,
 		["Length"] = 122,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10812,7 +10814,7 @@ local playlist1 = {
     ["Id"] = 1061160,
 		["Length"] = 61,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10821,7 +10823,7 @@ local playlist1 = {
     ["Id"] = 1061161,
 		["Length"] = 94,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10830,7 +10832,7 @@ local playlist1 = {
     ["Id"] = 1061162,
 		["Length"] = 103,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10839,7 +10841,7 @@ local playlist1 = {
     ["Id"] = 1061163,
 		["Length"] = 65,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10848,7 +10850,7 @@ local playlist1 = {
     ["Id"] = 1061164,
 		["Length"] = 102,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10857,7 +10859,7 @@ local playlist1 = {
     ["Id"] = 1067071,
 		["Length"] = 55,
 		["Artist"] = "Craig Stuart Garfinkle",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10866,7 +10868,7 @@ local playlist1 = {
     ["Id"] = 1067072,
 		["Length"] = 53,
 		["Artist"] = "Craig Stuart Garfinkle",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10875,7 +10877,7 @@ local playlist1 = {
     ["Id"] = 1067073,
 		["Length"] = 52,
 		["Artist"] = "Craig Stuart Garfinkle",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10884,7 +10886,7 @@ local playlist1 = {
     ["Id"] = 1067074,
 		["Length"] = 21,
 		["Artist"] = "Craig Stuart Garfinkle",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10893,7 +10895,7 @@ local playlist1 = {
     ["Id"] = 1061165,
 		["Length"] = 158,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10902,7 +10904,7 @@ local playlist1 = {
     ["Id"] = 1061166,
 		["Length"] = 101,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10911,7 +10913,7 @@ local playlist1 = {
     ["Id"] = 1061167,
 		["Length"] = 56,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10920,7 +10922,7 @@ local playlist1 = {
     ["Id"] = 1067075,
 		["Length"] = 88,
 		["Artist"] = "Eimear Noone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10929,7 +10931,7 @@ local playlist1 = {
     ["Id"] = 1067076,
 		["Length"] = 46,
 		["Artist"] = "Eimear Noone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10938,7 +10940,7 @@ local playlist1 = {
     ["Id"] = 1067077,
 		["Length"] = 101,
 		["Artist"] = "Eimear Noone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6 (BC)",
@@ -10947,7 +10949,7 @@ local playlist1 = {
     ["Id"] = 936342,
 		["Length"] = 212,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6 (BC)",
@@ -10956,7 +10958,7 @@ local playlist1 = {
     ["Id"] = 936343,
 		["Length"] = 212,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6 (BC)",
@@ -10965,7 +10967,7 @@ local playlist1 = {
     ["Id"] = 936344,
 		["Length"] = 212,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10974,7 +10976,7 @@ local playlist1 = {
     ["Id"] = 1061171,
 		["Length"] = 54,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10983,7 +10985,7 @@ local playlist1 = {
     ["Id"] = 1061172,
 		["Length"] = 55,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -10992,7 +10994,7 @@ local playlist1 = {
     ["Id"] = 1061173,
 		["Length"] = 56,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11001,7 +11003,7 @@ local playlist1 = {
     ["Id"] = 1067573,
 		["Length"] = 128,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11010,7 +11012,7 @@ local playlist1 = {
     ["Id"] = 1067574,
 		["Length"] = 123,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11019,7 +11021,7 @@ local playlist1 = {
     ["Id"] = 1067575,
 		["Length"] = 156,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11028,7 +11030,7 @@ local playlist1 = {
     ["Id"] = 1067576,
 		["Length"] = 128,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11037,7 +11039,7 @@ local playlist1 = {
     ["Id"] = 1067577,
 		["Length"] = 127,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11046,7 +11048,7 @@ local playlist1 = {
     ["Id"] = 1061174,
 		["Length"] = 115,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11055,7 +11057,7 @@ local playlist1 = {
     ["Id"] = 1061175,
 		["Length"] = 52,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11064,7 +11066,7 @@ local playlist1 = {
     ["Id"] = 1061177,
 		["Length"] = 164,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11073,7 +11075,7 @@ local playlist1 = {
     ["Id"] = 1067078,
 		["Length"] = 151,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11082,7 +11084,7 @@ local playlist1 = {
     ["Id"] = 1067079,
 		["Length"] = 91,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11091,7 +11093,7 @@ local playlist1 = {
     ["Id"] = 1067080,
 		["Length"] = 63,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11100,7 +11102,7 @@ local playlist1 = {
     ["Id"] = 1067081,
 		["Length"] = 88,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11109,7 +11111,7 @@ local playlist1 = {
     ["Id"] = 1067082,
 		["Length"] = 91,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11118,7 +11120,7 @@ local playlist1 = {
     ["Id"] = 1067083,
 		["Length"] = 9,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11127,7 +11129,7 @@ local playlist1 = {
     ["Id"] = 1067084,
 		["Length"] = 11,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11136,7 +11138,7 @@ local playlist1 = {
     ["Id"] = 1064165,
 		["Length"] = 150,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11145,7 +11147,7 @@ local playlist1 = {
     ["Id"] = 1061178,
 		["Length"] = 48,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11154,7 +11156,7 @@ local playlist1 = {
     ["Id"] = 1067578,
 		["Length"] = 55,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11163,7 +11165,7 @@ local playlist1 = {
     ["Id"] = 1067579,
 		["Length"] = 49,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11172,7 +11174,7 @@ local playlist1 = {
     ["Id"] = 1067580,
 		["Length"] = 101,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11181,7 +11183,7 @@ local playlist1 = {
     ["Id"] = 1067581,
 		["Length"] = 118,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11190,7 +11192,7 @@ local playlist1 = {
     ["Id"] = 1067582,
 		["Length"] = 82,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11199,7 +11201,7 @@ local playlist1 = {
     ["Id"] = 1067583,
 		["Length"] = 98,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11208,7 +11210,7 @@ local playlist1 = {
     ["Id"] = 1067584,
 		["Length"] = 130,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11217,7 +11219,7 @@ local playlist1 = {
     ["Id"] = 1067585,
 		["Length"] = 89,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11226,7 +11228,7 @@ local playlist1 = {
     ["Id"] = 1067586,
 		["Length"] = 86,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11235,7 +11237,7 @@ local playlist1 = {
     ["Id"] = 1067587,
 		["Length"] = 100,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11244,7 +11246,7 @@ local playlist1 = {
     ["Id"] = 1067588,
 		["Length"] = 85,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11253,7 +11255,7 @@ local playlist1 = {
     ["Id"] = 1067589,
 		["Length"] = 103,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11262,7 +11264,7 @@ local playlist1 = {
     ["Id"] = 1067590,
 		["Length"] = 107,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11271,7 +11273,7 @@ local playlist1 = {
     ["Id"] = 1067591,
 		["Length"] = 117,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11280,7 +11282,7 @@ local playlist1 = {
     ["Id"] = 1067085,
 		["Length"] = 65,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11289,7 +11291,7 @@ local playlist1 = {
     ["Id"] = 1067086,
 		["Length"] = 65,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11298,7 +11300,7 @@ local playlist1 = {
     ["Id"] = 1067087,
 		["Length"] = 53,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11307,7 +11309,7 @@ local playlist1 = {
     ["Id"] = 1067088,
 		["Length"] = 66,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11316,7 +11318,7 @@ local playlist1 = {
     ["Id"] = 1067089,
 		["Length"] = 17,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11325,7 +11327,7 @@ local playlist1 = {
     ["Id"] = 1067090,
 		["Length"] = 16,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11334,7 +11336,7 @@ local playlist1 = {
     ["Id"] = 1067091,
 		["Length"] = 17,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11343,7 +11345,7 @@ local playlist1 = {
     ["Id"] = 1064166,
 		["Length"] = 92,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11352,7 +11354,7 @@ local playlist1 = {
     ["Id"] = 1064167,
 		["Length"] = 73,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11361,7 +11363,7 @@ local playlist1 = {
     ["Id"] = 1064168,
 		["Length"] = 72,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11370,7 +11372,7 @@ local playlist1 = {
     ["Id"] = 1064169,
 		["Length"] = 79,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11379,7 +11381,7 @@ local playlist1 = {
     ["Id"] = 1064170,
 		["Length"] = 153,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11388,7 +11390,7 @@ local playlist1 = {
     ["Id"] = 1064171,
 		["Length"] = 152,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11397,7 +11399,7 @@ local playlist1 = {
     ["Id"] = 1061179,
 		["Length"] = 83,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11406,7 +11408,7 @@ local playlist1 = {
     ["Id"] = 1061180,
 		["Length"] = 72,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11415,7 +11417,7 @@ local playlist1 = {
     ["Id"] = 1061181,
 		["Length"] = 155,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11424,7 +11426,7 @@ local playlist1 = {
     ["Id"] = 1080510,
 		["Length"] = 162,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11433,7 +11435,7 @@ local playlist1 = {
     ["Id"] = 1080511,
 		["Length"] = 162,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11442,7 +11444,7 @@ local playlist1 = {
     ["Id"] = 1080514,
 		["Length"] = 162,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11451,7 +11453,7 @@ local playlist1 = {
     ["Id"] = 1067092,
 		["Length"] = 19,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11460,7 +11462,7 @@ local playlist1 = {
     ["Id"] = 1064172,
 		["Length"] = 153,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11469,7 +11471,7 @@ local playlist1 = {
     ["Id"] = 1067093,
 		["Length"] = 54,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11478,7 +11480,7 @@ local playlist1 = {
     ["Id"] = 1067094,
 		["Length"] = 54,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11487,7 +11489,7 @@ local playlist1 = {
     ["Id"] = 1067095,
 		["Length"] = 60,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11496,7 +11498,7 @@ local playlist1 = {
     ["Id"] = 1067096,
 		["Length"] = 15,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11505,7 +11507,7 @@ local playlist1 = {
     ["Id"] = 1067097,
 		["Length"] = 22,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11514,7 +11516,7 @@ local playlist1 = {
     ["Id"] = 1067098,
 		["Length"] = 22,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11523,7 +11525,7 @@ local playlist1 = {
     ["Id"] = 1067099,
 		["Length"] = 56,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11532,7 +11534,7 @@ local playlist1 = {
     ["Id"] = 1067100,
 		["Length"] = 64,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11541,7 +11543,7 @@ local playlist1 = {
     ["Id"] = 1067101,
 		["Length"] = 64,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11550,7 +11552,7 @@ local playlist1 = {
     ["Id"] = 1067102,
 		["Length"] = 64,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11559,7 +11561,7 @@ local playlist1 = {
     ["Id"] = 1067103,
 		["Length"] = 39,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11568,7 +11570,7 @@ local playlist1 = {
     ["Id"] = 1067104,
 		["Length"] = 19,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6",
@@ -11577,7 +11579,7 @@ local playlist1 = {
     ["Id"] = 1064173,
 		["Length"] = 168,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -11586,7 +11588,7 @@ local playlist1 = {
     ["Id"] = 1146873,
 		["Length"] = 71,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -11595,7 +11597,7 @@ local playlist1 = {
     ["Id"] = 1146874,
 		["Length"] = 74,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -11604,7 +11606,7 @@ local playlist1 = {
     ["Id"] = 1146875,
 		["Length"] = 71,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -11613,7 +11615,7 @@ local playlist1 = {
     ["Id"] = 1146876,
 		["Length"] = 86,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -11622,7 +11624,7 @@ local playlist1 = {
     ["Id"] = 1146877,
 		["Length"] = 60,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -11631,7 +11633,7 @@ local playlist1 = {
     ["Id"] = 1146878,
 		["Length"] = 46,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -11640,7 +11642,7 @@ local playlist1 = {
     ["Id"] = 1146879,
 		["Length"] = 48,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -11649,7 +11651,7 @@ local playlist1 = {
     ["Id"] = 1146880,
 		["Length"] = 120,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -11658,7 +11660,7 @@ local playlist1 = {
     ["Id"] = 1146881,
 		["Length"] = 116,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -11667,7 +11669,7 @@ local playlist1 = {
     ["Id"] = 1146882,
 		["Length"] = 119,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -11676,7 +11678,7 @@ local playlist1 = {
     ["Id"] = 1146883,
 		["Length"] = 79,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -11685,7 +11687,7 @@ local playlist1 = {
     ["Id"] = 1146884,
 		["Length"] = 60,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -11694,7 +11696,7 @@ local playlist1 = {
     ["Id"] = 1146885,
 		["Length"] = 88,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -11703,7 +11705,7 @@ local playlist1 = {
     ["Id"] = 1146886,
 		["Length"] = 50,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -11712,7 +11714,7 @@ local playlist1 = {
     ["Id"] = 1146887,
 		["Length"] = 13,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -11721,7 +11723,7 @@ local playlist1 = {
     ["Id"] = 1146888,
 		["Length"] = 74,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -11730,7 +11732,7 @@ local playlist1 = {
     ["Id"] = 1146889,
 		["Length"] = 152,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -11739,7 +11741,7 @@ local playlist1 = {
     ["Id"] = 1146890,
 		["Length"] = 118,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -11748,7 +11750,7 @@ local playlist1 = {
     ["Id"] = 1146891,
 		["Length"] = 118,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -11757,7 +11759,7 @@ local playlist1 = {
     ["Id"] = 1146892,
 		["Length"] = 125,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -11766,7 +11768,7 @@ local playlist1 = {
     ["Id"] = 1146893,
 		["Length"] = 125,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -11775,7 +11777,7 @@ local playlist1 = {
     ["Id"] = 1146894,
 		["Length"] = 109,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -11784,7 +11786,7 @@ local playlist1 = {
     ["Id"] = 1146895,
 		["Length"] = 103,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -11793,7 +11795,7 @@ local playlist1 = {
     ["Id"] = 1146896,
 		["Length"] = 62,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -11802,7 +11804,7 @@ local playlist1 = {
     ["Id"] = 1146897,
 		["Length"] = 114,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -11811,7 +11813,7 @@ local playlist1 = {
     ["Id"] = 1146898,
 		["Length"] = 138,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -11820,7 +11822,7 @@ local playlist1 = {
     ["Id"] = 1146899,
 		["Length"] = 71,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -11829,7 +11831,7 @@ local playlist1 = {
     ["Id"] = 1146900,
 		["Length"] = 161,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -11838,7 +11840,7 @@ local playlist1 = {
     ["Id"] = 1146901,
 		["Length"] = 101,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -11847,7 +11849,7 @@ local playlist1 = {
     ["Id"] = 1146902,
 		["Length"] = 87,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -11856,7 +11858,7 @@ local playlist1 = {
     ["Id"] = 1146903,
 		["Length"] = 101,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Fall of the Lich King",
@@ -11865,7 +11867,7 @@ local playlist1 = {
     ["Id"] = 1100052,
 		["Length"] = 197,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -11874,7 +11876,7 @@ local playlist1 = {
     ["Id"] = 369053,
 		["Length"] = 61,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -11883,7 +11885,7 @@ local playlist1 = {
     ["Id"] = 369054,
 		["Length"] = 35,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -11892,7 +11894,7 @@ local playlist1 = {
     ["Id"] = 369055,
 		["Length"] = 63,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -11901,7 +11903,7 @@ local playlist1 = {
     ["Id"] = 369056,
 		["Length"] = 38,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -11910,7 +11912,7 @@ local playlist1 = {
     ["Id"] = 369057,
 		["Length"] = 34,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -11919,7 +11921,7 @@ local playlist1 = {
     ["Id"] = 369058,
 		["Length"] = 88,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7.1.5",
@@ -11928,7 +11930,7 @@ local playlist1 = {
     ["Id"] = 1580109,
 		["Length"] = 16,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7.1.5",
@@ -11937,7 +11939,7 @@ local playlist1 = {
     ["Id"] = 1580523,
 		["Length"] = 16,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7.1.5",
@@ -11946,7 +11948,7 @@ local playlist1 = {
     ["Id"] = 1580524,
 		["Length"] = 18,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7.1.5",
@@ -11955,7 +11957,7 @@ local playlist1 = {
     ["Id"] = 1580108,
 		["Length"] = 6,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7.1.5",
@@ -11964,7 +11966,7 @@ local playlist1 = {
     ["Id"] = 1582733,
 		["Length"] = 3,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7.1.5",
@@ -11973,7 +11975,7 @@ local playlist1 = {
     ["Id"] = 1580110,
 		["Length"] = 47,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2.5",
@@ -11982,7 +11984,7 @@ local playlist1 = {
     ["Id"] = 1676892,
 		["Length"] = 312,
 		["Artist"] = "Jon Graves",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7.1",
@@ -11991,7 +11993,7 @@ local playlist1 = {
     ["Id"] = 1538384,
 		["Length"] = 36,
 		["Artist"] = "M.Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7.1",
@@ -12000,7 +12002,7 @@ local playlist1 = {
     ["Id"] = 1538385,
 		["Length"] = 33,
 		["Artist"] = "M.Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7.1",
@@ -12009,7 +12011,7 @@ local playlist1 = {
     ["Id"] = 1538386,
 		["Length"] = 47,
 		["Artist"] = "M.Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7.1",
@@ -12018,7 +12020,7 @@ local playlist1 = {
     ["Id"] = 1538387,
 		["Length"] = 37,
 		["Artist"] = "M.Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3.3 Zalazane's Fall",
@@ -12027,7 +12029,7 @@ local playlist1 = {
     ["Id"] = 371365,
 		["Length"] = 54,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3.3 Zalazane's Fall",
@@ -12036,7 +12038,7 @@ local playlist1 = {
     ["Id"] = 371366,
 		["Length"] = 61,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3.3 Zalazane's Fall",
@@ -12045,7 +12047,7 @@ local playlist1 = {
     ["Id"] = 371367,
 		["Length"] = 65,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3.3 Zalazane's Fall",
@@ -12054,7 +12056,7 @@ local playlist1 = {
     ["Id"] = 371368,
 		["Length"] = 87,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3.3 Zalazane's Fall",
@@ -12063,7 +12065,7 @@ local playlist1 = {
     ["Id"] = 371369,
 		["Length"] = 69,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3.3 Zalazane's Fall",
@@ -12072,7 +12074,7 @@ local playlist1 = {
     ["Id"] = 371370,
 		["Length"] = 39,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3.3 Zalazane's Fall",
@@ -12081,7 +12083,7 @@ local playlist1 = {
     ["Id"] = 371371,
 		["Length"] = 37,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3.3 Zalazane's Fall",
@@ -12090,7 +12092,7 @@ local playlist1 = {
     ["Id"] = 371372,
 		["Length"] = 30,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3.3 Zalazane's Fall",
@@ -12099,7 +12101,7 @@ local playlist1 = {
     ["Id"] = 371373,
 		["Length"] = 39,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3.3 Zalazane's Fall",
@@ -12108,7 +12110,7 @@ local playlist1 = {
     ["Id"] = 371374,
 		["Length"] = 79,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3.3 Zalazane's Fall",
@@ -12117,7 +12119,7 @@ local playlist1 = {
     ["Id"] = 371375,
 		["Length"] = 87,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3.3 Zalazane's Fall",
@@ -12126,7 +12128,7 @@ local playlist1 = {
     ["Id"] = 371376,
 		["Length"] = 53,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3.3 Zalazane's Fall",
@@ -12135,7 +12137,7 @@ local playlist1 = {
     ["Id"] = 371377,
 		["Length"] = 17,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3.3 Zalazane's Fall",
@@ -12144,7 +12146,7 @@ local playlist1 = {
     ["Id"] = 371378,
 		["Length"] = 67,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3.3 Zalazane's Fall",
@@ -12153,7 +12155,7 @@ local playlist1 = {
     ["Id"] = 371379,
 		["Length"] = 22,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3.3 Zalazane's Fall",
@@ -12162,7 +12164,7 @@ local playlist1 = {
     ["Id"] = 371380,
 		["Length"] = 13,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3.3 Zalazane's Fall",
@@ -12171,7 +12173,7 @@ local playlist1 = {
     ["Id"] = 371381,
 		["Length"] = 10,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3.3 Zalazane's Fall",
@@ -12180,7 +12182,7 @@ local playlist1 = {
     ["Id"] = 371382,
 		["Length"] = 9,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -12189,7 +12191,7 @@ local playlist1 = {
     ["Id"] = 53221,
 		["Length"] = 171,
 		["Artist"] = "Russell Brower & Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -12198,7 +12200,7 @@ local playlist1 = {
     ["Id"] = 53220,
 		["Length"] = 226,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.0.1",
@@ -12207,7 +12209,7 @@ local playlist1 = {
     ["Id"] = 53222,
 		["Length"] = 544,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -12216,7 +12218,7 @@ local playlist1 = {
     ["Id"] = 53223,
 		["Length"] = 161,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12225,7 +12227,7 @@ local playlist1 = {
     ["Id"] = 1417240,
 		["Length"] = 74,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12234,7 +12236,7 @@ local playlist1 = {
     ["Id"] = 1417241,
 		["Length"] = 112,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12243,7 +12245,7 @@ local playlist1 = {
     ["Id"] = 1417242,
 		["Length"] = 140,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12252,7 +12254,7 @@ local playlist1 = {
     ["Id"] = 1417243,
 		["Length"] = 137,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12261,7 +12263,7 @@ local playlist1 = {
     ["Id"] = 1417244,
 		["Length"] = 89,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12270,7 +12272,7 @@ local playlist1 = {
     ["Id"] = 1417245,
 		["Length"] = 70,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12279,7 +12281,7 @@ local playlist1 = {
     ["Id"] = 1417246,
 		["Length"] = 87,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12288,7 +12290,7 @@ local playlist1 = {
     ["Id"] = 1417247,
 		["Length"] = 115,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12297,7 +12299,7 @@ local playlist1 = {
     ["Id"] = 1417248,
 		["Length"] = 111,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12306,7 +12308,7 @@ local playlist1 = {
     ["Id"] = 1417249,
 		["Length"] = 53,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12315,7 +12317,7 @@ local playlist1 = {
     ["Id"] = 1417250,
 		["Length"] = 122,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -12324,7 +12326,7 @@ local playlist1 = {
     ["Id"] = 1272554,
 		["Length"] = 89,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -12333,7 +12335,7 @@ local playlist1 = {
     ["Id"] = 1272555,
 		["Length"] = 81,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -12342,7 +12344,7 @@ local playlist1 = {
     ["Id"] = 1272556,
 		["Length"] = 126,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12351,7 +12353,7 @@ local playlist1 = {
     ["Id"] = 1514309,
 		["Length"] = 11,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12360,7 +12362,7 @@ local playlist1 = {
     ["Id"] = 1514201,
 		["Length"] = 247,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12369,7 +12371,7 @@ local playlist1 = {
     ["Id"] = 1514202,
 		["Length"] = 249,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12378,7 +12380,7 @@ local playlist1 = {
     ["Id"] = 1514203,
 		["Length"] = 177,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12387,7 +12389,7 @@ local playlist1 = {
     ["Id"] = 1514204,
 		["Length"] = 184,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12396,7 +12398,7 @@ local playlist1 = {
     ["Id"] = 1514205,
 		["Length"] = 13,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12405,7 +12407,7 @@ local playlist1 = {
     ["Id"] = 1514206,
 		["Length"] = 53,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12414,7 +12416,7 @@ local playlist1 = {
     ["Id"] = 1500388,
 		["Length"] = 253,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12423,7 +12425,7 @@ local playlist1 = {
     ["Id"] = 1514310,
 		["Length"] = 81,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12432,7 +12434,7 @@ local playlist1 = {
     ["Id"] = 1506510,
 		["Length"] = 45,
 		["Artist"] = "Tracy W. Bush",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12441,7 +12443,7 @@ local playlist1 = {
     ["Id"] = 1506771,
 		["Length"] = 73,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12450,7 +12452,7 @@ local playlist1 = {
     ["Id"] = 1506794,
 		["Length"] = 70,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12459,7 +12461,7 @@ local playlist1 = {
     ["Id"] = 1477380,
 		["Length"] = 19,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12468,7 +12470,7 @@ local playlist1 = {
     ["Id"] = 1417233,
 		["Length"] = 94,
 		["Artist"] = "Neal Acree, Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12477,7 +12479,7 @@ local playlist1 = {
     ["Id"] = 1417234,
 		["Length"] = 91,
 		["Artist"] = "Neal Acree, Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12486,7 +12488,7 @@ local playlist1 = {
     ["Id"] = 1417235,
 		["Length"] = 93,
 		["Artist"] = "Neal Acree, Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12495,7 +12497,7 @@ local playlist1 = {
     ["Id"] = 1417236,
 		["Length"] = 97,
 		["Artist"] = "Neal Acree, Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12504,7 +12506,7 @@ local playlist1 = {
     ["Id"] = 1417237,
 		["Length"] = 94,
 		["Artist"] = "Neal Acree, Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12513,7 +12515,7 @@ local playlist1 = {
     ["Id"] = 1417238,
 		["Length"] = 96,
 		["Artist"] = "Neal Acree, Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12522,7 +12524,7 @@ local playlist1 = {
     ["Id"] = 1417239,
 		["Length"] = 97,
 		["Artist"] = "Neal Acree, Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12531,7 +12533,7 @@ local playlist1 = {
     ["Id"] = 1417251,
 		["Length"] = 134,
 		["Artist"] = "Neal Acree, Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12540,7 +12542,7 @@ local playlist1 = {
     ["Id"] = 1417252,
 		["Length"] = 126,
 		["Artist"] = "Neal Acree, Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12549,7 +12551,7 @@ local playlist1 = {
     ["Id"] = 1417253,
 		["Length"] = 131,
 		["Artist"] = "Neal Acree, Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12558,7 +12560,7 @@ local playlist1 = {
     ["Id"] = 1417254,
 		["Length"] = 137,
 		["Artist"] = "Neal Acree, Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12567,7 +12569,7 @@ local playlist1 = {
     ["Id"] = 1417255,
 		["Length"] = 110,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12576,7 +12578,7 @@ local playlist1 = {
     ["Id"] = 1417256,
 		["Length"] = 110,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12585,7 +12587,7 @@ local playlist1 = {
     ["Id"] = 1417257,
 		["Length"] = 110,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12594,7 +12596,7 @@ local playlist1 = {
     ["Id"] = 1417258,
 		["Length"] = 102,
 		["Artist"] = "Neal Acree, Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12603,7 +12605,7 @@ local playlist1 = {
     ["Id"] = 1417259,
 		["Length"] = 115,
 		["Artist"] = "Neal Acree, Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12612,7 +12614,7 @@ local playlist1 = {
     ["Id"] = 1417260,
 		["Length"] = 65,
 		["Artist"] = "Neal Acree, Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12621,7 +12623,7 @@ local playlist1 = {
     ["Id"] = 1417261,
 		["Length"] = 65,
 		["Artist"] = "Neal Acree, Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12630,7 +12632,7 @@ local playlist1 = {
     ["Id"] = 1417262,
 		["Length"] = 67,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12639,7 +12641,7 @@ local playlist1 = {
     ["Id"] = 1417263,
 		["Length"] = 49,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12648,7 +12650,7 @@ local playlist1 = {
     ["Id"] = 1417264,
 		["Length"] = 66,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12657,7 +12659,7 @@ local playlist1 = {
     ["Id"] = 1417265,
 		["Length"] = 67,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12666,7 +12668,7 @@ local playlist1 = {
     ["Id"] = 1417266,
 		["Length"] = 72,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12675,7 +12677,7 @@ local playlist1 = {
     ["Id"] = 1417267,
 		["Length"] = 77,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12684,7 +12686,7 @@ local playlist1 = {
     ["Id"] = 1417268,
 		["Length"] = 66,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12693,7 +12695,7 @@ local playlist1 = {
     ["Id"] = 1417269,
 		["Length"] = 73,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12702,7 +12704,7 @@ local playlist1 = {
     ["Id"] = 1417270,
 		["Length"] = 131,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12711,7 +12713,7 @@ local playlist1 = {
     ["Id"] = 1417271,
 		["Length"] = 94,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12720,7 +12722,7 @@ local playlist1 = {
     ["Id"] = 1417272,
 		["Length"] = 69,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12729,7 +12731,7 @@ local playlist1 = {
     ["Id"] = 1417273,
 		["Length"] = 131,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12738,7 +12740,7 @@ local playlist1 = {
     ["Id"] = 1417274,
 		["Length"] = 153,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12747,7 +12749,7 @@ local playlist1 = {
     ["Id"] = 1417275,
 		["Length"] = 128,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12756,7 +12758,7 @@ local playlist1 = {
     ["Id"] = 1417276,
 		["Length"] = 155,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12765,7 +12767,7 @@ local playlist1 = {
     ["Id"] = 1417277,
 		["Length"] = 110,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12774,7 +12776,7 @@ local playlist1 = {
     ["Id"] = 1417278,
 		["Length"] = 66,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12783,7 +12785,7 @@ local playlist1 = {
     ["Id"] = 1417279,
 		["Length"] = 78,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12792,7 +12794,7 @@ local playlist1 = {
     ["Id"] = 1417280,
 		["Length"] = 127,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12801,7 +12803,7 @@ local playlist1 = {
     ["Id"] = 1417281,
 		["Length"] = 55,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12810,7 +12812,7 @@ local playlist1 = {
     ["Id"] = 1417282,
 		["Length"] = 82,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12819,7 +12821,7 @@ local playlist1 = {
     ["Id"] = 1417283,
 		["Length"] = 77,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12828,7 +12830,7 @@ local playlist1 = {
     ["Id"] = 1417284,
 		["Length"] = 72,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12837,7 +12839,7 @@ local playlist1 = {
     ["Id"] = 1417285,
 		["Length"] = 122,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12846,7 +12848,7 @@ local playlist1 = {
     ["Id"] = 1417286,
 		["Length"] = 72,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12855,7 +12857,7 @@ local playlist1 = {
     ["Id"] = 1417287,
 		["Length"] = 72,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12864,7 +12866,7 @@ local playlist1 = {
     ["Id"] = 1417288,
 		["Length"] = 36,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12873,7 +12875,7 @@ local playlist1 = {
     ["Id"] = 1417289,
 		["Length"] = 64,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12882,7 +12884,7 @@ local playlist1 = {
     ["Id"] = 1417290,
 		["Length"] = 130,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12891,7 +12893,7 @@ local playlist1 = {
     ["Id"] = 1417300,
 		["Length"] = 69,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12900,7 +12902,7 @@ local playlist1 = {
     ["Id"] = 1417301,
 		["Length"] = 62,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12909,7 +12911,7 @@ local playlist1 = {
     ["Id"] = 1417302,
 		["Length"] = 137,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12918,7 +12920,7 @@ local playlist1 = {
     ["Id"] = 1417303,
 		["Length"] = 111,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12927,7 +12929,7 @@ local playlist1 = {
     ["Id"] = 1417304,
 		["Length"] = 128,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12936,7 +12938,7 @@ local playlist1 = {
     ["Id"] = 1417291,
 		["Length"] = 130,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12945,7 +12947,7 @@ local playlist1 = {
     ["Id"] = 1417292,
 		["Length"] = 118,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12954,7 +12956,7 @@ local playlist1 = {
     ["Id"] = 1417293,
 		["Length"] = 33,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12963,7 +12965,7 @@ local playlist1 = {
     ["Id"] = 1417294,
 		["Length"] = 34,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12972,7 +12974,7 @@ local playlist1 = {
     ["Id"] = 1417295,
 		["Length"] = 113,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12981,7 +12983,7 @@ local playlist1 = {
     ["Id"] = 1417296,
 		["Length"] = 100,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12990,7 +12992,7 @@ local playlist1 = {
     ["Id"] = 1417297,
 		["Length"] = 114,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -12999,7 +13001,7 @@ local playlist1 = {
     ["Id"] = 1417298,
 		["Length"] = 97,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13008,7 +13010,7 @@ local playlist1 = {
     ["Id"] = 1417299,
 		["Length"] = 92,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13017,7 +13019,7 @@ local playlist1 = {
     ["Id"] = 1417305,
 		["Length"] = 99,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13026,7 +13028,7 @@ local playlist1 = {
     ["Id"] = 1417306,
 		["Length"] = 100,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13035,7 +13037,7 @@ local playlist1 = {
     ["Id"] = 1417307,
 		["Length"] = 101,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13044,7 +13046,7 @@ local playlist1 = {
     ["Id"] = 1417308,
 		["Length"] = 101,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13053,7 +13055,7 @@ local playlist1 = {
     ["Id"] = 1417309,
 		["Length"] = 123,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13062,7 +13064,7 @@ local playlist1 = {
     ["Id"] = 1417310,
 		["Length"] = 102,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13071,7 +13073,7 @@ local playlist1 = {
     ["Id"] = 1417311,
 		["Length"] = 92,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13080,7 +13082,7 @@ local playlist1 = {
     ["Id"] = 1417312,
 		["Length"] = 124,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13089,7 +13091,7 @@ local playlist1 = {
     ["Id"] = 1477340,
 		["Length"] = 40,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13098,7 +13100,7 @@ local playlist1 = {
     ["Id"] = 1477341,
 		["Length"] = 82,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13107,7 +13109,7 @@ local playlist1 = {
     ["Id"] = 1477342,
 		["Length"] = 99,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13116,7 +13118,7 @@ local playlist1 = {
     ["Id"] = 1477343,
 		["Length"] = 96,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13125,7 +13127,7 @@ local playlist1 = {
     ["Id"] = 1477344,
 		["Length"] = 46,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13134,7 +13136,7 @@ local playlist1 = {
     ["Id"] = 1477345,
 		["Length"] = 47,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13143,7 +13145,7 @@ local playlist1 = {
     ["Id"] = 1417313,
 		["Length"] = 69,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13152,7 +13154,7 @@ local playlist1 = {
     ["Id"] = 1417314,
 		["Length"] = 101,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13161,7 +13163,7 @@ local playlist1 = {
     ["Id"] = 1417315,
 		["Length"] = 111,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13170,7 +13172,7 @@ local playlist1 = {
     ["Id"] = 1500420,
 		["Length"] = 110,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13179,7 +13181,7 @@ local playlist1 = {
     ["Id"] = 1500421,
 		["Length"] = 111,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13188,7 +13190,7 @@ local playlist1 = {
     ["Id"] = 1500422,
 		["Length"] = 110,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13197,7 +13199,7 @@ local playlist1 = {
     ["Id"] = 1514329,
 		["Length"] = 13,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13206,7 +13208,7 @@ local playlist1 = {
     ["Id"] = 1417316,
 		["Length"] = 83,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13215,7 +13217,7 @@ local playlist1 = {
     ["Id"] = 1417317,
 		["Length"] = 91,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13224,7 +13226,7 @@ local playlist1 = {
     ["Id"] = 1417318,
 		["Length"] = 91,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13233,7 +13235,7 @@ local playlist1 = {
     ["Id"] = 1417319,
 		["Length"] = 83,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13242,7 +13244,7 @@ local playlist1 = {
     ["Id"] = 1417320,
 		["Length"] = 84,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13251,7 +13253,7 @@ local playlist1 = {
     ["Id"] = 1417321,
 		["Length"] = 84,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13260,7 +13262,7 @@ local playlist1 = {
     ["Id"] = 1417322,
 		["Length"] = 66,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13269,7 +13271,7 @@ local playlist1 = {
     ["Id"] = 1417323,
 		["Length"] = 66,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13278,7 +13280,7 @@ local playlist1 = {
     ["Id"] = 1417324,
 		["Length"] = 65,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13287,7 +13289,7 @@ local playlist1 = {
     ["Id"] = 1417325,
 		["Length"] = 103,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13296,7 +13298,7 @@ local playlist1 = {
     ["Id"] = 1417326,
 		["Length"] = 104,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13305,7 +13307,7 @@ local playlist1 = {
     ["Id"] = 1417327,
 		["Length"] = 105,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13314,7 +13316,7 @@ local playlist1 = {
     ["Id"] = 1417328,
 		["Length"] = 62,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13323,7 +13325,7 @@ local playlist1 = {
     ["Id"] = 1417329,
 		["Length"] = 61,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13332,7 +13334,7 @@ local playlist1 = {
     ["Id"] = 1417330,
 		["Length"] = 62,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13341,7 +13343,7 @@ local playlist1 = {
     ["Id"] = 1500409,
 		["Length"] = 78,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13350,7 +13352,7 @@ local playlist1 = {
     ["Id"] = 1500410,
 		["Length"] = 80,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13359,7 +13361,7 @@ local playlist1 = {
     ["Id"] = 1500411,
 		["Length"] = 80,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13368,7 +13370,7 @@ local playlist1 = {
     ["Id"] = 1500412,
 		["Length"] = 42,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13377,7 +13379,7 @@ local playlist1 = {
     ["Id"] = 1500413,
 		["Length"] = 43,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13386,7 +13388,7 @@ local playlist1 = {
     ["Id"] = 1500414,
 		["Length"] = 43,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13395,7 +13397,7 @@ local playlist1 = {
     ["Id"] = 1500415,
 		["Length"] = 51,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13404,7 +13406,7 @@ local playlist1 = {
     ["Id"] = 1500416,
 		["Length"] = 51,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13413,7 +13415,7 @@ local playlist1 = {
     ["Id"] = 1500417,
 		["Length"] = 50,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13422,7 +13424,7 @@ local playlist1 = {
     ["Id"] = 1500418,
 		["Length"] = 37,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13431,7 +13433,7 @@ local playlist1 = {
     ["Id"] = 1500419,
 		["Length"] = 37,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13440,7 +13442,7 @@ local playlist1 = {
     ["Id"] = 1417331,
 		["Length"] = 60,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13449,7 +13451,7 @@ local playlist1 = {
     ["Id"] = 1417332,
 		["Length"] = 137,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13458,7 +13460,7 @@ local playlist1 = {
     ["Id"] = 1417333,
 		["Length"] = 137,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13467,7 +13469,7 @@ local playlist1 = {
     ["Id"] = 1417334,
 		["Length"] = 137,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13476,7 +13478,7 @@ local playlist1 = {
     ["Id"] = 1417335,
 		["Length"] = 74,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13485,7 +13487,7 @@ local playlist1 = {
     ["Id"] = 1417336,
 		["Length"] = 109,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13494,7 +13496,7 @@ local playlist1 = {
     ["Id"] = 1417337,
 		["Length"] = 130,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13503,7 +13505,7 @@ local playlist1 = {
     ["Id"] = 1417338,
 		["Length"] = 131,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13512,7 +13514,7 @@ local playlist1 = {
     ["Id"] = 1417339,
 		["Length"] = 131,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13521,7 +13523,7 @@ local playlist1 = {
     ["Id"] = 1417340,
 		["Length"] = 73,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13530,7 +13532,7 @@ local playlist1 = {
     ["Id"] = 1417341,
 		["Length"] = 102,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13539,7 +13541,7 @@ local playlist1 = {
     ["Id"] = 1417342,
 		["Length"] = 131,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13548,7 +13550,7 @@ local playlist1 = {
     ["Id"] = 1513077,
 		["Length"] = 11,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13557,7 +13559,7 @@ local playlist1 = {
     ["Id"] = 1496267,
 		["Length"] = 649,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13566,7 +13568,7 @@ local playlist1 = {
     ["Id"] = 1417343,
 		["Length"] = 126,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13575,7 +13577,7 @@ local playlist1 = {
     ["Id"] = 1417344,
 		["Length"] = 125,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13584,7 +13586,7 @@ local playlist1 = {
     ["Id"] = 1417345,
 		["Length"] = 120,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13593,7 +13595,7 @@ local playlist1 = {
     ["Id"] = 1417346,
 		["Length"] = 95,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13602,7 +13604,7 @@ local playlist1 = {
     ["Id"] = 1417347,
 		["Length"] = 97,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13611,7 +13613,7 @@ local playlist1 = {
     ["Id"] = 1417348,
 		["Length"] = 192,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13620,7 +13622,7 @@ local playlist1 = {
     ["Id"] = 1506772,
 		["Length"] = 78,
 		["Artist"] = "Sam Cardon, Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13629,7 +13631,7 @@ local playlist1 = {
     ["Id"] = 1506773,
 		["Length"] = 78,
 		["Artist"] = "Sam Cardon, Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13638,7 +13640,7 @@ local playlist1 = {
     ["Id"] = 1506774,
 		["Length"] = 78,
 		["Artist"] = "Sam Cardon, Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13647,7 +13649,7 @@ local playlist1 = {
     ["Id"] = 1506775,
 		["Length"] = 78,
 		["Artist"] = "Sam Cardon, Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13656,7 +13658,7 @@ local playlist1 = {
     ["Id"] = 1506776,
 		["Length"] = 78,
 		["Artist"] = "Sam Cardon, Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13665,7 +13667,7 @@ local playlist1 = {
     ["Id"] = 1506777,
 		["Length"] = 78,
 		["Artist"] = "Sam Cardon, Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13674,7 +13676,7 @@ local playlist1 = {
     ["Id"] = 1417349,
 		["Length"] = 84,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13683,7 +13685,7 @@ local playlist1 = {
     ["Id"] = 1514175,
 		["Length"] = 9,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13692,7 +13694,7 @@ local playlist1 = {
     ["Id"] = 1417350,
 		["Length"] = 87,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13701,7 +13703,7 @@ local playlist1 = {
     ["Id"] = 1417351,
 		["Length"] = 72,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13710,7 +13712,7 @@ local playlist1 = {
     ["Id"] = 1477325,
 		["Length"] = 11,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13719,7 +13721,7 @@ local playlist1 = {
     ["Id"] = 1477346,
 		["Length"] = 69,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13728,7 +13730,7 @@ local playlist1 = {
     ["Id"] = 1477347,
 		["Length"] = 69,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13737,7 +13739,7 @@ local playlist1 = {
     ["Id"] = 1477348,
 		["Length"] = 65,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13746,7 +13748,7 @@ local playlist1 = {
     ["Id"] = 1477349,
 		["Length"] = 92,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13755,7 +13757,7 @@ local playlist1 = {
     ["Id"] = 1417352,
 		["Length"] = 122,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13764,7 +13766,7 @@ local playlist1 = {
     ["Id"] = 1417353,
 		["Length"] = 115,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13773,7 +13775,7 @@ local playlist1 = {
     ["Id"] = 1417354,
 		["Length"] = 118,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13782,7 +13784,7 @@ local playlist1 = {
     ["Id"] = 1417355,
 		["Length"] = 84,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13791,7 +13793,7 @@ local playlist1 = {
     ["Id"] = 1417356,
 		["Length"] = 65,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13800,7 +13802,7 @@ local playlist1 = {
     ["Id"] = 1477350,
 		["Length"] = 9,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13809,7 +13811,7 @@ local playlist1 = {
     ["Id"] = 1477351,
 		["Length"] = 15,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13818,7 +13820,7 @@ local playlist1 = {
     ["Id"] = 1477352,
 		["Length"] = 23,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13827,7 +13829,7 @@ local playlist1 = {
     ["Id"] = 1477353,
 		["Length"] = 9,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13836,7 +13838,7 @@ local playlist1 = {
     ["Id"] = 1477354,
 		["Length"] = 12,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13845,7 +13847,7 @@ local playlist1 = {
     ["Id"] = 1417357,
 		["Length"] = 121,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13854,7 +13856,7 @@ local playlist1 = {
     ["Id"] = 1417358,
 		["Length"] = 119,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13863,7 +13865,7 @@ local playlist1 = {
     ["Id"] = 1417359,
 		["Length"] = 125,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13872,7 +13874,7 @@ local playlist1 = {
     ["Id"] = 1417360,
 		["Length"] = 157,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13881,7 +13883,7 @@ local playlist1 = {
     ["Id"] = 1508481,
 		["Length"] = 43,
 		["Artist"] = "Derek Duke, Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13890,7 +13892,7 @@ local playlist1 = {
     ["Id"] = 1477355,
 		["Length"] = 75,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13899,7 +13901,7 @@ local playlist1 = {
     ["Id"] = 1477356,
 		["Length"] = 62,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13908,7 +13910,7 @@ local playlist1 = {
     ["Id"] = 1477357,
 		["Length"] = 46,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13917,7 +13919,7 @@ local playlist1 = {
     ["Id"] = 1477358,
 		["Length"] = 126,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13926,7 +13928,7 @@ local playlist1 = {
     ["Id"] = 1477359,
 		["Length"] = 75,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13935,7 +13937,7 @@ local playlist1 = {
     ["Id"] = 1477360,
 		["Length"] = 127,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13944,7 +13946,7 @@ local playlist1 = {
     ["Id"] = 1417361,
 		["Length"] = 113,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13953,7 +13955,7 @@ local playlist1 = {
     ["Id"] = 1417362,
 		["Length"] = 128,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13962,7 +13964,7 @@ local playlist1 = {
     ["Id"] = 1417363,
 		["Length"] = 119,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13971,7 +13973,7 @@ local playlist1 = {
     ["Id"] = 1417364,
 		["Length"] = 127,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13980,7 +13982,7 @@ local playlist1 = {
     ["Id"] = 1417365,
 		["Length"] = 66,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13989,7 +13991,7 @@ local playlist1 = {
     ["Id"] = 1417366,
 		["Length"] = 127,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -13998,7 +14000,7 @@ local playlist1 = {
     ["Id"] = 1417367,
 		["Length"] = 126,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14007,7 +14009,7 @@ local playlist1 = {
     ["Id"] = 1477331,
 		["Length"] = 76,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14016,7 +14018,7 @@ local playlist1 = {
     ["Id"] = 1477330,
 		["Length"] = 109,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14025,7 +14027,7 @@ local playlist1 = {
     ["Id"] = 1477332,
 		["Length"] = 74,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14034,7 +14036,7 @@ local playlist1 = {
     ["Id"] = 1477333,
 		["Length"] = 79,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14043,7 +14045,7 @@ local playlist1 = {
     ["Id"] = 1477334,
 		["Length"] = 183,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14052,7 +14054,7 @@ local playlist1 = {
     ["Id"] = 1477335,
 		["Length"] = 102,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14061,7 +14063,7 @@ local playlist1 = {
     ["Id"] = 1477336,
 		["Length"] = 85,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14070,7 +14072,7 @@ local playlist1 = {
     ["Id"] = 1452937,
 		["Length"] = 90,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14079,7 +14081,7 @@ local playlist1 = {
     ["Id"] = 1452938,
 		["Length"] = 97,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14088,7 +14090,7 @@ local playlist1 = {
     ["Id"] = 1452939,
 		["Length"] = 56,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14097,7 +14099,7 @@ local playlist1 = {
     ["Id"] = 1506782,
 		["Length"] = 6,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14106,7 +14108,7 @@ local playlist1 = {
     ["Id"] = 1506783,
 		["Length"] = 6,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14115,7 +14117,7 @@ local playlist1 = {
     ["Id"] = 1506784,
 		["Length"] = 7,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14124,7 +14126,7 @@ local playlist1 = {
     ["Id"] = 1506785,
 		["Length"] = 7,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14133,7 +14135,7 @@ local playlist1 = {
     ["Id"] = 1506786,
 		["Length"] = 13,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14142,7 +14144,7 @@ local playlist1 = {
     ["Id"] = 1506787,
 		["Length"] = 9,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14151,7 +14153,7 @@ local playlist1 = {
     ["Id"] = 1506788,
 		["Length"] = 50,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14160,7 +14162,7 @@ local playlist1 = {
     ["Id"] = 1305140,
 		["Length"] = 149,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14169,7 +14171,7 @@ local playlist1 = {
     ["Id"] = 1506789,
 		["Length"] = 78,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14178,7 +14180,7 @@ local playlist1 = {
     ["Id"] = 1417368,
 		["Length"] = 55,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14187,7 +14189,7 @@ local playlist1 = {
     ["Id"] = 1417369,
 		["Length"] = 49,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14196,7 +14198,7 @@ local playlist1 = {
     ["Id"] = 1417370,
 		["Length"] = 102,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14205,7 +14207,7 @@ local playlist1 = {
     ["Id"] = 1417371,
 		["Length"] = 66,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14214,7 +14216,7 @@ local playlist1 = {
     ["Id"] = 1417372,
 		["Length"] = 96,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14223,7 +14225,7 @@ local playlist1 = {
     ["Id"] = 1417373,
 		["Length"] = 96,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14232,7 +14234,7 @@ local playlist1 = {
     ["Id"] = 1417374,
 		["Length"] = 82,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14241,7 +14243,7 @@ local playlist1 = {
     ["Id"] = 1417375,
 		["Length"] = 91,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14250,7 +14252,7 @@ local playlist1 = {
     ["Id"] = 1417376,
 		["Length"] = 29,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14259,7 +14261,7 @@ local playlist1 = {
     ["Id"] = 1417377,
 		["Length"] = 91,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14268,7 +14270,7 @@ local playlist1 = {
     ["Id"] = 1505160,
 		["Length"] = 75,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14277,7 +14279,7 @@ local playlist1 = {
     ["Id"] = 1500403,
 		["Length"] = 75,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14286,7 +14288,7 @@ local playlist1 = {
     ["Id"] = 1514193,
 		["Length"] = 9,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14295,7 +14297,7 @@ local playlist1 = {
     ["Id"] = 1417378,
 		["Length"] = 120,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14304,7 +14306,7 @@ local playlist1 = {
     ["Id"] = 1417379,
 		["Length"] = 113,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14313,7 +14315,7 @@ local playlist1 = {
     ["Id"] = 1417380,
 		["Length"] = 124,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14322,7 +14324,7 @@ local playlist1 = {
     ["Id"] = 1500404,
 		["Length"] = 102,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14331,7 +14333,7 @@ local playlist1 = {
     ["Id"] = 1500405,
 		["Length"] = 118,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14340,7 +14342,7 @@ local playlist1 = {
     ["Id"] = 1504882,
 		["Length"] = 88,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14349,7 +14351,7 @@ local playlist1 = {
     ["Id"] = 1504883,
 		["Length"] = 76,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14358,7 +14360,7 @@ local playlist1 = {
     ["Id"] = 1504884,
 		["Length"] = 123,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14367,7 +14369,7 @@ local playlist1 = {
     ["Id"] = 1504885,
 		["Length"] = 156,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14376,7 +14378,7 @@ local playlist1 = {
     ["Id"] = 1504886,
 		["Length"] = 42,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14385,7 +14387,7 @@ local playlist1 = {
     ["Id"] = 1504887,
 		["Length"] = 54,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14394,7 +14396,7 @@ local playlist1 = {
     ["Id"] = 1504888,
 		["Length"] = 64,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14403,7 +14405,7 @@ local playlist1 = {
     ["Id"] = 1504889,
 		["Length"] = 65,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14412,7 +14414,7 @@ local playlist1 = {
     ["Id"] = 1477337,
 		["Length"] = 197,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14421,7 +14423,7 @@ local playlist1 = {
     ["Id"] = 1477338,
 		["Length"] = 69,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14430,7 +14432,7 @@ local playlist1 = {
     ["Id"] = 1504890,
 		["Length"] = 59,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14439,7 +14441,7 @@ local playlist1 = {
     ["Id"] = 1477339,
 		["Length"] = 70,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14448,7 +14450,7 @@ local playlist1 = {
     ["Id"] = 1504891,
 		["Length"] = 63,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14457,7 +14459,7 @@ local playlist1 = {
     ["Id"] = 1504892,
 		["Length"] = 95,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14466,7 +14468,7 @@ local playlist1 = {
     ["Id"] = 1500406,
 		["Length"] = 100,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14475,7 +14477,7 @@ local playlist1 = {
     ["Id"] = 1505161,
 		["Length"] = 145,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14484,7 +14486,7 @@ local playlist1 = {
     ["Id"] = 1505162,
 		["Length"] = 40,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14493,7 +14495,7 @@ local playlist1 = {
     ["Id"] = 1513526,
 		["Length"] = 17,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14502,7 +14504,7 @@ local playlist1 = {
     ["Id"] = 1505163,
 		["Length"] = 77,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14511,7 +14513,7 @@ local playlist1 = {
     ["Id"] = 1505164,
 		["Length"] = 76,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14520,7 +14522,7 @@ local playlist1 = {
     ["Id"] = 1505165,
 		["Length"] = 16,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14529,7 +14531,7 @@ local playlist1 = {
     ["Id"] = 1505166,
 		["Length"] = 16,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14538,7 +14540,7 @@ local playlist1 = {
     ["Id"] = 1505167,
 		["Length"] = 24,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14547,7 +14549,7 @@ local playlist1 = {
     ["Id"] = 1500407,
 		["Length"] = 75,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14556,7 +14558,7 @@ local playlist1 = {
     ["Id"] = 1500408,
 		["Length"] = 78,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -14565,7 +14567,7 @@ local playlist1 = {
     ["Id"] = 1272557,
 		["Length"] = 349,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14574,7 +14576,7 @@ local playlist1 = {
     ["Id"] = 1514176,
 		["Length"] = 9,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14583,7 +14585,7 @@ local playlist1 = {
     ["Id"] = 1506790,
 		["Length"] = 89,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14592,7 +14594,7 @@ local playlist1 = {
     ["Id"] = 1506791,
 		["Length"] = 60,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7",
@@ -14601,7 +14603,7 @@ local playlist1 = {
     ["Id"] = 1305139,
 		["Length"] = 105,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -14610,7 +14612,7 @@ local playlist1 = {
     ["Id"] = 1272558,
 		["Length"] = 110,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -14619,7 +14621,7 @@ local playlist1 = {
     ["Id"] = 1272559,
 		["Length"] = 110,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -14628,7 +14630,7 @@ local playlist1 = {
     ["Id"] = 1272560,
 		["Length"] = 110,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -14637,7 +14639,7 @@ local playlist1 = {
     ["Id"] = 1272561,
 		["Length"] = 110,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -14646,7 +14648,7 @@ local playlist1 = {
     ["Id"] = 1272562,
 		["Length"] = 96,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 6.2",
@@ -14655,7 +14657,7 @@ local playlist1 = {
     ["Id"] = 1272563,
 		["Length"] = 89,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7.1",
@@ -14664,7 +14666,7 @@ local playlist1 = {
     ["Id"] = 1542723,
 		["Length"] = 88,
 		["Artist"] = "Neal Acree, Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7.1",
@@ -14673,7 +14675,7 @@ local playlist1 = {
     ["Id"] = 1530323,
 		["Length"] = 160,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7.1",
@@ -14682,7 +14684,7 @@ local playlist1 = {
     ["Id"] = 1530324,
 		["Length"] = 203,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7.1",
@@ -14691,7 +14693,7 @@ local playlist1 = {
     ["Id"] = 1530325,
 		["Length"] = 206,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7.1",
@@ -14700,7 +14702,7 @@ local playlist1 = {
     ["Id"] = 1530326,
 		["Length"] = 207,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7.1",
@@ -14709,7 +14711,7 @@ local playlist1 = {
     ["Id"] = 1538700,
 		["Length"] = 58,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7.1",
@@ -14718,7 +14720,7 @@ local playlist1 = {
     ["Id"] = 1538701,
 		["Length"] = 94,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7.1",
@@ -14727,7 +14729,7 @@ local playlist1 = {
     ["Id"] = 1538702,
 		["Length"] = 61,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7.1",
@@ -14736,7 +14738,7 @@ local playlist1 = {
     ["Id"] = 1538703,
 		["Length"] = 100,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7.1",
@@ -14745,7 +14747,7 @@ local playlist1 = {
     ["Id"] = 1538704,
 		["Length"] = 126,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7.1",
@@ -14754,7 +14756,7 @@ local playlist1 = {
     ["Id"] = 1538705,
 		["Length"] = 105,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7.1",
@@ -14763,7 +14765,7 @@ local playlist1 = {
     ["Id"] = 1538706,
 		["Length"] = 37,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7.1",
@@ -14772,7 +14774,7 @@ local playlist1 = {
     ["Id"] = 1538707,
 		["Length"] = 69,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7.1",
@@ -14781,7 +14783,7 @@ local playlist1 = {
     ["Id"] = 1538708,
 		["Length"] = 73,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7.1",
@@ -14790,7 +14792,7 @@ local playlist1 = {
     ["Id"] = 1530327,
 		["Length"] = 112,
 		["Artist"] = "Shelly and Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7.1",
@@ -14799,7 +14801,7 @@ local playlist1 = {
     ["Id"] = 1530328,
 		["Length"] = 111,
 		["Artist"] = "Shelly and Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7.1",
@@ -14808,7 +14810,7 @@ local playlist1 = {
     ["Id"] = 1530329,
 		["Length"] = 112,
 		["Artist"] = "Shelly and Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7.1",
@@ -14817,7 +14819,7 @@ local playlist1 = {
     ["Id"] = 1530330,
 		["Length"] = 97,
 		["Artist"] = "Shelly and Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7.1",
@@ -14826,7 +14828,7 @@ local playlist1 = {
     ["Id"] = 1530331,
 		["Length"] = 39,
 		["Artist"] = "Shelly and Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7.1",
@@ -14835,7 +14837,7 @@ local playlist1 = {
     ["Id"] = 1530332,
 		["Length"] = 44,
 		["Artist"] = "Shelly and Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7.1",
@@ -14844,7 +14846,7 @@ local playlist1 = {
     ["Id"] = 1530333,
 		["Length"] = 63,
 		["Artist"] = "Shelly and Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWx7.1",
@@ -14853,7 +14855,7 @@ local playlist1 = {
     ["Id"] = 1530334,
 		["Length"] = 112,
 		["Artist"] = "Shelly and Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -14862,7 +14864,7 @@ local playlist1 = {
     ["Id"] = 1612884,
 		["Length"] = 75,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -14871,7 +14873,7 @@ local playlist1 = {
     ["Id"] = 1612885,
 		["Length"] = 58,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -14880,7 +14882,7 @@ local playlist1 = {
     ["Id"] = 1612886,
 		["Length"] = 55,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -14889,7 +14891,7 @@ local playlist1 = {
     ["Id"] = 1612887,
 		["Length"] = 71,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -14898,7 +14900,7 @@ local playlist1 = {
     ["Id"] = 1612888,
 		["Length"] = 123,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -14907,7 +14909,7 @@ local playlist1 = {
     ["Id"] = 1612889,
 		["Length"] = 77,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -14916,7 +14918,7 @@ local playlist1 = {
     ["Id"] = 1612890,
 		["Length"] = 67,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -14925,7 +14927,7 @@ local playlist1 = {
     ["Id"] = 1612891,
 		["Length"] = 70,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -14934,7 +14936,7 @@ local playlist1 = {
     ["Id"] = 1612892,
 		["Length"] = 111,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -14943,7 +14945,7 @@ local playlist1 = {
     ["Id"] = 1612893,
 		["Length"] = 61,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -14952,7 +14954,7 @@ local playlist1 = {
     ["Id"] = 1612894,
 		["Length"] = 44,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -14961,7 +14963,7 @@ local playlist1 = {
     ["Id"] = 1612895,
 		["Length"] = 57,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -14970,7 +14972,7 @@ local playlist1 = {
     ["Id"] = 1612896,
 		["Length"] = 85,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -14979,7 +14981,7 @@ local playlist1 = {
     ["Id"] = 1612897,
 		["Length"] = 94,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -14988,7 +14990,7 @@ local playlist1 = {
     ["Id"] = 1616357,
 		["Length"] = 31,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -14997,7 +14999,7 @@ local playlist1 = {
     ["Id"] = 1616354,
 		["Length"] = 32,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15006,7 +15008,7 @@ local playlist1 = {
     ["Id"] = 1616355,
 		["Length"] = 29,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15015,7 +15017,7 @@ local playlist1 = {
     ["Id"] = 1616356,
 		["Length"] = 28,
 		["Artist"] = "Sam Cardon, Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15024,7 +15026,7 @@ local playlist1 = {
     ["Id"] = 1612898,
 		["Length"] = 180,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15033,7 +15035,7 @@ local playlist1 = {
     ["Id"] = 1612899,
 		["Length"] = 71,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15042,7 +15044,7 @@ local playlist1 = {
     ["Id"] = 1612900,
 		["Length"] = 63,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15051,7 +15053,7 @@ local playlist1 = {
     ["Id"] = 1612901,
 		["Length"] = 71,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15060,7 +15062,7 @@ local playlist1 = {
     ["Id"] = 1612902,
 		["Length"] = 71,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15069,7 +15071,7 @@ local playlist1 = {
     ["Id"] = 1612903,
 		["Length"] = 71,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15078,7 +15080,7 @@ local playlist1 = {
     ["Id"] = 1612904,
 		["Length"] = 53,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15087,7 +15089,7 @@ local playlist1 = {
     ["Id"] = 1612905,
 		["Length"] = 37,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15096,7 +15098,7 @@ local playlist1 = {
     ["Id"] = 1612906,
 		["Length"] = 58,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15105,7 +15107,7 @@ local playlist1 = {
     ["Id"] = 1612907,
 		["Length"] = 61,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15114,7 +15116,7 @@ local playlist1 = {
     ["Id"] = 1612908,
 		["Length"] = 50,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15123,7 +15125,7 @@ local playlist1 = {
     ["Id"] = 1612909,
 		["Length"] = 124,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15132,7 +15134,7 @@ local playlist1 = {
     ["Id"] = 1612910,
 		["Length"] = 79,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15141,7 +15143,7 @@ local playlist1 = {
     ["Id"] = 1612911,
 		["Length"] = 121,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15150,7 +15152,7 @@ local playlist1 = {
     ["Id"] = 1612912,
 		["Length"] = 58,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15159,7 +15161,7 @@ local playlist1 = {
     ["Id"] = 1612913,
 		["Length"] = 26,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15168,7 +15170,7 @@ local playlist1 = {
     ["Id"] = 1612914,
 		["Length"] = 72,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15177,7 +15179,7 @@ local playlist1 = {
     ["Id"] = 1612915,
 		["Length"] = 77,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15186,7 +15188,7 @@ local playlist1 = {
     ["Id"] = 1612916,
 		["Length"] = 124,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15195,7 +15197,7 @@ local playlist1 = {
     ["Id"] = 1612917,
 		["Length"] = 119,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15204,7 +15206,7 @@ local playlist1 = {
     ["Id"] = 1612922,
 		["Length"] = 55,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15213,7 +15215,7 @@ local playlist1 = {
     ["Id"] = 1612923,
 		["Length"] = 58,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15222,7 +15224,7 @@ local playlist1 = {
     ["Id"] = 1612924,
 		["Length"] = 54,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15231,7 +15233,7 @@ local playlist1 = {
     ["Id"] = 1612925,
 		["Length"] = 42,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15240,7 +15242,7 @@ local playlist1 = {
     ["Id"] = 1612926,
 		["Length"] = 67,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15249,7 +15251,7 @@ local playlist1 = {
     ["Id"] = 1612927,
 		["Length"] = 61,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15258,7 +15260,7 @@ local playlist1 = {
     ["Id"] = 1612928,
 		["Length"] = 154,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15267,7 +15269,7 @@ local playlist1 = {
     ["Id"] = 1612918,
 		["Length"] = 59,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15276,7 +15278,7 @@ local playlist1 = {
     ["Id"] = 1612919,
 		["Length"] = 70,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15285,7 +15287,7 @@ local playlist1 = {
     ["Id"] = 1612920,
 		["Length"] = 28,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 7.2",
@@ -15294,7 +15296,7 @@ local playlist1 = {
     ["Id"] = 1612921,
 		["Length"] = 53,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15303,7 +15305,7 @@ local playlist1 = {
     ["Id"] = 1721025,
 		["Length"] = 124,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15312,7 +15314,7 @@ local playlist1 = {
     ["Id"] = 1720467,
 		["Length"] = 87,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15321,7 +15323,7 @@ local playlist1 = {
     ["Id"] = 1720468,
 		["Length"] = 89,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15330,7 +15332,7 @@ local playlist1 = {
     ["Id"] = 1720469,
 		["Length"] = 91,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15339,7 +15341,7 @@ local playlist1 = {
     ["Id"] = 1720470,
 		["Length"] = 87,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15348,7 +15350,7 @@ local playlist1 = {
     ["Id"] = 1721026,
 		["Length"] = 124,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15357,7 +15359,7 @@ local playlist1 = {
     ["Id"] = 1720471,
 		["Length"] = 133,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15366,7 +15368,7 @@ local playlist1 = {
     ["Id"] = 1720472,
 		["Length"] = 102,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15375,7 +15377,7 @@ local playlist1 = {
     ["Id"] = 1720473,
 		["Length"] = 102,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15384,7 +15386,7 @@ local playlist1 = {
     ["Id"] = 1720474,
 		["Length"] = 102,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15393,7 +15395,7 @@ local playlist1 = {
     ["Id"] = 1720475,
 		["Length"] = 102,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15402,7 +15404,7 @@ local playlist1 = {
     ["Id"] = 1720476,
 		["Length"] = 85,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15411,7 +15413,7 @@ local playlist1 = {
     ["Id"] = 1720477,
 		["Length"] = 85,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15420,7 +15422,7 @@ local playlist1 = {
     ["Id"] = 1720478,
 		["Length"] = 85,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15429,7 +15431,7 @@ local playlist1 = {
     ["Id"] = 1720479,
 		["Length"] = 85,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15438,7 +15440,7 @@ local playlist1 = {
     ["Id"] = 1720480,
 		["Length"] = 67,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15447,7 +15449,7 @@ local playlist1 = {
     ["Id"] = 1720481,
 		["Length"] = 67,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15456,7 +15458,7 @@ local playlist1 = {
     ["Id"] = 1720482,
 		["Length"] = 67,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15465,7 +15467,7 @@ local playlist1 = {
     ["Id"] = 1720483,
 		["Length"] = 67,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15474,7 +15476,7 @@ local playlist1 = {
     ["Id"] = 1720484,
 		["Length"] = 102,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15483,7 +15485,7 @@ local playlist1 = {
     ["Id"] = 1720485,
 		["Length"] = 102,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15492,7 +15494,7 @@ local playlist1 = {
     ["Id"] = 1720486,
 		["Length"] = 102,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15501,7 +15503,7 @@ local playlist1 = {
     ["Id"] = 1720487,
 		["Length"] = 69,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15510,7 +15512,7 @@ local playlist1 = {
     ["Id"] = 1720488,
 		["Length"] = 69,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15519,7 +15521,7 @@ local playlist1 = {
     ["Id"] = 1720489,
 		["Length"] = 68,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15528,7 +15530,7 @@ local playlist1 = {
     ["Id"] = 1720490,
 		["Length"] = 69,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15537,7 +15539,7 @@ local playlist1 = {
     ["Id"] = 1720491,
 		["Length"] = 121,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15546,7 +15548,7 @@ local playlist1 = {
     ["Id"] = 1720492,
 		["Length"] = 122,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15555,7 +15557,7 @@ local playlist1 = {
     ["Id"] = 1720493,
 		["Length"] = 121,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15564,7 +15566,7 @@ local playlist1 = {
     ["Id"] = 1720494,
 		["Length"] = 173,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15573,7 +15575,7 @@ local playlist1 = {
     ["Id"] = 1720495,
 		["Length"] = 122,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15582,7 +15584,7 @@ local playlist1 = {
     ["Id"] = 1720496,
 		["Length"] = 86,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15591,7 +15593,7 @@ local playlist1 = {
     ["Id"] = 1720497,
 		["Length"] = 86,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15600,7 +15602,7 @@ local playlist1 = {
     ["Id"] = 1720498,
 		["Length"] = 85,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15609,7 +15611,7 @@ local playlist1 = {
     ["Id"] = 1720499,
 		["Length"] = 86,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15618,7 +15620,7 @@ local playlist1 = {
     ["Id"] = 1720500,
 		["Length"] = 83,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15627,7 +15629,7 @@ local playlist1 = {
     ["Id"] = 1720501,
 		["Length"] = 83,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15636,7 +15638,7 @@ local playlist1 = {
     ["Id"] = 1720502,
 		["Length"] = 82,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15645,7 +15647,7 @@ local playlist1 = {
     ["Id"] = 1720503,
 		["Length"] = 84,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15654,7 +15656,7 @@ local playlist1 = {
     ["Id"] = 1720504,
 		["Length"] = 84,
 		["Artist"] = "Clint Bajakian",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15663,7 +15665,7 @@ local playlist1 = {
     ["Id"] = 1720509,
 		["Length"] = 87,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15672,7 +15674,7 @@ local playlist1 = {
     ["Id"] = 1720510,
 		["Length"] = 91,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3.2",
@@ -15681,7 +15683,7 @@ local playlist1 = {
     ["Id"] = 1780797,
 		["Length"] = 67,
 		["Artist"] = "Glenn Stafford, Adam Burgess",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3.2",
@@ -15690,7 +15692,7 @@ local playlist1 = {
     ["Id"] = 1780798,
 		["Length"] = 72,
 		["Artist"] = "Glenn Stafford, Adam Burgess",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3.2",
@@ -15699,7 +15701,7 @@ local playlist1 = {
     ["Id"] = 1780799,
 		["Length"] = 80,
 		["Artist"] = "Glenn Stafford, Adam Burgess",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15708,7 +15710,7 @@ local playlist1 = {
     ["Id"] = 1720522,
 		["Length"] = 108,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW7.3",
@@ -15717,7 +15719,7 @@ local playlist1 = {
     ["Id"] = 1720523,
 		["Length"] = 108,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -15726,7 +15728,7 @@ local playlist1 = {
     ["Id"] = 53233,
 		["Length"] = 100,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -15735,7 +15737,7 @@ local playlist1 = {
     ["Id"] = 229735,
 		["Length"] = 79,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -15744,7 +15746,7 @@ local playlist1 = {
     ["Id"] = 53254,
 		["Length"] = 84,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -15753,7 +15755,7 @@ local playlist1 = {
     ["Id"] = 53224,
 		["Length"] = 47,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -15762,7 +15764,7 @@ local playlist1 = {
     ["Id"] = 53225,
 		["Length"] = 48,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -15771,7 +15773,7 @@ local playlist1 = {
     ["Id"] = 53226,
 		["Length"] = 62,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -15780,7 +15782,7 @@ local playlist1 = {
     ["Id"] = 53227,
 		["Length"] = 27,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -15789,7 +15791,7 @@ local playlist1 = {
     ["Id"] = 53228,
 		["Length"] = 36,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -15798,7 +15800,7 @@ local playlist1 = {
     ["Id"] = 53229,
 		["Length"] = 44,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -15807,7 +15809,7 @@ local playlist1 = {
     ["Id"] = 53230,
 		["Length"] = 62,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -15816,7 +15818,7 @@ local playlist1 = {
     ["Id"] = 53231,
 		["Length"] = 36,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -15825,7 +15827,7 @@ local playlist1 = {
     ["Id"] = 53232,
 		["Length"] = 39,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -15834,7 +15836,7 @@ local playlist1 = {
     ["Id"] = 53234,
 		["Length"] = 62,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -15843,7 +15845,7 @@ local playlist1 = {
     ["Id"] = 53235,
 		["Length"] = 60,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -15852,7 +15854,7 @@ local playlist1 = {
     ["Id"] = 53236,
 		["Length"] = 63,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -15861,7 +15863,7 @@ local playlist1 = {
     ["Id"] = 53237,
 		["Length"] = 33,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -15870,7 +15872,7 @@ local playlist1 = {
     ["Id"] = 53238,
 		["Length"] = 39,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 1.9",
@@ -15879,7 +15881,7 @@ local playlist1 = {
     ["Id"] = 53239,
 		["Length"] = 143,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -15888,7 +15890,7 @@ local playlist1 = {
     ["Id"] = 53240,
 		["Length"] = 60,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -15897,7 +15899,7 @@ local playlist1 = {
     ["Id"] = 53241,
 		["Length"] = 53,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -15906,7 +15908,7 @@ local playlist1 = {
     ["Id"] = 53242,
 		["Length"] = 60,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -15915,7 +15917,7 @@ local playlist1 = {
     ["Id"] = 53243,
 		["Length"] = 64,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World Of Warcraft",
@@ -15924,7 +15926,7 @@ local playlist1 = {
     ["Id"] = 53244,
 		["Length"] = 81,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World Of Warcraft",
@@ -15933,7 +15935,7 @@ local playlist1 = {
     ["Id"] = 53245,
 		["Length"] = 65,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World Of Warcraft",
@@ -15942,7 +15944,7 @@ local playlist1 = {
     ["Id"] = 53246,
 		["Length"] = 83,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World Of Warcraft",
@@ -15951,7 +15953,7 @@ local playlist1 = {
     ["Id"] = 53247,
 		["Length"] = 83,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World Of Warcraft",
@@ -15960,7 +15962,7 @@ local playlist1 = {
     ["Id"] = 53248,
 		["Length"] = 82,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World Of Warcraft",
@@ -15969,7 +15971,7 @@ local playlist1 = {
     ["Id"] = 53249,
 		["Length"] = 62,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -15978,7 +15980,7 @@ local playlist1 = {
     ["Id"] = 53250,
 		["Length"] = 16,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -15987,7 +15989,7 @@ local playlist1 = {
     ["Id"] = 53251,
 		["Length"] = 19,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -15996,7 +15998,7 @@ local playlist1 = {
     ["Id"] = 53252,
 		["Length"] = 25,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -16005,7 +16007,7 @@ local playlist1 = {
     ["Id"] = 53253,
 		["Length"] = 34,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -16014,7 +16016,7 @@ local playlist1 = {
     ["Id"] = 840715,
 		["Length"] = 42,
 		["Artist"] = "Blizzard Entertainment",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -16023,7 +16025,7 @@ local playlist1 = {
     ["Id"] = 840716,
 		["Length"] = 27,
 		["Artist"] = "Blizzard Entertainment",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16032,7 +16034,7 @@ local playlist1 = {
     ["Id"] = 642565,
 		["Length"] = 61,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16041,7 +16043,7 @@ local playlist1 = {
     ["Id"] = 642566,
 		["Length"] = 65,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16050,7 +16052,7 @@ local playlist1 = {
     ["Id"] = 642567,
 		["Length"] = 59,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16059,7 +16061,7 @@ local playlist1 = {
     ["Id"] = 642568,
 		["Length"] = 91,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16068,7 +16070,7 @@ local playlist1 = {
     ["Id"] = 642569,
 		["Length"] = 150,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16077,7 +16079,7 @@ local playlist1 = {
     ["Id"] = 642570,
 		["Length"] = 129,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16086,7 +16088,7 @@ local playlist1 = {
     ["Id"] = 642176,
 		["Length"] = 168,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16095,7 +16097,7 @@ local playlist1 = {
     ["Id"] = 642177,
 		["Length"] = 46,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16104,7 +16106,7 @@ local playlist1 = {
     ["Id"] = 642178,
 		["Length"] = 52,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16113,7 +16115,7 @@ local playlist1 = {
     ["Id"] = 642179,
 		["Length"] = 68,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16122,7 +16124,7 @@ local playlist1 = {
     ["Id"] = 642180,
 		["Length"] = 97,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16131,7 +16133,7 @@ local playlist1 = {
     ["Id"] = 629408,
 		["Length"] = 88,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16140,7 +16142,7 @@ local playlist1 = {
     ["Id"] = 642859,
 		["Length"] = 61,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16149,7 +16151,7 @@ local playlist1 = {
     ["Id"] = 642181,
 		["Length"] = 102,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16158,7 +16160,7 @@ local playlist1 = {
     ["Id"] = 629409,
 		["Length"] = 67,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16167,7 +16169,7 @@ local playlist1 = {
     ["Id"] = 642182,
 		["Length"] = 61,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16176,7 +16178,7 @@ local playlist1 = {
     ["Id"] = 642860,
 		["Length"] = 87,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16185,7 +16187,7 @@ local playlist1 = {
     ["Id"] = 642131,
 		["Length"] = 88,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16194,7 +16196,7 @@ local playlist1 = {
     ["Id"] = 642861,
 		["Length"] = 88,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16203,7 +16205,7 @@ local playlist1 = {
     ["Id"] = 642132,
 		["Length"] = 60,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16212,7 +16214,7 @@ local playlist1 = {
     ["Id"] = 642183,
 		["Length"] = 84,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16221,7 +16223,7 @@ local playlist1 = {
     ["Id"] = 642184,
 		["Length"] = 72,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16230,7 +16232,7 @@ local playlist1 = {
     ["Id"] = 642185,
 		["Length"] = 57,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16239,7 +16241,7 @@ local playlist1 = {
     ["Id"] = 642186,
 		["Length"] = 60,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16248,7 +16250,7 @@ local playlist1 = {
     ["Id"] = 642187,
 		["Length"] = 53,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16257,7 +16259,7 @@ local playlist1 = {
     ["Id"] = 642188,
 		["Length"] = 69,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16266,7 +16268,7 @@ local playlist1 = {
     ["Id"] = 642862,
 		["Length"] = 97,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16275,7 +16277,7 @@ local playlist1 = {
     ["Id"] = 642133,
 		["Length"] = 81,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16284,7 +16286,7 @@ local playlist1 = {
     ["Id"] = 642189,
 		["Length"] = 52,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16293,7 +16295,7 @@ local playlist1 = {
     ["Id"] = 625753,
 		["Length"] = 479,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16302,7 +16304,7 @@ local playlist1 = {
     ["Id"] = 642190,
 		["Length"] = 57,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16311,7 +16313,7 @@ local playlist1 = {
     ["Id"] = 642191,
 		["Length"] = 34,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16320,7 +16322,7 @@ local playlist1 = {
     ["Id"] = 642192,
 		["Length"] = 42,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16329,7 +16331,7 @@ local playlist1 = {
     ["Id"] = 642193,
 		["Length"] = 50,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16338,7 +16340,7 @@ local playlist1 = {
     ["Id"] = 642194,
 		["Length"] = 78,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16347,7 +16349,7 @@ local playlist1 = {
     ["Id"] = 642195,
 		["Length"] = 105,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16356,7 +16358,7 @@ local playlist1 = {
     ["Id"] = 642196,
 		["Length"] = 32,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16365,7 +16367,7 @@ local playlist1 = {
     ["Id"] = 642197,
 		["Length"] = 30,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16374,7 +16376,7 @@ local playlist1 = {
     ["Id"] = 642198,
 		["Length"] = 40,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16383,7 +16385,7 @@ local playlist1 = {
     ["Id"] = 642199,
 		["Length"] = 57,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16392,7 +16394,7 @@ local playlist1 = {
     ["Id"] = 642200,
 		["Length"] = 68,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16401,7 +16403,7 @@ local playlist1 = {
     ["Id"] = 642201,
 		["Length"] = 55,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16410,7 +16412,7 @@ local playlist1 = {
     ["Id"] = 642202,
 		["Length"] = 31,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16419,7 +16421,7 @@ local playlist1 = {
     ["Id"] = 629410,
 		["Length"] = 108,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16428,7 +16430,7 @@ local playlist1 = {
     ["Id"] = 642203,
 		["Length"] = 49,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16437,7 +16439,7 @@ local playlist1 = {
     ["Id"] = 642204,
 		["Length"] = 49,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16446,7 +16448,7 @@ local playlist1 = {
     ["Id"] = 642205,
 		["Length"] = 49,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16455,7 +16457,7 @@ local playlist1 = {
     ["Id"] = 629411,
 		["Length"] = 49,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16464,7 +16466,7 @@ local playlist1 = {
     ["Id"] = 644915,
 		["Length"] = 75,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16473,7 +16475,7 @@ local playlist1 = {
     ["Id"] = 642206,
 		["Length"] = 57,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16482,7 +16484,7 @@ local playlist1 = {
     ["Id"] = 642207,
 		["Length"] = 62,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16491,7 +16493,7 @@ local playlist1 = {
     ["Id"] = 642208,
 		["Length"] = 62,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16500,7 +16502,7 @@ local playlist1 = {
     ["Id"] = 642209,
 		["Length"] = 91,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16509,7 +16511,7 @@ local playlist1 = {
     ["Id"] = 642863,
 		["Length"] = 104,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16518,7 +16520,7 @@ local playlist1 = {
     ["Id"] = 642864,
 		["Length"] = 96,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16527,7 +16529,7 @@ local playlist1 = {
     ["Id"] = 642210,
 		["Length"] = 95,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16536,7 +16538,7 @@ local playlist1 = {
     ["Id"] = 642865,
 		["Length"] = 100,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16545,7 +16547,7 @@ local playlist1 = {
     ["Id"] = 642211,
 		["Length"] = 80,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16554,7 +16556,7 @@ local playlist1 = {
     ["Id"] = 642212,
 		["Length"] = 85,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16563,7 +16565,7 @@ local playlist1 = {
     ["Id"] = 642866,
 		["Length"] = 45,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16572,7 +16574,7 @@ local playlist1 = {
     ["Id"] = 642213,
 		["Length"] = 76,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16581,7 +16583,7 @@ local playlist1 = {
     ["Id"] = 642214,
 		["Length"] = 66,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16590,7 +16592,7 @@ local playlist1 = {
     ["Id"] = 642867,
 		["Length"] = 52,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16599,7 +16601,7 @@ local playlist1 = {
     ["Id"] = 642215,
 		["Length"] = 80,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16608,7 +16610,7 @@ local playlist1 = {
     ["Id"] = 642216,
 		["Length"] = 83,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16617,7 +16619,7 @@ local playlist1 = {
     ["Id"] = 642217,
 		["Length"] = 90,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16626,7 +16628,7 @@ local playlist1 = {
     ["Id"] = 642218,
 		["Length"] = 75,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16635,7 +16637,7 @@ local playlist1 = {
     ["Id"] = 642219,
 		["Length"] = 81,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16644,7 +16646,7 @@ local playlist1 = {
     ["Id"] = 642220,
 		["Length"] = 60,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16653,7 +16655,7 @@ local playlist1 = {
     ["Id"] = 642221,
 		["Length"] = 70,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16662,7 +16664,7 @@ local playlist1 = {
     ["Id"] = 642222,
 		["Length"] = 51,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16671,7 +16673,7 @@ local playlist1 = {
     ["Id"] = 642223,
 		["Length"] = 64,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16680,7 +16682,7 @@ local playlist1 = {
     ["Id"] = 642224,
 		["Length"] = 79,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16689,7 +16691,7 @@ local playlist1 = {
     ["Id"] = 642225,
 		["Length"] = 45,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16698,7 +16700,7 @@ local playlist1 = {
     ["Id"] = 642226,
 		["Length"] = 158,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16707,7 +16709,7 @@ local playlist1 = {
     ["Id"] = 642227,
 		["Length"] = 72,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16716,7 +16718,7 @@ local playlist1 = {
     ["Id"] = 642228,
 		["Length"] = 77,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16725,7 +16727,7 @@ local playlist1 = {
     ["Id"] = 642229,
 		["Length"] = 35,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16734,7 +16736,7 @@ local playlist1 = {
     ["Id"] = 642230,
 		["Length"] = 88,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16743,7 +16745,7 @@ local playlist1 = {
     ["Id"] = 642231,
 		["Length"] = 109,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16752,7 +16754,7 @@ local playlist1 = {
     ["Id"] = 642134,
 		["Length"] = 94,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16761,7 +16763,7 @@ local playlist1 = {
     ["Id"] = 642868,
 		["Length"] = 85,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16770,7 +16772,7 @@ local playlist1 = {
     ["Id"] = 642869,
 		["Length"] = 90,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16779,7 +16781,7 @@ local playlist1 = {
     ["Id"] = 642232,
 		["Length"] = 92,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16788,7 +16790,7 @@ local playlist1 = {
     ["Id"] = 642233,
 		["Length"] = 33,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16797,7 +16799,7 @@ local playlist1 = {
     ["Id"] = 642234,
 		["Length"] = 77,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16806,7 +16808,7 @@ local playlist1 = {
     ["Id"] = 642235,
 		["Length"] = 61,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16815,7 +16817,7 @@ local playlist1 = {
     ["Id"] = 642236,
 		["Length"] = 80,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16824,7 +16826,7 @@ local playlist1 = {
     ["Id"] = 642237,
 		["Length"] = 82,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16833,7 +16835,7 @@ local playlist1 = {
     ["Id"] = 629412,
 		["Length"] = 138,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16842,7 +16844,7 @@ local playlist1 = {
     ["Id"] = 642238,
 		["Length"] = 87,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16851,7 +16853,7 @@ local playlist1 = {
     ["Id"] = 642135,
 		["Length"] = 79,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16860,7 +16862,7 @@ local playlist1 = {
     ["Id"] = 642239,
 		["Length"] = 124,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16869,7 +16871,7 @@ local playlist1 = {
     ["Id"] = 642240,
 		["Length"] = 91,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16878,7 +16880,7 @@ local playlist1 = {
     ["Id"] = 642241,
 		["Length"] = 92,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16887,7 +16889,7 @@ local playlist1 = {
     ["Id"] = 642136,
 		["Length"] = 48,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16896,7 +16898,7 @@ local playlist1 = {
     ["Id"] = 642242,
 		["Length"] = 79,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16905,7 +16907,7 @@ local playlist1 = {
     ["Id"] = 644916,
 		["Length"] = 69,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16914,7 +16916,7 @@ local playlist1 = {
     ["Id"] = 644917,
 		["Length"] = 59,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16923,7 +16925,7 @@ local playlist1 = {
     ["Id"] = 642870,
 		["Length"] = 89,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16932,7 +16934,7 @@ local playlist1 = {
     ["Id"] = 642871,
 		["Length"] = 91,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16941,7 +16943,7 @@ local playlist1 = {
     ["Id"] = 642872,
 		["Length"] = 66,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16950,7 +16952,7 @@ local playlist1 = {
     ["Id"] = 642873,
 		["Length"] = 70,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16959,7 +16961,7 @@ local playlist1 = {
     ["Id"] = 642137,
 		["Length"] = 87,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16968,7 +16970,7 @@ local playlist1 = {
     ["Id"] = 642243,
 		["Length"] = 157,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16977,7 +16979,7 @@ local playlist1 = {
     ["Id"] = 642244,
 		["Length"] = 105,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16986,7 +16988,7 @@ local playlist1 = {
     ["Id"] = 642245,
 		["Length"] = 67,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -16995,7 +16997,7 @@ local playlist1 = {
     ["Id"] = 642138,
 		["Length"] = 93,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17004,7 +17006,7 @@ local playlist1 = {
     ["Id"] = 642246,
 		["Length"] = 81,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17013,7 +17015,7 @@ local playlist1 = {
     ["Id"] = 644918,
 		["Length"] = 108,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17022,7 +17024,7 @@ local playlist1 = {
     ["Id"] = 644919,
 		["Length"] = 117,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17031,7 +17033,7 @@ local playlist1 = {
     ["Id"] = 644920,
 		["Length"] = 94,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17040,7 +17042,7 @@ local playlist1 = {
     ["Id"] = 644921,
 		["Length"] = 71,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17049,7 +17051,7 @@ local playlist1 = {
     ["Id"] = 642247,
 		["Length"] = 134,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17058,7 +17060,7 @@ local playlist1 = {
     ["Id"] = 644922,
 		["Length"] = 66,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17067,7 +17069,7 @@ local playlist1 = {
     ["Id"] = 642248,
 		["Length"] = 38,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17076,7 +17078,7 @@ local playlist1 = {
     ["Id"] = 642249,
 		["Length"] = 53,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17085,7 +17087,7 @@ local playlist1 = {
     ["Id"] = 642250,
 		["Length"] = 79,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17094,7 +17096,7 @@ local playlist1 = {
     ["Id"] = 642251,
 		["Length"] = 92,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17103,7 +17105,7 @@ local playlist1 = {
     ["Id"] = 629413,
 		["Length"] = 91,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17112,7 +17114,7 @@ local playlist1 = {
     ["Id"] = 642874,
 		["Length"] = 55,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17121,7 +17123,7 @@ local playlist1 = {
     ["Id"] = 642139,
 		["Length"] = 80,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17130,7 +17132,7 @@ local playlist1 = {
     ["Id"] = 642252,
 		["Length"] = 71,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17139,7 +17141,7 @@ local playlist1 = {
     ["Id"] = 642253,
 		["Length"] = 43,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17148,7 +17150,7 @@ local playlist1 = {
     ["Id"] = 642254,
 		["Length"] = 75,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17157,7 +17159,7 @@ local playlist1 = {
     ["Id"] = 642255,
 		["Length"] = 66,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17166,7 +17168,7 @@ local playlist1 = {
     ["Id"] = 644923,
 		["Length"] = 69,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17175,7 +17177,7 @@ local playlist1 = {
     ["Id"] = 644924,
 		["Length"] = 63,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17184,7 +17186,7 @@ local playlist1 = {
     ["Id"] = 644925,
 		["Length"] = 110,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17193,7 +17195,7 @@ local playlist1 = {
     ["Id"] = 648424,
 		["Length"] = 53,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17202,7 +17204,7 @@ local playlist1 = {
     ["Id"] = 648425,
 		["Length"] = 59,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17211,7 +17213,7 @@ local playlist1 = {
     ["Id"] = 648426,
 		["Length"] = 43,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17220,7 +17222,7 @@ local playlist1 = {
     ["Id"] = 648583,
 		["Length"] = 116,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17229,7 +17231,7 @@ local playlist1 = {
     ["Id"] = 642257,
 		["Length"] = 83,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17238,7 +17240,7 @@ local playlist1 = {
     ["Id"] = 642258,
 		["Length"] = 54,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17247,7 +17249,7 @@ local playlist1 = {
     ["Id"] = 642259,
 		["Length"] = 117,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17256,7 +17258,7 @@ local playlist1 = {
     ["Id"] = 648584,
 		["Length"] = 59,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17265,7 +17267,7 @@ local playlist1 = {
     ["Id"] = 648585,
 		["Length"] = 68,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17274,7 +17276,7 @@ local playlist1 = {
     ["Id"] = 648586,
 		["Length"] = 61,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17283,7 +17285,7 @@ local playlist1 = {
     ["Id"] = 648587,
 		["Length"] = 78,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17292,7 +17294,7 @@ local playlist1 = {
     ["Id"] = 648588,
 		["Length"] = 67,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17301,7 +17303,7 @@ local playlist1 = {
     ["Id"] = 648589,
 		["Length"] = 81,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17310,7 +17312,7 @@ local playlist1 = {
     ["Id"] = 648590,
 		["Length"] = 74,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17319,7 +17321,7 @@ local playlist1 = {
     ["Id"] = 648591,
 		["Length"] = 78,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17328,7 +17330,7 @@ local playlist1 = {
     ["Id"] = 648592,
 		["Length"] = 91,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17337,7 +17339,7 @@ local playlist1 = {
     ["Id"] = 648593,
 		["Length"] = 84,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17346,7 +17348,7 @@ local playlist1 = {
     ["Id"] = 648594,
 		["Length"] = 58,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17355,7 +17357,7 @@ local playlist1 = {
     ["Id"] = 648595,
 		["Length"] = 103,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17364,7 +17366,7 @@ local playlist1 = {
     ["Id"] = 642260,
 		["Length"] = 152,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17373,7 +17375,7 @@ local playlist1 = {
     ["Id"] = 629414,
 		["Length"] = 152,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17382,7 +17384,7 @@ local playlist1 = {
     ["Id"] = 653741,
 		["Length"] = 238,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17391,7 +17393,7 @@ local playlist1 = {
     ["Id"] = 653742,
 		["Length"] = 39,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17400,7 +17402,7 @@ local playlist1 = {
     ["Id"] = 642261,
 		["Length"] = 93,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17409,7 +17411,7 @@ local playlist1 = {
     ["Id"] = 642262,
 		["Length"] = 84,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17418,7 +17420,7 @@ local playlist1 = {
     ["Id"] = 642263,
 		["Length"] = 93,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17427,7 +17429,7 @@ local playlist1 = {
     ["Id"] = 642264,
 		["Length"] = 110,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17436,7 +17438,7 @@ local playlist1 = {
     ["Id"] = 642265,
 		["Length"] = 91,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17445,7 +17447,7 @@ local playlist1 = {
     ["Id"] = 644926,
 		["Length"] = 131,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17454,7 +17456,7 @@ local playlist1 = {
     ["Id"] = 644927,
 		["Length"] = 71,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17463,7 +17465,7 @@ local playlist1 = {
     ["Id"] = 644928,
 		["Length"] = 102,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17472,7 +17474,7 @@ local playlist1 = {
     ["Id"] = 642266,
 		["Length"] = 75,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17481,7 +17483,7 @@ local playlist1 = {
     ["Id"] = 642267,
 		["Length"] = 63,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17490,7 +17492,7 @@ local playlist1 = {
     ["Id"] = 642268,
 		["Length"] = 172,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17499,7 +17501,7 @@ local playlist1 = {
     ["Id"] = 644929,
 		["Length"] = 54,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17508,7 +17510,7 @@ local playlist1 = {
     ["Id"] = 644930,
 		["Length"] = 65,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17517,7 +17519,7 @@ local playlist1 = {
     ["Id"] = 642269,
 		["Length"] = 115,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17526,7 +17528,7 @@ local playlist1 = {
     ["Id"] = 642270,
 		["Length"] = 76,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17535,7 +17537,7 @@ local playlist1 = {
     ["Id"] = 642271,
 		["Length"] = 84,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17544,7 +17546,7 @@ local playlist1 = {
     ["Id"] = 642272,
 		["Length"] = 57,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17553,7 +17555,7 @@ local playlist1 = {
     ["Id"] = 642273,
 		["Length"] = 88,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17562,7 +17564,7 @@ local playlist1 = {
     ["Id"] = 642274,
 		["Length"] = 61,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17571,7 +17573,7 @@ local playlist1 = {
     ["Id"] = 642275,
 		["Length"] = 67,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17580,7 +17582,7 @@ local playlist1 = {
     ["Id"] = 642276,
 		["Length"] = 66,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17589,7 +17591,7 @@ local playlist1 = {
     ["Id"] = 629415,
 		["Length"] = 70,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17598,7 +17600,7 @@ local playlist1 = {
     ["Id"] = 646345,
 		["Length"] = 26,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17607,7 +17609,7 @@ local playlist1 = {
     ["Id"] = 646346,
 		["Length"] = 18,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17616,7 +17618,7 @@ local playlist1 = {
     ["Id"] = 646347,
 		["Length"] = 21,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17625,7 +17627,7 @@ local playlist1 = {
     ["Id"] = 646348,
 		["Length"] = 20,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17634,7 +17636,7 @@ local playlist1 = {
     ["Id"] = 646349,
 		["Length"] = 18,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17643,7 +17645,7 @@ local playlist1 = {
     ["Id"] = 646350,
 		["Length"] = 18,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17652,7 +17654,7 @@ local playlist1 = {
     ["Id"] = 646351,
 		["Length"] = 19,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17661,7 +17663,7 @@ local playlist1 = {
     ["Id"] = 646352,
 		["Length"] = 24,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17670,7 +17672,7 @@ local playlist1 = {
     ["Id"] = 646353,
 		["Length"] = 14,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17679,7 +17681,7 @@ local playlist1 = {
     ["Id"] = 642277,
 		["Length"] = 98,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17688,7 +17690,7 @@ local playlist1 = {
     ["Id"] = 642278,
 		["Length"] = 114,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17697,7 +17699,7 @@ local playlist1 = {
     ["Id"] = 642279,
 		["Length"] = 114,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17706,7 +17708,7 @@ local playlist1 = {
     ["Id"] = 642140,
 		["Length"] = 51,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17715,7 +17717,7 @@ local playlist1 = {
     ["Id"] = 642280,
 		["Length"] = 67,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -17724,7 +17726,7 @@ local playlist1 = {
     ["Id"] = 642141,
 		["Length"] = 19,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -17733,7 +17735,7 @@ local playlist1 = {
     ["Id"] = 642142,
 		["Length"] = 20,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -17742,7 +17744,7 @@ local playlist1 = {
     ["Id"] = 642143,
 		["Length"] = 20,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -17751,7 +17753,7 @@ local playlist1 = {
     ["Id"] = 642144,
 		["Length"] = 19,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -17760,7 +17762,7 @@ local playlist1 = {
     ["Id"] = 642145,
 		["Length"] = 19,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -17769,7 +17771,7 @@ local playlist1 = {
     ["Id"] = 642146,
 		["Length"] = 20,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -17778,7 +17780,7 @@ local playlist1 = {
     ["Id"] = 642147,
 		["Length"] = 20,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -17787,7 +17789,7 @@ local playlist1 = {
     ["Id"] = 642148,
 		["Length"] = 20,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -17796,7 +17798,7 @@ local playlist1 = {
     ["Id"] = 642149,
 		["Length"] = 20,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -17805,7 +17807,7 @@ local playlist1 = {
     ["Id"] = 642150,
 		["Length"] = 19,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -17814,7 +17816,7 @@ local playlist1 = {
     ["Id"] = 642151,
 		["Length"] = 24,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17823,7 +17825,7 @@ local playlist1 = {
     ["Id"] = 642571,
 		["Length"] = 78,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17832,7 +17834,7 @@ local playlist1 = {
     ["Id"] = 642572,
 		["Length"] = 55,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17841,7 +17843,7 @@ local playlist1 = {
     ["Id"] = 642573,
 		["Length"] = 58,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17850,7 +17852,7 @@ local playlist1 = {
     ["Id"] = 642281,
 		["Length"] = 125,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17859,7 +17861,7 @@ local playlist1 = {
     ["Id"] = 642282,
 		["Length"] = 166,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17868,7 +17870,7 @@ local playlist1 = {
     ["Id"] = 642283,
 		["Length"] = 52,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17877,7 +17879,7 @@ local playlist1 = {
     ["Id"] = 642284,
 		["Length"] = 45,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17886,7 +17888,7 @@ local playlist1 = {
     ["Id"] = 642285,
 		["Length"] = 82,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17895,7 +17897,7 @@ local playlist1 = {
     ["Id"] = 642286,
 		["Length"] = 72,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17904,7 +17906,7 @@ local playlist1 = {
     ["Id"] = 642287,
 		["Length"] = 114,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17913,7 +17915,7 @@ local playlist1 = {
     ["Id"] = 629416,
 		["Length"] = 168,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17922,7 +17924,7 @@ local playlist1 = {
     ["Id"] = 642577,
 		["Length"] = 170,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17931,7 +17933,7 @@ local playlist1 = {
     ["Id"] = 642578,
 		["Length"] = 234,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17940,7 +17942,7 @@ local playlist1 = {
     ["Id"] = 642288,
 		["Length"] = 91,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17949,7 +17951,7 @@ local playlist1 = {
     ["Id"] = 642289,
 		["Length"] = 98,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17958,7 +17960,7 @@ local playlist1 = {
     ["Id"] = 642290,
 		["Length"] = 98,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17967,7 +17969,7 @@ local playlist1 = {
     ["Id"] = 642291,
 		["Length"] = 70,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17976,7 +17978,7 @@ local playlist1 = {
     ["Id"] = 642292,
 		["Length"] = 129,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17985,7 +17987,7 @@ local playlist1 = {
     ["Id"] = 642293,
 		["Length"] = 131,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -17994,7 +17996,7 @@ local playlist1 = {
     ["Id"] = 629417,
 		["Length"] = 129,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18003,7 +18005,7 @@ local playlist1 = {
     ["Id"] = 642294,
 		["Length"] = 74,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18012,7 +18014,7 @@ local playlist1 = {
     ["Id"] = 642295,
 		["Length"] = 73,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18021,7 +18023,7 @@ local playlist1 = {
     ["Id"] = 642296,
 		["Length"] = 77,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18030,7 +18032,7 @@ local playlist1 = {
     ["Id"] = 642297,
 		["Length"] = 51,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18039,7 +18041,7 @@ local playlist1 = {
     ["Id"] = 629418,
 		["Length"] = 72,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18048,7 +18050,7 @@ local playlist1 = {
     ["Id"] = 648427,
 		["Length"] = 74,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18057,7 +18059,7 @@ local playlist1 = {
     ["Id"] = 648428,
 		["Length"] = 73,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18066,7 +18068,7 @@ local playlist1 = {
     ["Id"] = 629420,
 		["Length"] = 52,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18075,7 +18077,7 @@ local playlist1 = {
     ["Id"] = 629421,
 		["Length"] = 72,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18084,7 +18086,7 @@ local playlist1 = {
     ["Id"] = 629422,
 		["Length"] = 67,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18093,7 +18095,7 @@ local playlist1 = {
     ["Id"] = 632669,
 		["Length"] = 83,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18102,7 +18104,7 @@ local playlist1 = {
     ["Id"] = 642298,
 		["Length"] = 68,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18111,7 +18113,7 @@ local playlist1 = {
     ["Id"] = 642299,
 		["Length"] = 64,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18120,7 +18122,7 @@ local playlist1 = {
     ["Id"] = 642300,
 		["Length"] = 70,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18129,7 +18131,7 @@ local playlist1 = {
     ["Id"] = 642301,
 		["Length"] = 40,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18138,7 +18140,7 @@ local playlist1 = {
     ["Id"] = 642302,
 		["Length"] = 39,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18147,7 +18149,7 @@ local playlist1 = {
     ["Id"] = 642303,
 		["Length"] = 48,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18156,7 +18158,7 @@ local playlist1 = {
     ["Id"] = 642304,
 		["Length"] = 43,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18165,7 +18167,7 @@ local playlist1 = {
     ["Id"] = 642305,
 		["Length"] = 11,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18174,7 +18176,7 @@ local playlist1 = {
     ["Id"] = 642306,
 		["Length"] = 93,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18183,7 +18185,7 @@ local playlist1 = {
     ["Id"] = 642307,
 		["Length"] = 100,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18192,7 +18194,7 @@ local playlist1 = {
     ["Id"] = 643224,
 		["Length"] = 52,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18201,7 +18203,7 @@ local playlist1 = {
     ["Id"] = 643225,
 		["Length"] = 18,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18210,7 +18212,7 @@ local playlist1 = {
     ["Id"] = 629423,
 		["Length"] = 101,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18219,7 +18221,7 @@ local playlist1 = {
     ["Id"] = 642308,
 		["Length"] = 75,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18228,7 +18230,7 @@ local playlist1 = {
     ["Id"] = 642309,
 		["Length"] = 88,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18237,7 +18239,7 @@ local playlist1 = {
     ["Id"] = 642310,
 		["Length"] = 73,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18246,7 +18248,7 @@ local playlist1 = {
     ["Id"] = 642311,
 		["Length"] = 85,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18255,7 +18257,7 @@ local playlist1 = {
     ["Id"] = 642312,
 		["Length"] = 58,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18264,7 +18266,7 @@ local playlist1 = {
     ["Id"] = 642313,
 		["Length"] = 87,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18273,7 +18275,7 @@ local playlist1 = {
     ["Id"] = 642875,
 		["Length"] = 147,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18282,7 +18284,7 @@ local playlist1 = {
     ["Id"] = 642314,
 		["Length"] = 42,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18291,7 +18293,7 @@ local playlist1 = {
     ["Id"] = 642315,
 		["Length"] = 58,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18300,7 +18302,7 @@ local playlist1 = {
     ["Id"] = 642316,
 		["Length"] = 51,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18309,7 +18311,7 @@ local playlist1 = {
     ["Id"] = 642317,
 		["Length"] = 64,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18318,7 +18320,7 @@ local playlist1 = {
     ["Id"] = 642318,
 		["Length"] = 124,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18327,7 +18329,7 @@ local playlist1 = {
     ["Id"] = 642319,
 		["Length"] = 129,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18336,7 +18338,7 @@ local playlist1 = {
     ["Id"] = 642320,
 		["Length"] = 125,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18345,7 +18347,7 @@ local playlist1 = {
     ["Id"] = 629424,
 		["Length"] = 133,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18354,7 +18356,7 @@ local playlist1 = {
     ["Id"] = 642876,
 		["Length"] = 54,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18363,7 +18365,7 @@ local playlist1 = {
     ["Id"] = 642321,
 		["Length"] = 91,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18372,7 +18374,7 @@ local playlist1 = {
     ["Id"] = 642877,
 		["Length"] = 87,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18381,7 +18383,7 @@ local playlist1 = {
     ["Id"] = 642878,
 		["Length"] = 87,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18390,7 +18392,7 @@ local playlist1 = {
     ["Id"] = 642879,
 		["Length"] = 88,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18399,7 +18401,7 @@ local playlist1 = {
     ["Id"] = 642322,
 		["Length"] = 90,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18408,7 +18410,7 @@ local playlist1 = {
     ["Id"] = 642323,
 		["Length"] = 95,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18417,7 +18419,7 @@ local playlist1 = {
     ["Id"] = 642324,
 		["Length"] = 114,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18426,7 +18428,7 @@ local playlist1 = {
     ["Id"] = 642880,
 		["Length"] = 97,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18435,7 +18437,7 @@ local playlist1 = {
     ["Id"] = 642881,
 		["Length"] = 90,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18444,7 +18446,7 @@ local playlist1 = {
     ["Id"] = 642152,
 		["Length"] = 104,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18453,7 +18455,7 @@ local playlist1 = {
     ["Id"] = 642325,
 		["Length"] = 80,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18462,7 +18464,7 @@ local playlist1 = {
     ["Id"] = 642326,
 		["Length"] = 57,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18471,7 +18473,7 @@ local playlist1 = {
     ["Id"] = 642327,
 		["Length"] = 67,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18480,7 +18482,7 @@ local playlist1 = {
     ["Id"] = 642328,
 		["Length"] = 58,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18489,7 +18491,7 @@ local playlist1 = {
     ["Id"] = 642329,
 		["Length"] = 70,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18498,7 +18500,7 @@ local playlist1 = {
     ["Id"] = 642330,
 		["Length"] = 70,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18507,7 +18509,7 @@ local playlist1 = {
     ["Id"] = 642882,
 		["Length"] = 63,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18516,7 +18518,7 @@ local playlist1 = {
     ["Id"] = 642331,
 		["Length"] = 42,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18525,7 +18527,7 @@ local playlist1 = {
     ["Id"] = 642332,
 		["Length"] = 70,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18534,7 +18536,7 @@ local playlist1 = {
     ["Id"] = 642333,
 		["Length"] = 57,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18543,7 +18545,7 @@ local playlist1 = {
     ["Id"] = 642334,
 		["Length"] = 55,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18552,7 +18554,7 @@ local playlist1 = {
     ["Id"] = 642335,
 		["Length"] = 38,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18561,7 +18563,7 @@ local playlist1 = {
     ["Id"] = 642336,
 		["Length"] = 49,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18570,7 +18572,7 @@ local playlist1 = {
     ["Id"] = 642337,
 		["Length"] = 51,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18579,7 +18581,7 @@ local playlist1 = {
     ["Id"] = 642338,
 		["Length"] = 85,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18588,7 +18590,7 @@ local playlist1 = {
     ["Id"] = 629425,
 		["Length"] = 122,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18597,7 +18599,7 @@ local playlist1 = {
     ["Id"] = 642339,
 		["Length"] = 110,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18606,7 +18608,7 @@ local playlist1 = {
     ["Id"] = 642340,
 		["Length"] = 111,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18615,7 +18617,7 @@ local playlist1 = {
     ["Id"] = 642341,
 		["Length"] = 111,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18624,7 +18626,7 @@ local playlist1 = {
     ["Id"] = 629426,
 		["Length"] = 113,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18633,7 +18635,7 @@ local playlist1 = {
     ["Id"] = 642153,
 		["Length"] = 69,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18642,7 +18644,7 @@ local playlist1 = {
     ["Id"] = 642342,
 		["Length"] = 45,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18651,7 +18653,7 @@ local playlist1 = {
     ["Id"] = 642343,
 		["Length"] = 109,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18660,7 +18662,7 @@ local playlist1 = {
     ["Id"] = 642883,
 		["Length"] = 122,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18669,7 +18671,7 @@ local playlist1 = {
     ["Id"] = 642884,
 		["Length"] = 124,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18678,7 +18680,7 @@ local playlist1 = {
     ["Id"] = 642885,
 		["Length"] = 117,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18687,7 +18689,7 @@ local playlist1 = {
     ["Id"] = 642154,
 		["Length"] = 26,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18696,7 +18698,7 @@ local playlist1 = {
     ["Id"] = 642344,
 		["Length"] = 29,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18705,7 +18707,7 @@ local playlist1 = {
     ["Id"] = 642345,
 		["Length"] = 73,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18714,7 +18716,7 @@ local playlist1 = {
     ["Id"] = 642346,
 		["Length"] = 71,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18723,7 +18725,7 @@ local playlist1 = {
     ["Id"] = 642347,
 		["Length"] = 51,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18732,7 +18734,7 @@ local playlist1 = {
     ["Id"] = 642348,
 		["Length"] = 50,
 		["Artist"] = "Jeremy Soule",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18741,7 +18743,7 @@ local playlist1 = {
     ["Id"] = 642349,
 		["Length"] = 52,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18750,7 +18752,7 @@ local playlist1 = {
     ["Id"] = 642350,
 		["Length"] = 82,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18759,7 +18761,7 @@ local playlist1 = {
     ["Id"] = 642351,
 		["Length"] = 53,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18768,7 +18770,7 @@ local playlist1 = {
     ["Id"] = 642352,
 		["Length"] = 81,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18777,7 +18779,7 @@ local playlist1 = {
     ["Id"] = 642353,
 		["Length"] = 54,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18786,7 +18788,7 @@ local playlist1 = {
     ["Id"] = 642354,
 		["Length"] = 81,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18795,7 +18797,7 @@ local playlist1 = {
     ["Id"] = 642355,
 		["Length"] = 54,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18804,7 +18806,7 @@ local playlist1 = {
     ["Id"] = 642356,
 		["Length"] = 102,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18813,7 +18815,7 @@ local playlist1 = {
     ["Id"] = 642175,
 		["Length"] = 51,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18822,7 +18824,7 @@ local playlist1 = {
     ["Id"] = 642357,
 		["Length"] = 82,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18831,7 +18833,7 @@ local playlist1 = {
     ["Id"] = 642574,
 		["Length"] = 86,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18840,7 +18842,7 @@ local playlist1 = {
     ["Id"] = 642575,
 		["Length"] = 116,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18849,7 +18851,7 @@ local playlist1 = {
     ["Id"] = 642576,
 		["Length"] = 115,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18858,7 +18860,7 @@ local playlist1 = {
     ["Id"] = 642156,
 		["Length"] = 87,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18867,7 +18869,7 @@ local playlist1 = {
     ["Id"] = 642358,
 		["Length"] = 64,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18876,7 +18878,7 @@ local playlist1 = {
     ["Id"] = 642359,
 		["Length"] = 76,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -18885,7 +18887,7 @@ local playlist1 = {
     ["Id"] = 642360,
 		["Length"] = 65,
 		["Artist"] = "Sam Cardon",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -18894,7 +18896,7 @@ local playlist1 = {
     ["Id"] = 772726,
 		["Length"] = 119,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -18903,7 +18905,7 @@ local playlist1 = {
     ["Id"] = 772727,
 		["Length"] = 118,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -18912,7 +18914,7 @@ local playlist1 = {
     ["Id"] = 772728,
 		["Length"] = 119,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -18921,7 +18923,7 @@ local playlist1 = {
     ["Id"] = 772729,
 		["Length"] = 128,
 		["Artist"] = "Jason Hayes, Arr. Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -18930,7 +18932,7 @@ local playlist1 = {
     ["Id"] = 772730,
 		["Length"] = 100,
 		["Artist"] = "Jason Hayes, Arr. Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -18939,7 +18941,7 @@ local playlist1 = {
     ["Id"] = 772731,
 		["Length"] = 66,
 		["Artist"] = "Jason Hayes, Arr. Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -18948,7 +18950,7 @@ local playlist1 = {
     ["Id"] = 772732,
 		["Length"] = 67,
 		["Artist"] = "Jason Hayes, Arr. Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -18957,7 +18959,7 @@ local playlist1 = {
     ["Id"] = 772733,
 		["Length"] = 67,
 		["Artist"] = "Jason Hayes, Arr. Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -18966,7 +18968,7 @@ local playlist1 = {
     ["Id"] = 772734,
 		["Length"] = 127,
 		["Artist"] = "Jason Hayes, Arr. Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -18975,7 +18977,7 @@ local playlist1 = {
     ["Id"] = 772735,
 		["Length"] = 163,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -18984,7 +18986,7 @@ local playlist1 = {
     ["Id"] = 772736,
 		["Length"] = 166,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -18993,7 +18995,7 @@ local playlist1 = {
     ["Id"] = 772737,
 		["Length"] = 166,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -19002,7 +19004,7 @@ local playlist1 = {
     ["Id"] = 791703,
 		["Length"] = 123,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -19011,7 +19013,7 @@ local playlist1 = {
     ["Id"] = 772738,
 		["Length"] = 175,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -19020,7 +19022,7 @@ local playlist1 = {
     ["Id"] = 772739,
 		["Length"] = 174,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -19029,7 +19031,7 @@ local playlist1 = {
     ["Id"] = 772740,
 		["Length"] = 175,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -19038,7 +19040,7 @@ local playlist1 = {
     ["Id"] = 772741,
 		["Length"] = 107,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -19047,7 +19049,7 @@ local playlist1 = {
     ["Id"] = 772742,
 		["Length"] = 106,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -19056,7 +19058,7 @@ local playlist1 = {
     ["Id"] = 772743,
 		["Length"] = 107,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -19065,7 +19067,7 @@ local playlist1 = {
     ["Id"] = 772744,
 		["Length"] = 102,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -19074,7 +19076,7 @@ local playlist1 = {
     ["Id"] = 772745,
 		["Length"] = 103,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -19083,7 +19085,7 @@ local playlist1 = {
     ["Id"] = 772746,
 		["Length"] = 41,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -19092,7 +19094,7 @@ local playlist1 = {
     ["Id"] = 772747,
 		["Length"] = 103,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -19101,7 +19103,7 @@ local playlist1 = {
     ["Id"] = 775231,
 		["Length"] = 59,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -19110,7 +19112,7 @@ local playlist1 = {
     ["Id"] = 775232,
 		["Length"] = 58,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -19119,7 +19121,7 @@ local playlist1 = {
     ["Id"] = 775233,
 		["Length"] = 75,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -19128,7 +19130,7 @@ local playlist1 = {
     ["Id"] = 775234,
 		["Length"] = 65,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -19137,7 +19139,7 @@ local playlist1 = {
     ["Id"] = 775235,
 		["Length"] = 23,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -19146,7 +19148,7 @@ local playlist1 = {
     ["Id"] = 775236,
 		["Length"] = 19,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -19155,7 +19157,7 @@ local playlist1 = {
     ["Id"] = 775237,
 		["Length"] = 22,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -19164,7 +19166,7 @@ local playlist1 = {
     ["Id"] = 775238,
 		["Length"] = 23,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -19173,7 +19175,7 @@ local playlist1 = {
     ["Id"] = 775239,
 		["Length"] = 36,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -19182,7 +19184,7 @@ local playlist1 = {
     ["Id"] = 775240,
 		["Length"] = 58,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -19191,7 +19193,7 @@ local playlist1 = {
     ["Id"] = 775241,
 		["Length"] = 58,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -19200,7 +19202,7 @@ local playlist1 = {
     ["Id"] = 775242,
 		["Length"] = 57,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -19209,7 +19211,7 @@ local playlist1 = {
     ["Id"] = 775243,
 		["Length"] = 112,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -19218,7 +19220,7 @@ local playlist1 = {
     ["Id"] = 775244,
 		["Length"] = 34,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -19227,7 +19229,7 @@ local playlist1 = {
     ["Id"] = 775245,
 		["Length"] = 12,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -19236,7 +19238,7 @@ local playlist1 = {
     ["Id"] = 775246,
 		["Length"] = 64,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -19245,7 +19247,7 @@ local playlist1 = {
     ["Id"] = 775247,
 		["Length"] = 10,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -19254,7 +19256,7 @@ local playlist1 = {
     ["Id"] = 775248,
 		["Length"] = 9,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -19263,7 +19265,7 @@ local playlist1 = {
     ["Id"] = 775249,
 		["Length"] = 9,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -19272,7 +19274,7 @@ local playlist1 = {
     ["Id"] = 775250,
 		["Length"] = 130,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -19281,7 +19283,7 @@ local playlist1 = {
     ["Id"] = 775139,
 		["Length"] = 56,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19290,7 +19292,7 @@ local playlist1 = {
     ["Id"] = 840438,
 		["Length"] = 128,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19299,7 +19301,7 @@ local playlist1 = {
     ["Id"] = 840439,
 		["Length"] = 61,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19308,7 +19310,7 @@ local playlist1 = {
     ["Id"] = 840440,
 		["Length"] = 59,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19317,7 +19319,7 @@ local playlist1 = {
     ["Id"] = 840441,
 		["Length"] = 71,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19326,7 +19328,7 @@ local playlist1 = {
     ["Id"] = 840442,
 		["Length"] = 133,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19335,7 +19337,7 @@ local playlist1 = {
     ["Id"] = 840443,
 		["Length"] = 46,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19344,7 +19346,7 @@ local playlist1 = {
     ["Id"] = 840444,
 		["Length"] = 58,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19353,7 +19355,7 @@ local playlist1 = {
     ["Id"] = 840445,
 		["Length"] = 9,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19362,7 +19364,7 @@ local playlist1 = {
     ["Id"] = 840446,
 		["Length"] = 83,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19371,7 +19373,7 @@ local playlist1 = {
     ["Id"] = 840447,
 		["Length"] = 78,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19380,7 +19382,7 @@ local playlist1 = {
     ["Id"] = 840448,
 		["Length"] = 26,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19389,7 +19391,7 @@ local playlist1 = {
     ["Id"] = 840449,
 		["Length"] = 186,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19398,7 +19400,7 @@ local playlist1 = {
     ["Id"] = 840450,
 		["Length"] = 154,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19407,7 +19409,7 @@ local playlist1 = {
     ["Id"] = 840451,
 		["Length"] = 141,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19416,7 +19418,7 @@ local playlist1 = {
     ["Id"] = 840452,
 		["Length"] = 167,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19425,7 +19427,7 @@ local playlist1 = {
     ["Id"] = 840453,
 		["Length"] = 13,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19434,7 +19436,7 @@ local playlist1 = {
     ["Id"] = 840454,
 		["Length"] = 14,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19443,7 +19445,7 @@ local playlist1 = {
     ["Id"] = 840455,
 		["Length"] = 112,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19452,7 +19454,7 @@ local playlist1 = {
     ["Id"] = 840456,
 		["Length"] = 85,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19461,7 +19463,7 @@ local playlist1 = {
     ["Id"] = 840457,
 		["Length"] = 116,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19470,7 +19472,7 @@ local playlist1 = {
     ["Id"] = 840458,
 		["Length"] = 100,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19479,7 +19481,7 @@ local playlist1 = {
     ["Id"] = 840459,
 		["Length"] = 100,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19488,7 +19490,7 @@ local playlist1 = {
     ["Id"] = 840460,
 		["Length"] = 159,
 		["Artist"] = "Russell Brower, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19497,7 +19499,7 @@ local playlist1 = {
     ["Id"] = 840461,
 		["Length"] = 38,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19506,7 +19508,7 @@ local playlist1 = {
     ["Id"] = 840462,
 		["Length"] = 46,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19515,7 +19517,7 @@ local playlist1 = {
     ["Id"] = 840463,
 		["Length"] = 49,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19524,7 +19526,7 @@ local playlist1 = {
     ["Id"] = 840464,
 		["Length"] = 91,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19533,7 +19535,7 @@ local playlist1 = {
     ["Id"] = 840465,
 		["Length"] = 53,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19542,7 +19544,7 @@ local playlist1 = {
     ["Id"] = 840466,
 		["Length"] = 73,
 		["Artist"] = "Jason Hayes, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19551,7 +19553,7 @@ local playlist1 = {
     ["Id"] = 840467,
 		["Length"] = 73,
 		["Artist"] = "Jason Hayes, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19560,7 +19562,7 @@ local playlist1 = {
     ["Id"] = 840468,
 		["Length"] = 73,
 		["Artist"] = "Jason Hayes, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19569,7 +19571,7 @@ local playlist1 = {
     ["Id"] = 840469,
 		["Length"] = 86,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19578,7 +19580,7 @@ local playlist1 = {
     ["Id"] = 840470,
 		["Length"] = 87,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19587,7 +19589,7 @@ local playlist1 = {
     ["Id"] = 840471,
 		["Length"] = 66,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19596,7 +19598,7 @@ local playlist1 = {
     ["Id"] = 840472,
 		["Length"] = 22,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19605,7 +19607,7 @@ local playlist1 = {
     ["Id"] = 840473,
 		["Length"] = 124,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19614,7 +19616,7 @@ local playlist1 = {
     ["Id"] = 840474,
 		["Length"] = 60,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19623,7 +19625,7 @@ local playlist1 = {
     ["Id"] = 840475,
 		["Length"] = 71,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19632,7 +19634,7 @@ local playlist1 = {
     ["Id"] = 840476,
 		["Length"] = 114,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19641,7 +19643,7 @@ local playlist1 = {
     ["Id"] = 840477,
 		["Length"] = 9,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19650,7 +19652,7 @@ local playlist1 = {
     ["Id"] = 840478,
 		["Length"] = 8,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19659,7 +19661,7 @@ local playlist1 = {
     ["Id"] = 840479,
 		["Length"] = 6,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19668,7 +19670,7 @@ local playlist1 = {
     ["Id"] = 840480,
 		["Length"] = 9,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19677,7 +19679,7 @@ local playlist1 = {
     ["Id"] = 840481,
 		["Length"] = 66,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19686,7 +19688,7 @@ local playlist1 = {
     ["Id"] = 840482,
 		["Length"] = 73,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19695,7 +19697,7 @@ local playlist1 = {
     ["Id"] = 840483,
 		["Length"] = 94,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19704,7 +19706,7 @@ local playlist1 = {
     ["Id"] = 840484,
 		["Length"] = 106,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19713,7 +19715,7 @@ local playlist1 = {
     ["Id"] = 840485,
 		["Length"] = 97,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19722,7 +19724,7 @@ local playlist1 = {
     ["Id"] = 840486,
 		["Length"] = 121,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19731,7 +19733,7 @@ local playlist1 = {
     ["Id"] = 840487,
 		["Length"] = 95,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19740,7 +19742,7 @@ local playlist1 = {
     ["Id"] = 840488,
 		["Length"] = 98,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19749,7 +19751,7 @@ local playlist1 = {
     ["Id"] = 840489,
 		["Length"] = 119,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19758,7 +19760,7 @@ local playlist1 = {
     ["Id"] = 840490,
 		["Length"] = 48,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19767,7 +19769,7 @@ local playlist1 = {
     ["Id"] = 840491,
 		["Length"] = 121,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19776,7 +19778,7 @@ local playlist1 = {
     ["Id"] = 840492,
 		["Length"] = 11,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19785,7 +19787,7 @@ local playlist1 = {
     ["Id"] = 840493,
 		["Length"] = 23,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19794,7 +19796,7 @@ local playlist1 = {
     ["Id"] = 840494,
 		["Length"] = 9,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19803,7 +19805,7 @@ local playlist1 = {
     ["Id"] = 840495,
 		["Length"] = 41,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19812,7 +19814,7 @@ local playlist1 = {
     ["Id"] = 840496,
 		["Length"] = 10,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19821,7 +19823,7 @@ local playlist1 = {
     ["Id"] = 840497,
 		["Length"] = 56,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19830,7 +19832,7 @@ local playlist1 = {
     ["Id"] = 840498,
 		["Length"] = 97,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19839,7 +19841,7 @@ local playlist1 = {
     ["Id"] = 840499,
 		["Length"] = 8,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19848,7 +19850,7 @@ local playlist1 = {
     ["Id"] = 840500,
 		["Length"] = 13,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19857,7 +19859,7 @@ local playlist1 = {
     ["Id"] = 840501,
 		["Length"] = 12,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19866,7 +19868,7 @@ local playlist1 = {
     ["Id"] = 840502,
 		["Length"] = 11,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19875,7 +19877,7 @@ local playlist1 = {
     ["Id"] = 840503,
 		["Length"] = 14,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19884,7 +19886,7 @@ local playlist1 = {
     ["Id"] = 840504,
 		["Length"] = 15,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19893,7 +19895,7 @@ local playlist1 = {
     ["Id"] = 840505,
 		["Length"] = 13,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19902,7 +19904,7 @@ local playlist1 = {
     ["Id"] = 840506,
 		["Length"] = 44,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19911,7 +19913,7 @@ local playlist1 = {
     ["Id"] = 840507,
 		["Length"] = 44,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19920,7 +19922,7 @@ local playlist1 = {
     ["Id"] = 915822,
 		["Length"] = 3,
 		["Artist"] = "Jason Hayes, Arr. Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19929,7 +19931,7 @@ local playlist1 = {
     ["Id"] = 840508,
 		["Length"] = 40,
 		["Artist"] = "Jason Hayes, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19938,7 +19940,7 @@ local playlist1 = {
     ["Id"] = 840509,
 		["Length"] = 84,
 		["Artist"] = "Jason Hayes, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19947,7 +19949,7 @@ local playlist1 = {
     ["Id"] = 840510,
 		["Length"] = 56,
 		["Artist"] = "Jason Hayes, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19956,7 +19958,7 @@ local playlist1 = {
     ["Id"] = 840511,
 		["Length"] = 41,
 		["Artist"] = "Jason Hayes, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19965,7 +19967,7 @@ local playlist1 = {
     ["Id"] = 840512,
 		["Length"] = 80,
 		["Artist"] = "Jason Hayes, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19974,7 +19976,7 @@ local playlist1 = {
     ["Id"] = 840513,
 		["Length"] = 54,
 		["Artist"] = "Jason Hayes, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19983,7 +19985,7 @@ local playlist1 = {
     ["Id"] = 841098,
 		["Length"] = 308,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -19992,7 +19994,7 @@ local playlist1 = {
     ["Id"] = 840514,
 		["Length"] = 36,
 		["Artist"] = "Glenn Stafford, Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -20001,7 +20003,7 @@ local playlist1 = {
     ["Id"] = 840515,
 		["Length"] = 65,
 		["Artist"] = "Glenn Stafford, Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -20010,7 +20012,7 @@ local playlist1 = {
     ["Id"] = 840516,
 		["Length"] = 159,
 		["Artist"] = "Glenn Stafford, Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -20019,7 +20021,7 @@ local playlist1 = {
     ["Id"] = 840517,
 		["Length"] = 79,
 		["Artist"] = "Glenn Stafford, Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -20028,7 +20030,7 @@ local playlist1 = {
     ["Id"] = 840518,
 		["Length"] = 39,
 		["Artist"] = "Glenn Stafford, Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -20037,7 +20039,7 @@ local playlist1 = {
     ["Id"] = 840519,
 		["Length"] = 65,
 		["Artist"] = "Glenn Stafford, Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -20046,7 +20048,7 @@ local playlist1 = {
     ["Id"] = 840520,
 		["Length"] = 170,
 		["Artist"] = "Jason Hayes, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -20055,7 +20057,7 @@ local playlist1 = {
     ["Id"] = 840521,
 		["Length"] = 72,
 		["Artist"] = "Jason Hayes, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -20064,7 +20066,7 @@ local playlist1 = {
     ["Id"] = 840522,
 		["Length"] = 80,
 		["Artist"] = "Jason Hayes, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -20073,7 +20075,7 @@ local playlist1 = {
     ["Id"] = 840523,
 		["Length"] = 74,
 		["Artist"] = "Jason Hayes, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -20082,7 +20084,7 @@ local playlist1 = {
     ["Id"] = 840524,
 		["Length"] = 72,
 		["Artist"] = "Jason Hayes, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -20091,7 +20093,7 @@ local playlist1 = {
     ["Id"] = 840525,
 		["Length"] = 80,
 		["Artist"] = "Jason Hayes, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -20100,7 +20102,7 @@ local playlist1 = {
     ["Id"] = 840526,
 		["Length"] = 74,
 		["Artist"] = "Jason Hayes, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -20109,7 +20111,7 @@ local playlist1 = {
     ["Id"] = 840527,
 		["Length"] = 64,
 		["Artist"] = "Jason Hayes, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -20118,7 +20120,7 @@ local playlist1 = {
     ["Id"] = 840528,
 		["Length"] = 78,
 		["Artist"] = "Jason Hayes, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -20127,7 +20129,7 @@ local playlist1 = {
     ["Id"] = 840529,
 		["Length"] = 77,
 		["Artist"] = "Jason Hayes, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -20136,7 +20138,7 @@ local playlist1 = {
     ["Id"] = 840530,
 		["Length"] = 50,
 		["Artist"] = "Jason Hayes, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -20145,7 +20147,7 @@ local playlist1 = {
     ["Id"] = 840531,
 		["Length"] = 38,
 		["Artist"] = "Jason Hayes, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -20154,7 +20156,7 @@ local playlist1 = {
     ["Id"] = 840532,
 		["Length"] = 49,
 		["Artist"] = "Jason Hayes, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -20163,7 +20165,7 @@ local playlist1 = {
     ["Id"] = 840533,
 		["Length"] = 64,
 		["Artist"] = "Jason Hayes, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -20172,7 +20174,7 @@ local playlist1 = {
     ["Id"] = 840534,
 		["Length"] = 118,
 		["Artist"] = "Jason Hayes, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -20181,7 +20183,7 @@ local playlist1 = {
     ["Id"] = 840535,
 		["Length"] = 46,
 		["Artist"] = "Jason Hayes, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -20190,7 +20192,7 @@ local playlist1 = {
     ["Id"] = 840536,
 		["Length"] = 64,
 		["Artist"] = "Jason Hayes, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -20199,7 +20201,7 @@ local playlist1 = {
     ["Id"] = 840537,
 		["Length"] = 77,
 		["Artist"] = "Jason Hayes, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -20208,7 +20210,7 @@ local playlist1 = {
     ["Id"] = 840538,
 		["Length"] = 50,
 		["Artist"] = "Jason Hayes, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -20217,7 +20219,7 @@ local playlist1 = {
     ["Id"] = 840539,
 		["Length"] = 33,
 		["Artist"] = "Jason Hayes, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.3",
@@ -20226,7 +20228,7 @@ local playlist1 = {
     ["Id"] = 875377,
 		["Length"] = 139,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -20235,7 +20237,7 @@ local playlist1 = {
     ["Id"] = 915647,
 		["Length"] = 78,
 		["Artist"] = "Glenn Stafford, Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.2",
@@ -20244,7 +20246,7 @@ local playlist1 = {
     ["Id"] = 875631,
 		["Length"] = 45,
 		["Artist"] = "Glenn Stafford, Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20253,7 +20255,7 @@ local playlist1 = {
     ["Id"] = 915648,
 		["Length"] = 69,
 		["Artist"] = "Edo Guidotti & Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20262,7 +20264,7 @@ local playlist1 = {
     ["Id"] = 915649,
 		["Length"] = 38,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20271,7 +20273,7 @@ local playlist1 = {
     ["Id"] = 915650,
 		["Length"] = 41,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20280,7 +20282,7 @@ local playlist1 = {
     ["Id"] = 915651,
 		["Length"] = 58,
 		["Artist"] = "Edo Guidotti & Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20289,7 +20291,7 @@ local playlist1 = {
     ["Id"] = 915652,
 		["Length"] = 106,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20298,7 +20300,7 @@ local playlist1 = {
     ["Id"] = 915653,
 		["Length"] = 40,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20307,7 +20309,7 @@ local playlist1 = {
     ["Id"] = 915654,
 		["Length"] = 35,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20316,7 +20318,7 @@ local playlist1 = {
     ["Id"] = 915655,
 		["Length"] = 35,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20325,7 +20327,7 @@ local playlist1 = {
     ["Id"] = 915656,
 		["Length"] = 105,
 		["Artist"] = "Edo Guidotti & Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20334,7 +20336,7 @@ local playlist1 = {
     ["Id"] = 915795,
 		["Length"] = 53,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20343,7 +20345,7 @@ local playlist1 = {
     ["Id"] = 915657,
 		["Length"] = 140,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20352,7 +20354,7 @@ local playlist1 = {
     ["Id"] = 915658,
 		["Length"] = 124,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20361,7 +20363,7 @@ local playlist1 = {
     ["Id"] = 915659,
 		["Length"] = 109,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20370,7 +20372,7 @@ local playlist1 = {
     ["Id"] = 915660,
 		["Length"] = 67,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20379,7 +20381,7 @@ local playlist1 = {
     ["Id"] = 915661,
 		["Length"] = 69,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20388,7 +20390,7 @@ local playlist1 = {
     ["Id"] = 915662,
 		["Length"] = 81,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20397,7 +20399,7 @@ local playlist1 = {
     ["Id"] = 915663,
 		["Length"] = 124,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20406,7 +20408,7 @@ local playlist1 = {
     ["Id"] = 915818,
 		["Length"] = 61,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20415,7 +20417,7 @@ local playlist1 = {
     ["Id"] = 915819,
 		["Length"] = 79,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20424,7 +20426,7 @@ local playlist1 = {
     ["Id"] = 915820,
 		["Length"] = 61,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20433,7 +20435,7 @@ local playlist1 = {
     ["Id"] = 915821,
 		["Length"] = 78,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20442,7 +20444,7 @@ local playlist1 = {
     ["Id"] = 915664,
 		["Length"] = 84,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20451,7 +20453,7 @@ local playlist1 = {
     ["Id"] = 915665,
 		["Length"] = 36,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20460,7 +20462,7 @@ local playlist1 = {
     ["Id"] = 915666,
 		["Length"] = 50,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20469,7 +20471,7 @@ local playlist1 = {
     ["Id"] = 915667,
 		["Length"] = 105,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20478,7 +20480,7 @@ local playlist1 = {
     ["Id"] = 915668,
 		["Length"] = 60,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20487,7 +20489,7 @@ local playlist1 = {
     ["Id"] = 915669,
 		["Length"] = 87,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20496,7 +20498,7 @@ local playlist1 = {
     ["Id"] = 915670,
 		["Length"] = 7,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20505,7 +20507,7 @@ local playlist1 = {
     ["Id"] = 915671,
 		["Length"] = 34,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20514,7 +20516,7 @@ local playlist1 = {
     ["Id"] = 915672,
 		["Length"] = 72,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20523,7 +20525,7 @@ local playlist1 = {
     ["Id"] = 915673,
 		["Length"] = 62,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20532,7 +20534,7 @@ local playlist1 = {
     ["Id"] = 915674,
 		["Length"] = 23,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20541,7 +20543,7 @@ local playlist1 = {
     ["Id"] = 915675,
 		["Length"] = 106,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20550,7 +20552,7 @@ local playlist1 = {
     ["Id"] = 915676,
 		["Length"] = 49,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20559,7 +20561,7 @@ local playlist1 = {
     ["Id"] = 915677,
 		["Length"] = 18,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20568,7 +20570,7 @@ local playlist1 = {
     ["Id"] = 915678,
 		["Length"] = 46,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20577,7 +20579,7 @@ local playlist1 = {
     ["Id"] = 915679,
 		["Length"] = 56,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20586,7 +20588,7 @@ local playlist1 = {
     ["Id"] = 915680,
 		["Length"] = 55,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20595,7 +20597,7 @@ local playlist1 = {
     ["Id"] = 915681,
 		["Length"] = 55,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20604,7 +20606,7 @@ local playlist1 = {
     ["Id"] = 915682,
 		["Length"] = 58,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20613,7 +20615,7 @@ local playlist1 = {
     ["Id"] = 915683,
 		["Length"] = 79,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20622,7 +20624,7 @@ local playlist1 = {
     ["Id"] = 915684,
 		["Length"] = 122,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20631,7 +20633,7 @@ local playlist1 = {
     ["Id"] = 915685,
 		["Length"] = 108,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20640,7 +20642,7 @@ local playlist1 = {
     ["Id"] = 915686,
 		["Length"] = 77,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20649,7 +20651,7 @@ local playlist1 = {
     ["Id"] = 915687,
 		["Length"] = 68,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20658,7 +20660,7 @@ local playlist1 = {
     ["Id"] = 915688,
 		["Length"] = 84,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20667,7 +20669,7 @@ local playlist1 = {
     ["Id"] = 915689,
 		["Length"] = 108,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20676,7 +20678,7 @@ local playlist1 = {
     ["Id"] = 915690,
 		["Length"] = 68,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20685,7 +20687,7 @@ local playlist1 = {
     ["Id"] = 915691,
 		["Length"] = 65,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20694,7 +20696,7 @@ local playlist1 = {
     ["Id"] = 915692,
 		["Length"] = 27,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20703,7 +20705,7 @@ local playlist1 = {
     ["Id"] = 915693,
 		["Length"] = 68,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20712,7 +20714,7 @@ local playlist1 = {
     ["Id"] = 915694,
 		["Length"] = 53,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20721,7 +20723,7 @@ local playlist1 = {
     ["Id"] = 915695,
 		["Length"] = 59,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20730,7 +20732,7 @@ local playlist1 = {
     ["Id"] = 915696,
 		["Length"] = 59,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20739,7 +20741,7 @@ local playlist1 = {
     ["Id"] = 915697,
 		["Length"] = 59,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20748,7 +20750,7 @@ local playlist1 = {
     ["Id"] = 915698,
 		["Length"] = 114,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20757,7 +20759,7 @@ local playlist1 = {
     ["Id"] = 915699,
 		["Length"] = 58,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20766,7 +20768,7 @@ local playlist1 = {
     ["Id"] = 915700,
 		["Length"] = 61,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20775,7 +20777,7 @@ local playlist1 = {
     ["Id"] = 915701,
 		["Length"] = 133,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20784,7 +20786,7 @@ local playlist1 = {
     ["Id"] = 915702,
 		["Length"] = 44,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20793,7 +20795,7 @@ local playlist1 = {
     ["Id"] = 915703,
 		["Length"] = 49,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20802,7 +20804,7 @@ local playlist1 = {
     ["Id"] = 915704,
 		["Length"] = 45,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20811,7 +20813,7 @@ local playlist1 = {
     ["Id"] = 915705,
 		["Length"] = 88,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20820,7 +20822,7 @@ local playlist1 = {
     ["Id"] = 915706,
 		["Length"] = 19,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20829,7 +20831,7 @@ local playlist1 = {
     ["Id"] = 915707,
 		["Length"] = 60,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20838,7 +20840,7 @@ local playlist1 = {
     ["Id"] = 915708,
 		["Length"] = 60,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20847,7 +20849,7 @@ local playlist1 = {
     ["Id"] = 915709,
 		["Length"] = 66,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.4",
@@ -20856,7 +20858,7 @@ local playlist1 = {
     ["Id"] = 915711,
 		["Length"] = 86,
 		["Artist"] = "Jeremy Soule, Sam Cardon, Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -20865,7 +20867,7 @@ local playlist1 = {
     ["Id"] = 644931,
 		["Length"] = 93,
 		["Artist"] = "Edo Guidotti",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -20874,7 +20876,7 @@ local playlist1 = {
     ["Id"] = 644404,
 		["Length"] = 128,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -20883,7 +20885,7 @@ local playlist1 = {
     ["Id"] = 644405,
 		["Length"] = 110,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -20892,7 +20894,7 @@ local playlist1 = {
     ["Id"] = 644406,
 		["Length"] = 112,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -20901,7 +20903,7 @@ local playlist1 = {
     ["Id"] = 644932,
 		["Length"] = 158,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -20910,7 +20912,7 @@ local playlist1 = {
     ["Id"] = 644933,
 		["Length"] = 15,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -20919,7 +20921,7 @@ local playlist1 = {
     ["Id"] = 644407,
 		["Length"] = 46,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -20928,7 +20930,7 @@ local playlist1 = {
     ["Id"] = 644408,
 		["Length"] = 106,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -20937,7 +20939,7 @@ local playlist1 = {
     ["Id"] = 644409,
 		["Length"] = 121,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -20946,7 +20948,7 @@ local playlist1 = {
     ["Id"] = 644410,
 		["Length"] = 124,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -20955,7 +20957,7 @@ local playlist1 = {
     ["Id"] = 644934,
 		["Length"] = 121,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -20964,7 +20966,7 @@ local playlist1 = {
     ["Id"] = 644935,
 		["Length"] = 18,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5",
@@ -20973,7 +20975,7 @@ local playlist1 = {
     ["Id"] = 644411,
 		["Length"] = 35,
 		["Artist"] = "Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Burning Crusade",
@@ -20982,7 +20984,7 @@ local playlist1 = {
     ["Id"] = 53255,
 		["Length"] = 68,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -20991,7 +20993,7 @@ local playlist1 = {
     ["Id"] = 53256,
 		["Length"] = 28,
 		["Artist"] = "D. Arkenstone; R.Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -21000,7 +21002,7 @@ local playlist1 = {
     ["Id"] = 53257,
 		["Length"] = 74,
 		["Artist"] = "D. Arkenstone; R.Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -21009,7 +21011,7 @@ local playlist1 = {
     ["Id"] = 53258,
 		["Length"] = 58,
 		["Artist"] = "D. Arkenstone; R.Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -21018,7 +21020,7 @@ local playlist1 = {
     ["Id"] = 53259,
 		["Length"] = 37,
 		["Artist"] = "D. Arkenstone; R.Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Burning Crusade",
@@ -21027,7 +21029,7 @@ local playlist1 = {
     ["Id"] = 53260,
 		["Length"] = 72,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WarCraft III Expansion",
@@ -21036,7 +21038,7 @@ local playlist1 = {
     ["Id"] = 53438,
 		["Length"] = 281,
 		["Artist"] = "Tenth Level Tauren Chieftain",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3.3 Obsidian Sanctum",
@@ -21045,7 +21047,7 @@ local playlist1 = {
     ["Id"] = 371383,
 		["Length"] = 82,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3.3 Obsidian Sanctum",
@@ -21054,7 +21056,7 @@ local playlist1 = {
     ["Id"] = 371384,
 		["Length"] = 86,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3.3 Obsidian Sanctum",
@@ -21063,7 +21065,7 @@ local playlist1 = {
     ["Id"] = 371385,
 		["Length"] = 119,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3.3 Obsidian Sanctum",
@@ -21072,7 +21074,7 @@ local playlist1 = {
     ["Id"] = 371386,
 		["Length"] = 57,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3.3 Obsidian Sanctum",
@@ -21081,7 +21083,7 @@ local playlist1 = {
     ["Id"] = 371387,
 		["Length"] = 87,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 1.9",
@@ -21090,7 +21092,7 @@ local playlist1 = {
     ["Id"] = 53261,
 		["Length"] = 67,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 1.9",
@@ -21099,7 +21101,7 @@ local playlist1 = {
     ["Id"] = 53262,
 		["Length"] = 84,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 1.9",
@@ -21108,7 +21110,7 @@ local playlist1 = {
     ["Id"] = 53263,
 		["Length"] = 57,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 1.9",
@@ -21117,7 +21119,7 @@ local playlist1 = {
     ["Id"] = 53264,
 		["Length"] = 59,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 1.9",
@@ -21126,7 +21128,7 @@ local playlist1 = {
     ["Id"] = 53265,
 		["Length"] = 52,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 1.9",
@@ -21135,7 +21137,7 @@ local playlist1 = {
     ["Id"] = 53266,
 		["Length"] = 81,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 1.9",
@@ -21144,7 +21146,7 @@ local playlist1 = {
     ["Id"] = 53267,
 		["Length"] = 67,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 1.9",
@@ -21153,7 +21155,7 @@ local playlist1 = {
     ["Id"] = 53268,
 		["Length"] = 69,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 1.9",
@@ -21162,7 +21164,7 @@ local playlist1 = {
     ["Id"] = 53269,
 		["Length"] = 69,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 1.9",
@@ -21171,7 +21173,7 @@ local playlist1 = {
     ["Id"] = 53270,
 		["Length"] = 73,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 1.9",
@@ -21180,7 +21182,7 @@ local playlist1 = {
     ["Id"] = 53271,
 		["Length"] = 23,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 1.9",
@@ -21189,7 +21191,7 @@ local playlist1 = {
     ["Id"] = 53272,
 		["Length"] = 17,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 1.9",
@@ -21198,7 +21200,7 @@ local playlist1 = {
     ["Id"] = 53273,
 		["Length"] = 15,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 1.9",
@@ -21207,7 +21209,7 @@ local playlist1 = {
     ["Id"] = 53274,
 		["Length"] = 19,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 1.9",
@@ -21216,7 +21218,7 @@ local playlist1 = {
     ["Id"] = 53275,
 		["Length"] = 31,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 1.9",
@@ -21225,7 +21227,7 @@ local playlist1 = {
     ["Id"] = 53276,
 		["Length"] = 20,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 1.9",
@@ -21234,7 +21236,7 @@ local playlist1 = {
     ["Id"] = 53277,
 		["Length"] = 17,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.2 Call of the Crusade",
@@ -21243,7 +21245,7 @@ local playlist1 = {
     ["Id"] = 316406,
 		["Length"] = 145,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.2 Call of the Crusade",
@@ -21252,7 +21254,7 @@ local playlist1 = {
     ["Id"] = 316404,
 		["Length"] = 185,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.2 Call of the Crusade",
@@ -21261,7 +21263,7 @@ local playlist1 = {
     ["Id"] = 316407,
 		["Length"] = 162,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.2 Call of the Crusade",
@@ -21270,7 +21272,7 @@ local playlist1 = {
     ["Id"] = 316408,
 		["Length"] = 160,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.2 Call of the Crusade",
@@ -21279,7 +21281,7 @@ local playlist1 = {
     ["Id"] = 316409,
 		["Length"] = 193,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.2 Call of the Crusade",
@@ -21288,7 +21290,7 @@ local playlist1 = {
     ["Id"] = 316405,
 		["Length"] = 185,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Argent Crusade Tournament",
@@ -21297,7 +21299,7 @@ local playlist1 = {
     ["Id"] = 303104,
 		["Length"] = 13,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Argent Crusade Tournament",
@@ -21306,7 +21308,7 @@ local playlist1 = {
     ["Id"] = 303111,
 		["Length"] = 123,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Argent Crusade Tournament",
@@ -21315,7 +21317,7 @@ local playlist1 = {
     ["Id"] = 303112,
 		["Length"] = 156,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Argent Crusade Tournament",
@@ -21324,7 +21326,7 @@ local playlist1 = {
     ["Id"] = 303107,
 		["Length"] = 157,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Argent Crusade Tournament",
@@ -21333,7 +21335,7 @@ local playlist1 = {
     ["Id"] = 303108,
 		["Length"] = 162,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Argent Crusade Tournament",
@@ -21342,7 +21344,7 @@ local playlist1 = {
     ["Id"] = 303105,
 		["Length"] = 164,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Argent Crusade Tournament",
@@ -21351,7 +21353,7 @@ local playlist1 = {
     ["Id"] = 303113,
 		["Length"] = 144,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Argent Crusade Tournament",
@@ -21360,7 +21362,7 @@ local playlist1 = {
     ["Id"] = 303106,
 		["Length"] = 184,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Argent Crusade Tournament",
@@ -21369,7 +21371,7 @@ local playlist1 = {
     ["Id"] = 303109,
 		["Length"] = 189,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Argent Crusade Tournament",
@@ -21378,7 +21380,7 @@ local playlist1 = {
     ["Id"] = 303114,
 		["Length"] = 151,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Argent Crusade Tournament",
@@ -21387,7 +21389,7 @@ local playlist1 = {
     ["Id"] = 303110,
 		["Length"] = 150,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -21396,7 +21398,7 @@ local playlist1 = {
     ["Id"] = 229736,
 		["Length"] = 62,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -21405,7 +21407,7 @@ local playlist1 = {
     ["Id"] = 229737,
 		["Length"] = 98,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -21414,7 +21416,7 @@ local playlist1 = {
     ["Id"] = 229738,
 		["Length"] = 111,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -21423,7 +21425,7 @@ local playlist1 = {
     ["Id"] = 229739,
 		["Length"] = 62,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -21432,7 +21434,7 @@ local playlist1 = {
     ["Id"] = 229740,
 		["Length"] = 76,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -21441,7 +21443,7 @@ local playlist1 = {
     ["Id"] = 229741,
 		["Length"] = 106,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -21450,7 +21452,7 @@ local playlist1 = {
     ["Id"] = 229742,
 		["Length"] = 106,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -21459,7 +21461,7 @@ local playlist1 = {
     ["Id"] = 229743,
 		["Length"] = 104,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -21468,7 +21470,7 @@ local playlist1 = {
     ["Id"] = 229744,
 		["Length"] = 61,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -21477,7 +21479,7 @@ local playlist1 = {
     ["Id"] = 229745,
 		["Length"] = 98,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -21486,7 +21488,7 @@ local playlist1 = {
     ["Id"] = 229746,
 		["Length"] = 110,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -21495,7 +21497,7 @@ local playlist1 = {
     ["Id"] = 229747,
 		["Length"] = 62,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -21504,7 +21506,7 @@ local playlist1 = {
     ["Id"] = 229748,
 		["Length"] = 76,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -21513,7 +21515,7 @@ local playlist1 = {
     ["Id"] = 229749,
 		["Length"] = 104,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -21522,7 +21524,7 @@ local playlist1 = {
     ["Id"] = 229750,
 		["Length"] = 62,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -21531,7 +21533,7 @@ local playlist1 = {
     ["Id"] = 229751,
 		["Length"] = 62,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -21540,7 +21542,7 @@ local playlist1 = {
     ["Id"] = 229752,
 		["Length"] = 98,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -21549,7 +21551,7 @@ local playlist1 = {
     ["Id"] = 229753,
 		["Length"] = 98,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -21558,7 +21560,7 @@ local playlist1 = {
     ["Id"] = 229754,
 		["Length"] = 111,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -21567,7 +21569,7 @@ local playlist1 = {
     ["Id"] = 229755,
 		["Length"] = 110,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -21576,7 +21578,7 @@ local playlist1 = {
     ["Id"] = 229756,
 		["Length"] = 63,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -21585,7 +21587,7 @@ local playlist1 = {
     ["Id"] = 229757,
 		["Length"] = 63,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -21594,7 +21596,7 @@ local playlist1 = {
     ["Id"] = 229758,
 		["Length"] = 76,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -21603,7 +21605,7 @@ local playlist1 = {
     ["Id"] = 229759,
 		["Length"] = 76,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -21612,7 +21614,7 @@ local playlist1 = {
     ["Id"] = 53278,
 		["Length"] = 191,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -21621,7 +21623,7 @@ local playlist1 = {
     ["Id"] = 53279,
 		["Length"] = 110,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -21630,7 +21632,7 @@ local playlist1 = {
     ["Id"] = 53280,
 		["Length"] = 110,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -21639,7 +21641,7 @@ local playlist1 = {
     ["Id"] = 53281,
 		["Length"] = 99,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -21648,7 +21650,7 @@ local playlist1 = {
     ["Id"] = 53282,
 		["Length"] = 82,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -21657,7 +21659,7 @@ local playlist1 = {
     ["Id"] = 53283,
 		["Length"] = 109,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -21666,7 +21668,7 @@ local playlist1 = {
     ["Id"] = 53284,
 		["Length"] = 107,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -21675,7 +21677,7 @@ local playlist1 = {
     ["Id"] = 53285,
 		["Length"] = 93,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -21684,7 +21686,7 @@ local playlist1 = {
     ["Id"] = 53286,
 		["Length"] = 103,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -21693,7 +21695,7 @@ local playlist1 = {
     ["Id"] = 53287,
 		["Length"] = 74,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -21702,7 +21704,7 @@ local playlist1 = {
     ["Id"] = 53288,
 		["Length"] = 149,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -21711,7 +21713,7 @@ local playlist1 = {
     ["Id"] = 53289,
 		["Length"] = 73,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -21720,7 +21722,7 @@ local playlist1 = {
     ["Id"] = 53290,
 		["Length"] = 98,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -21729,7 +21731,7 @@ local playlist1 = {
     ["Id"] = 53291,
 		["Length"] = 49,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -21738,7 +21740,7 @@ local playlist1 = {
     ["Id"] = 53292,
 		["Length"] = 45,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -21747,7 +21749,7 @@ local playlist1 = {
     ["Id"] = 53293,
 		["Length"] = 206,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -21756,7 +21758,7 @@ local playlist1 = {
     ["Id"] = 53294,
 		["Length"] = 124,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -21765,7 +21767,7 @@ local playlist1 = {
     ["Id"] = 53295,
 		["Length"] = 129,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -21774,7 +21776,7 @@ local playlist1 = {
     ["Id"] = 53296,
 		["Length"] = 187,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -21783,7 +21785,7 @@ local playlist1 = {
     ["Id"] = 53297,
 		["Length"] = 188,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -21792,7 +21794,7 @@ local playlist1 = {
     ["Id"] = 53298,
 		["Length"] = 158,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -21801,7 +21803,7 @@ local playlist1 = {
     ["Id"] = 53299,
 		["Length"] = 64,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -21810,7 +21812,7 @@ local playlist1 = {
     ["Id"] = 53300,
 		["Length"] = 64,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -21819,7 +21821,7 @@ local playlist1 = {
     ["Id"] = 53301,
 		["Length"] = 55,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -21828,7 +21830,7 @@ local playlist1 = {
     ["Id"] = 53302,
 		["Length"] = 67,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -21837,7 +21839,7 @@ local playlist1 = {
     ["Id"] = 53303,
 		["Length"] = 40,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -21846,7 +21848,7 @@ local playlist1 = {
     ["Id"] = 53304,
 		["Length"] = 47,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -21855,7 +21857,7 @@ local playlist1 = {
     ["Id"] = 53305,
 		["Length"] = 163,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -21864,7 +21866,7 @@ local playlist1 = {
     ["Id"] = 53306,
 		["Length"] = 81,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -21873,7 +21875,7 @@ local playlist1 = {
     ["Id"] = 53307,
 		["Length"] = 74,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -21882,7 +21884,7 @@ local playlist1 = {
     ["Id"] = 53308,
 		["Length"] = 63,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -21891,7 +21893,7 @@ local playlist1 = {
     ["Id"] = 53309,
 		["Length"] = 74,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -21900,7 +21902,7 @@ local playlist1 = {
     ["Id"] = 53310,
 		["Length"] = 61,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -21909,7 +21911,7 @@ local playlist1 = {
     ["Id"] = 53311,
 		["Length"] = 71,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -21918,7 +21920,7 @@ local playlist1 = {
     ["Id"] = 53312,
 		["Length"] = 78,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -21927,7 +21929,7 @@ local playlist1 = {
     ["Id"] = 53313,
 		["Length"] = 91,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -21936,7 +21938,7 @@ local playlist1 = {
     ["Id"] = 53314,
 		["Length"] = 90,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -21945,7 +21947,7 @@ local playlist1 = {
     ["Id"] = 53315,
 		["Length"] = 29,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -21954,7 +21956,7 @@ local playlist1 = {
     ["Id"] = 53316,
 		["Length"] = 77,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -21963,7 +21965,7 @@ local playlist1 = {
     ["Id"] = 53317,
 		["Length"] = 65,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -21972,7 +21974,7 @@ local playlist1 = {
     ["Id"] = 53318,
 		["Length"] = 75,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -21981,7 +21983,7 @@ local playlist1 = {
     ["Id"] = 53319,
 		["Length"] = 35,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -21990,7 +21992,7 @@ local playlist1 = {
     ["Id"] = 53320,
 		["Length"] = 106,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -21999,7 +22001,7 @@ local playlist1 = {
     ["Id"] = 53321,
 		["Length"] = 88,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -22008,7 +22010,7 @@ local playlist1 = {
     ["Id"] = 53322,
 		["Length"] = 57,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -22017,7 +22019,7 @@ local playlist1 = {
     ["Id"] = 53323,
 		["Length"] = 126,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -22026,7 +22028,7 @@ local playlist1 = {
     ["Id"] = 53324,
 		["Length"] = 253,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -22035,7 +22037,7 @@ local playlist1 = {
     ["Id"] = 53325,
 		["Length"] = 111,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -22044,7 +22046,7 @@ local playlist1 = {
     ["Id"] = 53326,
 		["Length"] = 66,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -22053,7 +22055,7 @@ local playlist1 = {
     ["Id"] = 53327,
 		["Length"] = 79,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -22062,7 +22064,7 @@ local playlist1 = {
     ["Id"] = 53328,
 		["Length"] = 63,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -22071,7 +22073,7 @@ local playlist1 = {
     ["Id"] = 53329,
 		["Length"] = 75,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -22080,7 +22082,7 @@ local playlist1 = {
     ["Id"] = 53330,
 		["Length"] = 125,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -22089,7 +22091,7 @@ local playlist1 = {
     ["Id"] = 53331,
 		["Length"] = 64,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -22098,7 +22100,7 @@ local playlist1 = {
     ["Id"] = 53332,
 		["Length"] = 88,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -22107,7 +22109,7 @@ local playlist1 = {
     ["Id"] = 53333,
 		["Length"] = 130,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -22116,7 +22118,7 @@ local playlist1 = {
     ["Id"] = 53334,
 		["Length"] = 65,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -22125,7 +22127,7 @@ local playlist1 = {
     ["Id"] = 53335,
 		["Length"] = 66,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -22134,7 +22136,7 @@ local playlist1 = {
     ["Id"] = 53336,
 		["Length"] = 65,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -22143,7 +22145,7 @@ local playlist1 = {
     ["Id"] = 53337,
 		["Length"] = 56,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -22152,7 +22154,7 @@ local playlist1 = {
     ["Id"] = 53338,
 		["Length"] = 58,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -22161,7 +22163,7 @@ local playlist1 = {
     ["Id"] = 53339,
 		["Length"] = 64,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -22170,7 +22172,7 @@ local playlist1 = {
     ["Id"] = 53340,
 		["Length"] = 57,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -22179,7 +22181,7 @@ local playlist1 = {
     ["Id"] = 53341,
 		["Length"] = 72,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -22188,7 +22190,7 @@ local playlist1 = {
     ["Id"] = 53342,
 		["Length"] = 67,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -22197,7 +22199,7 @@ local playlist1 = {
     ["Id"] = 53343,
 		["Length"] = 32,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -22206,7 +22208,7 @@ local playlist1 = {
     ["Id"] = 53344,
 		["Length"] = 48,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -22215,7 +22217,7 @@ local playlist1 = {
     ["Id"] = 53345,
 		["Length"] = 59,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -22224,7 +22226,7 @@ local playlist1 = {
     ["Id"] = 53346,
 		["Length"] = 69,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -22233,7 +22235,7 @@ local playlist1 = {
     ["Id"] = 53347,
 		["Length"] = 41,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -22242,7 +22244,7 @@ local playlist1 = {
     ["Id"] = 53348,
 		["Length"] = 114,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW - The Black Temple",
@@ -22251,7 +22253,7 @@ local playlist1 = {
     ["Id"] = 53349,
 		["Length"] = 51,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22260,7 +22262,7 @@ local playlist1 = {
     ["Id"] = 53350,
 		["Length"] = 89,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22269,7 +22271,7 @@ local playlist1 = {
     ["Id"] = 53351,
 		["Length"] = 127,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22278,7 +22280,7 @@ local playlist1 = {
     ["Id"] = 53352,
 		["Length"] = 131,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22287,7 +22289,7 @@ local playlist1 = {
     ["Id"] = 53353,
 		["Length"] = 80,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22296,7 +22298,7 @@ local playlist1 = {
     ["Id"] = 53354,
 		["Length"] = 75,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22305,7 +22307,7 @@ local playlist1 = {
     ["Id"] = 53355,
 		["Length"] = 158,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22314,7 +22316,7 @@ local playlist1 = {
     ["Id"] = 53356,
 		["Length"] = 110,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22323,7 +22325,7 @@ local playlist1 = {
     ["Id"] = 53357,
 		["Length"] = 110,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22332,7 +22334,7 @@ local playlist1 = {
     ["Id"] = 53358,
 		["Length"] = 75,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22341,7 +22343,7 @@ local playlist1 = {
     ["Id"] = 53359,
 		["Length"] = 110,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22350,7 +22352,7 @@ local playlist1 = {
     ["Id"] = 53360,
 		["Length"] = 31,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22359,7 +22361,7 @@ local playlist1 = {
     ["Id"] = 53361,
 		["Length"] = 25,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22368,7 +22370,7 @@ local playlist1 = {
     ["Id"] = 53362,
 		["Length"] = 126,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22377,7 +22379,7 @@ local playlist1 = {
     ["Id"] = 53363,
 		["Length"] = 129,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22386,7 +22388,7 @@ local playlist1 = {
     ["Id"] = 53364,
 		["Length"] = 114,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22395,7 +22397,7 @@ local playlist1 = {
     ["Id"] = 53365,
 		["Length"] = 69,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22404,7 +22406,7 @@ local playlist1 = {
     ["Id"] = 53366,
 		["Length"] = 143,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22413,7 +22415,7 @@ local playlist1 = {
     ["Id"] = 229760,
 		["Length"] = 64,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22422,7 +22424,7 @@ local playlist1 = {
     ["Id"] = 229761,
 		["Length"] = 63,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22431,7 +22433,7 @@ local playlist1 = {
     ["Id"] = 229762,
 		["Length"] = 124,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22440,7 +22442,7 @@ local playlist1 = {
     ["Id"] = 53367,
 		["Length"] = 73,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22449,7 +22451,7 @@ local playlist1 = {
     ["Id"] = 53368,
 		["Length"] = 101,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22458,7 +22460,7 @@ local playlist1 = {
     ["Id"] = 53369,
 		["Length"] = 78,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22467,7 +22469,7 @@ local playlist1 = {
     ["Id"] = 53370,
 		["Length"] = 112,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22476,7 +22478,7 @@ local playlist1 = {
     ["Id"] = 229763,
 		["Length"] = 73,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22485,7 +22487,7 @@ local playlist1 = {
     ["Id"] = 229764,
 		["Length"] = 115,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22494,7 +22496,7 @@ local playlist1 = {
     ["Id"] = 229765,
 		["Length"] = 86,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22503,7 +22505,7 @@ local playlist1 = {
     ["Id"] = 229766,
 		["Length"] = 71,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22512,7 +22514,7 @@ local playlist1 = {
     ["Id"] = 53371,
 		["Length"] = 73,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22521,7 +22523,7 @@ local playlist1 = {
     ["Id"] = 53372,
 		["Length"] = 115,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22530,7 +22532,7 @@ local playlist1 = {
     ["Id"] = 53373,
 		["Length"] = 88,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22539,7 +22541,7 @@ local playlist1 = {
     ["Id"] = 53374,
 		["Length"] = 69,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22548,7 +22550,7 @@ local playlist1 = {
     ["Id"] = 229767,
 		["Length"] = 77,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22557,7 +22559,7 @@ local playlist1 = {
     ["Id"] = 229768,
 		["Length"] = 100,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22566,7 +22568,7 @@ local playlist1 = {
     ["Id"] = 229769,
 		["Length"] = 78,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22575,7 +22577,7 @@ local playlist1 = {
     ["Id"] = 229770,
 		["Length"] = 111,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22584,7 +22586,7 @@ local playlist1 = {
     ["Id"] = 229771,
 		["Length"] = 57,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22593,7 +22595,7 @@ local playlist1 = {
     ["Id"] = 229772,
 		["Length"] = 48,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22602,7 +22604,7 @@ local playlist1 = {
     ["Id"] = 229773,
 		["Length"] = 62,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22611,7 +22613,7 @@ local playlist1 = {
     ["Id"] = 229774,
 		["Length"] = 151,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22620,7 +22622,7 @@ local playlist1 = {
     ["Id"] = 229775,
 		["Length"] = 186,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22629,7 +22631,7 @@ local playlist1 = {
     ["Id"] = 229776,
 		["Length"] = 161,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22638,7 +22640,7 @@ local playlist1 = {
     ["Id"] = 229777,
 		["Length"] = 153,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22647,7 +22649,7 @@ local playlist1 = {
     ["Id"] = 229778,
 		["Length"] = 177,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22656,7 +22658,7 @@ local playlist1 = {
     ["Id"] = 229779,
 		["Length"] = 159,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22665,7 +22667,7 @@ local playlist1 = {
     ["Id"] = 229780,
 		["Length"] = 79,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22674,7 +22676,7 @@ local playlist1 = {
     ["Id"] = 229781,
 		["Length"] = 76,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22683,7 +22685,7 @@ local playlist1 = {
     ["Id"] = 229782,
 		["Length"] = 95,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22692,7 +22694,7 @@ local playlist1 = {
     ["Id"] = 53375,
 		["Length"] = 100,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22701,7 +22703,7 @@ local playlist1 = {
     ["Id"] = 53376,
 		["Length"] = 79,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22710,7 +22712,7 @@ local playlist1 = {
     ["Id"] = 53377,
 		["Length"] = 98,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -22719,7 +22721,7 @@ local playlist1 = {
     ["Id"] = 53378,
 		["Length"] = 59,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22728,7 +22730,7 @@ local playlist1 = {
     ["Id"] = 53379,
 		["Length"] = 93,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22737,7 +22739,7 @@ local playlist1 = {
     ["Id"] = 53380,
 		["Length"] = 112,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22746,7 +22748,7 @@ local playlist1 = {
     ["Id"] = 53381,
 		["Length"] = 120,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22755,7 +22757,7 @@ local playlist1 = {
     ["Id"] = 53382,
 		["Length"] = 168,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22764,7 +22766,7 @@ local playlist1 = {
     ["Id"] = 53383,
 		["Length"] = 130,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22773,7 +22775,7 @@ local playlist1 = {
     ["Id"] = 53384,
 		["Length"] = 151,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22782,7 +22784,7 @@ local playlist1 = {
     ["Id"] = 53385,
 		["Length"] = 161,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22791,7 +22793,7 @@ local playlist1 = {
     ["Id"] = 53386,
 		["Length"] = 178,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22800,7 +22802,7 @@ local playlist1 = {
     ["Id"] = 53387,
 		["Length"] = 139,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22809,7 +22811,7 @@ local playlist1 = {
     ["Id"] = 53388,
 		["Length"] = 161,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22818,7 +22820,7 @@ local playlist1 = {
     ["Id"] = 53389,
 		["Length"] = 103,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22827,7 +22829,7 @@ local playlist1 = {
     ["Id"] = 53390,
 		["Length"] = 59,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22836,7 +22838,7 @@ local playlist1 = {
     ["Id"] = 53391,
 		["Length"] = 66,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22845,7 +22847,7 @@ local playlist1 = {
     ["Id"] = 53392,
 		["Length"] = 81,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22854,7 +22856,7 @@ local playlist1 = {
     ["Id"] = 53393,
 		["Length"] = 66,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22863,7 +22865,7 @@ local playlist1 = {
     ["Id"] = 53394,
 		["Length"] = 70,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22872,7 +22874,7 @@ local playlist1 = {
     ["Id"] = 53395,
 		["Length"] = 58,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22881,7 +22883,7 @@ local playlist1 = {
     ["Id"] = 53396,
 		["Length"] = 93,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22890,7 +22892,7 @@ local playlist1 = {
     ["Id"] = 53397,
 		["Length"] = 60,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22899,7 +22901,7 @@ local playlist1 = {
     ["Id"] = 53398,
 		["Length"] = 69,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22908,7 +22910,7 @@ local playlist1 = {
     ["Id"] = 53399,
 		["Length"] = 122,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22917,7 +22919,7 @@ local playlist1 = {
     ["Id"] = 53400,
 		["Length"] = 73,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22926,7 +22928,7 @@ local playlist1 = {
     ["Id"] = 53401,
 		["Length"] = 112,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22935,7 +22937,7 @@ local playlist1 = {
     ["Id"] = 53402,
 		["Length"] = 61,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22944,7 +22946,7 @@ local playlist1 = {
     ["Id"] = 53403,
 		["Length"] = 56,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22953,7 +22955,7 @@ local playlist1 = {
     ["Id"] = 53404,
 		["Length"] = 66,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -22962,7 +22964,7 @@ local playlist1 = {
     ["Id"] = 53405,
 		["Length"] = 70,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -22971,7 +22973,7 @@ local playlist1 = {
     ["Id"] = 53406,
 		["Length"] = 73,
 		["Artist"] = "Derek Duke - Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -22980,7 +22982,7 @@ local playlist1 = {
     ["Id"] = 53407,
 		["Length"] = 69,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -22989,7 +22991,7 @@ local playlist1 = {
     ["Id"] = 53408,
 		["Length"] = 48,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -22998,7 +23000,7 @@ local playlist1 = {
     ["Id"] = 53409,
 		["Length"] = 45,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -23007,7 +23009,7 @@ local playlist1 = {
     ["Id"] = 53410,
 		["Length"] = 85,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -23016,7 +23018,7 @@ local playlist1 = {
     ["Id"] = 53411,
 		["Length"] = 47,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -23025,7 +23027,7 @@ local playlist1 = {
     ["Id"] = 53412,
 		["Length"] = 46,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -23034,7 +23036,7 @@ local playlist1 = {
     ["Id"] = 53413,
 		["Length"] = 66,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -23043,7 +23045,7 @@ local playlist1 = {
     ["Id"] = 53414,
 		["Length"] = 49,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -23052,7 +23054,7 @@ local playlist1 = {
     ["Id"] = 53415,
 		["Length"] = 67,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -23061,7 +23063,7 @@ local playlist1 = {
     ["Id"] = 53416,
 		["Length"] = 28,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -23070,7 +23072,7 @@ local playlist1 = {
     ["Id"] = 53417,
 		["Length"] = 108,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -23079,7 +23081,7 @@ local playlist1 = {
     ["Id"] = 53418,
 		["Length"] = 79,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -23088,7 +23090,7 @@ local playlist1 = {
     ["Id"] = 53419,
 		["Length"] = 114,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -23097,7 +23099,7 @@ local playlist1 = {
     ["Id"] = 53420,
 		["Length"] = 123,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -23106,7 +23108,7 @@ local playlist1 = {
     ["Id"] = 53421,
 		["Length"] = 73,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -23115,7 +23117,7 @@ local playlist1 = {
     ["Id"] = 53422,
 		["Length"] = 78,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -23124,7 +23126,7 @@ local playlist1 = {
     ["Id"] = 53423,
 		["Length"] = 65,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -23133,7 +23135,7 @@ local playlist1 = {
     ["Id"] = 53424,
 		["Length"] = 62,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -23142,7 +23144,7 @@ local playlist1 = {
     ["Id"] = 53425,
 		["Length"] = 45,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -23151,7 +23153,7 @@ local playlist1 = {
     ["Id"] = 229783,
 		["Length"] = 93,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -23160,7 +23162,7 @@ local playlist1 = {
     ["Id"] = 229784,
 		["Length"] = 133,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -23169,7 +23171,7 @@ local playlist1 = {
     ["Id"] = 229785,
 		["Length"] = 75,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -23178,7 +23180,7 @@ local playlist1 = {
     ["Id"] = 229786,
 		["Length"] = 65,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -23187,7 +23189,7 @@ local playlist1 = {
     ["Id"] = 229787,
 		["Length"] = 90,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -23196,7 +23198,7 @@ local playlist1 = {
     ["Id"] = 229788,
 		["Length"] = 133,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -23205,7 +23207,7 @@ local playlist1 = {
     ["Id"] = 229789,
 		["Length"] = 75,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -23214,7 +23216,7 @@ local playlist1 = {
     ["Id"] = 229790,
 		["Length"] = 65,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -23223,7 +23225,7 @@ local playlist1 = {
     ["Id"] = 229791,
 		["Length"] = 75,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -23232,7 +23234,7 @@ local playlist1 = {
     ["Id"] = 229792,
 		["Length"] = 65,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -23241,7 +23243,7 @@ local playlist1 = {
     ["Id"] = 229793,
 		["Length"] = 73,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -23250,7 +23252,7 @@ local playlist1 = {
     ["Id"] = 229794,
 		["Length"] = 73,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23259,7 +23261,7 @@ local playlist1 = {
     ["Id"] = 229795,
 		["Length"] = 113,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23268,7 +23270,7 @@ local playlist1 = {
     ["Id"] = 229796,
 		["Length"] = 98,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23277,7 +23279,7 @@ local playlist1 = {
     ["Id"] = 229797,
 		["Length"] = 72,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23286,7 +23288,7 @@ local playlist1 = {
     ["Id"] = 229798,
 		["Length"] = 113,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23295,7 +23297,7 @@ local playlist1 = {
     ["Id"] = 229799,
 		["Length"] = 107,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -23304,7 +23306,7 @@ local playlist1 = {
     ["Id"] = 53426,
 		["Length"] = 54,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -23313,7 +23315,7 @@ local playlist1 = {
     ["Id"] = 53427,
 		["Length"] = 58,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -23322,7 +23324,7 @@ local playlist1 = {
     ["Id"] = 53428,
 		["Length"] = 64,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -23331,7 +23333,7 @@ local playlist1 = {
     ["Id"] = 53429,
 		["Length"] = 79,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -23340,7 +23342,7 @@ local playlist1 = {
     ["Id"] = 53430,
 		["Length"] = 82,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -23349,7 +23351,7 @@ local playlist1 = {
     ["Id"] = 53431,
 		["Length"] = 74,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23358,7 +23360,7 @@ local playlist1 = {
     ["Id"] = 229800,
 		["Length"] = 67,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23367,7 +23369,7 @@ local playlist1 = {
     ["Id"] = 229801,
 		["Length"] = 42,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23376,7 +23378,7 @@ local playlist1 = {
     ["Id"] = 229802,
 		["Length"] = 70,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23385,7 +23387,7 @@ local playlist1 = {
     ["Id"] = 229803,
 		["Length"] = 88,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23394,7 +23396,7 @@ local playlist1 = {
     ["Id"] = 229804,
 		["Length"] = 68,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23403,7 +23405,7 @@ local playlist1 = {
     ["Id"] = 229805,
 		["Length"] = 66,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23412,7 +23414,7 @@ local playlist1 = {
     ["Id"] = 229806,
 		["Length"] = 101,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23421,7 +23423,7 @@ local playlist1 = {
     ["Id"] = 229807,
 		["Length"] = 72,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23430,7 +23432,7 @@ local playlist1 = {
     ["Id"] = 229808,
 		["Length"] = 64,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23439,7 +23441,7 @@ local playlist1 = {
     ["Id"] = 229809,
 		["Length"] = 91,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -23448,7 +23450,7 @@ local playlist1 = {
     ["Id"] = 575638,
 		["Length"] = 61,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -23457,7 +23459,7 @@ local playlist1 = {
     ["Id"] = 575639,
 		["Length"] = 59,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -23466,7 +23468,7 @@ local playlist1 = {
     ["Id"] = 575640,
 		["Length"] = 71,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -23475,7 +23477,7 @@ local playlist1 = {
     ["Id"] = 575641,
 		["Length"] = 97,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -23484,7 +23486,7 @@ local playlist1 = {
     ["Id"] = 575642,
 		["Length"] = 89,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -23493,7 +23495,7 @@ local playlist1 = {
     ["Id"] = 575643,
 		["Length"] = 172,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -23502,7 +23504,7 @@ local playlist1 = {
     ["Id"] = 575816,
 		["Length"] = 86,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 4.3",
@@ -23511,7 +23513,7 @@ local playlist1 = {
     ["Id"] = 575817,
 		["Length"] = 106,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 5.1",
@@ -23520,7 +23522,7 @@ local playlist1 = {
     ["Id"] = 772749,
 		["Length"] = 180,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -23529,7 +23531,7 @@ local playlist1 = {
     ["Id"] = 53432,
 		["Length"] = 65,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -23538,7 +23540,7 @@ local playlist1 = {
     ["Id"] = 53433,
 		["Length"] = 81,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -23547,7 +23549,7 @@ local playlist1 = {
     ["Id"] = 53434,
 		["Length"] = 54,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -23556,7 +23558,7 @@ local playlist1 = {
     ["Id"] = 53435,
 		["Length"] = 77,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -23565,7 +23567,7 @@ local playlist1 = {
     ["Id"] = 53436,
 		["Length"] = 62,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -23574,7 +23576,7 @@ local playlist1 = {
     ["Id"] = 53437,
 		["Length"] = 57,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23583,7 +23585,7 @@ local playlist1 = {
     ["Id"] = 229810,
 		["Length"] = 92,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23592,7 +23594,7 @@ local playlist1 = {
     ["Id"] = 229811,
 		["Length"] = 93,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23601,7 +23603,7 @@ local playlist1 = {
     ["Id"] = 229812,
 		["Length"] = 92,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23610,7 +23612,7 @@ local playlist1 = {
     ["Id"] = 229813,
 		["Length"] = 92,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23619,7 +23621,7 @@ local playlist1 = {
     ["Id"] = 53439,
 		["Length"] = 75,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23628,7 +23630,7 @@ local playlist1 = {
     ["Id"] = 53440,
 		["Length"] = 57,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23637,7 +23639,7 @@ local playlist1 = {
     ["Id"] = 53441,
 		["Length"] = 120,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23646,7 +23648,7 @@ local playlist1 = {
     ["Id"] = 53442,
 		["Length"] = 76,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23655,7 +23657,7 @@ local playlist1 = {
     ["Id"] = 229814,
 		["Length"] = 93,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23664,7 +23666,7 @@ local playlist1 = {
     ["Id"] = 229815,
 		["Length"] = 93,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23673,7 +23675,7 @@ local playlist1 = {
     ["Id"] = 229816,
 		["Length"] = 92,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23682,7 +23684,7 @@ local playlist1 = {
     ["Id"] = 229817,
 		["Length"] = 93,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23691,7 +23693,7 @@ local playlist1 = {
     ["Id"] = 53443,
 		["Length"] = 73,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23700,7 +23702,7 @@ local playlist1 = {
     ["Id"] = 53444,
 		["Length"] = 57,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23709,7 +23711,7 @@ local playlist1 = {
     ["Id"] = 53445,
 		["Length"] = 119,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23718,7 +23720,7 @@ local playlist1 = {
     ["Id"] = 53446,
 		["Length"] = 76,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23727,7 +23729,7 @@ local playlist1 = {
     ["Id"] = 229818,
 		["Length"] = 93,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23736,7 +23738,7 @@ local playlist1 = {
     ["Id"] = 229819,
 		["Length"] = 92,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23745,7 +23747,7 @@ local playlist1 = {
     ["Id"] = 229820,
 		["Length"] = 93,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23754,7 +23756,7 @@ local playlist1 = {
     ["Id"] = 229821,
 		["Length"] = 93,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23763,7 +23765,7 @@ local playlist1 = {
     ["Id"] = 53447,
 		["Length"] = 129,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23772,7 +23774,7 @@ local playlist1 = {
     ["Id"] = 53448,
 		["Length"] = 60,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23781,7 +23783,7 @@ local playlist1 = {
     ["Id"] = 53449,
 		["Length"] = 38,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23790,7 +23792,7 @@ local playlist1 = {
     ["Id"] = 53450,
 		["Length"] = 132,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23799,7 +23801,7 @@ local playlist1 = {
     ["Id"] = 53451,
 		["Length"] = 64,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23808,7 +23810,7 @@ local playlist1 = {
     ["Id"] = 53452,
 		["Length"] = 39,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23817,7 +23819,7 @@ local playlist1 = {
     ["Id"] = 229822,
 		["Length"] = 129,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23826,7 +23828,7 @@ local playlist1 = {
     ["Id"] = 229823,
 		["Length"] = 62,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23835,7 +23837,7 @@ local playlist1 = {
     ["Id"] = 229824,
 		["Length"] = 64,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23844,7 +23846,7 @@ local playlist1 = {
     ["Id"] = 229825,
 		["Length"] = 69,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23853,7 +23855,7 @@ local playlist1 = {
     ["Id"] = 229826,
 		["Length"] = 65,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23862,7 +23864,7 @@ local playlist1 = {
     ["Id"] = 229827,
 		["Length"] = 67,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23871,7 +23873,7 @@ local playlist1 = {
     ["Id"] = 229828,
 		["Length"] = 117,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23880,7 +23882,7 @@ local playlist1 = {
     ["Id"] = 229829,
 		["Length"] = 93,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23889,7 +23891,7 @@ local playlist1 = {
     ["Id"] = 229830,
 		["Length"] = 95,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23898,7 +23900,7 @@ local playlist1 = {
     ["Id"] = 229831,
 		["Length"] = 82,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23907,7 +23909,7 @@ local playlist1 = {
     ["Id"] = 229832,
 		["Length"] = 78,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -23916,7 +23918,7 @@ local playlist1 = {
     ["Id"] = 229833,
 		["Length"] = 82,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -23925,7 +23927,7 @@ local playlist1 = {
     ["Id"] = 53453,
 		["Length"] = 49,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -23934,7 +23936,7 @@ local playlist1 = {
     ["Id"] = 53454,
 		["Length"] = 67,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -23943,7 +23945,7 @@ local playlist1 = {
     ["Id"] = 53455,
 		["Length"] = 234,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -23952,7 +23954,7 @@ local playlist1 = {
     ["Id"] = 53456,
 		["Length"] = 60,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -23961,7 +23963,7 @@ local playlist1 = {
     ["Id"] = 53457,
 		["Length"] = 70,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -23970,7 +23972,7 @@ local playlist1 = {
     ["Id"] = 53458,
 		["Length"] = 65,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -23979,7 +23981,7 @@ local playlist1 = {
     ["Id"] = 53459,
 		["Length"] = 68,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -23988,7 +23990,7 @@ local playlist1 = {
     ["Id"] = 53460,
 		["Length"] = 84,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -23997,7 +23999,7 @@ local playlist1 = {
     ["Id"] = 53461,
 		["Length"] = 83,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24006,7 +24008,7 @@ local playlist1 = {
     ["Id"] = 53462,
 		["Length"] = 48,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24015,7 +24017,7 @@ local playlist1 = {
     ["Id"] = 53463,
 		["Length"] = 71,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24024,7 +24026,7 @@ local playlist1 = {
     ["Id"] = 53464,
 		["Length"] = 70,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24033,7 +24035,7 @@ local playlist1 = {
     ["Id"] = 53465,
 		["Length"] = 50,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24042,7 +24044,7 @@ local playlist1 = {
     ["Id"] = 53466,
 		["Length"] = 83,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24051,7 +24053,7 @@ local playlist1 = {
     ["Id"] = 53467,
 		["Length"] = 67,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24060,7 +24062,7 @@ local playlist1 = {
     ["Id"] = 53468,
 		["Length"] = 97,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24069,7 +24071,7 @@ local playlist1 = {
     ["Id"] = 53469,
 		["Length"] = 116,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24078,7 +24080,7 @@ local playlist1 = {
     ["Id"] = 53470,
 		["Length"] = 102,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24087,7 +24089,7 @@ local playlist1 = {
     ["Id"] = 53471,
 		["Length"] = 69,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24096,7 +24098,7 @@ local playlist1 = {
     ["Id"] = 53472,
 		["Length"] = 61,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24105,7 +24107,7 @@ local playlist1 = {
     ["Id"] = 53473,
 		["Length"] = 132,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24114,7 +24116,7 @@ local playlist1 = {
     ["Id"] = 53474,
 		["Length"] = 64,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24123,7 +24125,7 @@ local playlist1 = {
     ["Id"] = 53475,
 		["Length"] = 79,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24132,7 +24134,7 @@ local playlist1 = {
     ["Id"] = 53476,
 		["Length"] = 64,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24141,7 +24143,7 @@ local playlist1 = {
     ["Id"] = 53477,
 		["Length"] = 177,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24150,7 +24152,7 @@ local playlist1 = {
     ["Id"] = 53478,
 		["Length"] = 71,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24159,7 +24161,7 @@ local playlist1 = {
     ["Id"] = 53479,
 		["Length"] = 80,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24168,7 +24170,7 @@ local playlist1 = {
     ["Id"] = 53480,
 		["Length"] = 80,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24177,7 +24179,7 @@ local playlist1 = {
     ["Id"] = 53481,
 		["Length"] = 58,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24186,7 +24188,7 @@ local playlist1 = {
     ["Id"] = 53482,
 		["Length"] = 67,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24195,7 +24197,7 @@ local playlist1 = {
     ["Id"] = 53483,
 		["Length"] = 100,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24204,7 +24206,7 @@ local playlist1 = {
     ["Id"] = 53484,
 		["Length"] = 100,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24213,7 +24215,7 @@ local playlist1 = {
     ["Id"] = 53485,
 		["Length"] = 86,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -24222,7 +24224,7 @@ local playlist1 = {
     ["Id"] = 53486,
 		["Length"] = 70,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -24231,7 +24233,7 @@ local playlist1 = {
     ["Id"] = 53487,
 		["Length"] = 72,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -24240,7 +24242,7 @@ local playlist1 = {
     ["Id"] = 53488,
 		["Length"] = 70,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -24249,7 +24251,7 @@ local playlist1 = {
     ["Id"] = 53489,
 		["Length"] = 57,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -24258,7 +24260,7 @@ local playlist1 = {
     ["Id"] = 53490,
 		["Length"] = 75,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -24267,7 +24269,7 @@ local playlist1 = {
     ["Id"] = 53491,
 		["Length"] = 70,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -24276,7 +24278,7 @@ local playlist1 = {
     ["Id"] = 53492,
 		["Length"] = 55,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -24285,7 +24287,7 @@ local playlist1 = {
     ["Id"] = 53493,
 		["Length"] = 72,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -24294,7 +24296,7 @@ local playlist1 = {
     ["Id"] = 53494,
 		["Length"] = 64,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -24303,7 +24305,7 @@ local playlist1 = {
     ["Id"] = 53495,
 		["Length"] = 53,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -24312,7 +24314,7 @@ local playlist1 = {
     ["Id"] = 53496,
 		["Length"] = 42,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -24321,7 +24323,7 @@ local playlist1 = {
     ["Id"] = 53497,
 		["Length"] = 59,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -24330,7 +24332,7 @@ local playlist1 = {
     ["Id"] = 53498,
 		["Length"] = 54,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -24339,7 +24341,7 @@ local playlist1 = {
     ["Id"] = 53499,
 		["Length"] = 62,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -24348,7 +24350,7 @@ local playlist1 = {
     ["Id"] = 53500,
 		["Length"] = 62,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -24357,7 +24359,7 @@ local playlist1 = {
     ["Id"] = 53501,
 		["Length"] = 63,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -24366,7 +24368,7 @@ local playlist1 = {
     ["Id"] = 53502,
 		["Length"] = 60,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24375,7 +24377,7 @@ local playlist1 = {
     ["Id"] = 53503,
 		["Length"] = 66,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24384,7 +24386,7 @@ local playlist1 = {
     ["Id"] = 53504,
 		["Length"] = 70,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24393,7 +24395,7 @@ local playlist1 = {
     ["Id"] = 53505,
 		["Length"] = 67,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24402,7 +24404,7 @@ local playlist1 = {
     ["Id"] = 53506,
 		["Length"] = 83,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24411,7 +24413,7 @@ local playlist1 = {
     ["Id"] = 53507,
 		["Length"] = 59,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24420,7 +24422,7 @@ local playlist1 = {
     ["Id"] = 53508,
 		["Length"] = 60,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24429,7 +24431,7 @@ local playlist1 = {
     ["Id"] = 53509,
 		["Length"] = 154,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24438,7 +24440,7 @@ local playlist1 = {
     ["Id"] = 53510,
 		["Length"] = 51,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24447,7 +24449,7 @@ local playlist1 = {
     ["Id"] = 53511,
 		["Length"] = 28,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24456,7 +24458,7 @@ local playlist1 = {
     ["Id"] = 53512,
 		["Length"] = 44,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24465,7 +24467,7 @@ local playlist1 = {
     ["Id"] = 53513,
 		["Length"] = 89,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24474,7 +24476,7 @@ local playlist1 = {
     ["Id"] = 53514,
 		["Length"] = 81,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWBC",
@@ -24483,7 +24485,7 @@ local playlist1 = {
     ["Id"] = 53515,
 		["Length"] = 78,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -24492,7 +24494,7 @@ local playlist1 = {
     ["Id"] = 53516,
 		["Length"] = 131,
 		["Artist"] = "David Arkenstone & Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -24501,7 +24503,7 @@ local playlist1 = {
     ["Id"] = 53517,
 		["Length"] = 103,
 		["Artist"] = "David Arkenstone & Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -24510,7 +24512,7 @@ local playlist1 = {
     ["Id"] = 53518,
 		["Length"] = 67,
 		["Artist"] = "Jason Hayes & Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -24519,7 +24521,7 @@ local playlist1 = {
     ["Id"] = 53519,
 		["Length"] = 62,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.0.1",
@@ -24528,7 +24530,7 @@ local playlist1 = {
     ["Id"] = 165484,
 		["Length"] = 94,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.0.1",
@@ -24537,7 +24539,7 @@ local playlist1 = {
     ["Id"] = 165485,
 		["Length"] = 144,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.0.1",
@@ -24546,7 +24548,7 @@ local playlist1 = {
     ["Id"] = 165486,
 		["Length"] = 88,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.0.1",
@@ -24555,7 +24557,7 @@ local playlist1 = {
     ["Id"] = 165487,
 		["Length"] = 95,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.0.1",
@@ -24564,7 +24566,7 @@ local playlist1 = {
     ["Id"] = 165488,
 		["Length"] = 130,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.0.1",
@@ -24573,7 +24575,7 @@ local playlist1 = {
     ["Id"] = 165489,
 		["Length"] = 141,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.0.1",
@@ -24582,7 +24584,7 @@ local playlist1 = {
     ["Id"] = 165490,
 		["Length"] = 107,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.0.1",
@@ -24591,7 +24593,7 @@ local playlist1 = {
     ["Id"] = 165491,
 		["Length"] = 108,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.0.1",
@@ -24600,7 +24602,7 @@ local playlist1 = {
     ["Id"] = 165492,
 		["Length"] = 101,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.0.1",
@@ -24609,7 +24611,7 @@ local playlist1 = {
     ["Id"] = 165493,
 		["Length"] = 116,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -24618,7 +24620,7 @@ local playlist1 = {
     ["Id"] = 229834,
 		["Length"] = 284,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -24627,7 +24629,7 @@ local playlist1 = {
     ["Id"] = 229835,
 		["Length"] = 149,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -24636,7 +24638,7 @@ local playlist1 = {
     ["Id"] = 229836,
 		["Length"] = 141,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -24645,7 +24647,7 @@ local playlist1 = {
     ["Id"] = 229837,
 		["Length"] = 137,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -24654,7 +24656,7 @@ local playlist1 = {
     ["Id"] = 229838,
 		["Length"] = 238,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -24663,7 +24665,7 @@ local playlist1 = {
     ["Id"] = 229839,
 		["Length"] = 111,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -24672,7 +24674,7 @@ local playlist1 = {
     ["Id"] = 229840,
 		["Length"] = 97,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -24681,7 +24683,7 @@ local playlist1 = {
     ["Id"] = 229841,
 		["Length"] = 155,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -24690,7 +24692,7 @@ local playlist1 = {
     ["Id"] = 229842,
 		["Length"] = 155,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -24699,7 +24701,7 @@ local playlist1 = {
     ["Id"] = 229843,
 		["Length"] = 88,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -24708,7 +24710,7 @@ local playlist1 = {
     ["Id"] = 229844,
 		["Length"] = 88,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -24717,7 +24719,7 @@ local playlist1 = {
     ["Id"] = 229845,
 		["Length"] = 101,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -24726,7 +24728,7 @@ local playlist1 = {
     ["Id"] = 229846,
 		["Length"] = 111,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -24735,7 +24737,7 @@ local playlist1 = {
     ["Id"] = 229847,
 		["Length"] = 99,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -24744,7 +24746,7 @@ local playlist1 = {
     ["Id"] = 229848,
 		["Length"] = 155,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -24753,7 +24755,7 @@ local playlist1 = {
     ["Id"] = 229849,
 		["Length"] = 149,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -24762,7 +24764,7 @@ local playlist1 = {
     ["Id"] = 229850,
 		["Length"] = 133,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -24771,7 +24773,7 @@ local playlist1 = {
     ["Id"] = 53520,
 		["Length"] = 75,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -24780,7 +24782,7 @@ local playlist1 = {
     ["Id"] = 53521,
 		["Length"] = 110,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -24789,7 +24791,7 @@ local playlist1 = {
     ["Id"] = 53522,
 		["Length"] = 14,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -24798,7 +24800,7 @@ local playlist1 = {
     ["Id"] = 53523,
 		["Length"] = 53,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -24807,7 +24809,7 @@ local playlist1 = {
     ["Id"] = 53524,
 		["Length"] = 63,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -24816,7 +24818,7 @@ local playlist1 = {
     ["Id"] = 53525,
 		["Length"] = 19,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -24825,7 +24827,7 @@ local playlist1 = {
     ["Id"] = 53526,
 		["Length"] = 130,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -24834,7 +24836,7 @@ local playlist1 = {
     ["Id"] = 53527,
 		["Length"] = 66,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -24843,7 +24845,7 @@ local playlist1 = {
     ["Id"] = 53528,
 		["Length"] = 59,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -24852,7 +24854,7 @@ local playlist1 = {
     ["Id"] = 53529,
 		["Length"] = 96,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -24861,7 +24863,7 @@ local playlist1 = {
     ["Id"] = 53530,
 		["Length"] = 126,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -24870,7 +24872,7 @@ local playlist1 = {
     ["Id"] = 53531,
 		["Length"] = 17,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -24879,7 +24881,7 @@ local playlist1 = {
     ["Id"] = 53532,
 		["Length"] = 62,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -24888,7 +24890,7 @@ local playlist1 = {
     ["Id"] = 53533,
 		["Length"] = 69,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -24897,7 +24899,7 @@ local playlist1 = {
     ["Id"] = 53534,
 		["Length"] = 18,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -24906,7 +24908,7 @@ local playlist1 = {
     ["Id"] = 53535,
 		["Length"] = 25,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -24915,7 +24917,7 @@ local playlist1 = {
     ["Id"] = 53536,
 		["Length"] = 17,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -24924,7 +24926,7 @@ local playlist1 = {
     ["Id"] = 229851,
 		["Length"] = 30,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -24933,7 +24935,7 @@ local playlist1 = {
     ["Id"] = 229852,
 		["Length"] = 47,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -24942,7 +24944,7 @@ local playlist1 = {
     ["Id"] = 229853,
 		["Length"] = 52,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -24951,7 +24953,7 @@ local playlist1 = {
     ["Id"] = 229854,
 		["Length"] = 26,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -24960,7 +24962,7 @@ local playlist1 = {
     ["Id"] = 229855,
 		["Length"] = 22,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -24969,7 +24971,7 @@ local playlist1 = {
     ["Id"] = 229856,
 		["Length"] = 41,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -24978,7 +24980,7 @@ local playlist1 = {
     ["Id"] = 229857,
 		["Length"] = 23,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -24987,7 +24989,7 @@ local playlist1 = {
     ["Id"] = 116821,
 		["Length"] = 110,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -24996,7 +24998,7 @@ local playlist1 = {
     ["Id"] = 116822,
 		["Length"] = 75,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -25005,7 +25007,7 @@ local playlist1 = {
     ["Id"] = 116823,
 		["Length"] = 90,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -25014,7 +25016,7 @@ local playlist1 = {
     ["Id"] = 116824,
 		["Length"] = 64,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -25023,7 +25025,7 @@ local playlist1 = {
     ["Id"] = 116825,
 		["Length"] = 123,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -25032,7 +25034,7 @@ local playlist1 = {
     ["Id"] = 116826,
 		["Length"] = 114,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -25041,7 +25043,7 @@ local playlist1 = {
     ["Id"] = 116827,
 		["Length"] = 149,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -25050,7 +25052,7 @@ local playlist1 = {
     ["Id"] = 116828,
 		["Length"] = 106,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -25059,7 +25061,7 @@ local playlist1 = {
     ["Id"] = 116829,
 		["Length"] = 91,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -25068,7 +25070,7 @@ local playlist1 = {
     ["Id"] = 116830,
 		["Length"] = 84,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -25077,7 +25079,7 @@ local playlist1 = {
     ["Id"] = 116831,
 		["Length"] = 157,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -25086,7 +25088,7 @@ local playlist1 = {
     ["Id"] = 53537,
 		["Length"] = 95,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -25095,7 +25097,7 @@ local playlist1 = {
     ["Id"] = 53538,
 		["Length"] = 54,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -25104,7 +25106,7 @@ local playlist1 = {
     ["Id"] = 53539,
 		["Length"] = 99,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -25113,7 +25115,7 @@ local playlist1 = {
     ["Id"] = 53540,
 		["Length"] = 80,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -25122,7 +25124,7 @@ local playlist1 = {
     ["Id"] = 229858,
 		["Length"] = 58,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -25131,7 +25133,7 @@ local playlist1 = {
     ["Id"] = 229859,
 		["Length"] = 56,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -25140,7 +25142,7 @@ local playlist1 = {
     ["Id"] = 229860,
 		["Length"] = 57,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -25149,7 +25151,7 @@ local playlist1 = {
     ["Id"] = 229861,
 		["Length"] = 75,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -25158,7 +25160,7 @@ local playlist1 = {
     ["Id"] = 229862,
 		["Length"] = 101,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -25167,7 +25169,7 @@ local playlist1 = {
     ["Id"] = 229863,
 		["Length"] = 62,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -25176,7 +25178,7 @@ local playlist1 = {
     ["Id"] = 229864,
 		["Length"] = 98,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -25185,7 +25187,7 @@ local playlist1 = {
     ["Id"] = 229865,
 		["Length"] = 99,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -25194,7 +25196,7 @@ local playlist1 = {
     ["Id"] = 229866,
 		["Length"] = 81,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -25203,7 +25205,7 @@ local playlist1 = {
     ["Id"] = 229867,
 		["Length"] = 94,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -25212,7 +25214,7 @@ local playlist1 = {
     ["Id"] = 229868,
 		["Length"] = 64,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -25221,7 +25223,7 @@ local playlist1 = {
     ["Id"] = 229869,
 		["Length"] = 102,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25230,7 +25232,7 @@ local playlist1 = {
     ["Id"] = 350021,
 		["Length"] = 116,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25239,7 +25241,7 @@ local playlist1 = {
     ["Id"] = 350065,
 		["Length"] = 121,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25248,7 +25250,7 @@ local playlist1 = {
     ["Id"] = 350045,
 		["Length"] = 72,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25257,7 +25259,7 @@ local playlist1 = {
     ["Id"] = 350010,
 		["Length"] = 61,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25266,7 +25268,7 @@ local playlist1 = {
     ["Id"] = 350066,
 		["Length"] = 130,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25275,7 +25277,7 @@ local playlist1 = {
     ["Id"] = 350074,
 		["Length"] = 103,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25284,7 +25286,7 @@ local playlist1 = {
     ["Id"] = 350032,
 		["Length"] = 87,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25293,7 +25295,7 @@ local playlist1 = {
     ["Id"] = 350048,
 		["Length"] = 97,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25302,7 +25304,7 @@ local playlist1 = {
     ["Id"] = 350033,
 		["Length"] = 99,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25311,7 +25313,7 @@ local playlist1 = {
     ["Id"] = 350049,
 		["Length"] = 103,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25320,7 +25322,7 @@ local playlist1 = {
     ["Id"] = 350026,
 		["Length"] = 103,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25329,7 +25331,7 @@ local playlist1 = {
     ["Id"] = 350011,
 		["Length"] = 103,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3.2 Fall of the Lich King",
@@ -25338,7 +25340,7 @@ local playlist1 = {
     ["Id"] = 358845,
 		["Length"] = 24,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3.2 Fall of the Lich King",
@@ -25347,7 +25349,7 @@ local playlist1 = {
     ["Id"] = 358843,
 		["Length"] = 41,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25356,7 +25358,7 @@ local playlist1 = {
     ["Id"] = 358848,
 		["Length"] = 20,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25365,7 +25367,7 @@ local playlist1 = {
     ["Id"] = 358846,
 		["Length"] = 15,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25374,7 +25376,7 @@ local playlist1 = {
     ["Id"] = 358842,
 		["Length"] = 10,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25383,7 +25385,7 @@ local playlist1 = {
     ["Id"] = 358844,
 		["Length"] = 20,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3.2 Fall of the Lich King",
@@ -25392,7 +25394,7 @@ local playlist1 = {
     ["Id"] = 358847,
 		["Length"] = 282,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25401,7 +25403,7 @@ local playlist1 = {
     ["Id"] = 350058,
 		["Length"] = 73,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25410,7 +25412,7 @@ local playlist1 = {
     ["Id"] = 350072,
 		["Length"] = 61,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25419,7 +25421,7 @@ local playlist1 = {
     ["Id"] = 349990,
 		["Length"] = 106,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25428,7 +25430,7 @@ local playlist1 = {
     ["Id"] = 350004,
 		["Length"] = 157,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25437,7 +25439,7 @@ local playlist1 = {
     ["Id"] = 349998,
 		["Length"] = 133,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25446,7 +25448,7 @@ local playlist1 = {
     ["Id"] = 350050,
 		["Length"] = 153,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25455,7 +25457,7 @@ local playlist1 = {
     ["Id"] = 350051,
 		["Length"] = 105,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25464,7 +25466,7 @@ local playlist1 = {
     ["Id"] = 349991,
 		["Length"] = 80,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25473,7 +25475,7 @@ local playlist1 = {
     ["Id"] = 350005,
 		["Length"] = 105,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25482,7 +25484,7 @@ local playlist1 = {
     ["Id"] = 350054,
 		["Length"] = 75,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25491,7 +25493,7 @@ local playlist1 = {
     ["Id"] = 350012,
 		["Length"] = 91,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25500,7 +25502,7 @@ local playlist1 = {
     ["Id"] = 350829,
 		["Length"] = 108,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25509,7 +25511,7 @@ local playlist1 = {
     ["Id"] = 350834,
 		["Length"] = 39,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25518,7 +25520,7 @@ local playlist1 = {
     ["Id"] = 350833,
 		["Length"] = 83,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25527,7 +25529,7 @@ local playlist1 = {
     ["Id"] = 350830,
 		["Length"] = 101,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25536,7 +25538,7 @@ local playlist1 = {
     ["Id"] = 350831,
 		["Length"] = 58,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25545,7 +25547,7 @@ local playlist1 = {
     ["Id"] = 350832,
 		["Length"] = 108,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25554,7 +25556,7 @@ local playlist1 = {
     ["Id"] = 349988,
 		["Length"] = 60,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25563,7 +25565,7 @@ local playlist1 = {
     ["Id"] = 350067,
 		["Length"] = 74,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25572,7 +25574,7 @@ local playlist1 = {
     ["Id"] = 350027,
 		["Length"] = 66,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25581,7 +25583,7 @@ local playlist1 = {
     ["Id"] = 350034,
 		["Length"] = 129,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25590,7 +25592,7 @@ local playlist1 = {
     ["Id"] = 350040,
 		["Length"] = 59,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25599,7 +25601,7 @@ local playlist1 = {
     ["Id"] = 350018,
 		["Length"] = 27,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25608,7 +25610,7 @@ local playlist1 = {
     ["Id"] = 349993,
 		["Length"] = 27,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25617,7 +25619,7 @@ local playlist1 = {
     ["Id"] = 349999,
 		["Length"] = 26,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25626,7 +25628,7 @@ local playlist1 = {
     ["Id"] = 350014,
 		["Length"] = 23,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25635,7 +25637,7 @@ local playlist1 = {
     ["Id"] = 350046,
 		["Length"] = 42,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25644,7 +25646,7 @@ local playlist1 = {
     ["Id"] = 350063,
 		["Length"] = 68,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25653,7 +25655,7 @@ local playlist1 = {
     ["Id"] = 350015,
 		["Length"] = 65,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25662,7 +25664,7 @@ local playlist1 = {
     ["Id"] = 350073,
 		["Length"] = 27,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25671,7 +25673,7 @@ local playlist1 = {
     ["Id"] = 350068,
 		["Length"] = 16,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25680,7 +25682,7 @@ local playlist1 = {
     ["Id"] = 350035,
 		["Length"] = 25,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25689,7 +25691,7 @@ local playlist1 = {
     ["Id"] = 350002,
 		["Length"] = 26,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25698,7 +25700,7 @@ local playlist1 = {
     ["Id"] = 350022,
 		["Length"] = 27,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25707,7 +25709,7 @@ local playlist1 = {
     ["Id"] = 350069,
 		["Length"] = 27,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25716,7 +25718,7 @@ local playlist1 = {
     ["Id"] = 1513011,
 		["Length"] = 20,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25725,7 +25727,7 @@ local playlist1 = {
     ["Id"] = 1513012,
 		["Length"] = 15,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25734,7 +25736,7 @@ local playlist1 = {
     ["Id"] = 1513013,
 		["Length"] = 10,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25743,7 +25745,7 @@ local playlist1 = {
     ["Id"] = 1513014,
 		["Length"] = 20,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25752,7 +25754,7 @@ local playlist1 = {
     ["Id"] = 349989,
 		["Length"] = 103,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25761,7 +25763,7 @@ local playlist1 = {
     ["Id"] = 350076,
 		["Length"] = 103,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25770,7 +25772,7 @@ local playlist1 = {
     ["Id"] = 350023,
 		["Length"] = 103,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25779,7 +25781,7 @@ local playlist1 = {
     ["Id"] = 350059,
 		["Length"] = 103,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25788,7 +25790,7 @@ local playlist1 = {
     ["Id"] = 350019,
 		["Length"] = 103,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25797,7 +25799,7 @@ local playlist1 = {
     ["Id"] = 350028,
 		["Length"] = 98,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25806,7 +25808,7 @@ local playlist1 = {
     ["Id"] = 350055,
 		["Length"] = 97,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25815,7 +25817,7 @@ local playlist1 = {
     ["Id"] = 350041,
 		["Length"] = 91,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25824,7 +25826,7 @@ local playlist1 = {
     ["Id"] = 350000,
 		["Length"] = 98,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25833,7 +25835,7 @@ local playlist1 = {
     ["Id"] = 350042,
 		["Length"] = 99,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25842,7 +25844,7 @@ local playlist1 = {
     ["Id"] = 350001,
 		["Length"] = 52,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25851,7 +25853,7 @@ local playlist1 = {
     ["Id"] = 350036,
 		["Length"] = 52,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25860,7 +25862,7 @@ local playlist1 = {
     ["Id"] = 350056,
 		["Length"] = 43,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25869,7 +25871,7 @@ local playlist1 = {
     ["Id"] = 350057,
 		["Length"] = 42,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25878,7 +25880,7 @@ local playlist1 = {
     ["Id"] = 350008,
 		["Length"] = 42,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25887,7 +25889,7 @@ local playlist1 = {
     ["Id"] = 350043,
 		["Length"] = 43,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25896,7 +25898,7 @@ local playlist1 = {
     ["Id"] = 350003,
 		["Length"] = 43,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25905,7 +25907,7 @@ local playlist1 = {
     ["Id"] = 350009,
 		["Length"] = 43,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25914,7 +25916,7 @@ local playlist1 = {
     ["Id"] = 350024,
 		["Length"] = 29,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25923,7 +25925,7 @@ local playlist1 = {
     ["Id"] = 350077,
 		["Length"] = 29,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25932,7 +25934,7 @@ local playlist1 = {
     ["Id"] = 350006,
 		["Length"] = 28,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25941,7 +25943,7 @@ local playlist1 = {
     ["Id"] = 350016,
 		["Length"] = 29,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25950,7 +25952,7 @@ local playlist1 = {
     ["Id"] = 349994,
 		["Length"] = 28,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25959,7 +25961,7 @@ local playlist1 = {
     ["Id"] = 349995,
 		["Length"] = 49,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25968,7 +25970,7 @@ local playlist1 = {
     ["Id"] = 350044,
 		["Length"] = 47,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25977,7 +25979,7 @@ local playlist1 = {
     ["Id"] = 350060,
 		["Length"] = 43,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25986,7 +25988,7 @@ local playlist1 = {
     ["Id"] = 349986,
 		["Length"] = 48,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -25995,7 +25997,7 @@ local playlist1 = {
     ["Id"] = 350070,
 		["Length"] = 43,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -26004,7 +26006,7 @@ local playlist1 = {
     ["Id"] = 350052,
 		["Length"] = 43,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -26013,7 +26015,7 @@ local playlist1 = {
     ["Id"] = 350078,
 		["Length"] = 43,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -26022,7 +26024,7 @@ local playlist1 = {
     ["Id"] = 349996,
 		["Length"] = 42,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -26031,7 +26033,7 @@ local playlist1 = {
     ["Id"] = 350037,
 		["Length"] = 24,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -26040,7 +26042,7 @@ local playlist1 = {
     ["Id"] = 350025,
 		["Length"] = 24,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -26049,7 +26051,7 @@ local playlist1 = {
     ["Id"] = 350029,
 		["Length"] = 24,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -26058,7 +26060,7 @@ local playlist1 = {
     ["Id"] = 350020,
 		["Length"] = 23,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -26067,7 +26069,7 @@ local playlist1 = {
     ["Id"] = 349987,
 		["Length"] = 25,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -26076,7 +26078,7 @@ local playlist1 = {
     ["Id"] = 350047,
 		["Length"] = 24,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -26085,7 +26087,7 @@ local playlist1 = {
     ["Id"] = 350030,
 		["Length"] = 82,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -26094,7 +26096,7 @@ local playlist1 = {
     ["Id"] = 349997,
 		["Length"] = 82,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -26103,7 +26105,7 @@ local playlist1 = {
     ["Id"] = 350061,
 		["Length"] = 81,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -26112,7 +26114,7 @@ local playlist1 = {
     ["Id"] = 350031,
 		["Length"] = 82,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -26121,7 +26123,7 @@ local playlist1 = {
     ["Id"] = 350071,
 		["Length"] = 81,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -26130,7 +26132,7 @@ local playlist1 = {
     ["Id"] = 350064,
 		["Length"] = 82,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -26139,7 +26141,7 @@ local playlist1 = {
     ["Id"] = 350053,
 		["Length"] = 156,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -26148,7 +26150,7 @@ local playlist1 = {
     ["Id"] = 350038,
 		["Length"] = 46,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.3 Fall of the Lich King",
@@ -26157,7 +26159,7 @@ local playlist1 = {
     ["Id"] = 350039,
 		["Length"] = 46,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -26166,7 +26168,7 @@ local playlist1 = {
     ["Id"] = 53541,
 		["Length"] = 46,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -26175,7 +26177,7 @@ local playlist1 = {
     ["Id"] = 53542,
 		["Length"] = 98,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -26184,7 +26186,7 @@ local playlist1 = {
     ["Id"] = 53543,
 		["Length"] = 48,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -26193,7 +26195,7 @@ local playlist1 = {
     ["Id"] = 53544,
 		["Length"] = 54,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -26202,7 +26204,7 @@ local playlist1 = {
     ["Id"] = 53545,
 		["Length"] = 53,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -26211,7 +26213,7 @@ local playlist1 = {
     ["Id"] = 53546,
 		["Length"] = 89,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.3",
@@ -26220,7 +26222,7 @@ local playlist1 = {
     ["Id"] = 53547,
 		["Length"] = 98,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.3",
@@ -26229,7 +26231,7 @@ local playlist1 = {
     ["Id"] = 53548,
 		["Length"] = 98,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.3",
@@ -26238,7 +26240,7 @@ local playlist1 = {
     ["Id"] = 53549,
 		["Length"] = 117,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.3",
@@ -26247,7 +26249,7 @@ local playlist1 = {
     ["Id"] = 53550,
 		["Length"] = 113,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.3",
@@ -26256,7 +26258,7 @@ local playlist1 = {
     ["Id"] = 53551,
 		["Length"] = 112,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.3",
@@ -26265,7 +26267,7 @@ local playlist1 = {
     ["Id"] = 53552,
 		["Length"] = 124,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.3",
@@ -26274,7 +26276,7 @@ local playlist1 = {
     ["Id"] = 53553,
 		["Length"] = 31,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.3",
@@ -26283,7 +26285,7 @@ local playlist1 = {
     ["Id"] = 53554,
 		["Length"] = 130,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.3",
@@ -26292,7 +26294,7 @@ local playlist1 = {
     ["Id"] = 53555,
 		["Length"] = 123,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.3",
@@ -26301,7 +26303,7 @@ local playlist1 = {
     ["Id"] = 53556,
 		["Length"] = 118,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.3",
@@ -26310,7 +26312,7 @@ local playlist1 = {
     ["Id"] = 53557,
 		["Length"] = 112,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.3",
@@ -26319,7 +26321,7 @@ local playlist1 = {
     ["Id"] = 53558,
 		["Length"] = 124,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.3",
@@ -26328,7 +26330,7 @@ local playlist1 = {
     ["Id"] = 53559,
 		["Length"] = 92,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.3",
@@ -26337,7 +26339,7 @@ local playlist1 = {
     ["Id"] = 53560,
 		["Length"] = 81,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.3",
@@ -26346,7 +26348,7 @@ local playlist1 = {
     ["Id"] = 53561,
 		["Length"] = 127,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.3",
@@ -26355,7 +26357,7 @@ local playlist1 = {
     ["Id"] = 53562,
 		["Length"] = 147,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.3",
@@ -26364,7 +26366,7 @@ local playlist1 = {
     ["Id"] = 53563,
 		["Length"] = 126,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.3",
@@ -26373,7 +26375,7 @@ local playlist1 = {
     ["Id"] = 53564,
 		["Length"] = 123,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.3",
@@ -26382,7 +26384,7 @@ local playlist1 = {
     ["Id"] = 53565,
 		["Length"] = 124,
 		["Artist"] = "Brian David Farr & Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.3",
@@ -26391,7 +26393,7 @@ local playlist1 = {
     ["Id"] = 53566,
 		["Length"] = 111,
 		["Artist"] = "Brian David Farr & Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.3",
@@ -26400,7 +26402,7 @@ local playlist1 = {
     ["Id"] = 53567,
 		["Length"] = 114,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.3",
@@ -26409,7 +26411,7 @@ local playlist1 = {
     ["Id"] = 53568,
 		["Length"] = 82,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.3",
@@ -26418,7 +26420,7 @@ local playlist1 = {
     ["Id"] = 53569,
 		["Length"] = 80,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.3",
@@ -26427,7 +26429,7 @@ local playlist1 = {
     ["Id"] = 53570,
 		["Length"] = 53,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.3",
@@ -26436,7 +26438,7 @@ local playlist1 = {
     ["Id"] = 53571,
 		["Length"] = 95,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.3",
@@ -26445,7 +26447,7 @@ local playlist1 = {
     ["Id"] = 53572,
 		["Length"] = 111,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.3",
@@ -26454,7 +26456,7 @@ local playlist1 = {
     ["Id"] = 53573,
 		["Length"] = 114,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.3",
@@ -26463,7 +26465,7 @@ local playlist1 = {
     ["Id"] = 53574,
 		["Length"] = 93,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.3",
@@ -26472,7 +26474,7 @@ local playlist1 = {
     ["Id"] = 53575,
 		["Length"] = 115,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.3",
@@ -26481,7 +26483,7 @@ local playlist1 = {
     ["Id"] = 53576,
 		["Length"] = 127,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -26490,7 +26492,7 @@ local playlist1 = {
     ["Id"] = 229870,
 		["Length"] = 40,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -26499,7 +26501,7 @@ local playlist1 = {
     ["Id"] = 229871,
 		["Length"] = 93,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -26508,7 +26510,7 @@ local playlist1 = {
     ["Id"] = 229872,
 		["Length"] = 57,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -26517,7 +26519,7 @@ local playlist1 = {
     ["Id"] = 229873,
 		["Length"] = 92,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -26526,7 +26528,7 @@ local playlist1 = {
     ["Id"] = 229874,
 		["Length"] = 62,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -26535,7 +26537,7 @@ local playlist1 = {
     ["Id"] = 229875,
 		["Length"] = 92,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -26544,7 +26546,7 @@ local playlist1 = {
     ["Id"] = 229876,
 		["Length"] = 43,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -26553,7 +26555,7 @@ local playlist1 = {
     ["Id"] = 229877,
 		["Length"] = 57,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -26562,7 +26564,7 @@ local playlist1 = {
     ["Id"] = 53577,
 		["Length"] = 120,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -26571,7 +26573,7 @@ local playlist1 = {
     ["Id"] = 53578,
 		["Length"] = 66,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -26580,7 +26582,7 @@ local playlist1 = {
     ["Id"] = 53579,
 		["Length"] = 80,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -26589,7 +26591,7 @@ local playlist1 = {
     ["Id"] = 53580,
 		["Length"] = 64,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -26598,7 +26600,7 @@ local playlist1 = {
     ["Id"] = 53581,
 		["Length"] = 63,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -26607,7 +26609,7 @@ local playlist1 = {
     ["Id"] = 53582,
 		["Length"] = 69,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -26616,7 +26618,7 @@ local playlist1 = {
     ["Id"] = 53583,
 		["Length"] = 63,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -26625,7 +26627,7 @@ local playlist1 = {
     ["Id"] = 53584,
 		["Length"] = 73,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -26634,7 +26636,7 @@ local playlist1 = {
     ["Id"] = 53585,
 		["Length"] = 72,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -26643,7 +26645,7 @@ local playlist1 = {
     ["Id"] = 53586,
 		["Length"] = 100,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -26652,7 +26654,7 @@ local playlist1 = {
     ["Id"] = 53587,
 		["Length"] = 63,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -26661,7 +26663,7 @@ local playlist1 = {
     ["Id"] = 53588,
 		["Length"] = 87,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -26670,7 +26672,7 @@ local playlist1 = {
     ["Id"] = 53589,
 		["Length"] = 80,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -26679,7 +26681,7 @@ local playlist1 = {
     ["Id"] = 53590,
 		["Length"] = 166,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Patch 1.11",
@@ -26688,7 +26690,7 @@ local playlist1 = {
     ["Id"] = 53591,
 		["Length"] = 61,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Patch 1.11",
@@ -26697,7 +26699,7 @@ local playlist1 = {
     ["Id"] = 53592,
 		["Length"] = 67,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Patch 1.11",
@@ -26706,7 +26708,7 @@ local playlist1 = {
     ["Id"] = 53593,
 		["Length"] = 61,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Patch 1.11",
@@ -26715,7 +26717,7 @@ local playlist1 = {
     ["Id"] = 53594,
 		["Length"] = 66,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Patch 1.11",
@@ -26724,7 +26726,7 @@ local playlist1 = {
     ["Id"] = 53595,
 		["Length"] = 61,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Patch 1.11",
@@ -26733,7 +26735,7 @@ local playlist1 = {
     ["Id"] = 53596,
 		["Length"] = 57,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Patch 1.11",
@@ -26742,7 +26744,7 @@ local playlist1 = {
     ["Id"] = 53597,
 		["Length"] = 81,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Patch 1.11",
@@ -26751,7 +26753,7 @@ local playlist1 = {
     ["Id"] = 53598,
 		["Length"] = 61,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Patch 1.11",
@@ -26760,7 +26762,7 @@ local playlist1 = {
     ["Id"] = 53599,
 		["Length"] = 60,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Patch 1.11",
@@ -26769,7 +26771,7 @@ local playlist1 = {
     ["Id"] = 53600,
 		["Length"] = 72,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Patch 1.11",
@@ -26778,7 +26780,7 @@ local playlist1 = {
     ["Id"] = 53601,
 		["Length"] = 81,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Patch 1.11",
@@ -26787,7 +26789,7 @@ local playlist1 = {
     ["Id"] = 53602,
 		["Length"] = 94,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Patch 1.11",
@@ -26796,7 +26798,7 @@ local playlist1 = {
     ["Id"] = 53603,
 		["Length"] = 97,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Patch 1.11",
@@ -26805,7 +26807,7 @@ local playlist1 = {
     ["Id"] = 53604,
 		["Length"] = 75,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Patch 1.11",
@@ -26814,7 +26816,7 @@ local playlist1 = {
     ["Id"] = 53605,
 		["Length"] = 86,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Patch 1.11",
@@ -26823,7 +26825,7 @@ local playlist1 = {
     ["Id"] = 53606,
 		["Length"] = 87,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Patch 1.11",
@@ -26832,7 +26834,7 @@ local playlist1 = {
     ["Id"] = 53607,
 		["Length"] = 71,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Patch 1.11",
@@ -26841,7 +26843,7 @@ local playlist1 = {
     ["Id"] = 53608,
 		["Length"] = 76,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Patch 1.11",
@@ -26850,7 +26852,7 @@ local playlist1 = {
     ["Id"] = 53609,
 		["Length"] = 60,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Patch 1.11",
@@ -26859,7 +26861,7 @@ local playlist1 = {
     ["Id"] = 53610,
 		["Length"] = 63,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Patch 1.11",
@@ -26868,7 +26870,7 @@ local playlist1 = {
     ["Id"] = 53611,
 		["Length"] = 88,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Patch 1.11",
@@ -26877,7 +26879,7 @@ local playlist1 = {
     ["Id"] = 53612,
 		["Length"] = 67,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Patch 1.11",
@@ -26886,7 +26888,7 @@ local playlist1 = {
     ["Id"] = 53613,
 		["Length"] = 47,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 1.11",
@@ -26895,7 +26897,7 @@ local playlist1 = {
     ["Id"] = 53614,
 		["Length"] = 101,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 1.11",
@@ -26904,7 +26906,7 @@ local playlist1 = {
     ["Id"] = 53615,
 		["Length"] = 72,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 1.11",
@@ -26913,7 +26915,7 @@ local playlist1 = {
     ["Id"] = 53616,
 		["Length"] = 86,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 1.11",
@@ -26922,7 +26924,7 @@ local playlist1 = {
     ["Id"] = 53617,
 		["Length"] = 82,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 1.11",
@@ -26931,7 +26933,7 @@ local playlist1 = {
     ["Id"] = 53618,
 		["Length"] = 99,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 1.11",
@@ -26940,7 +26942,7 @@ local playlist1 = {
     ["Id"] = 53619,
 		["Length"] = 99,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -26949,7 +26951,7 @@ local playlist1 = {
     ["Id"] = 53620,
 		["Length"] = 150,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -26958,7 +26960,7 @@ local playlist1 = {
     ["Id"] = 53621,
 		["Length"] = 175,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -26967,7 +26969,7 @@ local playlist1 = {
     ["Id"] = 53622,
 		["Length"] = 178,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -26976,7 +26978,7 @@ local playlist1 = {
     ["Id"] = 53623,
 		["Length"] = 181,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -26985,7 +26987,7 @@ local playlist1 = {
     ["Id"] = 53624,
 		["Length"] = 184,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -26994,7 +26996,7 @@ local playlist1 = {
     ["Id"] = 53625,
 		["Length"] = 192,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27003,7 +27005,7 @@ local playlist1 = {
     ["Id"] = 53626,
 		["Length"] = 193,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27012,7 +27014,7 @@ local playlist1 = {
     ["Id"] = 53627,
 		["Length"] = 168,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27021,7 +27023,7 @@ local playlist1 = {
     ["Id"] = 53628,
 		["Length"] = 199,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27030,7 +27032,7 @@ local playlist1 = {
     ["Id"] = 53629,
 		["Length"] = 222,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27039,7 +27041,7 @@ local playlist1 = {
     ["Id"] = 53630,
 		["Length"] = 39,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27048,7 +27050,7 @@ local playlist1 = {
     ["Id"] = 53631,
 		["Length"] = 33,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27057,7 +27059,7 @@ local playlist1 = {
     ["Id"] = 53632,
 		["Length"] = 36,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27066,7 +27068,7 @@ local playlist1 = {
     ["Id"] = 53633,
 		["Length"] = 44,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27075,7 +27077,7 @@ local playlist1 = {
     ["Id"] = 53634,
 		["Length"] = 51,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27084,7 +27086,7 @@ local playlist1 = {
     ["Id"] = 53635,
 		["Length"] = 47,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27093,7 +27095,7 @@ local playlist1 = {
     ["Id"] = 53636,
 		["Length"] = 45,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -27102,7 +27104,7 @@ local playlist1 = {
     ["Id"] = 229878,
 		["Length"] = 76,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -27111,7 +27113,7 @@ local playlist1 = {
     ["Id"] = 229879,
 		["Length"] = 68,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -27120,7 +27122,7 @@ local playlist1 = {
     ["Id"] = 229880,
 		["Length"] = 102,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -27129,7 +27131,7 @@ local playlist1 = {
     ["Id"] = 229881,
 		["Length"] = 107,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -27138,7 +27140,7 @@ local playlist1 = {
     ["Id"] = 229882,
 		["Length"] = 90,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -27147,7 +27149,7 @@ local playlist1 = {
     ["Id"] = 229883,
 		["Length"] = 57,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -27156,7 +27158,7 @@ local playlist1 = {
     ["Id"] = 229884,
 		["Length"] = 65,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -27165,7 +27167,7 @@ local playlist1 = {
     ["Id"] = 229885,
 		["Length"] = 60,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -27174,7 +27176,7 @@ local playlist1 = {
     ["Id"] = 229886,
 		["Length"] = 70,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -27183,7 +27185,7 @@ local playlist1 = {
     ["Id"] = 229887,
 		["Length"] = 114,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -27192,7 +27194,7 @@ local playlist1 = {
     ["Id"] = 229888,
 		["Length"] = 111,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -27201,7 +27203,7 @@ local playlist1 = {
     ["Id"] = 229889,
 		["Length"] = 56,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -27210,7 +27212,7 @@ local playlist1 = {
     ["Id"] = 229890,
 		["Length"] = 71,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -27219,7 +27221,7 @@ local playlist1 = {
     ["Id"] = 229893,
 		["Length"] = 112,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -27228,7 +27230,7 @@ local playlist1 = {
     ["Id"] = 229891,
 		["Length"] = 99,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -27237,7 +27239,7 @@ local playlist1 = {
     ["Id"] = 229892,
 		["Length"] = 99,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -27246,7 +27248,7 @@ local playlist1 = {
     ["Id"] = 229894,
 		["Length"] = 97,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -27255,7 +27257,7 @@ local playlist1 = {
     ["Id"] = 229895,
 		["Length"] = 95,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -27264,7 +27266,7 @@ local playlist1 = {
     ["Id"] = 229896,
 		["Length"] = 163,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -27273,7 +27275,7 @@ local playlist1 = {
     ["Id"] = 229900,
 		["Length"] = 82,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -27282,7 +27284,7 @@ local playlist1 = {
     ["Id"] = 229897,
 		["Length"] = 42,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -27291,7 +27293,7 @@ local playlist1 = {
     ["Id"] = 229898,
 		["Length"] = 42,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -27300,7 +27302,7 @@ local playlist1 = {
     ["Id"] = 229899,
 		["Length"] = 42,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -27309,7 +27311,7 @@ local playlist1 = {
     ["Id"] = 229903,
 		["Length"] = 69,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -27318,7 +27320,7 @@ local playlist1 = {
     ["Id"] = 229901,
 		["Length"] = 45,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -27327,7 +27329,7 @@ local playlist1 = {
     ["Id"] = 229902,
 		["Length"] = 45,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -27336,7 +27338,7 @@ local playlist1 = {
     ["Id"] = 229904,
 		["Length"] = 152,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -27345,7 +27347,7 @@ local playlist1 = {
     ["Id"] = 229905,
 		["Length"] = 92,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -27354,7 +27356,7 @@ local playlist1 = {
     ["Id"] = 229907,
 		["Length"] = 23,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -27363,7 +27365,7 @@ local playlist1 = {
     ["Id"] = 229908,
 		["Length"] = 23,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -27372,7 +27374,7 @@ local playlist1 = {
     ["Id"] = 229909,
 		["Length"] = 23,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -27381,7 +27383,7 @@ local playlist1 = {
     ["Id"] = 229910,
 		["Length"] = 45,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -27390,7 +27392,7 @@ local playlist1 = {
     ["Id"] = 229911,
 		["Length"] = 78,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -27399,7 +27401,7 @@ local playlist1 = {
     ["Id"] = 229912,
 		["Length"] = 80,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -27408,7 +27410,7 @@ local playlist1 = {
     ["Id"] = 229913,
 		["Length"] = 79,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -27417,7 +27419,7 @@ local playlist1 = {
     ["Id"] = 229906,
 		["Length"] = 27,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -27426,7 +27428,7 @@ local playlist1 = {
     ["Id"] = 229914,
 		["Length"] = 138,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -27435,7 +27437,7 @@ local playlist1 = {
     ["Id"] = 229915,
 		["Length"] = 141,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -27444,7 +27446,7 @@ local playlist1 = {
     ["Id"] = 229916,
 		["Length"] = 140,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -27453,7 +27455,7 @@ local playlist1 = {
     ["Id"] = 229917,
 		["Length"] = 127,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -27462,7 +27464,7 @@ local playlist1 = {
     ["Id"] = 229918,
 		["Length"] = 127,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -27471,7 +27473,7 @@ local playlist1 = {
     ["Id"] = 229919,
 		["Length"] = 108,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -27480,7 +27482,7 @@ local playlist1 = {
     ["Id"] = 229920,
 		["Length"] = 108,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -27489,7 +27491,7 @@ local playlist1 = {
     ["Id"] = 229921,
 		["Length"] = 70,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -27498,7 +27500,7 @@ local playlist1 = {
     ["Id"] = 229922,
 		["Length"] = 69,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -27507,7 +27509,7 @@ local playlist1 = {
     ["Id"] = 229923,
 		["Length"] = 70,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -27516,7 +27518,7 @@ local playlist1 = {
     ["Id"] = 229924,
 		["Length"] = 73,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -27525,7 +27527,7 @@ local playlist1 = {
     ["Id"] = 229925,
 		["Length"] = 46,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -27534,7 +27536,7 @@ local playlist1 = {
     ["Id"] = 229926,
 		["Length"] = 55,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -27543,7 +27545,7 @@ local playlist1 = {
     ["Id"] = 229927,
 		["Length"] = 38,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -27552,7 +27554,7 @@ local playlist1 = {
     ["Id"] = 229928,
 		["Length"] = 44,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27561,7 +27563,7 @@ local playlist1 = {
     ["Id"] = 53637,
 		["Length"] = 80,
 		["Artist"] = "Brian David Farr",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27570,7 +27572,7 @@ local playlist1 = {
     ["Id"] = 53638,
 		["Length"] = 134,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27579,7 +27581,7 @@ local playlist1 = {
     ["Id"] = 53639,
 		["Length"] = 110,
 		["Artist"] = "Matt Uelmen (incorporating Nocturne by F. Chopin)",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27588,7 +27590,7 @@ local playlist1 = {
     ["Id"] = 53640,
 		["Length"] = 18,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27597,7 +27599,7 @@ local playlist1 = {
     ["Id"] = 53641,
 		["Length"] = 14,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27606,7 +27608,7 @@ local playlist1 = {
     ["Id"] = 53642,
 		["Length"] = 120,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27615,7 +27617,7 @@ local playlist1 = {
     ["Id"] = 53643,
 		["Length"] = 121,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27624,7 +27626,7 @@ local playlist1 = {
     ["Id"] = 53644,
 		["Length"] = 16,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27633,7 +27635,7 @@ local playlist1 = {
     ["Id"] = 53645,
 		["Length"] = 35,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27642,7 +27644,7 @@ local playlist1 = {
     ["Id"] = 53646,
 		["Length"] = 44,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27651,7 +27653,7 @@ local playlist1 = {
     ["Id"] = 53647,
 		["Length"] = 45,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27660,7 +27662,7 @@ local playlist1 = {
     ["Id"] = 53648,
 		["Length"] = 71,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27669,7 +27671,7 @@ local playlist1 = {
     ["Id"] = 53649,
 		["Length"] = 60,
 		["Artist"] = "Brian David Farr",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27678,7 +27680,7 @@ local playlist1 = {
     ["Id"] = 53650,
 		["Length"] = 62,
 		["Artist"] = "Brian David Farr",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27687,7 +27689,7 @@ local playlist1 = {
     ["Id"] = 53651,
 		["Length"] = 74,
 		["Artist"] = "Brian David Farr",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27696,7 +27698,7 @@ local playlist1 = {
     ["Id"] = 53652,
 		["Length"] = 71,
 		["Artist"] = "Brian David Farr",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27705,7 +27707,7 @@ local playlist1 = {
     ["Id"] = 53653,
 		["Length"] = 72,
 		["Artist"] = "Brian David Farr",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27714,7 +27716,7 @@ local playlist1 = {
     ["Id"] = 53654,
 		["Length"] = 74,
 		["Artist"] = "Brian David Farr",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27723,7 +27725,7 @@ local playlist1 = {
     ["Id"] = 53655,
 		["Length"] = 52,
 		["Artist"] = "Brian David Farr",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27732,7 +27734,7 @@ local playlist1 = {
     ["Id"] = 53656,
 		["Length"] = 75,
 		["Artist"] = "Brian David Farr",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27741,7 +27743,7 @@ local playlist1 = {
     ["Id"] = 53657,
 		["Length"] = 26,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27750,7 +27752,7 @@ local playlist1 = {
     ["Id"] = 53658,
 		["Length"] = 21,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27759,7 +27761,7 @@ local playlist1 = {
     ["Id"] = 53659,
 		["Length"] = 21,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27768,7 +27770,7 @@ local playlist1 = {
     ["Id"] = 53660,
 		["Length"] = 46,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27777,7 +27779,7 @@ local playlist1 = {
     ["Id"] = 53661,
 		["Length"] = 106,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27786,7 +27788,7 @@ local playlist1 = {
     ["Id"] = 53662,
 		["Length"] = 99,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27795,7 +27797,7 @@ local playlist1 = {
     ["Id"] = 53663,
 		["Length"] = 16,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27804,7 +27806,7 @@ local playlist1 = {
     ["Id"] = 53664,
 		["Length"] = 14,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27813,7 +27815,7 @@ local playlist1 = {
     ["Id"] = 53665,
 		["Length"] = 79,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27822,7 +27824,7 @@ local playlist1 = {
     ["Id"] = 53666,
 		["Length"] = 40,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27831,7 +27833,7 @@ local playlist1 = {
     ["Id"] = 53667,
 		["Length"] = 37,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27840,7 +27842,7 @@ local playlist1 = {
     ["Id"] = 53668,
 		["Length"] = 66,
 		["Artist"] = "Russell Brower and Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27849,7 +27851,7 @@ local playlist1 = {
     ["Id"] = 53669,
 		["Length"] = 68,
 		["Artist"] = "Russell Brower and Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27858,7 +27860,7 @@ local playlist1 = {
     ["Id"] = 53670,
 		["Length"] = 35,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27867,7 +27869,7 @@ local playlist1 = {
     ["Id"] = 53671,
 		["Length"] = 28,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27876,7 +27878,7 @@ local playlist1 = {
     ["Id"] = 53672,
 		["Length"] = 25,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27885,7 +27887,7 @@ local playlist1 = {
     ["Id"] = 53673,
 		["Length"] = 11,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27894,7 +27896,7 @@ local playlist1 = {
     ["Id"] = 53674,
 		["Length"] = 17,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27903,7 +27905,7 @@ local playlist1 = {
     ["Id"] = 53675,
 		["Length"] = 11,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27912,7 +27914,7 @@ local playlist1 = {
     ["Id"] = 53676,
 		["Length"] = 13,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27921,7 +27923,7 @@ local playlist1 = {
     ["Id"] = 53677,
 		["Length"] = 31,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27930,7 +27932,7 @@ local playlist1 = {
     ["Id"] = 53678,
 		["Length"] = 44,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -27939,7 +27941,7 @@ local playlist1 = {
     ["Id"] = 53679,
 		["Length"] = 53,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -27948,7 +27950,7 @@ local playlist1 = {
     ["Id"] = 53680,
 		["Length"] = 53,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -27957,7 +27959,7 @@ local playlist1 = {
     ["Id"] = 53681,
 		["Length"] = 76,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -27966,7 +27968,7 @@ local playlist1 = {
     ["Id"] = 53682,
 		["Length"] = 58,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -27975,7 +27977,7 @@ local playlist1 = {
     ["Id"] = 53683,
 		["Length"] = 68,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -27984,7 +27986,7 @@ local playlist1 = {
     ["Id"] = 521021,
 		["Length"] = 157,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -27993,7 +27995,7 @@ local playlist1 = {
     ["Id"] = 521022,
 		["Length"] = 162,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28002,7 +28004,7 @@ local playlist1 = {
     ["Id"] = 521023,
 		["Length"] = 40,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28011,7 +28013,7 @@ local playlist1 = {
     ["Id"] = 521024,
 		["Length"] = 42,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28020,7 +28022,7 @@ local playlist1 = {
     ["Id"] = 521025,
 		["Length"] = 36,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28029,7 +28031,7 @@ local playlist1 = {
     ["Id"] = 521026,
 		["Length"] = 36,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28038,7 +28040,7 @@ local playlist1 = {
     ["Id"] = 521027,
 		["Length"] = 40,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28047,7 +28049,7 @@ local playlist1 = {
     ["Id"] = 521028,
 		["Length"] = 31,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28056,7 +28058,7 @@ local playlist1 = {
     ["Id"] = 521029,
 		["Length"] = 21,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28065,7 +28067,7 @@ local playlist1 = {
     ["Id"] = 521030,
 		["Length"] = 99,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28074,7 +28076,7 @@ local playlist1 = {
     ["Id"] = 521031,
 		["Length"] = 99,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -28083,7 +28085,7 @@ local playlist1 = {
     ["Id"] = 53684,
 		["Length"] = 46,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -28092,7 +28094,7 @@ local playlist1 = {
     ["Id"] = 53685,
 		["Length"] = 52,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft 1.12",
@@ -28101,7 +28103,7 @@ local playlist1 = {
     ["Id"] = 53686,
 		["Length"] = 40,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft 1.12",
@@ -28110,7 +28112,7 @@ local playlist1 = {
     ["Id"] = 53687,
 		["Length"] = 62,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft 1.12",
@@ -28119,7 +28121,7 @@ local playlist1 = {
     ["Id"] = 53688,
 		["Length"] = 61,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -28128,7 +28130,7 @@ local playlist1 = {
     ["Id"] = 53689,
 		["Length"] = 67,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -28137,7 +28139,7 @@ local playlist1 = {
     ["Id"] = 53690,
 		["Length"] = 112,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -28146,7 +28148,7 @@ local playlist1 = {
     ["Id"] = 53691,
 		["Length"] = 106,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -28155,7 +28157,7 @@ local playlist1 = {
     ["Id"] = 53692,
 		["Length"] = 93,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -28164,7 +28166,7 @@ local playlist1 = {
     ["Id"] = 53693,
 		["Length"] = 93,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -28173,7 +28175,7 @@ local playlist1 = {
     ["Id"] = 53694,
 		["Length"] = 67,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -28182,7 +28184,7 @@ local playlist1 = {
     ["Id"] = 229929,
 		["Length"] = 130,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -28191,7 +28193,7 @@ local playlist1 = {
     ["Id"] = 229930,
 		["Length"] = 143,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -28200,7 +28202,7 @@ local playlist1 = {
     ["Id"] = 229931,
 		["Length"] = 107,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -28209,7 +28211,7 @@ local playlist1 = {
     ["Id"] = 229932,
 		["Length"] = 93,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -28218,7 +28220,7 @@ local playlist1 = {
     ["Id"] = 229933,
 		["Length"] = 57,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -28227,7 +28229,7 @@ local playlist1 = {
     ["Id"] = 229934,
 		["Length"] = 107,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -28236,7 +28238,7 @@ local playlist1 = {
     ["Id"] = 229935,
 		["Length"] = 81,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -28245,7 +28247,7 @@ local playlist1 = {
     ["Id"] = 229936,
 		["Length"] = 98,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -28254,7 +28256,7 @@ local playlist1 = {
     ["Id"] = 229937,
 		["Length"] = 98,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -28263,7 +28265,7 @@ local playlist1 = {
     ["Id"] = 229938,
 		["Length"] = 75,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -28272,7 +28274,7 @@ local playlist1 = {
     ["Id"] = 229939,
 		["Length"] = 94,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -28281,7 +28283,7 @@ local playlist1 = {
     ["Id"] = 229940,
 		["Length"] = 135,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -28290,7 +28292,7 @@ local playlist1 = {
     ["Id"] = 229941,
 		["Length"] = 161,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -28299,7 +28301,7 @@ local playlist1 = {
     ["Id"] = 229942,
 		["Length"] = 175,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -28308,7 +28310,7 @@ local playlist1 = {
     ["Id"] = 229943,
 		["Length"] = 114,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -28317,7 +28319,7 @@ local playlist1 = {
     ["Id"] = 229944,
 		["Length"] = 105,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -28326,7 +28328,7 @@ local playlist1 = {
     ["Id"] = 229945,
 		["Length"] = 112,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -28335,7 +28337,7 @@ local playlist1 = {
     ["Id"] = 229946,
 		["Length"] = 123,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -28344,7 +28346,7 @@ local playlist1 = {
     ["Id"] = 229947,
 		["Length"] = 142,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -28353,7 +28355,7 @@ local playlist1 = {
     ["Id"] = 229948,
 		["Length"] = 115,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -28362,7 +28364,7 @@ local playlist1 = {
     ["Id"] = 229949,
 		["Length"] = 137,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -28371,7 +28373,7 @@ local playlist1 = {
     ["Id"] = 229950,
 		["Length"] = 131,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -28380,7 +28382,7 @@ local playlist1 = {
     ["Id"] = 229951,
 		["Length"] = 91,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -28389,7 +28391,7 @@ local playlist1 = {
     ["Id"] = 229952,
 		["Length"] = 99,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -28398,7 +28400,7 @@ local playlist1 = {
     ["Id"] = 53695,
 		["Length"] = 97,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -28407,7 +28409,7 @@ local playlist1 = {
     ["Id"] = 53696,
 		["Length"] = 97,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -28416,7 +28418,7 @@ local playlist1 = {
     ["Id"] = 53697,
 		["Length"] = 90,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -28425,7 +28427,7 @@ local playlist1 = {
     ["Id"] = 53698,
 		["Length"] = 89,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -28434,7 +28436,7 @@ local playlist1 = {
     ["Id"] = 53699,
 		["Length"] = 70,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28443,7 +28445,7 @@ local playlist1 = {
     ["Id"] = 229955,
 		["Length"] = 120,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28452,7 +28454,7 @@ local playlist1 = {
     ["Id"] = 229953,
 		["Length"] = 86,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28461,7 +28463,7 @@ local playlist1 = {
     ["Id"] = 229954,
 		["Length"] = 88,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28470,7 +28472,7 @@ local playlist1 = {
     ["Id"] = 229956,
 		["Length"] = 82,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28479,7 +28481,7 @@ local playlist1 = {
     ["Id"] = 229957,
 		["Length"] = 82,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28488,7 +28490,7 @@ local playlist1 = {
     ["Id"] = 229958,
 		["Length"] = 82,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28497,7 +28499,7 @@ local playlist1 = {
     ["Id"] = 229959,
 		["Length"] = 63,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28506,7 +28508,7 @@ local playlist1 = {
     ["Id"] = 229960,
 		["Length"] = 58,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28515,7 +28517,7 @@ local playlist1 = {
     ["Id"] = 229961,
 		["Length"] = 58,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28524,7 +28526,7 @@ local playlist1 = {
     ["Id"] = 229962,
 		["Length"] = 55,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28533,7 +28535,7 @@ local playlist1 = {
     ["Id"] = 229963,
 		["Length"] = 52,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28542,7 +28544,7 @@ local playlist1 = {
     ["Id"] = 229964,
 		["Length"] = 54,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28551,7 +28553,7 @@ local playlist1 = {
     ["Id"] = 229965,
 		["Length"] = 83,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28560,7 +28562,7 @@ local playlist1 = {
     ["Id"] = 229966,
 		["Length"] = 74,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28569,7 +28571,7 @@ local playlist1 = {
     ["Id"] = 229967,
 		["Length"] = 83,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28578,7 +28580,7 @@ local playlist1 = {
     ["Id"] = 229968,
 		["Length"] = 28,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28587,7 +28589,7 @@ local playlist1 = {
     ["Id"] = 229969,
 		["Length"] = 99,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28596,7 +28598,7 @@ local playlist1 = {
     ["Id"] = 229970,
 		["Length"] = 93,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28605,7 +28607,7 @@ local playlist1 = {
     ["Id"] = 229971,
 		["Length"] = 36,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28614,7 +28616,7 @@ local playlist1 = {
     ["Id"] = 229972,
 		["Length"] = 36,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28623,7 +28625,7 @@ local playlist1 = {
     ["Id"] = 229973,
 		["Length"] = 28,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28632,7 +28634,7 @@ local playlist1 = {
     ["Id"] = 229974,
 		["Length"] = 99,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28641,7 +28643,7 @@ local playlist1 = {
     ["Id"] = 229975,
 		["Length"] = 32,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28650,7 +28652,7 @@ local playlist1 = {
     ["Id"] = 229976,
 		["Length"] = 67,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28659,7 +28661,7 @@ local playlist1 = {
     ["Id"] = 229977,
 		["Length"] = 36,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28668,7 +28670,7 @@ local playlist1 = {
     ["Id"] = 229978,
 		["Length"] = 31,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28677,7 +28679,7 @@ local playlist1 = {
     ["Id"] = 229979,
 		["Length"] = 32,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28686,7 +28688,7 @@ local playlist1 = {
     ["Id"] = 229980,
 		["Length"] = 36,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28695,7 +28697,7 @@ local playlist1 = {
     ["Id"] = 229981,
 		["Length"] = 36,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -28704,7 +28706,7 @@ local playlist1 = {
     ["Id"] = 229982,
 		["Length"] = 102,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -28713,7 +28715,7 @@ local playlist1 = {
     ["Id"] = 53700,
 		["Length"] = 82,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -28722,7 +28724,7 @@ local playlist1 = {
     ["Id"] = 53701,
 		["Length"] = 88,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -28731,7 +28733,7 @@ local playlist1 = {
     ["Id"] = 53702,
 		["Length"] = 125,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -28740,7 +28742,7 @@ local playlist1 = {
     ["Id"] = 53703,
 		["Length"] = 139,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -28749,7 +28751,7 @@ local playlist1 = {
     ["Id"] = 53704,
 		["Length"] = 137,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -28758,7 +28760,7 @@ local playlist1 = {
     ["Id"] = 53705,
 		["Length"] = 126,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -28767,7 +28769,7 @@ local playlist1 = {
     ["Id"] = 53706,
 		["Length"] = 115,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -28776,7 +28778,7 @@ local playlist1 = {
     ["Id"] = 53707,
 		["Length"] = 119,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -28785,7 +28787,7 @@ local playlist1 = {
     ["Id"] = 53708,
 		["Length"] = 90,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -28794,7 +28796,7 @@ local playlist1 = {
     ["Id"] = 53709,
 		["Length"] = 117,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -28803,7 +28805,7 @@ local playlist1 = {
     ["Id"] = 53710,
 		["Length"] = 126,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -28812,7 +28814,7 @@ local playlist1 = {
     ["Id"] = 53711,
 		["Length"] = 88,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -28821,7 +28823,7 @@ local playlist1 = {
     ["Id"] = 53712,
 		["Length"] = 87,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -28830,7 +28832,7 @@ local playlist1 = {
     ["Id"] = 53713,
 		["Length"] = 97,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -28839,7 +28841,7 @@ local playlist1 = {
     ["Id"] = 53714,
 		["Length"] = 95,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -28848,7 +28850,7 @@ local playlist1 = {
     ["Id"] = 53715,
 		["Length"] = 65,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -28857,7 +28859,7 @@ local playlist1 = {
     ["Id"] = 53716,
 		["Length"] = 88,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -28866,7 +28868,7 @@ local playlist1 = {
     ["Id"] = 53717,
 		["Length"] = 90,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -28875,7 +28877,7 @@ local playlist1 = {
     ["Id"] = 53718,
 		["Length"] = 89,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -28884,7 +28886,7 @@ local playlist1 = {
     ["Id"] = 53719,
 		["Length"] = 91,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -28893,7 +28895,7 @@ local playlist1 = {
     ["Id"] = 53720,
 		["Length"] = 123,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -28902,7 +28904,7 @@ local playlist1 = {
     ["Id"] = 53721,
 		["Length"] = 138,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -28911,7 +28913,7 @@ local playlist1 = {
     ["Id"] = 53722,
 		["Length"] = 85,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -28920,7 +28922,7 @@ local playlist1 = {
     ["Id"] = 53723,
 		["Length"] = 78,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -28929,7 +28931,7 @@ local playlist1 = {
     ["Id"] = 53724,
 		["Length"] = 90,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -28938,7 +28940,7 @@ local playlist1 = {
     ["Id"] = 53725,
 		["Length"] = 91,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -28947,7 +28949,7 @@ local playlist1 = {
     ["Id"] = 53726,
 		["Length"] = 93,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -28956,7 +28958,7 @@ local playlist1 = {
     ["Id"] = 53727,
 		["Length"] = 87,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -28965,7 +28967,7 @@ local playlist1 = {
     ["Id"] = 53728,
 		["Length"] = 108,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -28974,7 +28976,7 @@ local playlist1 = {
     ["Id"] = 53729,
 		["Length"] = 84,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -28983,7 +28985,7 @@ local playlist1 = {
     ["Id"] = 53730,
 		["Length"] = 85,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -28992,7 +28994,7 @@ local playlist1 = {
     ["Id"] = 53731,
 		["Length"] = 87,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -29001,7 +29003,7 @@ local playlist1 = {
     ["Id"] = 53732,
 		["Length"] = 259,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -29010,7 +29012,7 @@ local playlist1 = {
     ["Id"] = 53733,
 		["Length"] = 57,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -29019,7 +29021,7 @@ local playlist1 = {
     ["Id"] = 53734,
 		["Length"] = 98,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -29028,7 +29030,7 @@ local playlist1 = {
     ["Id"] = 53735,
 		["Length"] = 95,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW Patch 2.4",
@@ -29037,7 +29039,7 @@ local playlist1 = {
     ["Id"] = 53736,
 		["Length"] = 95,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -29046,7 +29048,7 @@ local playlist1 = {
     ["Id"] = 53737,
 		["Length"] = 47,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -29055,7 +29057,7 @@ local playlist1 = {
     ["Id"] = 53738,
 		["Length"] = 51,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29064,7 +29066,7 @@ local playlist1 = {
     ["Id"] = 53739,
 		["Length"] = 79,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29073,7 +29075,7 @@ local playlist1 = {
     ["Id"] = 53740,
 		["Length"] = 82,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29082,7 +29084,7 @@ local playlist1 = {
     ["Id"] = 53741,
 		["Length"] = 86,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29091,7 +29093,7 @@ local playlist1 = {
     ["Id"] = 53742,
 		["Length"] = 91,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29100,7 +29102,7 @@ local playlist1 = {
     ["Id"] = 53743,
 		["Length"] = 102,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -29109,7 +29111,7 @@ local playlist1 = {
     ["Id"] = 53744,
 		["Length"] = 48,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -29118,7 +29120,7 @@ local playlist1 = {
     ["Id"] = 53745,
 		["Length"] = 39,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -29127,7 +29129,7 @@ local playlist1 = {
     ["Id"] = 53746,
 		["Length"] = 47,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -29136,7 +29138,7 @@ local playlist1 = {
     ["Id"] = 53747,
 		["Length"] = 25,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29145,7 +29147,7 @@ local playlist1 = {
     ["Id"] = 53748,
 		["Length"] = 92,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29154,7 +29156,7 @@ local playlist1 = {
     ["Id"] = 53749,
 		["Length"] = 79,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29163,7 +29165,7 @@ local playlist1 = {
     ["Id"] = 53750,
 		["Length"] = 86,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29172,7 +29174,7 @@ local playlist1 = {
     ["Id"] = 53751,
 		["Length"] = 81,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29181,7 +29183,7 @@ local playlist1 = {
     ["Id"] = 53752,
 		["Length"] = 70,
 		["Artist"] = "David Arkenstone & Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29190,7 +29192,7 @@ local playlist1 = {
     ["Id"] = 53753,
 		["Length"] = 72,
 		["Artist"] = "David Arkenstone & Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29199,7 +29201,7 @@ local playlist1 = {
     ["Id"] = 53754,
 		["Length"] = 112,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29208,7 +29210,7 @@ local playlist1 = {
     ["Id"] = 53755,
 		["Length"] = 119,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29217,7 +29219,7 @@ local playlist1 = {
     ["Id"] = 53756,
 		["Length"] = 99,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29226,7 +29228,7 @@ local playlist1 = {
     ["Id"] = 53757,
 		["Length"] = 91,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29235,7 +29237,7 @@ local playlist1 = {
     ["Id"] = 53758,
 		["Length"] = 87,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29244,7 +29246,7 @@ local playlist1 = {
     ["Id"] = 53759,
 		["Length"] = 86,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29253,7 +29255,7 @@ local playlist1 = {
     ["Id"] = 53760,
 		["Length"] = 85,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29262,7 +29264,7 @@ local playlist1 = {
     ["Id"] = 53761,
 		["Length"] = 81,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29271,7 +29273,7 @@ local playlist1 = {
     ["Id"] = 53762,
 		["Length"] = 82,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29280,7 +29282,7 @@ local playlist1 = {
     ["Id"] = 53763,
 		["Length"] = 81,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29289,7 +29291,7 @@ local playlist1 = {
     ["Id"] = 53764,
 		["Length"] = 82,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29298,7 +29300,7 @@ local playlist1 = {
     ["Id"] = 53765,
 		["Length"] = 81,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29307,7 +29309,7 @@ local playlist1 = {
     ["Id"] = 53766,
 		["Length"] = 88,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29316,7 +29318,7 @@ local playlist1 = {
     ["Id"] = 53767,
 		["Length"] = 85,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29325,7 +29327,7 @@ local playlist1 = {
     ["Id"] = 53768,
 		["Length"] = 89,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29334,7 +29336,7 @@ local playlist1 = {
     ["Id"] = 53769,
 		["Length"] = 96,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29343,7 +29345,7 @@ local playlist1 = {
     ["Id"] = 53770,
 		["Length"] = 85,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29352,7 +29354,7 @@ local playlist1 = {
     ["Id"] = 53771,
 		["Length"] = 80,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29361,7 +29363,7 @@ local playlist1 = {
     ["Id"] = 53772,
 		["Length"] = 93,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29370,7 +29372,7 @@ local playlist1 = {
     ["Id"] = 53773,
 		["Length"] = 93,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29379,7 +29381,7 @@ local playlist1 = {
     ["Id"] = 53774,
 		["Length"] = 93,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29388,7 +29390,7 @@ local playlist1 = {
     ["Id"] = 53775,
 		["Length"] = 87,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29397,7 +29399,7 @@ local playlist1 = {
     ["Id"] = 53776,
 		["Length"] = 124,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29406,7 +29408,7 @@ local playlist1 = {
     ["Id"] = 53777,
 		["Length"] = 83,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29415,7 +29417,7 @@ local playlist1 = {
     ["Id"] = 53778,
 		["Length"] = 93,
 		["Artist"] = "David Arkenstone",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -29424,7 +29426,7 @@ local playlist1 = {
     ["Id"] = 53779,
 		["Length"] = 46,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -29433,7 +29435,7 @@ local playlist1 = {
     ["Id"] = 53780,
 		["Length"] = 96,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -29442,7 +29444,7 @@ local playlist1 = {
     ["Id"] = 53781,
 		["Length"] = 67,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -29451,7 +29453,7 @@ local playlist1 = {
     ["Id"] = 53782,
 		["Length"] = 88,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -29460,7 +29462,7 @@ local playlist1 = {
     ["Id"] = 53783,
 		["Length"] = 58,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -29469,7 +29471,7 @@ local playlist1 = {
     ["Id"] = 53784,
 		["Length"] = 62,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -29478,7 +29480,7 @@ local playlist1 = {
     ["Id"] = 53785,
 		["Length"] = 85,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -29487,7 +29489,7 @@ local playlist1 = {
     ["Id"] = 53786,
 		["Length"] = 48,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -29496,7 +29498,7 @@ local playlist1 = {
     ["Id"] = 53787,
 		["Length"] = 47,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -29505,7 +29507,7 @@ local playlist1 = {
     ["Id"] = 53788,
 		["Length"] = 34,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -29514,7 +29516,7 @@ local playlist1 = {
     ["Id"] = 53789,
 		["Length"] = 67,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -29523,7 +29525,7 @@ local playlist1 = {
     ["Id"] = 53790,
 		["Length"] = 59,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -29532,7 +29534,7 @@ local playlist1 = {
     ["Id"] = 53791,
 		["Length"] = 81,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -29541,7 +29543,7 @@ local playlist1 = {
     ["Id"] = 53792,
 		["Length"] = 36,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -29550,7 +29552,7 @@ local playlist1 = {
     ["Id"] = 53793,
 		["Length"] = 11,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -29559,7 +29561,7 @@ local playlist1 = {
     ["Id"] = 53794,
 		["Length"] = 11,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -29568,7 +29570,7 @@ local playlist1 = {
     ["Id"] = 53795,
 		["Length"] = 11,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29577,7 +29579,7 @@ local playlist1 = {
     ["Id"] = 53796,
 		["Length"] = 120,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29586,7 +29588,7 @@ local playlist1 = {
     ["Id"] = 53797,
 		["Length"] = 150,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29595,7 +29597,7 @@ local playlist1 = {
     ["Id"] = 53798,
 		["Length"] = 120,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29604,7 +29606,7 @@ local playlist1 = {
     ["Id"] = 53799,
 		["Length"] = 65,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29613,7 +29615,7 @@ local playlist1 = {
     ["Id"] = 53800,
 		["Length"] = 63,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29622,7 +29624,7 @@ local playlist1 = {
     ["Id"] = 53801,
 		["Length"] = 56,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29631,7 +29633,7 @@ local playlist1 = {
     ["Id"] = 53802,
 		["Length"] = 189,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29640,7 +29642,7 @@ local playlist1 = {
     ["Id"] = 53803,
 		["Length"] = 150,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29649,7 +29651,7 @@ local playlist1 = {
     ["Id"] = 53804,
 		["Length"] = 190,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29658,7 +29660,7 @@ local playlist1 = {
     ["Id"] = 53805,
 		["Length"] = 187,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29667,7 +29669,7 @@ local playlist1 = {
     ["Id"] = 53806,
 		["Length"] = 137,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29676,7 +29678,7 @@ local playlist1 = {
     ["Id"] = 53807,
 		["Length"] = 100,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29685,7 +29687,7 @@ local playlist1 = {
     ["Id"] = 53808,
 		["Length"] = 92,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29694,7 +29696,7 @@ local playlist1 = {
     ["Id"] = 53809,
 		["Length"] = 81,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29703,7 +29705,7 @@ local playlist1 = {
     ["Id"] = 53810,
 		["Length"] = 117,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -29712,7 +29714,7 @@ local playlist1 = {
     ["Id"] = 53811,
 		["Length"] = 137,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -29721,7 +29723,7 @@ local playlist1 = {
     ["Id"] = 229983,
 		["Length"] = 52,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -29730,7 +29732,7 @@ local playlist1 = {
     ["Id"] = 229984,
 		["Length"] = 33,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -29739,7 +29741,7 @@ local playlist1 = {
     ["Id"] = 229985,
 		["Length"] = 40,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -29748,7 +29750,7 @@ local playlist1 = {
     ["Id"] = 229986,
 		["Length"] = 35,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -29757,7 +29759,7 @@ local playlist1 = {
     ["Id"] = 229987,
 		["Length"] = 82,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -29766,7 +29768,7 @@ local playlist1 = {
     ["Id"] = 229988,
 		["Length"] = 52,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -29775,7 +29777,7 @@ local playlist1 = {
     ["Id"] = 229989,
 		["Length"] = 40,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -29784,7 +29786,7 @@ local playlist1 = {
     ["Id"] = 229990,
 		["Length"] = 40,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -29793,7 +29795,7 @@ local playlist1 = {
     ["Id"] = 229991,
 		["Length"] = 35,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "",
@@ -29802,7 +29804,7 @@ local playlist1 = {
     ["Id"] = 229992,
 		["Length"] = 84,
 		["Artist"] = "",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -29811,7 +29813,7 @@ local playlist1 = {
     ["Id"] = 293897,
 		["Length"] = 31,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -29820,7 +29822,7 @@ local playlist1 = {
     ["Id"] = 293874,
 		["Length"] = 137,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -29829,7 +29831,7 @@ local playlist1 = {
     ["Id"] = 293867,
 		["Length"] = 136,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -29838,7 +29840,7 @@ local playlist1 = {
     ["Id"] = 293875,
 		["Length"] = 53,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -29847,7 +29849,7 @@ local playlist1 = {
     ["Id"] = 293884,
 		["Length"] = 93,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -29856,7 +29858,7 @@ local playlist1 = {
     ["Id"] = 293885,
 		["Length"] = 93,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -29865,7 +29867,7 @@ local playlist1 = {
     ["Id"] = 293886,
 		["Length"] = 40,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -29874,7 +29876,7 @@ local playlist1 = {
     ["Id"] = 293862,
 		["Length"] = 40,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -29883,7 +29885,7 @@ local playlist1 = {
     ["Id"] = 293891,
 		["Length"] = 28,
 		["Artist"] = "Derek Duke, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -29892,7 +29894,7 @@ local playlist1 = {
     ["Id"] = 293887,
 		["Length"] = 28,
 		["Artist"] = "Derek Duke, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -29901,7 +29903,7 @@ local playlist1 = {
     ["Id"] = 293868,
 		["Length"] = 27,
 		["Artist"] = "Derek Duke, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -29910,7 +29912,7 @@ local playlist1 = {
     ["Id"] = 293869,
 		["Length"] = 28,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -29919,7 +29921,7 @@ local playlist1 = {
     ["Id"] = 293881,
 		["Length"] = 27,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -29928,7 +29930,7 @@ local playlist1 = {
     ["Id"] = 293892,
 		["Length"] = 35,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -29937,7 +29939,7 @@ local playlist1 = {
     ["Id"] = 293863,
 		["Length"] = 36,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -29946,7 +29948,7 @@ local playlist1 = {
     ["Id"] = 293870,
 		["Length"] = 36,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -29955,7 +29957,7 @@ local playlist1 = {
     ["Id"] = 293893,
 		["Length"] = 12,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -29964,7 +29966,7 @@ local playlist1 = {
     ["Id"] = 293876,
 		["Length"] = 14,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -29973,7 +29975,7 @@ local playlist1 = {
     ["Id"] = 293894,
 		["Length"] = 14,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -29982,7 +29984,7 @@ local playlist1 = {
     ["Id"] = 293871,
 		["Length"] = 17,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -29991,7 +29993,7 @@ local playlist1 = {
     ["Id"] = 293864,
 		["Length"] = 13,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30000,7 +30002,7 @@ local playlist1 = {
     ["Id"] = 293877,
 		["Length"] = 13,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30009,7 +30011,7 @@ local playlist1 = {
     ["Id"] = 293872,
 		["Length"] = 12,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30018,7 +30020,7 @@ local playlist1 = {
     ["Id"] = 293888,
 		["Length"] = 25,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30027,7 +30029,7 @@ local playlist1 = {
     ["Id"] = 293873,
 		["Length"] = 25,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30036,7 +30038,7 @@ local playlist1 = {
     ["Id"] = 293878,
 		["Length"] = 36,
 		["Artist"] = "Derek Duke, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30045,7 +30047,7 @@ local playlist1 = {
     ["Id"] = 293865,
 		["Length"] = 33,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30054,7 +30056,7 @@ local playlist1 = {
     ["Id"] = 293895,
 		["Length"] = 87,
 		["Artist"] = "Derek Duke, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30063,7 +30065,7 @@ local playlist1 = {
     ["Id"] = 293879,
 		["Length"] = 87,
 		["Artist"] = "Derek Duke, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30072,7 +30074,7 @@ local playlist1 = {
     ["Id"] = 293882,
 		["Length"] = 87,
 		["Artist"] = "Derek Duke, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30081,7 +30083,7 @@ local playlist1 = {
     ["Id"] = 293880,
 		["Length"] = 26,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30090,7 +30092,7 @@ local playlist1 = {
     ["Id"] = 293866,
 		["Length"] = 57,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30099,7 +30101,7 @@ local playlist1 = {
     ["Id"] = 293889,
 		["Length"] = 53,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30108,7 +30110,7 @@ local playlist1 = {
     ["Id"] = 293896,
 		["Length"] = 27,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30117,7 +30119,7 @@ local playlist1 = {
     ["Id"] = 293890,
 		["Length"] = 28,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30126,7 +30128,7 @@ local playlist1 = {
     ["Id"] = 293883,
 		["Length"] = 28,
 		["Artist"] = "Derek Duke, Glenn Stafford",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Ulduar Raid",
@@ -30135,7 +30137,7 @@ local playlist1 = {
     ["Id"] = 298908,
 		["Length"] = 162,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Ulduar Raid",
@@ -30144,7 +30146,7 @@ local playlist1 = {
     ["Id"] = 298904,
 		["Length"] = 130,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Ulduar Raid",
@@ -30153,7 +30155,7 @@ local playlist1 = {
     ["Id"] = 298909,
 		["Length"] = 148,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Ulduar Raid",
@@ -30162,7 +30164,7 @@ local playlist1 = {
     ["Id"] = 298914,
 		["Length"] = 148,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Ulduar Raid",
@@ -30171,7 +30173,7 @@ local playlist1 = {
     ["Id"] = 298924,
 		["Length"] = 148,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Ulduar Raid",
@@ -30180,7 +30182,7 @@ local playlist1 = {
     ["Id"] = 298915,
 		["Length"] = 123,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Ulduar Raid",
@@ -30189,7 +30191,7 @@ local playlist1 = {
     ["Id"] = 298921,
 		["Length"] = 217,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Ulduar Raid",
@@ -30198,7 +30200,7 @@ local playlist1 = {
     ["Id"] = 303984,
 		["Length"] = 115,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Ulduar Raid",
@@ -30207,7 +30209,7 @@ local playlist1 = {
     ["Id"] = 298922,
 		["Length"] = 196,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Ulduar Raid",
@@ -30216,7 +30218,7 @@ local playlist1 = {
     ["Id"] = 298923,
 		["Length"] = 112,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Ulduar Raid",
@@ -30225,7 +30227,7 @@ local playlist1 = {
     ["Id"] = 298925,
 		["Length"] = 172,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Ulduar Raid",
@@ -30234,7 +30236,7 @@ local playlist1 = {
     ["Id"] = 298906,
 		["Length"] = 97,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Ulduar Raid",
@@ -30243,7 +30245,7 @@ local playlist1 = {
     ["Id"] = 298912,
 		["Length"] = 96,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Ulduar Raid",
@@ -30252,7 +30254,7 @@ local playlist1 = {
     ["Id"] = 298916,
 		["Length"] = 82,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Ulduar Raid",
@@ -30261,7 +30263,7 @@ local playlist1 = {
     ["Id"] = 298930,
 		["Length"] = 179,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Ulduar Raid",
@@ -30270,7 +30272,7 @@ local playlist1 = {
     ["Id"] = 298926,
 		["Length"] = 179,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Ulduar Raid",
@@ -30279,7 +30281,7 @@ local playlist1 = {
     ["Id"] = 298927,
 		["Length"] = 172,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Ulduar Raid",
@@ -30288,7 +30290,7 @@ local playlist1 = {
     ["Id"] = 298917,
 		["Length"] = 75,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Ulduar Raid",
@@ -30297,7 +30299,7 @@ local playlist1 = {
     ["Id"] = 298918,
 		["Length"] = 113,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Ulduar Raid",
@@ -30306,7 +30308,7 @@ local playlist1 = {
     ["Id"] = 298907,
 		["Length"] = 113,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Ulduar Raid",
@@ -30315,7 +30317,7 @@ local playlist1 = {
     ["Id"] = 298913,
 		["Length"] = 127,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Ulduar Raid",
@@ -30324,7 +30326,7 @@ local playlist1 = {
     ["Id"] = 298910,
 		["Length"] = 102,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Ulduar Raid",
@@ -30333,7 +30335,7 @@ local playlist1 = {
     ["Id"] = 298928,
 		["Length"] = 57,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Ulduar Raid",
@@ -30342,7 +30344,7 @@ local playlist1 = {
     ["Id"] = 298929,
 		["Length"] = 94,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Ulduar Raid",
@@ -30351,7 +30353,7 @@ local playlist1 = {
     ["Id"] = 298919,
 		["Length"] = 106,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Ulduar Raid",
@@ -30360,7 +30362,7 @@ local playlist1 = {
     ["Id"] = 298931,
 		["Length"] = 105,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Ulduar Raid",
@@ -30369,7 +30371,7 @@ local playlist1 = {
     ["Id"] = 298911,
 		["Length"] = 105,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW 3.1 Ulduar Raid",
@@ -30378,7 +30380,7 @@ local playlist1 = {
     ["Id"] = 298920,
 		["Length"] = 81,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30387,7 +30389,7 @@ local playlist1 = {
     ["Id"] = 229993,
 		["Length"] = 56,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30396,7 +30398,7 @@ local playlist1 = {
     ["Id"] = 229994,
 		["Length"] = 52,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30405,7 +30407,7 @@ local playlist1 = {
     ["Id"] = 229995,
 		["Length"] = 54,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30414,7 +30416,7 @@ local playlist1 = {
     ["Id"] = 229996,
 		["Length"] = 26,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30423,7 +30425,7 @@ local playlist1 = {
     ["Id"] = 229997,
 		["Length"] = 30,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30432,7 +30434,7 @@ local playlist1 = {
     ["Id"] = 229998,
 		["Length"] = 108,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30441,7 +30443,7 @@ local playlist1 = {
     ["Id"] = 229999,
 		["Length"] = 107,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30450,7 +30452,7 @@ local playlist1 = {
     ["Id"] = 230000,
 		["Length"] = 83,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30459,7 +30461,7 @@ local playlist1 = {
     ["Id"] = 230001,
 		["Length"] = 83,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30468,7 +30470,7 @@ local playlist1 = {
     ["Id"] = 230002,
 		["Length"] = 69,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -30477,7 +30479,7 @@ local playlist1 = {
     ["Id"] = 53812,
 		["Length"] = 72,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft",
@@ -30486,7 +30488,7 @@ local playlist1 = {
     ["Id"] = 53813,
 		["Length"] = 87,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -30495,7 +30497,7 @@ local playlist1 = {
     ["Id"] = 53814,
 		["Length"] = 71,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "World of Warcraft mp3s",
@@ -30504,7 +30506,7 @@ local playlist1 = {
     ["Id"] = 53815,
 		["Length"] = 64,
 		["Artist"] = "Jason Hayes",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWX5",
@@ -30513,7 +30515,7 @@ local playlist1 = {
     ["Id"] = 574607,
 		["Length"] = 101,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWX5",
@@ -30522,7 +30524,7 @@ local playlist1 = {
     ["Id"] = 574608,
 		["Length"] = 97,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWX5",
@@ -30531,7 +30533,7 @@ local playlist1 = {
     ["Id"] = 574609,
 		["Length"] = 107,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWX5",
@@ -30540,7 +30542,7 @@ local playlist1 = {
     ["Id"] = 574610,
 		["Length"] = 68,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWX5",
@@ -30549,7 +30551,7 @@ local playlist1 = {
     ["Id"] = 574611,
 		["Length"] = 108,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWX5",
@@ -30558,7 +30560,7 @@ local playlist1 = {
     ["Id"] = 574612,
 		["Length"] = 53,
 		["Artist"] = "Russell Brower",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWX5",
@@ -30567,7 +30569,7 @@ local playlist1 = {
     ["Id"] = 574908,
 		["Length"] = 135,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWX5",
@@ -30576,7 +30578,7 @@ local playlist1 = {
     ["Id"] = 574947,
 		["Length"] = 87,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWX5",
@@ -30585,7 +30587,7 @@ local playlist1 = {
     ["Id"] = 574909,
 		["Length"] = 84,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWX5",
@@ -30594,7 +30596,7 @@ local playlist1 = {
     ["Id"] = 574933,
 		["Length"] = 88,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWX5",
@@ -30603,7 +30605,7 @@ local playlist1 = {
     ["Id"] = 574934,
 		["Length"] = 75,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWX5",
@@ -30612,7 +30614,7 @@ local playlist1 = {
     ["Id"] = 574935,
 		["Length"] = 88,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoWX5",
@@ -30621,7 +30623,7 @@ local playlist1 = {
     ["Id"] = 574936,
 		["Length"] = 82,
 		["Artist"] = "Neal Acree",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -30630,7 +30632,7 @@ local playlist1 = {
     ["Id"] = 53816,
 		["Length"] = 133,
 		["Artist"] = "Matt Uelmen and Joseph Lawrence",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -30639,7 +30641,7 @@ local playlist1 = {
     ["Id"] = 53818,
 		["Length"] = 109,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -30648,7 +30650,7 @@ local playlist1 = {
     ["Id"] = 53819,
 		["Length"] = 81,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -30657,7 +30659,7 @@ local playlist1 = {
     ["Id"] = 53820,
 		["Length"] = 120,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -30666,7 +30668,7 @@ local playlist1 = {
     ["Id"] = 53821,
 		["Length"] = 59,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -30675,7 +30677,7 @@ local playlist1 = {
     ["Id"] = 53822,
 		["Length"] = 102,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -30684,7 +30686,7 @@ local playlist1 = {
     ["Id"] = 53823,
 		["Length"] = 71,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "WoW BC",
@@ -30693,7 +30695,7 @@ local playlist1 = {
     ["Id"] = 53824,
 		["Length"] = 89,
 		["Artist"] = "Matt Uelmen",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -30702,7 +30704,7 @@ local playlist1 = {
     ["Id"] = 53825,
 		["Length"] = 113,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -30711,7 +30713,7 @@ local playlist1 = {
     ["Id"] = 53826,
 		["Length"] = 74,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -30720,7 +30722,7 @@ local playlist1 = {
     ["Id"] = 53827,
 		["Length"] = 108,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -30729,7 +30731,7 @@ local playlist1 = {
     ["Id"] = 53828,
 		["Length"] = 70,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -30738,7 +30740,7 @@ local playlist1 = {
     ["Id"] = 53829,
 		["Length"] = 90,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -30747,7 +30749,7 @@ local playlist1 = {
     ["Id"] = 53830,
 		["Length"] = 113,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -30756,7 +30758,7 @@ local playlist1 = {
     ["Id"] = 53831,
 		["Length"] = 136,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -30765,7 +30767,7 @@ local playlist1 = {
     ["Id"] = 53832,
 		["Length"] = 117,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -30774,7 +30776,7 @@ local playlist1 = {
     ["Id"] = 53833,
 		["Length"] = 40,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -30783,7 +30785,7 @@ local playlist1 = {
     ["Id"] = 53834,
 		["Length"] = 92,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -30792,7 +30794,7 @@ local playlist1 = {
     ["Id"] = 53835,
 		["Length"] = 79,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Blizzard Entertainment",
@@ -30801,7 +30803,7 @@ local playlist1 = {
     ["Id"] = 53836,
 		["Length"] = 79,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30810,7 +30812,7 @@ local playlist1 = {
     ["Id"] = 230003,
 		["Length"] = 98,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30819,7 +30821,7 @@ local playlist1 = {
     ["Id"] = 230004,
 		["Length"] = 98,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30828,7 +30830,7 @@ local playlist1 = {
     ["Id"] = 230005,
 		["Length"] = 128,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30837,7 +30839,7 @@ local playlist1 = {
     ["Id"] = 230006,
 		["Length"] = 125,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30846,7 +30848,7 @@ local playlist1 = {
     ["Id"] = 230007,
 		["Length"] = 129,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30855,7 +30857,7 @@ local playlist1 = {
     ["Id"] = 230008,
 		["Length"] = 125,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30864,7 +30866,7 @@ local playlist1 = {
     ["Id"] = 230009,
 		["Length"] = 89,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30873,7 +30875,7 @@ local playlist1 = {
     ["Id"] = 230010,
 		["Length"] = 90,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30882,7 +30884,7 @@ local playlist1 = {
     ["Id"] = 230011,
 		["Length"] = 101,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30891,7 +30893,7 @@ local playlist1 = {
     ["Id"] = 230012,
 		["Length"] = 92,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30900,7 +30902,7 @@ local playlist1 = {
     ["Id"] = 230013,
 		["Length"] = 90,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30909,7 +30911,7 @@ local playlist1 = {
     ["Id"] = 230014,
 		["Length"] = 90,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30918,7 +30920,7 @@ local playlist1 = {
     ["Id"] = 230015,
 		["Length"] = 101,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30927,7 +30929,7 @@ local playlist1 = {
     ["Id"] = 230016,
 		["Length"] = 92,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30936,7 +30938,7 @@ local playlist1 = {
     ["Id"] = 230017,
 		["Length"] = 28,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30945,7 +30947,7 @@ local playlist1 = {
     ["Id"] = 230018,
 		["Length"] = 27,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30954,7 +30956,7 @@ local playlist1 = {
     ["Id"] = 230019,
 		["Length"] = 30,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30963,7 +30965,7 @@ local playlist1 = {
     ["Id"] = 230020,
 		["Length"] = 27,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30972,7 +30974,7 @@ local playlist1 = {
     ["Id"] = 230021,
 		["Length"] = 32,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30981,7 +30983,7 @@ local playlist1 = {
     ["Id"] = 230022,
 		["Length"] = 27,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30990,7 +30992,7 @@ local playlist1 = {
     ["Id"] = 230023,
 		["Length"] = 30,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -30999,7 +31001,7 @@ local playlist1 = {
     ["Id"] = 230024,
 		["Length"] = 27,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -31008,7 +31010,7 @@ local playlist1 = {
     ["Id"] = 230025,
 		["Length"] = 28,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 	{
 		["Album"] = "Wrath of the Lich King",
@@ -31017,7 +31019,7 @@ local playlist1 = {
     ["Id"] = 230026,
 		["Length"] = 27,
 		["Artist"] = "Derek Duke",
-		["WoW"] =  "true",
+
 	},
 }
 local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer")if not EpicMusicPlayer then return end

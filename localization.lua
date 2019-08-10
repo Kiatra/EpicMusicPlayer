@@ -4,6 +4,9 @@ local L = AceLocale:NewLocale("EpicMusicPlayer", "enUS", true)
 if not L then return end
 
 if L then
+	L["Removed song"] = true
+	L["from list"] = true
+	
 	L["Battle for Azeroth"] = true
 	L["Legion"] = true
 	L["Draenor"] = true

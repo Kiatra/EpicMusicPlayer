@@ -1,6 +1,6 @@
 local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer")
 local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
-
+local debug = EpicMusicPlayer.Debug
 local playlists = {}
 
 local listnames = {}
@@ -12,23 +12,6 @@ local historypointer = 2
 local currentPlaylistVersion = "4.0"
 local _G, ipairs, pairs, string, table, type, math = _G, ipairs, pairs, string, table, type, math
 
---convert playlist from versions before 4.0 to 4.0
-local function ConvertPlaylist(list)
-	if #list >= 1 then
-    if list[1].ListName then
-			list.listName = list[1].ListName
-		end
-		if list[1].PlaylistType then
-			list.playlistType = list[1].PlaylistType
-		end
-		if list[1].PlaylistVersion then
-			list[1].PlaylistVersion = "4.0"
-		end
-	end
-	list.playlistVersion = "4.0"
-	return list
-end
-
 local function getCopy(song)
 	return {
 		["Album"] = song.Album,
@@ -36,7 +19,7 @@ local function getCopy(song)
 		["Name"] = song.Name,
 		["Length"] = song.Length,
 		["Artist"] = song.Artist,
-		["WoW"] = song.WoW,
+		["Id"] = song.Id,
 	}
 end
 
@@ -44,9 +27,6 @@ function EpicMusicPlayer:AddSavedPlayList()
 	-- put the list that will be saved and lists that will not be saved in one list
 	if _G.EpicMusicPlayer_PlayList then
 		for i, list in ipairs(_G.EpicMusicPlayer_PlayList) do
-			if list[1] and list[1].PlaylistVersion and list[1].PlaylistVersion < currentPlaylistVersion then
-				list = ConvertPlaylist(list)
-			end
 			playlists[#playlists +1] = list
 		end
 	end
@@ -187,9 +167,6 @@ function EpicMusicPlayer:GetNextSong(listIndex, songIndex, loopList)
 
 			local list = playlists[listi]
 			local first = list[1]
-			--if EpicMusicPlayer:IsListIgnored(listi)	 then --skip ignored list
-			--	listi = listi + 1
-			--end
 			songIndex = 1
 		end
 		listIndex = 1 -- check remainig lists
@@ -431,10 +408,6 @@ function EpicMusicPlayer:AddPlayList(name, newlist, save, replace)
 			["listName"] = name,
 			["playlistVersion"] = currentPlaylistVersion,
 		} -- [1]
-    else
-		if newlist[1] and newlist[1].PlaylistVersion and newlist.playlistVersion < currentPlaylistVersion then
-			newlist = ConvertPlaylist(newlist)
-		end
 	end
 
 	if save then
@@ -556,7 +529,7 @@ end
 function EpicMusicPlayer:RemoveGameMusicLists()
 	for i=#playlists,1,-1 do
 		list = playlists[i]
-		if list and list[1] and list[1].WoW == true then
+		if list and list[1] and list[1].Id == true then
 			table.remove(playlists, i)
 		end
 	end
@@ -601,8 +574,8 @@ function EpicMusicPlayer:Search(pattern)
 		temp = { _G.strsplit(" ", pattern) }
 
     searchlist = {
-			listName= "lastsearch",
-			playlistType = "generated",
+			listName = "lastsearch",
+			locked =  "true",
     }
 
 	for x, list in ipairs(playlists) do
@@ -661,25 +634,10 @@ end
 
 function EpicMusicPlayer:IsListLocked(index)
 	local list = playlists[index]
-	if list and (list.playlistType == "generated" or list.playlistType == "gamemusic") then
+	if list and list.locked then
 		return true
 	end
 	return false
-end
-
-function EpicMusicPlayer:IsListIgnored(index)
-	local list = playlists[index]
-	if list and list[1] and list[1].IgnorePlaylist then
-		return true
-	end
-	return false
-end
-
-function EpicMusicPlayer:SetListIsIgnored(index, ignore)
-	local list = playlists[index]
-	if list and list[1] then
-		list[1].IgnorePlaylist = ignore
-	end
 end
 
 function EpicMusicPlayer:GetSong(listIndex, songIndex)
@@ -702,3 +660,31 @@ function EpicMusicPlayer:GetSong(listIndex, songIndex)
 		EpicMusicPlayer:Error("list", listIndex ,"not found.")
 	end
 end
+
+local function findSongByName(name)
+	if playlists then
+		for i, list in ipairs(playlists) do
+			for i, song in ipairs(list) do
+				if song.Name == name then
+					return song.Id
+				end
+			end
+		end
+	end
+end
+
+function EpicMusicPlayer:AddSogIdToOldSavedSongs()
+	if _G.EpicMusicPlayer_PlayList then
+		for i, list in ipairs(_G.EpicMusicPlayer_PlayList) do
+			debug("updating list:"..list.listName)
+			for i, song in ipairs(list) do
+				if song.WoW and not song.Id then
+					local id = findSongByName(song.Name)
+					debug("song ID for song ", song.Name, id)
+					if id then song.Id = id end
+				end
+			end
+		end
+	end
+end
+

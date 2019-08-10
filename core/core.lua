@@ -50,7 +50,7 @@ function EpicMusicPlayer:OnInitialize()
 		profile = {
 			volume = 1,
 			oldversion = "",
-			spam = true,
+			spam = false,
 			song = 2,
 			list = 1,
 			skin = "quest",
@@ -115,9 +115,11 @@ function EpicMusicPlayer:OnInitialize()
 
 	self.dataBase = LibStub("AceDB-3.0"):New("EpicMusicPlayerDB", defaults, "Default")
 
-  AceCfgDlg:AddToBlizOptions("EpicMusicPlayer", "EpicMusicPlayer")
+	AceCfgDlg:AddToBlizOptions("EpicMusicPlayer", "EpicMusicPlayer")
 	AceCfgDlg:SetDefaultSize("EpicMusicPlayer", 700, 500)
-  EpicMusicPlayer:AddProfile(self.dataBase)
+	EpicMusicPlayer:AddProfile(self.dataBase)
+
+	EpicMusicPlayer:AddSogIdToOldSavedSongs()
 
 	db = self.dataBase.profile
 	self.db = db
@@ -146,8 +148,6 @@ function EpicMusicPlayer:OnInitialize()
 		db.font = media:GetDefault("font")
 	end
 
-	self:ScheduleRepeatingTimer("CheckDate", 30)
-
 	if not db.addGameMusic then
 		EpicMusicPlayer:RemoveGameMusicLists()
 	end
@@ -162,7 +162,7 @@ function EpicMusicPlayer:OnEnable(first)
 	self:RegisterEvent("CHAT_MSG_WHISPER_INFORM", EpicMusicPlayer.OnWhisperInform)
   self:RegisterEvent("ZONE_CHANGED_NEW_AREA", EpicMusicPlayer.OnZoneChangedNewArea)
 	self:RegisterEvent("PLAYER_ALIVE", EpicMusicPlayer.OnPlayerAlive)
-	self:RegisterEvent("PLAYER_LEVEL_UP", EpicMusicPlayer.OnPlayerLevelUp)
+	
 
 	if(self.Playing == false)then
         if(db.auto) then

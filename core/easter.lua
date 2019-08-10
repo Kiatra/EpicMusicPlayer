@@ -1,45 +1,45 @@
 local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer")
 local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 
+local function play(self, song)
+	self:ForceMusicVolume()
+	local spam = self.db.spam
+	self.db.spam = true
+	EpicMusicPlayer:Play(song)
+	self.db.spam = spam
+end
+
 function EpicMusicPlayer:OnPlayerLevelUp(level)
-	if level == 120 and db.maxLevelSong then
-		self:ForceMusicVolume()
-		if(EpicMusicPlayerGui)then
-			if(not self.db.showgui)then
-				self.db.showgui = true
-				EpicMusicPlayerGui:Toggle()
-			end
-		end
+	local maxlevel = _G.MAX_PLAYER_LEVEL_TABLE[_G.GetAccountExpansionLevel()] 
+	if level == maxlevel and db.maxLevelSong then
 		song = {
-			["WoW"] = true,
 			["Album"] = "ingame",
-			["Song"] = "Gratulations to level 110!!!",
-			["Name"] = "Sound\\Music\\ZoneMusic\\ArgentTournament\\AT_JoustEvent.mp3",
-			["Length"] = 123,
+			["Song"] = string.format("Gratulations to level %s! :)", maxlevel),
+			["Name"] = "sound\\music\\musical moments\\angelic\\angelic01.mp3",
+			["Length"] = 47,
 			["Artist"] = "",
+			["Id"] = 303111,
 		}
-		EpicMusicPlayer:Play(song)
+		play(self, song)
 	end
 end
 
 function EpicMusicPlayer:CheckDate()
 	local datetime = date("%d%m%H%M")
 	if datetime == "01010000" then
-		self:ForceMusicVolume()
-		if(EpicMusicPlayerGui)then
-			if(not self.db.showgui)then
-				self.db.showgui = true
-				EpicMusicPlayerGui:Toggle()
-			end
-		end
 		song = {
-			["WoW"] = true,
+			["Id"] = 53260,
 			["Album"] = "ingame",
 			["Song"] = "Happy New Year! ;)",
 			["Name"] = "Sound\\Music\\WorldEvents\\HordeFirepole.mp3",
 			["Length"] = 72,
 			["Artist"] = "",
 		}
-		EpicMusicPlayer:Play(song)
+		play(self, song)
 	end
 end
+
+EpicMusicPlayer:RegisterEvent("PLAYER_LEVEL_UP", EpicMusicPlayer.OnPlayerLevelUp)
+local _, _, _, tocversion = GetBuildInfo()
+if tocversion < 80200 then EpicMusicPlayer:ScheduleRepeatingTimer("CheckDate", 30) end
+

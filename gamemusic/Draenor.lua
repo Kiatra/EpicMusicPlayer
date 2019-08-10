@@ -1,11 +1,13 @@
 -- EpicMusicPlayer playlist created by EpicPlaylistCreator version 0.1.
+local _, _, _, tocversion = GetBuildInfo()
+if tocversion < 80200 then return end
+
 local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 
 local playlist1={
   ["listName"] = L["Draenor"],
   ["playlistVersion"] = "3.1",
-  ["playlistType"] = "generated",
-  ["musicDir"] = "MyMusic\\",
+  ["locked"] =  "true",
   {
     ["Album"] = "WoW 6",
     ["Song"] = "A Hero's Sacrifice v1",
