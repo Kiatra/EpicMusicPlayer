@@ -1,4 +1,4 @@
-## Interface: 80300
+## Interface: 90001
 ## Title: EpicMusicPlayer
 ## Notes: Browse and play WoW game music
 ## Author: yess
@@ -39,7 +39,7 @@ gui\gui.lua
 gui\skins.lua
 
 broker\empbroker.lua
-dancer\EpicMusicDancer.lua
+#dancer\EpicMusicDancer.lua
 gamemusic\Epic.lua
 gamemusic\All.lua
 gamemusic\Draenor.lua

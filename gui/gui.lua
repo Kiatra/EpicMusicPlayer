@@ -629,7 +629,7 @@ local function newControl(settings, frame)
 	local offy = settings.offy or 0
 	local backgroundtexture = settings.backgroundtexture
 
-	local frame = frame or CreateFrame(frametype,nil,EMPGUI)
+	local frame = frame or CreateFrame(frametype,nil,EMPGUI, BackdropTemplateMixin and "BackdropTemplate")
 	frame:SetWidth(width)
 	frame:SetHeight(height)
 	frame:SetPoint(align,offx,offy)
@@ -697,7 +697,7 @@ function EpicMusicPlayerGui:CreateGuiFrame()
 	--self.frames.buttons = {}
 
 	----- create gui frame --------------------------------------------------------------
-	self.frames.player = self.frames.player or CreateFrame("Frame","EMPGUI",UIParent)
+	self.frames.player = self.frames.player or CreateFrame("Frame","EMPGUI",UIParent, BackdropTemplateMixin and "BackdropTemplate")
 	self.frames.player:SetWidth(self.cuurskin.guiframe.width)
 	self.frames.player:SetHeight(self.cuurskin.guiframe.height)
 
@@ -712,6 +712,7 @@ function EpicMusicPlayerGui:CreateGuiFrame()
 	else
 		self.frames.player.hasBackdrop = false
 	end
+	self.frames.player:ClearAllPoints()
 	self.frames.player:SetPoint("CENTER",0,0)
 	self.frames.player:Show()
 	self.frames.player:EnableMouse(true)

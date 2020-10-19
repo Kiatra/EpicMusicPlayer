@@ -124,7 +124,7 @@ end
 
 local function CreateHeader(parent)
 	local db = EpicMusicPlayer.db
-	local header = CreateFrame("Frame",nil,parent)
+	local header = CreateFrame("Frame",nil,parent, BackdropTemplateMixin and "BackdropTemplate")
 	header:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background"});
 	header:SetBackdropColor(0.2,0.2,0.2,0.9)
 
@@ -175,7 +175,7 @@ function EpicMusicPlayer:ClearSearchFocus()
 end
 
 local function CreateFooter(parent)
-	local footer = CreateFrame("Frame",nil,parent)
+	local footer = CreateFrame("Frame",nil,parent, BackdropTemplateMixin and "BackdropTemplate")
 	footer:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background"});
 	footer:SetBackdropColor(0.2,0.2,0.2,0.9)
 
@@ -227,7 +227,7 @@ local function CreatePlaylistGui(width, height)
 
 
 	selectedlist = EpicMusicPlayer:GetListByIndex(1)--EpicMusicPlayer:GetCurrentList()
-	frame = CreateFrame("Frame","EpicMusicPlayer_PlaylistMain",_G.UIParent)
+	frame = CreateFrame("Frame","EpicMusicPlayer_PlaylistMain",_G.UIParent, BackdropTemplateMixin and "BackdropTemplate")
 	frame:SetFrameStrata(EpicMusicPlayer.db.liststrata)
 	--frame.Update = Update
 
@@ -269,7 +269,7 @@ local function CreatePlaylistGui(width, height)
 	frame:SetClampedToScreen(1)
 	_G.tinsert(_G.UISpecialFrames,frame:GetName());
 
-	local sizer = CreateFrame("Frame","EmpDragsizer",frame)
+	local sizer = CreateFrame("Frame","EmpDragsizer",frame, BackdropTemplateMixin and "BackdropTemplate")
 	sizer:SetWidth(25)
 	sizer:SetHeight(25)
 	sizer:SetPoint("BOTTOMRIGHT",frame,"BOTTOMRIGHT",0,0)
@@ -295,7 +295,7 @@ local function CreatePlaylistGui(width, height)
 	sizertx:SetPoint("BOTTOMRIGHT", -5, 5)
 	sizertx:SetTexture("Interface\\AddOns\\EpicMusicPlayer\\media\\sizer.tga")
 
-	seperator = CreateFrame("Frame","EmpDragSeperator",frame)
+	seperator = CreateFrame("Frame","EmpDragSeperator",frame, BackdropTemplateMixin and "BackdropTemplate")
 	seperator:SetWidth(4)
 	seperator.posx = 120
 	seperator:SetPoint("TOPLEFT", frame ,seperator.posx, -25)

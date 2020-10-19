@@ -253,7 +253,7 @@ local function SetMax(self, size)
 end
 
 function EpicMusicPlayer:CreateListWidget(name, parent, size, colums,GetData, OnClick, OnEnter, OnLeave, font, ToggleCheck)
-	local frame = _G.CreateFrame("Frame",name,parent)
+	local frame = _G.CreateFrame("Frame",name,parent, BackdropTemplateMixin and "BackdropTemplate")
 	frame.Update = Update
 	frame.colums = colums or {1}
 	frame.ScrollUpdate = ScrollUpdate

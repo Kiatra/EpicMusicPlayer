@@ -634,7 +634,7 @@ function EpicMusicDancer:SetNextModel()
 end
 
 function EpicMusicDancer:CreateDancerFrame(parent)
-	self.frame = _G.CreateFrame("Button","EMPDancerFrame",_G.UIParent)
+	self.frame = _G.CreateFrame("Button","EMPDancerFrame",_G.UIParent, BackdropTemplateMixin and "BackdropTemplate")
 	EMPDancerFrame = self.frame
 	self.frame:SetWidth(100)
 	self.frame:SetHeight(100)
@@ -674,7 +674,7 @@ function EpicMusicDancer:CreateDancerFrame(parent)
 		self.frame:EnableMouseWheel(false)
 	end
 
-	self.hitbox = _G.CreateFrame("Frame","EMPDancerHitbox",EMPDancerFrame)
+	self.hitbox = _G.CreateFrame("Frame","EMPDancerHitbox",EMPDancerFrame, BackdropTemplateMixin and "BackdropTemplate")
 	self.hitbox:SetWidth(80)
 	self.hitbox:SetHeight(75)
 	self.hitbox:SetPoint("BOTTOMLEFT",EMPDancerFrame,10,0)
@@ -689,7 +689,7 @@ function EpicMusicDancer:CreateDancerFrame(parent)
 	self.hitbox:Hide()
 	--pedestal
 
-	self.pedestal = _G.CreateFrame("Frame","EMPDancerPodest",EMPDancerFrame)
+	self.pedestal = _G.CreateFrame("Frame","EMPDancerPodest",EMPDancerFrame, BackdropTemplateMixin and "BackdropTemplate")
 	self.pedestal.texture = self.pedestal:CreateTexture(nil)
 	self.pedestal.texture:SetTexture("Interface\\AddOns\\EpicMusicPlayer\\modules\\dancer\\podest.tga")
 	self.pedestal.texture:SetAllPoints(self.pedestal)
@@ -703,7 +703,7 @@ function EpicMusicDancer:CreateDancerFrame(parent)
 		self.pedestal:Hide()
 	end
 
-	local model = _G.CreateFrame("PlayerModel",nil,EMPDancerFrame)
+	local model = _G.CreateFrame("PlayerModel",nil,EMPDancerFrame, BackdropTemplateMixin and "BackdropTemplate")
 	model:SetWidth(100)
 	model:SetHeight(100)
 	model:ClearAllPoints()
@@ -713,7 +713,7 @@ function EpicMusicDancer:CreateDancerFrame(parent)
 	EpicMusicDancer.Model = model
 
 
-	local model2 = _G.CreateFrame("PlayerModel",nil,EMPDancerFrame)
+	local model2 = _G.CreateFrame("PlayerModel",nil,EMPDancerFrame, BackdropTemplateMixin and "BackdropTemplate")
 	model2:SetWidth(100)
 	model2:SetHeight(100)
 	model2:ClearAllPoints()
