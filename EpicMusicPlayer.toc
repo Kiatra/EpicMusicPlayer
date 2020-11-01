@@ -46,3 +46,4 @@ gamemusic\Draenor.lua
 gamemusic\Legion.lua
 gamemusic\BattleForAzeroth.lua
 gamemusic\Classic.lua
+gamemusic\Shadowlands.lua
