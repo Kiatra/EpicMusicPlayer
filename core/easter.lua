@@ -10,7 +10,7 @@ local function play(self, song)
 end
 
 function EpicMusicPlayer:OnPlayerLevelUp(level)
-	local maxlevel = _G.MAX_PLAYER_LEVEL_TABLE[_G.GetAccountExpansionLevel()] 
+	local maxlevel = GetMaxLevelForPlayerExpansion()
 	if level == maxlevel and db.maxLevelSong then
 		song = {
 			["Album"] = "ingame",
@@ -42,4 +42,3 @@ end
 EpicMusicPlayer:RegisterEvent("PLAYER_LEVEL_UP", EpicMusicPlayer.OnPlayerLevelUp)
 local _, _, _, tocversion = GetBuildInfo()
 if tocversion < 80200 then EpicMusicPlayer:ScheduleRepeatingTimer("CheckDate", 30) end
-
