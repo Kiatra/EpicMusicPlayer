@@ -147,7 +147,7 @@ local options={
 				return EMPGUI:GetScale()
 			end,
 			set =  function(info,val)
-				EpicMusicPlayer.db.profile.guiscale = val
+				EpicMusicPlayer.db.guiscale = val
 				EMPGUI:SetScale(val)
 			end,
 		},
