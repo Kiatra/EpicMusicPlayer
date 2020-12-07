@@ -42,8 +42,9 @@ broker\empbroker.lua
 #dancer\EpicMusicDancer.lua
 gamemusic\Epic.lua
 gamemusic\All.lua
-gamemusic\Draenor.lua
-gamemusic\Legion.lua
 gamemusic\BattleForAzeroth.lua
 gamemusic\Classic.lua
+gamemusic\Draenor.lua
+gamemusic\Legion.lua
+gamemusic\Pandaria.lua
 gamemusic\Shadowlands.lua
