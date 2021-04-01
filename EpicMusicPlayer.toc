@@ -1,7 +1,7 @@
-## Interface: 90001
+## Interface: 90005
 ## Title: EpicMusicPlayer
 ## Notes: Browse and play WoW game music
-## Author: yess
+## Author: Kiatra - github.com/Kiatra/EpicMusicPlayer/
 ## SavedVariables: EpicMusicPlayer_PlayList, EpicMusicPlayerDB, EpicMusicPlayerBrokerDB, EpicMusicDancerDB
 ## OptionalDeps: Ace3, LibSharedMedia-3.0
 ## X-Embeds: Ace3, LibSharedMedia-3.0
@@ -41,10 +41,13 @@ gui\skins.lua
 broker\empbroker.lua
 #dancer\EpicMusicDancer.lua
 gamemusic\Epic.lua
-gamemusic\All.lua
-gamemusic\BattleForAzeroth.lua
+#gamemusic\All.lua
 gamemusic\Classic.lua
+gamemusic\BurningCrusade.lua
+gamemusic\LichKing.lua
+gamemusic\Cataclysm.lua
+gamemusic\Pandaria.lua
 gamemusic\Draenor.lua
 gamemusic\Legion.lua
-gamemusic\Pandaria.lua
+gamemusic\BattleForAzeroth.lua
 gamemusic\Shadowlands.lua
