@@ -13,12 +13,12 @@ local function ToggleLists()
 		listslist:Hide()
 		songlist:SetPoint("TOPLEFT", frame ,5, -25)
 		songlist:SetPoint("BOTTOMRIGHT", frame ,-5, 27)
-		frame:SetMinResize(150,50)
+		frame:SetResizeBounds(150,50)
 	else
 		listslist:Show()
 		songlist:SetPoint("TOPLEFT", frame ,150, -25)
 		songlist:SetPoint("BOTTOMRIGHT", frame ,-5, 27)
-		frame:SetMinResize(300,200)
+		frame:SetResizeBounds(300,200)
 	end
 end
 
@@ -189,7 +189,7 @@ local function CreateFooter(parent)
 		--parent:Hide()
 		self:ClearFocus()
 	end)
-	editbox:SetFont(parent.font, 12)
+	editbox:SetFont(parent.font, 12, "")
 	editbox:SetText(L["Search..."])
 
 	--OnTextChanged OnEnterPressed
@@ -249,7 +249,7 @@ local function CreatePlaylistGui(width, height)
 	frame:SetMovable(true)
 	frame:SetResizable(true)
 	frame:RegisterForDrag("LeftButton");
-    frame:SetMinResize(300,200)
+    frame:SetResizeBounds(300,200)
 	--frame:SetMaxResize(1000,800)
 
 	frame:SetScript("OnDragStart",
