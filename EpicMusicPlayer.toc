@@ -13,6 +13,7 @@
 ## Version: @project-version@
 ## X-Category: Audio
 ## X-WoWI-ID: 24773
+## X-Curse-Project-ID: 6139
 
 #@no-lib-strip@
 libs\libs.xml
