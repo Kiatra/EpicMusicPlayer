@@ -7,6 +7,10 @@ local delay, counter = 0.3, 0
 local frame, mainframe, listslist, songlist, playbutton, randombutton, title, seperator
 local selectedlist, selectedlistIndex
 
+local function SetResizeBounds(self, x, y)
+		self:SetMaxResize(x,y)
+end
+
 -- show/hide the left list with the playlists
 local function ToggleLists()
 	if EpicMusicPlayer.db.hideListsList then
@@ -249,9 +253,12 @@ local function CreatePlaylistGui(width, height)
 	frame:SetMovable(true)
 	frame:SetResizable(true)
 	frame:RegisterForDrag("LeftButton");
-    frame:SetResizeBounds(300,200)
-	--frame:SetMaxResize(1000,800)
-
+  
+  if not frame.SetResizeBounds then --wow classic
+  	frame.SetResizeBounds = SetResizeBounds
+  end
+  frame:SetResizeBounds(1000,800)
+	
 	frame:SetScript("OnDragStart",
 	    function(self)
 			self:StartMoving()
