@@ -10,17 +10,19 @@ local function play(self, song)
 end
 
 function EpicMusicPlayer:OnPlayerLevelUp(level)
-	local maxlevel = GetMaxLevelForPlayerExpansion()
-	if level == maxlevel and db.maxLevelSong then
-		song = {
-			["Album"] = "ingame",
-			["Song"] = string.format("Gratulations to level %s! :)", maxlevel),
-			["Name"] = "sound\\music\\musical moments\\angelic\\angelic01.mp3",
-			["Length"] = 47,
-			["Artist"] = "",
-			["Id"] = 303111,
-		}
-		play(self, song)
+	if _G.GetMaxLevelForPlayerExpansion then
+		local maxlevel = GetMaxLevelForPlayerExpansion()
+		if level == maxlevel and db.maxLevelSong then
+			song = {
+				["Album"] = "ingame",
+				["Song"] = string.format("Gratulations to level %s! :)", maxlevel),
+				["Name"] = "sound\\music\\musical moments\\angelic\\angelic01.mp3",
+				["Length"] = 47,
+				["Artist"] = "",
+				["Id"] = 303111,
+			}
+			play(self, song)
+		end
 	end
 end
 
