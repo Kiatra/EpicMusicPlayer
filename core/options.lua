@@ -5,7 +5,7 @@ local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 -------------------------------------------------------------------------------
 -- ace options table
 -------------------------------------------------------------------------------
-local version = GetAddOnMetadata("EpicMusicPlayer","Version") or ""
+local version = C_AddOns.GetAddOnMetadata("EpicMusicPlayer","Version") or ""
 local empoptions = {
     name = "EMP "..version,
     handler = EpicMusicPlayer,

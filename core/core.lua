@@ -15,7 +15,7 @@ EpicMusicPlayer.controlslist = {
 	PlayLast = L["Play Last Song"], TogglePlayerGui = L["Toggle show GUI"], ToggleRandom = L["Toggle shuffle"],
 	RemoveCurrendSong = L["Remove Song"], SpamDefault = L["Send song name to default channel"],
 }
-EpicMusicPlayer.version = GetAddOnMetadata("EpicMusicPlayer","Version")
+EpicMusicPlayer.version = C_AddOns.GetAddOnMetadata("EpicMusicPlayer","Version")
 EpicMusicPlayer.tocversion = select(4, GetBuildInfo());
 
 local function Debug(...)
