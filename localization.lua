@@ -5,8 +5,9 @@ if not L then return end
 
 if L then
 	L["Toggle GUI"] = true
-	
+	L["Remove selected songs"] = true
 	L["Removed song"] = true
+
 	L["from list"] = true
 	
 	L["Battle for Azeroth"] = true
@@ -23,7 +24,6 @@ if L then
 	L["Export Playlist"] = true
 	L["Import playlist:"] = true
 	L["Import a playlist. Right click a list to export that list."] = true
-	L["Copy song %s to"] = true
 	L["Copy selected songs to"] = true
 	L["Copy all songs to"] = true
 	L["Clear selection"] = true

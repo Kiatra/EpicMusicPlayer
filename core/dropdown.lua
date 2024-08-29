@@ -12,15 +12,84 @@ function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
 		OpenSongMenuOld()
 		return
 	end
+
+	local countSelectedSongs = EpicMusicPlayer:GetNumberOfSelectedSongs(listIndex)
+	local locked = EpicMusicPlayer:IsListLocked(listIndex)
+	local song = EpicMusicPlayer:GetSong(listIndex, songIndex)
+ 	local songName = song and song.Song or ""
+
+	MenuUtil.CreateContextMenu(frame, function(ownerRegion, rootDescription)
+		local submenuCopyAll = rootDescription:CreateButton(L["Copy all songs to"]);
+
+		local submenuCopyMulti = nil
+		if countSelectedSongs > 0 then
+			rootDescription:CreateDivider();
+			if not locked then
+				rootDescription:CreateButton(L["Remove selected songs"], function() 
+					EpicMusicPlayer:RemoveAllSelectedSong(listIndex, dstList);
+					EpicMusicPlayer:PlayListGuiUpdate(); 
+				end);
+			end
+			submenuCopyMulti = rootDescription:CreateButton(L["Copy selected songs to"]);
+			rootDescription:CreateDivider();
+			rootDescription:CreateButton(L["Clear selection"], function() 
+				EpicMusicPlayer:ClearListSelection(listIndex);
+			end);
+			
+		end
+		
+
+		for i, dstList in ipairs(EpicMusicPlayer.playlists) do
+			if not EpicMusicPlayer:IsListLocked(i) and i ~=listIndex then
+				if submenuCopyMulti then
+					submenuCopyMulti:CreateButton(dstList.listName, 
+					function() 
+						EpicMusicPlayer:CopyAllSelectedSongs(listIndex, dstList) 
+					end);
+				end
+				if submenuCopyAll then
+					submenuCopyAll:CreateButton(dstList.listName, 
+					function() 
+						EpicMusicPlayer:CopyAllSongs(listIndex, dstList)
+					end);
+				end
+			end
+		end
+
+		-- add copy destination to a new list with a dialog promt for each present copy option
+		if submenuCopyMulti then
+			submenuCopyAll:CreateButton(L["New List"], function() 
+				EpicMusicPlayer:CreatePlayListDialog( function(self)
+					local srcList = EpicMusicPlayer:GetListByIndex(listIndex)
+					local text = self.editBox:GetText()
+					EpicMusicPlayer:AddPlayList(text, nil, true)
+
+					local list, _ = EpicMusicPlayer:GetListByName(text)
+					EpicMusicPlayer:CopyAllSelectedSongs(srcList, dstList)
+				end);
+			end);	
+		end	
+
+		if submenuCopyAll then
+			submenuCopyAll:CreateButton(L["New List"], function() 
+				EpicMusicPlayer:CreatePlayListDialog(function(self)
+					local srcList = EpicMusicPlayer:GetListByIndex(listIndex)
+					local text = self.editBox:GetText()
+					EpicMusicPlayer:AddPlayList(text, nil, true)
+	
+					local dstList, _ = EpicMusicPlayer:GetListByName(text)
+					EpicMusicPlayer:CopyAllSongs(srcList, dstList)
+				end);
+			end); 
+		end	
+	end)
 end
 
 function EpicMusicPlayer:OpenSongMenuOld(frame, listIndex, songIndex)
 
 	local countSelectedSongs = EpicMusicPlayer:GetNumberOfSelectedSongs(listIndex)
 	EpicMusicPlayer:HideTooltip()
-	--GameTooltip:Hide();
 	local db = EpicMusicPlayer.db
-	--local self = EpicMusicPlayer
 	local dropdown = self.dropdown
 	if not dropdown then
 		dropdown = _G.CreateFrame("Frame", "EMPDropDown", nil, "UIDropDownMenuTemplate")
@@ -52,8 +121,6 @@ function EpicMusicPlayer:OpenSongMenuOld(frame, listIndex, songIndex)
 				text = dstList.listName,
 				notCheckable = true,
 				func = function()
-					--local parent = dropdown:GetParent()
-					--if parent then parent:Hide() end
 					dropdown:Hide()
 					EpicMusicPlayer:CopySong(EpicMusicPlayer:GetSong(listIndex, songIndex), dstList)
 				end,
@@ -87,7 +154,7 @@ function EpicMusicPlayer:OpenSongMenuOld(frame, listIndex, songIndex)
 			--if parent then parent:Hide() end
 			dropdown:Hide()
 			EpicMusicPlayer:CreatePlayListDialog( function(self)
-        local srcList = EpicMusicPlayer:GetListByIndex(listIndex)
+        		local srcList = EpicMusicPlayer:GetListByIndex(listIndex)
 				local text = self.editBox:GetText()
 				EpicMusicPlayer:AddPlayList(text, nil, true)
 
@@ -174,6 +241,20 @@ function EpicMusicPlayer:OpenListMenu(frame, listIndex)
 		OpenListMenuOld()
 		return
 	end
+
+	local db = EpicMusicPlayer.db
+	local listName = self:GetListName(listIndex)
+
+	MenuUtil.CreateContextMenu(frame, function(ownerRegion, rootDescription)
+		if not locked then
+			rootDescription:CreateButton(L["Add Playlist"], function() EpicMusicPlayer:CreatePlayListDialog() end);
+		end
+
+		if listName and not EpicMusicPlayer:IsListLocked(listIndex) then
+			rootDescription:CreateButton(L["Remove Playlist"], function() self:RemovePlayList(listName) end);
+			rootDescription:CreateButton(L["Export Playlist"], function() self:ExportPlayListDialog(listIndex) end);
+		end
+	end)
 end
 
 function EpicMusicPlayer:OpenListMenuOld(frame, listIndex)
@@ -235,22 +316,24 @@ function EpicMusicPlayer:OpenMenu(frame, listIndex)
 		return
 	end
 
-	local selectedValue = nil
-
-	local function IsSelected(value)
-		return value == selectedValue
-	end
-
-	local function SetSelected(value)
-		selectedValue = value
-	end
-
 	MenuUtil.CreateContextMenu(frame, function(ownerRegion, rootDescription)
 		rootDescription:CreateTitle("EpicMusicPlayer")
 		rootDescription:CreateButton(L["Playlist"], function() self:TogglePlayListGui() end)
 		rootDescription:CreateButton(L["Config"], function() self:ShowConfig() end)
 		rootDescription:CreateButton(L["Play last"], function() self:PlayLast() end)
 		rootDescription:CreateButton(L["Toggle GUI"], function() self:TogglePlayerGui() end)
+		
+		--local submenu = rootDescription:CreateButton("My Submenu");
+		--submenu:CreateButton("Enable", SetEnabledFunction, true);
+		--submenu:CreateButton("Disable", SetEnabledFunction, false);
+
+		rootDescription:CreateDivider();
+		rootDescription:CreateCheckbox(L["Shuffle"], self.IsRandom, function()  self:ToggleRandom() end);
+		rootDescription:CreateCheckbox(L["Shuffle Cross Playlist"], function() return db.shuffleAll end, function() self:ToggleRandom(true) end);
+		rootDescription:CreateCheckbox(L["Loop Playlist"], function() return db.looplist end, function() db.looplist = not db.looplist end);
+		rootDescription:CreateCheckbox(L["Loop Song"], function() return db.loopsong end, function() db.loopsong = not db.loopsong end);
+		rootDescription:CreateDivider();
+		rootDescription:CreateCheckbox( L["Enable Events"], function() return db.enableEvents end, function() db.enableEvents = not db.enableEvents end);
 	end)
 end
 
