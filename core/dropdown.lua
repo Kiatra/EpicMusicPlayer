@@ -8,7 +8,15 @@ local dropdownmenu = nil
 local dropdowncopy = nil
 
 function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
-  local countSelectedSongs = EpicMusicPlayer:GetNumberOfSelectedSongs(listIndex)
+	if not MenuUtil then
+		OpenSongMenuOld()
+		return
+	end
+end
+
+function EpicMusicPlayer:OpenSongMenuOld(frame, listIndex, songIndex)
+
+	local countSelectedSongs = EpicMusicPlayer:GetNumberOfSelectedSongs(listIndex)
 	EpicMusicPlayer:HideTooltip()
 	--GameTooltip:Hide();
 	local db = EpicMusicPlayer.db
@@ -96,7 +104,7 @@ function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
 			func = function()
 				dropdown:Hide()
 				EpicMusicPlayer:CreatePlayListDialog( function(self)
-          local srcList = EpicMusicPlayer:GetListByIndex(listIndex)
+          			local srcList = EpicMusicPlayer:GetListByIndex(listIndex)
 					local text = self.editBox:GetText()
 					EpicMusicPlayer:AddPlayList(text, nil, true)
 
@@ -105,25 +113,25 @@ function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
 				end )
 			end,
 		}
- end
- dropdownCopyAll[#dropdownCopyAll + 1] = {
-	 text = L["New List"],
-	 notCheckable = true,
-	 func = function()
-		 dropdown:Hide()
-		 EpicMusicPlayer:CreatePlayListDialog( function(self)
-			 local srcList = EpicMusicPlayer:GetListByIndex(listIndex)
-			 local text = self.editBox:GetText()
-			 EpicMusicPlayer:AddPlayList(text, nil, true)
+ 	end
+	dropdownCopyAll[#dropdownCopyAll + 1] = {
+		text = L["New List"],
+		notCheckable = true,
+		func = function()
+			dropdown:Hide()
+			EpicMusicPlayer:CreatePlayListDialog( function(self)
+				local srcList = EpicMusicPlayer:GetListByIndex(listIndex)
+				local text = self.editBox:GetText()
+				EpicMusicPlayer:AddPlayList(text, nil, true)
 
-			 local dstList, _ = EpicMusicPlayer:GetListByName(text)
-			 EpicMusicPlayer:CopyAllSongs(srcList, dstList)
-		 end )
-	 end,
- }
+				local dstList, _ = EpicMusicPlayer:GetListByName(text)
+				EpicMusicPlayer:CopyAllSongs(srcList, dstList)
+			end )
+		end,
+	}
 
- local song = EpicMusicPlayer:GetSong(listIndex, songIndex)
- local songName = song and song.Song or ""
+ 	local song = EpicMusicPlayer:GetSong(listIndex, songIndex)
+ 	local songName = song and song.Song or ""
 
 	dropdownmenu[#dropdownmenu + 1] = {
 		text = string.format(L["Copy song %s to"], "\""..songName.."\""),
@@ -162,6 +170,13 @@ function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
 end
 
 function EpicMusicPlayer:OpenListMenu(frame, listIndex)
+	if not MenuUtil then 
+		OpenListMenuOld()
+		return
+	end
+end
+
+function EpicMusicPlayer:OpenListMenuOld(frame, listIndex)
 	EpicMusicPlayer:HideTooltip()
 	--GameTooltip:Hide();
 	local db = EpicMusicPlayer.db
@@ -214,8 +229,32 @@ function EpicMusicPlayer:OpenListMenu(frame, listIndex)
 	end
 end
 
-
 function EpicMusicPlayer:OpenMenu(frame, listIndex)
+	if not MenuUtil then 
+		OpenMenuOld()
+		return
+	end
+
+	local selectedValue = nil
+
+	local function IsSelected(value)
+		return value == selectedValue
+	end
+
+	local function SetSelected(value)
+		selectedValue = value
+	end
+
+	MenuUtil.CreateContextMenu(frame, function(ownerRegion, rootDescription)
+		rootDescription:CreateTitle("EpicMusicPlayer")
+		rootDescription:CreateButton(L["Playlist"], function() self:TogglePlayListGui() end)
+		rootDescription:CreateButton(L["Config"], function() self:ShowConfig() end)
+		rootDescription:CreateButton(L["Play last"], function() self:PlayLast() end)
+		rootDescription:CreateButton(L["Toggle GUI"], function() self:TogglePlayerGui() end)
+	end)
+end
+
+function EpicMusicPlayer:OpenMenuOld(frame, listIndex)
 	EpicMusicPlayer:HideTooltip()
 	--GameTooltip:Hide();
 	local db = EpicMusicPlayer.db

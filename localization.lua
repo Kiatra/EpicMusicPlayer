@@ -4,6 +4,8 @@ local L = AceLocale:NewLocale("EpicMusicPlayer", "enUS", true)
 if not L then return end
 
 if L then
+	L["Toggle GUI"] = true
+	
 	L["Removed song"] = true
 	L["from list"] = true
 	
