@@ -3,6 +3,7 @@
 ## Interface-Classic: @toc-version-classic@
 ## Interface-BCC: @toc-version-bcc@
 ## Interface-Wrath: @toc-version-wrath@
+## Interface-Cata: @toc-version-cata@
 ## Title: EpicMusicPlayer
 ## Notes: Browse and play WoW game music
 ## Author: Kiatra - github.com/Kiatra/EpicMusicPlayer/
