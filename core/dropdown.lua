@@ -9,7 +9,7 @@ local dropdowncopy = nil
 
 function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
 	if not MenuUtil then
-		OpenSongMenuOld()
+		self:OpenSongMenuOld(frame, listIndex, songIndex)
 		return
 	end
 
@@ -238,7 +238,7 @@ end
 
 function EpicMusicPlayer:OpenListMenu(frame, listIndex)
 	if not MenuUtil then 
-		OpenListMenuOld()
+		self:OpenListMenuOld(frame, listIndex)
 		return
 	end
 
@@ -312,7 +312,7 @@ end
 
 function EpicMusicPlayer:OpenMenu(frame, listIndex)
 	if not MenuUtil then 
-		OpenMenuOld()
+		self:OpenMenuOld(frame, listIndex)
 		return
 	end
 

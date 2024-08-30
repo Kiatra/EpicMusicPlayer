@@ -47,7 +47,6 @@ gui\skins.lua
 broker\empbroker.lua
 #dancer\EpicMusicDancer.lua
 gamemusic\Epic.lua
-#gamemusic\All.lua
 gamemusic\Classic.lua
 gamemusic\BurningCrusade.lua
 gamemusic\LichKing.lua
@@ -57,3 +56,4 @@ gamemusic\Draenor.lua
 gamemusic\Legion.lua
 gamemusic\BattleForAzeroth.lua
 gamemusic\Shadowlands.lua
+gamemusic\Dragonflight.lua

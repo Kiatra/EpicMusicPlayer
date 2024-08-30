@@ -1,4 +1,4 @@
-﻿--Created by PlaylistCreator version 4.0
+﻿--Created by PlaylistCreator.vbs version 4.0 (https://github.com/Kiatra/EpicMusicPlayer_MP3/blob/master/PlaylistCreator.vbs)
 local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer")
 if not EpicMusicPlayer then return end
 local playlist1 = {
@@ -4821,4 +4821,7 @@ local playlist1 = {
 		["WoW"] =  "true",
 	},
 }
-EpicMusicPlayer:AddPlayList("Cataclysm", playlist1, false, true)
+
+if LE_EXPANSION_LEVEL_CURRENT > 2 then
+	EpicMusicPlayer:AddPlayList("Cataclysm", playlist1, false, true)
+end
