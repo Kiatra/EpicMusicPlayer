@@ -10,6 +10,7 @@
 ## SavedVariables: EpicMusicPlayer_PlayList, EpicMusicPlayerDB, EpicMusicPlayerBrokerDB, EpicMusicDancerDB
 ## OptionalDeps: Ace3, LibSharedMedia-3.0
 ## X-Embeds: Ace3, LibSharedMedia-3.0
+## IconTexture: Interface/AddOns/EpicMusicPlayer/media/icon
 
 ## Version: @project-version@
 ## X-Category: Audio
