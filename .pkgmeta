@@ -1,5 +1,9 @@
 package-as: EpicMusicPlayer
 
+move-folders:
+    EpicMusicPlayer/Plugins/GameMusicFull: EpicMusicPlayer_GameMusic_Essentials
+    EpicMusicPlayer/Plugins/GameMusicFull: EpicMusicPlayer_GameMusic_All
+
 externals:
   libs/LibStub:
     url: svn://svn.wowace.com/wow/libstub/mainline/trunk

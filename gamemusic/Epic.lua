@@ -3,7 +3,7 @@ if tocversion < 80200 then return end
 
 local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 
-local Epic = {
+local list = {
   ["listName"] = L["Epic"],
   ["playlistVersion"] = "5.0",
   ["locked"] =  "true",
@@ -601,4 +601,4 @@ local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer")
 
 if not EpicMusicPlayer then return end
 
-EpicMusicPlayer:AddPlayList("Best of Wow", Epic, false)
+EpicMusicPlayer:AddPlayList(list)

@@ -404,14 +404,18 @@ function EpicMusicPlayer:ExportPlayList(listname)
 	self:Debug("ExportPlayList", list)
 end
 
-function EpicMusicPlayer:AddPlayList(name, newlist, save)
-	EpicMusicPlayer:AddPlayList(name, newlist, save, false)
-end
-
 -- add playlist
+-- name as string and newlist as a table are required
+-- if name is a table then we geht the name from its listname
 function EpicMusicPlayer:AddPlayList(name, newlist, save, replace)
-  debug(name)
-  if not name and newlist.listName then name = newlist.listName end
+	--debug("type name:", type(name), " type listName=", type(newlist))
+
+	if type(name) == "table" and name.listName then
+		newlist = name 
+		name = newlist.listName
+	end
+
+	if not name and newlist.listName then name = newlist.listName end
 
 	local foundindex = EpicMusicPlayer:GetListIndex(name)
 	if(foundindex) then
@@ -434,7 +438,7 @@ function EpicMusicPlayer:AddPlayList(name, newlist, save, replace)
 	--quick fix for now
 	for i, song in ipairs(newlist) do
 		if song.Name then
-			debug("setting title", song.Name)
+			--debug("setting title", song.Name)
 			song.title = song.Song
 			--song.Name = nil
 
