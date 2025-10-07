@@ -4,6 +4,7 @@
 ## Interface-BCC: @toc-version-bcc@
 ## Interface-Wrath: @toc-version-wrath@
 ## Interface-Cata: @toc-version-cata@
+## Interface-Mists: @toc-version-mists@
 ## Title: EpicMusicPlayer
 ## Notes: Browse and play WoW game music
 ## Author: Kiatra - github.com/Kiatra/EpicMusicPlayer/
@@ -59,4 +60,8 @@ gamemusic\Legion.lua
 gamemusic\BattleForAzeroth.lua
 gamemusic\Shadowlands.lua
 gamemusic\Dragonflight.lua
-gamemusic\TheWarWithin.lua
+gamemusic\The War Within.lua
+
+#@debug@
+gamemusic\Ignored.lua
+#@end-debug@>

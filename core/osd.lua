@@ -37,8 +37,8 @@ function EpicMusicPlayer:UpdateMessageFrame()
 	local font = EpicMusicPlayer:GetFont()
 	if font then
 		messageframe:SetFont(font, self.db.fontsize)
-		if currentsong and currentsong.Artist then
-			EpicMusicPlayer:UpdateMessageFrameText(currentsong.Artist, currentsong.Song)
+		if currentsong and currentsong.artist then
+			EpicMusicPlayer:UpdateMessageFrameText(currentsong.artist, currentsong.title)
 		end
 	else
 		messageframe:SetFont(GameFontNormal:GetFont(),self.db.fontsize)

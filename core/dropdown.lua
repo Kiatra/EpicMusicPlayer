@@ -16,7 +16,7 @@ function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
 	local countSelectedSongs = EpicMusicPlayer:GetNumberOfSelectedSongs(listIndex)
 	local locked = EpicMusicPlayer:IsListLocked(listIndex)
 	local song = EpicMusicPlayer:GetSong(listIndex, songIndex)
- 	local songName = song and song.Song or ""
+ 	local songName = song and song.title or ""
 
 	MenuUtil.CreateContextMenu(frame, function(ownerRegion, rootDescription)
 		local submenuCopyAll = rootDescription:CreateButton(L["Copy all songs to"]);
@@ -61,7 +61,8 @@ function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
 			submenuCopyAll:CreateButton(L["New List"], function() 
 				EpicMusicPlayer:CreatePlayListDialog( function(self)
 					local srcList = EpicMusicPlayer:GetListByIndex(listIndex)
-					local text = self.editBox:GetText()
+					local editBox = _G[self:GetName().."EditBox"]
+					local text = editBox:GetText()
 					EpicMusicPlayer:AddPlayList(text, nil, true)
 
 					local list, _ = EpicMusicPlayer:GetListByName(text)
@@ -74,7 +75,8 @@ function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
 			submenuCopyAll:CreateButton(L["New List"], function() 
 				EpicMusicPlayer:CreatePlayListDialog(function(self)
 					local srcList = EpicMusicPlayer:GetListByIndex(listIndex)
-					local text = self.editBox:GetText()
+					local editBox = _G[self:GetName().."EditBox"]
+					local text = editBox:GetText()
 					EpicMusicPlayer:AddPlayList(text, nil, true)
 	
 					local dstList, _ = EpicMusicPlayer:GetListByName(text)
@@ -155,7 +157,8 @@ function EpicMusicPlayer:OpenSongMenuOld(frame, listIndex, songIndex)
 			dropdown:Hide()
 			EpicMusicPlayer:CreatePlayListDialog( function(self)
         		local srcList = EpicMusicPlayer:GetListByIndex(listIndex)
-				local text = self.editBox:GetText()
+				local editBox = _G[self:GetName().."EditBox"]
+				local text = editBox:GetText()
 				EpicMusicPlayer:AddPlayList(text, nil, true)
 
 				local dstList, _ = EpicMusicPlayer:GetListByName(text)
@@ -172,7 +175,8 @@ function EpicMusicPlayer:OpenSongMenuOld(frame, listIndex, songIndex)
 				dropdown:Hide()
 				EpicMusicPlayer:CreatePlayListDialog( function(self)
           			local srcList = EpicMusicPlayer:GetListByIndex(listIndex)
-					local text = self.editBox:GetText()
+					local editBox = _G[self:GetName().."EditBox"]
+					local text = editBox:GetText()
 					EpicMusicPlayer:AddPlayList(text, nil, true)
 
 					local list, _ = EpicMusicPlayer:GetListByName(text)
@@ -188,7 +192,8 @@ function EpicMusicPlayer:OpenSongMenuOld(frame, listIndex, songIndex)
 			dropdown:Hide()
 			EpicMusicPlayer:CreatePlayListDialog( function(self)
 				local srcList = EpicMusicPlayer:GetListByIndex(listIndex)
-				local text = self.editBox:GetText()
+				local editBox = _G[self:GetName().."EditBox"]
+				local text = editBox:GetText()
 				EpicMusicPlayer:AddPlayList(text, nil, true)
 
 				local dstList, _ = EpicMusicPlayer:GetListByName(text)
@@ -198,7 +203,7 @@ function EpicMusicPlayer:OpenSongMenuOld(frame, listIndex, songIndex)
 	}
 
  	local song = EpicMusicPlayer:GetSong(listIndex, songIndex)
- 	local songName = song and song.Song or ""
+ 	local songName = song and song.title or ""
 
 	dropdownmenu[#dropdownmenu + 1] = {
 		text = string.format(L["Copy song %s to"], "\""..songName.."\""),

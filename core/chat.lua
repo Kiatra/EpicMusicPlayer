@@ -10,9 +10,9 @@ end
 
 function EpicMusicPlayer:Spam(chat)
 	local song = EpicMusicPlayer:GetCurrentSong()
-	local title = song.Song
-	local artist = song.Artist
-	local album = song.Album
+	local title = song.title
+	local artist = song.artist
+	local album = song.album
 	local text = ""
 
 	text = title
@@ -47,6 +47,6 @@ end
 function EpicMusicPlayer:PrintSongToChat(song)
 	if(self.db.spam) then
 		DEFAULT_CHAT_FRAME:AddMessage("|TInterface\\AddOns\\EpicMusicPlayer\\media\\icon:18|t |c"
-		..self:ToHex(self.db.artistcolour)..song.Artist.."|r - |c"..self:ToHex(self.db.titlecolour)..song.Song)
+		..self:ToHex(self.db.artistcolour)..song.artist.."|r - |c"..self:ToHex(self.db.titlecolour)..song.title)
 	end
 end

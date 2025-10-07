@@ -167,7 +167,7 @@ local function CreateHeader(parent)
 	parent.title = title
 	local song = EpicMusicPlayer:GetCurrentSong()
 	if song then
-		UpdatePlayStop(nil, song.Artist, EpicMusicPlayer:GetCurrentSongName(),0)
+		UpdatePlayStop(nil, song.artist, EpicMusicPlayer:GetCurrentSongName(),0)
 	else
 		UpdatePlayStop(nil, "", EpicMusicPlayer:GetCurrentSongName(), 0)
 	end
@@ -347,38 +347,34 @@ local function CreatePlaylistGui(width, height)
 	header:SetPoint("TOPLEFT", frame ,9, -9)
 	header:SetPoint("RIGHT", frame ,"RIGHT",-9, 9);
 
+	--LIST = EpicMusicPlayer:GetListByName("New List")
 	songlist = EpicMusicPlayer:CreateListWidget("EpicMusicPlayer_Songlist",frame, #selectedlist, {0.6,0.3,0.09},
 		function(row, colum)
 			local song = EpicMusicPlayer:GetSong(listslist.selectedIndex, row)
 				if song then
 					local seperator = " - "
-					if song.Artist and song.Artist == "" then seperator = "" end
+					if song.artist and song.artist == "" then seperator = "" end
 					if db.list == selectedlistIndex and row == db.song then
 						if colum == 1 then
-							--return self.db.playlistHideArtist and "|cffd33800"..row.." "..song.Song or "|cffd33800"..row.." "..song.Artist..seperator..song.Song
-							return db.playlistHideArtist and "|cffffd200"..row.." "..song.Song or "|cffffd200"..row.." "..song.Artist..seperator..song.Song
+							return db.playlistHideArtist and "|cffffd200"..row.." "..song.title or "|cffffd200"..row.." "..song.artist..seperator..song.title
 						elseif colum == 2 then
-							return "|cffffd200"..song.Album
+							return "|cffffd200"..song.album
 						else
-							return "|cffffd200"..EpicMusicPlayer:GetTimeString(song.Length)
+							return "|cffffd200"..EpicMusicPlayer:GetTimeString(song.duration)
 						end
 					else
 						if colum == 1 then
-							return db.playlistHideArtist and row.." "..song.Song or row.." "..song.Artist..seperator..song.Song
+							return db.playlistHideArtist and row.." "..song.title or row.." "..song.artist..seperator..song.title
 						elseif colum == 2 then
-							return song.Album
+							return song.album
 						elseif colum == 3 then
-							return EpicMusicPlayer:GetTimeString(song.Length)
+							return EpicMusicPlayer:GetTimeString(song.duration)
 						end
 					end
 				end
 			end,
 		OnSongClick,nil,
 		OnSongLeave, frame.font, ToggleCheck)
-	--songlist:SetPoint("TOPLEFT", frame ,120, -25)
-	--songlist:SetPoint("BOTTOMRIGHT", frame ,-5, 27)
-	--songlist:SetPoint("TOPLEFT", seperator ,0, 0)
-	--songlist:SetPoint("BOTTOMRIGHT", frame ,-5, 27)
 
 	listslist = EpicMusicPlayer:CreateListWidget("EpicMusicPlayer_Playlists",frame,#EpicMusicPlayer.playlists,nil,
 		function(row, colum)

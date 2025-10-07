@@ -9,17 +9,17 @@ local playedhistory = {}
 playedhistory[1]= {ListName = "Playedhistory"}
 local historymax = 10
 local historypointer = 2
-local currentPlaylistVersion = "4.0"
+local currentPlaylistVersion = "5.0"
 local _G, ipairs, pairs, string, table, type, math = _G, ipairs, pairs, string, table, type, math
 
 local function getCopy(song)
 	return {
-		["Album"] = song.Album,
-		["Song"] = song.Song,
-		["Name"] = song.Name,
-		["Length"] = song.Length,
-		["Artist"] = song.Artist,
-		["Id"] = song.Id,
+		["album"] = song.album,
+		["title"] = song.title,
+		["path"] = song.path,
+		["duration"] = song.duration,
+		["artist"] = song.artist,
+		["id"] = song.id,
 	}
 end
 
@@ -42,13 +42,13 @@ function EpicMusicPlayer:CheckPlayList()
 		--no playlist found, create dummy playlist
 		playlists = {
 	        ["ListName"] = "Common",
-					["PlaylistVersion"] = "buildin",
+					["PlaylistVersion"] = "5.0",
 	    		{
-	        			["Album"] = "",
-								["Song"] = "See howto.html in the EpicMusicPlayer folder.",
-								["Name"] = "nix",
-								["Length"] = 10,
-								["Artist"] = "Playlist not found.",
+	        			["album"] = "",
+						["title"] = "See howto.html in the EpicMusicPlayer folder.",
+						["path"] = "nix",
+						["duration"] = 10,
+						["artist"] = "Playlist not found.",
 	        }
 	    }
 	end
@@ -188,7 +188,7 @@ function EpicMusicPlayer:CopySong(song, dstList)
 
 	if dstList and song then
 		table.insert(dstList,getCopy(song))
-		EpicMusicPlayer:Print(string.format(L["Copied song %s to List %s."],song.Song,dstList.listName))
+		EpicMusicPlayer:Print(string.format(L["Copied song %s to List %s."],song.title,dstList.listName))
 		EpicMusicPlayer:PlayListGuiUpdate()
 		return true
 	else
@@ -251,8 +251,8 @@ function EpicMusicPlayer:RemoveSong(srcList, songIndex, silent)
 	if song then
 		table.remove(srcList,songIndex)
 	end
-	if not silent and song.Song then
-		self:Print(L["Removed song"].."\""..song.Song..
+	if not silent and song.title then
+		self:Print(L["Removed song"].."\""..song.title..
 		"\" "..L["from list"].." \""..srcList.listName.."\".")
 		return true
 	end
@@ -271,22 +271,25 @@ function EpicMusicPlayer:CreatePlayListDialog(acceptfunction)
 		whileDead = true,
 		hideOnEscape = true,
 		OnAccept = acceptfunction or function (self, data, data2)
-			local text = self.editBox:GetText()
+			local editBox = _G[self:GetName().."EditBox"]
+			local text = editBox:GetText()
 			EpicMusicPlayer.tempListName = text
       		EpicMusicPlayer:Debug("EpicMusicPlayer.tempListName: ", EpicMusicPlayer.tempListName)
 			EpicMusicPlayer:AddPlayList(text, nil, true)
 		end,
 		hasEditBox = true,
 		OnShow = function (self, data)
-			 EpicMusicPlayer:ClearSearchFocus()
-       self.editBox:SetText(L["New List"])
-			 self.editBox:HighlightText(0, self.editBox:GetNumLetters())
+			EpicMusicPlayer:ClearSearchFocus()
+			local editBox = _G[self:GetName().."EditBox"]
+            editBox:SetText(L["New List"])
+			editBox:HighlightText(0, editBox:GetNumLetters())
+			EditBoxSelf = self
 		end,
 		EditBoxOnTextChanged = function (self, data)   -- careful! 'self' here points to the editbox, not the dialog
 			if self:GetText() ~= "" then
-				self:GetParent().button1:Enable()          -- self:GetParent() is the dialog
+				self:GetParent().visibleButtons[1]:Enable()          -- self:GetParent() is the dialog
 			else
-				self:GetParent().button1:Disable()
+				self:GetParent().visibleButtons[1]:Disable()
 			end
 			self:SetAutoFocus(true)
 		end
@@ -304,7 +307,8 @@ function EpicMusicPlayer:ExportPlayListDialog(listname)
 		hideOnEscape = true,
 		OnShow = function (self, data)
 			EpicMusicPlayer:ClearSearchFocus()
-      self.editBox:SetText(EpicMusicPlayer:GetExport(listname))
+            local editBox = _G[self:GetName().."EditBox"]
+			editBox:SetText(EpicMusicPlayer:GetExport(listname))
 		end,
 		hasEditBox = true,
 		EditBoxOnTextChanged = function (self, data)   -- careful! 'self' here points to the editbox, not the dialog
@@ -325,10 +329,12 @@ function EpicMusicPlayer:ImportDialog(listname)
 		whileDead = true,
 		hideOnEscape = true,
 		OnShow = function (self, data)
-    self.editBox:SetText(EpicMusicPlayer:GetExport(listname))
+			local editBox = _G[self:GetName().."EditBox"]
+    		editBox:SetText(EpicMusicPlayer:GetExport(listname))
 		end,
 		OnAccept = function (self, data, data2)
-			local text = self.editBox:GetText()
+			local editBox = _G[self:GetName().."EditBox"]
+			local text = editBox:GetText()
 			EpicMusicPlayer:ImportPlayList(text)
 		end,
 		hasEditBox = true,
@@ -404,6 +410,7 @@ end
 
 -- add playlist
 function EpicMusicPlayer:AddPlayList(name, newlist, save, replace)
+  debug(name)
   if not name and newlist.listName then name = newlist.listName end
 
 	local foundindex = EpicMusicPlayer:GetListIndex(name)
@@ -422,6 +429,29 @@ function EpicMusicPlayer:AddPlayList(name, newlist, save, replace)
 			["listName"] = name,
 			["playlistVersion"] = currentPlaylistVersion,
 		} -- [1]
+	end
+
+	--quick fix for now
+	for i, song in ipairs(newlist) do
+		if song.Name then
+			debug("setting title", song.Name)
+			song.title = song.Song
+			--song.Name = nil
+
+			song.album = song.Album
+			--song.album = nil
+
+			song.path = song.Name
+			--song.Name = nil
+
+			song.artist = song.Artist
+			--song.Artist = nil
+
+			song.duration = song.Length
+			--song.Length = nil
+
+			song.id = song.Id
+		end
 	end
 
 	if save then
@@ -555,7 +585,8 @@ end
 function EpicMusicPlayer:UpdateListnames()
 	listnames = {};
 	for i, list in ipairs(playlists) do
-		listnames[list.listName] = list.listName
+		name = list.listName or "Missing List Name"
+		listnames[name] = list.listName
 	end
 end
 
@@ -595,7 +626,7 @@ function EpicMusicPlayer:Search(pattern)
 	for x, list in ipairs(playlists) do
 		if(list.listName  ~= "lastsearch")then
 			for i, song in ipairs(list) do
-				if contains(song.Song, temp) or contains(song.Artist, temp) or contains(song.Album, temp) or contains(song.Name, temp) then
+				if contains(song.title, temp) or contains(song.artist, temp) or contains(song.album, temp) or contains(song.path, temp) then
 					table.insert(searchlist, song)
 				end
 				if(#searchlist>500) then break end
@@ -665,7 +696,7 @@ function EpicMusicPlayer:GetSong(listIndex, songIndex)
 	local list = playlists[listIndex]
 	if list then
 		local song = list[songIndex]
-		if song and song.Name then
+		if song and song.path then
 			return song
 		else
 			EpicMusicPlayer:Error("song", songIndex,"not found in list", listIndex)
@@ -679,7 +710,7 @@ local function findSongByName(name)
 	if playlists then
 		for i, list in ipairs(playlists) do
 			for i, song in ipairs(list) do
-				if song.Name == name then
+				if song.path == name then
 					return song.Id
 				end
 			end
@@ -687,16 +718,40 @@ local function findSongByName(name)
 	end
 end
 
-function EpicMusicPlayer:AddSogIdToOldSavedSongs()
+function EpicMusicPlayer:UpdateOldSavedSongs()
 	if _G.EpicMusicPlayer_PlayList then
 		for i, list in ipairs(_G.EpicMusicPlayer_PlayList) do
 			debug("updating list:"..list.listName)
-			for i, song in ipairs(list) do
-				if song.WoW and not song.Id then
-					local id = findSongByName(song.Name)
-					debug("song ID for song ", song.Name, id)
-					if id then song.Id = id end
+
+			if not list.playlistVersion or list.playlistVersion < "5.0" then
+				for i, song in ipairs(list) do
+					if song.WoW and not song.Id then
+						local id = findSongByName(song.path)
+						if id then song.id = id end
+						song.WoW = null
+					end
+
+					if song.Name then
+						song.title = song.Song
+						song.Song = null
+
+						song.album = song.Album
+						song.Album = null
+
+						song.path = song.Name
+						song.Name = null
+
+						song.artist = song.Artist
+						song.Artist = null
+
+						song.duration = song.Length
+						song.Length = null
+
+						song.id = song.Id
+						song.Id = null
+					end
 				end
+				list.playlistVersion = "5.0"
 			end
 		end
 	end

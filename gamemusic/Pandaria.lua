@@ -6,9 +6,6 @@ local playlist1 = {
 	["listName"] = "Mists of Pandaria",
 	["playlistVersion"] = "4.0",
 	["locked"] =  "true",
----------------------------------
---Patch 5.0 Music Starts Here--
----------------------------------
 	{
 		["Album"] = "WoW 5.0 - Mists of Pandaria",
 		["Song"] = "Heart of Pandaria",
@@ -1620,6 +1617,33 @@ local playlist1 = {
 		["Length"] = 76,
 		["Artist"] = "Jeremy Soule",
 		["WoW"] =  "true",
+	},
+	{
+		["Album"] = "WoW 5",
+		["Song"] = "Positive Chi 3H1",
+		["Name"] = "sound\\music\\pandaria\\mus_50_serpentsheart_hero_01.mp3",
+		["Length"] = 94,
+		["Artist"] = "Jeremy Soule",
+		["WoW"] =  "true",
+		["Id"] =  "642261",
+	},
+	{
+		["Album"] = "WoW 5",
+		["Song"] = "Positive Chi 3H2",
+		["Name"] = "sound\\music\\pandaria\\mus_50_serpentsheart_hero_02.mp3",
+		["Length"] = 84,
+		["Artist"] = "Jeremy Soule",
+		["WoW"] =  "true",
+		["Id"] =  "642262",
+	},
+	{
+		["Album"] = "WoW 5",
+		["Song"] = "Positive Chi 3H3",
+		["Name"] = "sound\\music\\pandaria\\mus_50_serpentsheart_hero_03.mp3",
+		["Length"] = 93,
+		["Artist"] = "Jeremy Soule",
+		["WoW"] =  "true",
+		["Id"] =  "642263",
 	},	
 	{
 		["Album"] = "WoW 5.0 - Mists of Pandaria",
@@ -5070,6 +5094,24 @@ local playlist1 = {
 		["Length"] = 86,
 		["Artist"] = "Multiple Artists",
 		["WoW"] =  "true",
+	},
+	{
+		["Album"] = "WoW 5.2",
+		["Song"] = "BridgeCollapse_FULLMIX",
+		["Name"] = "sound\\music\\pandaria\\flyby_52_mogubridge_mx_sfx.mp3",
+		["Length"] = 42,
+		["Artist"] = "Blizzard Entertainment",
+		["WoW"] =  "true",
+		["Id"] =  "840715",
+	},
+	{
+		["Album"] = "WoW 5.2",
+		["Song"] = "HiddenDoor_FULLMIX",
+		["Name"] = "sound\\music\\pandaria\\flyby_52_mogusecret_mx_sfx.mp3",
+		["Length"] = 27,
+		["Artist"] = "Blizzard Entertainment",
+		["WoW"] =  "true",
+		["Id"] =  "840716",
 	},
 }
 

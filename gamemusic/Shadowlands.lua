@@ -7979,7 +7979,7 @@ local Shadowlands = {
         ["Length"] = 150,
         ["Artist"] = "G Stafford, D Arkenstone",
         ["Wow"] = "true"
-    }
+    },
 }
 
 if LE_EXPANSION_LEVEL_CURRENT > 7 then

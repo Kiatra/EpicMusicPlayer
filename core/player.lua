@@ -36,17 +36,17 @@ function EpicMusicPlayer:Play(song, stillPlaying)
 	end
 
 	self.Playing = true;
-	songlength = song.Length
+	songlength = song.duration
 
 	if not stillPlaying then
-		if song.Id then
+		if song.id then
 			local _, _, _, tocversion = GetBuildInfo()
 			if tocversion < 80200 then
 				-- shipped music can not be played via file id in classic wow 1.13.2 (31407)
-				play(self, song.Name)
+				play(self, song.path)
 			else
 				-- shipped music can only be played via file id in 8.2 retail
-				play(self, song.Id) 	
+				play(self, song.id) 	
 			end
 		else
 			-- auto enable usePlaySoundFile for non WoW music until the PlayMusc() API is fixed
@@ -55,7 +55,7 @@ function EpicMusicPlayer:Play(song, stillPlaying)
 				self.db.usePlaySoundFile = true
 				print(L["The option to use PlaySoundFile was auto enabled as the WoW API PlayMusic(file) is broken for non WoW music. See FAQ for details."])
 			end
-			play(self, musicdir..song.Name)
+			play(self, musicdir..song.path)
 		end
 	end
 	stillPlaying = nil
@@ -77,13 +77,13 @@ function EpicMusicPlayer:Play(song, stillPlaying)
 	end, 1)
 
 	if(self.db.showmessage)then
-		self:UpdateMessageFrameText(song.Artist, song.Song)
+		self:UpdateMessageFrameText(song.artist, song.title)
 	end
 
 	self.currentsong = song
 	self:UpdateTooltip()
 	self:PrintSongToChat(song)
-	self:SendMessage("EMPUpdatePlay", song.Artist, song.Song, song.Length, song.Album)
+	self:SendMessage("EMPUpdatePlay", song.artist, song.title, song.duration, song.album)
 end
 
 function EpicMusicPlayer:PlayNext()

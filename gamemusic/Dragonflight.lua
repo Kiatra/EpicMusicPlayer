@@ -4793,7 +4793,61 @@ local Dragonflight = {
         ["Length"] = 148,
         ["Artist"] = "Blizzard Entertainment",
         ["Wow"] = "true"
-    }
+    },
+    {
+		["Album"] = "WoW 10.0 Dragonflight",
+		["Song"] = "Scene Vault Incarnates Aftermath",
+		["Name"] = "sound\\music\\dragonflight\\mus_100_scene_vault_incarnates_aftermath.mp3",
+		["Length"] = 144,
+		["Artist"] = "Blizzard Entertainment",
+		["WoW"] =  "true",
+		["Id"] =  "4888063",
+	},
+	{
+		["Album"] = "WoW: Dragonflight",
+		["Song"] = "Scene Cleansing Bloodmyst",
+		["Name"] = "sound\\music\\dragonflight\\mus_1027_scene_cleansing_bloodmyst.mp3",
+		["Length"] = 31,
+		["Artist"] = "Blizzard Entertainment",
+		["WoW"] =  "true",
+		["Id"] =  "5791772",
+	},
+	{
+		["Album"] = "WoW: Dragonflight",
+		["Song"] = "Scene Dark Heart",
+		["Name"] = "sound\\music\\dragonflight\\mus_1027_scene_dark_heart.mp3",
+		["Length"] = 116,
+		["Artist"] = "Blizzard Entertainment",
+		["WoW"] =  "true",
+		["Id"] =  "5791774",
+	},
+	{
+		["Album"] = "WoW: Dragonflight",
+		["Song"] = "Scene Draenei Heritage",
+		["Name"] = "sound\\music\\dragonflight\\mus_1027_scene_draenei_heritage.mp3",
+		["Length"] = 62,
+		["Artist"] = "Blizzard Entertainment",
+		["WoW"] =  "true",
+		["Id"] =  "5791776",
+	},
+	{
+		["Album"] = "WoW: Dragonflight",
+		["Song"] = "Scene Radiant Warnings",
+		["Name"] = "sound\\music\\dragonflight\\mus_1027_scene_radiant_warnings.mp3",
+		["Length"] = 98,
+		["Artist"] = "Blizzard Entertainment",
+		["WoW"] =  "true",
+		["Id"] =  "5791770",
+	},
+	{
+		["Album"] = "WoW: Dragonflight",
+		["Song"] = "Scene Troll Heritage",
+		["Name"] = "sound\\music\\dragonflight\\mus_1027_scene_troll_heritage.mp3",
+		["Length"] = 34,
+		["Artist"] = "Blizzard Entertainment",
+		["WoW"] =  "true",
+		["Id"] =  "5791778",
+	},
 }
 
 if LE_EXPANSION_LEVEL_CURRENT > 8 then

@@ -23,7 +23,7 @@ local function Debug(...)
 	local s = "EMP Debug:"
 	if not EpicMusicPlayer.dataBase then
 		s = "EMP Initialize:"
-  elseif not EpicMusicPlayer.dataBase.char.debug then
+    elseif not EpicMusicPlayer.dataBase.char.debug then
 		return
 	end
 
@@ -119,7 +119,7 @@ function EpicMusicPlayer:OnInitialize()
 	AceCfgDlg:SetDefaultSize("EpicMusicPlayer", 700, 500)
 	EpicMusicPlayer:AddProfile(self.dataBase)
 
-	EpicMusicPlayer:AddSogIdToOldSavedSongs()
+	EpicMusicPlayer:UpdateOldSavedSongs()
 
 	db = self.dataBase.profile
 	self.db = db
@@ -273,7 +273,7 @@ end
 
 function EpicMusicPlayer:GetCurrentSongName()
 	if(playing and self.currentsong)then
-		return self.currentsong.Song
+		return self.currentsong.title
 	else
 		if(db.disablewowmusic) then
 			return L["Music off"]
@@ -285,7 +285,7 @@ end
 
 function EpicMusicPlayer:GetCurrentArtstName()
 	if(playing and self.currentsong)then
-		return self.currentsong.Artist
+		return self.currentsong.artist
 	else
 		return ""
 	end
