@@ -1,0 +1,17 @@
+## Interface: @toc-version-retail@
+## Interface-Retail: @toc-version-retail@
+## Interface-Classic: @toc-version-classic@
+## Interface-BCC: @toc-version-bcc@
+## Interface-Wrath: @toc-version-wrath@
+## Interface-Cata: @toc-version-cata@
+## Interface-Mists: @toc-version-mists@
+## Category: Audio
+## Title: EpicMusicPlayer: Game Music Essentials
+## Notes: A selection of game music for EpicMusicPlayer
+## Author: Kiatra - github.com/Kiatra/EpicMusicPlayer/
+## IconTexture: Interface/AddOns/EpicMusicPlayer/media/icon
+## RequiredDeps: EpicMusicPlayer
+
+Shadowlands Essentials 1.lua
+Shadowlands Essentials 2.lua
+Shadowlands Essentials 3.lua

@@ -1,0 +1,35 @@
+## Interface: @toc-version-retail@
+## Interface-Retail: @toc-version-retail@
+## Interface-Classic: @toc-version-classic@
+## Interface-BCC: @toc-version-bcc@
+## Interface-Wrath: @toc-version-wrath@
+## Interface-Cata: @toc-version-cata@
+## Interface-Mists: @toc-version-mists@
+## Category: Audio
+## Title: EpicMusicPlayer: Game Music All
+## Notes: Adds all the game music tracks to EpicMusicPlayer
+## Author: Kiatra - github.com/Kiatra/EpicMusicPlayer/
+## IconTexture: Interface/AddOns/EpicMusicPlayer/media/icon
+## RequiredDeps: EpicMusicPlayer
+
+## Version: @project-version@
+## X-Category: Audio
+## X-WoWI-ID: 24773
+## X-Curse-Project-ID: 6139
+
+gamemusic\Classic.lua
+gamemusic\BurningCrusade.lua
+gamemusic\LichKing.lua
+gamemusic\Cataclysm.lua
+gamemusic\Pandaria.lua
+gamemusic\Draenor.lua
+gamemusic\Legion.lua
+gamemusic\BattleForAzeroth.lua
+gamemusic\Shadowlands.lua
+gamemusic\Dragonflight.lua
+gamemusic\The War Within.lua
+
+#@debug@
+# Some sound effects tracks found (under /music/zonemusic/) 
+gamemusic\Ignored.lua
+#@end-debug@>
