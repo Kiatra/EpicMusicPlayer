@@ -5,8 +5,9 @@
 ## Interface-Wrath: @toc-version-wrath@
 ## Interface-Cata: @toc-version-cata@
 ## Interface-Mists: @toc-version-mists@
+## Category: Audio
 ## Title: EpicMusicPlayer
-## Notes: Browse and play WoW game music
+## Notes: Browse and listen to the epic music of Warcraft. 
 ## Author: Kiatra - github.com/Kiatra/EpicMusicPlayer/
 ## SavedVariables: EpicMusicPlayer_PlayList, EpicMusicPlayerDB, EpicMusicPlayerBrokerDB, EpicMusicDancerDB
 ## OptionalDeps: Ace3, LibSharedMedia-3.0
@@ -48,20 +49,8 @@ gui\gui.lua
 gui\skins.lua
 
 broker\empbroker.lua
-#dancer\EpicMusicDancer.lua
-gamemusic\Epic.lua
-gamemusic\Classic.lua
-gamemusic\BurningCrusade.lua
-gamemusic\LichKing.lua
-gamemusic\Cataclysm.lua
-gamemusic\Pandaria.lua
-gamemusic\Draenor.lua
-gamemusic\Legion.lua
-gamemusic\BattleForAzeroth.lua
-gamemusic\Shadowlands.lua
-gamemusic\Dragonflight.lua
-gamemusic\The War Within.lua
 
-#@debug@
-gamemusic\Ignored.lua
-#@end-debug@>
+# the 3d models need fixes with the current clients
+#dancer\EpicMusicDancer.lua
+
+gamemusic\Epic.lua

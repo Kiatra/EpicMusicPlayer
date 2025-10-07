@@ -7,71 +7,71 @@ local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 -------------------------------------------------------------------------------
 local version = C_AddOns.GetAddOnMetadata("EpicMusicPlayer","Version") or ""
 local empoptions = {
-    name = "EMP "..version,
-    handler = EpicMusicPlayer,
-	  type='group',
-	  desc = 'Play the Music',
-    args = {
-  		console={
-  			name=L["Console Controls"],
-  			type="group",
-  			order = -1,
-  			guiHidden = true,
-  			args={
-  				play = {
-  		      type = 'execute',
-  		      width = "half",
-  					order = 0,
-  					name = L["Play"],
-  		      desc = L["Play the Music"],
-  		      func = "Play",
-  		    },
-  		    stop = {
-    		    type = 'execute',
-    				width = "half",
-    				order = 1,
-    		    name = L["Stop"],
-    		    desc = L["Stop playing."],
-    		    func = "Stop"
-  		    },
-  		    next = {
-  		      type = 'execute',
-  					width = "half",
-  					order = 2,
-  		      name = L["Next"],
-  		      desc = L["Plays the next song."],
-  		      func = "PlayNext"
-  		    },
-  				last = {
-  		      type = 'execute',
-  				  width = "half",
-  					order = 3,
-  		      name = L["Last"],
-  		      desc = L["Plays the last song."],
-  		      func = "PlayLast"
-  		    },
-  				playlist = {
-  		      type = 'execute',
-  					width = "half",
-  					order = 4,
-  		      name = L["Playlist"],
-  		      desc = L["Show the Music."],
-  		      func = function()
-  						 EpicMusicPlayer:ShowList()
-  					end
-  		    },
-  			},
+	name = "EMP "..version,
+	handler = EpicMusicPlayer,
+	type='group',
+	desc = 'Play the Music',
+	args = {
+		console = {
+			name = L["Console Controls"],
+			type = "group",
+			order = -1,
+			guiHidden = true,
+			args = {
+				play = {
+					type = 'execute',
+					width = "half",
+						order = 0,
+						name = L["Play"],
+					desc = L["Play the Music"],
+					func = "Play",
+				},
+				stop = {
+					type = 'execute',
+						width = "half",
+						order = 1,
+					name = L["Stop"],
+					desc = L["Stop playing."],
+					func = "Stop"
+				},
+				next = {
+					type = 'execute',
+							width = "half",
+							order = 2,
+					name = L["Next"],
+					desc = L["Plays the next song."],
+					func = "PlayNext"
+				},
+				last = {
+					type = 'execute',
+						width = "half",
+							order = 3,
+					name = L["Last"],
+					desc = L["Plays the last song."],
+					func = "PlayLast"
+				},
+				playlist = {
+					type = 'execute',
+							width = "half",
+							order = 4,
+					name = L["Playlist"],
+					desc = L["Show the Music."],
+					func = function()
+							EpicMusicPlayer:ShowList()
+					end
+				},
+			},
 		},
-		general={
-			name=L["General"],
+		general = {
+			name = L["General"],
 			order = 0,
-			type="group",
-			args={
-				colours={
-					name=L["Font & Colours"],
+			type = "group",
+			args = {
+				colours = {
+					name = L["Font & Colours"],
 					order = 0,
-					type="group",
-					args={
+					type = "group",
+					args = {
 						artistcolour = {
 							type = "color",
 							name = L["Artist color"],
@@ -111,7 +111,7 @@ local empoptions = {
 								end
 							end
 						},
-            --[[
+						--[[
 						font = {
 							type = 'select',
 							dialogControl = 'LSM30_Font',
@@ -144,14 +144,14 @@ local empoptions = {
 								EpicMusicPlayer.db.playlistfont = value
 							end,
 						},
-            --]]
+						--]]
 					},
 				},
-				controls={
+				controls = {
 					name=L["Mouse Setup"],
 					order = -1,
 					type="group",
-					args={
+					args = {
 						text = {
 							order = 0,
 							type = "description",
@@ -277,13 +277,13 @@ local empoptions = {
 					},
 				},
 				list = {
-		      type = 'execute',
+					type = 'execute',
 					order = -1,
 					name = L["Console"],
-		      desc = L["Show console commands"],
-		      func = "List"
+					desc = L["Show console commands"],
+					func = "List"
 				},
-		    minimap = {
+				minimap = {
 					type = "toggle",
 					order = 1,
 					name = L["Minimap Button"],
@@ -298,177 +298,177 @@ local empoptions = {
 					end,
 				},
 				mute = {
-		      type = 'toggle',
+					type = 'toggle',
 					order = 2,
 					name = L["Mute"],
-          desc = L["Mute / unmute music sound."],
-          get = "IsMute",
-          set = "ToggleMute"
-		        },
+					desc = L["Mute / unmute music sound."],
+					get = "IsMute",
+					set = "ToggleMute"
+				},
 				wowmusic = {
-		      type = 'toggle',
+					type = 'toggle',
 					order = 3,
-          name = L["Disable WoW Music"],
-          desc = L["Disable WoW Music when not Playing."],
-          get = "IsDisWoWMusic",
-          set = "ToggleDisWoWMusic"
+					name = L["Disable WoW Music"],
+					desc = L["Disable WoW Music when not Playing."],
+					get = "IsDisWoWMusic",
+					set = "ToggleDisWoWMusic"
 				},
 				auto = {
-		      type = 'toggle',
+					type = 'toggle',
 					order = 4,
 					name = L["Autoplay"],
-		      desc = L["Toggles auto play on load."],
-		      get = "IsAuto",
-		      set = "ToggleAuto"
-		    },
+					desc = L["Toggles auto play on load."],
+					get = "IsAuto",
+					set = "ToggleAuto"
+				},
 				info = {
-		      type = 'toggle',
+					type = 'toggle',
 					order = 5,
 					name = L["Show Info"],
-		      desc = L["Show song and artist on new song"],
-		      get = "IsShowMessage",
-		      set = "ToggleShowMessage",
-		    },
+					desc = L["Show song and artist on new song"],
+					get = "IsShowMessage",
+					set = "ToggleShowMessage",
+				},
 				maxLevelSong = {
-		      type = 'toggle',
-					order = 5,
-					name = L["Max Level Song"],
-		      desc = L["Play song when reaching maximum level"],
-		      get = function()
-							return EpicMusicPlayer.db.maxLevelSong
+					type = 'toggle',
+						order = 5,
+						name = L["Max Level Song"],
+					desc = L["Play song when reaching maximum level"],
+					get = function()
+						return EpicMusicPlayer.db.maxLevelSong
 					end,
-		      set = function(info, value)
-							EpicMusicPlayer.db.maxLevelSong = value
+					set = function(info, value)
+						EpicMusicPlayer.db.maxLevelSong = value
 					end,
-		    },
-		    spam = {
-		      type = 'toggle',
-					order = 7,
-		      name = L["Show Song In Chat"],
-		      desc = L["Show message in your chat when playing a new song."],
-		      get = "IsSpam",
-		      set = "ToggleSpam"
+				},
+				spam = {
+					type = 'toggle',
+						order = 7,
+					name = L["Show Song In Chat"],
+					desc = L["Show message in your chat when playing a new song."],
+					get = "IsSpam",
+					set = "ToggleSpam"
 				},
 				defaultchat = {
-		            type = 'select',
+					type = 'select',
 					values = {GUILD=L["Guild"],
-							  PARTY=L["Party"],SAY=L["Say"],TARGET=L["To target"],RAID=L["Raid"]},
+								PARTY=L["Party"],SAY=L["Say"],TARGET=L["To target"],RAID=L["Raid"]},
 					order = 8,
-		            name = L["Default Channel"],
-		            desc = L["Select the default channel to send the song name on ctrl+click"],
+					name = L["Default Channel"],
+					desc = L["Select the default channel to send the song name on ctrl+click"],
 					get = "GetDefaultChannel",
-		            set = "SetDefaultChannel"
+					set = "SetDefaultChannel"
 				},
-        usePlaySoundFile = {
-		      type = 'toggle',
+				usePlaySoundFile = {
+					type = 'toggle',
 					order = 7,
-		      name = L["Use Ambience Channel"],
-		      desc = L["When this is enabled music will be played using the ambience channel instead of the music channel. Music will no longer stop on a loading screen but you will not hear ambience sound during music play."],
-          get = function(info, value)
+					name = L["Use Ambience Channel"],
+					desc = L["When this is enabled music will be played using the ambience channel instead of the music channel. Music will no longer stop on a loading screen but you will not hear ambience sound during music play."],
+					get = function(info, value)
 						return EpicMusicPlayer.db.usePlaySoundFile
-		      end,
-		      set = function(info, value)
+					end,
+					set = function(info, value)
 						EpicMusicPlayer.db.usePlaySoundFile = value
-		      end,
+					end,
 				},
 				test = {
-		      type = 'execute',
-					order = 10,
-					name = L["Test"],
-		      desc = L["Plays a test song."],
-		      func = function(info, value)
-						EpicMusicPlayer:Stop()
-						_G.SetCVar("Sound_EnableMusic", 1)
-						_G.PlayMusic(53224)
-						EpicMusicPlayer:Print("Playing Test Song")
-		      end,
+					type = 'execute',
+							order = 10,
+							name = L["Test"],
+					desc = L["Plays a test song."],
+					func = function(info, value)
+								EpicMusicPlayer:Stop()
+								_G.SetCVar("Sound_EnableMusic", 1)
+								_G.PlayMusic(53224)
+								EpicMusicPlayer:Print("Playing Test Song")
+					end,
 				},
 				--@debug@
 				debug = {
-		            type = 'toggle',
+					type = 'toggle',
 					--width = "half",
 					order = 11,
-		      name = "Debug",
-		      desc = "Debug",
-		      get = function(info, value)
-						return EpicMusicPlayer.dataBase.char.debug
-		      end,
-		      set = function(info, value)
-						EpicMusicPlayer.dataBase.char.debug = value
-		      end,
+					name = "Debug",
+					desc = "Debug",
+					get = function(info, value)
+								return EpicMusicPlayer.dataBase.char.debug
+					end,
+					set = function(info, value)
+								EpicMusicPlayer.dataBase.char.debug = value
+					end,
 				},
 				--@end-debug@
-			}
+			},
 		},
-		list={
-			name="Playlist",
+		list = {
+			name = "Playlist",
 			order = 1,
 			type="group",
-			args={
+			args = {
 				shuffle = {
-		      type = 'toggle',
-					order = 1,
-		      name = L["Shuffle"],
-		      desc = L["Toggle shuffle"],
-		      get = "IsRandom",
-		      set = function() EpicMusicPlayer:ToggleRandom() end,
-		    },
+				type = 'toggle',
+						order = 1,
+				name = L["Shuffle"],
+				desc = L["Toggle shuffle"],
+				get = "IsRandom",
+				set = function() EpicMusicPlayer:ToggleRandom() end,
+				},
 				shuffleALL = {
-		            type = 'toggle',
+					type = 'toggle',
 					order = 2,
-          name = L["Shuffle Cross Playlist"],
-          desc = L["Shuffle Cross Playlist"],
-          get = function() return EpicMusicPlayer.db.shuffleAll end,
-          set = function() EpicMusicPlayer:ToggleRandom(true) end,
-		    },
+					name = L["Shuffle Cross Playlist"],
+					desc = L["Shuffle Cross Playlist"],
+					get = function() return EpicMusicPlayer.db.shuffleAll end,
+					set = function() EpicMusicPlayer:ToggleRandom(true) end,
+				},
 				looplist = {
-		      type = 'toggle',
+					type = 'toggle',
 					order = 3,
-          name = L["Loop Playlist"],
-          desc = L["Playing the last song of a list will not switch to the next list."],
-          get = "IsLoopList",
-          set = "ToggleLoopList"
+					name = L["Loop Playlist"],
+					desc = L["Playing the last song of a list will not switch to the next list."],
+					get = "IsLoopList",
+					set = "ToggleLoopList"
 				},
 				loopsong = {
-		      type = 'toggle',
+					type = 'toggle',
 					order = 4,
-		            name = L["Loop Song"],
-		            desc = L["Play the current song again and again and again...until your head will explode. A click on next song will disable this."],
-		            get = function()
-					  return EpicMusicPlayer.db.loopsong
-					end,
-					set = function(info, v)
-					  EpicMusicPlayer.db.loopsong = not EpicMusicPlayer.db.loopsong
-					end,
+					name = L["Loop Song"],
+					desc = L["Play the current song again and again and again...until your head will explode. A click on next song will disable this."],
+						get = function()
+							return EpicMusicPlayer.db.loopsong
+						end,
+						set = function(info, v)
+						EpicMusicPlayer.db.loopsong = not EpicMusicPlayer.db.loopsong
+						end,
 				},
-				shuffleALL = {
-		      type = 'toggle',
+				hideArtist = {
+					type = 'toggle',
 					order = 2,
-		      name = L["Hide Artist in Playlist"],
-		      desc = L["Hide Artist in Playlist"],
-		      get = function()
+					name = L["Hide Artist in Playlist"],
+					desc = L["Hide Artist in Playlist"],
+					get = function()
 						return EpicMusicPlayer.db.playlistHideArtist
-		      end,
+					end,
 					set = function() EpicMusicPlayer.db.playlistHideArtist = not EpicMusicPlayer.db.playlistHideArtist
 						EpicMusicPlayer:PlayListGuiUpdate()
 					end,
-		    },
-				shuffleALL = {
-		      type = 'toggle',
+				},
+				addGameMusic = {
+					type = 'toggle',
 					order = 2,
-		      name = L["Add Game Music"],
-		      desc = L["Adds playlists with game music (reload required)."],
-		      get = function()
+					name = L["Add Game Music"],
+					desc = L["Adds playlists with game music (reload required)."],
+					get = function()
 						return EpicMusicPlayer.db.addGameMusic
-		            end,
+					end,
 					set = function() EpicMusicPlayer.db.addGameMusic = not EpicMusicPlayer.db.addGameMusic
 						EpicMusicPlayer:PlayListGuiUpdate()
 					end,
-		        },
+				},
 				strata = {
 					type = 'select',
 					values = {FULLSCREEN_DIALOG="Fullscreen_Dialog",FULLSCREEN="Fullscreen",
-								DIALOG="Dialog",HIGH="High",MEDIUM="Medium",LOW="Low",BACKGROUND="Background"},
+						DIALOG="Dialog",HIGH="High",MEDIUM="Medium",LOW="Low",BACKGROUND="Background"},
 					order = 9,
 					name = L["Frame strata"],
 					desc = L["Frame strata"],
@@ -481,17 +481,17 @@ local empoptions = {
 					end,
 				},
 				scale = {
-		      type = 'range',
+					type = 'range',
 					order = 5,
 					name = L["Playlist Scale"],
-		      desc = L["Adjust the scale of the playlist"],
-		      step = 0.1,
+					desc = L["Adjust the scale of the playlist"],
+					step = 0.1,
 					min = 0.1,
 					max = 2,
 					get = function()
 						return EpicMusicPlayer.db.playlistScale
 					end,
-		      set =  function(info,val)
+					set =  function(info,val)
 						EpicMusicPlayer.db.playlistScale = val
 						EpicMusicPlayer:SetPlaylistScale(val)
 					end,
@@ -507,8 +507,8 @@ local empoptions = {
 					type = 'input',
 					order = 0,
 					name = L["New Zone Event"],
-		      desc = L["Create a new zone event"],
-		      get = GetZoneText,
+					desc = L["Create a new zone event"],
+					get = GetZoneText,
 					set = function(info, value)
 						local name = value
 						if not EpicMusicPlayer.db.eventZones.name then
@@ -519,15 +519,15 @@ local empoptions = {
 					end,
 				},
 				enableEvents = {
-			    type = 'toggle',
-					order = 2,
-			    name = L["Enable Events"],
-			    desc = L["Enable Events"],
-			    get = function()
-						return EpicMusicPlayer.db.enableEvents
-			        end,
+					type = 'toggle',
+						order = 2,
+					name = L["Enable Events"],
+					desc = L["Enable Events"],
+					get = function()
+							return EpicMusicPlayer.db.enableEvents
+					end,
 					set = function()
-					  db.enableEvents = not EpicMusicPlayer.db.enableEvents
+						db.enableEvents = not EpicMusicPlayer.db.enableEvents
 					end,
 				},
 			},
@@ -576,11 +576,12 @@ local empoptions = {
 					order = 12,
 					type = "description",
 					name = L["Playlists shipped with the addon or created by the PlaylistCreator are locked for editing."],
-				},
-			},
-		},
-	}
+				}
+			}
+		}
+	},
 }
+
 
 LibStub("AceConfig-3.0"):RegisterOptionsTable("EpicMusicPlayer", empoptions)
 

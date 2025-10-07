@@ -125,8 +125,10 @@ if L then
 
 	L["Artist"] = true
 	L["Song"] = true
+	L["Title"] = true
 	L["Album"] = true
 	L["Length"] = true
+	L["Duration"] = true
 
 	L["Use scroll wheel - adjust music volume"] = true
 	L["Ctrl + use scroll wheel - adjust effects volume"] = true

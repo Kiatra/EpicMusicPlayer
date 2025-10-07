@@ -19,7 +19,7 @@ EpicMusicPlayer.version = C_AddOns.GetAddOnMetadata("EpicMusicPlayer","Version")
 EpicMusicPlayer.tocversion = select(4, GetBuildInfo());
 
 local function Debug(...)
-  --@debug@
+	--@debug@
 	local s = "EMP Debug:"
 	if not EpicMusicPlayer.dataBase then
 		s = "EMP Initialize:"
@@ -33,6 +33,15 @@ local function Debug(...)
 	end
 	DEFAULT_CHAT_FRAME:AddMessage(s)
 	--@end-debug@
+end
+
+local function error(...)
+	local s = "EMP Error:"
+	for i=1,select("#", ...) do
+		local x = select(i, ...)
+		s = strjoin("  ",s,tostring(x))
+	end
+	DEFAULT_CHAT_FRAME:AddMessage(s)
 end
 
 function EpicMusicPlayer:Debug(...)
@@ -123,15 +132,19 @@ function EpicMusicPlayer:OnInitialize()
 
 	db = self.dataBase.profile
 	self.db = db
+	if not self.SetOptionDB then
+		error("Error loading EpicMusicPlayer options!")
+		return
+	end
+	
 	self:SetOptionDB(db)
-
 	--fix previous bug
 	if type(db.song) == "table" then
 		db.song = 1
 	end
-
+	
 	self:RegisterChatCommand("emp", "ChatCommand")
-  self:RegisterChatCommand("epicmusicplayer", "ChatCommand")
+	self:RegisterChatCommand("epicmusicplayer", "ChatCommand")
 
 	self.IsSearching = false
 	self.UpdateInterval = 1
