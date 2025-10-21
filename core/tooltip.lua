@@ -61,7 +61,7 @@ function EpicMusicPlayer:ShowTooltip(anchor)
 		local album = song.album;
 		if(album=="")then
 		else
-			GameTooltip:AddLine(L["Album"]..": "..album)
+			GameTooltip:AddLine(L["Album" ]..": "..album)
 		end
 
 		GameTooltip:AddLine(L["List"]..": "..EpicMusicPlayer:GetCurrentListName())

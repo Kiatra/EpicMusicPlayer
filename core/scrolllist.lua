@@ -100,7 +100,7 @@ local function UpdateColumSpaces(self, button)
 end
 
 local function CreateButton(parent, height, colums ,OnClick, OnEnter, OnLeave, font)
-	local button = _G.CreateFrame("Button",nil,parent)
+	local button = CreateFrame("Button",nil,parent)
 	button:SetHeight(height)
 	local numcolums = #colums
 
@@ -285,7 +285,7 @@ function EpicMusicPlayer:CreateListWidget(name, parent, size, colums,GetData, On
 	scrollbar:SetPoint("TOPLEFT",frame,"TOPRIGHT",-20,-20)
 	scrollbar:SetPoint("BOTTOMLEFT",frame,"BOTTOMRIGHT",20,20)
 
-	scrollbar:SetScript("OnValueChanged", _G.OnScrollValueChanged)
+	scrollbar:SetScript("OnValueChanged", OnScrollValueChanged)
 	scrollbar:SetMinMaxValues(0,100)
 	scrollbar:SetValueStep(1)
 	scrollbar:SetValue(0)

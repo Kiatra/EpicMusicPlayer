@@ -7,7 +7,6 @@ local db
 local newName = "test"
 local newType = "boss"
 local eventsList
-local Debug = EpicMusicPlayer.Debug
 local typesList = {fight="Fight",boss="Boss Fight",zone="Zone"}
 
 local function GetTypeName(info)
@@ -137,8 +136,7 @@ end
 
 local function OnEnterCombat()
 	if db.enabled and eventsList.boss and eventsList.boss.list then
-		Debug(eventsList.boss.list)
-		_, EpicMusicPlayer.db.profile.list = EpicMusicPlayer:GetListByName(eventsList.boss.list)
+		_, EpicMusicPlayer.db.profile.list = EpicMusicPlayer:_GetListByName(eventsList.boss.list)
 		EpicMusicPlayer:Play()
 	end
 end

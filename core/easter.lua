@@ -14,12 +14,12 @@ function EpicMusicPlayer:OnPlayerLevelUp(level)
 		local maxlevel = GetMaxLevelForPlayerExpansion()
 		if level == maxlevel and db.maxLevelSong then
 			song = {
-				["album"] = "ingame",
-				["title"] = string.format("Gratulations to level %s! :)", maxlevel),
-				["path"] = "sound\\music\\musical moments\\angelic\\angelic01.mp3",
-				["duration"] = 47,
-				["artist"] = "",
-				["id"] = 303111,
+				album = "ingame",
+				title = string.format("Gratulations to level %s! :)", maxlevel),
+				path = "sound\\music\\musical moments\\angelic\\angelic01.mp3",
+				duration = 47,
+				artist  = "",
+				id = 303111,
 			}
 			play(self, song)
 		end
@@ -28,14 +28,14 @@ end
 
 function EpicMusicPlayer:CheckDate()
 	local datetime = date("%d%m%H%M")
-	if datetime == "01010000" then
+	if datetime == "1010000" then
 		song = {
-			["id"] = 53260,
-			["album"] = "ingame",
-			["title"] = "Happy New Year! ;)",
-			["path"] = "Sound\\Music\\WorldEvents\\HordeFirepole.mp3",
-			["duration"] = 72,
-			["artist"] = "",
+			id = 53260,
+			album = "ingame",
+			title = "Happy New Year! ;)",
+			path = "Sound\\Music\\WorldEvents\\HordeFirepole.mp3",
+			duration = 72,
+			artist  = "",
 		}
 		play(self, song)
 	end

@@ -338,13 +338,15 @@ local options={
 	}
 
 local function OnUpdate(self, elapsed)
-	--Debug(self, elapsed)
+	--self:Debug(self, elapsed)
 	TimeSinceLastUpdate = TimeSinceLastUpdate + elapsed
 
 	if seqence then
 		seqTime = seqTime + (elapsed * 1000)
 		if dancing then
-			EpicMusicDancer:GetModelFrame():SetSequenceTime(seqence, seqTime)
+			--“show the pose at t_ms milliseconds from the start of animation seq.”
+			--EpicMusicDancer:GetModelFrame():SetSequenceTime(seqence, seqTime)
+			--EpicMusicDancer:GetModelFrame():SetSequenceTime(seqence)
 			lasstSeqenceTime = seqTime
 		end
 		if EpicMusicPlayer.Playing then
@@ -514,7 +516,7 @@ function EpicMusicDancer:ResetPos()
 		EpicMusicDancer.frame:SetPoint("BOTTOM", "EMPGUI", "TOP", -25, -22);
 		EpicMusicDancer.frame:SetPoint("CENTER", "EMPGUI", "CENTER", -25, -22);
 		_G.EMPGUI:Show()
-		EpicMusicPlayer:Debug("ResetPos", EpicMusicPlayer.db.showgui)
+		--self:Debug("ResetPos", EpicMusicPlayer.db.showgui)
 		EpicMusicPlayer.db.showgui = true;
 	else
 		EpicMusicDancer.frame:SetParent(_G.UIParent)
@@ -743,8 +745,12 @@ function EpicMusicDancer:CreateDancerFrame(parent)
 	self.frame:SetScript("OnEnter",
 	    function(self)
 
-			if EpicMusicDancer.Model then EpicMusicPlayer:Debug("EpicMusicDancer.Model1:IsShown()", EpicMusicDancer.Model:IsShown()) end
-			if EpicMusicDancer.Model2 then EpicMusicPlayer:Debug("EpicMusicDancer.Model2:IsShown()", EpicMusicDancer.Model2:IsShown()) end
+			if EpicMusicDancer.Model then 
+				--self:Debug("EpicMusicDancer.Model1:IsShown()" 
+				EpicMusicDancer.Model:IsShown()) end
+			if EpicMusicDancer.Model2 then 
+				--self:Debug("EpicMusicDancer.Model2:IsShown()" 
+				EpicMusicDancer.Model2:IsShown()) end
 			if(EpicMusicPlayer.db.tooltip)then
 				tooltip = self
 				EpicMusicPlayer:ShowTooltip(self)

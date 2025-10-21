@@ -1,6 +1,6 @@
 local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer")
 local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
-local debug = EpicMusicPlayer.Debug
+
 ------------------------------------------------------------
 -- private play/stop functions
 ------------------------------------------------------------

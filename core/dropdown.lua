@@ -1,11 +1,15 @@
 local _G = _G
 local LibStub, ipairs = _G.LibStub, ipairs
-local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer")
+local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer") ---@type any
 local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 
 local dropdownchat = nil
 local dropdownmenu = nil
 local dropdowncopy = nil
+local dropdownCopyMulti = nil
+local dropdownCopyAll = nil
+
+local MenuUtil, CreateFrame = MenuUtil, CreateFrame
 
 function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
 	if not MenuUtil then
@@ -14,7 +18,7 @@ function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
 	end
 
 	local countSelectedSongs = EpicMusicPlayer:GetNumberOfSelectedSongs(listIndex)
-	local locked = EpicMusicPlayer:IsListLocked(listIndex)
+	local saved = EpicMusicPlayer:_IsListSaved(listIndex)
 	local song = EpicMusicPlayer:GetSong(listIndex, songIndex)
  	local songName = song and song.title or ""
 
@@ -24,7 +28,7 @@ function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
 		local submenuCopyMulti = nil
 		if countSelectedSongs > 0 then
 			rootDescription:CreateDivider();
-			if not locked then
+			if saved then
 				rootDescription:CreateButton(L["Remove selected songs"], function() 
 					EpicMusicPlayer:RemoveAllSelectedSong(listIndex, dstList);
 					EpicMusicPlayer:PlayListGuiUpdate(); 
@@ -40,7 +44,7 @@ function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
 		
 
 		for i, dstList in ipairs(EpicMusicPlayer.playlists) do
-			if not EpicMusicPlayer:IsListLocked(i) and i ~=listIndex then
+			if EpicMusicPlayer:_IsListSaved(i) and i ~=listIndex then
 				if submenuCopyMulti then
 					submenuCopyMulti:CreateButton(dstList.listName, 
 					function() 
@@ -65,7 +69,7 @@ function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
 					local text = editBox:GetText()
 					EpicMusicPlayer:AddPlayList(text, nil, true)
 
-					local list, _ = EpicMusicPlayer:GetListByName(text)
+					local list, _ = EpicMusicPlayer:_GetListByName(text)
 					EpicMusicPlayer:CopyAllSelectedSongs(srcList, dstList)
 				end);
 			end);	
@@ -79,7 +83,7 @@ function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
 					local text = editBox:GetText()
 					EpicMusicPlayer:AddPlayList(text, nil, true)
 	
-					local dstList, _ = EpicMusicPlayer:GetListByName(text)
+					local dstList, _ = EpicMusicPlayer:_GetListByName(text)
 					EpicMusicPlayer:CopyAllSongs(srcList, dstList)
 				end);
 			end); 
@@ -94,7 +98,7 @@ function EpicMusicPlayer:OpenSongMenuOld(frame, listIndex, songIndex)
 	local db = EpicMusicPlayer.db
 	local dropdown = self.dropdown
 	if not dropdown then
-		dropdown = _G.CreateFrame("Frame", "EMPDropDown", nil, "UIDropDownMenuTemplate")
+		dropdown = CreateFrame("Frame", "EMPDropDown", nil, "UIDropDownMenuTemplate")
 		dropdown.xOffset = 0
 		dropdown.yOffset = 0
 		dropdown.point = "TOPLEFT"
@@ -105,7 +109,7 @@ function EpicMusicPlayer:OpenSongMenuOld(frame, listIndex, songIndex)
 	dropdown:Show()
 	dropdown.relativeTo = frame
 
-	local locked = EpicMusicPlayer:IsListLocked(db.list)
+	local saved = EpicMusicPlayer:_IsListSaved(db.list)
 	dropdownmenu = {}
 	dropdowncopy = {}
 	dropdownCopyMulti = {}
@@ -114,11 +118,11 @@ function EpicMusicPlayer:OpenSongMenuOld(frame, listIndex, songIndex)
 		text = L["Remove Song"],
 		notCheckable = true,
 		func = function() EpicMusicPlayer:RemoveSong(listIndex,songIndex);dropdown:Hide() end,
-		disabled = locked,
+		disabled = not saved,
 	}
 
 	for i, dstList in ipairs(EpicMusicPlayer.playlists) do
-		if not EpicMusicPlayer:IsListLocked(i) and i ~=listIndex then
+		if EpicMusicPlayer:_IsListSaved(i) and i ~=listIndex then
 			dropdowncopy[#dropdowncopy + 1] = {
 				text = dstList.listName,
 				notCheckable = true,
@@ -161,8 +165,8 @@ function EpicMusicPlayer:OpenSongMenuOld(frame, listIndex, songIndex)
 				local text = editBox:GetText()
 				EpicMusicPlayer:AddPlayList(text, nil, true)
 
-				local dstList, _ = EpicMusicPlayer:GetListByName(text)
-				EpicMusicPlayer:Debug("srcList, dstList, listIndex", srcList, dstList, listIndex)
+				local dstList, _ = EpicMusicPlayer:_GetListByName(text)
+				--self:Debug("srcList, dstList, listIndex", srcList, dstList, listIndex)
 				EpicMusicPlayer:CopySong(EpicMusicPlayer:GetSong(srcList, songIndex), dstList)
 			end )
 		end,
@@ -179,7 +183,7 @@ function EpicMusicPlayer:OpenSongMenuOld(frame, listIndex, songIndex)
 					local text = editBox:GetText()
 					EpicMusicPlayer:AddPlayList(text, nil, true)
 
-					local list, _ = EpicMusicPlayer:GetListByName(text)
+					local list, _ = EpicMusicPlayer:_GetListByName(text)
 					EpicMusicPlayer:CopyAllSelectedSongs(srcList, dstList)
 				end )
 			end,
@@ -196,7 +200,7 @@ function EpicMusicPlayer:OpenSongMenuOld(frame, listIndex, songIndex)
 				local text = editBox:GetText()
 				EpicMusicPlayer:AddPlayList(text, nil, true)
 
-				local dstList, _ = EpicMusicPlayer:GetListByName(text)
+				local dstList, _ = EpicMusicPlayer:_GetListByName(text)
 				EpicMusicPlayer:CopyAllSongs(srcList, dstList)
 			end )
 		end,
@@ -249,13 +253,14 @@ function EpicMusicPlayer:OpenListMenu(frame, listIndex)
 
 	local db = EpicMusicPlayer.db
 	local listName = self:GetListName(listIndex)
+	local saved = EpicMusicPlayer:_IsListSaved(db.list)
 
-	MenuUtil.CreateContextMenu(frame, function(ownerRegion, rootDescription)
-		if not locked then
+	MenuUtil.CreateContextMenu(frame, function(_, rootDescription)
+		if saved then
 			rootDescription:CreateButton(L["Add Playlist"], function() EpicMusicPlayer:CreatePlayListDialog() end);
 		end
 
-		if listName and not EpicMusicPlayer:IsListLocked(listIndex) then
+		if listName and EpicMusicPlayer:_IsListSaved(listIndex) then
 			rootDescription:CreateButton(L["Remove Playlist"], function() self:RemovePlayList(listName) end);
 			rootDescription:CreateButton(L["Export Playlist"], function() self:ExportPlayListDialog(listIndex) end);
 		end
@@ -293,13 +298,13 @@ function EpicMusicPlayer:OpenListMenuOld(frame, listIndex)
 			text = L["Remove Playlist"],
 			func = function() self:RemovePlayList(listName); dropdown:Hide() end,
 			notCheckable = true,
-			disabled = EpicMusicPlayer:IsListLocked(listIndex)
+			disabled = not EpicMusicPlayer:_IsListSaved(listIndex)
 		}
 		dropdownmenu[#dropdownmenu + 1] = {
 			text = L["Export Playlist"],
 			func = function() self:ExportPlayListDialog(listIndex); dropdown:Hide() end,
 			notCheckable = true,
-			disabled = EpicMusicPlayer:IsListLocked(listIndex)
+			disabled = not EpicMusicPlayer:_IsListSaved(listIndex)
 		}
 	end
 	dropdownmenu[#dropdownmenu + 1] = {
@@ -309,9 +314,9 @@ function EpicMusicPlayer:OpenListMenuOld(frame, listIndex)
 
 	}
 	if frame then
-		_G.EasyMenu(dropdownmenu, dropdown)
+		EasyMenu(dropdownmenu, dropdown)
 	else
-		_G.EasyMenu(dropdownmenu, dropdown, "cursor", -25 , 0, "MENU")
+		EasyMenu(dropdownmenu, dropdown, "cursor", -25 , 0, "MENU")
 	end
 end
 
@@ -327,18 +332,29 @@ function EpicMusicPlayer:OpenMenu(frame, listIndex)
 		rootDescription:CreateButton(L["Config"], function() self:ShowConfig() end)
 		rootDescription:CreateButton(L["Play last"], function() self:PlayLast() end)
 		rootDescription:CreateButton(L["Toggle GUI"], function() self:TogglePlayerGui() end)
-		
-		--local submenu = rootDescription:CreateButton("My Submenu");
-		--submenu:CreateButton("Enable", SetEnabledFunction, true);
-		--submenu:CreateButton("Disable", SetEnabledFunction, false);
-
 		rootDescription:CreateDivider();
-		rootDescription:CreateCheckbox(L["Shuffle"], self.IsRandom, function()  self:ToggleRandom() end);
+		rootDescription:CreateCheckbox(L["Shuffle"], function() return self:IsRandom() end, function()  self:ToggleRandom() end);
 		rootDescription:CreateCheckbox(L["Shuffle Cross Playlist"], function() return db.shuffleAll end, function() self:ToggleRandom(true) end);
 		rootDescription:CreateCheckbox(L["Loop Playlist"], function() return db.looplist end, function() db.looplist = not db.looplist end);
 		rootDescription:CreateCheckbox(L["Loop Song"], function() return db.loopsong end, function() db.loopsong = not db.loopsong end);
 		rootDescription:CreateDivider();
 		rootDescription:CreateCheckbox( L["Enable Events"], function() return db.enableEvents end, function() db.enableEvents = not db.enableEvents end);
+	
+		
+		--@debug@
+		if self:IsDebug() then
+			rootDescription:CreateDivider();
+			rootDescription:CreateCheckbox("Anim Tester", function() return self:ShowAnimTestFrame() end, function() self:ToggleAnimTestFrame() end);
+			rootDescription:CreateCheckbox("Show Test Playlist", function() return self:ShowTestPlaylist() end, function() self:ToggleTestPlaylist() end);
+		end
+		rootDescription:CreateDivider();
+		rootDescription:CreateCheckbox("Debugging", function() return self:IsDebug() end, function()  self:ToggleDebug() end);			
+		--@end-debug@
+		
+		--submenue example
+		--local submenu = rootDescription:CreateButton("Debug");
+		--submenu:CreateButton("Toggle Anim Tester", self:ToggleAnimTester(), true);
+		--submenu:CreateButton("Disable", SetEnabledFunction, false);
 	end)
 end
 
@@ -405,6 +421,11 @@ function EpicMusicPlayer:OpenMenuOld(frame, listIndex)
 
 	dropdownmenu ={
 		{
+			text = "Album Playlist",
+			func = function() self:ToggleAlbumView() end,
+			notCheckable = true,
+		},
+		{
 			text = L["Playlist"],
 			func = function() self:TogglePlayListGui() end,
 			notCheckable = true,
@@ -461,8 +482,6 @@ function EpicMusicPlayer:OpenMenuOld(frame, listIndex)
 			checked = db.enableEvents,
 			func = function() db.enableEvents = not db.enableEvents end,
 	}
-
-	local locked = EpicMusicPlayer:IsListLocked(db.list)
 
 	if(self.Playing)then
 		dropdownmenu[#dropdownmenu + 1] = {

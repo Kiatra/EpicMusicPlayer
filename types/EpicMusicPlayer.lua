@@ -1,0 +1,3 @@
+-- types/emp.lua (one-time stub)
+---@class emp : AceAddon
+---@field RegisterPlaylist fun(self: emp, requiredExpansion, addListCallback)

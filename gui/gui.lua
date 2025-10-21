@@ -33,6 +33,8 @@ EpicMusicPlayerGui = LibStub("AceAddon-3.0"):NewAddon("EpicMusicPlayerGui", "Ace
 local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer")
 
+EpicMusicPlayerGui.Debug = EpicMusicPlayer.Debug
+
 local currsongname = L["Game Music"]
 
 local function GetSkinsList()
@@ -541,7 +543,7 @@ function EpicMusicPlayerGui:Hide()
 end
 
 function EpicMusicPlayerGui:Toggle()
-	EpicMusicPlayer:Debug("self.showgui", self.showgui)
+	--self:Debug("self.showgui", self.showgui)
 	if(EMPGUI)then
 		if(EMPGUI:IsShown()) then
 			EMPGUI:Hide()

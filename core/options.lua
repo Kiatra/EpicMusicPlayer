@@ -384,12 +384,12 @@ local empoptions = {
 					end,
 				},
 				--@debug@
-				debug = {
+				debugging = {
 					type = 'toggle',
 					--width = "half",
 					order = 11,
-					name = "Debug",
-					desc = "Debug",
+					name = "Debbuging",
+					desc = "Show debbuging messages.",
 					get = function(info, value)
 								return EpicMusicPlayer.dataBase.char.debug
 					end,
@@ -621,7 +621,7 @@ function EpicMusicPlayer:TogglePlayerGui()
 	else
 		EpicMusicPlayer:Print(L["GUI not found"])
 	end
-  self:Debug("TogglePlayerGui showgui", self.db.showgui)
+  --self:Debug("TogglePlayerGui showgui", self.db.showgui)
   self.db.showgui = not self.db.showgui
 end
 
@@ -724,8 +724,34 @@ function EpicMusicPlayer:ToggleDisWoWMusic()
 	self:Stop()
 end
 
+function EpicMusicPlayer:ShowAnimTestFrame()
+	return self.dataBase and self.dataBase.char.showAnimTester or false
+end
+
+function EpicMusicPlayer:ToggleAnimTestFrame()
+	self.dataBase.char.showAnimTester = not self.dataBase.char.showAnimTester
+end
+
+function EpicMusicPlayer:IsDebug()
+	return self.dataBase and self.dataBase.char.debug
+end
+
+function EpicMusicPlayer:ToggleDebug()
+	self.dataBase.char.debug = not self.dataBase.char.debug
+end
+
+function EpicMusicPlayer:ShowTestPlaylist()
+	return self.dataBase and self.dataBase.char.showATestPlaylist
+	
+end
+
+function EpicMusicPlayer:ToggleTestPlaylist()
+	self.dataBase.char.showATestPlaylist = not self.dataBase.char.showATestPlaylist
+end
+
+
 function EpicMusicPlayer:IsRandom()
-    return EpicMusicPlayer.db.random
+    return self.db.random
 end
 
 function EpicMusicPlayer:ToggleRandom(all)

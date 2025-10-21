@@ -6,12 +6,10 @@
 ## Interface-Cata: @toc-version-cata@
 ## Interface-Mists: @toc-version-mists@
 ## Category: Audio
-## Title: EpicMusicPlayer: Game Music Essentials
-## Notes: A selection of game music for EpicMusicPlayer
+## Title: EpicMusicPlayer: Soundtrack
+## Notes: WoW OST mapped to the ingame music files if available.   
 ## Author: Kiatra - github.com/Kiatra/EpicMusicPlayer/
 ## IconTexture: Interface/AddOns/EpicMusicPlayer/media/icon
 ## RequiredDeps: EpicMusicPlayer
 
-Shadowlands Essentials 1.lua
-Shadowlands Essentials 2.lua
-Shadowlands Essentials 3.lua
+The War Within - Soundtrack.lua

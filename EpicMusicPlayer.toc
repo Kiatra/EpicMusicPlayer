@@ -47,10 +47,18 @@ core\bindings.lua
 
 gui\gui.lua
 gui\skins.lua
+gui\albumview\albumview.lua
+gui\playlist\SmmothScrollTest.lua
 
 broker\empbroker.lua
 
+#@debug@
 # the 3d models need fixes with the current clients
 #dancer\EpicMusicDancer.lua
+#dancer\EpicMusicDancer_A.lua
+#dancer\EpicMusicDancer_Options.lua
+#dancer\EpicMusicDancer_Frame.lua
+#dancer\EpicMusicDancer_AnimTester.lua
+#@end-debug@>
 
 gamemusic\Epic.lua

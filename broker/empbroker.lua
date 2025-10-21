@@ -147,7 +147,6 @@ local dataobj = ldb:NewDataObject("EpicMusicPlayer", {
 	label = "EpicMusicPlayer",
 	text  = "Stopped",
 
-	--OnEnter = EpicMusicPlayerBrokerObj.OnEnter,
 	OnClick = function(self, btn)
 		EpicMusicPlayer:OnDisplayClick(self, btn)
 	end,
@@ -169,7 +168,7 @@ function dataobj:OnLeave()
 end
 
 function dataobj:OnMouseWheel(vector)
-	EpicMusicPlayer:Debug(self, vector);
+	--self:Debug(self, vector);
 	OnScroll(self, vector)
 end
 

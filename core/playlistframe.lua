@@ -1,4 +1,4 @@
-local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer")
+local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer") ---@type any
 local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 local aceevent = LibStub("AceEvent-3.0")
 
@@ -142,14 +142,14 @@ local function CreateHeader(parent)
 		end
 	end, "lastButton")
 
-  local nextbutton = addButton(header, playbutton, function() EpicMusicPlayer:PlayNext() end, "nextButton")
+    local nextbutton = addButton(header, playbutton, function() EpicMusicPlayer:PlayNext() end, "nextButton")
 	randombutton = addButton(header, nextbutton, function() EpicMusicPlayer:ToggleRandom() end, "randomButton")
 
 	UpdatePlayButon(EpicMusicPlayer.Playing)
 	UpdateRandomButon(nil, db.random)
 
 	local mutebutton = addButton(header, randombutton, function(self, button) if button == "RightButton" then EpicMusicPlayer:ToggleMute() else EpicMusicPlayer:ShowConfig() end; end, "configButton")
-  local listbutton = addButton(header, mutebutton, function() db.hideListsList = not db.hideListsList; ToggleLists() end, "listButton")
+    local listbutton = addButton(header, mutebutton, function() db.hideListsList = not db.hideListsList; ToggleLists() end, "listButton")
 	local addButton1 = addButton(header, listbutton, function() EpicMusicPlayer:CreatePlayListDialog() end, "addButton")
 	local importButton = addButton(header, addButton1, function() EpicMusicPlayer:ImportDialog() end, "importButton")
 
@@ -160,7 +160,7 @@ local function CreateHeader(parent)
 
 	title = header:CreateFontString()
 	title:SetFont(EpicMusicPlayer:GetFont(db.playlistfont), 12)
-	title:SetPoint("TOPLEFT", listbutton,"TOPRIGHT", 5,1)
+	title:SetPoint("TOPLEFT", importButton,"TOPRIGHT", 5,1)
 	title:SetPoint("BOTTOMRIGHT", header, -25,0)
 	title:SetShadowColor(0, 0, 0,0.8)
 	title:SetShadowOffset(1, -1)
@@ -274,7 +274,7 @@ local function CreatePlaylistGui(width, height)
 		end
 	)
 	frame:SetClampedToScreen(1)
-	_G.tinsert(_G.UISpecialFrames,frame:GetName());
+	tinsert(UISpecialFrames,frame:GetName());
 
 	local sizer = CreateFrame("Frame","EmpDragsizer",frame, BackdropTemplateMixin and "BackdropTemplate")
 	sizer:SetWidth(25)
@@ -347,7 +347,7 @@ local function CreatePlaylistGui(width, height)
 	header:SetPoint("TOPLEFT", frame ,9, -9)
 	header:SetPoint("RIGHT", frame ,"RIGHT",-9, 9);
 
-	--LIST = EpicMusicPlayer:GetListByName("New List")
+	--LIST = EpicMusicPlayer:_GetListByName("New List")
 	songlist = EpicMusicPlayer:CreateListWidget("EpicMusicPlayer_Songlist",frame, #selectedlist, {0.6,0.3,0.09},
 		function(row, colum)
 			local song = EpicMusicPlayer:GetSong(listslist.selectedIndex, row)
@@ -383,10 +383,10 @@ local function CreatePlaylistGui(width, height)
 			if db.list == row then
 				listname = listname.."|cffffd200"..EpicMusicPlayer:GetListName(row)
 			else
-				if EpicMusicPlayer:IsListLocked(row) then
-					listname =  listname.."|cffA9A9A9"..EpicMusicPlayer:GetListName(row)
-				else
+				if not EpicMusicPlayer:_IsListSaved(row) then
 					listname =  listname..EpicMusicPlayer:GetListName(row)
+				else
+					listname =  listname.."|cff26ad2b"..EpicMusicPlayer:GetListName(row)
 				end
 			end
 			return listname

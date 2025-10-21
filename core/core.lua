@@ -1,5 +1,5 @@
 ﻿--EpicMusicPlayer by yess
-local EpicMusicPlayer = LibStub("AceAddon-3.0"):NewAddon("EpicMusicPlayer", "AceConsole-3.0", "AceEvent-3.0", "AceTimer-3.0","AceComm-3.0")
+local emp = LibStub("AceAddon-3.0"):NewAddon("EpicMusicPlayer", "AceConsole-3.0", "AceEvent-3.0", "AceTimer-3.0","AceComm-3.0")
 local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 local media = LibStub:GetLibrary("LibSharedMedia-3.0", true) or nil
 local AceCfgDlg = LibStub("AceConfigDialog-3.0")
@@ -9,21 +9,21 @@ local db, movesong
 local timer = "" -- timer for display of seconds
 local historyInUse = false --true when a sond from histroy is played
 
-EpicMusicPlayer.controlslist = {
+emp.controlslist = {
 	TogglePlay = L["Play/Stop"], OnNextClick = L["Play Next Song"], OpenMenu = L["Drop Down Menu"],
 	ShowConfig = L["Config"], ToggleMute = L["Mute / unmute music sound."], TogglePlayListGui = L["Playlist"],
 	PlayLast = L["Play Last Song"], TogglePlayerGui = L["Toggle show GUI"], ToggleRandom = L["Toggle shuffle"],
 	RemoveCurrendSong = L["Remove Song"], SpamDefault = L["Send song name to default channel"],
 }
-EpicMusicPlayer.version = C_AddOns.GetAddOnMetadata("EpicMusicPlayer","Version")
-EpicMusicPlayer.tocversion = select(4, GetBuildInfo());
+emp.version = C_AddOns.GetAddOnMetadata("emp","Version")
+emp.tocversion = select(4, GetBuildInfo());
 
 local function Debug(...)
 	--@debug@
 	local s = "EMP Debug:"
-	if not EpicMusicPlayer.dataBase then
+	if not emp.dataBase then
 		s = "EMP Initialize:"
-    elseif not EpicMusicPlayer.dataBase.char.debug then
+    elseif not emp.dataBase.char.debug then
 		return
 	end
 
@@ -44,17 +44,17 @@ local function error(...)
 	DEFAULT_CHAT_FRAME:AddMessage(s)
 end
 
-function EpicMusicPlayer:Debug(...)
+function emp:Debug(...)
 	Debug(self, ...)
 end
 
-function EpicMusicPlayer:Error(...)
+function emp:Error(...)
 	Debug(self, ...)
 end
 ------------------------------------------------------------------------------
 -- ace load functions
 -------------------------------------------------------------------------------
-function EpicMusicPlayer:OnInitialize()
+function emp:OnInitialize()
 	  local defaults = {
 		profile = {
 			volume = 1,
@@ -124,22 +124,21 @@ function EpicMusicPlayer:OnInitialize()
 
 	self.dataBase = LibStub("AceDB-3.0"):New("EpicMusicPlayerDB", defaults, "Default")
 
-	AceCfgDlg:AddToBlizOptions("EpicMusicPlayer", "EpicMusicPlayer")
-	AceCfgDlg:SetDefaultSize("EpicMusicPlayer", 700, 500)
-	EpicMusicPlayer:AddProfile(self.dataBase)
+	AceCfgDlg:AddToBlizOptions("emp", "emp")
+	AceCfgDlg:SetDefaultSize("emp", 700, 500)
+	emp:AddProfile(self.dataBase)
 
-	EpicMusicPlayer:UpdateOldSavedSongs()
+	emp:UpdateOldSavedSongs()
 
 	db = self.dataBase.profile
 	self.db = db
 	if not self.SetOptionDB then
-		error("Error loading EpicMusicPlayer options!")
+		error("Error loading emp options!")
 		return
 	end
 	
 	self:SetOptionDB(db)
-	--fix previous bug
-	if type(db.song) == "table" then
+	if db and type(db.song) == "table" then
 		db.song = 1
 	end
 	
@@ -153,8 +152,8 @@ function EpicMusicPlayer:OnInitialize()
 	self:UpdateListnames()
 
 	if media then
-		media:Register("font", "Adventure", "Interface\\AddOns\\EpicMusicPlayer\\media\\Adventure.ttf")
-		media:Register("font", "BlackChancery", "Interface\\AddOns\\EpicMusicPlayer\\media\\BlackChancery.ttf")
+		media:Register("font", "Adventure", "Interface\\AddOns\\emp\\media\\Adventure.ttf")
+		media:Register("font", "BlackChancery", "Interface\\AddOns\\emp\\media\\BlackChancery.ttf")
 		self.media = media
 	end
 	if not db.font then
@@ -162,31 +161,37 @@ function EpicMusicPlayer:OnInitialize()
 	end
 
 	if not db.addGameMusic then
-		EpicMusicPlayer:RemoveGameMusicLists()
+		emp:RemoveGameMusicLists()
 	end
 
 	for name,key in pairs(db.eventZones) do
-		EpicMusicPlayer:AddEventOptions(name)
+		emp:AddEventOptions(name)
 	end
+
+	--@debug@
+	EMP = emp
+	if self:ShowAnimTestFrame() then end
+	if self:ShowTestPlaylist() then self:SetTestScrollListData(self.playlists) end
+	--@end-debug@
 end
 
-function EpicMusicPlayer:OnEnable(first)
-	self:RegisterEvent("PLAYER_ENTERING_WORLD", EpicMusicPlayer.OnEnteringWorld, "PLAYER_ENTERING_WORLD")
-	self:RegisterEvent("CHAT_MSG_WHISPER_INFORM", EpicMusicPlayer.OnWhisperInform)
-  self:RegisterEvent("ZONE_CHANGED_NEW_AREA", EpicMusicPlayer.OnZoneChangedNewArea)
-	self:RegisterEvent("PLAYER_ALIVE", EpicMusicPlayer.OnPlayerAlive)
+function emp:OnEnable(first)
+	self:RegisterEvent("PLAYER_ENTERING_WORLD", emp.OnEnteringWorld, "PLAYER_ENTERING_WORLD")
+	self:RegisterEvent("CHAT_MSG_WHISPER_INFORM", emp.OnWhisperInform)
+    self:RegisterEvent("ZONE_CHANGED_NEW_AREA", emp.OnZoneChangedNewArea)
+	self:RegisterEvent("PLAYER_ALIVE", emp.OnPlayerAlive)
 	
 
 	if(self.Playing == false)then
         if(db.auto) then
-			EpicMusicPlayer:Play()
+			emp:Play()
         else
 			if(db.disablewowmusic) then
 				SetCVar("Sound_EnableMusic", 0);
 			else
 				SetCVar("Sound_EnableMusic", 1);
 			end
-			EpicMusicPlayer:Stop()
+			emp:Stop()
         end
     end
 
@@ -198,28 +203,29 @@ function EpicMusicPlayer:OnEnable(first)
 		end
 	end
 
+	self:_BuildPlaylistsFromCallbacks()
 	self:CheckPlayList()
 end
 
-function EpicMusicPlayer:OnDisable()
-	EpicMusicPlayer:Stop()
+function emp:OnDisable()
+	emp:Stop()
 end
 
 ------------------------------------------------------------------------------
 -- event functions
 ------------------------------------------------------------------------------
-function EpicMusicPlayer:OnZoneChangedNewArea(event)
+function emp:OnZoneChangedNewArea(event)
 	if db.enableEvents then
 		local zone = GetZoneText()
 		for name,key in pairs(db.eventZones) do
 			if zone == name then
-				local list, listIndex = EpicMusicPlayer:GetListByName(key)
+				local list, listIndex = emp:_GetListByName(key)
 				if db.list ~= listIndex then
-					song, db.list, db.song = EpicMusicPlayer:GetRandomSong(listIndex)
-					EpicMusicPlayer:Play()
+					song, db.list, db.song = emp:GetRandomSong(listIndex)
+					emp:Play()
 					return 1
-				elseif not EpicMusicPlayer.Playing then
-					EpicMusicPlayer:Play()
+				elseif not emp.Playing then
+					emp:Play()
 					return 1
 				end
 			end
@@ -228,26 +234,26 @@ function EpicMusicPlayer:OnZoneChangedNewArea(event)
 end
 
 -- patch 2.4.3  workaround
-function EpicMusicPlayer:OnEnteringWorld(event)
-	EpicMusicPlayer:CancelTimer(eventtimer,true)
-	eventtimer = EpicMusicPlayer:ScheduleTimer(function()
-		if EpicMusicPlayer.Playing and not db.usePlaySoundFile then
+function emp:OnEnteringWorld(event)
+	emp:CancelTimer(eventtimer,true)
+	eventtimer = emp:ScheduleTimer(function()
+		if emp.Playing and not db.usePlaySoundFile then
 			SetCVar("Sound_EnableMusic", 0);
-			EpicMusicPlayer:Play(EpicMusicPlayer.currentsong)
+			emp:Play(emp.currentsong)
 		else
-			EpicMusicPlayer:OnZoneChangedNewArea()
+			emp:OnZoneChangedNewArea()
 		end
 	end, 5)
 end
 
 -- patch 3.0.8  workaround
-function EpicMusicPlayer:OnPlayerAlive(event)
-    if( UnitIsDeadOrGhost("Player") and EpicMusicPlayer.Playing and not db.usePlaySoundFile )then
+function emp:OnPlayerAlive(event)
+    if( UnitIsDeadOrGhost("Player") and emp.Playing and not db.usePlaySoundFile )then
 		SetCVar("Sound_EnableMusic", 0);
-		EpicMusicPlayer:CancelTimer(eventtimer,true)
-		eventtimer = EpicMusicPlayer:ScheduleTimer(function()
-			if(EpicMusicPlayer.Playing)then
-				EpicMusicPlayer:Play()
+		emp:CancelTimer(eventtimer,true)
+		eventtimer = emp:ScheduleTimer(function()
+			if(emp.Playing)then
+				emp:Play()
 			end
 		end, 2)
 	end
@@ -255,28 +261,28 @@ end
 
 -- called on user clicked next song, do not call directly
 -- can't call PlayNext() directly because we need to set loopsong to false
-function EpicMusicPlayer:OnNextClick()
+function emp:OnNextClick()
 	--db.loopsong = false
-	EpicMusicPlayer:PlayNext()
+	emp:PlayNext()
 end
 
 -- save the name of the last whisper
-function EpicMusicPlayer:OnWhisperInform()
-	EpicMusicPlayer.whisper = arg2
+function emp:OnWhisperInform()
+	emp.whisper = arg2
 end
 
-function EpicMusicPlayer:GetFonts()
+function emp:GetFonts()
 	return media:HashTable("font")
 end
 
 ------------------------------------------------------------------------------
 -- functions used by modules
 ------------------------------------------------------------------------------
-function EpicMusicPlayer:GetCurrentListIndex()
+function emp:GetCurrentListIndex()
 	return db.list;
 end
 
-function EpicMusicPlayer:GetCurrentSong()
+function emp:GetCurrentSong()
 	if self.Playing then
 		return self.currentsong
 	else
@@ -284,7 +290,7 @@ function EpicMusicPlayer:GetCurrentSong()
 	end
 end
 
-function EpicMusicPlayer:GetCurrentSongName()
+function emp:GetCurrentSongName()
 	if(playing and self.currentsong)then
 		return self.currentsong.title
 	else
@@ -296,7 +302,7 @@ function EpicMusicPlayer:GetCurrentSongName()
 	end
 end
 
-function EpicMusicPlayer:GetCurrentArtstName()
+function emp:GetCurrentArtstName()
 	if(playing and self.currentsong)then
 		return self.currentsong.artist
 	else
@@ -304,11 +310,11 @@ function EpicMusicPlayer:GetCurrentArtstName()
 	end
 end
 
-function EpicMusicPlayer:GetCurrentListName()
-	return EpicMusicPlayer:GetListName(db.list) or ""
+function emp:GetCurrentListName()
+	return emp:GetListName(db.list) or ""
 end
 
-function EpicMusicPlayer:RemoveCurrendSong()
+function emp:RemoveCurrendSong()
 	if historyInUse then
 		self:Print(L["Playing song from history."]);
 	else
@@ -317,11 +323,11 @@ function EpicMusicPlayer:RemoveCurrendSong()
 	self:PlayNext()
 end
 
-function EpicMusicPlayer:ShowConfig()
-	EpicMusicPlayer:ChatCommand()
+function emp:ShowConfig()
+	emp:ChatCommand()
 end
 
-function EpicMusicPlayer:OnDisplayClick(parent, button)
+function emp:OnDisplayClick(parent, button)
 	if(IsAltKeyDown())then
 		if(IsControlKeyDown())then
 			self[db.controlset.leftaltcontrol](self, parent)
@@ -338,7 +344,7 @@ function EpicMusicPlayer:OnDisplayClick(parent, button)
 	end
 end
 
-function EpicMusicPlayer:GetFont(fontname)
+function emp:GetFont(fontname)
 	local font
 	if media then
 		font = media:Fetch("font",fontname or db.font)
@@ -346,4 +352,32 @@ function EpicMusicPlayer:GetFont(fontname)
 		font = GameFontNormal:GetFont()
 	end
 	return font
+end
+
+function emp:_defer(func)
+  -- Create a queue the first time it's called
+  if not self._deferQueue then
+    self._deferQueue = {}
+
+    -- Create a one-time frame to handle the event
+    local f = CreateFrame("Frame")
+    f:RegisterEvent("PLAYER_ENTERING_WORLD")
+    f:SetScript("OnEvent", function(frame, event)
+      -- Run all queued functions safely
+      for _, fn in ipairs(emp._deferQueue) do
+        local ok, err = pcall(fn)
+        if not ok then
+          geterrorhandler()("|cffff8080[EpicMusicPlayer:_defer]|r " .. tostring(err))
+        end
+      end
+
+      -- Clean up
+      emp._deferQueue = nil
+      frame:UnregisterEvent(event)
+      frame:SetScript("OnEvent", nil)
+    end)
+  end
+
+  -- Add this function to the queue
+  table.insert(self._deferQueue, func)
 end

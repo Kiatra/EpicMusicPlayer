@@ -275,7 +275,7 @@ if L then
 
 	L["Search..."] = true
 	L["No Match"] = true
-	L["Artist"] = true
+	L["Artist"]  = true
 	L["Playlists"] = true
 	L["Close"] = true
 	L["Clear"] = true
