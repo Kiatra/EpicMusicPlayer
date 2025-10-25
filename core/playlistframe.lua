@@ -101,9 +101,9 @@ local function UpdatePlayStop(event, artist, songname, length)
 
 		UpdatePlayButon(true)
 		if artist ~= "" then
-			title:SetText("|cffffd200"..artist.."|r - "..songname)
+			title:SetText("|cffffd200"..songname.."|r by "..artist)
 		else
-			title:SetText(songname)
+			title:SetText("|cffffd200"..songname)
 		end
 	else
 		UpdatePlayButon(false)
@@ -356,7 +356,7 @@ local function CreatePlaylistGui(width, height)
 					if song.artist and song.artist == "" then seperator = "" end
 					if db.list == selectedlistIndex and row == db.song then
 						if colum == 1 then
-							return db.playlistHideArtist and "|cffffd200"..row.." "..song.title or "|cffffd200"..row.." "..song.artist..seperator..song.title
+							return "|cffffd200"..row.." "..song.title
 						elseif colum == 2 then
 							return "|cffffd200"..song.album
 						else
@@ -364,7 +364,7 @@ local function CreatePlaylistGui(width, height)
 						end
 					else
 						if colum == 1 then
-							return db.playlistHideArtist and row.." "..song.title or row.." "..song.artist..seperator..song.title
+							return row.." "..song.title
 						elseif colum == 2 then
 							return song.album
 						elseif colum == 3 then

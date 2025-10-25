@@ -1,11 +1,12 @@
-local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer")
+local emp = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer") ---@type any
 local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 
 ------------------------------------------------------------
 -- private play/stop functions
 ------------------------------------------------------------
 local queue = nil
-local musicdir = "MyMusic\\" -- path to the CustomMusic
+local timer
+local soundtrackFileIndex = 1 --lets remember the last index for track with multiple files (soundtrack)
 
 local function play(self, file)
 	self:ForceMusicVolume(self.db.volume)
@@ -18,10 +19,36 @@ local function play(self, file)
 	end
 end
 
+local function playGameMusic(self, id, path)
+	local _, _, _, tocversion = GetBuildInfo()
+	if tocversion < 80200 then
+		-- shipped music can not be played via file id in classic wow 1.13.2 (31407)
+		play(self, path)
+	else
+		-- shipped music can only be played via file id in 8.2 retail
+		play(self, id)
+	end
+end
+
+local function playMp3Music(self, path)
+	-- auto enable usePlaySoundFile for non WoW music until the PlayMusc() API is fixed
+	-- see: http://us.battle.net/forums/en/wow/topic/20747574714#1
+	if not self.db.usePlaySoundFile then
+		self.db.usePlaySoundFile = true
+		print(L["The option to use PlaySoundFile was auto enabled as the WoW API PlayMusic(file) is broken for non WoW music. See FAQ for details."])
+	end
+	
+	local musicdir = "MyMusic\\" -- path to the CustomMusic
+	play(self, musicdir..path)
+end
+
+local function playNextSoundtrack()
+end
+
 ------------------------------------------------------------
 -- public play/stop functions
 ------------------------------------------------------------
-function EpicMusicPlayer:Play(song, stillPlaying)
+function emp:Play(song, stillPlaying)
 	if not song then -- no song given try to play last song again
 		song = self:GetSong(self.db.list,self.db.song)
 		if not song then -- song not found get next
@@ -36,44 +63,57 @@ function EpicMusicPlayer:Play(song, stillPlaying)
 	end
 
 	self.Playing = true;
-	songlength = song.duration
+
+	--for sceduling the soundtrack sub files 
+	local subFileIndex = 1
+	local subFilePlayedSeconds = 0
+    local subFileDuration = 0
 
 	if not stillPlaying then
-		if song.id then
-			local _, _, _, tocversion = GetBuildInfo()
-			if tocversion < 80200 then
-				-- shipped music can not be played via file id in classic wow 1.13.2 (31407)
-				play(self, song.path)
+		if song.files then --soundtrack
+			local id = song.files[1].id
+			local path = song.files[1].path
+			subFileDuration = song.files[1].duration
+			playGameMusic(self, id, path)
+		else --single song (defauly)
+			if song.id then
+				playGameMusic(self, song.id, song.path)
 			else
-				-- shipped music can only be played via file id in 8.2 retail
-				play(self, song.id) 	
+				playMp3Music(self, song.path)
 			end
-		else
-			-- auto enable usePlaySoundFile for non WoW music until the PlayMusc() API is fixed
-			-- see: http://us.battle.net/forums/en/wow/topic/20747574714#1
-			if not self.db.usePlaySoundFile then
-				self.db.usePlaySoundFile = true
-				print(L["The option to use PlaySoundFile was auto enabled as the WoW API PlayMusic(file) is broken for non WoW music. See FAQ for details."])
-			end
-			play(self, musicdir..song.path)
 		end
 	end
+
 	stillPlaying = nil
 
-	timer = self:ScheduleRepeatingTimer(function()
-		self:SendMessage("EMPUpdateTime", self.db.playedSeconds)
-		self.db.playedSeconds = self.db.playedSeconds + 1
-		if(self.db.playedSeconds >= songlength)then
-			if self.scheduledStop then
+	timer = self:ScheduleRepeatingTimer(
+		function()
+			self:SendMessage("EMPUpdateTime", self.db.playedSeconds)
+			self.db.playedSeconds = self.db.playedSeconds + 1
+			
+			if song.files then
+				subFilePlayedSeconds = subFilePlayedSeconds + 1
+				if subFilePlayedSeconds > subFileDuration then
+					subFileIndex = subFileIndex + 1
+					if subFileIndex > #song.files then
+						self:PlayNext()
+					else
+						local id = song.files[subFileIndex].id
+						local path = song.files[subFileIndex].path
+						subFileDuration = song.files[subFileIndex].duration
+						subFilePlayedSeconds = 0
+						playGameMusic(self, id, path)
+					end
+				end
+			end
+			
+			if(self.db.playedSeconds >= song.duration)then
+				if self.scheduledStop then
 					self:ScheduledStop()
 					return
-			end
-			if self.db.loopsong then
-				self:Play()
-			else
+				end
 				self:PlayNext()
 			end
-		end
 	end, 1)
 
 	if(self.db.showmessage)then
@@ -86,28 +126,31 @@ function EpicMusicPlayer:Play(song, stillPlaying)
 	self:SendMessage("EMPUpdatePlay", song.artist, song.title, song.duration, song.album)
 end
 
-function EpicMusicPlayer:PlayNext()
-	local self = EpicMusicPlayer;
-	local song
+function emp:PlayNext()
+	local self = emp;
+	local song, listIndex, songIndex
+
+	if self.db.loopsong then
+		self:Play()
+		return
+	end
 
 	if(self.db.random) then
-        song, listIndex, songIndex = EpicMusicPlayer:GetNextSongFromHistory()
+        song, listIndex, songIndex = emp:GetNextSongFromHistory()
 		if song then
 			self.db.list = listIndex
 			self.db.song = songIndex
-			historyInUse = true
 		else
 			song, self.db.list,self.db.song = self:GetRandomSong(self.db.list)
-			EpicMusicPlayer:AddSongToHistory(song,self.db.list,self.db.song)
-			historyInUse = false
+			emp:AddSongToHistory(song,self.db.list,self.db.song)
 		end
 	else
-		song, self.db.list,self.db.song = EpicMusicPlayer:GetNextSong(self.db.list,self.db.song,self.db.looplist)
+		song, self.db.list,self.db.song = emp:GetNextSong(self.db.list,self.db.song,self.db.looplist)
     end
 	self:Play(song)
 end
 
-function EpicMusicPlayer:Stop()
+function emp:Stop()
 	self:CancelTimer(timer,true)
 	local text = self.db.disablewowmusic and L["Music off"] or  L["Game Music"]
 	self:RestoreSoundVolume()
@@ -121,31 +164,26 @@ function EpicMusicPlayer:Stop()
 	self:SendMessage("EMPUpdateStop", "", text, 0)
 end
 
-function EpicMusicPlayer:PlayLast()
-  local song
-	--self.db.loopsong = false
+function emp:PlayLast()
+	local song, listIndex, songIndex
 	if not self.db.random then
-		song, self.db.list,self.db.song = EpicMusicPlayer:GetLastSong(self.db.list,self.db.song,self.db.looplist);
-		EpicMusicPlayer:Play(song)
+		song, self.db.list,self.db.song = emp:GetLastSong(self.db.list,self.db.song,self.db.looplist);
+		emp:Play(song)
 	else
-		song, listIndex, songIndex = EpicMusicPlayer:GetLastSongFromHistory()
-		if song then
+		song, listIndex, songIndex = emp:GetLastSongFromHistory()
+		if song and listIndex and songIndex then
 			self.db.list = listIndex
 			self.db.song = songIndex
-			historyInUse = true
 		else
-			historyInUse = false
-			EpicMusicPlayer:GetSong(self.db.list, self.db.song)
+			emp:GetSong(self.db.list, self.db.song)
 		end
-		EpicMusicPlayer:Play(song);
+		emp:Play(song);
 	end
 end
 
-function EpicMusicPlayer:PlaySong(list, song)
-		historyInUse = false
+function emp:PlaySong(list, song)
 		self.db.list = list
 		self.db.song = song
-    EpicMusicPlayer:AddSongToHistory(EpicMusicPlayer:GetSong(list, song),list, song)
+    	emp:AddSongToHistory(emp:GetSong(list, song),list, song)
 		self:Play()
-	--end
 end

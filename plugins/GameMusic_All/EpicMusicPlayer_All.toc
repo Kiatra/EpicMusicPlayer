@@ -6,7 +6,7 @@
 ## Interface-Cata: @toc-version-cata@
 ## Interface-Mists: @toc-version-mists@
 ## Category: Audio
-## Title: EpicMusicPlayer: Game Music All
+## Title: EpicMusicPlayer: All Game Music
 ## Notes: Adds all the game music tracks to EpicMusicPlayer
 ## Author: Kiatra - github.com/Kiatra/EpicMusicPlayer/
 ## IconTexture: Interface/AddOns/EpicMusicPlayer/media/icon

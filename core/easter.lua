@@ -1,4 +1,4 @@
-local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer")
+local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer") ---@class emp
 local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 
 local function play(self, song)

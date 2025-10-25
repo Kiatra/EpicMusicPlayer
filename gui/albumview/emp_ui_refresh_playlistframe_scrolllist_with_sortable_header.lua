@@ -161,7 +161,7 @@ end
 function PlaylistUI:titleCell(row, song)
   local artist = song.artist or ""
   local title  = song.title  or ""
-  if self.db.playlistHideArtist or artist == "" then
+  if artist == "" then
     return row .. " " .. title
   end
   return row .. " " .. artist .. " - " .. title
@@ -422,7 +422,7 @@ function PlaylistUI:buildFrame()
       local name = EpicMusicPlayer:GetListName(row)
       if self.db.list == row then
         return "|cffffd200"..name
-      elseif not EpicMusicPlayer:IsListSaved(row) then
+      elseif not EpicMusicPlayer:_IsListSaved(row) then
         return "|cffA9A9A9"..name
       else
         return name

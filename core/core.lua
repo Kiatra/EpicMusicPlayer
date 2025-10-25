@@ -7,7 +7,6 @@ local AceCfgDlg = LibStub("AceConfigDialog-3.0")
 local _G, eventtimer = _G, ""
 local db, movesong
 local timer = "" -- timer for display of seconds
-local historyInUse = false --true when a sond from histroy is played
 
 emp.controlslist = {
 	TogglePlay = L["Play/Stop"], OnNextClick = L["Play Next Song"], OpenMenu = L["Drop Down Menu"],
@@ -20,7 +19,10 @@ emp.tocversion = select(4, GetBuildInfo());
 
 local function Debug(...)
 	--@debug@
-	local s = "EMP Debug:"
+	local t = date("%H:%M:%S")
+	local fakeMs=math.floor((debugprofilestop()%1000));
+	local s = (format("[%s.%03d] EMP Debug:", t, fakeMs))
+	--local s = "["..t.."] EMP Debug:"
 	if not emp.dataBase then
 		s = "EMP Initialize:"
     elseif not emp.dataBase.char.debug then
@@ -315,11 +317,7 @@ function emp:GetCurrentListName()
 end
 
 function emp:RemoveCurrendSong()
-	if historyInUse then
-		self:Print(L["Playing song from history."]);
-	else
-		self:RemoveSong(db.list,db.song)
-	end
+	self:RemoveSong(db.list,db.song)
 	self:PlayNext()
 end
 

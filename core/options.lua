@@ -441,18 +441,6 @@ local empoptions = {
 						EpicMusicPlayer.db.loopsong = not EpicMusicPlayer.db.loopsong
 						end,
 				},
-				hideArtist = {
-					type = 'toggle',
-					order = 2,
-					name = L["Hide Artist in Playlist"],
-					desc = L["Hide Artist in Playlist"],
-					get = function()
-						return EpicMusicPlayer.db.playlistHideArtist
-					end,
-					set = function() EpicMusicPlayer.db.playlistHideArtist = not EpicMusicPlayer.db.playlistHideArtist
-						EpicMusicPlayer:PlayListGuiUpdate()
-					end,
-				},
 				addGameMusic = {
 					type = 'toggle',
 					order = 2,

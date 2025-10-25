@@ -713,7 +713,7 @@ function emp:GetSong(listIndex, songIndex)
 	local list = playlists[listIndex]
 	if list then
 		local song = list[songIndex]
-		if song and song.path then
+		if song and (song.path or song.files) then
 			return song
 		else
 			emp:Error("song", songIndex,"not found in list", listIndex)

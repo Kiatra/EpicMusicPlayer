@@ -7,7 +7,7 @@
 ## Interface-Mists: @toc-version-mists@
 ## Category: Audio
 ## Title: EpicMusicPlayer: Soundtrack
-## Notes: WoW OST mapped to the ingame music files if available.   
+## Notes: Game files mapped to the titles of the original soundtrack tracks.  Note: 100% mapping might not alwasy be avialiable or possible due to different edits of the files.   
 ## Author: Kiatra - github.com/Kiatra/EpicMusicPlayer/
 ## IconTexture: Interface/AddOns/EpicMusicPlayer/media/icon
 ## RequiredDeps: EpicMusicPlayer

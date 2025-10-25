@@ -116,7 +116,6 @@ return {
     id = 625753,
     duration = 480,
     artist =  "",
-    ["WoW"] = true,
   },
   {
 		album = "WoW 5.0 - Mists of Pandaria",

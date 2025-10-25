@@ -52,18 +52,19 @@ function EpicMusicPlayer:ShowTooltip(anchor)
 	--GameTooltip:SetPoint("TOPLEFT", anchor, "BOTTOMLEFT")
 
 	if(song)then
-		if song.artist == "" then
-			GameTooltip:SetText(EpicMusicPlayer:GetCurrentSongName(), 1,1,1)
-		else
-			GameTooltip:SetText(song.artist.." - "..EpicMusicPlayer:GetCurrentSongName(), 1,1,1)
+		GameTooltip:SetText(EpicMusicPlayer:GetCurrentSongName(), 1,1,1)
+		
+		if song.artist ~= "" then
+			GameTooltip:AddLine(L["by" ]..": "..song.artist)
 		end
+		GameTooltip:AddLine(" ")
 
 		local album = song.album;
 		if(album=="")then
 		else
 			GameTooltip:AddLine(L["Album" ]..": "..album)
 		end
-
+		
 		GameTooltip:AddLine(L["List"]..": "..EpicMusicPlayer:GetCurrentListName())
 		GameTooltip:AddLine(" ")
 	else

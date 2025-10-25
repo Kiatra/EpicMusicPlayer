@@ -1,0 +1,5 @@
+---@class emp : AceAddon
+---@field RegisterPlaylist fun(self: emp, requiredExpansion, addListCallback)
+---@field RegisterEvent fun(self: emp, name, callback)
+---@field ScheduleRepeatingTimer fun(self: emp, function, seconds)
+---@field Play fun(self: emp, function, seconds)
