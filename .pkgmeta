@@ -1,8 +1,8 @@
 package-as: EpicMusicPlayer
 
 move-folders:
-    EpicMusicPlayer/Plugins/GameMusicFull: EpicMusicPlayer_GameMusic_Essentials
-    EpicMusicPlayer/Plugins/GameMusicFull: EpicMusicPlayer_GameMusic_All
+    EpicMusicPlayer/plugins/GameMusic_All: EpicMusicPlayer_All
+    EpicMusicPlayer/plugins/GameMusic_Soundtrack: EpicMusicPlayer_Soundtrack
 
 externals:
   libs/LibStub:
@@ -54,3 +54,4 @@ externals:
 tools-used:
   - libdatabroker-1-1
   - findglobals
+
