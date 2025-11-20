@@ -1,9 +1,15 @@
---by yess
 local AceLocale = LibStub:GetLibrary("AceLocale-3.0")
 local L = AceLocale:NewLocale("EpicMusicPlayer", "enUS", true)
 if not L then return end
 
 if L then
+	L["EpicMusicPlayer is using the ambiance channel."] = true
+	L["Music (Ambience): %s Scroll to change."] = true
+
+	L["Music: %s Scroll to change."] = true
+	L["Sound: %s %s + Scroll"] = true
+	L["Master: %s %s + Scroll"] = true
+
 	L["by"] = true
 	L["Copy song %s to"] = true
 	L["Toggle GUI"] = true
@@ -131,9 +137,9 @@ if L then
 	L["Length"] = true
 	L["Duration"] = true
 
-	L["Use scroll wheel - adjust music volume"] = true
-	L["Ctrl + use scroll wheel - adjust effects volume"] = true
-	L["Alt + use scroll wheel - fine adjust volume"] = true
+	--L["Use scroll wheel - adjust music volume"] = true
+	--L["Ctrl + use scroll wheel - adjust effects volume"] = true
+	--L["Alt + use scroll wheel - fine adjust volume"] = true
 
 	L["Help - FAQ"] = true
 

@@ -31,16 +31,41 @@ local function getVolumeText(voltype)
 		return math.floor((_G.GetCVar(voltype)*100)).."%"
 end
 
+local COLORS = {
+    green  = "00ff00",
+    red    = "ff0000",
+    blue   = "00aaff",
+    yellow = "ffff00",
+    pink   = "ff66cc",
+    white  = "ffffff",
+    gray   = "aaaaaa",
+}
+
+local function Color(colorName, text)
+    local hex = COLORS[colorName]
+    if not hex then
+        -- fallback if a color doesn’t exist
+        hex = COLORS.white
+    end
+    return "|cff" .. hex .. text .. "|r"
+end
+
 local function addVolumeLine(self)
-	if self.db.usePlaySoundFile then
-		GameTooltip:AddLine("EpicMusicPlayer is using the amiance channel.")
-		GameTooltip:AddLine("Ambience Volume: "..getVolumeText("Sound_AmbienceVolume"))
+	if self.db.usePlaySoundFile and self.Playing then
+		GameTooltip:AddLine(L["EpicMusicPlayer is using the ambiance channel."])
+		GameTooltip:AddLine(" ")
+		GameTooltip:AddLine(string.format(L["Music (Ambience): %s Scroll to change."], getVolumeText("Sound_AmbienceVolume")))
 	else
-		GameTooltip:AddLine("Music Volume: "..getVolumeText("Sound_MusicVolume").." Scroll to change.")
+		GameTooltip:AddLine(string.format(L["Music: %s Scroll to change."], getVolumeText("Sound_MusicVolume")))
 	end
 
-	GameTooltip:AddLine("Sound Volume: "..getVolumeText("Sound_SFXVolume").." Scroll + control to change.")
-	GameTooltip:AddLine("Master Volume: "..getVolumeText("Sound_MasterVolume").." Scroll + shift to change.")
+	local modifierName = GetBindingText("CTRL")
+	local modifierColored = Color("white", modifierName)
+	GameTooltip:AddLine(string.format(L["Sound: %s %s + Scroll"], getVolumeText("Sound_SFXVolume"), modifierColored))
+	
+	modifierName = GetBindingText("SHIFT")
+	modifierColored = Color("white", modifierName)
+	GameTooltip:AddLine(string.format(L["Master: %s %s + Scroll"], getVolumeText("Sound_MasterVolume"), modifierColored))
 end
 
 function EpicMusicPlayer:ShowTooltip(anchor)

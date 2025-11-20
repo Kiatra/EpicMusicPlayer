@@ -9,7 +9,7 @@ local timer
 local soundtrackFileIndex = 1 --lets remember the last index for track with multiple files (soundtrack)
 
 local function play(self, file)
-	self:ForceMusicVolume(self.db.volume)
+	self:ForceMusicVolume()
 	if self.db.usePlaySoundFile then
 		if self.db.soundHandle then StopSound(self.db.soundHandle) end
 		local willplay, soundHandle = PlaySoundFile(file, "Ambience")
@@ -151,6 +151,7 @@ function emp:PlayNext()
 end
 
 function emp:Stop()
+	self.Playing = false;
 	self:CancelTimer(timer,true)
 	local text = self.db.disablewowmusic and L["Music off"] or  L["Game Music"]
 	self:RestoreSoundVolume()
@@ -160,7 +161,6 @@ function emp:Stop()
 	else
 		StopMusic()
 	end
-	self.Playing = false;
 	self:SendMessage("EMPUpdateStop", "", text, 0)
 end
 

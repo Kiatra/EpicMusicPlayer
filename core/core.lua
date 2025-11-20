@@ -59,6 +59,8 @@ end
 function emp:OnInitialize()
 	  local defaults = {
 		profile = {
+			usePlaySoundFile = true,
+			playingAmbienceVolume = 1,
 			volume = 1,
 			oldversion = "",
 			spam = false,
@@ -170,6 +172,11 @@ function emp:OnInitialize()
 		emp:AddEventOptions(name)
 	end
 
+	if not db.nonPlayingAmbienceVolume then
+		-- initiallize based on user set ambience volume
+		db.nonPlayingAmbienceVolume = GetCVar("Sound_AmbienceVolume");
+	end
+	
 	--@debug@
 	EMP = emp
 	if self:ShowAnimTestFrame() then end
