@@ -557,13 +557,13 @@ local empoptions = {
 				},
 				header6 = {
 					type = "header",
-					name = L["Why are some playlists grey?"],
+					name = L["Why do playlists I add with the addon have a different color?"],
 					order = 11,
 				},
 				text6 = {
 					order = 12,
 					type = "description",
-					name = L["Playlists shipped with the addon or created by the PlaylistCreator are locked for editing."],
+					name = L["Playlists shipped with the addon or created by the PlaylistCreator are locked for editing."].." "..L["You can right click user created playlist and delete or export them."],
 				}
 			}
 		}

@@ -63,7 +63,8 @@ if L then
 
 	L["Copied song %s to List %s."] = true
 	L["Playlist %s already exists."] = true
-	L["Why are some playlists grey?"] = true
+	L["Why do playlists I add with the addon have a different color?"] = true
+	L["You can right click user created playlist and delete or export them."] = true
 	L["Playlist %s not found."] = true
 	L["Remove playlist %s?"] = true
 	L["Playlist %s removed."] = true
