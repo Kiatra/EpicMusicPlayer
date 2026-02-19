@@ -8,7 +8,17 @@ local messageframe = nil -- song and artst display
 function EpicMusicPlayer:UpdateMessageFrameText(artist,title)
 	if not messageframe then self:CreateMessageFrame() end
 	local c = self.db.artistcolour
-	messageframe:AddMessage(artist.."\n |c"..self:ToHex(self.db.titlecolour)..title, c.r,c.g,c.b, 53, 0);
+	local artisColor = CreateColor(c.r, c.g, c.b)
+	c = self.db.titlecolour
+	local titleColor = CreateColor(c.r, c.g, c.b)
+
+	--messageframe:AddMessage(artist.."\n |c"..self:ToHex(self.db.titlecolour)..title);
+	local text = artisColor:WrapTextInColorCode(artist).."\n"..titleColor:WrapTextInColorCode(title)
+	messageframe:AddMessage(text);
+
+	messageframe:SetFading(true)
+    messageframe:SetTimeVisible(2)
+    messageframe:SetFadeDuration(1)
 end
 
 function EpicMusicPlayer:CreateMessageFrame()
@@ -21,9 +31,9 @@ function EpicMusicPlayer:CreateMessageFrame()
 
 	local font = self:GetFont()
 	if font then
-		messageframe:SetFont(font, self.db.fontsize)
+		messageframe:SetFont(font, self.db.fontsize, "")
 	else
-		messageframe:SetFont(GameFontNormal:GetFont(),self.db.fontsize)
+		messageframe:SetFont(GameFontNormal:GetFont(),self.db.fontsize, "")
 	end
 
 	messageframe:SetShadowColor(0, 0, 0,0.8)
@@ -36,11 +46,11 @@ function EpicMusicPlayer:UpdateMessageFrame()
 	end
 	local font = EpicMusicPlayer:GetFont()
 	if font then
-		messageframe:SetFont(font, self.db.fontsize)
+		messageframe:SetFont(font, self.db.fontsize, "")
 		if currentsong and currentsong.artist then
 			EpicMusicPlayer:UpdateMessageFrameText(currentsong.artist, currentsong.title)
 		end
 	else
-		messageframe:SetFont(GameFontNormal:GetFont(),self.db.fontsize)
+		messageframe:SetFont(GameFontNormal:GetFont(),self.db.fontsize, "")
 	end
 end
