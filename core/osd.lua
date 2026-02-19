@@ -12,7 +12,6 @@ function EpicMusicPlayer:UpdateMessageFrameText(artist,title)
 	c = self.db.titlecolour
 	local titleColor = CreateColor(c.r, c.g, c.b)
 
-	--messageframe:AddMessage(artist.."\n |c"..self:ToHex(self.db.titlecolour)..title);
 	local text = artisColor:WrapTextInColorCode(artist).."\n"..titleColor:WrapTextInColorCode(title)
 	messageframe:AddMessage(text);
 
