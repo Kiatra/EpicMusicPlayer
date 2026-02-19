@@ -128,7 +128,7 @@ function emp:OnInitialize()
 
 	self.dataBase = LibStub("AceDB-3.0"):New("EpicMusicPlayerDB", defaults, "Default")
 
-	AceCfgDlg:AddToBlizOptions("emp", "emp")
+	AceCfgDlg:AddToBlizOptions("EpicMusicPlayer", "EpicMusicPlayer")
 	AceCfgDlg:SetDefaultSize("emp", 700, 500)
 	emp:AddProfile(self.dataBase)
 
@@ -140,12 +140,12 @@ function emp:OnInitialize()
 		error("Error loading emp options!")
 		return
 	end
-	
+
 	self:SetOptionDB(db)
 	if db and type(db.song) == "table" then
 		db.song = 1
 	end
-	
+
 	self:RegisterChatCommand("emp", "ChatCommand")
 	self:RegisterChatCommand("epicmusicplayer", "ChatCommand")
 
@@ -176,7 +176,7 @@ function emp:OnInitialize()
 		-- initiallize based on user set ambience volume
 		db.nonPlayingAmbienceVolume = GetCVar("Sound_AmbienceVolume");
 	end
-	
+
 	--@debug@
 	EMP = emp
 	if self:ShowAnimTestFrame() then end
@@ -189,7 +189,7 @@ function emp:OnEnable(first)
 	self:RegisterEvent("CHAT_MSG_WHISPER_INFORM", emp.OnWhisperInform)
     self:RegisterEvent("ZONE_CHANGED_NEW_AREA", emp.OnZoneChangedNewArea)
 	self:RegisterEvent("PLAYER_ALIVE", emp.OnPlayerAlive)
-	
+
 
 	if(self.Playing == false)then
         if(db.auto) then
