@@ -1,6 +1,6 @@
 ## Interface: @toc-version-retail@, @toc-version-midnight@
 #@debug@
-## Interface: 120000
+## Interface: 20505, 120000
 #@end-debug@>
 ## Interface-Retail: @toc-version-retail@, @toc-version-midnight@
 ## Interface-Classic: @toc-version-classic@
@@ -10,7 +10,7 @@
 ## Interface-Mists: @toc-version-mists@
 ## Category: Audio
 ## Title: EpicMusicPlayer: Soundtrack
-## Notes: Game files mapped to the titles of the original soundtrack tracks.  Note: 100% mapping might not alwasy be avialiable or possible due to different edits of the files.   
+## Notes: Game files mapped to the titles of the original soundtrack tracks.  Note: 100% mapping might not alwasy be avialiable or possible due to different edits of the files.
 ## Author: Kiatra - github.com/Kiatra/EpicMusicPlayer/
 ## IconTexture: Interface/AddOns/EpicMusicPlayer/media/icon
 ## RequiredDeps: EpicMusicPlayer
