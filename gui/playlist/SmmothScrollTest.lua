@@ -68,7 +68,6 @@ DataProvider:InsertTable(defaultList)
 ScrollView:SetDataProvider(DataProvider)
 
 function emp:SetTestScrollListData(playlist)
-  emp:Debug(playlist)
   local l = (playlist and playlist[1]) or defaultList
   DataProvider:Flush()
   DataProvider:InsertTable(l)
