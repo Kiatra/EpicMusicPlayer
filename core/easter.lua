@@ -2,17 +2,21 @@ local EpicMusicPlayer = LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer") ---@
 local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
 
 local function play(self, song)
-	self:ForceMusicVolume()
+	--self:EnableChannel()
+	self:ForceVolume()
 	local spam = self.db.spam
 	self.db.spam = true
-	EpicMusicPlayer:Play(song)
+	self:Play(song)
 	self.db.spam = spam
 end
 
+--/run LibStub("AceAddon-3.0"):GetAddon("EpicMusicPlayer"):OnPlayerLevelUp(80)
 function EpicMusicPlayer:OnPlayerLevelUp(level)
+	local maxlevel = 60
 	if _G.GetMaxLevelForPlayerExpansion then
-		local maxlevel = GetMaxLevelForPlayerExpansion()
-		if level == maxlevel and db.maxLevelSong then
+		maxlevel = GetMaxLevelForPlayerExpansion()
+	end
+	if (level == maxlevel and db.maxLevelSong) or db.char.debug then
 			song = {
 				album = "ingame",
 				title = string.format("Gratulations to level %s! :)", maxlevel),
@@ -22,7 +26,6 @@ function EpicMusicPlayer:OnPlayerLevelUp(level)
 				id = 303111,
 			}
 			play(self, song)
-		end
 	end
 end
 

@@ -25,12 +25,10 @@ frame:RegisterEvent("CVAR_UPDATE")
 frame:SetScript("OnEvent", function(self, event, name, value)
     if suppressNextAmbienceUpdate then
         suppressNextAmbienceUpdate = false
-        emp:Debug("Ignoring internal CVAR_UPDATE", value)
         return
     end
 	
 	if name == "Sound_AmbienceVolume" then
-		emp:Debug("Ambience CVAR_UPDATE callback: ", emp.db.nonPlayingAmbienceVolume)
 		if isAmbienceChannelInUse() then
 			SetCVar("Sound_MusicVolume", value) --lets set the music volume so when we stop playing the game music will have the right volume
 		else
@@ -40,7 +38,6 @@ frame:SetScript("OnEvent", function(self, event, name, value)
 
 	-- lets adjust the ambience valume when the user set the music volume via the options and we are playing through it
 	if name == "Sound_MusicVolume" then
-		emp:Debug("Music CVAR_UPDATE callback")
 		if isAmbienceChannelInUse() then
 			SetCVar("Sound_AmbienceVolume", value)
 		end
@@ -63,13 +60,24 @@ function emp:UnMute()
 	SetVolumeUnsaved(self, self.db.volume, self:GetMusicVolumeCVar())
 end
 
-function emp:ForceMusicVolume()
+function emp:EnableChannel()
 	if self.db.usePlaySoundFile then
 		suppressNextAmbienceUpdate = true
 		SetCVar("Sound_EnableMusic", 0)
 		SetCVar("Sound_AmbienceVolume", GetCVar("Sound_MusicVolume"))
 	else
 		SetCVar("Sound_EnableMusic", 1)
+	end
+end
+
+function emp:ForceVolume()
+	if self.db.usePlaySoundFile then
+		--suppressNextAmbienceUpdate = true
+		SetCVar("Sound_EnableMusic", 0)
+		SetCVar("Sound_AmbienceVolume", 1)
+	else
+		SetCVar("Sound_EnableMusic", 1)
+		SetCVar("Sound_MusicVolume", 1)
 	end
 end
 

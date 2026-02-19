@@ -9,7 +9,7 @@ local timer
 local soundtrackFileIndex = 1 --lets remember the last index for track with multiple files (soundtrack)
 
 local function play(self, file)
-	self:ForceMusicVolume()
+	self:EnableChannel()
 	if self.db.usePlaySoundFile then
 		if self.db.soundHandle then StopSound(self.db.soundHandle) end
 		local willplay, soundHandle = PlaySoundFile(file, "Ambience")
