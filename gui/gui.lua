@@ -27,7 +27,6 @@ local volumetextframe = nil;
 
 local path
 local list = nil
-local EpicMusicDancer
 
 EpicMusicPlayerGui = LibStub("AceAddon-3.0"):NewAddon("EpicMusicPlayerGui", "AceEvent-3.0","AceTimer-3.0")
 local L = LibStub("AceLocale-3.0"):GetLocale("EpicMusicPlayer")
@@ -354,9 +353,7 @@ function EpicMusicPlayerGui:OnEnable(first)
 	if(EMPGUI == nil)then
 		self:CreateGuiFrame()
 	end
-
 	self:SendMessage("EMPGuiLoaded")
-	EpicMusicDancer = EpicMusicPlayer.EpicMusicDancer
 end
 
 function EpicMusicPlayerGui:OnDisable()
@@ -406,25 +403,6 @@ function EpicMusicPlayerGui:EMPUpdateVolume(event, voltype, vol)
 	local volumeText = EpicMusicPlayer:GetVolumeText(voltype)
 	volumechanged = true
   SetScrollText(volumeText..math.floor((vol*100)).."%")
-end
-
-function EpicMusicPlayerGui:SetNextModel()
-	if(EpicMusicDancer)then
-		--for i=1,63  do PlaySoundFile("Sound\\interface\\levelup2.wav") end
-		EpicMusicDancer:SetNextModel()
-    end
-end
-
-function EpicMusicPlayerGui:ToggleDancer()
-	if(EpicMusicDancer)then
-		EpicMusicDancer:ToggleShow()
-	end
-end
-
-function EpicMusicPlayerGui:SetLastModel()
-	if(EpicMusicDancer)then
-		EpicMusicDancer:SetNextModel()
-    end
 end
 
 function EpicMusicPlayerGui:TogglePlay()
@@ -529,36 +507,19 @@ end
 function EpicMusicPlayerGui:Show()
 	if EMPGUI then
 		EMPGUI:Show()
-		if EpicMusicDancer and EpicMusicDancer:IsGuiToggle() then
-				EpicMusicDancer:Show()
-	  end
 	end
 end
 
 function EpicMusicPlayerGui:Hide()
 	EMPGUI:Hide()
-	if EpicMusicDancer and EpicMusicDancer:IsGuiToggle() then
-			EpicMusicDancer:Hide()
-	end
 end
 
 function EpicMusicPlayerGui:Toggle()
-	--self:Debug("self.showgui", self.showgui)
 	if(EMPGUI)then
 		if(EMPGUI:IsShown()) then
 			EMPGUI:Hide()
-			if(EpicMusicDancer)then
-				if(EpicMusicDancer:IsGuiToggle())then
-					EpicMusicDancer:Hide()
-				end
-			end
 	    else
 	        EMPGUI:Show()
-			if(EpicMusicDancer)then
-				if(EpicMusicDancer:IsGuiToggle())then
-					EpicMusicDancer:Show()
-				end
-			end
 	    end
 	end
 end
@@ -581,7 +542,7 @@ function EpicMusicPlayerGui:UpdateFrame(emp)
 		c = db.titlecolour
 		guitext:SetTextColor(c.r,c.g,c.b,c.a)
 		local font = emp:GetFont()
-		guitext:SetFont(font, db.guifontsize)
+		guitext:SetFont(font, db.guifontsize, "")
 		guitext:SetText(text)
 	end
 

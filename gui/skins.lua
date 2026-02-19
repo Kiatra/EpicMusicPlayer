@@ -26,7 +26,6 @@ EpicMusicPlayerGui.skins = {
 			pushedtexture = "lastButton-p.tga",
 			backgroundtexture = "buttonBackground.tga",
 			onleftclick = EpicMusicPlayer.PlayLast,
-			onrightclick = EpicMusicPlayerGui.SetLastModel,
 		},
 		play = {
 			type = "Button",
@@ -52,7 +51,6 @@ EpicMusicPlayerGui.skins = {
 			pushedtexture = "nextButton-p.tga",
 			backgroundtexture = "buttonBackground.tga",
 			onleftclick = EpicMusicPlayer.OnNextClick,
-			onrightclick = EpicMusicPlayerGui.SetNextModel,
 		},
 		random = {
 			type = "Button",
@@ -66,7 +64,6 @@ EpicMusicPlayerGui.skins = {
 			normaltexture2 = "randomButtonOff.tga",
 			pushedtexture2 = "randomButtonOff-p.tga",
 			onleftclick = EpicMusicPlayer.ToggleRandom,
-			onrightclick = EpicMusicPlayerGui.ToggleDancer,
 		},
 		config = {
 			type = "Button",
@@ -117,7 +114,6 @@ EpicMusicPlayerGui.skins = {
 			pushedtexture = "cata-last-p.tga",
 			backgroundtexture = "cata-back.tga",
 			onleftclick = EpicMusicPlayer.PlayLast,
-			onrightclick = EpicMusicPlayerGui.SetLastModel,
 		},
 		play = {
 			type = "Button",
@@ -143,7 +139,6 @@ EpicMusicPlayerGui.skins = {
 			pushedtexture = "cata-next-p.tga",
 			backgroundtexture = "cata-back.tga",
 			onleftclick = EpicMusicPlayer.OnNextClick,
-			onrightclick = EpicMusicPlayerGui.SetNextModel,
 		},
 		random = {
 			type = "Button",
@@ -157,7 +152,6 @@ EpicMusicPlayerGui.skins = {
 			normaltexture2 = "cata-randomoff.tga",
 			pushedtexture2 = "cata-randomoff-p.tga",
 			onleftclick = EpicMusicPlayer.ToggleRandom,
-			onrightclick = EpicMusicPlayerGui.ToggleDancer,
 		},
 		config = {
 			type = "Button",
@@ -208,7 +202,6 @@ EpicMusicPlayerGui.skins = {
 			pushedtexture = "lastButton-p.tga",
 			backgroundtexture = "cata\\cata-back.tga",
 			onleftclick = EpicMusicPlayer.PlayLast,
-			onrightclick = EpicMusicPlayerGui.SetLastModel,
 		},
 		play = {
 			type = "Button",
@@ -234,7 +227,6 @@ EpicMusicPlayerGui.skins = {
 			pushedtexture = "nextButton-p.tga",
 			backgroundtexture = "cata\\cata-back.tga",
 			onleftclick = EpicMusicPlayer.OnNextClick,
-			onrightclick = EpicMusicPlayerGui.SetNextModel,
 		},
 		random = {
 			type = "Button",
@@ -248,7 +240,6 @@ EpicMusicPlayerGui.skins = {
 			normaltexture2 = "randomButtonOff.tga",
 			pushedtexture2 = "randomButtonOff-p.tga",
 			onleftclick = EpicMusicPlayer.ToggleRandom,
-			onrightclick = EpicMusicPlayerGui.ToggleDancer,
 		},
 		config = {
 			type = "Button",
@@ -274,7 +265,6 @@ EpicMusicPlayerGui.skins = {
 			normaltexture = "listButton.tga",
 			pushedtexture = "listButton-p.tga",
 			onleftclick = EpicMusicPlayer.TogglePlayListGui,
-			onrightclick = EpicMusicPlayerGui.SetNextModel,
 		},
 	},
 	-- quest
@@ -311,7 +301,6 @@ EpicMusicPlayerGui.skins = {
 			normaltexture = "next.tga",
 			pushedtexture = "next-p.tga",
 			onleftclick = EpicMusicPlayer.OnNextClick,
-			onrightclick = EpicMusicPlayerGui.SetNextModel,
 		},
 		playlist = {
 			type = "Button",
@@ -365,7 +354,6 @@ EpicMusicPlayerGui.skins = {
 			pushedtexture = "nextButton-p.tga",
 			--backgroundtexture = "buttonBackground.tga",
 			onleftclick = EpicMusicPlayer.OnNextClick,
-			onrightclick = EpicMusicPlayerGui.SetNextModel,
 		},
 		playlist = {
 			type = "Button",
