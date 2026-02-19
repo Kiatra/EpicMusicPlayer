@@ -85,7 +85,7 @@ if L then
 	L["Playlist Scale"] = true
 	L["Adjust the scale of the playlist"] = true
 	L["Frame strata"] = true
-	L["MusicDancer"] = true
+	L["Music Dancer"] = true
 	L["Show Dancer"] = true
 	L["Toggle show model."] = true
 	L["Random Model"] = true

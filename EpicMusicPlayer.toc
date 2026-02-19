@@ -1,6 +1,6 @@
 ## Interface: @toc-version-retail@, @toc-version-midnight@
 #@debug@
-## Interface: 120000
+## Interface: 20505, 120000
 #@end-debug@>
 ## Interface-Retail: @toc-version-retail@, @toc-version-midnight@
 ## Interface-Classic: @toc-version-classic@
@@ -10,7 +10,7 @@
 ## Interface-Mists: @toc-version-mists@
 ## Category: Audio
 ## Title: EpicMusicPlayer
-## Notes: Browse and listen to the epic music of Warcraft. 
+## Notes: Browse and listen to the epic music of Warcraft.
 ## Author: Kiatra - github.com/Kiatra/EpicMusicPlayer/
 ## SavedVariables: EpicMusicPlayer_PlayList, EpicMusicPlayerDB, EpicMusicPlayerBrokerDB, EpicMusicDancerDB
 ## OptionalDeps: Ace3, LibSharedMedia-3.0
@@ -57,11 +57,9 @@ broker\empbroker.lua
 
 #@debug@
 # the 3d models need fixes with the current clients
-#dancer\EpicMusicDancer.lua
-#dancer\EpicMusicDancer_A.lua
-#dancer\EpicMusicDancer_Options.lua
-#dancer\EpicMusicDancer_Frame.lua
-#dancer\EpicMusicDancer_AnimTester.lua
+dancer\Dancer.lua
+dancer\Dancer_Options.lua
+dancer\Dancer_ModelData.lua
 #@end-debug@>
 
 gamemusic\Epic.lua

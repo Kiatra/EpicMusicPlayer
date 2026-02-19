@@ -159,7 +159,7 @@ local function CreateHeader(parent)
 	x:SetPoint("TOPRIGHT",header,7,6)
 
 	title = header:CreateFontString()
-	title:SetFont(EpicMusicPlayer:GetFont(db.playlistfont), 12)
+	title:SetFont(EpicMusicPlayer:GetFont(db.playlistfont), 12, "")
 	title:SetPoint("TOPLEFT", importButton,"TOPRIGHT", 5,1)
 	title:SetPoint("BOTTOMRIGHT", header, -25,0)
 	title:SetShadowColor(0, 0, 0,0.8)
@@ -253,12 +253,12 @@ local function CreatePlaylistGui(width, height)
 	frame:SetMovable(true)
 	frame:SetResizable(true)
 	frame:RegisterForDrag("LeftButton");
-  
+
   if not frame.SetResizeBounds then --wow classic
   	frame.SetResizeBounds = SetResizeBounds
   end
   frame:SetResizeBounds(1000,800)
-	
+
 	frame:SetScript("OnDragStart",
 	    function(self)
 			self:StartMoving()

@@ -609,7 +609,6 @@ function EpicMusicPlayer:TogglePlayerGui()
 	else
 		EpicMusicPlayer:Print(L["GUI not found"])
 	end
-  --self:Debug("TogglePlayerGui showgui", self.db.showgui)
   self.db.showgui = not self.db.showgui
 end
 

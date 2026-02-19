@@ -168,7 +168,6 @@ function dataobj:OnLeave()
 end
 
 function dataobj:OnMouseWheel(vector)
-	--self:Debug(self, vector);
 	OnScroll(self, vector)
 end
 

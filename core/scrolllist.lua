@@ -107,7 +107,7 @@ local function CreateButton(parent, height, colums ,OnClick, OnEnter, OnLeave, f
 	local relative = nil
 	for i = 1, numcolums do
 		local text = button:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall")
-		text:SetFont(font, 12)
+		text:SetFont(font, 12, "")
 		button["colum"..i] = text
 
 		if numcolums == 1 then -- only one colum
