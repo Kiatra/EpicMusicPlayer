@@ -199,7 +199,7 @@ end
 
 function emp:RemoveAllSelectedSong(srcList)
 	if type(srcList) == "number" then srcList, _ = playlists[srcList] end
-	
+
 	local songIndex = 1
 	while songIndex <= #srcList do
 		song = srcList[songIndex]
@@ -209,7 +209,7 @@ function emp:RemoveAllSelectedSong(srcList)
 			songIndex = songIndex + 1
 		end
 	end
-	
+
 end
 
 function emp:CopyAllSelectedSongs(srcList, dstList)
@@ -257,7 +257,7 @@ function emp:RemoveSong(srcList, songIndex, silent)
 		return true
 	end
 	emp:PlayListGuiUpdate()
-	
+
 	return false
 end
 
@@ -401,17 +401,14 @@ end
 
 function emp:ExportPlayList(listname)
   list = self:_GetListByName(listname)
-	--self:Debug("ExportPlayList", list)
 end
 
 -- add playlist
 -- name as string and newlist as a table are required
 -- if name is a table then we geht the name from its listname
 function emp:AddPlayList(name, newlist, save, replace)
-	--self:Debug("type name:", type(name), " type listName=", type(newlist))
-
 	if type(name) == "table" and name.listName then
-		newlist = name 
+		newlist = name
 		name = newlist.listName
 	end
 
@@ -438,22 +435,11 @@ function emp:AddPlayList(name, newlist, save, replace)
 	--quick fix for now
 	for i, song in ipairs(newlist) do
 		if song.Name then
-			--debug("setting title", song.Name)
 			song.title = song.Song
-			--song.Name = nil
-
 			song.album = song.Album
-			--song.album = nil
-
 			song.path = song.Name
-			--song.Name = nil
-
 			song.artist = song.Artist
-			--song.Artist = nil
-
 			song.duration = song.Length
-			--song.Length = nil
-
 			song.id = song.Id
 		end
 	end
@@ -681,7 +667,7 @@ function emp:GetListName(index)
 	end
 end
 
--- return the lift that matches the given key. 
+-- return the lift that matches the given key.
 -- key can be the listindex in the all the playlits
 -- or a listname
 -- or the list table itself
@@ -795,7 +781,7 @@ local function normalizeExpansionName(name)
   return name:lower():gsub("%s+", "")
 end
 
--- Build Playlist from ealier added callbacks 
+-- Build Playlist from ealier added callbacks
 function emp:_BuildPlaylistsFromCallbacks()
 	local callbacks = self._registeredPlaylistCallbacks
 	if not callbacks then return end
@@ -806,6 +792,24 @@ function emp:_BuildPlaylistsFromCallbacks()
 		end
 	end
 	self._registeredPlaylistCallbacks = nil
+end
+
+-- Register Base Playlist "Epic":
+function emp:RegisterEpicPlaylist(addListCallback)
+    local epicList = addListCallback()
+    local filteredList = {
+        listName = epicList.listName,
+        playlistVersion = epicList.playlistVersion,
+    }
+
+    for i, song in ipairs(epicList) do
+			local requiredSongExpansion = song.requiredExpansionLevel or 0
+			if requiredSongExpansion <=LE_EXPANSION_LEVEL_CURRENT then
+			   table.insert(filteredList,song)
+			end
+	end
+
+	self:AddPlayList(filteredList)
 end
 
 -- Playlist files call this anytime:
