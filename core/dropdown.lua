@@ -29,31 +29,31 @@ function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
 		if countSelectedSongs > 0 then
 			rootDescription:CreateDivider();
 			if saved then
-				rootDescription:CreateButton(L["Remove selected songs"], function() 
+				rootDescription:CreateButton(L["Remove selected songs"], function()
 					EpicMusicPlayer:RemoveAllSelectedSong(listIndex, dstList);
-					EpicMusicPlayer:PlayListGuiUpdate(); 
+					EpicMusicPlayer:PlayListGuiUpdate();
 				end);
 			end
 			submenuCopyMulti = rootDescription:CreateButton(L["Copy selected songs to"]);
 			rootDescription:CreateDivider();
-			rootDescription:CreateButton(L["Clear selection"], function() 
+			rootDescription:CreateButton(L["Clear selection"], function()
 				EpicMusicPlayer:ClearListSelection(listIndex);
 			end);
-			
+
 		end
-		
+
 
 		for i, dstList in ipairs(EpicMusicPlayer.playlists) do
 			if EpicMusicPlayer:_IsListSaved(i) and i ~=listIndex then
 				if submenuCopyMulti then
-					submenuCopyMulti:CreateButton(dstList.listName, 
-					function() 
-						EpicMusicPlayer:CopyAllSelectedSongs(listIndex, dstList) 
+					submenuCopyMulti:CreateButton(dstList.listName,
+					function()
+						EpicMusicPlayer:CopyAllSelectedSongs(listIndex, dstList)
 					end);
 				end
 				if submenuCopyAll then
-					submenuCopyAll:CreateButton(dstList.listName, 
-					function() 
+					submenuCopyAll:CreateButton(dstList.listName,
+					function()
 						EpicMusicPlayer:CopyAllSongs(listIndex, dstList)
 					end);
 				end
@@ -62,7 +62,7 @@ function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
 
 		-- add copy destination to a new list with a dialog promt for each present copy option
 		if submenuCopyMulti then
-			submenuCopyAll:CreateButton(L["New List"], function() 
+			submenuCopyAll:CreateButton(L["New List"], function()
 				EpicMusicPlayer:CreatePlayListDialog( function(self)
 					local srcList = EpicMusicPlayer:GetListByIndex(listIndex)
 					local editBox = _G[self:GetName().."EditBox"]
@@ -72,22 +72,22 @@ function EpicMusicPlayer:OpenSongMenu(frame, listIndex, songIndex)
 					local list, _ = EpicMusicPlayer:_GetListByName(text)
 					EpicMusicPlayer:CopyAllSelectedSongs(srcList, dstList)
 				end);
-			end);	
-		end	
+			end);
+		end
 
 		if submenuCopyAll then
-			submenuCopyAll:CreateButton(L["New List"], function() 
+			submenuCopyAll:CreateButton(L["New List"], function()
 				EpicMusicPlayer:CreatePlayListDialog(function(self)
 					local srcList = EpicMusicPlayer:GetListByIndex(listIndex)
 					local editBox = _G[self:GetName().."EditBox"]
 					local text = editBox:GetText()
 					EpicMusicPlayer:AddPlayList(text, nil, true)
-	
+
 					local dstList, _ = EpicMusicPlayer:_GetListByName(text)
 					EpicMusicPlayer:CopyAllSongs(srcList, dstList)
 				end);
-			end); 
-		end	
+			end);
+		end
 	end)
 end
 
@@ -246,7 +246,7 @@ function EpicMusicPlayer:OpenSongMenuOld(frame, listIndex, songIndex)
 end
 
 function EpicMusicPlayer:OpenListMenu(frame, listIndex)
-	if not MenuUtil then 
+	if not MenuUtil then
 		self:OpenListMenuOld(frame, listIndex)
 		return
 	end
@@ -321,7 +321,7 @@ function EpicMusicPlayer:OpenListMenuOld(frame, listIndex)
 end
 
 function EpicMusicPlayer:OpenMenu(frame, listIndex)
-	if not MenuUtil then 
+	if not MenuUtil then
 		self:OpenMenuOld(frame, listIndex)
 		return
 	end
@@ -339,22 +339,11 @@ function EpicMusicPlayer:OpenMenu(frame, listIndex)
 		rootDescription:CreateCheckbox(L["Loop Song"], function() return db.loopsong end, function() db.loopsong = not db.loopsong end);
 		rootDescription:CreateDivider();
 		rootDescription:CreateCheckbox( L["Enable Events"], function() return db.enableEvents end, function() db.enableEvents = not db.enableEvents end);
-	
-		
+
 		--@debug@
-		if self:IsDebug() then
-			rootDescription:CreateDivider();
-			rootDescription:CreateCheckbox("Anim Tester", function() return self:ShowAnimTestFrame() end, function() self:ToggleAnimTestFrame() end);
-			rootDescription:CreateCheckbox("Show Test Playlist", function() return self:ShowTestPlaylist() end, function() self:ToggleTestPlaylist() end);
-		end
 		rootDescription:CreateDivider();
-		rootDescription:CreateCheckbox("Debugging", function() return self:IsDebug() end, function()  self:ToggleDebug() end);			
+		rootDescription:CreateCheckbox("Debugging", function() return self:IsDebug() end, function()  self:ToggleDebug() end);
 		--@end-debug@
-		
-		--submenue example
-		--local submenu = rootDescription:CreateButton("Debug");
-		--submenu:CreateButton("Toggle Anim Tester", self:ToggleAnimTester(), true);
-		--submenu:CreateButton("Disable", SetEnabledFunction, false);
 	end)
 end
 

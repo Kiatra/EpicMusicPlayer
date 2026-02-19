@@ -711,14 +711,6 @@ function EpicMusicPlayer:ToggleDisWoWMusic()
 	self:Stop()
 end
 
-function EpicMusicPlayer:ShowAnimTestFrame()
-	return self.dataBase and self.dataBase.char.showAnimTester or false
-end
-
-function EpicMusicPlayer:ToggleAnimTestFrame()
-	self.dataBase.char.showAnimTester = not self.dataBase.char.showAnimTester
-end
-
 function EpicMusicPlayer:IsDebug()
 	return self.dataBase and self.dataBase.char.debug
 end
@@ -729,7 +721,7 @@ end
 
 function EpicMusicPlayer:ShowTestPlaylist()
 	return self.dataBase and self.dataBase.char.showATestPlaylist
-	
+
 end
 
 function EpicMusicPlayer:ToggleTestPlaylist()

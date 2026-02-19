@@ -176,12 +176,6 @@ function emp:OnInitialize()
 		-- initiallize based on user set ambience volume
 		db.nonPlayingAmbienceVolume = GetCVar("Sound_AmbienceVolume");
 	end
-
-	--@debug@
-	EMP = emp
-	if self:ShowAnimTestFrame() then end
-	if self:ShowTestPlaylist() then self:SetTestScrollListData(self.playlists) end
-	--@end-debug@
 end
 
 function emp:OnEnable(first)
