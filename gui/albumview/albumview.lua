@@ -82,12 +82,12 @@ function AV:buildHeader(parent)
 
   -- title / artist
   local titleFS = header:CreateFontString(nil, "ARTWORK", "GameFontHighlightLarge")
-  titleFS:SetFont(EpicMusicPlayer:GetFont(self.db.playlistfont), TITLE_FS)
+  titleFS:SetFont(EpicMusicPlayer:GetFont(self.db.playlistfont), TITLE_FS, "")
   titleFS:SetPoint("TOP", art, "BOTTOM", 0, -PAD)
   titleFS:SetTextColor(1,1,1,1)
 
   local artistFS = header:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall")
-  artistFS:SetFont(EpicMusicPlayer:GetFont(self.db.playlistfont), ARTIST_FS)
+  artistFS:SetFont(EpicMusicPlayer:GetFont(self.db.playlistfont), ARTIST_FS, "")
   artistFS:SetPoint("TOP", titleFS, "BOTTOM", 0, -4)
   artistFS:SetTextColor(0.85,0.85,0.85,1)
 
@@ -221,4 +221,3 @@ function EpicMusicPlayer:ToggleAlbumView()
   if not self.albumView then self.albumView = AV:new() end
   self.albumView:toggle()
 end
-
