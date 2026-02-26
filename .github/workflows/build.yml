@@ -23,5 +23,4 @@ jobs:
           args: -S
         env:
           CF_API_KEY: ${{ secrets.CF_API_KEY }}
-          GITHUB_OAUTH: ${{ secrets.WORKFLOW_OAUTH_EMP }}
           WOWI_API_TOKEN: ${{ secrets.WOWI_API_TOKEN }}
