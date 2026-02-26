@@ -31,8 +31,12 @@ gamemusic\BattleForAzeroth.lua
 gamemusic\Shadowlands.lua
 gamemusic\Dragonflight.lua
 gamemusic\The War Within.lua
+gamemusic\Midnight.lua
 
 #@debug@
 # Some sound effects tracks found (under /music/zonemusic/)
 gamemusic\Ignored.lua
+# Only in SOD?
+gamemusic\Classic_SOD.lua
+gamemusic\Not_In_retail.lua
 #@end-debug@>

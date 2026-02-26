@@ -5229,15 +5229,6 @@ return {
 		id = 7262790,
 	},
 	{
-		album = "WoW: The War Within",
-		title = "Raid 11.0 - Nerub-ar Palace - Ansurek - Rp - Phase 3 6036434",
-		tagged_title = "",
-		path = "sound\\music\\warwithin\\raid 11.0 - nerub-ar palace - ansurek - rp - phase 3_6036434.mp3",
-		duration = 0,
-		artist = "",
-		id = 6036434,
-	},
-	{
 		album = "WoW8.0",
 		title = "Zone 11.0.7 - Siren Isle - General - Hub - Walk 2144123",
 		tagged_title = "Zone 11.0.7 - Siren Isle - General - Hub - Walk 2144123",
