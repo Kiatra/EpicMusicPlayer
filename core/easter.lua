@@ -16,7 +16,7 @@ function EpicMusicPlayer:OnPlayerLevelUp(level)
 	if _G.GetMaxLevelForPlayerExpansion then
 		maxlevel = GetMaxLevelForPlayerExpansion()
 	end
-	if (level == maxlevel and db.maxLevelSong) or db.char.debug then
+	if (level == maxlevel and db.maxLevelSong) or (db.char and db.char.debug) then
 			song = {
 				album = "ingame",
 				title = string.format("Gratulations to level %s! :)", maxlevel),
